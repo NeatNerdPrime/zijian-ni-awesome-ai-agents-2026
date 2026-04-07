@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-April%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-200%2B-orange.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-230%2B-orange.svg)](#)
 [![Categories](https://img.shields.io/badge/Categories-17-purple.svg)](#)
 
 **The definitive curated list of AI models, agent frameworks, tools, protocols, and resources for 2026 — the year agents went mainstream and AI became infrastructure.**
@@ -24,7 +24,7 @@
 
 | Category | Description | Count |
 |----------|-------------|-------|
-| [🧠 Foundation Models](#-foundation-models-2026) | Latest LLMs from OpenAI, Anthropic, Google, Meta, and more | 30+ |
+| [🧠 Foundation Models](#-foundation-models-2026) | Latest LLMs from OpenAI, Anthropic, Google, Meta, and 20+ providers | 65+ |
 | [🎨 Multimodal & Generative AI](#-multimodal--generative-ai) | Image, video, audio, and music generation | 20+ |
 | [🔗 Agent Protocols](#-agent-protocols--standards) | MCP, A2A, and interoperability standards | 10+ |
 | [🏗️ Agent Frameworks](#️-agent-frameworks) | Libraries for building autonomous AI agents | 20+ |
@@ -68,70 +68,151 @@
 
 ## 🧠 Foundation Models 2026
 
-*The latest large language models powering the AI ecosystem, organized by company.*
+*The latest large language models powering the AI ecosystem, organized by company. 60+ models from 20+ providers.*
 
 ### OpenAI
 
-- [GPT-5](https://openai.com/index/gpt-5/) - OpenAI's most capable model, launched August 2025. Enhanced reasoning, multimodal understanding, and tool use capabilities.
-- [GPT-4o](https://openai.com/index/gpt-4o/) - Omni model with native text, vision, and audio capabilities. Real-time multimodal reasoning.
-- [o3 / o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) - 🆕 OpenAI's reasoning models with chain-of-thought for complex problem solving.
+- [GPT-5.4](https://openai.com/) - 🆕 Released March 2026. OpenAI's most capable frontier model with 1M-token context, advanced coding, computer use, and tool search.
+- [GPT-5.3](https://openai.com/) - 🆕 Released early 2026. Includes GPT-5.3 Instant for conversations and GPT-5.3-Codex for coding tasks.
+- [GPT-5.2](https://openai.com/) - Released Dec 2025. State-of-the-art reasoning, long-context understanding, and vision.
+- [GPT-5](https://openai.com/index/gpt-5/) - Launched August 2025. The default model in ChatGPT, replacing GPT-4o. Multimodal with variants: gpt-5, gpt-5-mini, gpt-5-nano.
+- [GPT-4o](https://openai.com/index/gpt-4o/) - Omni model with native text, vision, and audio. Retired from ChatGPT Feb 2026 but still available via API.
+- [o3 / o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) - Reasoning models with chain-of-thought for complex problem solving. Released April 2025.
 - [Codex CLI](https://github.com/openai/codex) - Open-source terminal-based coding agent powered by OpenAI models. ![GitHub stars](https://img.shields.io/github/stars/openai/codex?style=flat-square)
 
 ### Anthropic
 
-- [Claude Opus 4.6](https://www.anthropic.com/) - 🆕 Released Feb 2026. Agent team capabilities, PowerPoint integration, advanced reasoning.
-- [Claude Sonnet 4.6](https://www.anthropic.com/) - 🆕 Released Feb 2026. Improved agentic search, 1M token context window.
+- [Claude Opus 4.6](https://www.anthropic.com/) - 🆕 Released Feb 2026. 1M-token context, 14.5-hour task horizon, strongest sustained work capacity. Agent team capabilities.
+- [Claude Sonnet 4.6](https://www.anthropic.com/news/claude-sonnet-4-6) - 🆕 Released Feb 2026. Frontier coding and agentic performance, 1M token context window.
+- [Claude Opus 4](https://www.anthropic.com/news/claude-4) - Released May 2025. Advanced reasoning and complex task execution.
+- [Claude Sonnet 4](https://www.anthropic.com/news/claude-4) - Released May 2025. Balanced performance and cost for a wide range of tasks.
 - [Claude Mythos Preview](https://www.anthropic.com/) - 🆕 April 2026 gated research preview for defensive cybersecurity applications.
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) - Agentic coding tool operating directly in your terminal with 80.9% SWE-bench score.
 
 ### Google DeepMind
 
-- [Gemini 3.1 Pro](https://deepmind.google/technologies/gemini/) - 🆕 Released Feb 2026. Google's most capable model with advanced reasoning and multimodal understanding.
+- [Gemini 3.1 Pro](https://deepmind.google/technologies/gemini/) - 🆕 Released Feb 2026. Google's most capable model with advanced reasoning, adaptive thinking, and 1M token context.
 - [Gemini 3.1 Flash](https://deepmind.google/technologies/gemini/) - 🆕 Fast and efficient model for high-throughput applications.
-- [Gemini 3.1 Flash Lite](https://deepmind.google/technologies/gemini/) - 🆕 Released March 2026. Lightweight model optimized for cost-effective deployment.
-- [Gemini 2.5 Pro](https://deepmind.google/technologies/gemini/) - Thinking model with 1M context, excels at code and multimodal tasks.
+- [Gemini 3.1 Flash Lite](https://deepmind.google/technologies/gemini/) - 🆕 Released March 2026. Optimized for speed and cost-efficiency in high-volume tasks.
+- [Gemini 2.5 Pro](https://deepmind.google/technologies/gemini/) - Thinking model with 1M context, excels at code and multimodal tasks. GA June 2025.
+- [Gemini 2.5 Flash](https://deepmind.google/technologies/gemini/) - Versatile model balancing intelligence and latency. GA June 2025.
 - [Gemma 3](https://github.com/google-deepmind/gemma) - Open model family for on-device and research use. ![GitHub stars](https://img.shields.io/github/stars/google-deepmind/gemma?style=flat-square)
 
 ### Meta
 
-- [Llama 4 Scout](https://llama.meta.com/) - 109B total params (17B active), MoE architecture, 10M token context window, multimodal.
-- [Llama 4 Maverick](https://llama.meta.com/) - 400B total params (17B active), MoE architecture with text + image capabilities.
+- [Llama 4 Scout](https://llama.meta.com/) - 109B total params (17B active), MoE with 16 experts, 10M token context window, multimodal. Runs on single H100.
+- [Llama 4 Maverick](https://llama.meta.com/) - 400B total params (17B active), 128 experts, 1M context. Outperforms GPT-4o on multimodal benchmarks.
+- [Llama 4 Behemoth](https://llama.meta.com/) - 🆕 2T parameters (288B active). In training — Meta's frontier model rivaling top closed-source models.
 - [Llama 3.3 70B](https://llama.meta.com/) - Strong instruction following and reasoning, open-weight under Llama Community License.
 
 ### Mistral AI
 
-- [Mistral Large 3](https://mistral.ai/) - Flagship model with advanced reasoning, multilingual support, and function calling.
-- [Mistral Small 4](https://mistral.ai/news/mistral-small-4) - 🆕 Open-source multimodal model for chat, coding, agentic tasks, and reasoning.
+- [Mistral Large 3](https://mistral.ai/news/mistral-3) - 675B total / 41B active parameters, MoE, 256K context. Flagship open-weight multimodal model. Released Dec 2025.
+- [Mistral Medium 3.1](https://mistral.ai/) - Frontier-class dense model for enterprise. Multimodal, 128K context, 80+ coding languages. Released Aug 2025.
+- [Mistral Small 4](https://mistral.ai/news/mistral-small-4) - 🆕 Released March 2026. 119B total / 6B active. Hybrid model combining reasoning, multimodal, and coding strengths.
+- [Magistral 1.2](https://mistral.ai/) - 🆕 2026 reasoning family challenging o3/o4-mini. Transparent and multilingual reasoning.
+- [Devstral 2](https://mistral.ai/) - 🆕 2026 agentic coding model. Best open-source model for coding agents.
+- [Codestral](https://mistral.ai/news/codestral) - 22B code generation model, 80+ programming languages, 32K context. Released May 2024.
+- [Pixtral Large](https://mistral.ai/) - 124B multimodal model with 1B vision encoder, 128K context, processes 30+ high-res images.
 - [Ministral 3B/8B/14B](https://mistral.ai/) - Compact models optimized for edge deployment and efficiency.
 - [Mistral Forge](https://mistral.ai/) - 🆕 March 2026 platform for training custom LLMs on proprietary data.
 
 ### DeepSeek
 
-- [DeepSeek-V3.2](https://www.deepseek.com/) - 🆕 Released Dec 2025. Advanced MoE architecture with 671B total parameters.
-- [DeepSeek-R1](https://www.deepseek.com/) - Reasoning-focused model with chain-of-thought capabilities.
+- [DeepSeek-V4](https://www.deepseek.com/) - 🆕 Released Feb 2026. Multimodal (text, image, video). "Engram memory architecture" for enhanced retention. Optimized for coding.
+- [DeepSeek-V3.2](https://www.deepseek.com/) - Released Dec 2025. Advanced MoE architecture with 671B total parameters. V3.2 Speciale variant for enhanced reasoning.
+- [DeepSeek-R2](https://www.deepseek.com/) - 🆕 2026 advanced reasoning model. Successor to R1, competes with GPT-5 and Gemini 3 Pro.
+- [DeepSeek-R1](https://www.deepseek.com/) - Reasoning-focused model with chain-of-thought capabilities. Released Jan 2025.
 - [DeepSeek-Coder-V2](https://github.com/deepseek-ai/DeepSeek-Coder-V2) - Code generation model competitive with GPT-4 on coding benchmarks. ![GitHub stars](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-Coder-V2?style=flat-square)
 
 ### Alibaba (Qwen)
 
-- [Qwen3.5 Series](https://qwen.ai/) - 🆕 Feb-March 2026. Native multimodal capabilities, enhanced agentic coding. Includes Qwen3.5-Omni and Qwen3.5-Max-Preview.
+- [Qwen3.5-Omni](https://qwen.ai/) - 🆕 March 2026. Fully omni-modal LLM — language, vision, sound, motion. Speech recognition in 113 languages, 256K context.
+- [Qwen3.5 Plus](https://qwen.ai/) - 🆕 Feb 2026. Native vision-language model, hybrid architecture, 1M token context.
+- [Qwen3-Max-Thinking](https://qwen.ai/) - 🆕 Alibaba's strongest model. 1T+ parameters, enhanced agentic capabilities.
 - [Qwen3-Coder-Next](https://qwen.ai/) - 🆕 Feb 2026. Open-weight coding agent model, MoE with 80B total / 3B active parameters.
-- [Qwen3 VL 235B](https://qwen.ai/) - 🆕 Multimodal vision-language model with strong reasoning.
+- [Qwen3 235B-A22B](https://qwen.ai/) - MoE with dual-mode reasoning (thinking/non-thinking). Strong math, code, and commonsense reasoning.
 - [Qwen2.5 Coder 32B](https://github.com/QwenLM/Qwen2.5-Coder) - Top open-source model for coding tasks. ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen2.5-Coder?style=flat-square)
 
-### xAI
+### xAI (Grok)
 
-- [Grok 3](https://x.ai/) - Released Feb 2025 by Elon Musk's xAI. Large-scale model trained on Colossus supercluster.
+- [Grok 4.20](https://x.ai/) - 🆕 Feb 2026 beta. Multi-agent system (4 standard + 16 specialized agents in Heavy mode), 2M token context.
+- [Grok 4 / 4 Heavy](https://x.ai/) - Released July 2025. 3T parameters. xAI's frontier model outperforming rivals on key benchmarks.
+- [Grok 3](https://x.ai/) - Released Feb 2025. First dedicated reasoning model with "Think Mode" for step-by-step logic.
 - [Grok 3 Mini](https://x.ai/) - Lightweight reasoning model for faster inference.
 
-### Microsoft
+### Microsoft (Phi)
 
+- [Phi-4-reasoning-vision-15B](https://www.microsoft.com/en-us/research/project/phi/) - 🆕 Released March 2026. 15B multimodal model with selective chain-of-thought reasoning. Edge-deployable.
 - [Phi-4](https://www.microsoft.com/en-us/research/project/phi/) - 14B parameter SLM with reasoning rivaling much larger models. Open-source under MIT License.
-- [Phi-3.5](https://www.microsoft.com/en-us/research/project/phi/) - Compact multimodal model for on-device AI and edge deployment.
+- [Phi-4-mini](https://www.microsoft.com/en-us/research/project/phi/) - 3.8B parameter dense model. 128K context. Excels in reasoning, math, coding, and function-calling.
+- [Phi-4-multimodal](https://www.microsoft.com/en-us/research/project/phi/) - 5.6B parameter. First multimodal Phi model — integrates speech, vision, and text in unified architecture.
 
-### Others
+### Cohere
 
-- [Baidu ERNIE 5.0](https://yiyan.baidu.com/) - Baidu's latest foundation model with strong Chinese language capabilities.
-- [Yi-Lightning](https://www.01.ai/) - 01.AI's cost-efficient model with competitive reasoning performance.
+- [Command A](https://cohere.com/) - 🆕 Released April 2026. 111B open-weights model, 256K context. Agentic, multilingual, and coding focused.
+- [Command R+](https://cohere.com/) - Enterprise RAG model, 128K context, multilingual (10 languages), grounded generation with citations.
+- [Command R](https://cohere.com/) - Cost-efficient model for retrieval-augmented generation and enterprise workloads.
+
+### Baidu (ERNIE / 文心)
+
+- [ERNIE 5.0](https://yiyan.baidu.com/) - 🆕 Released Jan 2026. 2.4T parameters MoE (activates <3% per query). Native full-modal. #1 Chinese model on LMArena.
+- [ERNIE 4.5](https://yiyan.baidu.com/) - Multimodal predecessor released 2025. Strong reasoning and Chinese language capabilities.
+
+### Zhipu AI / Z.ai (GLM)
+
+- [GLM-5](https://z.ai/) - 🆕 Released Feb 2026. 744B parameters, advanced agentic intelligence. Trained on Huawei Ascend chips. Open-source MIT license.
+- [GLM-5V-Turbo](https://z.ai/) - 🆕 Released April 2026. Native multimodal agent — vision, video clips, text inputs.
+- [GLM-4.7](https://z.ai/) - Released late 2025. Matches Claude Opus 4 on SWE-Bench. Strong coding capabilities.
+
+### MiniMax
+
+- [MiniMax-M2.7](https://www.minimax.io/) - 🆕 2026 flagship intelligent model with strong reasoning and coding capabilities.
+- [MiniMax-M1-80k](https://www.minimax.io/) - Open-weight hybrid-attention reasoning model. 456B parameters, 1M token context.
+- [Hailuo AI (Video)](https://hailuoai.video/) - Text/image-to-video generation with AI avatars, voiceovers, and character consistency.
+
+### Moonshot AI (Kimi)
+
+- [Kimi K2.5](https://kimi.ai/) - 🆕 Released Jan-Feb 2026. 1T total / 32B active MoE. Native multimodal, Agent Swarm (up to 100 parallel sub-agents). Open-source.
+- [Kimi Code](https://kimi.ai/) - 🆕 Premium coding tier powered by K2.5, terminal-based developer workflows.
+
+### ByteDance (Doubao / 豆包)
+
+- [Doubao-Seed-2.0 Pro](https://seed.bytedance.com/) - 🆕 Released Feb 2026. Frontier reasoning and complex agents. Competes with GPT-5.2 at ~90% lower cost.
+- [Doubao-Seed-2.0 Lite](https://seed.bytedance.com/) - 🆕 General production workloads. Balanced performance and efficiency.
+- [Doubao-Seed-2.0 Code](https://seed.bytedance.com/) - 🆕 Software development — code generation, debugging, and review.
+- [BAGEL](https://github.com/bytedance-seed/BAGEL) - 🆕 Open-source multimodal model for text, image, and video understanding and generation.
+
+### Amazon (Nova)
+
+- [Nova 2 Pro](https://aws.amazon.com/nova/) - 🆕 Amazon's most intelligent reasoning model. Text, image, video, speech input. Agentic coding and long-range planning.
+- [Nova 2 Lite](https://aws.amazon.com/nova/) - 🆕 Fast, cost-effective reasoning with 1M-token context. Adjustable "thinking effort" controls.
+- [Nova 2 Sonic](https://aws.amazon.com/nova/) - 🆕 Speech-to-speech model for real-time conversational AI. 1M token context, multilingual.
+- [Nova Act](https://aws.amazon.com/nova/) - 🆕 Browser-based AI agent service for web task automation. Powered by Nova 2 Lite.
+- [Nova Forge](https://aws.amazon.com/nova/) - 🆕 "Open training" service for building custom Nova model variants with proprietary data.
+
+### NVIDIA (Nemotron)
+
+- [Nemotron 3 Ultra](https://developer.nvidia.com/nemotron) - 🆕 Released March 2026 (GTC). Frontier-level reasoning, 5x throughput efficiency on Blackwell platform.
+- [Nemotron 3 Super](https://developer.nvidia.com/nemotron) - 🆕 Released March 2026. 120B total / 12B active. 1M context. 5x higher throughput vs predecessor.
+- [Nemotron 3 Nano](https://developer.nvidia.com/nemotron) - Cost-efficient hybrid Transformer-Mamba MoE. Optimized for targeted agentic tasks.
+
+### Apple
+
+- [Apple Foundation Models (AFM)](https://machinelearning.apple.com/research/introducing-apple-foundation-models) - On-device (~3B) and server-based models powering Apple Intelligence. Privacy-first, offline capable.
+- [OpenELM](https://machinelearning.apple.com/research/openelm) - Open-source efficient language models (270M–3B). Designed for on-device processing on Apple silicon.
+
+### Samsung
+
+- [Samsung Gauss 2.3](https://www.samsung.com/) - 🆕 2026 on-device AI model for Galaxy S26. Includes Gauss 2.3 Think and Gauss O Flash variants. Agentic AI capable.
+
+### Inflection AI
+
+- [Inflection 2.5 / Pi](https://inflection.ai/) - Empathetic conversational AI model. Known for emotional intelligence and human-centered interactions.
+
+### 01.AI
+
+- [Yi-Lightning](https://www.01.ai/) - MoE architecture, 200+ tokens/s on RTX 4090. Strong multilingual (Chinese/English), open-source Apache 2.0. Released Oct 2024.
 
 ---
 
@@ -527,7 +608,7 @@ This list is released under [MIT License](LICENSE).
 
 **⭐ If you find this list useful, please give it a star! ⭐**
 
-*200+ resources across 17 categories — from foundation models to agent protocols to generative AI.*
+*230+ resources across 17 categories — from foundation models to agent protocols to generative AI.*
 
 Made with ❤️ by [Zijian Ni](https://github.com/Zijian-Ni)
 
