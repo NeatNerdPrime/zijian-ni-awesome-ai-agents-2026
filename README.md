@@ -318,6 +318,7 @@
 - [FastAgency](https://github.com/airtai/fastagency) - 🆕 High-speed inference and production scaling framework for agents. ![GitHub stars](https://img.shields.io/github/stars/airtai/fastagency?style=flat-square)
 - [Rasa](https://github.com/RasaHQ/rasa) - Open-source conversational AI with strong intent recognition and dialogue management. ![GitHub stars](https://img.shields.io/github/stars/RasaHQ/rasa?style=flat-square)
 - [Lindy](https://www.lindy.ai/) - 🆕 Top no-code agent framework for business users with visual workflow builder.
+- [Octomind](https://github.com/muvon/octomind) - 🆕 Rust-based open-source AI agent runtime. Model-agnostic (13+ providers), community-built specialist agents (developer, medical, legal, DevOps), MCP support with runtime self-extension, zero-config setup. Apache 2.0. ![GitHub stars](https://img.shields.io/github/stars/muvon/octomind?style=flat-square)
 
 ## 🧠 Agent Memory
 
