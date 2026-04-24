@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-April%2024%2C%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-270%2B-orange.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-285%2B-orange.svg)](#)
 [![Categories](https://img.shields.io/badge/Categories-19-purple.svg)](#)
 
 **The definitive curated list of AI models, agent frameworks, tools, protocols, and resources for 2026 — the year agents went mainstream and AI became infrastructure.**
@@ -76,11 +76,14 @@
 
 ### OpenAI
 
-- [GPT-5.4](https://openai.com/) - 🆕 Released March 2026. OpenAI's most capable frontier model with 1M-token context, advanced coding, computer use, and tool search.
-- [GPT-5.3](https://openai.com/) - 🆕 Released early 2026. Includes GPT-5.3 Instant for conversations and GPT-5.3-Codex for coding tasks.
+- [GPT-5.5](https://openai.com/index/gpt-5-5-system-card/) - 🆕 Released **April 23, 2026** (codename "Spud"). OpenAI's new frontier model for agentic tasks: coding, online research, data analysis, autonomous tool navigation. Significant gains in reasoning, consistency, and long-horizon task handling. Available on ChatGPT Plus / Pro / Business / Enterprise.
+- [GPT-5.5 Pro](https://openai.com/index/gpt-5-5-system-card/) - 🆕 April 23, 2026. Parallel test-time compute variant for higher-accuracy cognitive tasks. Pro / Business / Enterprise tiers.
+- [GPT-5.4](https://openai.com/) - Released March 2026. Frontier model with 1M-token context, advanced coding, computer use, tool search. BenchLM 94, SWE-bench Verified 77.2%, OSWorld 75% (beats human).
+- [GPT-5.4 Pro](https://openai.com/) - Higher-accuracy variant of GPT-5.4. BenchLM 92.
+- [GPT-5.3](https://openai.com/) - Early 2026. Includes GPT-5.3 Instant (conversations) and GPT-5.3-Codex (coding).
 - [GPT-5.2](https://openai.com/) - Released Dec 2025. State-of-the-art reasoning, long-context understanding, and vision.
-- [GPT-5](https://openai.com/index/gpt-5/) - Launched August 2025. The default model in ChatGPT, replacing GPT-4o. Multimodal with variants: gpt-5, gpt-5-mini, gpt-5-nano.
-- [GPT-4o](https://openai.com/index/gpt-4o/) - Omni model with native text, vision, and audio. Retired from ChatGPT Feb 2026 but still available via API.
+- [GPT-5](https://openai.com/index/introducing-gpt-5/) - Launched August 2025. The default model in ChatGPT, replacing GPT-4o. Multimodal with variants: gpt-5, gpt-5-mini, gpt-5-nano.
+- [GPT-4o](https://openai.com/index/hello-gpt-4o/) - Omni model with native text, vision, and audio. Retired from ChatGPT Feb 2026 but still available via API.
 - [o3 / o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) - Reasoning models with chain-of-thought for complex problem solving. Released April 2025.
 - [Codex CLI](https://github.com/openai/codex) - Open-source terminal-based coding agent powered by OpenAI models. ![GitHub stars](https://img.shields.io/github/stars/openai/codex?style=flat-square)
 
@@ -107,9 +110,10 @@
 
 ### Meta
 
+- [Muse Spark](https://ai.meta.com/blog/introducing-muse-spark-msl/) - 🆕 **April 9, 2026**. First model from Meta Superintelligence Labs (MSL). Natively multimodal reasoning model powering Meta AI app, smart glasses, and features across Facebook / Instagram / WhatsApp / Messenger.
 - [Llama 4 Scout](https://llama.meta.com/) - 109B total params (17B active), MoE with 16 experts, 10M token context window, multimodal. Runs on single H100.
 - [Llama 4 Maverick](https://llama.meta.com/) - 400B total params (17B active), 128 experts, 1M context. Outperforms GPT-4o on multimodal benchmarks.
-- [Llama 4 Behemoth](https://llama.meta.com/) - 🆕 2T parameters (288B active). In training — Meta's frontier model rivaling top closed-source models.
+- [Llama 4 Behemoth](https://llama.meta.com/) - 2T parameters (288B active). In training — Meta's frontier model rivaling top closed-source models.
 - [Llama 3.3 70B](https://llama.meta.com/) - Strong instruction following and reasoning, open-weight under Llama Community License.
 
 ### Mistral AI
@@ -126,18 +130,21 @@
 
 ### DeepSeek
 
-- [DeepSeek-V4](https://www.deepseek.com/) - 🆕 Released Feb 2026. Multimodal (text, image, video). "Engram memory architecture" for enhanced retention. Optimized for coding.
+- [DeepSeek-V4-Pro](https://api-docs.deepseek.com/news/news260424) - 🆕 **April 24, 2026**. 1.6T total / 49B active MoE, 1M-token context. MIT license. Leadership in agent capabilities, world knowledge, reasoning. Tops open-source benchmarks.
+- [DeepSeek-V4-Flash](https://api-docs.deepseek.com/news/news260424) - 🆕 April 24, 2026. 284B total / 13B active MoE, 1M context. MIT. Cost-efficient tier.
 - [DeepSeek-V3.2](https://www.deepseek.com/) - Released Dec 2025. Advanced MoE architecture with 671B total parameters. V3.2 Speciale variant for enhanced reasoning.
-- [DeepSeek-R2](https://www.deepseek.com/) - 🆕 2026 advanced reasoning model. Successor to R1, competes with GPT-5 and Gemini 3 Pro.
+- [DeepSeek-R2](https://www.deepseek.com/) - 2026 advanced reasoning model. Successor to R1, competes with GPT-5 and Gemini 3 Pro.
 - [DeepSeek-R1](https://www.deepseek.com/) - Reasoning-focused model with chain-of-thought capabilities. Released Jan 2025.
 - [DeepSeek-Coder-V2](https://github.com/deepseek-ai/DeepSeek-Coder-V2) - Code generation model competitive with GPT-4 on coding benchmarks. ![GitHub stars](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-Coder-V2?style=flat-square)
 
 ### Alibaba (Qwen)
 
-- [Qwen3.5 Max Pro](https://qwen.ai/) - 🆕 April 2026. High-performance flagship. Enhanced coding and math reasoning, long context. Challenges top closed models.
-- [Qwen3.5 Omni Plus](https://qwen.ai/) - 🆕 April 2026. Full-modal foundation model unifying text and image input. Document parsing, visual QA, Agent tasks.
-- [Qwen3.6-Plus](https://qwen.ai/) - 🆕 April 2026. High value-per-token general model. Strong long-context and tool-calling for enterprise use.
-- [Qwen3-Max-Thinking](https://qwen.ai/) - Alibaba's strongest model. 1T+ parameters, enhanced agentic capabilities.
+- [Qwen3.6-27B](https://qwen.ai/blog?id=qwen3.6-27b) - 🆕 **April 22, 2026**. Dense 27B multimodal. Open-sourced. Focus: agentic coding + thinking-context preservation.
+- [Qwen3.6-35B-A3B](https://qwen.ai/blog?id=qwen3.6-35b-a3b) - 🆕 **April 15, 2026**. MoE, 35B total / 3B active. Apache 2.0. Stability and real-world utility improvements.
+- [Qwen3.6-Plus](https://qwen.ai/) - 🆕 April 2026. Proprietary flagship. High value-per-token general model. Strong long-context, tool-calling, agentic behavior.
+- [Qwen3.5 Max Pro](https://qwen.ai/) - April 2026. High-performance flagship. Enhanced coding and math reasoning, long context.
+- [Qwen3.5 Omni Plus](https://qwen.ai/) - April 2026. Proprietary full-modal foundation model unifying text and image input.
+- [Qwen3-Max-Thinking](https://qwen.ai/) - Alibaba's strongest thinking model. 1T+ parameters, enhanced agentic capabilities.
 - [Qwen3.5-Omni](https://qwen.ai/) - March 2026. Fully omni-modal: language, vision, sound, motion. Speech recognition in 113 languages, 256K context.
 - [Qwen3-Coder-Next](https://qwen.ai/) - Feb 2026. Open-weight coding agent model, MoE 80B total / 3B active.
 - [Qwen3 235B-A22B](https://qwen.ai/) - MoE with dual-mode reasoning. Strong math, code, and commonsense reasoning.
@@ -152,10 +159,10 @@
 
 ### Microsoft (Phi)
 
-- [Phi-4-reasoning-vision-15B](https://www.microsoft.com/en-us/research/project/phi/) - 🆕 Released March 2026. 15B multimodal model with selective chain-of-thought reasoning. Edge-deployable.
-- [Phi-4](https://www.microsoft.com/en-us/research/project/phi/) - 14B parameter SLM with reasoning rivaling much larger models. Open-source under MIT License.
-- [Phi-4-mini](https://www.microsoft.com/en-us/research/project/phi/) - 3.8B parameter dense model. 128K context. Excels in reasoning, math, coding, and function-calling.
-- [Phi-4-multimodal](https://www.microsoft.com/en-us/research/project/phi/) - 5.6B parameter. First multimodal Phi model — integrates speech, vision, and text in unified architecture.
+- [Phi-4-reasoning-vision-15B](https://azure.microsoft.com/en-us/products/phi) - 🆕 Released March 2026. 15B multimodal model with selective chain-of-thought reasoning. Edge-deployable.
+- [Phi-4](https://azure.microsoft.com/en-us/products/phi) - 14B parameter SLM with reasoning rivaling much larger models. Open-source under MIT License.
+- [Phi-4-mini](https://azure.microsoft.com/en-us/products/phi) - 3.8B parameter dense model. 128K context. Excels in reasoning, math, coding, and function-calling.
+- [Phi-4-multimodal](https://azure.microsoft.com/en-us/products/phi) - 5.6B parameter. First multimodal Phi model — integrates speech, vision, and text in unified architecture.
 
 ### Cohere
 
@@ -170,8 +177,8 @@
 
 ### Zhipu AI / Z.ai (GLM)
 
-- [GLM-5 Reasoning](https://z.ai/) - 🆕 April 2026. BenchLM 85 — **top open-source score**, closing the gap with commercial flagships. SWE-Bench Pro surpasses GPT-5.4 and Claude Opus 4.6.
-- [GLM-5.1](https://z.ai/) - 🆕 April 2026. Open-sourced under MIT license. Trained entirely on Huawei Ascend chips (no NVIDIA hardware).
+- [GLM-5.1](https://z.ai/blog/glm-5.1) - 🆕 **April 7, 2026**. 744B MoE / 40B active, 200K context. MIT license. Tops SWE-Bench Pro. Trained entirely on Huawei Ascend (no NVIDIA).
+- [GLM-5 Reasoning](https://z.ai/) - 🆕 April 2026. BenchLM 85 — **top open-source score**. SWE-Bench Pro surpasses GPT-5.4 and Claude Opus 4.6.
 - [GLM-5V-Turbo](https://z.ai/) - 🆕 April 2026. Native multimodal agent — vision, video clips, text inputs. Cost-performance balanced.
 - [GLM-5](https://z.ai/) - Released Feb 2026. 744B parameters, advanced agentic intelligence. MIT license.
 - [GLM-4.7](https://z.ai/) - Released late 2025. Matches Claude Opus 4 on SWE-Bench.
@@ -185,8 +192,8 @@
 
 ### Moonshot AI (Kimi)
 
-- [Kimi K2.6](https://kimi.ai/) - 🆕 April 2026. Latest flagship MoE. Supports `thinking.keep="all"` persistent reasoning mode. Integrated as default in OpenClaw v2026.4.20+.
-- [Kimi K2.5](https://kimi.ai/) - Jan-Feb 2026. 1T total / 32B active MoE. Native multimodal, Agent Swarm (up to 100 parallel sub-agents). Open-source.
+- [Kimi K2.6](https://kimi.ai/) - 🆕 **April 20-21, 2026**. 1T MoE / 32B active, 256K context. Enhanced coding, long multi-step execution, **agent swarm up to 1,000 collaborating agents**. Supports `thinking.keep="all"` persistent reasoning. Default in OpenClaw v2026.4.20+.
+- [Kimi K2.5](https://kimi.ai/) - Jan-Feb 2026. 1T total / 32B active MoE. Native multimodal, Agent Swarm (up to 100 parallel sub-agents). Open-source. ⚠️ Support ending May 25, 2026 — migrate to K2.6.
 - [Kimi Code](https://kimi.ai/) - Premium coding tier powered by K2.5/K2.6, terminal-based developer workflows.
 
 ### ByteDance (Doubao / 豆包)
@@ -342,7 +349,7 @@
 - [Model Context Protocol (MCP)](https://github.com/modelcontextprotocol/servers) - Open protocol for connecting AI models to external tools and data sources. ![GitHub stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat-square)
 - [mcp-gateway](https://github.com/Zijian-Ni/mcp-gateway) - Gateway server for routing and managing MCP protocol connections. ![GitHub stars](https://img.shields.io/github/stars/Zijian-Ni/mcp-gateway?style=flat-square)
 - [Composio](https://github.com/ComposioHQ/composio) - Integration platform for AI agents — 150+ tools with managed auth. ![GitHub stars](https://img.shields.io/github/stars/ComposioHQ/composio?style=flat-square)
-- [Toolhouse](https://github.com/toolhouseai/toolhouse) - Cloud infrastructure for AI tool use — store, manage, and execute tools. ![GitHub stars](https://img.shields.io/github/stars/toolhouseai/toolhouse?style=flat-square)
+- [Toolhouse](https://toolhouse.ai/) - Cloud infrastructure for AI tool use — store, manage, and execute tools.
 - [LangChain Tools](https://github.com/langchain-ai/langchain) - Extensive collection of tool integrations within the LangChain ecosystem. ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langchain?style=flat-square)
 - [Arcade AI](https://github.com/ArcadeAI/arcade-ai) - Tool calling platform for AI agents and assistants. ![GitHub stars](https://img.shields.io/github/stars/ArcadeAI/arcade-ai?style=flat-square)
 - [E2B](https://github.com/e2b-dev/e2b) - Open-source cloud runtime for AI agents — secure sandboxed environments for code execution. ![GitHub stars](https://img.shields.io/github/stars/e2b-dev/e2b?style=flat-square)
@@ -472,7 +479,7 @@
 - [LiveCodeBench](https://livecodebench.github.io/) - Contest-style coding benchmark, updated continuously to resist contamination.
 - [AIME 2025 / Humanity's Last Exam (HLE)](https://agi.safe.ai/) - Elite math / PhD-level general reasoning.
 - [Terminal-Bench](https://www.tbench.ai/) - CLI agent evaluation. Codex CLI 77.3%.
-- [Wolfram LLM Benchmark](https://www.wolfram.com/language/llm-benchmark/) - Symbolic + code-generation correctness.
+- [Wolfram LLM Benchmarking Project](https://www.wolfram.com/llm-benchmarking-project/) - Code generation benchmark from English spec to Wolfram Language. Updated continuously.
 
 ---
 
@@ -491,7 +498,7 @@
 - [Perplexity Computer](https://www.perplexity.ai/) - 🆕 Research-focused desktop agent with multi-model orchestration and local file access.
 - [Beam AI](https://beam.ai/) - 🆕 Self-learning desktop agents that refine logic based on successful outcomes.
 - [Stagehand](https://github.com/browserbase/stagehand) - 🆕 AI-powered browser automation framework. ![GitHub stars](https://img.shields.io/github/stars/browserbase/stagehand?style=flat-square)
-- [Playwright MCP](https://github.com/anthropics/playwright-mcp) - 🆕 Browser automation via MCP for structured web interaction.
+- [Playwright MCP](https://github.com/microsoft/playwright-mcp) - 🆕 Browser automation via MCP for structured web interaction. ![GitHub stars](https://img.shields.io/github/stars/microsoft/playwright-mcp?style=flat-square)
 
 ---
 
@@ -508,14 +515,14 @@
 - [Vocode](https://github.com/vocodedev/vocode-python) - Open-source library for building voice-based LLM agents. ![GitHub stars](https://img.shields.io/github/stars/vocodedev/vocode-python?style=flat-square)
 - [Bolna](https://github.com/bolna-ai/bolna) - End-to-end open-source voice AI agents framework. ![GitHub stars](https://img.shields.io/github/stars/bolna-ai/bolna?style=flat-square)
 - [Cartesia](https://www.cartesia.ai/) - 🆕 Ultra-low-latency voice AI for real-time conversational agents.
-- [PlayHT](https://play.ht/) - 🆕 AI voice generation platform with conversational AI and voice cloning.
+- [Meta Voice AI](https://ai.meta.com/) - 🆕 Former PlayHT/Play.ai team's tech, integrated into Meta AI, AI Characters, and Meta wearables after July 2025 acquisition. Original Play.ai platform shut down Dec 31, 2025.
 - [Sesame](https://www.sesame.com/) - 🆕 Voice AI companion with emotional understanding and natural conversation.
 
 ## 📱 Personal AI Agents
 
 *AI agents designed for personal use, productivity, and daily life assistance.*
 
-- [OpenClaw](https://github.com/nicobailon/openclaw) - Personal AI agent that lives on your machine — multi-channel, skills, memory. ![GitHub stars](https://img.shields.io/github/stars/nicobailon/openclaw?style=flat-square)
+- [OpenClaw](https://github.com/openclaw/openclaw) - 🆕 Personal AI agent platform with skills, memory, Dreaming, Canvas/A2UI, ACP coding harness integration. Runs on your machine with multi-channel messaging. ![GitHub stars](https://img.shields.io/github/stars/openclaw/openclaw?style=flat-square)
 - [Rabbit R1](https://www.rabbit.tech/) - Dedicated AI hardware device with a large action model for personal assistance.
 - [Limitless](https://www.limitless.ai/) - Personalized AI powered by what you've seen, said, and heard (formerly Rewind).
 - [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter) - A natural language interface for computers — let LLMs run code locally. ![GitHub stars](https://img.shields.io/github/stars/OpenInterpreter/open-interpreter?style=flat-square)
@@ -557,8 +564,8 @@
 - [OpenLLMetry](https://github.com/traceloop/openllmetry) - Open-source observability for LLM applications based on OpenTelemetry. ![GitHub stars](https://img.shields.io/github/stars/traceloop/openllmetry?style=flat-square)
 - [Weights & Biases Weave](https://github.com/wandb/weave) - Toolkit for developing, evaluating, and monitoring AI applications. ![GitHub stars](https://img.shields.io/github/stars/wandb/weave?style=flat-square)
 - [SWE-bench](https://github.com/princeton-nlp/SWE-bench) - Benchmark for evaluating LLMs on real-world software engineering problems. ![GitHub stars](https://img.shields.io/github/stars/princeton-nlp/SWE-bench?style=flat-square)
-- [Terminal-Bench](https://github.com/openai/terminal-bench) - 🆕 Benchmark for terminal-based coding agent evaluation.
-- [LMSYS Chatbot Arena](https://chat.lmsys.org/) - 🆕 Crowdsourced LLM benchmark using human preference voting.
+- [Terminal-Bench](https://www.tbench.ai/) - 🆕 Benchmark for terminal-based coding agent evaluation. Maintained by Harbor Framework. ![GitHub stars](https://img.shields.io/github/stars/harbor-framework/terminal-bench?style=flat-square)
+- [LMArena (formerly LMSYS Chatbot Arena)](https://lmarena.ai/) - 🆕 Crowdsourced LLM benchmark using human preference voting. LMSYS rebranded to LMArena in 2025.
 - [Patronus AI](https://www.patronus.ai/) - 🆕 Automated LLM evaluation and red-teaming platform.
 
 ---
