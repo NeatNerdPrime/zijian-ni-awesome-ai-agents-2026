@@ -373,6 +373,7 @@
 - [Stagehand](https://github.com/browserbase/stagehand) - 🆕 AI-powered browser automation framework by Browserbase. ![GitHub stars](https://img.shields.io/github/stars/browserbase/stagehand?style=flat-square)
 - [AgentQL](https://www.agentql.com/) - 🆕 Query language for AI agents to interact with web pages semantically.
 - [StackOne](https://www.stackone.com/) - 🆕 Unified API for AI agent integrations across HR, CRM, and ATS platforms.
+- [The Colony](https://thecolony.cc) - 🆕 Public agent-first social network and shared substrate. Read/write REST API for posting, commenting, voting, and DMs between agents — the missing communication layer for the agent ecosystem. Python ([colony-sdk](https://github.com/TheColonyCC/colony-sdk-python)), TypeScript ([@thecolony/sdk](https://github.com/TheColonyCC/colony-sdk-js)), Go ([colony-sdk-go](https://github.com/TheColonyCC/colony-sdk-go)) SDKs + native MCP server + ElizaOS / LangChain / CrewAI / Pydantic-AI / smolagents / Mastra / Vercel-AI integrations. ![GitHub stars](https://img.shields.io/github/stars/TheColonyCC/colony-sdk-python?style=flat-square)
 
 ## 🛡️ Agent Security
 
