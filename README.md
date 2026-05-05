@@ -14,6 +14,16 @@
 
 *Covering foundation models, multimodal AI, agent protocols (MCP/A2A), coding agents, computer use, generative AI, and more.*
 
+### 🏷️ Status Legend
+
+Entries may carry one or more status tags so readers can judge maturity at a glance:
+
+- 🆕 **New** — Added in the last 60 days, still settling.
+- 📦 **Archived** — Repository archived by its owner; preserved for historical reference, no further updates expected.
+- 💤 **Stale** — No commits in 6+ months; project may still work but is no longer actively maintained.
+- ⚠️ **Unverified** — Recent submission with limited independent traction (low stars / no third-party adoption / sole-maintainer / submitted to many awesome lists in parallel). Listed for completeness, **not endorsed** — vet before using.
+- 🇨🇳 **Chinese ecosystem** — Project from a mainland-China team or primarily targeting the Chinese market.
+
 [Foundation Models](#-foundation-models-2026) · [Multimodal AI](#-multimodal--generative-ai) · [Protocols](#-agent-protocols--standards) · [Frameworks](#️-agent-frameworks) · [Memory](#-agent-memory) · [Tools](#-tool--api-integration) · [Security](#️-agent-security) · [RAG](#-rag--knowledge) · [Coding](#-coding-agents) · [Physical AI](#-physical-ai--embodied-agents) · [Benchmarks](#-benchmarks--leaderboards) · [Computer Use](#️-computer-use--desktop-agents) · [Voice](#️-voice--multimodal-agents) · [Personal](#-personal-ai-agents) · [Enterprise](#-enterprise-agent-platforms) · [Evaluation](#-agent-evaluation--observability) · [Research Tools](#-ai-research-tools) · [Learning](#-learning-resources) · [Notable 2026](#-notable-agent-projects-of-2026) · [Timeline](#-2026-ai-timeline)
 
 </div>
@@ -260,7 +270,7 @@
 - [DALL·E 3](https://openai.com/dall-e-3) - OpenAI's text-to-image model integrated with ChatGPT for iterative refinement.
 - [Midjourney V7](https://www.midjourney.com/) - Leading AI art generation with photorealistic and artistic capabilities.
 - [Stable Diffusion 3.5](https://stability.ai/) - Open-source image generation with improved coherence and prompt following.
-- [Flux](https://github.com/black-forest-labs/flux) - Black Forest Labs' open-source image model. ![GitHub stars](https://img.shields.io/github/stars/black-forest-labs/flux?style=flat-square)
+- [Flux](https://github.com/black-forest-labs/flux) - 💤 **Stale** (last update 2025-07). Black Forest Labs' open-source image model. ![GitHub stars](https://img.shields.io/github/stars/black-forest-labs/flux?style=flat-square)
 - [Ideogram 3.0](https://ideogram.ai/) - Excels at text rendering in images and design-oriented generation.
 - [Gemini 3 Pro Image](https://deepmind.google/technologies/gemini/) - Google's native image generation within Gemini.
 - [Recraft V3](https://www.recraft.ai/) - Design-focused AI image generation for professional graphics.
@@ -284,7 +294,7 @@
 - [Udio](https://www.udio.com/) - 🆕 Text-to-music generation with professional audio quality.
 - [OpenAI Audio Models](https://openai.com/) - Native audio understanding and generation within GPT-4o.
 - [Stability Audio](https://stability.ai/) - Open-source audio and music generation.
-- [Bark](https://github.com/suno-ai/bark) - Open-source text-to-audio model supporting speech, music, and sound effects. ![GitHub stars](https://img.shields.io/github/stars/suno-ai/bark?style=flat-square)
+- [Bark](https://github.com/suno-ai/bark) - 💤 **Stale** (no commits since 2024-08). Open-source text-to-audio model supporting speech, music, and sound effects. ![GitHub stars](https://img.shields.io/github/stars/suno-ai/bark?style=flat-square)
 
 ---
 
@@ -326,9 +336,9 @@
 - [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - 🆕 [Next evolution shipped April 15, 2026](https://openai.com/index/the-next-evolution-of-the-agents-sdk/) — native sandbox execution, MCP-native tool use, sub-agent handoffs, Codex-style filesystem ops. Production-ready multi-agent workflows. ![GitHub stars](https://img.shields.io/github/stars/openai/openai-agents-python?style=flat-square)
 - [MetaGPT](https://github.com/geekan/MetaGPT) - Multi-agent framework assigning different roles to GPTs for collaborative software entities. ![GitHub stars](https://img.shields.io/github/stars/geekan/MetaGPT?style=flat-square)
 - [Mastra](https://github.com/mastra-ai/mastra) - 🆕 TypeScript-first agent framework with workflow-driven development and built-in observability. ![GitHub stars](https://img.shields.io/github/stars/mastra-ai/mastra?style=flat-square)
-- [AgentGPT](https://github.com/reworkd/AgentGPT) - Assemble, configure, and deploy autonomous AI agents in your browser. ![GitHub stars](https://img.shields.io/github/stars/reworkd/AgentGPT?style=flat-square)
+- [AgentGPT](https://github.com/reworkd/AgentGPT) - 📦 **Archived** (2025-04). Assemble, configure, and deploy autonomous AI agents in your browser. Influential first-wave project, kept for historical reference; no longer maintained. ![GitHub stars](https://img.shields.io/github/stars/reworkd/AgentGPT?style=flat-square)
 - [BabyAGI](https://github.com/yoheinakajima/babyagi) - AI-powered task management system using LLMs to create, prioritize, and execute tasks. ![GitHub stars](https://img.shields.io/github/stars/yoheinakajima/babyagi?style=flat-square)
-- [SuperAGI](https://github.com/TransformerOptimus/SuperAGI) - Open-source autonomous AI agent framework to build, manage & run agents. ![GitHub stars](https://img.shields.io/github/stars/TransformerOptimus/SuperAGI?style=flat-square)
+- [SuperAGI](https://github.com/TransformerOptimus/SuperAGI) - 💤 **Stale** (no commits since 2025-01). Open-source autonomous AI agent framework to build, manage & run agents. ![GitHub stars](https://img.shields.io/github/stars/TransformerOptimus/SuperAGI?style=flat-square)
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) - Integrate LLM technology into apps. C#, Python, Java support. ![GitHub stars](https://img.shields.io/github/stars/microsoft/semantic-kernel?style=flat-square)
 - [Phidata (Agno)](https://github.com/phidatahq/phidata) - Build multi-modal agents with memory, knowledge, tools and reasoning. ![GitHub stars](https://img.shields.io/github/stars/phidatahq/phidata?style=flat-square)
 - [DSPy](https://github.com/stanfordnlp/dspy) - The framework for programming—not prompting—language models. ![GitHub stars](https://img.shields.io/github/stars/stanfordnlp/dspy?style=flat-square)
@@ -351,7 +361,7 @@
 - [Zep](https://github.com/getzep/zep) - Long-term memory for AI assistants and agents. ![GitHub stars](https://img.shields.io/github/stars/getzep/zep?style=flat-square)
 - [agent-memory](https://github.com/Zijian-Ni/agent-memory) - Lightweight agent memory framework for persistent context across sessions. ![GitHub stars](https://img.shields.io/github/stars/Zijian-Ni/agent-memory?style=flat-square)
 - [LangMem](https://github.com/langchain-ai/langmem) - Long-term memory library for LangChain agents. ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langmem?style=flat-square)
-- [Motorhead](https://github.com/getmetal/motorhead) - Memory and context management server for LLMs. ![GitHub stars](https://img.shields.io/github/stars/getmetal/motorhead?style=flat-square)
+- [Motorhead](https://github.com/getmetal/motorhead) - 💤 **Stale** (no commits since 2025-07). Memory and context management server for LLMs. ![GitHub stars](https://img.shields.io/github/stars/getmetal/motorhead?style=flat-square)
 - [ChromaDB](https://github.com/chroma-core/chroma) - AI-native open-source embedding database for memory-augmented agents. ![GitHub stars](https://img.shields.io/github/stars/chroma-core/chroma?style=flat-square)
 - [Cognee](https://github.com/topoteretes/cognee) - Deterministic LLM outputs using graphs, LLMs, and vector retrieval. ![GitHub stars](https://img.shields.io/github/stars/topoteretes/cognee?style=flat-square)
 - [LangGraph Memory](https://github.com/langchain-ai/langgraph) - 🆕 Built-in persistence and checkpointing for stateful agent workflows. ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat-square)
@@ -375,7 +385,7 @@
 - [Stagehand](https://github.com/browserbase/stagehand) - 🆕 AI-powered browser automation framework by Browserbase. ![GitHub stars](https://img.shields.io/github/stars/browserbase/stagehand?style=flat-square)
 - [AgentQL](https://www.agentql.com/) - 🆕 Query language for AI agents to interact with web pages semantically.
 - [StackOne](https://www.stackone.com/) - 🆕 Unified API for AI agent integrations across HR, CRM, and ATS platforms.
-- [The Colony](https://thecolony.cc) - 🆕 Public agent-first social network and shared substrate. Read/write REST API for posting, commenting, voting, and DMs between agents — the missing communication layer for the agent ecosystem. Python ([colony-sdk](https://github.com/TheColonyCC/colony-sdk-python)), TypeScript ([@thecolony/sdk](https://github.com/TheColonyCC/colony-sdk-js)), Go ([colony-sdk-go](https://github.com/TheColonyCC/colony-sdk-go)) SDKs + native MCP server + ElizaOS / LangChain / CrewAI / Pydantic-AI / smolagents / Mastra / Vercel-AI integrations. ![GitHub stars](https://img.shields.io/github/stars/TheColonyCC/colony-sdk-python?style=flat-square)
+- [The Colony](https://thecolony.cc) - ⚠️ **Unverified.** Self-described public agent-first social network with REST API for agent posts/votes/DMs and SDKs in Python ([colony-sdk-python](https://github.com/TheColonyCC/colony-sdk-python)), TypeScript ([colony-sdk-js](https://github.com/TheColonyCC/colony-sdk-js)) and Go ([colony-sdk-go](https://github.com/TheColonyCC/colony-sdk-go)). Organisation and SDK repos are <30 days old, all 0–2 stars, single-maintainer; same submission was sent to 15+ awesome lists in parallel — listed for visibility, evaluate before depending on it. ![GitHub stars](https://img.shields.io/github/stars/TheColonyCC/colony-sdk-python?style=flat-square)
 
 ## 🛡️ Agent Security
 
@@ -383,10 +393,10 @@
 
 - [prompt-firewall](https://github.com/Zijian-Ni/prompt-firewall) - Firewall for LLM prompts — detect and block prompt injection attacks. ![GitHub stars](https://img.shields.io/github/stars/Zijian-Ni/prompt-firewall?style=flat-square)
 - [LLM Guard](https://github.com/protectai/llm-guard) - The Security Toolkit for LLM Interactions — input/output scanners for AI. ![GitHub stars](https://img.shields.io/github/stars/protectai/llm-guard?style=flat-square)
-- [Rebuff](https://github.com/protectai/rebuff) - Self-hardening prompt injection detector — detect, deflect, and report. ![GitHub stars](https://img.shields.io/github/stars/protectai/rebuff?style=flat-square)
+- [Rebuff](https://github.com/protectai/rebuff) - 📦 **Archived** (2024-08). Self-hardening prompt injection detector — detect, deflect, and report. Listed for historical reference; no longer maintained. ![GitHub stars](https://img.shields.io/github/stars/protectai/rebuff?style=flat-square)
 - [Guardrails AI](https://github.com/guardrails-ai/guardrails) - Adding guardrails to large language models — validate and correct LLM outputs. ![GitHub stars](https://img.shields.io/github/stars/guardrails-ai/guardrails?style=flat-square)
 - [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails) - Toolkit for adding programmable guardrails to LLM-based conversational systems. ![GitHub stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Guardrails?style=flat-square)
-- [Vigil](https://github.com/deadbits/vigil-llm) - LLM security scanner — detect prompt injections, jailbreaks, and data leakage. ![GitHub stars](https://img.shields.io/github/stars/deadbits/vigil-llm?style=flat-square)
+- [Vigil](https://github.com/deadbits/vigil-llm) - 💤 **Stale** (no commits since 2024-01). LLM security scanner — detect prompt injections, jailbreaks, and data leakage. ![GitHub stars](https://img.shields.io/github/stars/deadbits/vigil-llm?style=flat-square)
 - [Lakera Guard](https://www.lakera.ai/) - Enterprise-grade AI security platform for prompt injection defense.
 - [Garak](https://github.com/NVIDIA/garak) - LLM vulnerability scanner by NVIDIA — probe for weaknesses in language models. ![GitHub stars](https://img.shields.io/github/stars/NVIDIA/garak?style=flat-square)
 - [Invariant Guardrails](https://github.com/invariantlabs-ai/invariant) - 🆕 Runtime guardrails for AI agents — policy enforcement and safety checks. ![GitHub stars](https://img.shields.io/github/stars/invariantlabs-ai/invariant?style=flat-square)
@@ -410,7 +420,7 @@
 - [Kotaemon](https://github.com/Cinnamon/kotaemon) - 🆕 Open-source RAG-based tool for chatting with documents. ![GitHub stars](https://img.shields.io/github/stars/Cinnamon/kotaemon?style=flat-square)
 - [LightRAG](https://github.com/HKUDS/LightRAG) - 🆕 Simple and fast RAG engine with graph-based knowledge indexing. ![GitHub stars](https://img.shields.io/github/stars/HKUDS/LightRAG?style=flat-square)
 - [R2R](https://github.com/SciPhi-AI/R2R) - 🆕 Production-ready RAG engine with built-in auth, observability, and ingestion. ![GitHub stars](https://img.shields.io/github/stars/SciPhi-AI/R2R?style=flat-square)
-- [Vanna](https://github.com/vanna-ai/vanna) - 🆕 RAG for SQL — chat with your database using natural language. ![GitHub stars](https://img.shields.io/github/stars/vanna-ai/vanna?style=flat-square)
+- [Vanna](https://github.com/vanna-ai/vanna) - 📦 **Archived** (2026-02). RAG for SQL — chat with your database using natural language. ![GitHub stars](https://img.shields.io/github/stars/vanna-ai/vanna?style=flat-square)
 
 ## 💻 Coding Agents
 
@@ -440,8 +450,8 @@
 - [Devin 3.0](https://www.cognition.ai/) - 🆕 By Cognition. Dynamic re-planning, self-healing code, legacy codebase migration, multi-modal input (UI mockups, video recordings).
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) - Open-source platform for AI software developers as autonomous agents. ![GitHub stars](https://img.shields.io/github/stars/All-Hands-AI/OpenHands?style=flat-square)
 - [SWE-agent](https://github.com/SWE-agent/SWE-agent) - Turn LLMs into software engineering agents that fix real GitHub issues. ![GitHub stars](https://img.shields.io/github/stars/SWE-agent/SWE-agent?style=flat-square)
-- [Devika](https://github.com/stitionai/devika) - Agentic AI software engineer — open-source alternative to Devin. ![GitHub stars](https://img.shields.io/github/stars/stitionai/devika?style=flat-square)
-- [GPT Engineer](https://github.com/gpt-engineer-org/gpt-engineer) - Specify what you want built, AI asks for clarification, then builds it. ![GitHub stars](https://img.shields.io/github/stars/gpt-engineer-org/gpt-engineer?style=flat-square)
+- [Devika](https://github.com/stitionai/devika) - 💤 **Stale** (no commits since 2025-09). Agentic AI software engineer — open-source alternative to Devin. ![GitHub stars](https://img.shields.io/github/stars/stitionai/devika?style=flat-square)
+- [GPT Engineer](https://github.com/gpt-engineer-org/gpt-engineer) - 📦 **Archived** (2025-05). Specify what you want built, AI asks for clarification, then builds it. Foundational project of the autonomous-coding era, kept for historical reference. ![GitHub stars](https://img.shields.io/github/stars/gpt-engineer-org/gpt-engineer?style=flat-square)
 - [Codegen](https://github.com/codegen-sh/codegen-sdk) - 🆕 Programmatic code manipulation and multi-file refactoring SDK. ![GitHub stars](https://img.shields.io/github/stars/codegen-sh/codegen-sdk?style=flat-square)
 - [Qodo](https://www.qodo.ai/) - 🆕 AI Code Review Platform focused on quality, security, and test generation.
 
@@ -465,7 +475,7 @@
 - [Zhiyuan (智元) AGIBOT](https://www.agibot.com/) - 🆕 April 2026. New humanoid body, foundation model, and solution suite. Calls 2026 "Deployment Year Zero."
 - [Unitree H-series](https://www.unitree.com/) - Boston Dynamics competitor from China. Ongoing 2026 iterations.
 - [Agile Robotics](https://www.agile-robots.com/) - 🆕 Gemini Robotics ER-1.6 deployment partner. German robotics company.
-- [Shenzhen Humanoid Pilot Line](https://www.sz.gov.cn/) - 🆕 First full production line for humanoid robots (Shenzhen, 2026).
+- [Shenzhen Humanoid Pilot Line](https://www.chinadailyhk.com/hk/article/631892) - 🆕 🇨🇳 Shenzhen launched its first pilot production line for humanoid robots on **April 12, 2026** (Leju Robotics + Dongfang Precision in Longhua District). 2-hour assembly cycle, 500–1,000 units/year, with mass production moving to a 10,000-units/year Foshan facility.
 
 ### Consumer Robotics & Wearables
 
@@ -488,7 +498,7 @@
 
 - [BenchLM](https://benchlm.ai/) - 🆕 Composite leaderboard that aggregates multiple benchmark families. April 2026 top: Claude Mythos Preview 99, Gemini 3.1 Pro / GPT-5.4 tied at 94, Claude Opus 4.6 / GPT-5.4 Pro at 92, GLM-5 Reasoning 85 (top open).
 - [SWE-bench Verified](https://www.swebench.com/) - Real-world GitHub issue resolution benchmark. April 2026 top: Claude Mythos 93.9%, Claude Opus 4.7 87.6%.
-- [GPQA Diamond](https://github.com/idavidrein/gpqa) - Expert-level science reasoning. April 2026 top: Gemini 3.1 Pro 94.3% (world-record), Claude Opus 4.7 94.2%.
+- [GPQA Diamond](https://github.com/idavidrein/gpqa) - 💤 **Stale** dataset repo (last update 2024-09). Expert-level science reasoning. April 2026 top: Gemini 3.1 Pro 94.3% (world-record), Claude Opus 4.7 94.2%.
 - [ARC-AGI 2](https://arcprize.org/) - Abstract reasoning over novel tasks. Gemini 3.1 Pro 77.1%.
 - [OSWorld](https://os-world.github.io/) - Desktop GUI manipulation. GPT-5.4 at 75% (exceeded human baseline).
 - [LMArena (formerly Chatbot Arena)](https://lmarena.ai/) - Crowdsourced chat preference battles. Opus 4.6 currently leads.
@@ -529,7 +539,7 @@
 - [Bland AI](https://www.bland.ai/) - AI phone calling platform — enterprise-grade conversational AI.
 - [LiveKit Agents](https://github.com/livekit/agents) - Build real-time multimodal AI agents with voice, video, and data. ![GitHub stars](https://img.shields.io/github/stars/livekit/agents?style=flat-square)
 - [Pipecat](https://github.com/pipecat-ai/pipecat) - Open-source framework for voice and multimodal conversational AI. ![GitHub stars](https://img.shields.io/github/stars/pipecat-ai/pipecat?style=flat-square)
-- [Vocode](https://github.com/vocodedev/vocode-python) - Open-source library for building voice-based LLM agents. ![GitHub stars](https://img.shields.io/github/stars/vocodedev/vocode-python?style=flat-square)
+- [Vocode](https://github.com/vocodedev/vocode-python) - 💤 **Stale** (no commits since 2024-11). Open-source library for building voice-based LLM agents. ![GitHub stars](https://img.shields.io/github/stars/vocodedev/vocode-python?style=flat-square)
 - [Bolna](https://github.com/bolna-ai/bolna) - End-to-end open-source voice AI agents framework. ![GitHub stars](https://img.shields.io/github/stars/bolna-ai/bolna?style=flat-square)
 - [Cartesia](https://www.cartesia.ai/) - 🆕 Ultra-low-latency voice AI for real-time conversational agents.
 - [Meta Voice AI](https://ai.meta.com/) - 🆕 Former PlayHT/Play.ai team's tech, integrated into Meta AI, AI Characters, and Meta wearables after July 2025 acquisition. Original Play.ai platform shut down Dec 31, 2025.
@@ -543,7 +553,7 @@
 - [Rabbit R1](https://www.rabbit.tech/) - Dedicated AI hardware device with a large action model for personal assistance.
 - [Limitless](https://www.limitless.ai/) - Personalized AI powered by what you've seen, said, and heard (formerly Rewind).
 - [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter) - A natural language interface for computers — let LLMs run code locally. ![GitHub stars](https://img.shields.io/github/stars/OpenInterpreter/open-interpreter?style=flat-square)
-- [01 Light](https://github.com/OpenInterpreter/01) - Open-source voice interface for computers. ![GitHub stars](https://img.shields.io/github/stars/OpenInterpreter/01?style=flat-square)
+- [01 Light](https://github.com/OpenInterpreter/01) - 💤 **Stale** (no commits since 2024-11). Open-source voice interface for computers. ![GitHub stars](https://img.shields.io/github/stars/OpenInterpreter/01?style=flat-square)
 - [Leon](https://github.com/leon-ai/leon) - Open-source personal assistant — lives on your server. ![GitHub stars](https://img.shields.io/github/stars/leon-ai/leon?style=flat-square)
 - [Khoj](https://github.com/khoj-ai/khoj) - Personal AI second brain — search and chat with your notes, docs, and images. ![GitHub stars](https://img.shields.io/github/stars/khoj-ai/khoj?style=flat-square)
 - [Humane AI Pin](https://humane.com/) - Wearable AI device with a screenless, ambient computing experience.
@@ -585,8 +595,8 @@
 - [Terminal-Bench](https://www.tbench.ai/) - 🆕 Benchmark for terminal-based coding agent evaluation. Maintained by Harbor Framework. ![GitHub stars](https://img.shields.io/github/stars/harbor-framework/terminal-bench?style=flat-square)
 - [LMArena (formerly LMSYS Chatbot Arena)](https://lmarena.ai/) - 🆕 Crowdsourced LLM benchmark using human preference voting. LMSYS rebranded to LMArena in 2025.
 - [Patronus AI](https://www.patronus.ai/) - 🆕 Automated LLM evaluation and red-teaming platform.
-- [BenchClaw](https://github.com/Agnuxo1/benchclaw) - 🆕 Multi-dimensional AI agent evaluation harness — 17-judge tribunal, 8 deception detectors, 10 scoring dimensions. Connect any LLM agent for scientific benchmarking. ![GitHub stars](https://img.shields.io/github/stars/Agnuxo1/benchclaw?style=flat-square)
-- [PromptEden](https://www.prompteden.com) - External AI-visibility monitoring — tracks how ChatGPT, Claude, Gemini, Perplexity, Copilot, and Grok describe your brand and which competitors they recommend instead, refreshed daily across 9+ platforms.
+- [BenchClaw](https://github.com/Agnuxo1/benchclaw) - ⚠️ **Unverified.** Self-described multi-dimensional agent evaluation harness (17-judge tribunal, deception detectors, 10 scoring dimensions). Repo is single-maintainer with very low independent adoption; the same PR was rejected by 7 of the 8 awesome lists it was submitted to — listed for visibility, evaluate before relying on its scores. ![GitHub stars](https://img.shields.io/github/stars/Agnuxo1/benchclaw?style=flat-square)
+- [PromptEden](https://www.prompteden.com) - ⚠️ **Unverified.** Commercial AI-visibility monitoring service — tracks how ChatGPT, Claude, Gemini, Perplexity, Copilot, and Grok describe brands and which competitors they recommend, refreshed daily across 9+ platforms. Submitted to 10 awesome lists on the same day — promising category but listed for visibility only, evaluate before purchasing.
 
 ---
 
@@ -634,7 +644,7 @@
 
 ### Curated Lists
 
-- [awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents) - Curated list of AI autonomous agents by E2B. ![GitHub stars](https://img.shields.io/github/stars/e2b-dev/awesome-ai-agents?style=flat-square)
+- [awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents) - 💤 **Stale** (last update 2025-02). Curated list of AI autonomous agents by E2B — pre-2026 reference. ![GitHub stars](https://img.shields.io/github/stars/e2b-dev/awesome-ai-agents?style=flat-square)
 - [awesome-llm-agents](https://github.com/kaushikb11/awesome-llm-agents) - Curated list of LLM-powered agent resources. ![GitHub stars](https://img.shields.io/github/stars/kaushikb11/awesome-llm-agents?style=flat-square)
 - [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - 🆕 Curated list of MCP server implementations. ![GitHub stars](https://img.shields.io/github/stars/punkpeye/awesome-mcp-servers?style=flat-square)
 
