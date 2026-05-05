@@ -1,0 +1,68 @@
+name: Refresh Stars & Last-Updated Badge
+
+# The shields.io badges are live (rendered on every README view), so we don't
+# need to rewrite numbers in the file. We do refresh:
+#   1. The "Last Updated" date badge in the title block
+#   2. Audit any newly-archived projects so we can flag them
+#
+# Runs monthly + on demand. Opens a PR rather than pushing directly.
+
+on:
+  schedule:
+    - cron: "0 5 1 * *" # 05:00 UTC on the 1st of every month
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update Last-Updated badge
+        run: |
+          today=$(date -u "+%B%%20%-d%%2C%%202026")
+          sed -i -E "s|Last%20Updated-[^-]+-blue.svg|Last%20Updated-${today}-blue.svg|" README.md || true
+
+      - name: Detect newly-archived listed repos
+        id: archived
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          mkdir -p artifacts
+          # Extract owner/repo pairs (skip badge URLs)
+          grep -oE 'https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+' README.md \
+            | grep -v "shields.io" \
+            | sed -E 's|https://github.com/||; s|/$||; s|[).,]+$||' \
+            | sort -u > artifacts/repos.txt
+
+          : > artifacts/archived.md
+          while read -r repo; do
+            json=$(gh api "repos/$repo" 2>/dev/null || true)
+            [ -z "$json" ] && continue
+            archived=$(jq -r '.archived' <<<"$json")
+            pushed=$(jq -r '.pushed_at' <<<"$json")
+            if [ "$archived" = "true" ]; then
+              if ! grep -qiE "[\`\"]?$repo[\`\"]?.*Archived" README.md; then
+                echo "- \`$repo\` is now archived (last push: $pushed)" >> artifacts/archived.md
+              fi
+            fi
+          done < artifacts/repos.txt
+
+      - name: Open PR if changes
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: chore/auto-refresh
+          commit-message: "chore: monthly badge refresh + archive scan"
+          title: "chore: monthly badge refresh + archive scan"
+          body-path: artifacts/archived.md
+          labels: |
+            automation
+            maintenance
+          add-paths: |
+            README.md

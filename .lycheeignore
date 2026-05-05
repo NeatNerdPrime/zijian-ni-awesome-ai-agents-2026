@@ -1,0 +1,31 @@
+# lychee URL exclusions for sites that block HEAD/cloud egress but work in real browsers.
+# These are deliberately allowed in the README and not considered broken.
+
+# OpenAI / X / Perplexity / Midjourney aggressively block automated requests
+^https?://(www\.)?openai\.com($|/)
+^https?://x\.ai($|/)
+^https?://(www\.)?perplexity\.ai($|/)
+^https?://(www\.)?midjourney\.com($|/)
+^https?://(www\.)?ideogram\.ai($|/)
+^https?://(www\.)?genspark\.ai($|/)
+
+# Sites that 401/405 on HEAD even with a real UA
+^https?://qwen\.ai
+^https?://(www\.)?reuters\.com($|/)
+^https?://aibusiness\.com
+^https?://claude\.ai/security
+^https?://(www\.)?researchgate\.net
+
+# Geo-restricted but valid
+^https?://(www\.)?sz\.gov\.cn
+^https?://(www\.)?limitless\.ai
+
+# Vendor / consumer sites that bot-block
+^https?://(www\.)?samsung\.com
+^https?://(www\.)?tesla\.com
+^https?://(www\.)?microsoft\.com/en-us/microsoft-copilot
+^https?://(www\.)?servicenow\.com
+
+# Shields badges — they are images, not docs
+shields\.io
+img\.shields\.io
