@@ -11,6 +11,7 @@
 [![Categories](https://img.shields.io/badge/Categories-25-purple.svg)](#)
 [![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--05-success.svg)](#️-status-legend)
 [![Chinese](https://img.shields.io/badge/Lang-中文-red.svg)](README.zh-CN.md)
+[![Japanese](https://img.shields.io/badge/Lang-日本語-purple.svg)](README.ja.md)
 
 **The definitive curated list of AI models, agent frameworks, tools, protocols, and resources for 2026 — the year agents went mainstream and AI became infrastructure.**
 

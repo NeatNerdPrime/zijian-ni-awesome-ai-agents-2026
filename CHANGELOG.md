@@ -86,3 +86,27 @@ Format: `YYYY-MM-DD  +Added  -Removed  ~Changed`.
 - **Closed** — pull requests rejected (kept here for transparency).
 
 Status tag changes (from no-tag → 📦 / 💤 / ⚠️) are documented under "Changed" so readers can see when caveats were added.
+
+## 2026-05-05 (Part 2) — Full Chinese + Japanese parity
+
+### + Added
+
+- `README.zh-CN.md` (中文版) — full parallel translation, 906 lines, 451
+  entries across all 25 sections + 5 comparison tables + complete 2026
+  timeline. No more "see English version" stubs.
+- `README.ja.md` (日本語版) — full Japanese parallel translation, 909
+  lines, same parity. Native technical Japanese with proper katakana
+  conventions.
+- Language-switch badges in all three READMEs cross-link to each other.
+- Updated CONTRIBUTING reference to mention all three language versions
+  share the same anti-spam quality gate.
+
+### Translation policy
+
+- All status tags (🆕 / 📦 / 💤 / ⚠️ / 🇨🇳) preserved verbatim across
+  languages.
+- All URLs identical; only entry descriptions translated.
+- Minor differences allowed for natural reading (e.g., the Quick Nav
+  table header is split differently in EN to fit the badge row).
+- English README remains the source of truth — divergence is resolved
+  in EN's favour.
