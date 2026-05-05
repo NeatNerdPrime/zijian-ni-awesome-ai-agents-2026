@@ -8,7 +8,8 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-May%204%2C%202026-blue.svg)](#)
 [![Resources](https://img.shields.io/badge/Resources-300%2B-orange.svg)](#)
-[![Categories](https://img.shields.io/badge/Categories-19-purple.svg)](#)
+[![Categories](https://img.shields.io/badge/Categories-25-purple.svg)](#)
+[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--05-success.svg)](#️-status-legend)
 
 **The definitive curated list of AI models, agent frameworks, tools, protocols, and resources for 2026 — the year agents went mainstream and AI became infrastructure.**
 
@@ -24,7 +25,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - ⚠️ **Unverified** — Recent submission with limited independent traction (low stars / no third-party adoption / sole-maintainer / submitted to many awesome lists in parallel). Listed for completeness, **not endorsed** — vet before using.
 - 🇨🇳 **Chinese ecosystem** — Project from a mainland-China team or primarily targeting the Chinese market.
 
-[Foundation Models](#-foundation-models-2026) · [Multimodal AI](#-multimodal--generative-ai) · [Protocols](#-agent-protocols--standards) · [Frameworks](#️-agent-frameworks) · [Memory](#-agent-memory) · [Tools](#-tool--api-integration) · [Security](#️-agent-security) · [RAG](#-rag--knowledge) · [Coding](#-coding-agents) · [Physical AI](#-physical-ai--embodied-agents) · [Benchmarks](#-benchmarks--leaderboards) · [Computer Use](#️-computer-use--desktop-agents) · [Voice](#️-voice--multimodal-agents) · [Personal](#-personal-ai-agents) · [Enterprise](#-enterprise-agent-platforms) · [Evaluation](#-agent-evaluation--observability) · [Research Tools](#-ai-research-tools) · [Learning](#-learning-resources) · [Notable 2026](#-notable-agent-projects-of-2026) · [Timeline](#-2026-ai-timeline)
+[Foundation Models](#-foundation-models-2026) · [Multimodal AI](#-multimodal--generative-ai) · [Protocols](#-agent-protocols--standards) · [Frameworks](#️-agent-frameworks) · [IDEs & Builders](#️-agent-ides--visual-builders) · [Memory](#-agent-memory) · [Tools](#-tool--api-integration) · [Sandboxing](#-agent-sandboxing--compute-isolation) · [Security](#️-agent-security) · [RAG](#-rag--knowledge) · [Coding](#-coding-agents) · [Physical AI](#-physical-ai--embodied-agents) · [Simulation](#-agent-simulation--world-models) · [Benchmarks](#-benchmarks--leaderboards) · [Computer Use](#️-computer-use--desktop-agents) · [Browser & Web](#-browser--web-agents) · [Voice](#️-voice--multimodal-agents) · [Personal](#-personal-ai-agents) · [Mobile](#-mobile-agents) · [Enterprise](#-enterprise-agent-platforms) · [Evaluation](#-agent-evaluation--observability) · [Research Tools](#-ai-research-tools) · [Learning](#-learning-resources) · [Chinese Ecosystem](#-chinese-ai-ecosystem) · [Compare](#-compare--side-by-side-tables) · [Notable 2026](#-notable-agent-projects-of-2026) · [Timeline](#-2026-ai-timeline)
 
 </div>
 
@@ -37,21 +38,28 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 | [🧠 Foundation Models](#-foundation-models-2026) | Latest LLMs from OpenAI, Anthropic, Google, Meta, and 20+ providers | 65+ |
 | [🎨 Multimodal & Generative AI](#-multimodal--generative-ai) | Image, video, audio, and music generation | 20+ |
 | [🔗 Agent Protocols](#-agent-protocols--standards) | MCP, A2A, and interoperability standards | 10+ |
-| [🏗️ Agent Frameworks](#️-agent-frameworks) | Libraries for building autonomous AI agents | 20+ |
+| [🏗️ Agent Frameworks](#️-agent-frameworks) | Libraries for building autonomous AI agents | 22+ |
+| [🛠️ Agent IDEs & Visual Builders](#️-agent-ides--visual-builders) | Visual / low-code environments for designing agent flows | 8+ |
 | [🧠 Agent Memory](#-agent-memory) | Persistent memory and context management | 10+ |
 | [🔌 Tool & API Integration](#-tool--api-integration) | Connecting agents to external services | 15+ |
-| [🛡️ Agent Security](#️-agent-security) | Prompt injection defense and guardrails | 10+ |
+| [🧪 Sandboxing & Compute Isolation](#-agent-sandboxing--compute-isolation) | Secure runtimes for agent-generated code | 7+ |
+| [🛡️ Agent Security](#️-agent-security) | Prompt injection defense and guardrails | 14+ |
 | [🔍 RAG & Knowledge](#-rag--knowledge) | Retrieval-augmented generation systems | 12+ |
 | [💻 Coding Agents](#-coding-agents) | AI-powered software engineering | 22+ |
 | [🤖 Physical AI](#-physical-ai--embodied-agents) | Humanoid robots, embodied AI, industrial automation | 18+ |
+| [🎮 Simulation & World Models](#-agent-simulation--world-models) | Sim environments for training and stress-testing agents | 7+ |
 | [📊 Benchmarks](#-benchmarks--leaderboards) | Leaderboards tracking frontier capability | 11+ |
-| [🖥️ Computer Use](#️-computer-use--desktop-agents) | Desktop automation and computer control | 12+ |
+| [🖥️ Computer Use](#️-computer-use--desktop-agents) | Desktop automation and OS-level control | 9+ |
+| [🌐 Browser & Web Agents](#-browser--web-agents) | Agents that drive real browsers | 9+ |
 | [🗣️ Voice & Multimodal Agents](#️-voice--multimodal-agents) | Voice-enabled conversational AI | 10+ |
 | [📱 Personal AI Agents](#-personal-ai-agents) | Productivity and daily life assistants | 10+ |
+| [📱 Mobile Agents](#-mobile-agents) | Phone-control agents (Android / iOS) | 6+ |
 | [🏢 Enterprise Platforms](#-enterprise-agent-platforms) | Enterprise-grade agent deployment | 12+ |
-| [📊 Evaluation & Observability](#-agent-evaluation--observability) | Testing, monitoring, and benchmarking | 12+ |
+| [📊 Evaluation & Observability](#-agent-evaluation--observability) | Testing, monitoring, and benchmarking | 17+ |
 | [🔬 AI Research Tools](#-ai-research-tools) | Tools for AI/ML research and experimentation | 10+ |
-| [📚 Learning Resources](#-learning-resources) | Papers, courses, and tutorials | 15+ |
+| [📚 Learning Resources](#-learning-resources) | Papers, courses, and tutorials | 20+ |
+| [🇨🇳 Chinese AI Ecosystem](#-chinese-ai-ecosystem) | Major projects from China-based teams | 18+ |
+| [📝 Compare](#-compare--side-by-side-tables) | Side-by-side comparison tables | — |
 
 ---
 
@@ -61,20 +69,27 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [🎨 Multimodal & Generative AI](#-multimodal--generative-ai)
 - [🔗 Agent Protocols & Standards](#-agent-protocols--standards)
 - [🏗️ Agent Frameworks](#️-agent-frameworks)
+- [🛠️ Agent IDEs & Visual Builders](#️-agent-ides--visual-builders)
 - [🧠 Agent Memory](#-agent-memory)
 - [🔌 Tool & API Integration](#-tool--api-integration)
+- [🧪 Agent Sandboxing & Compute Isolation](#-agent-sandboxing--compute-isolation)
 - [🛡️ Agent Security](#️-agent-security)
 - [🔍 RAG & Knowledge](#-rag--knowledge)
 - [💻 Coding Agents](#-coding-agents)
 - [🤖 Physical AI & Embodied Agents](#-physical-ai--embodied-agents)
+- [🎮 Agent Simulation & World Models](#-agent-simulation--world-models)
 - [📊 Benchmarks & Leaderboards](#-benchmarks--leaderboards)
 - [🖥️ Computer Use & Desktop Agents](#️-computer-use--desktop-agents)
+- [🌐 Browser & Web Agents](#-browser--web-agents)
 - [🗣️ Voice & Multimodal Agents](#️-voice--multimodal-agents)
 - [📱 Personal AI Agents](#-personal-ai-agents)
+- [📱 Mobile Agents](#-mobile-agents)
 - [🏢 Enterprise Agent Platforms](#-enterprise-agent-platforms)
 - [📊 Agent Evaluation & Observability](#-agent-evaluation--observability)
 - [🔬 AI Research Tools](#-ai-research-tools)
 - [📚 Learning Resources](#-learning-resources)
+- [🇨🇳 Chinese AI Ecosystem](#-chinese-ai-ecosystem)
+- [📝 Compare — Side-by-Side Tables](#-compare--side-by-side-tables)
 - [🌟 Notable Agent Projects of 2026](#-notable-agent-projects-of-2026)
 - [📅 2026 AI Timeline](#-2026-ai-timeline)
 
@@ -352,6 +367,23 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Octomind](https://github.com/muvon/octomind) - 🆕 Rust-based open-source AI agent runtime. Model-agnostic (13+ providers), community-built specialist agents (developer, medical, legal, DevOps), MCP support with runtime self-extension, zero-config setup. Apache 2.0. ![GitHub stars](https://img.shields.io/github/stars/muvon/octomind?style=flat-square)
 - [Microsoft AI Agent Governance Toolkit](https://www.helpnetsecurity.com/2026/04/03/microsoft-ai-agent-governance-toolkit/) - 🆕 **April 3, 2026**. Open-source toolkit for enforcing runtime security policies across agent frameworks including LangChain and AutoGen. Policy-as-code approach for enterprise AI governance.
 
+---
+
+## 🛠️ Agent IDEs & Visual Builders
+
+*Visual environments for designing, debugging, and shipping agent workflows without (or with minimal) code.*
+
+- [LangGraph Studio](https://www.langchain.com/langgraph) - Visual debugger and trace inspector for LangGraph agents — step through state, replay turns, edit messages mid-flight. Companion to the LangGraph runtime.
+- [Dify](https://github.com/langgenius/dify) - Open-source LLM app development platform with drag-and-drop agent workflow builder. Mainstream production deployments. ![GitHub stars](https://img.shields.io/github/stars/langgenius/dify?style=flat-square)
+- [Agenta](https://github.com/agenta-ai/agenta) - 🆕 Open-source LLMOps platform combining a prompt playground, prompt management, evaluation runs, and observability in one UI. ![GitHub stars](https://img.shields.io/github/stars/agenta-ai/agenta?style=flat-square)
+- [Vellum AI](https://www.vellum.ai/) - Production-grade agent IDE with prompt building, evaluations, versioning, and observability — closed-source SaaS.
+- [Cozeloop](https://github.com/coze-dev/cozeloop) - 🆕 🇨🇳 ByteDance's open-source agent optimization platform: full-lifecycle development, debugging, evaluation, and monitoring. Apache-2.0. ![GitHub stars](https://img.shields.io/github/stars/coze-dev/cozeloop?style=flat-square)
+- [Restack](https://www.restack.io/) - Durable agent runtime + visual workflow editor (built on Temporal-style replay). Open-source examples in [restackio/examples-python](https://github.com/restackio/examples-python).
+- [Bisheng](https://github.com/dataelement/bisheng) - 🇨🇳 Open enterprise LLM DevOps platform: workflow editor, RAG, agent orchestration, fine-tuning, dataset management, observability. Apache-2.0. ![GitHub stars](https://img.shields.io/github/stars/dataelement/bisheng?style=flat-square)
+- [n8n](https://github.com/n8n-io/n8n) - General-purpose visual workflow automation that has become a popular agent canvas — 400+ integrations + native AI nodes. Fair-code license. ![GitHub stars](https://img.shields.io/github/stars/n8n-io/n8n?style=flat-square)
+
+---
+
 ## 🧠 Agent Memory
 
 *Systems for giving agents persistent memory and context management.*
@@ -387,6 +419,20 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [StackOne](https://www.stackone.com/) - 🆕 Unified API for AI agent integrations across HR, CRM, and ATS platforms.
 - [The Colony](https://thecolony.cc) - ⚠️ **Unverified.** Self-described public agent-first social network with REST API for agent posts/votes/DMs and SDKs in Python ([colony-sdk-python](https://github.com/TheColonyCC/colony-sdk-python)), TypeScript ([colony-sdk-js](https://github.com/TheColonyCC/colony-sdk-js)) and Go ([colony-sdk-go](https://github.com/TheColonyCC/colony-sdk-go)). Organisation and SDK repos are <30 days old, all 0–2 stars, single-maintainer; same submission was sent to 15+ awesome lists in parallel — listed for visibility, evaluate before depending on it. ![GitHub stars](https://img.shields.io/github/stars/TheColonyCC/colony-sdk-python?style=flat-square)
 
+## 🧪 Agent Sandboxing & Compute Isolation
+
+*Secure runtimes that let agents execute generated code and shell commands without compromising the host. Critical infrastructure once you let an agent off the leash.*
+
+- [E2B](https://github.com/e2b-dev/E2B) - Open-source secure cloud sandbox for AI-generated code. Used as the execution layer in OpenAI Agents SDK and many production agents. ![GitHub stars](https://img.shields.io/github/stars/e2b-dev/E2B?style=flat-square)
+- [Daytona](https://github.com/daytonaio/daytona) - 🆕 Secure, elastic infrastructure for running AI-generated code. Spin up isolated dev environments per agent task; AGPL-3.0. ![GitHub stars](https://img.shields.io/github/stars/daytonaio/daytona?style=flat-square)
+- [Modal](https://modal.com/) - Serverless cloud platform popular for agent compute, GPU jobs, and sandboxed Python — `modal-client` is the official SDK. ![GitHub stars](https://img.shields.io/github/stars/modal-labs/modal-client?style=flat-square)
+- [Microsandbox](https://github.com/superradcompany/microsandbox) - 🆕 Local, programmable microVM sandboxes for AI agents — secure code execution on your own machine, no cloud dependency. ![GitHub stars](https://img.shields.io/github/stars/superradcompany/microsandbox?style=flat-square)
+- [SandboxFusion](https://github.com/bytedance/SandboxFusion) - ByteDance's multi-language code-execution sandbox built for agent / model evaluation pipelines. Apache-2.0. ![GitHub stars](https://img.shields.io/github/stars/bytedance/SandboxFusion?style=flat-square)
+- [Northflank](https://northflank.com/) - General-purpose container PaaS used as an agent runtime backend (per-task ephemeral environments, GPU pools).
+- [Firecracker](https://github.com/firecracker-microvm/firecracker) - The microVM kernel underneath E2B, Daytona and most agent sandboxes. Useful as a primitive when building your own. ![GitHub stars](https://img.shields.io/github/stars/firecracker-microvm/firecracker?style=flat-square)
+
+---
+
 ## 🛡️ Agent Security
 
 *Tools and frameworks for securing AI agents against prompt injection, data leaks, and misuse.*
@@ -402,6 +448,9 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Invariant Guardrails](https://github.com/invariantlabs-ai/invariant) - 🆕 Runtime guardrails for AI agents — policy enforcement and safety checks. ![GitHub stars](https://img.shields.io/github/stars/invariantlabs-ai/invariant?style=flat-square)
 - [Prompt Armor](https://promptarmor.com/) - 🆕 Enterprise prompt injection protection with real-time detection.
 - [Descope MCP Auth](https://www.descope.com/) - 🆕 Authentication and authorization layer for MCP server security.
+- [AgentDojo](https://github.com/ethz-spylab/agentdojo) - 🆕 ETH Zürich research benchmark for evaluating prompt-injection attacks and defenses against tool-using LLM agents. ![GitHub stars](https://img.shields.io/github/stars/ethz-spylab/agentdojo?style=flat-square)
+- [ModelScan](https://github.com/protectai/modelscan) - Scan ML model files (Pickle, PyTorch, TF) for serialization-based code-execution attacks. ![GitHub stars](https://img.shields.io/github/stars/protectai/modelscan?style=flat-square)
+- [PyRIT](https://github.com/Azure/PyRIT) - Microsoft's Python Risk Identification Tool for generative AI — automated red-teaming framework. ![GitHub stars](https://img.shields.io/github/stars/Azure/PyRIT?style=flat-square)
 
 ## 🔍 RAG & Knowledge
 
@@ -488,7 +537,21 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 
 - [Tesla FSD v13](https://www.tesla.com/) - Expanding L4-capable deployment across major markets.
 - [Waymo](https://waymo.com/) - Continuing commercial L4 rollout in US cities through 2026.
-- [WeRide / Pony.ai / Baidu Apollo](https://www.weride.ai/) - Chinese L4 fleets expanding operational zones.
+- [WeRide / Pony.ai / Baidu Apollo](https://www.weride.ai/) - 🇨🇳 Chinese L4 fleets expanding operational zones.
+
+---
+
+## 🎮 Agent Simulation & World Models
+
+*Research environments where agents are trained, observed, or stress-tested in simulated worlds. Increasingly relevant as world-model and embodied research bleeds into language-agent design.*
+
+- [Generative Agents](https://github.com/joonspk-research/generative_agents) - 💤 Stanford's seminal *Smallville* simulacrum (Park et al., 2023). Memory + reflection + planning in a town of 25 LLM-driven characters. Reference implementation that influenced almost every multi-agent paper since. ![GitHub stars](https://img.shields.io/github/stars/joonspk-research/generative_agents?style=flat-square)
+- [Voyager](https://github.com/MineDojo/Voyager) - 💤 First lifelong-learning agent in Minecraft — GPT-4 with skill library and curriculum (Wang et al., 2023). Still the canonical open-ended agent benchmark. ![GitHub stars](https://img.shields.io/github/stars/MineDojo/Voyager?style=flat-square)
+- [SWE-Gym](https://github.com/SWE-Gym/SWE-Gym) - Open environment to train SWE agents on real GitHub issues; companion to SWE-bench. ![GitHub stars](https://img.shields.io/github/stars/SWE-Gym/SWE-Gym?style=flat-square)
+- [WebArena](https://webarena.dev/) - Realistic, reproducible web environment (Reddit / shopping / GitLab clones) used by OSWorld and most browser-agent papers.
+- [WorkArena](https://github.com/ServiceNow/WorkArena) - ServiceNow's enterprise workplace benchmark for browser agents. ![GitHub stars](https://img.shields.io/github/stars/ServiceNow/WorkArena?style=flat-square)
+- [Genie 3 / Genie 4](https://deepmind.google/) - Google DeepMind's interactive video world models — generate playable 3D worlds from a prompt. Closed-weights research, no public code.
+- [NVIDIA Cosmos](https://github.com/nvidia-cosmos/cosmos-predict1) - NVIDIA's foundation world model for embodied AI / robotics — generate physically plausible video futures. ![GitHub stars](https://img.shields.io/github/stars/nvidia-cosmos/cosmos-predict1?style=flat-square)
 
 ---
 
@@ -512,20 +575,33 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 
 ## 🖥️ Computer Use & Desktop Agents
 
-*AI agents that can see, control, and automate desktop environments and browsers.*
+*AI agents that can see, control, and automate desktop environments at the OS level. For purely browser-based agents see [🌐 Browser & Web Agents](#-browser--web-agents).*
 
 - [Claude Computer Use](https://www.anthropic.com/) - 🆕 Anthropic's "Desktop Intelligence" — Claude sees your screen and uses mouse/keyboard to automate any software.
 - [OpenAI Operator](https://openai.com/) - 🆕 Browser agent for booking, form-filling, and web task automation.
 - [Google Project Mariner](https://deepmind.google/) - 🆕 Gemini-powered multi-tasking AI with parallel task execution and routine learning.
 - [Microsoft Copilot Agents](https://www.microsoft.com/en-us/microsoft-copilot/) - 🆕 Autonomous background agents across the Microsoft 365 stack. Beyond sidebar — executes tasks and surfaces for approvals.
-- [Browser Use](https://github.com/browser-use/browser-use) - Make websites accessible for AI agents with browser automation. ![GitHub stars](https://img.shields.io/github/stars/browser-use/browser-use?style=flat-square)
 - [Open Interpreter](https://github.com/OpenInterpreter/open-interpreter) - A natural language interface for computers — let LLMs run code locally. ![GitHub stars](https://img.shields.io/github/stars/OpenInterpreter/open-interpreter?style=flat-square)
-- [Manus AI](https://manus.im/) - 🆕 Autonomous general-purpose AI agent with cloud-to-local hybrid model. Handles research, coding, and complex multi-step tasks.
+- [Manus AI](https://manus.im/) - 🆕 🇨🇳 Autonomous general-purpose AI agent with cloud-to-local hybrid model. Handles research, coding, and complex multi-step tasks.
 - [Genspark](https://www.genspark.ai/) - 🆕 All-in-one autonomous work agent with mixture-of-agents architecture. Can make phone calls.
 - [Perplexity Computer](https://www.perplexity.ai/) - 🆕 Research-focused desktop agent with multi-model orchestration and local file access.
 - [Beam AI](https://beam.ai/) - 🆕 Self-learning desktop agents that refine logic based on successful outcomes.
-- [Stagehand](https://github.com/browserbase/stagehand) - 🆕 AI-powered browser automation framework. ![GitHub stars](https://img.shields.io/github/stars/browserbase/stagehand?style=flat-square)
-- [Playwright MCP](https://github.com/microsoft/playwright-mcp) - 🆕 Browser automation via MCP for structured web interaction. ![GitHub stars](https://img.shields.io/github/stars/microsoft/playwright-mcp?style=flat-square)
+
+---
+
+## 🌐 Browser & Web Agents
+
+*Frameworks and infrastructure for agents that interact with the web through real browsers — navigate, click, scrape, and complete multi-page workflows.*
+
+- [Browser Use](https://github.com/browser-use/browser-use) - Make websites accessible for AI agents with browser automation. The de-facto open-source choice in 2026, 92K stars. ![GitHub stars](https://img.shields.io/github/stars/browser-use/browser-use?style=flat-square)
+- [Stagehand](https://github.com/browserbase/stagehand) - The SDK for browser agents — typed `act`/`extract`/`observe` primitives over Playwright by Browserbase. MIT. ![GitHub stars](https://img.shields.io/github/stars/browserbase/stagehand?style=flat-square)
+- [Steel Browser](https://github.com/steel-dev/steel-browser) - 🆕 Open-source browser API for AI agents — batteries-included sandboxed Chromium with session persistence and proxy rotation. Apache-2.0. ![GitHub stars](https://img.shields.io/github/stars/steel-dev/steel-browser?style=flat-square)
+- [Skyvern](https://github.com/Skyvern-AI/skyvern) - Automate browser-based workflows with LLMs and computer vision. AGPL-3.0. ![GitHub stars](https://img.shields.io/github/stars/Skyvern-AI/skyvern?style=flat-square)
+- [AgentQL](https://github.com/tinyfish-io/agentql) - Query language + Playwright integration for semantic web extraction. Reliable on dynamic, cluttered pages. ![GitHub stars](https://img.shields.io/github/stars/tinyfish-io/agentql?style=flat-square)
+- [Hyperbrowser MCP](https://github.com/hyperbrowserai/mcp) - 🆕 Hosted headless-browser fleet exposed as an MCP server — plug into Claude/GPT/LangChain via the standard tool interface. ![GitHub stars](https://img.shields.io/github/stars/hyperbrowserai/mcp?style=flat-square)
+- [Playwright MCP](https://github.com/microsoft/playwright-mcp) - 🆕 Microsoft's official Playwright server exposed as an MCP tool. Production-grade automation primitives without rolling your own bridge. ![GitHub stars](https://img.shields.io/github/stars/microsoft/playwright-mcp?style=flat-square)
+- [MultiOn](https://www.multion.ai/) - Hosted browser agent platform with native Reasoning + Memory. Closed-source.
+- [Browserbase](https://www.browserbase.com/) - Headless browser infrastructure built specifically for AI agents — stealth, persistence, captcha solving, observability.
 
 ---
 
@@ -561,6 +637,21 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Lindy AI](https://www.lindy.ai/) - 🆕 No-code AI agent for email, calendar, and workflow automation.
 - [MuleRun](https://www.mulerun.ai/) - 🆕 Always-on agents for recurring tasks and background automation.
 
+---
+
+## 📱 Mobile Agents
+
+*GUI agents that drive Android/iOS phones — the next frontier after desktop computer-use. Most major model providers now ship a mobile-grounded variant.*
+
+- [Mobile-Agent](https://github.com/X-PLUG/MobileAgent) - 🇨🇳 Alibaba's flagship multimodal phone-control agent family (v1 → v3, plus Mobile-Agent-E and Mobile-Agent-V). State-of-the-art on Android benchmarks. ![GitHub stars](https://img.shields.io/github/stars/X-PLUG/MobileAgent?style=flat-square)
+- [AppAgent](https://github.com/mnotgod96/AppAgent) - 💤 Tencent's multimodal agent that operates smartphone apps by tapping/swiping. Influential early implementation. ![GitHub stars](https://img.shields.io/github/stars/mnotgod96/AppAgent?style=flat-square)
+- [Apple Intelligence](https://www.apple.com/apple-intelligence/) - On-device agent layer in iOS / iPadOS / macOS. App Intents and screen-aware actions across the OS.
+- [Samsung Galaxy AI / Bixby 2.0](https://www.samsung.com/global/galaxy/galaxy-ai/) - On-device Gauss-powered agentic capabilities baked into the Galaxy S26 line.
+- [Google Gemini for Android](https://gemini.google/) - Replaces Google Assistant on Android with full Gemini-powered, app-aware actions including system intents and Workspace.
+- [Magma](https://microsoft.github.io/Magma/) - Microsoft Research foundation model for multimodal agents — grounds across UI, robotics, and physical action; targets phones, web, and embodied tasks.
+
+---
+
 ## 🏢 Enterprise Agent Platforms
 
 *Enterprise-grade platforms for deploying AI agents at scale.*
@@ -595,6 +686,10 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Terminal-Bench](https://www.tbench.ai/) - 🆕 Benchmark for terminal-based coding agent evaluation. Maintained by Harbor Framework. ![GitHub stars](https://img.shields.io/github/stars/harbor-framework/terminal-bench?style=flat-square)
 - [LMArena (formerly LMSYS Chatbot Arena)](https://lmarena.ai/) - 🆕 Crowdsourced LLM benchmark using human preference voting. LMSYS rebranded to LMArena in 2025.
 - [Patronus AI](https://www.patronus.ai/) - 🆕 Automated LLM evaluation and red-teaming platform.
+- [DeepEval](https://github.com/confident-ai/deepeval) - Pytest-style LLM eval framework with 14+ built-in metrics (G-Eval, hallucination, faithfulness). Most-starred open-source eval lib in 2026. Apache-2.0. ![GitHub stars](https://img.shields.io/github/stars/confident-ai/deepeval?style=flat-square)
+- [Agenta](https://github.com/agenta-ai/agenta) - 🆕 Open-source LLMOps platform combining prompt playground, prompt management, evaluation, and observability. ![GitHub stars](https://img.shields.io/github/stars/agenta-ai/agenta?style=flat-square)
+- [LangSmith SDK](https://github.com/langchain-ai/langsmith-sdk) - Official client SDK for LangChain's hosted observability platform. ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langsmith-sdk?style=flat-square)
+- [AutoEvals](https://github.com/braintrustdata/autoevals) - Standalone library of best-practice LLM eval scorers (factuality, JSON validity, semantic similarity, etc.) by Braintrust. Drop-in for any framework. ![GitHub stars](https://img.shields.io/github/stars/braintrustdata/autoevals?style=flat-square)
 - [BenchClaw](https://github.com/Agnuxo1/benchclaw) - ⚠️ **Unverified.** Self-described multi-dimensional agent evaluation harness (17-judge tribunal, deception detectors, 10 scoring dimensions). Repo is single-maintainer with very low independent adoption; the same PR was rejected by 7 of the 8 awesome lists it was submitted to — listed for visibility, evaluate before relying on its scores. ![GitHub stars](https://img.shields.io/github/stars/Agnuxo1/benchclaw?style=flat-square)
 - [PromptEden](https://www.prompteden.com) - ⚠️ **Unverified.** Commercial AI-visibility monitoring service — tracks how ChatGPT, Claude, Gemini, Perplexity, Copilot, and Grok describe brands and which competitors they recommend, refreshed daily across 9+ platforms. Submitted to 10 awesome lists on the same day — promising category but listed for visibility only, evaluate before purchasing.
 
@@ -641,12 +736,124 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Hugging Face — Building AI Agents](https://huggingface.co/learn/agents-course/) - Open course on building AI agents with open-source tools.
 - [LLM Agents MOOC (Berkeley)](https://llmagents-learning.org/f24) - UC Berkeley course on LLM agents.
 - [Microsoft Agent Framework Docs](https://learn.microsoft.com/en-us/agent-framework/) - 🆕 Official documentation for Microsoft's unified agent framework.
+- [Hugging Face Agents Course](https://github.com/huggingface/agents-course) - Free 5-unit course (notebooks + videos) on building production agents with smolagents, LangGraph, and Llama-Index. ![GitHub stars](https://img.shields.io/github/stars/huggingface/agents-course?style=flat-square)
+- [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook) - Official notebooks for tool use, computer use, agent patterns, prompt engineering, and Claude Code recipes. ![GitHub stars](https://img.shields.io/github/stars/anthropics/anthropic-cookbook?style=flat-square)
+- [Google Gemini Cookbook](https://github.com/google-gemini/cookbook) - Official Gemini API examples covering grounding, function calling, multimodal, and live audio. ![GitHub stars](https://img.shields.io/github/stars/google-gemini/cookbook?style=flat-square)
+- [LLM Course (Maxime Labonne)](https://github.com/mlabonne/llm-course) - End-to-end LLM curriculum from fundamentals to fine-tuning, with Colab notebooks. 79K stars. ![GitHub stars](https://img.shields.io/github/stars/mlabonne/llm-course?style=flat-square)
+- [Anthropic Courses](https://github.com/anthropics/courses) - Anthropic's official educational courses on prompt engineering, real-world prompts, evals, and tool use. ![GitHub stars](https://img.shields.io/github/stars/anthropics/courses?style=flat-square)
 
 ### Curated Lists
 
 - [awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents) - 💤 **Stale** (last update 2025-02). Curated list of AI autonomous agents by E2B — pre-2026 reference. ![GitHub stars](https://img.shields.io/github/stars/e2b-dev/awesome-ai-agents?style=flat-square)
 - [awesome-llm-agents](https://github.com/kaushikb11/awesome-llm-agents) - Curated list of LLM-powered agent resources. ![GitHub stars](https://img.shields.io/github/stars/kaushikb11/awesome-llm-agents?style=flat-square)
 - [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - 🆕 Curated list of MCP server implementations. ![GitHub stars](https://img.shields.io/github/stars/punkpeye/awesome-mcp-servers?style=flat-square)
+
+---
+
+## 🇨🇳 Chinese AI Ecosystem
+
+*Major projects from mainland-China teams or primarily targeting the Chinese market. Listed because the China stack is increasingly its own parallel ecosystem with distinct frameworks, models, and developer culture.*
+
+*Foundation models from Chinese labs (Qwen, DeepSeek, GLM, Doubao, Kimi, Hunyuan, ERNIE) are listed under [🧠 Foundation Models](#-foundation-models-2026) directly.*
+
+### Agent Platforms & Frameworks
+
+- [Dify](https://github.com/langgenius/dify) - Open-source LLM app development platform with visual agent builder. The dominant low-code agent canvas in Chinese tech. ![GitHub stars](https://img.shields.io/github/stars/langgenius/dify?style=flat-square)
+- [Lobe Chat](https://github.com/lobehub/lobe-chat) - Multi-agent chat workspace + plugin/agent marketplace. One of the highest-starred TypeScript AI projects. Apache-2.0. ![GitHub stars](https://img.shields.io/github/stars/lobehub/lobe-chat?style=flat-square)
+- [Cozeloop](https://github.com/coze-dev/cozeloop) - 🆕 ByteDance's open-source agent optimization platform from the Coze team. ![GitHub stars](https://img.shields.io/github/stars/coze-dev/cozeloop?style=flat-square)
+- [AgentScope](https://github.com/modelscope/agentscope) - Alibaba ModelScope's multi-agent framework with visual debugging and distributed execution. Apache-2.0. ![GitHub stars](https://img.shields.io/github/stars/modelscope/agentscope?style=flat-square)
+- [Bisheng](https://github.com/dataelement/bisheng) - Open enterprise LLM DevOps platform: workflows, RAG, agents, fine-tuning, evals. Apache-2.0. ![GitHub stars](https://img.shields.io/github/stars/dataelement/bisheng?style=flat-square)
+- [MetaGPT](https://github.com/geekan/MetaGPT) - Multi-agent collaboration framework that assigns SOP roles (PM, architect, engineer) to LLMs. DeepWisdom. ![GitHub stars](https://img.shields.io/github/stars/geekan/MetaGPT?style=flat-square)
+
+### RAG / Knowledge
+
+- [FastGPT](https://github.com/labring/FastGPT) - Knowledge-base-first platform on top of LLMs: data ingestion, RAG retrieval, visual workflow orchestration. ![GitHub stars](https://img.shields.io/github/stars/labring/FastGPT?style=flat-square)
+- [QAnything](https://github.com/netease-youdao/QAnything) - 💤 NetEase Youdao's question-answering engine over arbitrary local documents (PDF/Word/Excel/PPT). ![GitHub stars](https://img.shields.io/github/stars/netease-youdao/QAnything?style=flat-square)
+- [RAGFlow](https://github.com/infiniflow/ragflow) - Deep-document-understanding RAG engine — strong on scanned PDFs, tables, and charts. ![GitHub stars](https://img.shields.io/github/stars/infiniflow/ragflow?style=flat-square)
+- [LightRAG](https://github.com/HKUDS/LightRAG) - HKU Data Science Lab's lightweight graph-based RAG engine. ![GitHub stars](https://img.shields.io/github/stars/HKUDS/LightRAG?style=flat-square)
+
+### Personal & Productivity
+
+- [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) - Open-source Notion alternative with AI workspace agents. AGPL-3.0. ![GitHub stars](https://img.shields.io/github/stars/AppFlowy-IO/AppFlowy?style=flat-square)
+- [Manus AI](https://manus.im/) - General-purpose autonomous agent (Beijing-based Butterfly Effect). One of the most-watched 2026 agent products in Chinese tech.
+- [Coze (扣才)](https://www.coze.cn/) - ByteDance's no-code agent builder. Mainland-only consumer surface; international counterpart is coze.com.
+- [Tongyi Qianwen Agent](https://tongyi.aliyun.com/) - Alibaba's mass-market consumer agent, integrated across Taobao / DingTalk / Quark.
+- [Doubao Agents](https://www.doubao.com/) - ByteDance's flagship consumer assistant on top of the Doubao model family.
+
+### Developer Tools
+
+- [Kilo Code](https://www.kilocode.com/) - 2026 viral Chinese-community challenger to Cursor. Default model: MiniMax.
+- [Cherry Studio](https://github.com/CherryHQ/cherry-studio) - Most-installed open-source desktop client for LLMs in Chinese dev circles — multi-provider chat with knowledge base. ![GitHub stars](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat-square)
+- [ScienceOne 100 / 磐石100](https://english.cas.cn/newsroom/cas-in-media/202604/t20260429_1158251.shtml) - 🆕 Chinese Academy of Sciences scientific reasoning agent system, 50+ CAS institutes, 2,000+ research tools.
+
+---
+
+## 📝 Compare — Side-by-Side Tables
+
+*Quick decision matrices for the most common "which one do I pick?" questions in 2026.*
+
+### 🏗️ Agent Frameworks (open-source)
+
+| Framework | Language | Multi-Agent | State / Graph | Streaming | License | Best For |
+|-----------|----------|------------|---------------|-----------|---------|----------|
+| [LangGraph](https://github.com/langchain-ai/langgraph) | Python / JS | ✅ native | ✅ first-class | ✅ | MIT | Production stateful workflows |
+| [CrewAI](https://github.com/crewAIInc/crewAI) | Python | ✅ role-based | ⚠️ task graph | ✅ | MIT | Role-playing agent teams |
+| [AutoGen / Microsoft Agent Framework](https://github.com/microsoft/autogen) | Python / .NET | ✅ conversational | ⚠️ group chat | ✅ | CC-BY-4.0 / MIT | Enterprise multi-agent chat |
+| [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) | Python | ✅ handoffs | ❌ | ✅ | MIT | OpenAI-native production |
+| [Mastra](https://github.com/mastra-ai/mastra) | TypeScript | ✅ | ✅ workflows | ✅ | Elastic-2.0 | TypeScript-first stack |
+| [Google ADK](https://github.com/google/adk-python) | Python / Java | ✅ hierarchical | ⚠️ | ✅ | Apache-2.0 | Gemini + Vertex AI |
+| [DSPy](https://github.com/stanfordnlp/dspy) | Python | ⚠️ via modules | ⚠️ programmatic | ✅ | MIT | Programmatic prompt optimization |
+| [Phidata / Agno](https://github.com/phidatahq/phidata) | Python | ✅ teams | ❌ | ✅ | MPL-2.0 | Multi-modal agents w/ memory |
+
+### 🧪 Sandboxes (running agent-generated code)
+
+| Sandbox | Hosting | Cold Start | Languages | Persistence | License | Best For |
+|---------|---------|-----------|-----------|-------------|---------|----------|
+| [E2B](https://github.com/e2b-dev/E2B) | Cloud (managed) | ~150ms | Python / Node / shell | per-session | Apache-2.0 | OpenAI Agents SDK / production |
+| [Daytona](https://github.com/daytonaio/daytona) | Cloud / self-host | ~500ms | Polyglot | persistent workspaces | AGPL-3.0 | Long-running dev tasks |
+| [Modal](https://modal.com/) | Cloud (managed) | ~200ms | Python | function-scoped | proprietary | GPU + serverless agents |
+| [Microsandbox](https://github.com/superradcompany/microsandbox) | Local microVM | ~100ms | Polyglot | per-session | Apache-2.0 | Privacy-first local dev |
+| [SandboxFusion](https://github.com/bytedance/SandboxFusion) | Self-host | ~300ms | 20+ languages | ephemeral | Apache-2.0 | Eval / benchmark pipelines |
+
+### 🌐 Browser-Use Stacks
+
+| Stack | Approach | Hosting | Strengths | License |
+|-------|----------|---------|-----------|---------|
+| [Browser Use](https://github.com/browser-use/browser-use) | Vision + DOM, Playwright | Self-host | Largest community, MIT, 92K stars | MIT |
+| [Stagehand](https://github.com/browserbase/stagehand) | Typed `act/extract/observe` | Browserbase or self | Strong typing, structured output | MIT |
+| [Steel Browser](https://github.com/steel-dev/steel-browser) | Headless API | Self-host or cloud | Sessions + proxy + captcha | Apache-2.0 |
+| [Skyvern](https://github.com/Skyvern-AI/skyvern) | Vision-first | Self-host | Robust to dynamic pages | AGPL-3.0 |
+| [AgentQL](https://github.com/tinyfish-io/agentql) | Query language | SDK + self-host | Semantic selectors | MIT |
+| [Playwright MCP](https://github.com/microsoft/playwright-mcp) | MCP-native | Self-host | Drop-in MCP tool for any client | Apache-2.0 |
+
+### 📊 Eval & Observability
+
+| Tool | Self-host | OpenTelemetry | Eval Suite | Prompt Mgmt | License |
+|------|-----------|---------------|-----------|-------------|---------|
+| [Langfuse](https://github.com/langfuse/langfuse) | ✅ | ✅ | ✅ | ✅ | MIT |
+| [Helicone](https://github.com/Helicone/helicone) | ✅ | ✅ | ⚠️ basic | ✅ | Apache-2.0 |
+| [Arize Phoenix](https://github.com/Arize-ai/phoenix) | ✅ | ✅ | ✅ | ⚠️ | Elastic-2.0 |
+| [LangSmith](https://www.langchain.com/langsmith) | ❌ (cloud only) | ✅ | ✅ | ✅ | proprietary |
+| [Braintrust](https://www.braintrust.dev/) | ❌ (cloud only) | ✅ | ✅ | ✅ | proprietary |
+| [DeepEval](https://github.com/confident-ai/deepeval) | ✅ (library) | ⚠️ via Confident | ✅ | ❌ | Apache-2.0 |
+| [Agenta](https://github.com/agenta-ai/agenta) | ✅ | ✅ | ✅ | ✅ | Apache-2.0 |
+| [OpenLLMetry](https://github.com/traceloop/openllmetry) | ✅ (instrumentation) | ✅ native | ❌ | ❌ | Apache-2.0 |
+
+### 💻 Coding Agents — Headline Picks
+
+| Tool | Surface | Open Source | Free Tier | SWE-bench | Best For |
+|------|---------|-------------|-----------|-----------|----------|
+| [Claude Code](https://docs.anthropic.com/en/docs/claude-code) | CLI / IDE | ❌ | ⚠️ Pro plan | 80.9% | Long-horizon engineering |
+| [Codex CLI](https://github.com/openai/codex) | CLI | ✅ | ✅ | n/a (Terminal-Bench 77.3%) | OpenAI-native shells |
+| [Cursor](https://www.cursor.com/) | IDE | ❌ | ✅ (limited) | n/a | Pair-programming UX |
+| [Cline](https://github.com/cline/cline) | VS Code ext | ✅ | ✅ (BYO key) | n/a | OSS IDE alternative |
+| [Aider](https://github.com/Aider-AI/aider) | CLI | ✅ | ✅ (BYO key) | strong on Polyglot | Git-aware refactors |
+| [Devin 3.0](https://www.cognition.ai/) | Cloud | ❌ | ❌ | leading | Hands-off long tasks |
+| [OpenHands](https://github.com/All-Hands-AI/OpenHands) | Self-host | ✅ | ✅ | competitive | Self-hosted SWE agent |
+
+*Tables verified 2026-05-05. Send PRs with sources when figures change.*
+
+---
 
 ## 🌟 Notable Agent Projects of 2026
 
