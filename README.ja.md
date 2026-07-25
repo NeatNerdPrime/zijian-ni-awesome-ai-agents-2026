@@ -6,9 +6,9 @@
 [![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FZijian-Ni%2Fawesome-ai-agents-2026&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)](https://github.com/Zijian-Ni/awesome-ai-agents-2026/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-July%2017%2C%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-580%2B-orange.svg)](#)
-[![Audited](https://img.shields.io/badge/Spam_Audited-2026--07--17-success.svg)](#️-ステータス凡例)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-July%2025%2C%202026-blue.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-590%2B-orange.svg)](#)
+[![Audited](https://img.shields.io/badge/Spam_Audited-2026--07--25-success.svg)](#️-ステータス凡例)
 [![English](https://img.shields.io/badge/Lang-English-informational.svg)](README.md)
 [![中文](https://img.shields.io/badge/Lang-中文-red.svg)](README.zh-CN.md)
 
@@ -128,6 +128,7 @@
 
 ### Anthropic
 
+- [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) - 🆕 **2026-07-24**。Anthropic 第 5 世代フラッグシップモデル。Fable 5 に迫る性能を大幅に低い価格で提供（入力/出力 100 万トークンあたり $5/$25）。コンテキストウィンドウ 1Mトークン、出力最大 128Kトークン。Claude Max のデフォルトモデル。API: `claude-opus-5`。Anthropic API、Amazon Bedrock、Google Cloud Vertex AI で利用可能。
 - [Claude Fable 5 グローバルアクセス復旧](https://www.anthropic.com/news/redeploying-fable-5) - 🆕 **2026-07-01**。米国商務省による輸出管理が 6 月 30 日に解除されたことを受け、Anthropic は Claude.ai、Claude API、Claude Code、Claude Cowork で Fable 5 へのグローバルアクセスを復旧。Amazon が発見したジェイルブレイク手法をブロックする新しい安全クラシファイアを配備（報告された挙動を >99% のケースでブロック）。Pro/Max/Team と一部 Enterprise プランでは 7 月 7 日まで週次利用量の最大 50% まで Fable 5 が追加費用なしで利用でき、以降は利用クレジット経由；AWS、Google Cloud、Microsoft Foundry でのクラウド再有効化も追って実施。Mythos 5 は引き続き米国の審査済みエンティティに制限される。
 - [Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5) - 🆕 **2026年6月30日**。これまでで最もエージェント性能の高い Sonnet — プランニング、ブラウザ/ターミナルツール利用、以前は Opus クラスのモデルが必要だった水準の自律動作に対応。高エフォート設定ではエージェント検索（BrowseComp）とコンピュータ操作（OSWorld-Verified）で Opus 4.8 に迫る性能を発揮し、Sonnet 4.6 よりもコストパフォーマンスの幅が大きく広がった。Claude.ai の Free/Pro プランの新デフォルトモデルとなり、Max/Team/Enterprise、Claude Code、API（`claude-sonnet-5`）でも利用可能。2026年8月31日までの導入価格は入力/出力それぞれ 100 万トークンあたり $2/$10（以降 $3/$15）。Anthropic は Sonnet 4.6 より望ましくない挙動の発生率が低いと報告。
 - [Claude Fable 5](https://www.anthropic.com/news/claude-fable-5-mythos-5) - 🆕 **2026-06-09**。Anthropic 初の一般提供 **Mythos クラス**モデル — Opus の上位に位置する能力ティア。ソフトウェアエンジニアリング、ナレッジワーク、ビジョン、科学研究の各ベンチマークで Opus 4.8 を上回る。セーフガード内蔵（サイバー/バイオ系の機微なクエリは Opus 4.8 へ再ルーティングされる場合あり）。入力 $10 / 出力 $50（100 万 token あたり）。Anthropic API、Amazon Bedrock、Google Cloud Vertex AI で利用可。**⚠️ 2026年6月12日にアクセス停止** —— 米国政府の輸出管理指令により、Anthropic は全顧客向けに Fable 5 と Mythos 5 を無効化。**✅ 2026年6月30日に輸出管理が解除され、7月1日にアクセス復旧** —— 新しいサイバーセキュリティクラシファイアを追加（上のエントリ参照、[声明](https://www.anthropic.com/news/redeploying-fable-5)）。
@@ -195,6 +196,11 @@
 
 - [ZAYA1-8B](https://www.zyphra.com/post/zaya1-8b) - 🆕 **2026-05-06**。アクティブパラメータ <1B の MoE 推論モデル。すべて AMD Instinct MI300X クラスター上で訓練され、Apache 2.0 で Hugging Face にウェイトを公開。Zyphra Cloud でサーバーレス推論も提供。
 - [ZAYA1-8B-Diffusion-Preview](https://www.zyphra.com/post/zaya1-8b-diffusion-preview) - 🆕 **2026-05-14**。自己回帰 LLM から変換された初の MoE 拡散言語モデルで、AMD GPU で訓練された初の拡散 LM でもある。1 ステップで 16 トークンを生成し、自己回帰ベースラインに対し **最大 7.7× の推論高速化**。Zyphra の TiDAR レシピ + CCA Attention を採用。
+
+### Thinking Machines Lab
+
+- [Inkling](https://thinkingmachines.ai/blog/introducing-inkling) - 🆕 **2026-07-15**。前 OpenAI CTO の Mira Murati が設立。975B MoE（41Bアクティブ）、45Tトークンで事前学習、コンテキストウィンドウ 1Mトークン。テキスト・画像・音声・動画のネイティブマルチモーダル対応。Apache 2.0 オープンウェイトを Hugging Face で公開。**Inkling-Small**（12Bアクティブ）も同日リリース。Thinking Machines API・ Hugging Face Inference経由で利用可能。
+- [Inkling-Small](https://thinkingmachines.ai/blog/introducing-inkling) - 🆕 **2026-07-15**。Inkling の軽量バリアント，12Bアクティブパラメータ。同じ Apache 2.0 ライセンスとマルチモーダル機能を備え、エッジデバイスやリソース指定環境でのデプロイに適したサイズ。
 
 ### Mistral AI
 
@@ -540,6 +546,7 @@
 - [taOSmd](https://github.com/jaylfc/taosmd) - 🆕 ⚠️ **Unverified.** すべてのターンを逐語で追記専用・ゼロロスのアーカイブに保持し、抽出した各事実をソースにリンクするローカルファーストのエージェントメモリ — 検証器が裏付けられない事実は想起から降格される（served-hallucination 計測値 0.04、その後 0.00）。supersede 対応の型付き時系列ナレッジグラフに加え、ベクトル + BM25 のハイブリッド検索；小型ローカルモデル向けにチューニングされ、完全オフライン（8 GB の SBC や RK3588 NPU で動作）。作者報告で LongMemEval-S の Recall@5 97%、`docs/benchmarks.md` から再現可能。MIT。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fjaylfc%2Ftaosmd&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Hindsight](https://github.com/vectorize-io/hindsight) - 🆕 会話履歴だけでなく経験から学習するエージェントメモリ。生体模倣型データ構造で世界の事実・エージェントの経験・学習したメンタルモデルを整理；`retain`/`recall`/`reflect` プリミティブ；Agent Memory Benchmark (AMB) を同梱。MIT、15K+ stars。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fvectorize-io%2Fhindsight&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [SimpleMem](https://github.com/aiming-lab/SimpleMem) - 🆕 LLM エージェント向けの効率的な生涯メモリ——マルチモーダル（テキスト+画像+音声+動画）、ファインチューニング不要でトークン上限制約を突破。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Faiming-lab%2FSimpleMem&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Genesys](https://github.com/Astrix-Labs/Genesys) - ⚠️ **未検証**（単一メンテナー、自己投稿）。AI エージェント向け因果グラフ型メモリエンジン。記憶はノード、エッジは因果関係を表現；積貫スコアリング（関連性 × 接続性 × 再活性）+ アクティブ忘却で鈱酵したコンテキストを刃除。MCPネイティブ対応（13 ツール）。AGPL-3.0。作者報告の LoCoMo スコア: 85.55。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAstrix-Labs%2FGenesys&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Agent Memory Techniques](https://github.com/NirDiamant/Agent_Memory_Techniques) - 🆕 実行可能な Jupyter ノートブック 30 本。会話バッファ、ベクトルストア、ナレッジグラフ、エピソード/意味記憶、MemGPT、Mem0、Letta、Zep、Graphiti、LoCoMo ベンチマークまで網羅する実践リファレンス。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FNirDiamant%2FAgent_Memory_Techniques&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 
 ---
@@ -953,6 +960,7 @@
 - [Cognizant Neuro AI + ServiceNow AI Agent](https://news.cognizant.com/2026-06-18-Cognizant-expands-cross-platform-agentic-AI-with-new-ServiceNow-AI-Agent-interoperability) - 🆕 **2026 年 6 月**。クロスプラットフォームのエンタープライズ編成：ServiceNow エージェントが Cognizant の Multi-Agent Accelerator 内でネイティブに動作。
 - [Talkdesk Agent Builder](https://www.cmswire.com/contact-center/customer-contact-week-2026-capturing-the-ai-announcements-in-contact-center-technology/) - 🆕 **2026 年 6 月**。ローコードビルダー：ビジネスユーザーが数週間ではなく数時間で本番級 AI エージェントをコンタクトセンターに展開。
 - [HelloTwin Digital Authority](https://siliconangle.com/2026/06/24/hellotwin-launches-digital-authority-bring-governed-ai-agents-enterprise/) - 🆕 **2026 年 6 月**。単一の監査可能な信頼できる情報源として設計された AI ツイン。明確な境界でエージェンティックワークフローをガバナンス。
+- [Hellomatik](https://hellomatik.com) - 💰 ⚠️ **フリーミアム / 未検証**。企業のナレッジベースを WhatsApp、メール、Web 全チャネルで回答・販売・予約を行う AI エージェントに変換するプラットフォーム。Shopify、Stripe、Sage 連携対応。チャットから購買へのコンバージョン率 25〜30%（自社報告）。
 
 ---
 
@@ -1759,6 +1767,8 @@
 | **2026-07-10** | [Cursor 3.11](https://cursor.com/changelog) — サイドチャット、会話履歴検索、きめ細かなエージェント可観測性のための Cloud Agent Hooks | ツール |
 | **2026-07-14** | [Oracle が AI ネイティブな Agentic Applications Builder を追加](https://www.oracle.com/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/) — Fusion 向け AI Agent Studio を拡張し、Fusion エージェントアプリをプロコード開発者にも開放；Fusion 顧客は追加費用なし | フレームワーク |
 | **2026-07-16** | [Kimi K3](https://kimi.ai/) を Moonshot AI がローンチ — 2.8T パラメータの疎 MoE（896 エキスパート中 16 が有効）、1M トークンコンテキスト、100 万トークンあたり $3/$15；フルオープンウェイトは 7 月下旬公開予定 | モデル |
+| **2026-07-15** | [Inkling](https://thinkingmachines.ai/blog/introducing-inkling) を Thinking Machines Lab（Mira Murati、前 OpenAI CTO）がローンチ — 975B MoE / 41B アクティブ、45T トークン事前学習、1M コンテキスト、Apache 2.0 オープンウェイトを Hugging Face で公開；ネイティブマルチモーダル（テキスト/画像/音声/動画）；Inkling-Small（12B アクティブ）も同時リリース | モデル |
+| **2026-07-24** | [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) を Anthropic がリリース — 第 5 世代フラッグシップ、Fable 5 に迫る性能を 100 万トークンあたり $5/$25 で提供；1M コンテキスト、128K 出力；Claude Max のデフォルトモデル；API: `claude-opus-5` | モデル |
 
 ---
 

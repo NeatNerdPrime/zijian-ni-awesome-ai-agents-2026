@@ -6,10 +6,10 @@
 [![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FZijian-Ni%2Fawesome-ai-agents-2026&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)](https://github.com/Zijian-Ni/awesome-ai-agents-2026/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-July%2017%2C%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-580%2B-orange.svg)](#)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-July%2025%2C%202026-blue.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-590%2B-orange.svg)](#)
 [![Categories](https://img.shields.io/badge/Categories-25-purple.svg)](#)
-[![Audited](https://img.shields.io/badge/Spam_Audited-2026--07--17-success.svg)](#️-status-legend)
+[![Audited](https://img.shields.io/badge/Spam_Audited-2026--07--25-success.svg)](#️-status-legend)
 [![Chinese](https://img.shields.io/badge/Lang-中文-red.svg)](README.zh-CN.md)
 [![Japanese](https://img.shields.io/badge/Lang-日本語-purple.svg)](README.ja.md)
 
@@ -164,6 +164,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 
 ### Anthropic
 
+- [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) - 🆕 **July 24, 2026**. Anthropic's fifth-generation flagship — nears Fable 5 performance at a significantly lower price ($5/$25 per million input/output tokens). 1M-token context window, 128K output tokens. Now the default model on Claude Max. API: `claude-opus-5`. Available on Anthropic API, Amazon Bedrock, and Google Cloud Vertex AI.
 - [Claude Fable 5 (Global Reinstatement)](https://www.anthropic.com/news/redeploying-fable-5) - 🆕 **July 1, 2026**. After US Commerce Department export controls were lifted on June 30, Anthropic reinstated global access to Fable 5 across Claude.ai, the Claude Platform, Claude Code, and Claude Cowork. A new safety classifier blocking the Amazon-discovered jailbreak was deployed (blocks the reported behavior in >99% of cases). Pro/Max/Team and select Enterprise plans got Fable 5 included for up to 50% of weekly usage through July 7, then via usage credits; cloud re-enablement on AWS, Google Cloud, and Microsoft Foundry to follow. Mythos 5 remains restricted to vetted US entities.
 - [Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5) - 🆕 **June 30, 2026**. The most agentic Sonnet yet — planning, browser/terminal tool use, and autonomous operation at a level that recently required Opus-class models. Performance approaches Opus 4.8 on agentic search (BrowseComp) and computer use (OSWorld-Verified) at higher effort settings, with a much wider cost-performance range than Sonnet 4.6. Now the default model for Claude.ai Free/Pro; also on Max/Team/Enterprise, Claude Code, and the API as `claude-sonnet-5`. Introductory pricing $2/$10 per million input/output tokens through August 31, 2026 (then $3/$15). Anthropic reports a lower rate of undesirable behaviors than Sonnet 4.6.
 - [Claude Fable 5](https://www.anthropic.com/news/claude-fable-5-mythos-5) - 🆕 **June 9, 2026**. Anthropic's first publicly available **Mythos-class** model — a capability tier above Opus. Surpasses Opus 4.8 across software engineering, knowledge work, vision, and scientific research benchmarks. Ships with built-in safeguards (sensitive cyber/bio queries may be rerouted to Opus 4.8). $10 / $50 per million in/out tokens. Available via Anthropic API, Amazon Bedrock, and Google Cloud Vertex AI. **⚠️ Access suspended June 12, 2026** — a US government export-control directive ordered Anthropic to disable Fable 5 and Mythos 5 for all customers pending security review. **✅ Export controls lifted June 30, 2026; access restored July 1** with a new cybersecurity classifier — see entry above ([statement](https://www.anthropic.com/news/redeploying-fable-5)).
@@ -231,6 +232,11 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 
 - [ZAYA1-8B](https://www.zyphra.com/post/zaya1-8b) - 🆕 **May 6, 2026**. MoE reasoning model (<1B active) trained end-to-end on AMD Instinct MI300X clusters. Apache 2.0 weights on Hugging Face + serverless endpoint on Zyphra Cloud; aimed at math, code, and dense reasoning per active parameter.
 - [ZAYA1-8B-Diffusion-Preview](https://www.zyphra.com/post/zaya1-8b-diffusion-preview) - 🆕 **May 14, 2026**. First MoE diffusion language model converted from an autoregressive LLM and the first diffusion LM trained on AMD GPUs. Generates 16 tokens per step, achieving up to **7.7× inference speedup** vs the autoregressive base. Built with Zyphra's TiDAR recipe + CCA attention.
+
+### Thinking Machines Lab
+
+- [Inkling](https://thinkingmachines.ai/blog/introducing-inkling) - 🆕 **July 15, 2026**. Founded by Mira Murati (former OpenAI CTO). 975B MoE parameters (41B active), pretrained on 45T tokens, 1M-token context window. Natively multimodal — text, image, audio, and video in a single model. Apache 2.0 open weights on Hugging Face. Also ships **Inkling-Small** (12B active parameters). Available via the Thinking Machines API and Hugging Face Inference.
+- [Inkling-Small](https://thinkingmachines.ai/blog/introducing-inkling) - 🆕 **July 15, 2026**. Compact variant of Inkling with 12B active parameters; same Apache 2.0 license and multimodal capabilities in a more deployment-friendly footprint.
 
 ### Mistral AI
 
@@ -578,6 +584,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [taOSmd](https://github.com/jaylfc/taosmd) - 🆕 ⚠️ **Unverified.** Local-first agent memory that keeps every turn verbatim in an append-only, zero-loss archive and links each extracted fact to its source, so facts a verifier cannot support are demoted out of recall (served-hallucination measured at 0.04, then 0.00). Typed temporal knowledge graph with supersede, plus hybrid vector + BM25 retrieval; tuned for small local models, fully offline (runs on an 8 GB SBC or RK3588 NPU). Author-reported 97% Recall@5 on LongMemEval-S, reproducible per `docs/benchmarks.md`. MIT. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fjaylfc%2Ftaosmd&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Hindsight](https://github.com/vectorize-io/hindsight) - 🆕 Agent memory that learns from experience — not just conversation history. Biomimetic data structure organizes facts about the world, agent experiences, and learned mental models; `retain`/`recall`/`reflect` primitives; ships with the Agent Memory Benchmark (AMB). MIT, 15K+ stars. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fvectorize-io%2Fhindsight&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [SimpleMem](https://github.com/aiming-lab/SimpleMem) - 🆕 Efficient lifelong memory for LLM agents — multimodal (text + image + audio + video), designed to beat token-limit constraints without fine-tuning. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Faiming-lab%2FSimpleMem&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Genesys](https://github.com/Astrix-Labs/Genesys) - ⚠️ **Unverified** (single-maintainer, self-submitted). Causal-graph memory engine for AI agents — memories are nodes, edges encode causal relationships; multiplicative scoring (relevance × connectivity × reactivation) + active forgetting to prune stale context. MCP-native (13 tools). AGPL-3.0. Author-reported 85.55 LoCoMo score. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAstrix-Labs%2FGenesys&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Agent Memory Techniques](https://github.com/NirDiamant/Agent_Memory_Techniques) - 🆕 30 runnable Jupyter notebooks covering conversation buffers, vector stores, knowledge graphs, episodic/semantic memory, MemGPT, Mem0, Letta, Zep, Graphiti, LoCoMo benchmarks — the practical reference for learning all major memory patterns. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FNirDiamant%2FAgent_Memory_Techniques&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 
 ## 🔌 Tool & API Integration
@@ -986,6 +993,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Cognizant Neuro AI + ServiceNow AI Agent](https://news.cognizant.com/2026-06-18-Cognizant-expands-cross-platform-agentic-AI-with-new-ServiceNow-AI-Agent-interoperability) - 🆕 **June 2026**. Cross-platform enterprise orchestration enabling ServiceNow agents to work natively within Cognizant's Multi-Agent Accelerator.
 - [Talkdesk Agent Builder](https://www.cmswire.com/contact-center/customer-contact-week-2026-capturing-the-ai-announcements-in-contact-center-technology/) - 🆕 **June 2026**. Low-code builder allowing business users to deploy production-grade AI agents in the contact center in hours instead of weeks.
 - [HelloTwin Digital Authority](https://siliconangle.com/2026/06/24/hellotwin-launches-digital-authority-bring-governed-ai-agents-enterprise/) - 🆕 **June 2026**. AI twin designed as a single, auditable source of truth to govern agentic workflows with clear boundaries.
+- [Hellomatik](https://hellomatik.com) - 💰 ⚠️ **Freemium / Unverified**. AI agent platform that turns a company’s knowledge base into agents that answer, sell, and book across WhatsApp, email, and web. Integrations: Shopify, Stripe, Sage. Claimed 25–30% chat-to-sale conversion.
 
 ## 📊 Agent Evaluation & Observability
 
@@ -1973,6 +1981,8 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 | **Jul 10, 2026** | [Cursor 3.11](https://cursor.com/changelog) — Side Chats, conversation history search, Cloud Agent Hooks for granular agent observability | Tools |
 | **Jul 14, 2026** | [Oracle adds AI-native Agentic Applications Builder](https://www.oracle.com/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/) to AI Agent Studio for Fusion — opens Fusion agentic apps to pro-code developers; no additional cost for Fusion customers | Frameworks |
 | **Jul 16, 2026** | [Kimi K3](https://kimi.ai/) launched by Moonshot AI — 2.8T-parameter sparse MoE (896 experts, 16 active), 1M-token context, $3/$15 per million tokens; full open weights promised late July | Models |
+| **Jul 15, 2026** | [Inkling](https://thinkingmachines.ai/blog/introducing-inkling) launched by Thinking Machines Lab (Mira Murati, former OpenAI CTO) — 975B MoE / 41B active, 45T-token pretraining, 1M context, Apache 2.0 open weights on Hugging Face; natively multimodal (text/image/audio/video); Inkling-Small (12B active) ships alongside | Models |
+| **Jul 24, 2026** | [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) launched by Anthropic — fifth-generation flagship near Fable 5 performance at $5/$25 per million in/out tokens; 1M context, 128K output; default model on Claude Max; API: `claude-opus-5` | Models |
 
 ---
 
@@ -1991,11 +2001,11 @@ This list is released under [MIT License](LICENSE).
 
 **⭐ If you find this list useful, please give it a star! ⭐**
 
-*580+ resources across 25 categories — from foundation models to agent protocols to generative AI.*
+*590+ resources across 25 categories — from foundation models to agent protocols to generative AI.*
 
 Made with ❤️ by [Zijian Ni](https://github.com/Zijian-Ni)
 
-*Last updated: July 17, 2026*
+*Last updated: July 25, 2026*
 
 </div>
 

@@ -3,6 +3,32 @@
 All notable changes to **Awesome AI Agents 2026** are recorded here.
 Format: `YYYY-MM-DD  +Added  -Removed  ~Changed`.
 
+## 2026-07-25 — July 25 maintenance: Claude Opus 5, Inkling, PR #64/#65 (Genesys + Hellomatik), en/zh/ja sync
+
+### PR triage
+- **PR #64 — Genesys (Astrix Labs)** — **accepted & manually merged**. Causal-graph memory engine (AGPL-3.0, MCP-native, 13 tools); author-reported LoCoMo score 85.55; single-maintainer self-submitted entry labelled ⚠️ Unverified per project convention. Placed in **Agent Memory** section. Entry synced to zh-CN and ja; PR closed with maintainer-merge comment.
+- **PR #65 — Hellomatik** — **accepted & manually merged**. Commercial AI agent platform (WhatsApp/email/web, Shopify/Stripe/Sage integrations, 25–30% claimed chat-to-sale conversion rate); labelled 💰 Freemium + ⚠️ Unverified. Placed in **Enterprise Agent Platforms** (more accurate than original PR position). Entry synced to zh-CN and ja; PR closed with maintainer-merge comment.
+
+### + Added (web-verified; mirrored en/zh/ja)
+- **[Claude Opus 5](https://www.anthropic.com/news/claude-opus-5)** (Anthropic, July 24, 2026) — fifth-generation flagship, near Fable 5 performance at $5/$25 per million in/out tokens; 1M context, 128K output; default on Claude Max; API: `claude-opus-5`. Added to **Foundation Models › Anthropic** and **2026 AI Timeline**.
+- **[Inkling](https://thinkingmachines.ai/blog/introducing-inkling)** (Thinking Machines Lab / Mira Murati, July 15, 2026) — 975B MoE (41B active), 45T-token pretraining, 1M context, Apache 2.0 open weights; natively multimodal (text/image/audio/video); Inkling-Small (12B active) ships alongside. New **Thinking Machines Lab** subsection added to Foundation Models. Added to **2026 AI Timeline**.
+- **[Genesys](https://github.com/Astrix-Labs/Genesys)** (PR #64) — causal-graph memory engine, ⚠️ Unverified, added to **Agent Memory**.
+- **[Hellomatik](https://hellomatik.com)** (PR #65) — AI agent platform, 💰 Freemium + ⚠️ Unverified, added to **Enterprise Agent Platforms**.
+
+### ~ Changed
+- **2026 AI Timeline**: 2 new rows added (Inkling Jul 15, Claude Opus 5 Jul 24) across all three language files. Note: Grok 4.5, Kimi K3 were already present from the Jul 17 audit pass.
+- **Badges**: Last Updated → July 25, 2026; Resources → 590+; Spam_Audited → 2026-07-25 across all three README files.
+
+### en/zh/ja sync
+- All 4 new entries (Claude Opus 5, Inkling, Genesys, Hellomatik) present in README.md, README.zh-CN.md, and README.ja.md.
+- Chinese descriptions: natural technical Chinese. Japanese descriptions: standard technical Japanese with appropriate katakana.
+
+### ✓ Verified
+- Claude Opus 5: pricing and context window confirmed via `anthropic.com/news/claude-opus-5`.
+- Inkling: Apache 2.0 license, Mira Murati founding, parameter counts confirmed via `thinkingmachines.ai` and Hugging Face model card.
+- Genesys: GitHub repo `Astrix-Labs/Genesys` confirmed live, AGPL-3.0 license, MCP tools count, LoCoMo score per author.
+- Hellomatik: `hellomatik.com` confirmed live, Startupbase listing, integrations confirmed.
+
 ## 2026-07-17 (second pass) — Full-list verification audit: 150+ corrections, drift elimination, en/zh/ja lockstep
 
 ### Context

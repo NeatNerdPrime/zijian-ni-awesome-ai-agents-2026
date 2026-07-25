@@ -6,9 +6,9 @@
 [![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FZijian-Ni%2Fawesome-ai-agents-2026&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)](https://github.com/Zijian-Ni/awesome-ai-agents-2026/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-July%2017%2C%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-580%2B-orange.svg)](#)
-[![Audited](https://img.shields.io/badge/Spam_Audited-2026--07--17-success.svg)](#️-状态图例)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-July%2025%2C%202026-blue.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-590%2B-orange.svg)](#)
+[![Audited](https://img.shields.io/badge/Spam_Audited-2026--07--25-success.svg)](#️-状态图例)
 [![English](https://img.shields.io/badge/Lang-English-informational.svg)](README.md)
 [![日本語](https://img.shields.io/badge/Lang-日本語-red.svg)](README.ja.md)
 
@@ -128,6 +128,7 @@
 
 ### Anthropic
 
+- [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) - 🆕 **2026-07-24**。Anthropic 第五代旗舰模型，性能近似 Fable 5，定价维持较低（输入 / 输出 $5 / $25 每百万 token）。支持 1M token 上下文窗口和最多 128K 输出 token。现为 Claude Max 默认模型。API: `claude-opus-5`。可通过 Anthropic API、Amazon Bedrock 和 Google Cloud Vertex AI 使用。
 - [Claude Fable 5 全球恢复访问](https://www.anthropic.com/news/redeploying-fable-5) - 🆕 **2026-07-01**。美国商务部于 6 月 30 日解除出口管制后，Anthropic 在 Claude.ai、Claude Platform、Claude Code、Claude Cowork 全面恢复全球访问。已部署针对 Amazon 发现的 jailbreak 的新安全分类器（对该已报告行为的拦截率 >99%）。Pro/Max/Team 与部分 Enterprise 套餐在 7 月 7 日前可将 Fable 5 用于最多 50% 的每周用量，之后通过用量额度使用；AWS、Google Cloud、Microsoft Foundry 云渠道随后恢复。Mythos 5 仍限美国受审实体。
 - [Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5) - 🆕 **2026-06-30**。迄今最具 Agent 能力的 Sonnet — 支持规划、浏览器/终端工具调用，自主运行水平接近此前需要 Opus 级模型才能做到的程度。在高努力档位下，Agent 搜索（BrowseComp）与电脑操作（OSWorld-Verified）表现逼近 Opus 4.8，且相比 Sonnet 4.6 拥有更宽的性价比区间。现为 Claude.ai 免费版/Pro 版默认模型，Max/Team/Enterprise、Claude Code 及 API（`claude-sonnet-5`）均可用。截至 2026-08-31 的引导定价为输入/输出每百万 token $2/$10（之后 $3/$15）。Anthropic 称其不良行为率低于 Sonnet 4.6。
 - [Claude Fable 5](https://www.anthropic.com/news/claude-fable-5-mythos-5) - 🆕 **2026-06-09**。Anthropic 首个公开可用的 **Mythos 级别**模型——能力层级高于 Opus。在软件工程、知识工作、视觉、科研等基准全面超越 Opus 4.8。内置安全护栏（涉网络安全/生物的敏感请求可能被路由到 Opus 4.8）。$10 / $50 每百万输入/输出 token。Anthropic API、Amazon Bedrock、Google Cloud Vertex AI 可用。**⚠️ 2026-06-12 起暂停访问** —— 美国政府的出口管制指令要求 Anthropic 对所有客户停用 Fable 5 与 Mythos 5，等待安全审查。**✅ 出口管制于 2026-06-30 解除；7 月 1 日恢复访问**，并配备新的网络安全分类器 —— 见上方条目（[声明](https://www.anthropic.com/news/redeploying-fable-5)）。
@@ -195,6 +196,11 @@
 
 - [ZAYA1-8B](https://www.zyphra.com/post/zaya1-8b) - 🆕 **2026-05-06**。MoE 推理模型（激活参数 <1B），完全在 AMD Instinct MI300X 集群上训练。Apache 2.0 权重已在 Hugging Face，并在 Zyphra Cloud 提供 serverless 端点；强调每激活参数的智能密度。
 - [ZAYA1-8B-Diffusion-Preview](https://www.zyphra.com/post/zaya1-8b-diffusion-preview) - 🆕 **2026-05-14**。首个从自回归 LLM 转换得来的 MoE 扩散语言模型，也是首个在 AMD GPU 上训练的扩散 LM。每步生成 16 个 token，相比自回归基线最多 **7.7× 推理加速**；采用 Zyphra 的 TiDAR 训练配方 + CCA 注意力。
+
+### Thinking Machines Lab
+
+- [Inkling](https://thinkingmachines.ai/blog/introducing-inkling) - 🆕 **2026-07-15**。前 OpenAI CTO Mira Murati 创立。975B MoE 参数（41B 激活），基于 45T token 预训练，1M token 上下文窗口。原生多模态（文本 / 图像 / 音频 / 视频）。Apache 2.0 开源权重，已发布至 Hugging Face。同日发布 **Inkling-Small**（12B 激活参数）。可通过 Thinking Machines API 和 Hugging Face Inference 使用。
+- [Inkling-Small](https://thinkingmachines.ai/blog/introducing-inkling) - 🆕 **2026-07-15**。Inkling 的轻量化变体，12B 激活参数，同样遵循 Apache 2.0协议，拥有相同多模态能力，更适合边缘和资源受限场景部署。
 
 ### Mistral AI
 
@@ -540,6 +546,7 @@
 - [taOSmd](https://github.com/jaylfc/taosmd) - 🆕 ⚠️ **Unverified.** 本地优先、基于追加式转录的 Agent 记忆：类型化时序知识图（修正后的新事实自动覆盖旧事实）+ 向量与 BM25 混合检索。面向小型本地模型调优，完全离线（8 GB 单板机即可运行）。作者声称 LongMemEval-S 端到端 Judge 97%；单作者维护，审核时 44 stars，基准可按 `docs/benchmarks.md` 复现。MIT。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fjaylfc%2Ftaosmd&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Hindsight](https://github.com/vectorize-io/hindsight) - 🆕 从经验中学习的 Agent 记忆 —— 不只是会话历史。仿生数据结构组织世界事实、Agent 经验与习得的心智模型；提供 `retain`/`recall`/`reflect` 原语；随附 Agent Memory Benchmark (AMB)。MIT，15K+ stars。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fvectorize-io%2Fhindsight&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [SimpleMem](https://github.com/aiming-lab/SimpleMem) - 🆕 高效的 LLM Agent 终身记忆——多模态（文本+图像+音频+视频），无需微调即可突破 token 上限约束。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Faiming-lab%2FSimpleMem&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Genesys](https://github.com/Astrix-Labs/Genesys) - ⚠️ **未验证**（单一维护者，自我提交）。面向 AI Agent 的因果图记忆引擎：记忆为节点，边编码因果关系；采用相乘评分（相关性 × 连通性 × 再激活系数）+ 主动遗忘机制剪除过时上下文。MCP 原生支持（13 个工具）。AGPL-3.0。作者自报 LoCoMo 得分 85.55。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAstrix-Labs%2FGenesys&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Agent Memory Techniques](https://github.com/NirDiamant/Agent_Memory_Techniques) - 🆕 30 个可运行的 Jupyter 笔记本，覆盖对话缓冲、向量存储、知识图谱、情景/语义记忆、MemGPT、Mem0、Letta、Zep、Graphiti 与 LoCoMo 基准——学习各类记忆模式的实用参考。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FNirDiamant%2FAgent_Memory_Techniques&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 
 ---
@@ -951,6 +958,7 @@
 - [Cognizant Neuro AI + ServiceNow AI Agent](https://news.cognizant.com/2026-06-18-Cognizant-expands-cross-platform-agentic-AI-with-new-ServiceNow-AI-Agent-interoperability) - 🆕 **2026 年 6 月**。跨平台企业编排：让 ServiceNow Agent 原生运行在 Cognizant 的 Multi-Agent Accelerator 中。
 - [Talkdesk Agent Builder](https://www.cmswire.com/contact-center/customer-contact-week-2026-capturing-the-ai-announcements-in-contact-center-technology/) - 🆕 **2026 年 6 月**。低代码构建器，让业务人员在数小时内（而非数周）将生产级 AI Agent 部署到联络中心。
 - [HelloTwin Digital Authority](https://siliconangle.com/2026/06/24/hellotwin-launches-digital-authority-bring-governed-ai-agents-enterprise/) - 🆕 **2026 年 6 月**。作为单一可审计事实来源的 AI 数字分身，以清晰边界治理 Agentic 工作流。
+- [Hellomatik](https://hellomatik.com) - 💰 ⚠️ **Freemium / 未验证**。将企业知识库转化为能够在 WhatsApp、邮件和网页全渠道解答、销售和预订的 AI Agent 平台。支持集成 Shopify、Stripe、Sage。对话转化率自称达 25–30%。
 
 ---
 
@@ -1815,6 +1823,8 @@
 | **2026-07-10** | [Cursor 3.11](https://cursor.com/changelog) — 侧边聊天、对话历史搜索、Cloud Agent Hooks 精细化 Agent 可观测性 | 工具 |
 | **2026-07-14** | [Oracle 为 Fusion AI Agent Studio 加入 AI 原生 Agentic Applications Builder](https://www.oracle.com/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/) — 向专业代码开发者开放 Fusion Agentic 应用；Fusion 客户免费使用 | 框架 |
 | **2026-07-16** | [Kimi K3](https://kimi.ai/) 由 Moonshot AI 发布 — 2.8T 参数稀疏 MoE（896 专家，每 token 激活 16 个），1M token 上下文，每百万 token $3/$15；承诺 7 月下旬开源全量权重 | 模型 |
+| **2026-07-15** | [Inkling](https://thinkingmachines.ai/blog/introducing-inkling) 由 Thinking Machines Lab（Mira Murati，前 OpenAI CTO）发布 — 975B MoE / 41B 激活，45T token 预训练，1M 上下文，Apache 2.0 开源权重发布至 Hugging Face；原生多模态（文本/图像/音频/视频）；Inkling-Small（12B 激活）同日发布 | 模型 |
+| **2026-07-24** | [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) 由 Anthropic 发布 — 第五代旗舰，性能近似 Fable 5，输入/输出定价 $5/$25 每百万 token；1M 上下文，128K 输出；Claude Max 默认模型；API: `claude-opus-5` | 模型 |
 
 ---
 
