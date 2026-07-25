@@ -3,7 +3,7 @@
 All notable changes to **Awesome AI Agents 2026** are recorded here.
 Format: `YYYY-MM-DD  +Added  -Removed  ~Changed`.
 
-## 2026-07-25 — July 25 maintenance: Claude Opus 5, Inkling, PR #64/#65 (Genesys + Hellomatik), en/zh/ja sync
+## 2026-07-25 — July 25 maintenance: Claude Opus 5, Inkling, PR #64/#65 (Genesys + Hellomatik), en/zh/ja sync; wave-2 cross-category expansion
 
 ### PR triage
 - **PR #64 — Genesys (Astrix Labs)** — **accepted & manually merged**. Causal-graph memory engine (AGPL-3.0, MCP-native, 13 tools); author-reported LoCoMo score 85.55; single-maintainer self-submitted entry labelled ⚠️ Unverified per project convention. Placed in **Agent Memory** section. Entry synced to zh-CN and ja; PR closed with maintainer-merge comment.
@@ -19,9 +19,74 @@ Format: `YYYY-MM-DD  +Added  -Removed  ~Changed`.
 - **2026 AI Timeline**: 2 new rows added (Inkling Jul 15, Claude Opus 5 Jul 24) across all three language files. Note: Grok 4.5, Kimi K3 were already present from the Jul 17 audit pass.
 - **Badges**: Last Updated → July 25, 2026; Resources → 590+; Spam_Audited → 2026-07-25 across all three README files.
 
-### en/zh/ja sync
+### en/zh/ja sync (wave-1)
 - All 4 new entries (Claude Opus 5, Inkling, Genesys, Hellomatik) present in README.md, README.zh-CN.md, and README.ja.md.
 - Chinese descriptions: natural technical Chinese. Japanese descriptions: standard technical Japanese with appropriate katakana.
+
+### + Added — Wave 2: Cross-category expansion (en/zh/ja sync)
+
+**Multimodal & Generative AI**
+- **[Qwen-Image-3.0](https://qwenlm.github.io/)** (Alibaba, July 20, 2026) — third-generation image model, photorealism + text rendering + multi-subject consistency. Added to **Image Generation**.
+- **[Gemini Omni Flash (video)](https://deepmind.google/technologies/gemini/)** (Google, July 2026 preview) — high-speed near-real-time video generation. Added to **Video Generation**.
+- **ElevenLabs Eleven v3 / ElevenLabs (Voice section)** — July 2026 update appended: Music Finetunes API, per-agent sentiment analysis, nested transfers, RAG KB queries, faster generation.
+
+**Agent Frameworks**
+- **Microsoft Agent Framework** — v1.12.1 (July 22, 2026) details appended to existing entry.
+- **[ServiceNow Build Agent](https://www.servicenow.com/products/ai-agents/)** (GA July 2026) — cross-IDE AI agent for Cursor/Devin Desktop/Claude Code/GitHub Copilot. Added to **Agent Frameworks**.
+
+**Agent IDEs & Visual Builders**
+- **[Cursor Router](https://cursor.com/)** (July 2026) — intelligent model-routing system (Intelligence/Balance/Cost modes), Grok 4.5 integration.
+- **Devin Desktop July 2026 updates** — GPT-5.6/Claude Opus 5/Claude Fable 5 support, Devin Outposts, Agentic MapReduce, Poke acquisition.
+- **[JetBrains Rider 2026.2](https://www.jetbrains.com/rider/)** (July 22, 2026) — enhanced AI agent intelligence, GitHub Copilot integration.
+- **[Android Studio Quail 2](https://developer.android.com/studio)** (July 2026) — redesigned Agent Mode, memory leak detection, AI crash analysis.
+
+**Coding Agents**
+- **[ChatGPT Work](https://openai.com/chatgpt/work/)** (OpenAI, July 9, 2026) — multi-step autonomous work agent for files/apps.
+- **[Cursor iOS](https://cursor.com/)** (July 2026) — mobile app for iOS development.
+
+**Physical AI & Embodied Agents**
+- Intro paragraph updated: "2026 H1 humanoid robot startups raised a record $8.6B globally."
+- **[Boston Dynamics Atlas Gen 5](https://www.bostondynamics.com/atlas)** (2026) — fifth-generation Atlas, order of magnitude less complex, Hyundai + Google DeepMind deployments.
+- **[Figure 03 × BMW](https://www.figure.ai/)** (June–July 2026) — Figure 03 deployed in BMW Spartanburg automotive plant.
+
+**Browser & Web Agents**
+- **[Safari MCP Server](https://developer.apple.com/safari/technology-preview/)** (July 1, 2026, Safari Technology Preview 247) — Apple's native browser-level MCP integration; first major browser with native MCP support.
+
+**Voice & Multimodal Agents**
+- **[GPT Voice](https://openai.com/)** (OpenAI, July 23, 2026) — voice interface for ChatGPT Work, GPT-Live powered.
+
+**Personal AI Agents**
+- **Gemini Spark** — July 2026 expansion to Pro tier noted.
+- **[Gemini Notebook](https://notebooklm.google.com/)** (July 2026) — NotebookLM rebranded; adds code execution, chart generation, source citation.
+
+**Mobile Agents**
+- **[iOS 27 Siri AI (preview)](https://www.apple.com/ios/)** (Preview July 2026, GA fall 2026) — rebuilt Siri with cross-app context, natural language Shortcuts, multi-AI marketplace.
+- **[EU Android AI Openness Ruling](https://ec.europa.eu/)** (July 17, 2026) — EU orders Google to give rival AIs deeper Android access by August 2027.
+
+**Enterprise Agent Platforms**
+- **[OpenAI Presence](https://openai.com/)** (July 22, 2026) — enterprise agent deployment platform, 75% claimed autonomous phone support resolution.
+
+**Agent Evaluation & Observability**
+- **[aws-bench](https://github.com/aws-samples/aws-bench)** — AWS open-source benchmark for AI agents on AWS-specific tasks.
+
+**AI Research Tools**
+- **[Strands Evals (AWS)](https://github.com/strands-agents/evals)** — AWS evaluation framework for agent workflows, Apache-2.0.
+
+**Chinese AI Ecosystem**
+- **[Kimi K3](https://kimi.moonshot.cn/)** (Moonshot AI, July 16, 2026) — 2.8T MoE, open weights July 27.
+- **[Qwen 3.8-Max](https://qwenlm.github.io/)** (Alibaba, July 19, 2026 preview) — 2.4T MoE preview.
+- **[DeepSeek V4](https://www.deepseek.com/)** (July 2026) — 1M context, tiered pricing.
+
+**2026 AI Timeline**
+- Added 8 new rows: Jul 17 (EU ruling), Jul 19 (Qwen 3.8-Max), Jul 20 (Qwen-Image-3.0), Jul 22 (Grok 4.5 rollout + MAF v1.12.1 + OpenAI Presence), Jul 23 (GPT Voice), Jul 27 (Kimi K3 open weights), Jul 28 (MCP spec).
+- Jul 8, Jul 9 entries confirmed already present from wave-1/prior pass; no duplication.
+
+### ~ Changed (wave-2)
+- **Badges**: Resources → 610+ across all three README files.
+
+### en/zh/ja sync (wave-2)
+- All wave-2 entries mirrored across README.md, README.zh-CN.md, and README.ja.md.
+- Chinese: natural technical Chinese, CN flag emoji on Chinese-lab entries. Japanese: standard technical Japanese with katakana for product names.
 
 ### ✓ Verified
 - Claude Opus 5: pricing and context window confirmed via `anthropic.com/news/claude-opus-5`.
