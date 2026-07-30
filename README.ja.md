@@ -784,7 +784,7 @@
 - [PhyAgentOS](https://github.com/PhyAgentOS/PhyAgentOS) - 🆕 エージェンティックワークフローに基づく自己進化型の身体性 AI OS。認知機能をハードウェアから分離し、監査可能性を組み込んだクロスプラットフォームのロボット展開を実現。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FPhyAgentOS%2FPhyAgentOS&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [ENPIRE](https://research.nvidia.com/labs/gear/enpire/) - 🆕 **2026-06**。NVIDIA / CMU / UC Berkeley による、AI エージェントが自らロボティクス研究を実施できるフレームワーク — 双腕ロボットの管理、アルゴリズムの改変、ポリシーの訓練を人手を介さずに行う。
 - [Kairos](https://futureiot.tech/kairos-model-breaks-new-ground-for-open-source-embodied-intelligence/) - 🆕 **2026-06-15**。ACE ROBOTICS が Kairos ワールドモデルをオープンソース化 — RoboTwin 2.0、LIBERO-Plus、WorldModelBench Robot、DreamGen で VLA システムを制した初のワールドモデルアプローチ；ウェイトは GitHub / Hugging Face / ModelScope で公開。
-- [NVIDIA Cosmos 3](https://www.axios.com/2026/06/08/ai-news-nvidia-cosmos-3-openai-sites-solara-rtx-spark) - 🆕 **2026-06**。単なるテキストではなく、物理法則と空間幾何学に基づいて学習された物理 AI 向け基盤モデル。ロボット工学や工場自動化をターゲットとする。
+- [NVIDIA Cosmos 3](https://blogs.nvidia.com/blog/cosmos-3-physical-ai-open-world-foundation-model/) - 🆕 **2026-06**。**視覚推論・マルチモーダル生成・行動予測**を一つに統合したオープンな世界基盤モデル。ロボット、自動運転、視覚エージェントが「動く前に考える」ことを可能にする（コントローラにテキスト専用モデルを外付けするのではない）。NVIDIA は VANTAGE-Bench（スマートインフラのシーン理解）と TAR 交通異常推論チャレンジで首位のオープン VLM と報告。Cosmos 3 の各バリアントはArtificial Analysis のオープンウェイト board で首位、世界生成では Physics-IQ / R-Bench / PAI-Bench でもトップ。Linux Foundation の **OpenMDW 1.1** ライセンス採用 —— ウェイト・アーキテクチャ・ドキュメント・データセット・ベンチマーク・コードを単一のモデル中心ライセンスでカバー。build.nvidia.com と Hugging Face で入手可能、NIM マイクロサービスでデプロイ可。端末向けの **Cosmos 3 Edge**（4B パラメータ）を含み、FANUC・富士通・ソニーグループとの **Cosmos Coalition** も同時始動。
 
 - [Google Gemini Robotics-ER 1.6](https://deepmind.google/blog/gemini-robotics-er-1-6/) - 🆕 2026-04-14。空間・身体性推論を強化したロボティクス AI モデル（アナログ計器の読み取りを含む）。Gemini API 経由で利用可能。
 - [Project Prometheus (Bezos)](https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/) - 🆕 💰 **2026-06-11**。ジェフ・ベゾスが共同主導する Physical AI ベンチャー。物理世界のための「artificial general engineer」構築に向け、評価額 $41B で $12B を調達。
@@ -934,7 +934,7 @@
 *音声対応 ・ マルチモーダル AI エージェントプラットフォーム。*
 
 - [AgentLine](https://agentline.cloud/) - 🆕 ⚠️ **Unverified.** AI エージェント向けテレフォニー基盤 —— 電話番号の発行、発信／着信、リアルタイム文字起こしを JSON で webhook に流す。エージェント音声パイプライン用途に絞った Twilio の軽量代替を標榜。提出者は有料ユーザー 30+ と主張するが、第三者の採用事実は未確認。
-- [ElevenLabs](https://elevenlabs.io/) - 業界トップの AI 音声合成、クローン、会話 AI。
+- [ElevenLabs](https://elevenlabs.io/) - 業界トップの AI 音声合成、クローン、会話 AI。⚡ **[5 億ドルのシリーズ D、評価額 110 億ドル](https://elevenlabs.io/blog/series-d)**（2026-07）。同時に ARR **5 億ドル**突破を発表し、新規投資家に BlackRock と NVIDIA が参加 —— 2026 年下半期に入る時点で最も資金力のある音声 AI 専業ベンダー。
 - [Vapi](https://github.com/VapiAI/server-sdk-python) - 音声 AI エージェントを構築・テスト・展開するプラットフォーム。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FVapiAI%2Fserver-sdk-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Retell AI](https://www.retellai.com/) - プロダクション対応の会話型音声 AI エージェント。
 - [Bland AI](https://www.bland.ai/) - 企業向け AI 電話プラットフォーム。
@@ -1714,7 +1714,7 @@
 - [Devin 3.0](https://www.cognition.ai/) - 🆕 動的再プラン、自己修復コード、レガシーコードベース移行を含む進化。
 - [Microsoft Agent Framework](https://learn.microsoft.com/en-us/agent-framework/) - 🆕 AutoGen + Semantic Kernel が統一企業エージェントプラットフォームとして統合。
 - [OpenAI Codex CLI](https://github.com/openai/codex) - OpenAI のオープンソースターミナルエージェント参入。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenai%2Fcodex&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Browser Use](https://github.com/browser-use/browser-use) - AI エージェントが Web と自然に対話できるようにしたブレイクスルー。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fbrowser-use%2Fbrowser-use&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Browser Use](https://github.com/browser-use/browser-use) - ⚡ **v0.13.7（2026-07-27）**。AI エージェントが Web と自然に対話できるようにしたブレイクスルー。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fbrowser-use%2Fbrowser-use&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Claude Computer Use](https://www.anthropic.com/) - 🆕 Desktop Intelligence により Claude が画面を見てあらゆるソフトウェアをコントロール。
 - [Manus AI](https://manus.im/) - 🇨🇳 調査、コーディング、複雑ワークフローを処理できる汎用自律エージェント。Meta の 2025 年 12 月の約 $2B 買収は**[中国 NDRC が 2026-04-27 に禁止](https://www.theguardian.com/world/2026/apr/27/china-blocks-meta-takeover-manus-ai-agent-developer)** — 北京が外資安全審査を用いて AI 分野の買収を阻止した初のケース（旧記載：約 $2B で買収、2025-12）。
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) - オープンソース AI ソフトウェアエンジニアリングプラットフォームが広く採用された。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAll-Hands-AI%2FOpenHands&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)

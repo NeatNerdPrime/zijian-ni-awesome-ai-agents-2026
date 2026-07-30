@@ -784,7 +784,7 @@
 - [PhyAgentOS](https://github.com/PhyAgentOS/PhyAgentOS) - 🆕 基于 Agentic 工作流的自进化具身 AI 操作系统。将认知功能与硬件解耦，实现跨平台机器人部署并内建可审计性。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FPhyAgentOS%2FPhyAgentOS&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [ENPIRE](https://research.nvidia.com/labs/gear/enpire/) - 🆕 **2026-06**。NVIDIA/CMU/UC Berkeley 联合框架，让 AI Agent 自主开展机器人研究 —— 管理双臂机器人、修改算法、训练策略，全程无需人工干预。
 - [Kairos](https://futureiot.tech/kairos-model-breaks-new-ground-for-open-source-embodied-intelligence/) - 🆕 **2026-06-15**。ACE ROBOTICS 开源其 Kairos 世界模型 —— 首个在 RoboTwin 2.0、LIBERO-Plus、WorldModelBench Robot 与 DreamGen 上超越 VLA 系统的世界模型路线；权重上 GitHub / Hugging Face / ModelScope。
-- [NVIDIA Cosmos 3](https://www.axios.com/2026/06/08/ai-news-nvidia-cosmos-3-openai-sites-solara-rtx-spark) - 🆕 **2026-06**。专为物理 AI 设计的底层基础模型。它并非仅仅基于文本，而是主要针对物理定律和空间几何进行训练，目标应用包括机器人和工厂自动化。
+- [NVIDIA Cosmos 3](https://blogs.nvidia.com/blog/cosmos-3-physical-ai-open-world-foundation-model/) - 🆕 **2026-06**。开放世界基座模型，把**视觉推理、多模态生成、动作预测**统一到一个模型里，让机器人、自动驾驶和视觉 Agent「先想再动」——而不是在控制器上外挂一个纯文本模型。NVIDIA 称其为 VANTAGE-Bench（智慧基建场景理解）和 TAR 交通异常推理挑战上排名第一的开源 VLM，Cosmos 3 各变体在 Artificial Analysis 开源权重榜领先，并在 Physics-IQ / R-Bench / PAI-Bench 等世界生成基准上登顶。采用 Linux Foundation 的 **OpenMDW 1.1** 许可——单一的模型中心许可，覆盖权重、架构、文档、数据集、基准与代码。可在 build.nvidia.com、Hugging Face 获取，也可用 NIM 微服务部署。含 **Cosmos 3 Edge**（4B 参数）端侧版本；同期启动与 FANUC、富士通、索尼集团合作的 **Cosmos Coalition**。
 
 - [Google Gemini Robotics-ER 1.6](https://deepmind.google/blog/gemini-robotics-er-1-6/) - 🆕 2026-04-14。机器人 AI，空间/具身推理增强（含模拟仪表读数），可通过 Gemini API 使用。
 - [Project Prometheus (Bezos)](https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/) - 🆕 💰 **2026-06-11**。贝佐斯联合主导的 Physical AI 项目，以 $41B 估值融资 $12B，目标打造面向物理世界的「通用人工工程师」。
@@ -932,7 +932,7 @@
 ## 🗣️ 语音与多模态 Agent
 
 - [AgentLine](https://agentline.cloud/) - 🆕 ⚠️ **Unverified.** 面向 AI Agent 的电话基础设施 —— 申请号码、外呼/接听、实时转录为 JSON 推到 webhook。定位为 Twilio 在 Agent 语音管线场景下的更轻替代；提交者自称 30+ 付费用户，暂无第三方采用证据。
-- [ElevenLabs](https://elevenlabs.io/) - AI 语音合成 + 对话 Agent。
+- [ElevenLabs](https://elevenlabs.io/) - AI 语音合成 + 对话 Agent。⚡ **[5 亿美元 D 轮，估值 110 亿美元](https://elevenlabs.io/blog/series-d)**（2026-07），同时宣布 ARR 突破 **5 亿美元**，新投资方包括 BlackRock 和 NVIDIA——进入 2026 下半年时资金最充裕的纯语音 AI 厂商。
 - [Vapi](https://github.com/VapiAI/server-sdk-python) - 语音 AI Agent 平台。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FVapiAI%2Fserver-sdk-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Retell AI](https://www.retellai.com/) - 生产级对话语音 AI。
 - [Bland AI](https://www.bland.ai/) - 企业级 AI 电话平台。
@@ -1752,7 +1752,7 @@
 - [Devin 3.0](https://www.cognition.ai/) - 🆕 动态重规划、自愉合代码、遗留代码迁移。
 - [Microsoft Agent Framework](https://learn.microsoft.com/en-us/agent-framework/) - 🆕 AutoGen + Semantic Kernel 合并。
 - [OpenAI Codex CLI](https://github.com/openai/codex) - OpenAI 进入开源终端 Agent 赛道。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenai%2Fcodex&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Browser Use](https://github.com/browser-use/browser-use) - 让 AI Agent 自然使用网页的突破性项目。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fbrowser-use%2Fbrowser-use&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Browser Use](https://github.com/browser-use/browser-use) - ⚡ **v0.13.7（2026-07-27）**。让 AI Agent 自然使用网页的突破性项目。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fbrowser-use%2Fbrowser-use&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Claude Computer Use](https://www.anthropic.com/) - 🆕 Claude "Desktop Intelligence"。
 - [Manus AI](https://manus.im/) - 🇨🇳 通用自主 Agent，能处理研究 / 编程 / 复杂工作流。Meta 2025 年 12 月宣布的约 $2B 收购已被**[中国发改委于 2026-04-27 禁止](https://www.theguardian.com/world/2026/apr/27/china-blocks-meta-takeover-manus-ai-agent-developer)** —— 这是北京首次动用外资安全审查机制阻止 AI 领域的收购。
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) - 开源 SWE Agent 平台大量采用。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAll-Hands-AI%2FOpenHands&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)

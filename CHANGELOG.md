@@ -3,6 +3,46 @@
 All notable changes to **Awesome AI Agents 2026** are recorded here.
 Format: `YYYY-MM-DD  +Added  -Removed  ~Changed`.
 
+### 2026-07-30 (d) — late-July ecosystem pass: primary-source upgrades for Cosmos 3, ElevenLabs, Browser Use
+
+Worked through the remaining per-category research leads, verifying each against
+a first-party page before writing. Highlights are where the existing entry was
+sourced from secondary coverage and turned out to be thinner or vaguer than what
+the vendor itself published.
+
+- **NVIDIA Cosmos 3** — entry was cited to an Axios news roundup and described
+  only as "trained on physics and spatial geometry rather than just text."
+  Repointed to [NVIDIA's own announcement](https://blogs.nvidia.com/blog/cosmos-3-physical-ai-open-world-foundation-model/)
+  and rewritten from it: unifies vision reasoning + multimodal generation +
+  action prediction; reported top-ranked open VLM on VANTAGE-Bench and the TAR
+  traffic-anomaly challenge; leads Physics-IQ / R-Bench / PAI-Bench for world
+  generation. **Added the licence, which was missing entirely** — Linux
+  Foundation **OpenMDW 1.1**, a single model-centric licence covering weights,
+  architecture, docs, datasets, benchmarks and code. Also added **Cosmos 3 Edge**
+  (4B, on-device) and the **Cosmos Coalition** (FANUC, Fujitsu, Sony Group).
+- **ElevenLabs** — added the **$500M Series D at $11B valuation** and the
+  **$500M ARR** milestone, both from the vendor's own blog index, with BlackRock
+  and NVIDIA among new investors.
+- **Browser Use** — version stamped at **v0.13.7 (July 27, 2026)** from the
+  releases API.
+
+### Deliberately not added
+Roughly a third of the surveyed items were left out for lack of a primary
+source, including: an alleged OpenAI agent zero-day third-party breach (no
+official disclosure, only forum/newsletter chatter); several large funding
+rounds visible only in aggregator summaries; a phone-call agent service sourced
+to Medium posts; and assorted benchmark leader claims. A reported
+"LangGraph v1.3.14" was rejected because the releases API returns **1.2.10** as
+latest — the list keeps the API-verified figure.
+
+Two claims in the survey were also contradicted by evidence already gathered
+earlier in this run and were **not** propagated: that Claude Fable 5 / Mythos
+Preview are unconfirmed product names (they appear in Anthropic's own pricing
+documentation), and that Claude Opus 4.8 may not exist (it is listed on
+Anthropic's pricing page as a legacy tier).
+
+---
+
 ### 2026-07-30 (c) — follow-up: licence corrections, unshipped-weights flags, Qwen3-Embedding added
 
 Second pass over the local-model / embedding research, after verifying each
