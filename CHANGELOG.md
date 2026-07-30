@@ -3,6 +3,40 @@
 All notable changes to **Awesome AI Agents 2026** are recorded here.
 Format: `YYYY-MM-DD  +Added  -Removed  ~Changed`.
 
+### 2026-07-30 (c) — follow-up: licence corrections, unshipped-weights flags, Qwen3-Embedding added
+
+Second pass over the local-model / embedding research, after verifying each
+remaining lead against the Hugging Face API directly rather than trusting the
+research summary.
+
+- **MiniMax M3 was labelled MIT — it is not.** The model card declares
+  `license: other` with `license_name: minimax-community`, i.e. a bespoke
+  community licence. Corrected in en/zh/ja, added the real weights path
+  (`MiniMaxAI/MiniMax-M3`, 82 files, ungated) and a pointer to the benchmark
+  caution for its SWE-bench Pro figure. This is the third licence mislabel found
+  this run (after Kimi K3 and Gemma) — "open weights" kept getting written as
+  "MIT/Apache" without checking.
+- **Inkling-Small is announced but unshipped.** It was listed as a plain
+  available model with "12B active parameters". Verified: the `thinkingmachines`
+  HF org contains only `Inkling` and `Inkling-NVFP4`, there is **no
+  `Inkling-Small` repo**, and the official Inkling page lists only the 975B/41B
+  configuration. Now tagged 🧪 with an explicit "weights not published yet" note;
+  the reported ~276B/12B figure is included but marked as unconfirmed rather
+  than stated as fact.
+- **+ Qwen3-Embedding-8B / -4B / -0.6B** added to the Embedding Models table
+  (all Apache-2.0, HF-verified, `-0.6B` past 10M downloads). The table previously
+  listed only proprietary APIs plus BGE-M3/Jina/Nomic, so the strongest
+  self-hostable multilingual option was missing entirely. Added a note that
+  there is **no OpenAI `text-embedding-4`** as of 2026-07-30.
+- **+ MiniMax-M3** row in the local-deployment table with an honest
+  "total params not disclosed" cell rather than a guessed number.
+
+Benchmark leader figures from this research were **not** written in: the same
+suites had three different reported leaders across sources, and none traced to a
+primary leaderboard. That is what the new benchmark caution block exists for.
+
+---
+
 ## 2026-07-30 (b) — recommendation-freshness overhaul: stale advice purge, fabricated entry removed, verified pricing/local-model rebuild, two new audit gates
 
 This run targeted a failure mode the existing checks were blind to. `sync_audit.py`

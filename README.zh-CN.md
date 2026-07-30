@@ -239,8 +239,8 @@
 
 ### Thinking Machines Lab
 
-- [Inkling](https://thinkingmachines.ai/inkling/) - 🆕 **2026-07-15**。前 OpenAI CTO Mira Murati 创立。975B MoE 参数（41B 激活），基于 45T token 预训练，1M token 上下文窗口。原生多模态（文本 / 图像 / 音频 / 视频）。Apache 2.0 开源权重，已发布至 Hugging Face。同日发布 **Inkling-Small**（12B 激活参数）。可通过 Thinking Machines API 和 Hugging Face Inference 使用。
-- [Inkling-Small](https://thinkingmachines.ai/inkling/) - 🆕 **2026-07-15**。Inkling 的轻量化变体，12B 激活参数，同样遵循 Apache 2.0协议，拥有相同多模态能力，更适合边缘和资源受限场景部署。
+- [Inkling](https://thinkingmachines.ai/inkling/) - 🆕 **2026-07-15**。前 OpenAI CTO Mira Murati 创立。975B MoE 参数（41B 激活），基于 45T token 预训练，1M token 上下文窗口。原生多模态（文本 / 图像 / 音频 / 视频）。Apache 2.0 开源权重，已发布至 Hugging Face。同日以预览形式announce了 **Inkling-Small**（权重尚未发布）。可通过 Thinking Machines API 和 Hugging Face Inference 使用。
+- [Inkling-Small](https://thinkingmachines.ai/inkling/) - 🆕 🧪 **2026-07-15 —— 以预览形式公布，权重尚未发布。** Inkling 的轻量化变体（据报道约 276B 总参 / 12B 激活，该数字未经独立核实），面向更易部署的场景。⚠️ 2026-07-30 核实：Hugging Face 的 `thinkingmachines` 组织下只有 **`Inkling`** 和 **`Inkling-NVFP4`** 两个仓库，**不存在 `Inkling-Small`**，且官方 Inkling 页面只列出 975B/41B 一种配置。权重落地前不要按它做部署规划。
 
 ### Mistral AI
 
@@ -1427,6 +1427,11 @@
 | Jina-embeddings-v3 | 1024 | 8K | ✅ | ✅ | 多语言 | CC-BY-NC | ~65 |
 | Nomic-embed-text-v2 | 768 | 8K | ✅ | ✅ | 多语言 | Apache-2.0 | ~62 |
 | Voyage-3 | 1024 | 32K | ❌ | ✅ | 多语言 | 闭源 | ~67 |
+| [Qwen3-Embedding-8B](https://huggingface.co/Qwen/Qwen3-Embedding-8B) | 4096 | 32K | ✅ | ✅ | 100+ | Apache-2.0 | ~70（多语言第 1） |
+| [Qwen3-Embedding-4B](https://huggingface.co/Qwen/Qwen3-Embedding-4B) | 2560 | 32K | ✅ | ✅ | 100+ | Apache-2.0 | — |
+| [Qwen3-Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) | 1024 | 32K | ✅ | ✅ | 100+ | Apache-2.0 | — |
+
+> 💡 **目前最强的开源嵌入方案已经是 Apache-2.0 且可自部署。** Qwen3-Embedding 系列在多语言 MTEB 登顶且能本地跑 —— 追求质量用 `-8B`，需要廉价批量建索引用 `-0.6B`（下载量已破千万）。如果你自部署 RAG 还在默认用 `text-embedding-3-large`，先和这几个跑个对比。另：截至 2026-07-30 **不存在** OpenAI `text-embedding-4`，不要按它做规划。
 
 ---
 

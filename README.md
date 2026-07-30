@@ -241,7 +241,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 ### Thinking Machines Lab
 
 - [Inkling](https://thinkingmachines.ai/inkling/) - 🆕 **July 15, 2026**. Founded by Mira Murati (former OpenAI CTO). 975B MoE parameters (41B active), pretrained on 45T tokens, 1M-token context window. Natively multimodal — text, image, audio, and video in a single model. Apache 2.0 open weights on Hugging Face. Also ships **Inkling-Small** (12B active parameters). Available via the Thinking Machines API and Hugging Face Inference.
-- [Inkling-Small](https://thinkingmachines.ai/inkling/) - 🆕 **July 15, 2026**. Compact variant of Inkling with 12B active parameters; same Apache 2.0 license and multimodal capabilities in a more deployment-friendly footprint.
+- [Inkling-Small](https://thinkingmachines.ai/inkling/) - 🆕 🧪 **July 15, 2026 — announced as a preview; weights not published yet.** Compact variant of Inkling (reported ~276B total / 12B active, figure not independently confirmed) in a more deployment-friendly footprint. ⚠️ Verified 2026-07-30: the `thinkingmachines` Hugging Face org contains only **`Inkling`** and **`Inkling-NVFP4`** — there is no `Inkling-Small` repo, and the official Inkling page lists only the 975B/41B configuration. Don't plan a deployment around it until weights land.
 
 ### Mistral AI
 
@@ -332,7 +332,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 
 ### MiniMax
 
-- [MiniMax M3](https://www.minimax.io/) - 🆕 **June 1, 2026**. Open-weight (MIT) flagship with MiniMax Sparse Attention — ~1/20 the compute cost at 1M tokens; frontier coding capabilities, SWE-Bench Pro 59.0%, BrowseComp 83.5%.
+- [MiniMax M3](https://www.minimax.io/) - 🆕 🇨🇳 **June 1, 2026**. Open-weight flagship with MiniMax Sparse Attention — ~1/20 the compute cost at 1M tokens; frontier coding capabilities. Weights at [`MiniMaxAI/MiniMax-M3`](https://huggingface.co/MiniMaxAI/MiniMax-M3) (82 files, ungated, ~155K downloads). ⚠️ **Licence corrected 2026-07-30 — this is not MIT.** The model card declares `license: other` / `license_name: minimax-community`, i.e. a bespoke community licence, so read its terms before commercial use. (Its SWE-bench Pro figure is also best ignored — see the [benchmark caution](#-benchmarks--leaderboards).)
 - [MiniMax-M2.7 (Open Weights)](https://www.minimax.io/) - 🆕 April 2026. 230B-class open-weight flagship. Top-tier performance on coding and Agent tasks.
 - [MiniMax M2.7](https://venturebeat.com/technology/new-minimax-m2-7-proprietary-ai-model-is-self-evolving-and-can-perform-30-50) - 🇨🇳 🆕 **March 2026**. Proprietary self-evolving LLM tuned for agent harness construction, memory updates, iterative workflow improvement; major gains on SWE-bench-style tasks.
 - [MiniMax M2.5](https://www.codemotion.com/magazine/ai-ml/minimax-m2-5-low-costs-high-performance/) - 🇨🇳 **February 2026**. 230B-parameter cost-efficient flagship for "real-world productivity".
@@ -1301,6 +1301,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 | Llama 3.3 70B | 70B | dense | ~42 GB | `meta-llama/Llama-3.3-70B-Instruct` | Llama Community | ⭐⭐☆☆☆ | Best English open-weight at 70B |
 | DeepSeek V4-Flash | 284B MoE | 13B | ~75 GB | `deepseek-ai/DeepSeek-V4-Flash` | MIT | ⭐⭐⭐⭐☆ | Open-weight coding champion, 1M ctx |
 | Inkling | 975B MoE | 41B | ~200 GB (multi-GPU) | `thinkingmachines/Inkling` | Apache-2.0 | ⭐⭐⭐☆☆ | Largest Apache-2.0 multimodal model |
+| MiniMax-M3 | MoE (total n/d) | — | see model card | `MiniMaxAI/MiniMax-M3` | Custom (`other`) | ⭐⭐⭐⭐⭐ | 1M ctx, coding/agentic; 🇨🇳, non-OSI licence |
 | DeepSeek V4-Pro | 1.6T MoE | 49B | ~800 GB (cluster) | `deepseek-ai/DeepSeek-V4-Pro` | MIT | ⭐⭐⭐⭐☆ | Frontier open weights, datacenter only |
 | Kimi K3 | 2.8T MoE | 104B | ~1.5 TB (cluster) | `moonshotai/Kimi-K3` | Kimi K3 License ⚠️ | ⭐⭐⭐⭐⭐ | Largest open weights; **not** OSI-licensed |
 
@@ -1455,6 +1456,11 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 | [Jina-embeddings-v3](https://github.com/jina-ai/jina) | 1024 | 8K | ✅ | ✅ | Multi | CC-BY-NC | ~65 |
 | [Nomic-embed-text-v2](https://github.com/nomic-ai/nomic) | 768 | 8K | ✅ | ✅ | Multi | Apache-2.0 | ~62 |
 | [Voyage-3](https://www.voyageai.com/) | 1024 | 32K | ❌ | ✅ | Multi | Proprietary | ~67 |
+| [Qwen3-Embedding-8B](https://huggingface.co/Qwen/Qwen3-Embedding-8B) | 4096 | 32K | ✅ | ✅ | 100+ | Apache-2.0 | ~70 (multilingual #1) |
+| [Qwen3-Embedding-4B](https://huggingface.co/Qwen/Qwen3-Embedding-4B) | 2560 | 32K | ✅ | ✅ | 100+ | Apache-2.0 | — |
+| [Qwen3-Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) | 1024 | 32K | ✅ | ✅ | 100+ | Apache-2.0 | — |
+
+> 💡 **The strongest open embedding option is now Apache-2.0 and self-hostable.** The Qwen3-Embedding family tops multilingual MTEB while running locally — `-8B` for quality, `-0.6B` (10M+ downloads) when you need cheap bulk indexing. If you're still defaulting to `text-embedding-3-large` for a self-hosted RAG stack, benchmark against these first. There is **no** OpenAI `text-embedding-4` as of 2026-07-30 — don't plan around one.
 
 ---
 

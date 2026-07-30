@@ -240,7 +240,7 @@
 ### Thinking Machines Lab
 
 - [Inkling](https://thinkingmachines.ai/inkling/) - 🆕 **2026-07-15**。前 OpenAI CTO の Mira Murati が設立。975B MoE（41Bアクティブ）、45Tトークンで事前学習、コンテキストウィンドウ 1Mトークン。テキスト・画像・音声・動画のネイティブマルチモーダル対応。Apache 2.0 オープンウェイトを Hugging Face で公開。**Inkling-Small**（12Bアクティブ）も同日リリース。Thinking Machines API・ Hugging Face Inference経由で利用可能。
-- [Inkling-Small](https://thinkingmachines.ai/inkling/) - 🆕 **2026-07-15**。Inkling の軽量バリアント，12Bアクティブパラメータ。同じ Apache 2.0 ライセンスとマルチモーダル機能を備え、エッジデバイスやリソース指定環境でのデプロイに適したサイズ。
+- [Inkling-Small](https://thinkingmachines.ai/inkling/) - 🆕 🧪 **2026-07-15 —— プレビューとして発表、ウェイトは未公開。** Inkling の軽量バリアント（報道では約 276B 総パラメータ / 12B アクティブ。この数値は独自に確認できていない）。⚠️ 2026-07-30 検証: Hugging Face の `thinkingmachines` Organization には **`Inkling`** と **`Inkling-NVFP4`** のみが存在し、**`Inkling-Small` リポジトリは無い**。公式 Inkling ページも 975B/41B 構成のみを記載している。ウェイト公開までデプロイ前提にしないこと。
 
 ### Mistral AI
 
@@ -1418,6 +1418,11 @@
 | Jina-embeddings-v3 | 1024 | 8K | ✅ | ✅ | 多言語 | CC-BY-NC | ~65 |
 | Nomic-embed-text-v2 | 768 | 8K | ✅ | ✅ | 多言語 | Apache-2.0 | ~62 |
 | Voyage-3 | 1024 | 32K | ❌ | ✅ | 多言語 | プロプライエタリ | ~67 |
+| [Qwen3-Embedding-8B](https://huggingface.co/Qwen/Qwen3-Embedding-8B) | 4096 | 32K | ✅ | ✅ | 100+ | Apache-2.0 | ~70（多言語 1 位） |
+| [Qwen3-Embedding-4B](https://huggingface.co/Qwen/Qwen3-Embedding-4B) | 2560 | 32K | ✅ | ✅ | 100+ | Apache-2.0 | — |
+| [Qwen3-Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) | 1024 | 32K | ✅ | ✅ | 100+ | Apache-2.0 | — |
+
+> 💡 **現時点で最強のオープン埋め込みは Apache-2.0 かつセルフホスト可能。** Qwen3-Embedding シリーズは多言語 MTEB で首位を取りながらローカル実行できる —— 品質重視なら `-8B`、大量インデックス作成のコスト重視なら `-0.6B`（ダウンロード 1000 万超）。セルフホストの RAG でまだ `text-embedding-3-large` を既定にしているなら、まずこれらとベンチマークを取ること。なお 2026-07-30 時点で OpenAI `text-embedding-4` は**存在しない**ため、前提にしないこと。
 
 ---
 
