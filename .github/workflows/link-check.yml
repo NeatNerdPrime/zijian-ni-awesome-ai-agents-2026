@@ -9,6 +9,7 @@ on:
     paths:
       - "README.md"
       - "README.zh-CN.md"
+      - "README.ja.md"
       - ".github/workflows/link-check.yml"
       - ".lycheeignore"
 
@@ -58,7 +59,7 @@ jobs:
             --exclude "qwen.ai"
             --exclude "sz.gov.cn"
             --exclude "limitless.ai"
-            './README.md' './README.zh-CN.md'
+            './README.md' './README.zh-CN.md' './README.ja.md'
           fail: false
           output: ./lychee-report.md
 

@@ -3,6 +3,58 @@
 All notable changes to **Awesome AI Agents 2026** are recorded here.
 Format: `YYYY-MM-DD  +Added  -Removed  ~Changed`.
 
+## 2026-07-30 — July 30 maintenance: PR #68/#69/#70, late-July additions, factual corrections, **full en/zh/ja lockstep restored** + tooling
+
+### PR triage (all three accepted, merged-by-maintainer with en/zh/ja sync)
+- **PR #68 — [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench)** (reacher-z, discloses maintainer affiliation) — **accepted, with corrected figures.** The submitted entry said "283 tasks across 163 websites"; the [arXiv abstract](https://arxiv.org/abs/2604.08523) states **153 everyday online tasks across 144 platforms in 15 categories**, and claw-bench.com's current leaderboard shows a 130-task / 63-platform slice. Listed with the paper's numbers plus the headline result (Claude Sonnet 4.6 at 33.3%). Real project: 536 stars, Apache-2.0, pushed 2026-07-28. Added to **Agent Evaluation & Observability**.
+- **PR #69 — [AICraft](https://github.com/Easlie114514/AICraft)** (easlie114514) — **accepted, tagged ⚠️ Unverified + 🇨🇳.** Real repo (Apache-2.0, Python FastAPI + React 19 + ChromaDB) but created June 2026 with 10 stars, 0 forks and a sole maintainer, so it carries the same Unverified treatment as comparable new self-submissions. Added to **Computer Use & Desktop Agents**.
+- **PR #70 — [Darkmoon](https://github.com/ASCIT31/Dark-Moon)** (Dark-Moon-X) — **accepted.** Healthy project: 791 stars, 132 forks, 8 contributors, GPL-3.0, pushed 2026-07-27. Kept the contributor's suggested section (**Agent Security**) and expanded the one-liner to cover the privacy-gateway design (real IPs / hosts / credentials / paths replaced with deterministic placeholders before anything reaches the LLM, rehydrated locally).
+
+### ~ Corrected (each re-verified against a primary source this run)
+- **MCP 2026-07-28 spec** — was listed as an upcoming target and **linked to the May 21 release-candidate post**. The spec [shipped on schedule on July 28, 2026](https://blog.modelcontextprotocol.io/posts/2026-07-28/); URL repointed to the actual release post and the entry rewritten from it: stateless core (no `initialize` handshake, no protocol session), Multi Round-Trip Requests replacing held-open bidirectional streams, `Mcp-Method`/`Mcp-Name` header routing, cacheable list results, RFC 9207 issuer validation, DCR → CIMD, Tasks joining MCP Apps + EMA as extensions, formal 12-month deprecation window. Also removed a now-redundant duplicate timeline row that mis-stated the auth change as "OAuth 2.1 alignment".
+- **Manus AI** — the list still implied a completed Meta acquisition. [China's NDRC blocked the ~$2B takeover on April 27, 2026](https://www.theguardian.com/world/2026/apr/27/china-blocks-meta-takeover-manus-ai-agent-developer) and ordered the parties to withdraw. Both Manus entries now describe ownership as contested/unresolved, while noting manus.im still displays its "part of Meta" banner (confirmed live).
+- **Kimi K3 open weights** — was "July 27, 2026 (promised)". The weights **shipped**: [moonshotai/Kimi-K3](https://huggingface.co/moonshotai/Kimi-K3), ungated, 97 safetensors shards, `lastModified` 2026-07-27, ~99K downloads. Corrected the spec too — **2.8T total / 104B activated** (the list omitted the activated count), 93 layers, 896 experts (16 selected + 2 shared), MoonViT-V2 401M vision encoder, MXFP4 weights + MXFP8 activations via QAT, bespoke Kimi K3 License with a $20M-revenue MaaS threshold. Added real API pricing from [Moonshot's own docs](https://platform.kimi.ai/docs/pricing/chat-k3.md): $0.30 cache-hit / $3.00 cache-miss input, $15.00 output per 1M, plus `reasoning_effort` and K3-only `tool_choice` / dynamic tool loading.
+- **DeepSeek V4 pricing** — the list claimed the V4 launch "introduced peak/off-peak API pricing (2× during Beijing peak hours)". [DeepSeek's official pricing page](https://api-docs.deepseek.com/quick_start/pricing) shows **flat single-rate pricing with no time tiering**. Replaced with the actual published rates for both tiers (Pro $0.003625/$0.435/$0.87; Flash $0.0028/$0.14/$0.28 per 1M), plus 384K max output and concurrency limits.
+- **Google ADK** — "v2.0 in beta (v2.0.0b1, April 2026); latest stable v1.33" was badly stale. Current release is **v2.5.0 (July 16, 2026)** with a parallel v1.36.x maintenance line (v1.36.2, July 21), verified via the GitHub releases API. Fixed in both places it appears.
+
+### + Added (web-verified; mirrored en/zh/ja)
+- **[Anthropic ↔ AMD](https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus)** (July 22, 2026) — up to **2 GW** of Instinct MI450/MI455X in AMD Helios racks from H1 2027; AMD to invest **up to $5B** in Anthropic. → Foundation Models › Anthropic + timeline.
+- **[Anthropic's position on open-weights models](https://www.anthropic.com/news/position-open-weights-models)** (July 27, 2026) — Dario Amodei: "Anthropic has never advocated for a ban on open-weights models." → Foundation Models › Anthropic + timeline.
+- **[FLUX 3](https://bfl.ai/blog/flux-3)** (July 23, 2026, early access) — Black Forest Labs' first unified multimodal model (image + video + audio + action prediction in one architecture), 20s video with native synchronized audio; vendor-reported preference rates included and labelled preliminary. → Image Generation + timeline.
+- **[Reve](https://reve.com/)** — layout-first image model with native 4K and element-level re-rendering. → Image Generation.
+- **[Decart Lucy 2.5](https://decart.ai/)** (July 2026) — real-time video/world transformation behind Decart's "Live AI" push. → Video Generation.
+- **[Langfuse v4](https://github.com/langfuse/langfuse/releases/tag/v4.0.0)** (July 29, 2026) — full-text search, monitors & alerts, Observations/Metrics API v2 claimed up to 165× faster. → Eval & Observability + timeline.
+- **[Milvus 3.0](https://github.com/milvus-io/milvus/releases/tag/v3.0.0)** (tagged July 29, 2026) — lake-native External Collections over Parquet/Lance/Iceberg, Storage V3, `TEXT` as a first-class type, multi-vector `StructList`. → RAG & Knowledge + timeline.
+- **[Elicit](https://elicit.com/)** — research assistant; shipped a public [API + MCP server](https://elicit.com/blog/elicit-api) on July 15, 2026. → AI Research Tools.
+- **[Amp](https://ampcode.com)** (Sourcegraph) — **was missing entirely.** Subscriptions beta (July 18), self-scheduling agents (July 21), Multiplayer shared threads (July 22), [event-driven Orbs](https://ampcode.com/news/event-driven-orbs) (July 23). → Terminal & CLI Agents.
+- **[ZCode](https://zcode.z.ai)** (ZCode 3.0, July 2026) — Z.ai's official agentic dev environment for GLM-5.2. → Terminal & CLI Agents.
+- **[RufRoot / CVE-2026-59726](https://hackread.com/rufroot-vulnerability-attackers-hijack-ruflo-login/)** — CVSS 10.0 unauthenticated MCP bridge in Ruflo reaching 233 tools; poisoned **AgentDB** memory survives the patch, so recovery needs credential rotation *and* a memory audit. → Agent Security + timeline.
+- **[Claude Code symlink exfiltration](https://hackread.com/tego-ai-discloses-second-claude-flaw-in-a-week-hidden-link-silently-sends-files-to-attackers/)** (Tego AI, July 24, 2026) — `CLAUDE.md` `@import` via symlink pulls out-of-project files into the first request with no prompt; Anthropic closed it "Informative". → Agent Security.
+- **[LangChain Retrievers](https://github.com/langchain-ai/langchain)** and a second **[DSPy](https://github.com/stanfordnlp/dspy)** listing — these existed only in zh/ja; English counterparts added so EN remains the superset.
+
+### 🔁 en/zh/ja lockstep — drift eliminated (the big one)
+The three files had silently diverged. Entry counts were **795 / 794 / 792** with 12 groups of real structural drift; they are now **782 / 782 / 782 with zero drift**, verified mechanically.
+- **zh and ja were missing the entire Quick Navigation table** (28 rows) — rebuilt in both, using each file's own translated anchors.
+- **ja was missing the whole "Ecosystem Choices" subsection** — added.
+- **Entries were filed under the wrong headings**, silently misleading readers browsing by section. Fixed ~30 placements, including: `physical-ai-toolchain` + `PhyAgentOS` sitting in *Terminal & CLI Agents* instead of *Physical AI › Foundational Models*; 4 IDE tools (Cursor Router, Devin Desktop, JetBrains Rider 2026.2, Android Studio Quail 2) filed under *Autonomous Software Engineers*; **9–11 humanoid-robot entries filed under *Autonomous Driving***; DeepLearning.AI courses and the Agent Hospital paper filed under *Curated Lists*.
+- Removed a stale zh/ja-only duplicate (`Tesla Optimus Gen3 → tesla.com`, superseded by the richer teslarati-sourced entry) and a duplicated ja Braintrust row.
+- Normalized entry **ordering** to match EN across 17 sections.
+- Backfilled 9 Notable-Projects entries missing from zh/ja (Google I/O 2026, Alibaba summit, Guaranteed Capacity, JADEPUFFER, Kimi K3, Antigravity 2.0, GPT-5.6 Sol delay).
+
+### 🔧 Tooling added
+- **`scripts/sync_audit.py`** — structural drift auditor. Compares the three files positionally (headings are translated, so it matches on level/order and on non-translatable URLs), reports per-section missing/extra/misordered entries via multiset comparison, and flags repeated URLs only when the repeat count is *asymmetric* across languages (8 OpenAI models legitimately sharing `openai.com` is fine; the same URL appearing 3× in one language and 2× in another is not). Exits non-zero on drift, so it can gate CI.
+- **`scripts/check_markdown.py`** — catches what a link checker can't: in-page anchors that don't resolve to a real heading (approximating GitHub's slug algorithm), table rows whose column count disagrees with their table, malformed entry syntax, and unclosed code fences.
+
+### ✅ Verification performed
+- **30/30 new-or-repointed URLs return HTTP 200** (checked individually).
+- `scripts/sync_audit.py` → *en/zh/ja fully in sync* (115 headings, 782 entries each).
+- `scripts/check_markdown.py` → *structurally clean* on all three files.
+- Repo health re-checked via the GitHub API for 19 listed projects. Two are worth noting as genuinely quiet: **explodinggradients/ragas** (last push 2026-02-24) and **THUDM/AgentBench** (last push 2026-02-08); everything else was pushed within the last few days.
+- **Deliberately omitted:** a reported "Google Lyria 3.5 / Flow Music" launch. Multiple secondary sources describe it, but no canonical announcement URL could be resolved, so it was left out rather than cited speculatively. Also omitted: several claims that arrived without a fetchable primary source (an FCC humanoid-import order, an OpenAI Atlas shutdown, a Midjourney V8.1 default change) — flagged for the next run, not published on secondhand evidence.
+
+### ~ Changed
+- **Badges** (all three files): Last Updated → July 30, 2026; Resources → 780+; Spam_Audited → 2026-07-30. EN footer resource count and date updated to match.
+
 ## 2026-07-25 — July 25 maintenance: Claude Opus 5, Inkling, PR #64/#65 (Genesys + Hellomatik), en/zh/ja sync; wave-2 cross-category expansion
 
 ### PR triage

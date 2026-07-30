@@ -1,0 +1,46 @@
+name: Structure Check
+
+# Guards the two invariants a link checker cannot see:
+#   1. README.md / README.zh-CN.md / README.ja.md stay in structural lockstep
+#      (same headings in the same order, same entries per section, same order).
+#   2. The markdown itself stays well-formed (in-page anchors resolve, table
+#      rows have consistent column counts, no malformed entries or open fences).
+#
+# Both scripts exit non-zero on failure, so a PR that silently drops the zh/ja
+# translation of a new entry — historically the most common drift source — fails
+# here instead of shipping.
+
+on:
+  pull_request:
+    paths:
+      - "README.md"
+      - "README.zh-CN.md"
+      - "README.ja.md"
+      - "scripts/sync_audit.py"
+      - "scripts/check_markdown.py"
+      - ".github/workflows/structure-check.yml"
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "README.zh-CN.md"
+      - "README.ja.md"
+  workflow_dispatch:
+
+jobs:
+  structure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: en/zh/ja lockstep audit
+        run: python3 scripts/sync_audit.py
+
+      - name: Markdown structure check
+        run: python3 scripts/check_markdown.py
