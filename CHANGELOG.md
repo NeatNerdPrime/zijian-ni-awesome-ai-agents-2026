@@ -3,6 +3,110 @@
 All notable changes to **Awesome AI Agents 2026** are recorded here.
 Format: `YYYY-MM-DD  +Added  -Removed  ~Changed`.
 
+## 2026-07-30 (b) — recommendation-freshness overhaul: stale advice purge, fabricated entry removed, verified pricing/local-model rebuild, two new audit gates
+
+This run targeted a failure mode the existing checks were blind to. `sync_audit.py`
+guards en/zh/ja structure and `check_markdown.py` guards syntax, but nothing
+guarded whether the sections that tell a reader **what to use today** were still
+naming current models. They were not. The Model Selection section still opened
+with "Claude Opus 4.7 (/think xhigh)" and "Gemini 2.5 Pro — 2M context" — one
+model two generations superseded, one context window that was never real.
+
+### 🚨 Removed — fabricated entry
+- **"Llama 5" (600B+, April 8 2026) did not exist and has been removed.** It was
+  widely repeated by AI-news aggregators and is asserted confidently by LLM
+  search summaries, which is how it got in. Verification: the `meta-llama`
+  Hugging Face organisation contains **no Llama-5 weights of any kind** (newest
+  Llama-family upload is Llama-4-Maverick, 2025-05-22; a search for `Llama-5`
+  under that author returns 0 results), and Wikipedia's Llama article states
+  "the latest version is Llama 4, released in April 2025" and that **Muse Spark
+  replaced the Llama line in April 2026**. The slot now holds an explicit
+  ❌ debunk note rather than a silent deletion, so the claim doesn't get
+  re-added by the next contributor who reads it elsewhere. A matching
+  Anti-Picks row now warns against building on unreleased flagships generally.
+
+### ~ Corrected against primary sources
+- **API cost table rebuilt** from `platform.claude.com/docs/en/about-claude/pricing`
+  and `developers.openai.com/api/docs/pricing.md`. Added Opus 5, Fable 5, GPT-5.5,
+  GPT-Realtime-2.1, DeepSeek V4-Pro; added a Max Output column.
+- **Claude Haiku 4.5 was listed at 1M context — it is 200K.** Fixed in the table
+  and in Model Selection.
+- **Gemini 2.5 Pro's context window is 1M, not 2M**, in all three languages. The
+  2M figure belongs to the still-unreleased Gemini 3.5 Pro. `freshness_audit.py`
+  now fails the build if this reappears.
+- **o3 retirement dates split correctly**: leaves ChatGPT 2026-08-26, but the
+  `o3-2025-04-16` / `o3-pro-2025-06-10` **API snapshots are removed 2026-12-11**
+  per OpenAI's deprecations page, replacement `gpt-5.6-sol`.
+- **GPT-Live-1 clarified as ChatGPT-only** — it is real ([OpenAI, July 8](https://openai.com/index/introducing-gpt-live)),
+  but there is no `gpt-live-1` API model; `gpt-realtime-2.1` and
+  `gpt-live-transcribe` are the programmatic paths.
+- **DeepSeek V4 pricing re-confirmed flat** (no peak/off-peak) directly from the
+  official pricing page, with cache-hit rates ~2% of cache-miss.
+- **Grok 4.5 re-confirmed** at 500K context, $2/$6, from `docs.x.ai/docs/models`.
+
+### ~ Local-deployment table rebuilt with verified HF paths
+Every row now carries the **exact Hugging Face repo id**, license, and separate
+total/active parameter columns, all checked against the HF API on 2026-07-30.
+- **"Gemma 4 27B" does not exist** and has been removed — the real Gemma 4 line
+  is E2B / E4B / 12B / 26B-A4B / 31B.
+- **Mistral Small 4 is a 119B MoE with 6B active**, not "24B dense"; correct id
+  is `mistralai/Mistral-Small-4-119B-2603`.
+- **Qwen3.6-35B-A3B added** — 3B active params makes it the best quality-per-GB
+  local pick, and it was absent entirely.
+- Added Inkling, DeepSeek V4-Flash/Pro, Kimi K3 rows with honest VRAM tiers, and
+  a note that MoE "fits in 4 GB" claims mean *fits with offloading*.
+- **Licensing corrected**: Kimi K3 is a bespoke non-OSI licence with a revenue
+  threshold, and Gemma is under the Gemma Terms of Use — neither is Apache/MIT.
+
+### + Added
+- **[Gemini 3.6 Flash](https://github.com/google-gemini/cookbook)** and
+  **[Gemini 3.5 Flash-Lite](https://github.com/google-gemini/cookbook)** (both
+  July 21, 2026) — **neither was listed at all.** Confirmed first-party via the
+  official Gemini cookbook commit "Add Gemini 3.6 Flash & Gemini 3.5 Flash-Lite"
+  and the `gemini-3.6-flash` / `gemini-3.5-flash-lite` ids in its quickstart.
+  3.6 Flash is stronger on agentic/multimodal work *at a lower price than* 3.5
+  Flash; 3.5 Flash-Lite is now the cheapest Gemini tier.
+- **[Gemini 3.1 Pro](https://deepmind.google/technologies/gemini/)** as its own
+  entry, flagged `-preview` with no free tier.
+- **[Pydantic AI](https://github.com/pydantic/pydantic-ai)** v2.21.0 — a major
+  framework that was **missing from the Frameworks section entirely**.
+- **Benchmark reading guide** at the top of Benchmarks & Leaderboards, covering
+  (a) that three reputable trackers gave three different SWE-bench Verified
+  leaders on the same day with an ~8-point spread, (b) that **SWE-bench Pro is
+  compromised** — OpenAI's 2026-07-08 audit found ~27% (AI reviewer) to ~34%
+  (human engineers) of its 731 public tasks defective and withdrew its
+  recommendation — and (c) that mid-90s saturation makes sub-point gaps
+  meaningless. SWE-bench Pro's own entry now carries the warning inline.
+- Version stamps refreshed from the GitHub releases API for LangGraph (1.2.10),
+  **CrewAI (1.15.9, July 30 — the list said 1.14.6)**, Mastra
+  (`@mastra/core@1.53.0`), Google ADK (v2.5.0).
+
+### 🔧 Tooling — two new gates, both wired into CI
+- **`scripts/freshness_audit.py`** — fails if an advisory section recommends a
+  superseded model, and catches recurring factual traps (the 2M/2.5-Pro
+  conflation, Opus 4.7 "200K", "$15/$75" Opus pricing). It is deliberately
+  scope-aware: historical sections and *inventory* tables may name old models,
+  Anti-Picks rows may name them in the "don't use" column, but the "use instead"
+  column and all prose advice must be current. First run flagged **134 stale
+  recommendations** across the three files; now zero.
+- **`scripts/refresh_counts.py`** — recomputes every advertised count from the
+  file itself and rewrites it. The nav table claimed "23+" frameworks against 43
+  actual and "16+" security tools against 33; the badge said 780+ against 812.
+  Undercounts look plausible so nobody ever notices. `--write` fixes all three
+  files; **58 stale counts** corrected on first run.
+- `.github/workflows/structure-check.yml` now runs `sync_audit.py`,
+  `check_markdown.py`, and `freshness_audit.py` on every PR and push to main.
+
+### Verification note
+Where a claim could not be traced to a primary source it was **left out**, not
+guessed. Several benchmark leader figures reported by search summaries were
+rejected on exactly this basis. `web_fetch` is blocked in this environment by
+SSRF protection (WSL DNS maps public hostnames into `fc00::/7` / `198.18.x`), so
+verification went through `tools/fetch-verify.sh` (curl + real UA + pandoc,
+printing HTTP status), the GitHub releases API, and the Hugging Face models API.
+
+---
+
 ## 2026-07-30 — July 30 maintenance: PR #68/#69/#70, late-July additions, factual corrections, **full en/zh/ja lockstep restored** + tooling
 
 ### PR triage (all three accepted, merged-by-maintainer with en/zh/ja sync)

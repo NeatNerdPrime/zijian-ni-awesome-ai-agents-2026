@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-July%2030%2C%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-780%2B-orange.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-810%2B-orange.svg)](#)
 [![Audited](https://img.shields.io/badge/Spam_Audited-2026--07--30-success.svg)](#️-ステータス凡例)
 [![English](https://img.shields.io/badge/Lang-English-informational.svg)](README.md)
 [![中文](https://img.shields.io/badge/Lang-中文-red.svg)](README.zh-CN.md)
@@ -56,30 +56,30 @@
 
 | カテゴリ | 説明 | 件数 |
 |----------|-------------|-------|
-| [🧠 基盤モデル 2026](#-基盤モデル-2026) | OpenAI・Anthropic・Google・Meta ほか 22+ プロバイダーの最新 LLM | 80+ |
-| [🎨 マルチモーダルと生成 AI](#-マルチモーダルと生成-ai) | 画像・動画・音声・音楽生成 | 20+ |
-| [🔗 エージェントプロトコルと標準](#-エージェントプロトコルと標準) | MCP、A2A、相互運用標準 | 10+ |
+| [🧠 基盤モデル 2026](#-基盤モデル-2026) | OpenAI・Anthropic・Google・Meta ほか 22+ プロバイダーの最新 LLM | 195+ |
+| [🎨 マルチモーダルと生成 AI](#-マルチモーダルと生成-ai) | 画像・動画・音声・音楽生成 | 40+ |
+| [🔗 エージェントプロトコルと標準](#-エージェントプロトコルと標準) | MCP、A2A、相互運用標準 | 15+ |
 | [🏗️ エージェントフレームワーク](#️-エージェントフレームワーク) | 自律 AI エージェント構築ライブラリ | 23+ |
 | [🛠️ エージェント IDE とビジュアルビルダー](#️-エージェント-ide-とビジュアルビルダー) | エージェントフロー設計のビジュアル / ローコード環境 | 8+ |
-| [🧠 エージェントメモリ](#-エージェントメモリ) | 永続メモリとコンテキスト管理 | 10+ |
-| [🔌 ツールと API 連携](#-ツールと-api-連携) | エージェントと外部サービスの接続 | 18+ |
-| [🧪 エージェントサンドボックスと計算分離](#-エージェントサンドボックスと計算分離) | エージェント生成コードの安全な実行環境 | 7+ |
+| [🧠 エージェントメモリ](#-エージェントメモリ) | 永続メモリとコンテキスト管理 | 20+ |
+| [🔌 ツールと API 連携](#-ツールと-api-連携) | エージェントと外部サービスの接続 | 20+ |
+| [🧪 エージェントサンドボックスと計算分離](#-エージェントサンドボックスと計算分離) | エージェント生成コードの安全な実行環境 | 9+ |
 | [🛡️ エージェントセキュリティ](#️-エージェントセキュリティ) | プロンプトインジェクション対策とガードレール | 16+ |
-| [🔍 RAG とナレッジ](#-rag-とナレッジ) | 検索拡張生成システム | 12+ |
-| [💻 コーディングエージェント](#-コーディングエージェント) | AI によるソフトウェアエンジニアリング | 27+ |
-| [🤖 Physical AI / 身体性エージェント](#-physical-ai--身体性エージェント) | ヒューマノイドロボット、身体性 AI、産業自動化 | 22+ |
-| [🎮 エージェントシミュレーションと世界モデル](#-エージェントシミュレーションと世界モデル) | エージェント訓練とストレステスト用シミュレーション環境 | 7+ |
-| [📊 ベンチマークとリーダーボード](#-ベンチマークとリーダーボード) | フロンティア能力を追跡するリーダーボード | 11+ |
+| [🔍 RAG とナレッジ](#-rag-とナレッジ) | 検索拡張生成システム | 20+ |
+| [💻 コーディングエージェント](#-コーディングエージェント) | AI によるソフトウェアエンジニアリング | 45+ |
+| [🤖 Physical AI / 身体性エージェント](#-physical-ai--身体性エージェント) | ヒューマノイドロボット、身体性 AI、産業自動化 | 35+ |
+| [🎮 エージェントシミュレーションと世界モデル](#-エージェントシミュレーションと世界モデル) | エージェント訓練とストレステスト用シミュレーション環境 | 10+ |
+| [📊 ベンチマークとリーダーボード](#-ベンチマークとリーダーボード) | フロンティア能力を追跡するリーダーボード | 20+ |
 | [🖥️ Computer Use / デスクトップエージェント](#️-computer-use--デスクトップエージェント) | デスクトップ自動化と OS レベル制御 | 10+ |
-| [🌐 ブラウザと Web エージェント](#-ブラウザと-web-エージェント) | 実ブラウザを操作するエージェント | 9+ |
+| [🌐 ブラウザと Web エージェント](#-ブラウザと-web-エージェント) | 実ブラウザを操作するエージェント | 15+ |
 | [🗣️ 音声とマルチモーダルエージェント](#️-音声とマルチモーダルエージェント) | 音声対応の対話型 AI | 10+ |
-| [📱 パーソナル AI エージェント](#-パーソナル-ai-エージェント) | 生産性と日常生活のアシスタント | 11+ |
-| [📱 モバイルエージェント](#-モバイルエージェント) | スマホ操作エージェント（Android / iOS） | 6+ |
-| [🏢 エンタープライズエージェントプラットフォーム](#-エンタープライズエージェントプラットフォーム) | エンタープライズ級エージェント展開 | 18+ |
-| [📊 エージェント評価とオブザーバビリティ](#-エージェント評価とオブザーバビリティ) | テスト・モニタリング・ベンチマーク | 17+ |
-| [🔬 AI 研究ツール](#-ai-研究ツール) | AI / ML 研究・実験ツール | 10+ |
+| [📱 パーソナル AI エージェント](#-パーソナル-ai-エージェント) | 生産性と日常生活のアシスタント | 20+ |
+| [📱 モバイルエージェント](#-モバイルエージェント) | スマホ操作エージェント（Android / iOS） | 10+ |
+| [🏢 エンタープライズエージェントプラットフォーム](#-エンタープライズエージェントプラットフォーム) | エンタープライズ級エージェント展開 | 30+ |
+| [📊 エージェント評価とオブザーバビリティ](#-エージェント評価とオブザーバビリティ) | テスト・モニタリング・ベンチマーク | 30+ |
+| [🔬 AI 研究ツール](#-ai-研究ツール) | AI / ML 研究・実験ツール | 15+ |
 | [📚 学習リソース](#-学習リソース) | 論文、コース、チュートリアル | 20+ |
-| [🇨🇳 中国 AI エコシステム](#-中国-ai-エコシステム) | 中国チームの主要プロジェクト | 18+ |
+| [🇨🇳 中国 AI エコシステム](#-中国-ai-エコシステム) | 中国チームの主要プロジェクト | 25+ |
 | [📝 比較 — サイドバイサイド表](#-比較--サイドバイサイド表) | 横並び比較表 | — |
 | [🗺️ シナリオガイド — 何に何を使うべきか](#️-シナリオガイド--何に何を使うべきか) | 56 のシナリオ→ツール対応 | 56 |
 | [📋 スタックレシピ — 実証済みツール組み合わせ](#-スタックレシピ--実証済みツール組み合わせ) | 厳選されたマルチツール構成 | 8 |
@@ -193,6 +193,9 @@
 - [Bristol Myers Squibb ↔ Anthropic Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) - 🆕 **2026-05-20**。BMS が Claude Enterprise を 30,000+ 名の社員の共通インテリジェンス基盤として採用し、創薬・開発・デリバリーの全工程にエージェント化 Claude を組み込む。世界トップ 5 製薬企業で初めての公社規模での Claude 全社展開。
 
 ### Google DeepMind
+- [Gemini 3.6 Flash](https://github.com/google-gemini/cookbook) - 🆕 ⚡ **2026-07-21**。Google 最新の Flash 層 —— 複雑な agentic およびマルチモーダルタスクでより強力で、**トークン使用量を削減しつつ 3.5 Flash より低価格**。API id `gemini-3.6-flash`。公式 Gemini API cookbook に thinking モードガイドと共に記載。
+- [Gemini 3.5 Flash-Lite](https://github.com/google-gemini/cookbook) - 🆕 **2026-07-21**。3.5 ファミリーで最速・最低コストのモデル。高スループット実行で従来の Flash-Lite 世代を上回る。API id `gemini-3.5-flash-lite`。現在最も安い Gemini 層で、新規構築では 3.1 Flash-Lite より優先。
+- [Gemini 3.1 Pro（preview）](https://deepmind.google/technologies/gemini/) - 2026 年 7 月下旬時点で Google 最高性能の Gemini。API 名は `gemini-3.1-pro-preview`。GPQA Diamond 94.3%（発表時の世界記録）、ARC-AGI-2 77.1%、BenchLM 94。⚠️ いまだ `-preview` 付きで、**無料枠がない**。
 - [Gemini 3.5 Pro](https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud) - ⚠️ **延期 — 2026年7月17日時点で未リリース**（パートナー限定のエンタープライズプレビューは継続中）。**200 万トークンのコンテキストウィンドウ**（報道値）と **Deep Think** 推論モードを備えるとされる Google の次期フラッグシップ。コーディングとエージェント型ワークフロー機能が大幅に向上。2026 年 5 月の Google I/O で 6 月リリースと発表されたが、コーディング性能の不振によりベースモデルを作り直したため延期。サードパーティ報道は 7 月 17 日を目標としていたが、7 月 16 日時点で Google は 3.5 Pro（およびアップグレード版 Flash）をまだテスト中とし、リリース日は未確定。GPT-5.6 Sol や Claude Fable 5 と直接競合。
 - [Gemma 4 12B](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/) - 🆕 **2026-06**。テキスト・画像・音声をシングルパスで処理する**統合エンコーダレスアーキテクチャ**を採用した新型マルチモーダルオープンモデル。16GB VRAM でのローカル動作を想定。
 - [DiffusionGemma](https://www.marktechpost.com/2026/06/10/google-ai-releases-diffusiongemma-a-26b-moe-open-model-using-text-diffusion-for-up-to-4x-faster-generation/) - 🆕 **2026-06**。**テキストディフュージョン（拡散）アーキテクチャ**により、自己回帰型モデルと比べて生成速度が最大 **4 倍**速い 26B の MoE オープンモデル。
@@ -217,7 +220,7 @@
 - [Meta Muse Image](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07**。Meta Superintelligence Labs の最も高度な画像生成モデル — Web 検索、コード実行、自己修正などの推論ステップを経てから画像を生成する「エージェント型」モデル。Meta AI アプリ、Instagram Stories（米国）、一部の国の WhatsApp で展開（Facebook は近日対応）。なお、他ユーザーの公開 Instagram プロフィール画像を利用できる物議を醸した機能は、フィードバックを受けて 7 月 10 日に追加後撤回された。
 - [Muse Spark 1.1](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) - 🆕 **2026-07-09**。Meta Model API の新しいパブリックプレビューを介して提供される、エージェントタスク向けマルチモーダル推論モデル。オープンソースの Llama ラインと並行した、独自の収益重視モデルへの戦略的シフトを示す。
 - [Meta Muse Video](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07（プレビュー）**。Muse Image と同じ基盤技術で構築された動画生成モデル。テキスト→動画部門で Arena 第 3 位。Muse Image の発表と同時にプレビュー公開 —「クリエイターと Meta AI に近日提供」。
-- [Llama 5](https://ai.meta.com/llama/) - 🆕 **2026-04-08**。Meta Superintelligence Labs 発の 600B 超パラメータ・オープンソース旗艦。"再帰的自己改善" を掲げる研究ライン。推論・コーディング・自律的なエージェント挙動で主要クローズドモデルを上回ると主張。
+- **Llama 5** — ❌ **存在しない。2026-07-30 の検証により本リストから削除。** 「Llama 5、600B 超、2026-04-08」という記述は AI ニュースアグリゲータや LLM の検索要約で広く拡散し、本リストにも掲載されていた。しかし裏付けが取れない: Hugging Face の `meta-llama` Organization に **Llama-5 の重みは一つも存在しない**（Llama 系の最新アップロードは 2025-05 の Llama-4-Maverick）。Wikipedia の Llama 項目は「最新バージョンは 2025 年 4 月にリリースされた Llama 4」と記し、**2026 年 4 月に Muse Spark が Llama の後継となった**と述べている。Meta が重みまたは公式発表を出すまで、「Llama 5」の主張は未検証として扱うこと。実際に出荷したものは上記 [Muse Spark](#meta) を参照。
 - [Muse Spark](https://ai.meta.com/blog/introducing-muse-spark-msl/) - 🆕 **2026-04-09**。Meta Superintelligence Labs (MSL) の最初のモデル。ネイティブマルチモーダル推論で Meta AI アプリ・スマートグラス・Facebook / Instagram / WhatsApp / Messenger の機能を駆動。
 - [Llama 4 Scout](https://llama.meta.com/) - 109B 総 / 17B アクティブ、16 専門家 MoE、10M トークン、マルチモーダル。単一 H100 で動作。
 - [Llama 4 Maverick](https://llama.meta.com/) - 400B 総 / 17B アクティブ、128 専門家、1M コンテキスト。マルチモーダルで GPT-4o を上回る。
@@ -236,8 +239,8 @@
 
 ### Thinking Machines Lab
 
-- [Inkling](https://thinkingmachines.ai/blog/introducing-inkling) - 🆕 **2026-07-15**。前 OpenAI CTO の Mira Murati が設立。975B MoE（41Bアクティブ）、45Tトークンで事前学習、コンテキストウィンドウ 1Mトークン。テキスト・画像・音声・動画のネイティブマルチモーダル対応。Apache 2.0 オープンウェイトを Hugging Face で公開。**Inkling-Small**（12Bアクティブ）も同日リリース。Thinking Machines API・ Hugging Face Inference経由で利用可能。
-- [Inkling-Small](https://thinkingmachines.ai/blog/introducing-inkling) - 🆕 **2026-07-15**。Inkling の軽量バリアント，12Bアクティブパラメータ。同じ Apache 2.0 ライセンスとマルチモーダル機能を備え、エッジデバイスやリソース指定環境でのデプロイに適したサイズ。
+- [Inkling](https://thinkingmachines.ai/inkling/) - 🆕 **2026-07-15**。前 OpenAI CTO の Mira Murati が設立。975B MoE（41Bアクティブ）、45Tトークンで事前学習、コンテキストウィンドウ 1Mトークン。テキスト・画像・音声・動画のネイティブマルチモーダル対応。Apache 2.0 オープンウェイトを Hugging Face で公開。**Inkling-Small**（12Bアクティブ）も同日リリース。Thinking Machines API・ Hugging Face Inference経由で利用可能。
+- [Inkling-Small](https://thinkingmachines.ai/inkling/) - 🆕 **2026-07-15**。Inkling の軽量バリアント，12Bアクティブパラメータ。同じ Apache 2.0 ライセンスとマルチモーダル機能を備え、エッジデバイスやリソース指定環境でのデプロイに適したサイズ。
 
 ### Mistral AI
 
@@ -518,6 +521,7 @@
 - [Google Agent Development Kit (ADK)](https://github.com/google/adk-python) - 🆕 Gemini + Vertex AI と密接に統合したモジュラーフレームワーク。階層エージェント構成。**現行版は v2.5.0（2026-07-16）** — ADK 2.x は階層型エージェントエクゼキュータからグラフベースのワークフローランタイムへ移行；1.x 向けに v1.36.x 保守ブランチも継続（v1.36.2、2026-07-21）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle%2Fadk-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - 🆕 [2026-04-15 進化](https://openai.com/index/the-next-evolution-of-the-agents-sdk/) —— ネイティブサンドボックス、MCP ネイティブ、サブエージェント handoff、Codex 風ファイル操作。プロダクション級マルチエージェント。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenai%2Fopenai-agents-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [MetaGPT](https://github.com/geekan/MetaGPT) - 🇨🇳 LLM に SOP ソフトウェアチームの役割（PM / アーキテクト / エンジニア）を割り当てる多エージェント。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgeekan%2FMetaGPT&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Pydantic AI](https://github.com/pydantic/pydantic-ai) - 🆕 ⚡ **v2.21.0（2026-07-30）**。Pydantic チームによるエージェントフレームワーク。FastAPI 流の開発体験と本物の型安全性を LLM アプリに持ち込む —— 構造化出力を Pydantic モデルで検証し、依存性注入・ストリーミング・モデル非依存のプロバイダに対応。自由形式のプロンプト連結ではなく静的型付けと検証済みツール I/O が欲しい場合の第一候補。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fpydantic%2Fpydantic-ai&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Mastra](https://github.com/mastra-ai/mastra) - 🆕 TypeScript 優先のエージェントフレームワーク、ワークフロー駆動 + オブザーバビリティ内蔵。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmastra-ai%2Fmastra&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Ontheia](https://github.com/Ontheia/ontheia) - ⚠️ **Unverified**（初期段階・採用実績少）。セルフホスト型のオープンソース AI エージェントプラットフォーム。マルチプロバイダ（Claude / OpenAI / Gemini / Ollama）、MCP ネイティブ、ビジュアル workflow 自動化のための Chain Engine、長期メモリ（pgvector）、マルチユーザ RBAC、アーキテクチャレベルでの GDPR 適合。AGPL-3.0。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FOntheia%2Fontheia&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [AgentGPT](https://github.com/reworkd/AgentGPT) - 📦 **Archived**（2026-01）。ブラウザでエージェントを構成・展開。第一波の代表、歴史的参照のみ。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Freworkd%2FAgentGPT&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -847,6 +851,12 @@
 ## 📊 ベンチマークとリーダーボード
 
 *フロンティア AI 能力を追跡する標準評価スイートとライブリーダーボード。*
+
+> ⚠️ **以下のスコアの読み方。** フロンティアのリーダーボード順位はいまや、どんな人力リストの更新頻度よりも速く入れ替わり、ミラーサイト同士の記載も食い違う。**2026-07-30** に本節を更新した際、同日に信頼できる 3 つのトラッカーから SWE-bench Verified の「現在の首位」が**3 通り**返ってきた（約 8 ポイントの開き）。ひとつを選んで精度を装うより、本節の数値は**読み取った日付を明記**する方針とした。自分の文章で引用する前に必ずリーダーボード原本を確認すること。
+>
+> 個々の数字より重要な構造的注意点が 2 つ:
+> - **SWE-bench Pro は信頼できない。** OpenAI は 2026-07-08 に公開 731 タスクを監査し、AI レビューで約 27%、人間のエンジニアで約 34% を欠陥と判定した（過度に厳格なテスト、仕様不足のプロンプト、低カバレッジのテスト）。OpenAI はコーディングの主要指標として使う推奨を撤回している。8 か月で首位が 23% → 80% に跳ねたのは、モデルの進歩だけでなくベンチマークのノイズを反映している。
+> - **飽和により微小差は無意味。** GPQA Diamond と SWE-bench Verified は複数のフロンティアモデルが 90 台半ばに到達済み。0.5 ポイントの差はプロンプトのスキャフォールディングやリトライ方針のノイズ範囲内で、**能力の順位付けにはならない**。**自分の**リポジトリやコーパスで小さな eval を組む方が、どの公開リーダーボードより結果を予測できる。
 
 - [BenchLM](https://benchlm.ai/) - 🆕 複数のベンチマークファミリーを集約したリーダーボード。2026-07 首位: Claude Fable 5 91、Claude Mythos 5 89、Gemini 3.1 Pro 88（ランク対象 79 / 追跡 281 モデル、296 ベンチマーク）。
 - [SWE-bench Verified](https://www.swebench.com/) - 実世界の GitHub Issue 解決ベンチマーク。2026-04 首位: Claude Mythos 93.9%、Claude Opus 4.7 87.6%。
@@ -1529,7 +1539,7 @@
 - **Skyvern** — ビジョン優先、動的ページに強い。
 
 **ドキュメント処理 / PDF 分析エージェント**
-→ **LlamaIndex** + **Gemini 2.5 Pro**（2M コンテキスト）または **Claude Opus 4.7** + **Unstructured.io**。
+→ **LlamaIndex** + **Gemini 3.1 Pro**（1M コンテキスト、ネイティブ PDF）または **Claude Opus 5**（1M コンテキスト）+ **Unstructured.io**。ローカル: **Ollama** + **Qwen3.6-27B**。
 
 **カスタマーサービスエージェント**
 - **Dify** — ノーコード・内蔵 RAG・セルフホスト可能。
@@ -1537,7 +1547,7 @@
 - **Salesforce Agentforce** — CRM ネイティブ。
 
 **深い調査エージェント**
-→ **Perplexity Deep Research**（マネージド）または **OpenHands + Tavily + Claude Opus 4.7**。
+→ **Perplexity Deep Research**（マネージド）または **OpenHands + Tavily + Claude Opus 5**。
 
 **データ分析 / BI エージェント**
 - **Julius AI** — エンジニア不要、マネージド。
@@ -1570,39 +1580,51 @@
 → **LlamaIndex** + **Qdrant** + **Cohere embed-v4** + **BGE リランカー**。
 
 **金融分析エージェント**
-→ **LangChain** + **yfinance MCP** + **Claude Sonnet 4.6** + 構造化出力検証。
+→ **LangGraph** + **yfinance MCP** + **Claude Sonnet 5** + 構造化出力検証。
 
 **法律文書エージェント**
-→ **Claude Opus 4.7**（1M コンテキスト）+ **LlamaIndex** + **pgvector**。人間によるレビューを必ず残すこと。
+→ **Claude Opus 5**（1M コンテキスト）+ **LlamaIndex** + **pgvector**。Cowork 利用中なら **Claude for Legal** コネクタも。人間によるレビューを必ず残すこと。
 
 **セキュリティスキャンエージェント**
-→ **Semgrep** + **Claude Sonnet 4.6** + **mcp-scan**。
+→ **Semgrep** + **Claude Sonnet 5** + **mcp-scan**。マネージド: **Claude Security**。
 
 ---
 
 ### 🧠 モデル選択
 
 **最も難しい推論タスクに最高のモデルが必要**
-- **Claude Opus 4.7** (/think xhigh) — $5/$25/1M。
-- **Gemini 2.5 Pro** — 2M コンテキスト、$1.25/$10。
+- **Claude Opus 5** — Anthropic の現行フラグシップ。Fable 5 に迫る品質を大幅に低い価格で、$5/$25/1M、1M コンテキスト / 128K 出力。
+- **Claude Fable 5** — Opus の上の Mythos クラス。本当に難しいタスクだけに。$10/$50/1M。
+- **GPT-5.6 Sol** — OpenAI のフロンティア層。「max」推論と「ultra」サブエージェントモード。$5/$30/1M。
+- **Gemini 3.1 Pro** — Google の出荷済みフラグシップ。GPQA-Diamond 記録保持、1M コンテキスト、$2/$12/1M。（2M を謜う Gemini 3.5 Pro は未リリースなので前提にしないこと。）
 
 **最速・最安モデル（シンプルな大量タスク）**
-- **Gemini 2.5 Flash-Lite** — $0.10/$0.40/1M。
-- **DeepSeek V3.2** — $0.14/$0.28/1M。
+- **Gemini 3.1 Flash-Lite** — Gemini 3 ファミリー最安層。2026-05-08 に GA。低レイテンシな補完と agentic 開発ツール向け。
+- **DeepSeek V4-Flash** — $0.14/$0.28/1M、1M コンテキスト、MIT。オープンウェイト側でコスパ最強。
+- **Claude Haiku 4.5** — $1/$5/1M、200K コンテキスト。
+- **GPT-5.6 Luna** — $1.00/$6.00/1M、GPT-5.6 最速層。
 
 **最高の中国語対応**
-- **Qwen3 235B A22B** — 中国語ベンチマーク首位。
+- **Qwen3.7-Max**（Alibaba）— 現行 Qwen フラグシップ。agentic コーディングと長期ミッション向け。
+- **Kimi K3**（Moonshot）— 2.8T 総 / 104B アクティブの公開重み（2026-07-27）。リリース時点で世界最大のダウンロード可能モデル。
+- **DeepSeek V4-Pro** — 1.6T/49B MoE、1M コンテキスト、MIT。
 - **Kimi K2.6** — 262K コンテキスト。
 
 **16GB VRAM でのローカルモデル**
-- **Qwen3.6-27B Q4_K_M** — ~17GB、最良の 16GB 選択肢。
+- **Qwen3.6-35B-A3B** — MoE でアクティブは 3B のみ。同規模の dense では入らない環境でも動く。Apache-2.0。
+- **Gemma 4 12B**（Google）— エンコーダフリーの統一マルチモーダル。Q4 約 7GB。
+- **Phi-4**（Microsoft、MIT）— Q4 約 9GB、コーディングでサイズ以上の成績。
+- **Qwen3.6-27B** — Q4 約 16GB、シングル消費者向け GPU に入る最強の選択肢。
 
 **40GB+ VRAM でのローカルモデル**
-- **Llama 3.3 70B Q4_K_M** — ~42GB。
-- **Qwen3 235B A22B Q2** — MoE フラグシップ。
+- **Qwen3 235B A22B** — MoE フラグシップ、22B アクティブ。Apache-2.0。
+- **Llama 3.3 70B Q4_K_M** — ~42GB、Llama Community License。
+- **DeepSeek V4-Flash** — 284B MoE / 13B アクティブ、MIT、1M コンテキスト、Q4 約 75GB。
+- **Inkling**（Thinking Machines）— 975B MoE / 41B アクティブ、Apache-2.0、マルチ GPU 必須。
 
 **オープンウェイトモデル（MIT/Apache）**
-- **Llama 3.3 70B**（Meta、Llama 3.3 Community License）、**DeepSeek V3.2** (MIT)、**Qwen3 235B A22B** (Apache-2.0)。
+- **Qwen3 235B A22B** (Apache-2.0)、**DeepSeek V4-Flash / V4-Pro** (MIT)、**Inkling** (Apache-2.0)、**Mistral Small 4** (Apache-2.0、119B MoE / 6B アクティブ)、**Llama 3.3 70B**（Llama Community License）。
+- ⚠️ 注意: **Kimi K3 は OSI オープンソースでない**（独自の Kimi K3 License、収益閾値付き MaaS 除外規定）。**Gemma 系も同様**（Gemma Terms of Use）。
 
 ---
 
@@ -1612,7 +1634,7 @@
 → **Ollama** + **Open WebUI** + **Qdrant** + **Qwen3.6-27B** or **Llama 3.3 70B**。
 
 **API コストを最小化（月 <$50）**
-→ **DeepSeek V3.2** + **Gemini 2.5 Flash** + Anthropic Batch API 割引。
+→ **DeepSeek V4-Flash** + **Gemini 3.5 Flash-Lite** + Anthropic Batch API 割引。Sonnet 5 の intro 価格は 2026-08-31 で終了（$2/$10 → $3/$15）。
 
 **ベンダーロックインを避ける**
 → **LiteLLM** + **LangGraph** + **BGE-M3 埋め込み**。
@@ -1631,15 +1653,15 @@
 
 ### 🌍 エコシステム選択
 
-**OpenAI エコシステム** → OpenAI Agents SDK + GPT-4o + E2B + LangSmith。
+**OpenAI エコシステム** → OpenAI Agents SDK + GPT-5.6 Terra + E2B + LangSmith。
 
 **Anthropic エコシステム** → Claude Code + Claude Sonnet/Opus + MCP + Langfuse。
 
-**Google エコシステム** → Google ADK + Gemini 2.5 Pro/Flash + Vertex AI。
+**Google エコシステム** → Google ADK v2.5+ + Gemini 3.1 Pro / 3.6 Flash + Vertex AI。
 
 **中国市場向け** → Qwen3 235B（DashScope）+ RAGFlow + Milvus + Langfuse。
 
-**TypeScript ファースト** → Mastra + Vercel AI SDK + Gemini 2.5 Flash + Qdrant。
+**TypeScript ファースト** → Mastra + Vercel AI SDK + Gemini 3.6 Flash + Qdrant。
 
 **フル OSS スタック** → Ollama + Llama 3.3 70B + LangGraph + Qdrant + Langfuse。
 
@@ -1652,10 +1674,10 @@
 | 1 | **軽量コーディング Agent** | Claude Code + E2B + Langfuse | 個人開発/スタートアップ |
 | 2 | **OSS SWE エージェント** | OpenHands + Ollama + Qwen3.6-27B + Qdrant | 完全ローカル・プライバシー重視 |
 | 3 | **エンタープライズ RAG** | LlamaIndex + Qdrant + Cohere embed-v4 + Langfuse | 社内文書 Q&A |
-| 4 | **音声アシスタント** | LiveKit + Whisper + Claude Sonnet 4.6 + ElevenLabs v3 | カスタム音声 AI |
-| 5 | **ブラウザ自動化** | Browser Use + Stagehand + Claude Sonnet 4.6 | 信頼性の高い Web スクレイピング |
+| 4 | **音声アシスタント** | LiveKit + Whisper + Claude Sonnet 5 + ElevenLabs v3 | カスタム音声 AI |
+| 5 | **ブラウザ自動化** | Browser Use + Stagehand + Claude Sonnet 5 | 信頼性の高い Web スクレイピング |
 | 6 | **ローカルプライバシースタック** | Ollama + Qwen3.6-27B + Open WebUI + Qdrant + n8n | ゼロクラウド・オフライン |
-| 7 | **TypeScript エージェント** | Mastra + Vercel AI SDK + Gemini 2.5 Flash + Qdrant | TS ファースト本番 SaaS |
+| 7 | **TypeScript エージェント** | Mastra + Vercel AI SDK + Gemini 3.6 Flash + Qdrant | TS ファースト本番 SaaS |
 | 8 | **中国市場スタック** | Qwen3 235B API + RAGFlow + Milvus + Langfuse | 国内デプロイ・ICP 対応 |
 
 ---
@@ -1666,7 +1688,7 @@
 |------------|-----------|---------------|-----|
 | LangChain v0.x | 新しい本番エージェント | **LangGraph** | 旧 chain は廃止済み |
 | AutoGPT（レガシー） | 本番ワークロード | **OpenHands / LangGraph** | アーキテクチャが古く信頼性が低い |
-| GPT-3.5-Turbo | 複雑な推論 | **Gemini 2.5 Flash / Claude Haiku 4.5** | 廃止済み、同価格帯により良い選択肢がある |
+| GPT-3.5-Turbo | 複雑な推論 | **Gemini 3.6 Flash / Claude Haiku 4.5** | 廃止済み、同価格帯により良い選択肢がある |
 | Pinecone Starter | セルフホスト/コスト重視 | **Qdrant / pgvector** | 2025 年に無料プラン廃止 |
 | LLM で実時間株取引 | 金融執行 | 確定的ルールエンジン | LLM は数値を幻覚する；実取引では壊滅的 |
 | ChatGPT Plus | 本番 API ワークフロー | **OpenAI API** 直接 | SLA なし・レート制御なし |
@@ -1861,7 +1883,7 @@
 | **2026-07-10** | [Cursor 3.11](https://cursor.com/changelog) — サイドチャット、会話履歴検索、きめ細かなエージェント可観測性のための Cloud Agent Hooks | ツール |
 | **2026-07-14** | [Oracle が AI ネイティブな Agentic Applications Builder を追加](https://www.oracle.com/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/) — Fusion 向け AI Agent Studio を拡張し、Fusion エージェントアプリをプロコード開発者にも開放；Fusion 顧客は追加費用なし | フレームワーク |
 | **2026-07-16** | [Kimi K3](https://kimi.ai/) を Moonshot AI がローンチ — 2.8T パラメータの疎 MoE（896 エキスパート中 16 が有効）、1M トークンコンテキスト、100 万トークンあたり $3/$15；フルオープンウェイトは 7 月下旬公開予定 | モデル |
-| **2026-07-15** | [Inkling](https://thinkingmachines.ai/blog/introducing-inkling) を Thinking Machines Lab（Mira Murati、前 OpenAI CTO）がローンチ — 975B MoE / 41B アクティブ、45T トークン事前学習、1M コンテキスト、Apache 2.0 オープンウェイトを Hugging Face で公開；ネイティブマルチモーダル（テキスト/画像/音声/動画）；Inkling-Small（12B アクティブ）も同時リリース | モデル |
+| **2026-07-15** | [Inkling](https://thinkingmachines.ai/inkling/) を Thinking Machines Lab（Mira Murati、前 OpenAI CTO）がローンチ — 975B MoE / 41B アクティブ、45T トークン事前学習、1M コンテキスト、Apache 2.0 オープンウェイトを Hugging Face で公開；ネイティブマルチモーダル（テキスト/画像/音声/動画）；Inkling-Small（12B アクティブ）も同時リリース | モデル |
 | **2026-07-17** | EU Android AI 開放命令 — 欧州委員会がサードパーティ AI アシスタントへのより深い Android アクセスを Google に命令（カメラ・マイク・アプリ制御 API）；Android 18 での実装期限は 2027 年 8 月 | 業界 |
 | **2026-07-19** | [Qwen 3.8-Max](https://qwenlm.github.io/) をアリババが世界 AI カンファレンスでプレビュー — 2.4T パラメータ MoE プレビュー；コーディング・数学・マルチモーダル能力が強力 | モデル |
 | **2026-07-20** | [Qwen-Image-3.0](https://qwenlm.github.io/) をアリババがリリース — 世界 AI カンファレンスで発表された第 3 世代画像生成モデル；フォトリアリズム・テキストレンダリング・マルチ被写体一貫性が向上 | モデル |

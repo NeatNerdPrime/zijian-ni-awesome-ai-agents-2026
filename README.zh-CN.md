@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-July%2030%2C%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-780%2B-orange.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-810%2B-orange.svg)](#)
 [![Audited](https://img.shields.io/badge/Spam_Audited-2026--07--30-success.svg)](#️-状态图例)
 [![English](https://img.shields.io/badge/Lang-English-informational.svg)](README.md)
 [![日本語](https://img.shields.io/badge/Lang-日本語-red.svg)](README.ja.md)
@@ -56,30 +56,30 @@
 
 | 分类 | 说明 | 数量 |
 |----------|-------------|-------|
-| [🧠 基础大模型 2026](#-基础大模型-2026) | 来自 OpenAI、Anthropic、Google、Meta 等 22+ 家厂商的最新大模型 | 80+ |
-| [🎨 多模态与生成式 AI](#-多模态与生成式-ai) | 图像、视频、音频与音乐生成 | 20+ |
-| [🔗 Agent 协议与标准](#-agent-协议与标准) | MCP、A2A 与互操作标准 | 10+ |
+| [🧠 基础大模型 2026](#-基础大模型-2026) | 来自 OpenAI、Anthropic、Google、Meta 等 22+ 家厂商的最新大模型 | 195+ |
+| [🎨 多模态与生成式 AI](#-多模态与生成式-ai) | 图像、视频、音频与音乐生成 | 40+ |
+| [🔗 Agent 协议与标准](#-agent-协议与标准) | MCP、A2A 与互操作标准 | 15+ |
 | [🏗️ Agent 框架](#️-agent-框架) | 构建自主 AI Agent 的开发库 | 23+ |
 | [🛠️ Agent IDE 与可视化构建器](#️-agent-ide-与可视化构建器) | 设计 Agent 流程的可视化 / 低代码环境 | 8+ |
-| [🧠 Agent 记忆](#-agent-记忆) | 持久化记忆与上下文管理 | 10+ |
-| [🔌 工具与 API 集成](#-工具与-api-集成) | 把 Agent 接到外部服务 | 18+ |
-| [🧪 Agent 沙箱与计算隔离](#-agent-沙箱与计算隔离) | 运行 Agent 生成代码的安全沙箱 | 7+ |
+| [🧠 Agent 记忆](#-agent-记忆) | 持久化记忆与上下文管理 | 20+ |
+| [🔌 工具与 API 集成](#-工具与-api-集成) | 把 Agent 接到外部服务 | 20+ |
+| [🧪 Agent 沙箱与计算隔离](#-agent-沙箱与计算隔离) | 运行 Agent 生成代码的安全沙箱 | 9+ |
 | [🛡️ Agent 安全](#️-agent-安全) | Prompt 注入防御与护栏 | 16+ |
-| [🔍 RAG 与知识库](#-rag-与知识库) | 检索增强生成系统 | 12+ |
-| [💻 编程 Agent](#-编程-agent) | AI 驱动的软件工程 | 27+ |
-| [🤖 Physical AI / 具身智能](#-physical-ai--具身智能) | 人形机器人、具身智能、工业自动化 | 22+ |
-| [🎮 Agent 仿真与世界模型](#-agent-仿真与世界模型) | 训练与压力测试 Agent 的仿真环境 | 7+ |
-| [📊 评测与 Leaderboard](#-评测与-leaderboard) | 追踪前沿能力的排行榜 | 11+ |
+| [🔍 RAG 与知识库](#-rag-与知识库) | 检索增强生成系统 | 20+ |
+| [💻 编程 Agent](#-编程-agent) | AI 驱动的软件工程 | 45+ |
+| [🤖 Physical AI / 具身智能](#-physical-ai--具身智能) | 人形机器人、具身智能、工业自动化 | 35+ |
+| [🎮 Agent 仿真与世界模型](#-agent-仿真与世界模型) | 训练与压力测试 Agent 的仿真环境 | 10+ |
+| [📊 评测与 Leaderboard](#-评测与-leaderboard) | 追踪前沿能力的排行榜 | 20+ |
 | [🖥️ Computer Use / 桌面 Agent](#️-computer-use--桌面-agent) | 桌面自动化与操作系统级控制 | 10+ |
-| [🌐 浏览器与 Web Agent](#-浏览器与-web-agent) | 驱动真实浏览器的 Agent | 9+ |
+| [🌐 浏览器与 Web Agent](#-浏览器与-web-agent) | 驱动真实浏览器的 Agent | 15+ |
 | [🗣️ 语音与多模态 Agent](#️-语音与多模态-agent) | 支持语音的对话式 AI | 10+ |
-| [📱 个人 AI Agent](#-个人-ai-agent) | 生产力与日常生活助手 | 11+ |
-| [📱 手机 Agent](#-手机-agent) | 手机操控 Agent（Android / iOS） | 6+ |
-| [🏢 企业级 Agent 平台](#-企业级-agent-平台) | 企业级 Agent 部署 | 18+ |
-| [📊 Agent 评估与可观测性](#-agent-评估与可观测性) | 测试、监控与基准评测 | 17+ |
-| [🔬 AI 研究工具](#-ai-研究工具) | AI / ML 研究与实验工具 | 10+ |
+| [📱 个人 AI Agent](#-个人-ai-agent) | 生产力与日常生活助手 | 20+ |
+| [📱 手机 Agent](#-手机-agent) | 手机操控 Agent（Android / iOS） | 10+ |
+| [🏢 企业级 Agent 平台](#-企业级-agent-平台) | 企业级 Agent 部署 | 30+ |
+| [📊 Agent 评估与可观测性](#-agent-评估与可观测性) | 测试、监控与基准评测 | 30+ |
+| [🔬 AI 研究工具](#-ai-研究工具) | AI / ML 研究与实验工具 | 15+ |
 | [📚 学习资源](#-学习资源) | 论文、课程与教程 | 20+ |
-| [🇨🇳 中国 AI 生态](#-中国-ai-生态) | 中国团队的主要项目 | 18+ |
+| [🇨🇳 中国 AI 生态](#-中国-ai-生态) | 中国团队的主要项目 | 25+ |
 | [📝 横向对比表](#-横向对比表) | 横向对比表 | — |
 | [🗺️ 场景指南 — 我应该用什么…](#️-场景指南--我应该用什么) | 56 个场景到工具的精选映射 | 56 |
 | [📋 技术栈食谱 — 经过验证的工具组合](#-技术栈食谱--经过验证的工具组合) | 精选的多工具组合 | 8 |
@@ -193,6 +193,9 @@
 - [Bristol Myers Squibb ↔ Anthropic Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) - 🆕 **2026-05-20**。BMS 将 Claude Enterprise 作为 30,000+ 员工的共享智能平台，嵌入药物发现 / 开发 / 交付的全链路。全球前 5 大药企中首个全公司级 Claude 部署。
 
 ### Google DeepMind
+- [Gemini 3.6 Flash](https://github.com/google-gemini/cookbook) - 🆕 ⚡ **2026-07-21**。Google 最新的 Flash 档 —— 在复杂 agentic 与多模态任务上更强，**同时 token 用量更少、价格低于 3.5 Flash**。API id `gemini-3.6-flash`。已写入官方 Gemini API cookbook（含 thinking 模式指南）。
+- [Gemini 3.5 Flash-Lite](https://github.com/google-gemini/cookbook) - 🆕 **2026-07-21**。3.5 家族里最快、最便宜的模型；在高吞吐执行上超越前几代 Flash-Lite。API id `gemini-3.5-flash-lite`。现为最便宜的 Gemini 档，新项目应优先于 3.1 Flash-Lite。
+- [Gemini 3.1 Pro（preview）](https://deepmind.google/technologies/gemini/) - 截至 2026 年 7 月底 Google 能力最强的 Gemini，API 名 `gemini-3.1-pro-preview`。GPQA Diamond 94.3%（发布时世界纪录）、ARC-AGI-2 77.1%、BenchLM 94。⚠️ 仍带 `-preview` 后缀，且**没有免费额度**。
 - [Gemini 3.5 Pro](https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud) - ⚠️ **延期 —— 截至 2026-07-17 尚未发布**（面向合作伙伴的企业限量预览进行中）。Google 即将推出的旗舰模型，据报道具备 **200 万 token 上下文**和 **Deep Think** 推理模式，编程与 Agent 工作流能力显著提升。2026 年 5 月 Google I/O 上宣布原定 6 月发布，后因编程表现不理想、Google 推倒重建基座模型而推迟。第三方报道曾指向 7 月 17 日，但截至 7 月 16 日 Google 表示仍在测试 3.5 Pro（连同升级版 Flash 模型），无确认发布日期。直接对标 GPT-5.6 Sol 和 Claude Fable 5。
 - [Gemma 4 12B](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/) - 🆕 **2026-06**。新型多模态开源模型，采用**统一无编码器架构**，在单次计算中同时处理文本、图像和音频。支持在 16GB VRAM 显存下本地运行。
 - [DiffusionGemma](https://www.marktechpost.com/2026/06/10/google-ai-releases-diffusiongemma-a-26b-moe-open-model-using-text-diffusion-for-up-to-4x-faster-generation/) - 🆕 **2026-06**。采用**文本扩散 (text-diffusion)** 架构的 26B MoE 开源模型，生成速度比自回归模型快最高 **4 倍**。
@@ -217,7 +220,7 @@
 - [Muse Image](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07**。Meta Superintelligence Labs 最新图像生成模型 —— “Agent 式”架构，在生成图像前能自动完成网页搜索、代码执行、自我修正等中间步骤。已集成到 Meta AI 应用、Instagram Stories（美国）与限定国家的 WhatsApp（Facebook 即将上线）。注：一项允许使用其他用户公开 Instagram 头像生成图像的争议功能上线后，因用户反馈于 7 月 10 日下线。
 - [Muse Spark 1.1](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) - 🆕 **2026-07-09**。面向 Agent 任务的多模态推理模型，通过新的 Meta Model API 公开预览发布。标志着 Meta 在开源 Llama 路线之外开始构建专有商业模型。
 - [Muse Video](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07（预览）**。Meta Superintelligence Labs 的视频生成模型，与 Muse Image 同底座；Arena 文生视频榜第 3。随 Muse Image 发布一同预览 —— “即将面向创作者与 Meta AI 开放”。
-- [Llama 5](https://ai.meta.com/llama/) - 🆕 **2026-04-08**。Meta 超级智能实验室发布的 600B+ 参数开源旗舰；“递归自我改进” 研究路线。官方宣称在推理、代码、自主 Agent 行为上超越主流闭源模型。
+- **Llama 5** — ❌ **不存在。于 2026-07-30 核实后从本表删除。** “Llama 5、600B+、2026-04-08” 这条说法在 AI 资讯聚合站和大模型搜索摘要里广为流传，也曾被写进本表。它经不住核实：Hugging Face 的 `meta-llama` 组织下 **没有任何 Llama-5 权重**（Llama 系最新上传仍是 2025-05 的 Llama-4-Maverick），而维基百科 Llama 条目明确写着“最新版本是 2025 年 4 月发布的 Llama 4”，并指出 **2026 年 4 月 Muse Spark 已取代 Llama 产品线**。在 Meta 真正发出权重或官方公告前，任何“Llama 5”说法都应当未经核实处理。实际上线的产品见上方 [Muse Spark](#meta)。
 - [Muse Spark](https://ai.meta.com/blog/introducing-muse-spark-msl/) - 🆕 **2026-04-09**。Meta Superintelligence Labs (MSL) 首个模型。原生多模态推理，驱动 Meta AI 应用、智能眼镜，以及 Facebook / Instagram / WhatsApp / Messenger 中的功能。
 - [Llama 4 Scout](https://llama.meta.com/) - 109B 总参（17B 激活），16 专家 MoE，10M token 上下文，多模态。单 H100 可跑。
 - [Llama 4 Maverick](https://llama.meta.com/) - 400B 总参（17B 激活），128 专家，1M 上下文。多模态超过 GPT-4o。
@@ -236,8 +239,8 @@
 
 ### Thinking Machines Lab
 
-- [Inkling](https://thinkingmachines.ai/blog/introducing-inkling) - 🆕 **2026-07-15**。前 OpenAI CTO Mira Murati 创立。975B MoE 参数（41B 激活），基于 45T token 预训练，1M token 上下文窗口。原生多模态（文本 / 图像 / 音频 / 视频）。Apache 2.0 开源权重，已发布至 Hugging Face。同日发布 **Inkling-Small**（12B 激活参数）。可通过 Thinking Machines API 和 Hugging Face Inference 使用。
-- [Inkling-Small](https://thinkingmachines.ai/blog/introducing-inkling) - 🆕 **2026-07-15**。Inkling 的轻量化变体，12B 激活参数，同样遵循 Apache 2.0协议，拥有相同多模态能力，更适合边缘和资源受限场景部署。
+- [Inkling](https://thinkingmachines.ai/inkling/) - 🆕 **2026-07-15**。前 OpenAI CTO Mira Murati 创立。975B MoE 参数（41B 激活），基于 45T token 预训练，1M token 上下文窗口。原生多模态（文本 / 图像 / 音频 / 视频）。Apache 2.0 开源权重，已发布至 Hugging Face。同日发布 **Inkling-Small**（12B 激活参数）。可通过 Thinking Machines API 和 Hugging Face Inference 使用。
+- [Inkling-Small](https://thinkingmachines.ai/inkling/) - 🆕 **2026-07-15**。Inkling 的轻量化变体，12B 激活参数，同样遵循 Apache 2.0协议，拥有相同多模态能力，更适合边缘和资源受限场景部署。
 
 ### Mistral AI
 
@@ -518,6 +521,7 @@
 - [Google Agent Development Kit (ADK)](https://github.com/google/adk-python) - 🆕 与 Gemini + Vertex AI 深度集成的模块化框架。层级 Agent 组合。**当前版本 v2.5.0（2026-07-16）** —— ADK 2.x 已从层级 Agent 执行器转为基于图的工作流运行时；1.x 用户另有 v1.36.x 维护分支（v1.36.2，2026-07-21）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle%2Fadk-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - 🆕 [2026-04-15 升级](https://openai.com/index/the-next-evolution-of-the-agents-sdk/) —— 原生沙箱、MCP、子 Agent handoff、Codex 文件操作。生产级多 Agent。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenai%2Fopenai-agents-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [MetaGPT](https://github.com/geekan/MetaGPT) - 🇨🇳 给 LLM 分配 SOP 软件团队角色（PM / 架构师 / 工程师）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgeekan%2FMetaGPT&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Pydantic AI](https://github.com/pydantic/pydantic-ai) - 🆕 ⚡ **v2.21.0（2026-07-30）**。Pydantic 团队做的 Agent 框架，把 FastAPI 式的开发体验和真正的类型安全带进 LLM 应用 —— 结构化输出由 Pydantic 模型校验，支持依赖注入、流式输出、跨厂商模型。想要静态类型 + 工具入出参校验（而不是自由拼 prompt）时的首选。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fpydantic%2Fpydantic-ai&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Mastra](https://github.com/mastra-ai/mastra) - 🆕 TypeScript 优先的 Agent 框架，工作流驱动 + 内置可观测性。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmastra-ai%2Fmastra&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Ontheia](https://github.com/Ontheia/ontheia) - ⚠️ **未经验证**（早期项目，采用度低）。自托管开源 AI Agent 平台。多模型供应商（Claude / OpenAI / Gemini / Ollama），原生支持 MCP，Chain Engine 可视化工作流编排，长期记忆（pgvector），多用户 RBAC，架构层面合规 GDPR。AGPL-3.0。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FOntheia%2Fontheia&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [AgentGPT](https://github.com/reworkd/AgentGPT) - 📦 **Archived**（2026-01）。浏览器中部署 Agent。第一波代表项目，仅作历史参考。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Freworkd%2FAgentGPT&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -847,6 +851,12 @@
 ## 📊 评测与 Leaderboard
 
 *跟踪前沿 AI 能力的标准评测套件与实时榜单。*
+
+> ⚠️ **下面这些分数该怎么读。** 前沿榜单的变动速度已经超过任何人工清单的更新频率，而且各镜像站之间互相矛盾。我们在 **2026-07-30** 刷新本节时，同一天从三个可信追踪站拿到了**三个不同的** SWE-bench Verified「当前榜首」，分差约 8 个百分点。与其挑一个假装精确，本节数字一律**标注读取日期**——在你自己的文章里引用前，请点进榜单原页核对。
+>
+> 两个比任何单一数字都更重要的结构性提醒：
+> - **SWE-bench Pro 已不可靠。** OpenAI 于 2026-07-08 审计其 731 个公开任务，AI 审查标记约 27% 有缺陷、人工工程师标记约 34%（测试过于严格、prompt 描述不足、测试覆盖率低）。OpenAI 已撤回将其作为编程主指标的推荐。榜首在八个月内从 23% 蹿到 80%，反映的是基准噪音，不只是模型进步。
+> - **饱和让微小差距失去意义。** GPQA Diamond 和 SWE-bench Verified 已有多个前沿模型进入 90 分中段。0.5 分的差距在 prompt 脚手架和重试策略的噪音范围内，**不构成能力排序**。在**你自己的**仓库或语料上搭一个小 eval，它对你实际结果的预测力强于任何公开榜单。
 
 - [BenchLM](https://benchlm.ai/) - 🆕 多家基准聚合榜单。2026-07 榜首：Claude Fable 5 91，Claude Mythos 5 89，Gemini 3.1 Pro 88（79 个上榜 / 281 个跟踪模型，296 项基准）。
 - [SWE-bench Verified](https://www.swebench.com/) - 真实 GitHub issue 修复基准。2026-04 榜首：Claude Mythos 93.9%，Claude Opus 4.7 87.6%。
@@ -1540,7 +1550,7 @@
 - **Skyvern** — Vision 优先，抵抗动态页面。
 
 **文档处理 / PDF 分析 Agent**
-→ **LlamaIndex** + **Gemini 2.5 Pro**（2M 上下文）或 **Claude Opus 4.7** + **Unstructured.io**。
+→ **LlamaIndex** + **Gemini 3.1 Pro**（1M 上下文，原生 PDF）或 **Claude Opus 5**（1M 上下文）+ **Unstructured.io**。本地：**Ollama** + **Qwen3.6-27B**。
 
 **客户服务 Agent**
 - **Dify** — 无代码、内置 RAG、自托管。
@@ -1548,7 +1558,7 @@
 - **Salesforce Agentforce** — CRM 原生。
 
 **深度研究 Agent**
-→ **Perplexity Deep Research**（托管）或 **OpenHands + Tavily + Claude Opus 4.7**。
+→ **Perplexity Deep Research**（托管）或 **OpenHands + Tavily + Claude Opus 5**。
 
 **数据分析 / BI Agent**
 - **Julius AI** — 无需工程师，托管。
@@ -1581,55 +1591,64 @@
 → **LlamaIndex** + **Qdrant** + **Cohere embed-v4** + **BGE reranker**。
 
 **金融分析 Agent**
-→ **LangChain** + **yfinance MCP** + **Claude Sonnet 4.6** + 结构化输出验证。
+→ **LangGraph** + **yfinance MCP** + **Claude Sonnet 5** + 结构化输出验证。
 
 **法律文档 Agent**
-→ **Claude Opus 4.7**（1M 上下文）+ **LlamaIndex** + **pgvector**。必须保留人工审核。
+→ **Claude Opus 5**（1M 上下文）+ **LlamaIndex** + **pgvector**；已在 Cowork 上则可用 **Claude for Legal** 连接器。必须保留人工审核。
 
 **创意写作助手**
-→ **Claude Opus 4.7**（最佳散文质量）或 **Gemini 2.5 Pro**（2M 上下文）。
+→ **Claude Opus 5**（最佳散文质量）或 **Gemini 3.1 Pro**（1M 上下文）。
 
 **安全扫描 Agent**
-→ **Semgrep** + **Claude Sonnet 4.6** + **mcp-scan**。
+→ **Semgrep** + **Claude Sonnet 5** + **mcp-scan**；托管方案：**Claude Security**。
 
 ---
 
 ### 🧠 模型选择类
 
 **需要最强模型做复杂推理**
-- **Claude Opus 4.7** (/think xhigh) — $5/$25/1M。
-- **Gemini 2.5 Pro** — 2M 上下文，$1.25/$10。
-- **GPT-5.6 Terra** — 广泛工具调用生态，$2.50/$15。
+- **Claude Opus 5** — Anthropic 当前旗舰，接近 Fable 5 的质量而价格低很多，$5/$25/1M，1M 上下文 / 128K 输出。
+- **Claude Fable 5** — Opus 之上的 Mythos 档，只在真的很难的任务上才划得来，$10/$50/1M。
+- **GPT-5.6 Sol** — OpenAI 前沿档，带 “max” 推理与 “ultra” 子 Agent 模式，$5/$30/1M。
+- **Gemini 3.1 Pro** — Google 已上线的旗舰，GPQA-Diamond 纪录保持者，1M 上下文，$2/$12/1M。（宣称 2M 窗口的 Gemini 3.5 Pro 至今未发布，不要按它做规划。）
 
 **需要最快最便宜的模型（简单高频任务）**
-- **Gemini 2.5 Flash-Lite** — $0.10/$0.40/1M。
-- **DeepSeek V3.2** — $0.14/$0.28/1M，惊人的性价比。
-- **GPT-5.6 Luna** — $1.00/$6.00/1M，GPT-5.6 最快档，OpenAI 工具生态广（GPT-4o-mini 仍是 $0.15/$0.60 的超低价旧选项）。
+- **Gemini 3.1 Flash-Lite** — Gemini 3 家族最便宜档，2026-05-08 已 GA，为低延迟补全和 agentic 开发工具而做。
+- **DeepSeek V4-Flash** — $0.14/$0.28/1M，1M 上下文，MIT，开源侧性价比最优。
+- **Claude Haiku 4.5** — $1/$5/1M，1M 上下文，Anthropic 生态集成好。
+- **GPT-5.6 Luna** — $1.00/$6.00/1M，GPT-5.6 最快档，OpenAI 工具生态广。
 
 **需要最强中文能力**
-- **Qwen3 235B A22B** — 中文评测居首。
-- **Kimi K2.6** — 262K 上下文。
-- **DeepSeek V3.2** — 开源权重中文编程。
+- **Qwen3.7-Max**（阿里）— 当前 Qwen 旗舰，专为 agentic 编程和长周期任务而做。→ 云 API
+- **Kimi K3**（月之暗面）— 2.8T 总 / 104B 激活开放权重（2026-07-27），发布时全球最大的可下载模型。→ 自部署或 API
+- **DeepSeek V4-Pro** — 1.6T/49B MoE，1M 上下文，MIT。→ 自部署或 API
 - **GLM-5.2**（智谱 AI）— 1M 上下文，MIT 开源权重，中文优先。→ API 或本地
 
 **需要本地/离线模型（16GB 显存）**
-- **Qwen3.6-27B Q4_K_M** — ~17GB，最佳 16GB 首选。
-- **Phi-4 14B** — ~9GB，编程首选。
+- **Qwen3.6-35B-A3B** — MoE 只有 3B 激活参数，因此能跑在 35B dense 永远跑不了的卡上。Apache-2.0，显存性价比最优选。
+- **Gemma 4 12B**（Google）— 统一无编码器多模态（文本+图像+音频单次处理），Q4 约 7GB。
+- **Phi-4**（微软，MIT）— Q4 约 9GB，编程表现超出体量。
+- **Qwen3.6-27B** — Q4 约 16GB，单消费级卡能塞进去的最强选择。
 
 **需要本地/离线模型（40GB+）**
-- **Llama 3.3 70B Q4_K_M** — ~42GB，英文与编程强，Llama 3.3 Community License。
-- **Qwen3 235B A22B Q2** — MoE 主力。
+- **Qwen3 235B A22B** — MoE 旗舰，22B 激活，本档位本地质量最佳。Apache-2.0。
+- **Llama 3.3 70B Q4_K_M** — ~42GB，英文与编程强，Llama Community License。
+- **DeepSeek V4-Flash** — 284B MoE / 13B 激活，MIT，1M 上下文，单台 8 卡机 Q4 约 75GB。
+- **Inkling**（Thinking Machines）— 975B MoE / 41B 激活，Apache-2.0，原生多模态；需多卡。
 
 **需要最强编程能力**
-→ **Claude Sonnet 4.6**（通过 Claude Code，SWE-bench 80.9%）。
+→ 日常 agentic 编程用 **Claude Sonnet 5**（迄今最 agentic 的 Sonnet，Claude Code 默认）；真难的任务上 **Claude Opus 5** 或 **Fable 5**。OpenAI 技术栈走 Codex + **GPT-5.6 Sol**。开源权重编程用 **DeepSeek V4-Pro**。IDE 内：**Cursor**（默认 Grok 4.5，可切 Claude）或 **Cline**。
 
 **需要超长上下文 (500K+)**
-- **Gemini 2.5 Pro** — 2M 上下文。
-- **Kimi K2.6** — 262K。
-- **Claude Opus 4.7** — 1M 上下文，窗口内质量最佳。
+- **Claude Opus 5 / Sonnet 5** — 1M 上下文，窗口内质量最佳。
+- **Gemini 3.1 Pro** — 1M 上下文，这个长度上最便宜的强选项。
+- **DeepSeek V4-Pro / V4-Flash** — 1M 上下文，MIT，可自部署。
+- **Grok 4.5** — 500K 上下文，自带上下文压缩。
+- **Kimi K2.6** — 262K，中文强。
 
 **需要开源权重模型（MIT/Apache）**
-- **Llama 3.3 70B**（Llama 3.3 Community License）、**DeepSeek V3.2** (MIT)、**Qwen3 235B A22B** (Apache-2.0)。
+- **Qwen3 235B A22B** (Apache-2.0)、**DeepSeek V4-Flash / V4-Pro** (MIT)、**Inkling** (Apache-2.0，975B MoE / 41B 激活、多模态)、**Mistral Small 4** (Apache-2.0，119B MoE / 6B 激活)、**Llama 3.3 70B**（Llama Community License）。
+- ⚠️ 注意：**Kimi K3 不是 OSI 开源**（自定义 Kimi K3 License，带营收阈值的 MaaS 除外条款），**Gemma 系也不是**（Gemma Terms of Use）。
 
 ---
 
@@ -1639,7 +1658,7 @@
 → **Ollama** + **Open WebUI** + **Qdrant** + **Qwen3.6-27B**（16GB）/ **Llama 3.3 70B**（40GB+）。
 
 **压缩 API 费用（每月 <$50）**
-→ **DeepSeek V3.2** + **Gemini 2.5 Flash** + Anthropic Batch API 折扣。
+→ **DeepSeek V4-Flash** + **Gemini 3.1 Flash-Lite** + Anthropic Batch API 折扣。注意 Sonnet 5 的 intro 价 2026-08-31 到期（$2/$10 → $3/$15）。多用缓存：DeepSeek 命中缓存的价格约为未命中的 2%。
 
 **企业资源伸缩**
 → **Google Vertex AI** 或 **Azure OpenAI** + **LiteLLM** 路由网关。
@@ -1670,15 +1689,15 @@
 
 ### 🌍 生态选择类
 
-**OpenAI 生态** → OpenAI Agents SDK + GPT-4o + E2B + LangSmith。
+**OpenAI 生态** → OpenAI Agents SDK + GPT-5.6 Terra + E2B + LangSmith。
 
 **Anthropic 生态** → Claude Code + Claude Sonnet/Opus + MCP + Langfuse。
 
-**Google 生态** → Google ADK + Gemini 2.5 Pro/Flash + Vertex AI。
+**Google 生态** → Google ADK v2.5+ + Gemini 3.1 Pro / 3.5 Flash + Vertex AI。
 
 **国内市场** → Qwen3 235B（DashScope）+ RAGFlow + Milvus + Langfuse。
 
-**TypeScript 优先** → Mastra + Vercel AI SDK + Gemini 2.5 Flash + Qdrant。
+**TypeScript 优先** → Mastra + Vercel AI SDK + Gemini 3.5 Flash + Qdrant。
 
 **全开源栈** → Ollama + Llama 3.3 70B + LangGraph + Qdrant + Langfuse。
 
@@ -1690,11 +1709,11 @@
 |---|------------|-------|----------|
 | 1 | **轻量编程 Agent** | Claude Code + E2B + Langfuse | 独立开发/创业，性价比最高 |
 | 2 | **开源 SWE Agent** | OpenHands + Ollama + Qwen3.6-27B + Qdrant | 全本地，隐私优先 |
-| 3 | **企业级 RAG** | LlamaIndex + Qdrant + Cohere embed-v4 + Langfuse + Claude Sonnet 4.6 | 内部文档生产问答 |
-| 4 | **语音助手流水线** | LiveKit + Whisper + Claude Sonnet 4.6 + ElevenLabs v3 | 定制品牌语音 AI |
-| 5 | **浏览器自动化** | Browser Use + Stagehand + Claude Sonnet 4.6 + Langfuse | 可靠网页抓取 |
+| 3 | **企业级 RAG** | LlamaIndex + Qdrant + Qwen3-Embedding-8B + Langfuse + Claude Sonnet 5 | 内部文档生产问答 |
+| 4 | **语音助手流水线** | LiveKit + Whisper + Claude Sonnet 5 + ElevenLabs v3 | 定制品牌语音 AI |
+| 5 | **浏览器自动化** | Browser Use + Stagehand + Claude Sonnet 5 + Langfuse | 可靠网页抓取 |
 | 6 | **本地隐私栈** | Ollama + Qwen3.6-27B + Open WebUI + Qdrant + n8n | 零云端、离线部署 |
-| 7 | **TypeScript Agent** | Mastra + Vercel AI SDK + Gemini 2.5 Flash + Qdrant | TS 优先生产 SaaS |
+| 7 | **TypeScript Agent** | Mastra + Vercel AI SDK + Gemini 3.5 Flash + Qdrant | TS 优先生产 SaaS |
 | 8 | **国内市场栈** | Qwen3 235B API + RAGFlow + Milvus + Langfuse | 国内部署，ICP 合规 |
 
 ---
@@ -1705,7 +1724,7 @@
 |------------|-----------|---------------|-----|
 | LangChain v0.x | 新的生产 Agent | **LangGraph** | 旧版 chain 已废弃 |
 | AutoGPT（旧） | 生产工作负载 | **OpenHands / LangGraph** | 体系过时，可靠性差 |
-| GPT-3.5-Turbo | 复杂推理 | **Gemini 2.5 Flash / Claude Haiku 4.5** | 已超龄，同价有更好选择 |
+| GPT-3.5-Turbo | 复杂推理 | **Gemini 3.5 Flash / Claude Haiku 4.5** | 已超龄，同价有更好选择 |
 | Pinecone Starter | 自托管/成本敏感 | **Qdrant / pgvector** | 2025 年已取消免费档、开源更便宜 |
 | LLM 直接做实时股票交易 | 金融执行 | 确定性规则引擎 | LLM 会幻觉数字，对实盘交易破坏性极大 |
 | ChatGPT Plus | 生产 API 工作流 | **OpenAI API** 直接调用 | 无 SLA、无配额控制 |
@@ -1901,7 +1920,7 @@
 | **2026-07-10** | [Cursor 3.11](https://cursor.com/changelog) — 侧边聊天、对话历史搜索、Cloud Agent Hooks 精细化 Agent 可观测性 | 工具 |
 | **2026-07-14** | [Oracle 为 Fusion AI Agent Studio 加入 AI 原生 Agentic Applications Builder](https://www.oracle.com/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/) — 向专业代码开发者开放 Fusion Agentic 应用；Fusion 客户免费使用 | 框架 |
 | **2026-07-16** | [Kimi K3](https://kimi.ai/) 由 Moonshot AI 发布 — 2.8T 参数稀疏 MoE（896 专家，每 token 激活 16 个），1M token 上下文，每百万 token $3/$15；承诺 7 月下旬开源全量权重 | 模型 |
-| **2026-07-15** | [Inkling](https://thinkingmachines.ai/blog/introducing-inkling) 由 Thinking Machines Lab（Mira Murati，前 OpenAI CTO）发布 — 975B MoE / 41B 激活，45T token 预训练，1M 上下文，Apache 2.0 开源权重发布至 Hugging Face；原生多模态（文本/图像/音频/视频）；Inkling-Small（12B 激活）同日发布 | 模型 |
+| **2026-07-15** | [Inkling](https://thinkingmachines.ai/inkling/) 由 Thinking Machines Lab（Mira Murati，前 OpenAI CTO）发布 — 975B MoE / 41B 激活，45T token 预训练，1M 上下文，Apache 2.0 开源权重发布至 Hugging Face；原生多模态（文本/图像/音频/视频）；Inkling-Small（12B 激活）同日发布 | 模型 |
 | **2026-07-17** | 欧盟 Android AI 开放裁定 — 欧盟委命令谷歌向第三方 AI 助手开放更深层 Android 权限（摄像头、麦克风、应用控制 API）；需在 2027 年 8 月前在 Android 18 中实现 | 产业 |
 | **2026-07-19** | [Qwen 3.8-Max](https://qwenlm.github.io/) 由阿里巴巴在世界人工智能大会预览 — 2.4T 参数 MoE 预览；编程、数学与多模态能力强劲 | 模型 |
 | **2026-07-20** | [Qwen-Image-3.0](https://qwenlm.github.io/) 由阿里巴巴发布 — 第三代图像生成模型，在世界人工智能大会上发布；真实感、文字渲染、多主主一致性均有改进 | 模型 |

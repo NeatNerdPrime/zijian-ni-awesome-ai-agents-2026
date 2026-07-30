@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-July%2030%2C%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-780%2B-orange.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-810%2B-orange.svg)](#)
 [![Categories](https://img.shields.io/badge/Categories-25-purple.svg)](#)
 [![Audited](https://img.shields.io/badge/Spam_Audited-2026--07--30-success.svg)](#️-status-legend)
 [![Chinese](https://img.shields.io/badge/Lang-中文-red.svg)](README.zh-CN.md)
@@ -57,30 +57,30 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 
 | Category | Description | Count |
 |----------|-------------|-------|
-| [🧠 Foundation Models](#-foundation-models-2026) | Latest LLMs from OpenAI, Anthropic, Google, Meta, and 22+ providers | 80+ |
-| [🎨 Multimodal & Generative AI](#-multimodal--generative-ai) | Image, video, audio, and music generation | 20+ |
-| [🔗 Agent Protocols](#-agent-protocols--standards) | MCP, A2A, and interoperability standards | 10+ |
+| [🧠 Foundation Models](#-foundation-models-2026) | Latest LLMs from OpenAI, Anthropic, Google, Meta, and 22+ providers | 195+ |
+| [🎨 Multimodal & Generative AI](#-multimodal--generative-ai) | Image, video, audio, and music generation | 40+ |
+| [🔗 Agent Protocols](#-agent-protocols--standards) | MCP, A2A, and interoperability standards | 15+ |
 | [🏗️ Agent Frameworks](#️-agent-frameworks) | Libraries for building autonomous AI agents | 23+ |
 | [🛠️ Agent IDEs & Visual Builders](#️-agent-ides--visual-builders) | Visual / low-code environments for designing agent flows | 8+ |
-| [🧠 Agent Memory](#-agent-memory) | Persistent memory and context management | 10+ |
-| [🔌 Tool & API Integration](#-tool--api-integration) | Connecting agents to external services | 18+ |
-| [🧪 Sandboxing & Compute Isolation](#-agent-sandboxing--compute-isolation) | Secure runtimes for agent-generated code | 7+ |
+| [🧠 Agent Memory](#-agent-memory) | Persistent memory and context management | 20+ |
+| [🔌 Tool & API Integration](#-tool--api-integration) | Connecting agents to external services | 20+ |
+| [🧪 Sandboxing & Compute Isolation](#-agent-sandboxing--compute-isolation) | Secure runtimes for agent-generated code | 9+ |
 | [🛡️ Agent Security](#️-agent-security) | Prompt injection defense and guardrails | 16+ |
-| [🔍 RAG & Knowledge](#-rag--knowledge) | Retrieval-augmented generation systems | 12+ |
-| [💻 Coding Agents](#-coding-agents) | AI-powered software engineering | 27+ |
-| [🤖 Physical AI](#-physical-ai--embodied-agents) | Humanoid robots, embodied AI, industrial automation | 22+ |
-| [🎮 Simulation & World Models](#-agent-simulation--world-models) | Sim environments for training and stress-testing agents | 7+ |
-| [📊 Benchmarks](#-benchmarks--leaderboards) | Leaderboards tracking frontier capability | 11+ |
+| [🔍 RAG & Knowledge](#-rag--knowledge) | Retrieval-augmented generation systems | 20+ |
+| [💻 Coding Agents](#-coding-agents) | AI-powered software engineering | 45+ |
+| [🤖 Physical AI](#-physical-ai--embodied-agents) | Humanoid robots, embodied AI, industrial automation | 35+ |
+| [🎮 Simulation & World Models](#-agent-simulation--world-models) | Sim environments for training and stress-testing agents | 10+ |
+| [📊 Benchmarks](#-benchmarks--leaderboards) | Leaderboards tracking frontier capability | 20+ |
 | [🖥️ Computer Use](#️-computer-use--desktop-agents) | Desktop automation and OS-level control | 10+ |
-| [🌐 Browser & Web Agents](#-browser--web-agents) | Agents that drive real browsers | 9+ |
+| [🌐 Browser & Web Agents](#-browser--web-agents) | Agents that drive real browsers | 15+ |
 | [🗣️ Voice & Multimodal Agents](#️-voice--multimodal-agents) | Voice-enabled conversational AI | 10+ |
-| [📱 Personal AI Agents](#-personal-ai-agents) | Productivity and daily life assistants | 11+ |
-| [📱 Mobile Agents](#-mobile-agents) | Phone-control agents (Android / iOS) | 6+ |
-| [🏢 Enterprise Platforms](#-enterprise-agent-platforms) | Enterprise-grade agent deployment | 18+ |
-| [📊 Evaluation & Observability](#-agent-evaluation--observability) | Testing, monitoring, and benchmarking | 17+ |
-| [🔬 AI Research Tools](#-ai-research-tools) | Tools for AI/ML research and experimentation | 10+ |
+| [📱 Personal AI Agents](#-personal-ai-agents) | Productivity and daily life assistants | 20+ |
+| [📱 Mobile Agents](#-mobile-agents) | Phone-control agents (Android / iOS) | 10+ |
+| [🏢 Enterprise Platforms](#-enterprise-agent-platforms) | Enterprise-grade agent deployment | 30+ |
+| [📊 Evaluation & Observability](#-agent-evaluation--observability) | Testing, monitoring, and benchmarking | 30+ |
+| [🔬 AI Research Tools](#-ai-research-tools) | Tools for AI/ML research and experimentation | 15+ |
 | [📚 Learning Resources](#-learning-resources) | Papers, courses, and tutorials | 20+ |
-| [🇨🇳 Chinese AI Ecosystem](#-chinese-ai-ecosystem) | Major projects from China-based teams | 18+ |
+| [🇨🇳 Chinese AI Ecosystem](#-chinese-ai-ecosystem) | Major projects from China-based teams | 25+ |
 | [📝 Compare](#-compare--side-by-side-tables) | Side-by-side comparison tables | — |
 | [🗺️ Scenario Guide](#️-scenario-guide--what-should-i-use-for) | 56 curated scenario-to-tool mappings | 56 |
 | [📋 Stack Recipes](#-stack-recipes--curated-tool-combinations) | Curated multi-tool combinations | 8 |
@@ -128,7 +128,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 *The latest large language models powering the AI ecosystem, organized by company. 60+ models from 20+ providers.*
 
 ### OpenAI
-- [GPT-Live-1 / GPT-Live-1 mini](https://openai.com/index/introducing-gpt-live/) - 🆕 **July 8, 2026**. OpenAI's full-duplex conversational voice model replacing Advanced Voice Mode. Listens and speaks simultaneously (zero turn-taking lag), handles interruptions, delegates complex queries to GPT-5.5 in the background while keeping the conversation flowing. **GPT-Live-1** is default for paid users (Go/Plus/Pro); **GPT-Live-1 mini** is default for free users. Includes real-time live translation. Available on iOS, Android, and web.
+- [GPT-Live-1 / GPT-Live-1 mini](https://openai.com/index/introducing-gpt-live/) - 🆕 **July 8, 2026**. OpenAI's full-duplex conversational voice model replacing Advanced Voice Mode. **ChatGPT-only — not exposed as an API model**; for programmatic realtime voice use `gpt-realtime-2.1`, and for streaming transcription `gpt-live-transcribe` ($0.017/min). Listens and speaks simultaneously (zero turn-taking lag), handles interruptions, delegates complex queries to GPT-5.5 in the background while keeping the conversation flowing. **GPT-Live-1** is default for paid users (Go/Plus/Pro); **GPT-Live-1 mini** is default for free users. Includes real-time live translation. Available on iOS, Android, and web.
 - [GPT-5.6 Sol](https://openai.com/blog/gpt-5-6) - 🆕 **July 9, 2026** (GA; limited preview from June 26). OpenAI's frontier flagship in the GPT-5.6 family — "Sol" is the most capable tier with advanced reasoning, coding, biology, and cybersecurity capabilities plus "max" reasoning and "ultra" sub-agent mode. Available on ChatGPT, Codex, and the OpenAI API. Launch was delayed briefly at US government request for a national-security review; rolled out to all users in stages following the trusted-partner preview.
 - [GPT-5.6 Terra](https://openai.com/blog/gpt-5-6) - 🆕 **July 9, 2026**. Mid-tier model in the GPT-5.6 family offering GPT-5.5-parity performance at approximately 2× lower cost. Designed for cost-efficient production workloads.
 - [GPT-5.6 Luna](https://openai.com/blog/gpt-5-6) - 🆕 **July 9, 2026**. The fastest and most cost-efficient tier of GPT-5.6 — optimised for high-volume, speed-critical tasks.
@@ -159,7 +159,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [GPT-5](https://openai.com/index/introducing-gpt-5/) - Launched August 2025. The default model in ChatGPT, replacing GPT-4o. Multimodal with variants: gpt-5, gpt-5-mini, gpt-5-nano.
 - [GPT-4o](https://openai.com/index/hello-gpt-4o/) - Omni model with native text, vision, and audio. Retired from ChatGPT Feb 2026 but still available via API.
 - [GPT-4.5](https://openai.com/) - 📦 **Retired from ChatGPT late June 2026** (API access continues; conversations auto-migrated to GPT-5.5). Released Feb 2025 as a research preview — the last GPT-4-family model in ChatGPT. o3 retiring from ChatGPT Aug 26, 2026.
-- [o3 / o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) - Reasoning models with chain-of-thought for complex problem solving. Released April 2025. o3 retiring Aug 26, 2026.
+- [o3 / o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) - Reasoning models with chain-of-thought for complex problem solving. Released April 2025. o3 leaves ChatGPT on Aug 26, 2026; the `o3-2025-04-16` and `o3-pro-2025-06-10` **API snapshots are removed on Dec 11, 2026**, with `gpt-5.6-sol` named as the replacement ([deprecations](https://developers.openai.com/api/docs/deprecations.md)).
 - [Codex CLI](https://github.com/openai/codex) - Open-source terminal-based coding agent powered by OpenAI models. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenai%2Fcodex&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 
 ### Anthropic
@@ -194,6 +194,9 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Bristol Myers Squibb ↔ Anthropic Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) - 🆕 **May 20, 2026**. BMS adopts Claude Enterprise as its shared intelligence platform for 30,000+ employees globally, embedding agentic Claude into drug-discovery / development / delivery workflows. First top-5 pharma enterprise-wide Claude deployment.
 
 ### Google DeepMind
+- [Gemini 3.6 Flash](https://github.com/google-gemini/cookbook) - 🆕 ⚡ **July 21, 2026**. Google's newest Flash tier — stronger on complex agentic and multimodal tasks **while using fewer tokens, at a lower price point than 3.5 Flash**. API id `gemini-3.6-flash`. Documented in the official Gemini API cookbook alongside thinking-mode guides.
+- [Gemini 3.5 Flash-Lite](https://github.com/google-gemini/cookbook) - 🆕 **July 21, 2026**. The fastest, lowest-cost model in the 3.5 family; outperforms prior Flash-Lite generations for high-throughput execution. API id `gemini-3.5-flash-lite`. Now the cheapest Gemini tier, superseding 3.1 Flash-Lite for new builds.
+- [Gemini 3.1 Pro (preview)](https://deepmind.google/technologies/gemini/) - Google's most capable Gemini as of late July 2026, served as `gemini-3.1-pro-preview`. GPQA Diamond 94.3% (world-record at launch), ARC-AGI-2 77.1%, BenchLM 94. ⚠️ Still carries the `-preview` suffix and **has no free tier**.
 - [Gemini 3.5 Pro](https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud) - ⚠️ **Delayed — not yet released as of July 17, 2026** (limited enterprise preview with partners ongoing). Google's upcoming flagship with a reported **2-million-token context window** and **Deep Think** reasoning mode; substantially improved coding and agentic workflow capabilities. Announced at Google I/O in May 2026 for a June release, then postponed after Google scrapped and rebuilt the base model over disappointing coding performance. Third-party reports targeted July 17, but as of July 16 Google says it is still testing 3.5 Pro (alongside an upgraded Flash model) with no confirmed release date. Competes directly with GPT-5.6 Sol and Claude Fable 5.
 - [Gemma 4 12B](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/) - 🆕 **June 2026**. Novel multimodal open model with a **unified, encoder-free architecture** processing text, images, and audio in a single pass. Runs locally on 16 GB VRAM.
 - [DiffusionGemma](https://www.marktechpost.com/2026/06/10/google-ai-releases-diffusiongemma-a-26b-moe-open-model-using-text-diffusion-for-up-to-4x-faster-generation/) - 🆕 **June 2026**. 26B MoE open model using **text-diffusion** for up to **4× faster generation** than autoregressive models.
@@ -218,7 +221,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Muse Image](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **July 7, 2026**. Meta Superintelligence Labs' most advanced image generation model to date — an "agentic" image model that performs intermediate reasoning steps (web search, code execution, self-refinement) before producing high-quality visuals. Integrated into the Meta AI app, Instagram Stories (US), and WhatsApp in limited countries (Facebook coming soon). Note: a controversial feature allowing images from other users' public Instagram profiles was added then removed on July 10 after feedback.
 - [Muse Spark 1.1](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) - 🆕 **July 9, 2026**. Multimodal reasoning model designed for agentic tasks from Meta Superintelligence Labs — available through a new public preview of the Meta Model API. Marks a strategic shift toward proprietary revenue-focused models alongside Meta's open-source Llama line.
 - [Muse Video](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **July 7, 2026 (preview)**. Video generation model from Meta Superintelligence Labs, built on the same foundational technology as Muse Image; ranks #3 on Arena for text-to-video. Previewed alongside the Muse Image launch — "coming soon to creators and Meta AI."
-- [Llama 5](https://ai.meta.com/llama/) - 🆕 **April 8, 2026**. 600B+ parameter open-source flagship from Meta Superintelligence Labs; "recursive self-improvement" research line. Marketed as exceeding leading proprietary models on reasoning, coding, autonomous agentic behaviour.
+- **Llama 5** — ❌ **Does not exist. Removed from this list on 2026-07-30 after verification.** A "Llama 5, 600B+, April 8 2026" entry circulated widely in AI-news aggregators and LLM search summaries, and was previously listed here. It does not hold up: the `meta-llama` Hugging Face organisation contains **no Llama-5 weights of any kind** (newest Llama-family upload is Llama-4-Maverick, May 2025), and Wikipedia's Llama article states "the latest version is Llama 4, released in April 2025" and that **Muse Spark replaced the Llama line in April 2026**. Treat any "Llama 5" claim as unverified until Meta publishes weights or a newsroom post. See [Muse Spark](#meta) above for what actually shipped.
 - [Muse Spark](https://ai.meta.com/blog/introducing-muse-spark-msl/) - 🆕 **April 9, 2026**. First model from Meta Superintelligence Labs (MSL). Natively multimodal reasoning model powering Meta AI app, smart glasses, and features across Facebook / Instagram / WhatsApp / Messenger.
 - [Llama 4 Scout](https://llama.meta.com/) - 109B total params (17B active), MoE with 16 experts, 10M token context window, multimodal. Runs on single H100.
 - [Llama 4 Maverick](https://llama.meta.com/) - 400B total params (17B active), 128 experts, 1M context. Outperforms GPT-4o on multimodal benchmarks.
@@ -237,8 +240,8 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 
 ### Thinking Machines Lab
 
-- [Inkling](https://thinkingmachines.ai/blog/introducing-inkling) - 🆕 **July 15, 2026**. Founded by Mira Murati (former OpenAI CTO). 975B MoE parameters (41B active), pretrained on 45T tokens, 1M-token context window. Natively multimodal — text, image, audio, and video in a single model. Apache 2.0 open weights on Hugging Face. Also ships **Inkling-Small** (12B active parameters). Available via the Thinking Machines API and Hugging Face Inference.
-- [Inkling-Small](https://thinkingmachines.ai/blog/introducing-inkling) - 🆕 **July 15, 2026**. Compact variant of Inkling with 12B active parameters; same Apache 2.0 license and multimodal capabilities in a more deployment-friendly footprint.
+- [Inkling](https://thinkingmachines.ai/inkling/) - 🆕 **July 15, 2026**. Founded by Mira Murati (former OpenAI CTO). 975B MoE parameters (41B active), pretrained on 45T tokens, 1M-token context window. Natively multimodal — text, image, audio, and video in a single model. Apache 2.0 open weights on Hugging Face. Also ships **Inkling-Small** (12B active parameters). Available via the Thinking Machines API and Hugging Face Inference.
+- [Inkling-Small](https://thinkingmachines.ai/inkling/) - 🆕 **July 15, 2026**. Compact variant of Inkling with 12B active parameters; same Apache 2.0 license and multimodal capabilities in a more deployment-friendly footprint.
 
 ### Mistral AI
 
@@ -510,7 +513,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Alteryx Agent Studio](https://www.alteryx.com/blog/new-capabilities-in-alteryx-one-built-for-how-analysts-work) - 🆕 **May 2026**. Packages trusted Alteryx datasets and workflows into conversational agents; creates and manages MCP endpoints via the new Alteryx One MCP Server (answers in Claude, ChatGPT, Gemini).
 - [Koog 1.0](https://github.com/JetBrains/koog) - 🆕 **May 21, 2026 — KotlinConf 2026**. JetBrains' open-source agent framework for **Kotlin + Java** hits a stable 1.0 with a long-term-supported stable API surface. Kotlin Multiplatform deployment (JVM / Android / iOS / JS / WASM), Java interop without wrapper modules, local Android LiteRT, OpenTelemetry across all targets, graph-based workflows, Spring Boot / Ktor integration, and providers for OpenAI / Anthropic / Google / Bedrock. Apache-2.0. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FJetBrains%2Fkoog&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [LangChain](https://github.com/langchain-ai/langchain) - Build context-aware reasoning applications with LLMs. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Flangchain-ai%2Flangchain&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [LangGraph](https://github.com/langchain-ai/langgraph) - Build resilient language agents as graphs with stateful, multi-actor orchestration. The 0.3.x series (2025) split prebuilt agents into `langgraph-prebuilt` (Supervisor, Swarm, LangMem, Trustcall). **v1.2 (May 2026)** adds per-node timeouts / error recovery / graceful shutdown, a new `DeltaChannel` to cut checkpoint overhead on long threads, and a content-block-centric streaming API v3. Latest: v1.2.4 (June 2026). ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Flangchain-ai%2Flanggraph&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [LangGraph](https://github.com/langchain-ai/langgraph) - Build resilient language agents as graphs with stateful, multi-actor orchestration. **Latest stable 1.2.10 (July 28, 2026)**. The 0.3.x series (2025) split prebuilt agents into `langgraph-prebuilt` (Supervisor, Swarm, LangMem, Trustcall). **v1.2 (May 2026)** adds per-node timeouts / error recovery / graceful shutdown, a new `DeltaChannel` to cut checkpoint overhead on long threads, and a content-block-centric streaming API v3. Latest: v1.2.4 (June 2026). ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Flangchain-ai%2Flanggraph&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [CrewAI](https://github.com/crewAIInc/crewAI) - Framework for orchestrating role-playing autonomous AI agents in collaborative teams. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FcrewAIInc%2FcrewAI&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [goose](https://github.com/block/goose) - Open-source, extensible AI agent from Block (Rust desktop app + CLI) that installs, executes, edits, and tests with any LLM; 15+ providers; hosted by the Agentic AI Foundation (Linux Foundation). v1.43.0 (July 14, 2026). ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fblock%2Fgoose&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [AG2](https://github.com/ag2ai/ag2) - 🆕 **July 3, 2026 (v1.0.0b0)**. Community-driven fork of Microsoft AutoGen — the active development path after Microsoft placed AutoGen in maintenance mode in Q1 2026. Preserves the conversable-agent model with continued bug fixes, new integrations, and feature work. Apache-2.0. Drop-in migration from existing AutoGen projects. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fag2ai%2Fag2&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -521,7 +524,8 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Google Agent Development Kit (ADK)](https://github.com/google/adk-python) - 🆕 Modular framework integrated with Gemini and Vertex AI. Hierarchical agent compositions. **v2.5.0 is the current release (July 16, 2026)** — ADK 2.x moved from a hierarchical agent executor to a graph-based workflow runtime; a parallel v1.36.x maintenance line continues for 1.x users (v1.36.2, July 21, 2026). ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle%2Fadk-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - 🆕 [Next evolution shipped April 15, 2026](https://openai.com/index/the-next-evolution-of-the-agents-sdk/) — native sandbox execution, MCP-native tool use, sub-agent handoffs, Codex-style filesystem ops. Production-ready multi-agent workflows. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenai%2Fopenai-agents-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [MetaGPT](https://github.com/geekan/MetaGPT) - Multi-agent framework assigning different roles to GPTs for collaborative software entities. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgeekan%2FMetaGPT&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Mastra](https://github.com/mastra-ai/mastra) - 🆕 TypeScript-first agent framework with workflow-driven development and built-in observability. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmastra-ai%2Fmastra&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Pydantic AI](https://github.com/pydantic/pydantic-ai) - 🆕 ⚡ **v2.21.0 (July 30, 2026)**. Agent framework from the Pydantic team that brings FastAPI-style ergonomics and real type safety to LLM apps — structured outputs validated by Pydantic models, dependency injection, streaming, and model-agnostic providers. The default pick when you want static typing and validated tool I/O rather than free-form prompt chaining. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fpydantic%2Fpydantic-ai&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Mastra](https://github.com/mastra-ai/mastra) - 🆕 TypeScript-first agent framework with workflow-driven development and built-in observability. **`@mastra/core@1.53.0` (July 29, 2026)**. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmastra-ai%2Fmastra&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Ontheia](https://github.com/Ontheia/ontheia) - ⚠️ **Unverified** (early-stage, low adoption). Self-hosted, open-source AI agent platform. Multi-provider (Claude, OpenAI, Gemini, Ollama), MCP-native, Chain Engine for visual workflow automation, long-term memory (pgvector), multi-user RBAC, GDPR-compliant by architecture. AGPL-3.0. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FOntheia%2Fontheia&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [AgentGPT](https://github.com/reworkd/AgentGPT) - 📦 **Archived** (2026-01). Assemble, configure, and deploy autonomous AI agents in your browser. Influential first-wave project, kept for historical reference; no longer maintained. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Freworkd%2FAgentGPT&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [BabyAGI](https://github.com/yoheinakajima/babyagi) - Experimental self-building autonomous agent framework; the original 2023 task-management BabyAGI now lives at [babyagi_archive](https://github.com/yoheinakajima/babyagi_archive). ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fyoheinakajima%2Fbabyagi&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -544,7 +548,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [LlamaIndex ↔ Google Agents API integration](https://www.kucoin.com/news/flash/google-launches-agents-api-llama-index-integrates-llamaparse-for-unstructured-document-processing) - 🆕 **May 20, 2026**. LlamaIndex ships a template for Google's newly launched Agents API exposing **LlamaParse** / **LiteParse** over unstructured documents inside a sandboxed Linux environment.
 - [NarraNexus](https://github.com/NetMindAI-Open/NarraNexus) - Ready-to-run AI agent team workspace by NetMind.AI — memory-aware agents that remember, collaborate, and use tools from day one. Multi-agent (PM/dev/deployment/research), persistent context, MCP-style integrations, composable modules. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FNetMindAI-Open%2FNarraNexus&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Strands Agents (AWS)](https://github.com/strands-agents/sdk-python) - 🆕 **April–June 2026**. AWS open-source model-driven agent SDK (Python + TypeScript 1.0 GA April 30, 2026). Model-agnostic (Bedrock, Anthropic, OpenAI, Ollama), multi-agent orchestration patterns (graph/swarm/workflow), built-in observability hooks, A2A Protocol support; TypeScript SDK now maintained in the [harness-sdk monorepo](https://github.com/strands-agents/harness-sdk). Apache-2.0. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fstrands-agents%2Fsdk-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [CrewAI 1.14](https://github.com/crewAIInc/crewAI) - 🆕 **June 2026**. Major update ships pluggable backends for memory, knowledge, and RAG; declarative Flows with CLI/TUI support; Chat API for conversational agent flows; native Snowflake Cortex LLM provider; removed LangChain dependency for a lighter core. Latest stable: 1.14.6 (May 28, 2026). ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FcrewAIInc%2FcrewAI&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [CrewAI 1.15](https://github.com/crewAIInc/crewAI) - 🆕 ⚡ **Latest stable 1.15.9 (July 30, 2026)**. The 1.15 line adds **execution hooks and interception points** (wrap or veto a step before it runs), declarative Flows with CLI/TUI support, a Chat API for conversational agent flows, and native Snowflake Cortex support; LangChain was dropped from the core for a lighter dependency tree. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FcrewAIInc%2FcrewAI&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Oracle AI Agent Studio (Fusion)](https://www.oracle.com/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/) - 🆕 **July 14, 2026**. AI-native builder within Oracle Fusion Cloud Applications for creating Fusion Agentic Applications — outcome-driven systems powered by teams of specialized agents that reason and execute within Fusion's business objects, workflows, and security context. No-code / low-code / pro-code options; included at no additional cost to Fusion customers.
 - [ServiceNow Build Agent](https://www.servicenow.com/products/ai-agents/) - 🆕 **GA July 2026**. ServiceNow's AI agent for building within Cursor, Devin Desktop, Claude Code, and GitHub Copilot — cross-IDE platform with full ServiceNow context, security, and workflow integration. No open-source component.
 
@@ -846,6 +850,12 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 
 *Standard evaluation suites and live leaderboards tracking frontier AI capability as of 2026.*
 
+> ⚠️ **How to read the scores below.** Leaderboard positions at the frontier now churn faster than any curated list can track, and mirror sites disagree with each other. While refreshing this section on **2026-07-30** we found three different "current" SWE-bench Verified leaders quoted by three reputable trackers on the same day, with an ~8-point spread. Rather than pick one and imply false precision, the numbers here are **date-stamped snapshots of when they were read** — always click through to the leaderboard before quoting a figure in your own work.
+>
+> Two structural cautions that matter more than any single number:
+> - **SWE-bench Pro is compromised.** OpenAI's 2026-07-08 audit of the 731 public tasks found ~27% flagged defective by an AI reviewer and ~34% by human engineers (over-strict tests, underspecified prompts, low-coverage tests). OpenAI withdrew its recommendation to use it as a primary coding metric. Top scores jumping 23% → 80% in eight months reflects benchmark noise as much as model progress.
+> - **Saturation makes small gaps meaningless.** GPQA Diamond and SWE-bench Verified now sit in the mid-90s for several frontier models. A 0.5-point difference is within the noise of prompt scaffolding and retry policy; it is not a capability ranking. Build a small eval on **your own** repo or corpus — it will predict your results better than any public leaderboard.
+
 - [BenchLM](https://benchlm.ai/) - 🆕 Composite leaderboard that aggregates multiple benchmark families. July 2026 top: Claude Fable 5 91, Claude Mythos 5 89, Gemini 3.1 Pro 88 (79 ranked / 281 tracked models, 296 benchmarks).
 - [SWE-bench Verified](https://www.swebench.com/) - Real-world GitHub issue resolution benchmark. April 2026 top: Claude Mythos 93.9%, Claude Opus 4.7 87.6%. **July 2026 top**: Claude Mythos 5 leads at **95.5%**, Claude Fable 5 at **95.0%**.
 - [GPQA Diamond](https://github.com/idavidrein/gpqa) - 💤 **Stale** dataset repo (last update 2024-09). Expert-level science reasoning. April 2026 top: Gemini 3.1 Pro 94.3% (world-record), Claude Opus 4.7 94.2%.
@@ -860,7 +870,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Wolfram LLM Benchmarking Project](https://www.wolfram.com/llm-benchmarking-project/) - Code generation benchmark from English spec to Wolfram Language. Updated continuously.
 - [Terminal-Bench 2.0](https://www.tbench.ai/leaderboard/terminal-bench/2.0) - **Late 2025 / early 2026**. 89 curated terminal tasks (compile, train, configure, debug). Leaderboard top: NexAU-AHE + GPT-5.5 at 84.7% (May 14, 2026).
 - [GDPval](https://openai.com/index/gdpval/) - OpenAI economic-value benchmark (released Sept 2025, arXiv:2510.04374) across 44 occupations / 9 industries; 1,320 expert-built tasks. [GDPval-AA leaderboard](https://artificialanalysis.ai/evaluations/gdpval-aa) leader (July 2026): Claude Opus 4.8 (Elo 1890), ahead of GPT-5.5 (1769). Expanded/highlighted again at the GPT-5.6 launch (July 9, 2026).
-- [SWE-bench Pro](https://benchlm.ai/benchmarks/swePro) - 🆕 Repository-level engineering successor to Verified. Claude Opus 4.7 64.3% > GPT-5.5 58.6% (Claude leads on long-horizon repo work). **July 2026**: Claude Mythos 5 tops at **80.3%**; ⚠️ **OpenAI audit (July 8, 2026)** revealed ~30% of Pro tasks are broken (overly strict tests, underspecified prompts) — OpenAI has retracted its recommendation to use SWE-bench Pro as a primary coding-agent metric.
+- [SWE-bench Pro](https://benchlm.ai/benchmarks/swePro) - ⚠️ **Do not use as a primary metric — see the audit note at the top of this section.** Repository-level engineering successor to Verified. Claude Opus 4.7 64.3% > GPT-5.5 58.6% (Claude leads on long-horizon repo work). **July 2026**: Claude Mythos 5 tops at **80.3%**; ⚠️ **OpenAI audit (July 8, 2026)** revealed ~30% of Pro tasks are broken (overly strict tests, underspecified prompts) — OpenAI has retracted its recommendation to use SWE-bench Pro as a primary coding-agent metric.
 - [LLM-Stats Live Leaderboard](https://llm-stats.com/llm-updates) - 🆕 Continuously-refreshed cross-benchmark dashboard for newly-released models.
 - [τ²-Bench (Tau-Bench)](https://github.com/sierra-research/tau2-bench) - 🆕 Sierra Research's benchmark for tool-agent-user interaction in real-world domains (retail / airline). Measures multi-turn tool use, DB ops, and policy adherence. April 2026 leader: Claude Mythos Preview at 89.2% across 38 evaluated models. The repo now also hosts **τ³-Bench 1.0.0 (Mar 18, 2026)** adding voice + telecom/banking domains. MIT. ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fsierra-research%2Ftau2-bench&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Gartner Magic Quadrant 2026 — Enterprise AI Coding Agents](https://cursor.com/blog/cursor-leads-gartner-mq-2026) - 🆕 **2026**. Gartner's first MQ for Enterprise AI Coding Agents. Leaders: **GitHub Copilot**, **OpenAI Codex**, **Cursor** (12 vendors evaluated; Tabnine a Visionary). Signals the coding-agent market reaching enterprise maturity.
@@ -1240,48 +1250,63 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 
 ### 💰 Foundation Models — API Cost & Context
 
-*Prices in USD per 1M tokens. Data: 2026-07-17.*
+*Prices in USD per 1M tokens. **Re-verified against official pricing pages on 2026-07-30** — see source notes below the table.*
 
-| Model | Provider | Context Window | Input $/1M | Output $/1M | Best For |
-|-------|----------|---------------|-----------|------------|----------|
-| GPT-5.6 Sol | OpenAI | 1M | $5.00 | $30.00 | Frontier reasoning flagship |
-| GPT-5.6 Terra | OpenAI | 1M | $2.50 | $15.00 | Cost-efficient production workloads |
-| GPT-5.6 Luna | OpenAI | 1M | $1.00 | $6.00 | High-volume, speed-critical tasks |
-| GPT-4o | OpenAI | 128K | $2.50 | $10.00 | Broad tool-use, vision, broad ecosystem |
-| GPT-4o-mini | OpenAI | 128K | $0.15 | $0.60 | High-volume simple tasks |
-| Claude Sonnet 5 | Anthropic | 1M | $2.00 (intro) | $10.00 (intro) | Default agentic workhorse ($3/$15 after Aug 31, 2026) |
-| Claude Opus 4.8 | Anthropic | 1M | $5.00 | $25.00 | Hardest reasoning tasks |
-| Claude Fable 5 | Anthropic | 1M | $10.00 | $50.00 | Mythos-class frontier tasks |
-| Claude Haiku 4.5 | Anthropic | 1M | $1.00 | $5.00 | Fast Anthropic-ecosystem tasks |
-| Gemini 3.1 Pro | Google | 1M | $2.00 | $12.00 | Flagship reasoning, multimodal |
-| Gemini 2.5 Flash | Google | 1M | $0.30 | $2.50 | Cost-effective multimodal |
-| Gemini 2.5 Pro | Google | 1M | $1.25 | $10.00 | Long-context, multimodal |
-| Gemini 2.5 Flash-Lite | Google | 1M | $0.10 | $0.40 | Ultra-cheap high-volume |
-| DeepSeek V4-Flash | DeepSeek | 1M | $0.14 | $0.28 | Budget-friendly coding + reasoning |
-| Qwen3 235B A22B | Alibaba | 131K | ~$0.29 | ~$1.15 | Best Chinese + coding, MoE |
-| Kimi K2.6 | Moonshot AI | 262K | $0.95 | $4.00 | Chinese + long-context tasks |
-| Grok 4 | xAI | 256K | $3.00 | $15.00 | X/Twitter integration, reasoning |
-| Grok 4.5 | xAI | 500K | $2.00 | $6.00 | Coding + agentic flagship |
+| Model | Provider | Context Window | Max Output | Input $/1M | Output $/1M | Best For |
+|-------|----------|---------------|-----------|-----------|------------|----------|
+| Claude Fable 5 | Anthropic | 1M | 128K | $10.00 | $50.00 | Mythos-class frontier tasks |
+| Claude Opus 5 | Anthropic | 1M | 128K | $5.00 | $25.00 | Current Anthropic flagship |
+| Claude Sonnet 5 | Anthropic | 1M | 128K | $2.00 (intro) | $10.00 (intro) | Default agentic workhorse — **$3/$15 from Sep 1, 2026** |
+| Claude Opus 4.8 | Anthropic | 1M | 128K | $5.00 | $25.00 | 📦 Legacy tier; migrate to Opus 5 |
+| Claude Haiku 4.5 | Anthropic | **200K** | 64K | $1.00 | $5.00 | Fast Anthropic-ecosystem tasks |
+| GPT-5.6 Sol | OpenAI | 1.05M | 128K | $5.00 | $30.00 | Frontier reasoning flagship |
+| GPT-5.6 Terra | OpenAI | 1.05M | 128K | $2.50 | $15.00 | Cost-efficient production workloads |
+| GPT-5.6 Luna | OpenAI | 1.05M | 128K | $1.00 | $6.00 | High-volume, speed-critical tasks |
+| GPT-5.5 | OpenAI | 1.05M | 128K | $5.00 | $30.00 | Previous frontier tier, still GA |
+| GPT-Realtime-2.1 | OpenAI | 128K | 32K | $4.00 text / $32.00 audio | $24.00 text / $64.00 audio | Realtime voice with tool calling |
+| Gemini 3.1 Pro | Google | 1M | — | $2.00 | $12.00 | Flagship reasoning, multimodal (`-preview`, no free tier) |
+| Gemini 3.6 Flash | Google | 1M | — | — | — | Newest Flash tier — priced **below** 3.5 Flash; see Google pricing page |
+| Gemini 3.5 Flash-Lite | Google | 1M | — | — | — | Cheapest Gemini tier as of Jul 21, 2026 |
+| Gemini 2.5 Pro | Google | 1M | — | $1.25 | $10.00 | Long-context, multimodal (**1M, not 2M**) |
+| Gemini 2.5 Flash | Google | 1M | — | $0.30 | $2.50 | Cost-effective multimodal |
+| DeepSeek V4-Pro | DeepSeek | 1M | 384K | $0.435 (cache miss) | $0.87 | Frontier open weights, MIT |
+| DeepSeek V4-Flash | DeepSeek | 1M | 384K | $0.14 (cache miss) | $0.28 | Budget-friendly coding + reasoning |
+| Qwen3 235B A22B | Alibaba | 131K | — | ~$0.29 | ~$1.15 | Best Chinese + coding, MoE |
+| Kimi K2.6 | Moonshot AI | 262K | — | $0.95 | $4.00 | Chinese + long-context tasks |
+| Grok 4.5 | xAI | 500K | — | $2.00 | $6.00 | Coding + agentic flagship |
+| Grok 4 | xAI | 256K | — | $3.00 | $15.00 | X integration, reasoning |
 
-*Sources: Anthropic, OpenAI, Google, DeepSeek, Alibaba, Moonshot, xAI official pricing pages — July 2026.*
+**Source notes (2026-07-30 verification):**
+- Anthropic figures from `platform.claude.com/docs/en/about-claude/pricing` and `.../models/overview`. Sonnet 5's introductory $2/$10 is quoted as "in effect through August 31, 2026, after which the standard pricing of $3/$15 … will take effect." **Haiku 4.5 is a 200K-context model, not 1M** — an earlier revision of this table said 1M.
+- OpenAI figures from `developers.openai.com/api/docs/pricing.md`; context is documented as 1,050,000 tokens. Prompts **above 272K tokens are billed at 2× input / 1.5× output**.
+- DeepSeek prices are flat, with **no peak/off-peak tiering**; cache-hit input is dramatically cheaper ($0.003625 for V4-Pro, $0.0028 for V4-Flash).
+- GPT-4o / GPT-4o-mini were dropped from this table — GPT-4o left ChatGPT in Feb 2026 and the GPT-5.6 tiers are cheaper per unit of capability. They remain available on the API for legacy integrations.
 
 ---
 
 ### 💻 Foundation Models — Local Deployment
 
-*Estimated VRAM at Q4_K_M quantization. Speed varies by hardware.*
+*Estimated VRAM at Q4_K_M quantization. Speed varies by hardware. Weight availability verified against the Hugging Face API on 2026-07-30 — the `HF repo` column is the exact path, because near-miss names (there is no `gemma-4-27b`) are a recurring source of broken instructions.*
 
-| Model | Params | Min VRAM (Q4) | Speed (tok/s)* | Best Quantization | Chinese Support | Best For |
-|-------|--------|--------------|----------------|-------------------|-----------------|----------|
-| Qwen3.6-27B | 27B dense | ~17 GB | ~23 (M5 Max) | Q4_K_M / FP8 | ⭐⭐⭐⭐⭐ | Coding, Chinese, agentic tasks |
-| Qwen3 235B A22B | 235B MoE | ~40 GB (active) | ~15–20 | Q2_K / Q4_K_M | ⭐⭐⭐⭐⭐ | Best local quality, huge context |
-| Llama 3.3 70B | 70B dense | ~42 GB | ~12–18 | Q4_K_M | ⭐⭐☆☆☆ | Best English open-weight |
-| DeepSeek V3-671B | 671B MoE | ~40 GB (active) | ~10–15 | Q2_K | ⭐⭐⭐⭐☆ | Open-weight coding champion |
-| Gemma 4 27B | 27B dense | ~17 GB | ~20–25 | Q4_K_M | ⭐⭐⭐☆☆ | Multilingual reasoning, Apache-2.0 |
-| Phi-4 14B | 14B dense | ~9 GB | ~35–45 | Q4_K_M | ⭐⭐☆☆☆ | Best 8–16GB VRAM coding model |
-| Mistral Small 4 24B | 24B dense | ~14 GB | ~25–30 | Q4_K_M | ⭐⭐⭐☆☆ | Multilingual, function calling |
+| Model | Params | Active | Min VRAM (Q4) | HF repo | License | Chinese | Best For |
+|-------|--------|--------|--------------|---------|---------|---------|----------|
+| Gemma 4 E4B | ~4B | dense | ~3 GB | `google/gemma-4-E4B-it` | Gemma Terms | ⭐⭐⭐☆☆ | Phones / edge, QAT builds shipped |
+| Qwen3.6-35B-A3B | 35B MoE | **3B** | ~4 GB | `Qwen/Qwen3.6-35B-A3B` | Apache-2.0 | ⭐⭐⭐⭐⭐ | Best VRAM-to-quality ratio; agentic coding |
+| Gemma 4 12B | 12B | dense | ~7 GB | `google/gemma-4-12B-it` | Gemma Terms | ⭐⭐⭐☆☆ | Unified encoder-free multimodal on 16 GB |
+| Mistral Small 4 | 119B MoE | **6B** | ~7 GB | `mistralai/Mistral-Small-4-119B-2603` | Apache-2.0 | ⭐⭐⭐☆☆ | Multilingual, function calling |
+| Phi-4 | ~14B | dense | ~9 GB | `microsoft/phi-4` | MIT | ⭐⭐☆☆☆ | Punches above weight on coding |
+| Qwen3.6-27B | 27B | dense | ~16 GB | `Qwen/Qwen3.6-27B` | Apache-2.0 | ⭐⭐⭐⭐⭐ | Best single-24GB-card all-rounder |
+| Gemma 4 31B | 31B | dense | ~19 GB | `google/gemma-4-31B-it` | Gemma Terms | ⭐⭐⭐☆☆ | Multilingual reasoning, dense quality |
+| Qwen3 235B A22B | 235B MoE | 22B | ~40 GB | `Qwen/Qwen3-235B-A22B` | Apache-2.0 | ⭐⭐⭐⭐⭐ | Strong local quality, huge context |
+| Llama 3.3 70B | 70B | dense | ~42 GB | `meta-llama/Llama-3.3-70B-Instruct` | Llama Community | ⭐⭐☆☆☆ | Best English open-weight at 70B |
+| DeepSeek V4-Flash | 284B MoE | 13B | ~75 GB | `deepseek-ai/DeepSeek-V4-Flash` | MIT | ⭐⭐⭐⭐☆ | Open-weight coding champion, 1M ctx |
+| Inkling | 975B MoE | 41B | ~200 GB (multi-GPU) | `thinkingmachines/Inkling` | Apache-2.0 | ⭐⭐⭐☆☆ | Largest Apache-2.0 multimodal model |
+| DeepSeek V4-Pro | 1.6T MoE | 49B | ~800 GB (cluster) | `deepseek-ai/DeepSeek-V4-Pro` | MIT | ⭐⭐⭐⭐☆ | Frontier open weights, datacenter only |
+| Kimi K3 | 2.8T MoE | 104B | ~1.5 TB (cluster) | `moonshotai/Kimi-K3` | Kimi K3 License ⚠️ | ⭐⭐⭐⭐⭐ | Largest open weights; **not** OSI-licensed |
 
-*\* tok/s measured at typical decode context; varies with hardware, context length, and batch size.*
+*VRAM figures are the weights-resident floor at Q4 — add headroom for KV cache, which at 1M context dominates the budget. For MoE models only the active experts need to be resident for compute, but the full weight set still has to be loaded or streamed, so treat the MoE rows as "fits with offloading", not "fits in 4 GB".*
+
+> ⚠️ **Licensing is not the same as "open source."** Kimi K3 ships under a bespoke Kimi K3 License with a revenue-threshold carve-out for managed-service providers, and Gemma models are under the Gemma Terms of Use — neither is OSI-approved. Apache-2.0 (Qwen, Mistral, Inkling) and MIT (Phi-4, DeepSeek V4) are the genuinely unencumbered options.
 
 ---
 
@@ -1557,7 +1582,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - **Skyvern** — Vision-first, handles dynamic pages without CSS selectors. → best for changing / heavily JS-rendered sites
 
 **I want a document processing / PDF analysis agent**
-→ **LlamaIndex** (document pipeline) + **Gemini 2.5 Pro** (2M context) or **Claude Opus 4.7** (200K, best reasoning) + **Unstructured.io** for ingestion. For local: **Ollama** + **Qwen3.6-27B**.
+→ **LlamaIndex** (document pipeline) + **Gemini 3.1 Pro** (1M context, native PDF) or **Claude Opus 5** (1M context, best reasoning) + **Unstructured.io** for ingestion. For local: **Ollama** + **Qwen3.6-27B**.
 
 **I want a customer service / support agent**
 - **Dify** — No-code LLM workflow builder, self-hostable, RAG built-in. → best for non-technical teams
@@ -1565,7 +1590,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - **Salesforce Agentforce** — CRM-native, works within existing Salesforce data. → best for Salesforce-first orgs
 
 **I want a research / deep-research agent**
-→ **Perplexity Deep Research** (managed) or **OpenDevin / OpenHands** + **Tavily Search** + **Claude Opus 4.7**. For local: **Khoj** (self-hosted). Expect multi-minute runs and $1–5 per deep report at cloud rates.
+→ **Perplexity Deep Research** (managed) or **OpenHands** + **Tavily Search** + **Claude Opus 5**. For local: **Khoj** (self-hosted). Expect multi-minute runs and $1–5 per deep report at cloud rates.
 
 **I want a data analysis / BI agent**
 - **Julius AI** / **Code Interpreter (ChatGPT)** — Managed, no setup. → best for analysts without eng support
@@ -1603,85 +1628,89 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 → **LlamaIndex** (orchestration) + **Qdrant** (vector DB) + **Cohere embed-v4** (embeddings) + **BGE reranker** (reranking). Managed alternative: **Ragie** or **Cognee**. Production telemetry: **Langfuse**.
 
 **I want a financial analysis agent**
-→ **LangChain** + **yfinance / Alpha Vantage MCP** + **Claude Sonnet 4.6** (Excel/table reasoning) + **Langfuse**. Avoid: don’t use hallucination-prone models for numbers — always validate with structured output + code execution.
+→ **LangGraph** + **yfinance / Alpha Vantage MCP** + **Claude Sonnet 5** (Excel/table reasoning) + **Langfuse**. Avoid: don’t use hallucination-prone models for numbers — always validate with structured output + code execution.
 
 **I want a legal document agent**
-→ **Claude Opus 4.7** (1M context, best contract analysis) + **LlamaIndex** (ingestion) + **pgvector** (self-hosted vector). Important: always have a human-in-the-loop for final legal decisions.
+→ **Claude Opus 5** (1M context, best contract analysis) + **Claude for Legal** connectors if you're already on Cowork + **LlamaIndex** (ingestion) + **pgvector** (self-hosted vector). Important: always have a human-in-the-loop for final legal decisions.
 
 **I want an education / tutoring agent**
 - **Khanmigo** (Khan Academy) — Purpose-built for K–12, COPPA-compliant. → best for K–12 safe deployment
-- **Custom** with **GPT-4o** + **LangGraph** state machine + spaced repetition logic. → best for HEd or corporate training
+- **Custom** with **GPT-5.6 Terra** + **LangGraph** state machine + spaced repetition logic. → best for HEd or corporate training
 
 **I want a creative writing assistant**
-→ **Claude Opus 4.7** (best prose quality) or **Gemini 2.5 Pro** (long-form, 2M context) + **Notion / Obsidian MCP** for knowledge base. For structured fiction: **Sudowrite** (managed).
+→ **Claude Opus 5** (best prose quality) or **Gemini 3.1 Pro** (long-form, 1M context) + **Notion / Obsidian MCP** for knowledge base. For structured fiction: **Sudowrite** (managed).
 
 **I want an IoT / physical AI agent**
 → **ROS 2** (robot OS) + **NVIDIA Isaac GR00T** (humanoid foundation model) + **Genesis Sim** (simulation). For home automation: **Home Assistant** + custom LLM backend.
 
 **I want a game playing / simulation agent**
-→ **PettingZoo** (multi-agent RL env) + **Gymnasium** + **GPT-4o Vision** for game-state parsing. For LLM-in-the-loop games: **Concordia** (Google DeepMind).
+→ **PettingZoo** (multi-agent RL env) + **Gymnasium** + **Gemini 3.5 Flash** vision for game-state parsing. For LLM-in-the-loop games: **Concordia** (Google DeepMind).
 
 **I want a security scanning / vulnerability agent**
-→ **Semgrep** (static analysis) + **Claude Sonnet 4.6** (explain + triage findings) + **mcp-scan** (MCP server audit). See also: [Agent Security](#️-agent-security) table.
+→ **Semgrep** (static analysis) + **Claude Sonnet 5** (explain + triage findings) + **mcp-scan** (MCP server audit). Managed option: **Claude Security** (Opus-powered codebase scanner). See also: [Agent Security](#️-agent-security) table.
 
 **I want a healthcare AI tool (non-clinical / administrative)**
-→ **Claude Opus 4.7** + **RAG** on medical knowledge base + **strict output validation**. Always: disclose AI, human oversight for any clinical decision, check HIPAA/GDPR compliance. Never automate clinical diagnosis.
+→ **Claude Opus 5** + **RAG** on medical knowledge base + **strict output validation**. Always: disclose AI, human oversight for any clinical decision, check HIPAA/GDPR compliance. Never automate clinical diagnosis.
 
 **I want a code review / PR security agent**
 → **CodeRabbit** (managed, instant PR reviews) or **Claude Code** in CI + **Semgrep** + custom rules. For enterprise: **Copilot Code Review** (GitHub).
 
 **I want a social media / content creation agent**
-→ **n8n** (workflow automation) + **Claude Sonnet 4.6** (drafting) + **gpt-image-2** (images) + **Buffer/Later MCP** (scheduling). Self-hosted option: all via n8n + Ollama.
+→ **n8n** (workflow automation) + **Claude Sonnet 5** (drafting) + **gpt-image-2** (images) + **Buffer/Later MCP** (scheduling). Self-hosted option: all via n8n + Ollama.
 
 **I want a translation / localization agent**
-→ **DeepL API** (best quality for EU languages) or **Claude Sonnet 4.6** (nuanced context-aware) + **Weblate** (open-source TMS). For Chinese: **Qwen3 235B** + human review loop.
+→ **DeepL API** (best quality for EU languages) or **Claude Sonnet 5** (nuanced context-aware) + **Weblate** (open-source TMS). For Chinese: **Qwen3.7-Max** or **Kimi K3** + human review loop.
 
 ---
 
 ### 🧠 Model Selection
 
 **I need the smartest model for complex multi-step reasoning**
-- **Claude Opus 4.7** (/think xhigh) — Best in class for math, logic, long-horizon reasoning. $5/$25 per M tokens.
-- **Gemini 2.5 Pro** — 2M context, strong multimodal, competitive pricing. $1.25/$10 per M tokens.
-- **GPT-5.6 Terra** — Broadly capable, strong tool-use ecosystem. $2.50/$15 per M tokens.
+- **Claude Opus 5** — Anthropic's current flagship, near-Fable-5 quality at $5/$25 per M tokens. 1M context, 128K output. Default on Claude Max.
+- **Claude Fable 5** — Mythos-class tier above Opus, for the genuinely hardest work. $10/$50 per M tokens.
+- **GPT-5.6 Sol** — OpenAI's frontier tier with "max" reasoning + "ultra" sub-agent mode. $5/$30 per M tokens.
+- **Gemini 3.1 Pro** — Google's shipped flagship, GPQA-Diamond record holder, 1M context. $2/$12 per M tokens. (Gemini 3.5 Pro with its reported 2M window is still unreleased — don't plan around it.)
 
 **I need the fastest + cheapest model for simple, high-volume tasks**
-- **Gemini 2.5 Flash-Lite** — $0.10/$0.40 per M tokens, 1M context.
-- **DeepSeek V3.2** — $0.14/$0.28 per M tokens, surprisingly strong quality.
-- **Claude Haiku 4.5** — $1/$5 per M tokens, Anthropic ecosystem integration.
-- **GPT-5.6 Luna** — $1.00/$6.00 per M tokens, fastest GPT-5.6 tier, broad OpenAI tooling (GPT-4o-mini remains the ultra-budget legacy option at $0.15/$0.60).
+- **Gemini 3.5 Flash-Lite** — cheapest Gemini tier as of July 21, 2026; beats earlier Flash-Lite generations on high-throughput execution. (`gemini-3.1-flash-lite` remains GA if you're already on it.)
+- **DeepSeek V4-Flash** — $0.14/$0.28 per M tokens, 1M context, MIT. Best quality-per-dollar on the open-weight side.
+- **Claude Haiku 4.5** — $1/$5 per M tokens, 200K context, Anthropic ecosystem integration.
+- **GPT-5.6 Luna** — $1.00/$6.00 per M tokens, fastest GPT-5.6 tier, broad OpenAI tooling.
 
 **I need the best Chinese language support**
-- **Qwen3 235B A22B** (Alibaba) — Strongest Chinese benchmark, MoE architecture, $0.29/$1.15 per M. → cloud API
-- **Kimi K2.6** (Moonshot) — 262K context, great Chinese instruction-following. → both API + local
-- **DeepSeek V3.2** — Open weights, excellent Chinese coding. → self-host or API
+- **Qwen3.7-Max** (Alibaba) — current Qwen flagship, purpose-built for agentic coding and long-horizon missions. → cloud API
+- **Kimi K3** (Moonshot) — 2.8T total / 104B activated open weights (July 27, 2026), the largest openly available model at release. → self-host or API
+- **DeepSeek V4-Pro** — 1.6T/49B MoE, 1M context, MIT. → self-host or API
 - **GLM-5.2** (Zhipu AI) — 1M context, MIT open weights, Chinese-first. → API or local
 
 **I need the best local/offline model with ~16GB VRAM**
-- **Qwen3.6-27B Q4_K_M** — ~17GB VRAM, ~23 tok/s, excellent coding + Chinese. Best overall 16GB pick.
-- **Gemma 4 27B** (Google) — Strong reasoning, multilingual, Apache-2.0.
-- **Phi-4 14B** (Microsoft) — ~9GB VRAM (Q4), punches above its weight on coding.
-- **Mistral Small 4 24B** — Fast, multilingual, well-rounded.
+- **Qwen3.6-35B-A3B** — MoE with only 3B active params, so it runs where a 35B dense model never would. Apache-2.0, best quality-per-GB pick.
+- **Gemma 4 12B** (Google) — Unified encoder-free multimodal (text + image + audio in one pass), ~7GB at Q4.
+- **Phi-4** (Microsoft, MIT) — ~9GB at Q4, punches above its weight on coding.
+- **Qwen3.6-27B** — ~16GB at Q4; the strongest thing that still fits one consumer card.
 
 **I need the best local/offline model with 40GB+ VRAM**
-- **Llama 3.3 70B Q4_K_M** — ~42GB VRAM, strong English + coding, Llama 3.3 Community License.
-- **DeepSeek V3-671B Q2** — MoE, only 40GB active params in Q2 but requires 2×A100 setup.
-- **Qwen3 235B A22B Q2** — MoE flagship, 40-48GB VRAM at Q2, best local quality.
+- **Qwen3 235B A22B** — MoE flagship, 22B active, best local quality in this class. Apache-2.0.
+- **Llama 3.3 70B Q4_K_M** — ~42GB, strong English + coding, Llama Community License.
+- **DeepSeek V4-Flash** — 284B MoE / 13B active, MIT, 1M context, ~75GB at Q4 on a single 8×GPU node.
+- **Inkling** (Thinking Machines) — 975B MoE / 41B active, Apache-2.0, natively multimodal; needs multi-GPU.
 
 **I need the best coding capability**
-→ **Claude Sonnet 4.6** (SWE-bench 80.9% via Claude Code) for agentic coding. **GPT-4o** for code generation + explanation. **DeepSeek V3.2** for open-weight coding. For IDE use: **Cursor** (Claude backend) or **Cline**.
+→ **Claude Sonnet 5** (the most agentic Sonnet yet, default in Claude Code) for day-to-day agentic coding; **Claude Opus 5** or **Fable 5** when the task is genuinely hard. **GPT-5.6 Sol** via Codex for the OpenAI stack. **DeepSeek V4-Pro** for open-weight coding. For IDE use: **Cursor** (Grok 4.5 default, Claude backends available) or **Cline**.
 
 **I need multimodal understanding (vision + text)**
-- **Gemini 2.5 Pro** — Native vision, PDF, audio, video understanding. 2M context.
-- **GPT-4o** — Mature vision API, strong diagram/chart understanding.
-- **Claude Opus 4.7** — Best for complex document image reasoning.
-- **Qwen3-VL 72B** — Best open-weight multimodal, self-hostable.
+- **Gemini 3.1 Pro** — Native vision, PDF, audio, video understanding. 1M context.
+- **GPT-5.6 Sol / Terra** — Mature vision API, strong diagram/chart understanding.
+- **Claude Opus 5** — Best for complex document image reasoning.
+- **Inkling** (Thinking Machines) — Apache-2.0, natively multimodal across text/image/audio/video in one model.
+- **Qwen3-VL 72B** — Best open-weight multimodal for self-hosting.
 
 **I need very long context (500K+ tokens)**
-- **Gemini 2.5 Pro** — 2M context window, best for entire codebase or book analysis.
-- **Gemini 2.5 Flash** — 1M context, cheaper option.
+- **Claude Opus 5 / Sonnet 5** — 1M context, best quality within that window.
+- **Gemini 3.1 Pro** — 1M context, cheapest strong option at this length.
+- **DeepSeek V4-Pro / V4-Flash** — 1M context, MIT, self-hostable.
+- **Grok 4.5** — 500K context with context compaction built in.
 - **Kimi K2.6** — 262K context, strong Chinese.
-- **Claude Opus 4.7** — 1M context, best quality within that window.
 
 **I need real-time voice / audio model**
 - **Gemini Live API** — <300ms latency, native Google cloud.
@@ -1704,9 +1733,10 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 **I need an open-weight model (MIT or Apache license)**
 - **Llama 3.3 70B** (Meta, Llama 3.3 Community License) — Best English open-weight.
 - **Qwen3 235B A22B** (Alibaba, Apache-2.0) — Best Chinese + coding open-weight.
-- **Mistral Small 4** (Mistral AI, Apache-2.0) — Fast, multilingual.
-- **DeepSeek V3.2** (MIT) — Best open-weight coding.
-- **Gemma 4 27B** (Google, Apache-2.0) — Strong multilingual reasoning.
+- **Mistral Small 4** (Mistral AI, Apache-2.0) — 119B MoE / 6B active, fast and multilingual.
+- **DeepSeek V4-Flash / V4-Pro** (MIT) — Best open-weight coding.
+- **Inkling** (Thinking Machines, Apache-2.0) — 975B MoE / 41B active, natively multimodal, 1M context.
+- **Gemma 4 31B / 12B** (Google, Gemma Terms of Use — not OSI) — Strong multilingual reasoning; 12B is the unified multimodal variant.
 
 ---
 
@@ -1716,10 +1746,10 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 → **Ollama** (model runner) + **Open WebUI** (UI) + **Qdrant** (local vector DB) + **Qwen3.6-27B** (16GB VRAM) or **Llama 3.3 70B** (40GB+). Full stack: **OpenClaw** (local mode) or **AnythingLLM**. No data leaves your machine.
 
 **I want to minimize API costs (budget <$50/month)**
-→ Use **DeepSeek V3.2** ($0.14/$0.28) or **Gemini 2.5 Flash** ($0.30/$2.50) for high-volume. Reserve **Claude Sonnet 4.6** for complex tasks only. Use **Anthropic Batch API** (50% off) for non-real-time work. Cache aggressively (prompt caching saves ~70% on repeated context).
+→ Use **DeepSeek V4-Flash** ($0.14/$0.28) or **Gemini 3.5 Flash-Lite** for high-volume. Reserve **Claude Sonnet 5** for complex tasks only — and note its intro pricing ends Aug 31, 2026, after which it moves $2/$10 → $3/$15. Use **Anthropic Batch API** (50% off) for non-real-time work. Cache aggressively: DeepSeek cache hits cost ~2% of a cache miss, and Anthropic prompt caching reads at $0.50/MTok against $5.00 base input on Opus-class models.
 
 **I want to scale to enterprise (millions of requests/month)**
-→ **Google Vertex AI** (managed Gemini, auto-scale, SLAs) or **Azure OpenAI** (GPT-4o, compliance, dedicated capacity). Add **LangFuse** for observability. For routing: **PortKey** or **LiteLLM** as unified gateway.
+→ **Google Vertex AI** (managed Gemini, auto-scale, SLAs) or **Azure OpenAI / Microsoft Foundry** (GPT-5.6 tiers plus Grok 4.3, compliance, dedicated capacity). Add **Langfuse** for observability. For routing: **PortKey** or **LiteLLM** as unified gateway.
 
 **I want to deploy in an air-gapped / regulated environment**
 → **Ollama** (local inference) + **Qwen3 235B A22B / Llama 3.3 70B** (open weights) + **Qdrant** (local vector DB). For enterprise needs: **IBM watsonx** (on-prem) or **Azure Government** (FedRAMP). Compliance certifications matter more than model quality here.
@@ -1760,13 +1790,13 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 ### 🌍 Ecosystem Choices
 
 **I want to build within the OpenAI ecosystem**
-→ **OpenAI Agents SDK** + **GPT-4o** + **E2B** sandbox + **LangSmith** eval. Benefits: widest third-party tooling, most community examples. Cost: premium pricing.
+→ **OpenAI Agents SDK** + **GPT-5.6 Terra** + **E2B** sandbox + **LangSmith** eval. Benefits: widest third-party tooling, most community examples. Cost: premium pricing.
 
 **I want to build within the Anthropic Claude ecosystem**
-→ **Claude Code** (agentic IDE/CLI) + **Claude Sonnet 4.6 / Opus 4.7** + **MCP protocol** (Claude Desktop) + **Langfuse** (observability). Benefits: best coding quality, MCP is Claude-native. Cost: ~mid-tier.
+→ **Claude Code** (agentic IDE/CLI) + **Claude Sonnet 5 / Opus 5** + **MCP protocol** (Claude Desktop) + **Langfuse** (observability). Benefits: best coding quality, MCP is Claude-native. Cost: ~mid-tier.
 
 **I want to build within the Google Gemini ecosystem**
-→ **Google ADK** (Agent Development Kit) + **Gemini 2.5 Pro/Flash** + **Vertex AI** (deployment) + **Vertex AI Eval** + **AlloyDB / BigQuery** (data). Benefits: 2M context, multimodal, cheap Flash tier. Cost: scales well.
+→ **Google ADK** v2.5+ (Agent Development Kit) + **Gemini 3.1 Pro / 3.5 Flash** + **Vertex AI** (deployment) + **Vertex AI Eval** + **AlloyDB / BigQuery** (data). Benefits: 1M context, strong multimodal, cheap Flash tier. Cost: scales well.
 
 **I want to build for the Chinese market (domestic cloud / regulation)**
 → **Qwen3 235B** (Alibaba Cloud DashScope) + **Baidu ERNIE 5** or **Kimi K2.6** (Moonshot) as fallback + **Alibaba Cloud PAI** (deployment). All data stays within China borders. ICP-compliant.
@@ -1775,7 +1805,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 → **Mastra** (TS workflows, MCP, A2A, Elastic-2.0) + **Vercel AI SDK** (streaming, RSC-friendly) + **Qdrant JS client** + **Langfuse JS SDK**. Alternative: **LangChain.js** + **LangGraph.js**.
 
 **I want an open-source-only stack (zero proprietary)**
-→ **Ollama** + **Llama 3.3 70B** or **DeepSeek V3.2** (model) + **LangGraph** (MIT, framework) + **Qdrant** (Apache-2.0, vector DB) + **Langfuse** (MIT, observability) + **E2B** (Apache-2.0, sandbox). Fully self-hosted, no vendor dependencies.
+→ **Ollama** + **Qwen3.6-27B** or **DeepSeek V4-Flash** (model) + **LangGraph** (MIT, framework) + **Qdrant** (Apache-2.0, vector DB) + **Langfuse** (MIT, observability) + **E2B** (Apache-2.0, sandbox). Fully self-hosted, no vendor dependencies.
 
 ---
 
@@ -1787,11 +1817,11 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 |---|------------|-------|----------|
 | 1 | **Lean Coding Agent** | Claude Code + E2B + Langfuse | Solo dev / startup, best quality per dollar |
 | 2 | **Open-Source SWE Agent** | OpenHands + Ollama + Qwen3.6-27B + Qdrant | Full local, privacy-first coding |
-| 3 | **Enterprise RAG** | LlamaIndex + Qdrant + Cohere embed-v4 + Langfuse + Claude Sonnet 4.6 | Production Q&A on internal docs |
-| 4 | **Voice Assistant Pipeline** | LiveKit + Whisper (STT) + Claude Sonnet 4.6 + ElevenLabs v3 (TTS) | Custom branded voice AI |
-| 5 | **Browser Automation** | Browser Use + Stagehand + Claude Sonnet 4.6 + Langfuse | Reliable web scraping + form filling |
+| 3 | **Enterprise RAG** | LlamaIndex + Qdrant + Qwen3-Embedding-8B + Langfuse + Claude Sonnet 5 | Production Q&A on internal docs |
+| 4 | **Voice Assistant Pipeline** | LiveKit + Whisper (STT) + Claude Sonnet 5 + ElevenLabs v3 (TTS) | Custom branded voice AI |
+| 5 | **Browser Automation** | Browser Use + Stagehand + Claude Sonnet 5 + Langfuse | Reliable web scraping + form filling |
 | 6 | **Local-Only Privacy Stack** | Ollama + Qwen3.6-27B + Open WebUI + Qdrant + n8n | Zero cloud, air-gapped use |
-| 7 | **TypeScript Agent** | Mastra + Vercel AI SDK + Gemini 2.5 Flash + Qdrant + Langfuse | TS-first production SaaS |
+| 7 | **TypeScript Agent** | Mastra + Vercel AI SDK + Gemini 3.5 Flash + Qdrant + Langfuse | TS-first production SaaS |
 | 8 | **Chinese Market Stack** | Qwen3 235B API + RAGFlow + Milvus + Langfuse | Domestic China deployment, ICP-compliant |
 
 ---
@@ -1804,7 +1834,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 |------------|-----------|---------------|-----|
 | LangChain v0.x | New production agents | **LangGraph** | LangChain chains are deprecated; LangGraph has proper state management |
 | AutoGPT (legacy) | Production workloads | **OpenHands** or **LangGraph** | AutoGPT’s 2023 architecture has poor reliability at scale |
-| GPT-3.5-Turbo | Complex reasoning | **Gemini 2.5 Flash** or **Claude Haiku 4.5** | GPT-3.5 deprecated, same cost range as modern models |
+| GPT-3.5-Turbo | Complex reasoning | **Gemini 3.5 Flash** or **Claude Haiku 4.5** | GPT-3.5 deprecated, same cost range as modern models |
 | Pinecone Starter | Self-hosted / cost-sensitive | **Qdrant** or **pgvector** | Pinecone Starter tier removed 2025; OSS alternatives are cheaper |
 | LLM for real-time stock trading | Financial execution | **Deterministic rule engine** | LLMs hallucinate numbers; catastrophic for live trading |
 | ChatGPT Plus | Production API workflows | **OpenAI API** direct | ChatGPT Plus is consumer; no SLA, no rate control, no observability |
@@ -1816,7 +1846,9 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 | GPT-4o Vision for OCR | High-accuracy document OCR | **Tesseract 5** + **Azure Document Intelligence** | LLM OCR has ~2-5% error rate; dedicated OCR is 10x cheaper and more accurate |
 | Sora | Any video generation (2026) | **Kling VIDEO 3.0** or **Veo 3.1** | Sora discontinued by OpenAI, April 2026 |
 | Vector DB without reranking | High-precision RAG | Vector DB + **BGE reranker** or **Cohere Rerank** | Raw vector search recall is ~70%; reranking brings it to ~90%+ |
-| Gemini 2.5 Flash-Lite | Complex legal/medical reasoning | **Claude Opus 4.7** or **Gemini 2.5 Pro** | Flash-Lite optimized for speed, not accuracy on high-stakes tasks |
+| Gemini 3.5 Flash-Lite | Complex legal/medical reasoning | **Claude Opus 5** or **Gemini 3.1 Pro** | Flash-Lite optimized for speed, not accuracy on high-stakes tasks |
+| "Llama 5" / any unreleased flagship | Anything | A model whose **weights or API you can actually call today** | Aggregators and LLM search summaries confidently describe models that never shipped — a fabricated "Llama 5 600B" was listed here until 2026-07-30. Check Hugging Face or the vendor's own docs before building on a name |
+| SWE-bench Pro scores | Choosing a coding agent | **SWE-bench Verified** + **Terminal-Bench** + your own repo eval | OpenAI's July 8, 2026 audit found ~30% of Pro tasks defective (over-strict tests, underspecified prompts) and withdrew its recommendation to treat it as a primary metric |
 
 ---
 
@@ -2022,7 +2054,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 | **Jul 9, 2026** | [Muse Spark 1.1](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) released by Meta — multimodal agentic model via new public Meta Model API preview; proprietary focus alongside open-source Llama line | Models |
 | **Jul 10, 2026** | [Cursor 3.11](https://cursor.com/changelog) — Side Chats, conversation history search, Cloud Agent Hooks for granular agent observability | Tools |
 | **Jul 14, 2026** | [Oracle adds AI-native Agentic Applications Builder](https://www.oracle.com/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/) to AI Agent Studio for Fusion — opens Fusion agentic apps to pro-code developers; no additional cost for Fusion customers | Frameworks |
-| **Jul 15, 2026** | [Inkling](https://thinkingmachines.ai/blog/introducing-inkling) launched by Thinking Machines Lab (Mira Murati, former OpenAI CTO) — 975B MoE / 41B active, 45T-token pretraining, 1M context, Apache 2.0 open weights on Hugging Face; natively multimodal (text/image/audio/video); Inkling-Small (12B active) ships alongside | Models |
+| **Jul 15, 2026** | [Inkling](https://thinkingmachines.ai/inkling/) launched by Thinking Machines Lab (Mira Murati, former OpenAI CTO) — 975B MoE / 41B active, 45T-token pretraining, 1M context, Apache 2.0 open weights on Hugging Face; natively multimodal (text/image/audio/video); Inkling-Small (12B active) ships alongside | Models |
 | **Jul 16, 2026** | [Kimi K3](https://kimi.ai/) launched by Moonshot AI — 2.8T-parameter sparse MoE (896 experts, 16 active), 1M-token context, $3/$15 per million tokens; full open weights promised late July | Models |
 | **Jul 17, 2026** | EU Android AI Openness Ruling — European Commission orders Google to provide rival AI assistants deeper Android access (camera, microphone, app-control APIs); must be implemented by August 2027 in Android 18 | Industry |
 | **Jul 19, 2026** | [Qwen 3.8-Max](https://qwenlm.github.io/) previewed by Alibaba at the World AI Conference — 2.4T parameters MoE preview; strong coding, math, and multimodal capabilities | Models |
@@ -2054,7 +2086,7 @@ This list is released under [MIT License](LICENSE).
 
 **⭐ If you find this list useful, please give it a star! ⭐**
 
-*780+ resources across 25 categories — from foundation models to agent protocols to generative AI.*
+*810+ resources across 25 categories — from foundation models to agent protocols to generative AI.*
 
 Made with ❤️ by [Zijian Ni](https://github.com/Zijian-Ni)
 
