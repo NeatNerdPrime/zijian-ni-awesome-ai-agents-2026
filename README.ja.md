@@ -6,8 +6,8 @@
 [![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FZijian-Ni%2Fawesome-ai-agents-2026&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)](https://github.com/Zijian-Ni/awesome-ai-agents-2026/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-July%2030%2C%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-810%2B-orange.svg)](#)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-August%204%2C%202026-blue.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-819%2B-orange.svg)](#)
 [![Audited](https://img.shields.io/badge/Spam_Audited-2026--07--30-success.svg)](#️-ステータス凡例)
 [![English](https://img.shields.io/badge/Lang-English-informational.svg)](README.md)
 [![中文](https://img.shields.io/badge/Lang-中文-red.svg)](README.zh-CN.md)
@@ -478,6 +478,7 @@
 
 ### Model Context Protocol (MCP)
 
+- [MCP Specification 2026-07-28 (RC)](https://modelcontextprotocol.io/specification/2026-07-28) - 🆕 ⚡ **2026-07-28**。ローンチ以来最大の MCP プロトコル変更：**ステートレスアーキテクチャ**（`initialize`/`initialized` ハンドシェイクと `Mcp-Session-Id` を廃止し、各リクエストが自己完結的な HTTP POST に）。serverless/エッジデプロイと水平スケーリングを可能に。正式な拡張モデル；リクエスト単位のトークン評価；旧バージョンは12か月の非推奨期間。
 - [MCP Specification](https://modelcontextprotocol.io/) - 🆕 "AI 用の USB-C" —— Anthropic 製、LLM をツール・データソースに接続するオープンプロトコル。2025-12 に Linux Foundation 傘下の Agentic AI Foundation へ寄贈。
 - [MCP 2026-07-28](https://blog.modelcontextprotocol.io/posts/2026-07-28/) - 🆕 ⚡ **2026-07-28 に予定通りリリース** — ローンチ以来最大の改訂。**ステートレスプロトコルコア**：`initialize` ハンドシェイクとプロトコルレベルのセッションを廃止し、各リクエストが自己記述的になったため、通常のラウンドロビン LB 背後のどのインスタンスにもルーティング可能。**Multi Round-Trip Requests（MRTR）** が sampling / elicitation 用の常時接続双方向ストリームを置き換える。メソッド名とツール名は `Mcp-Method` / `Mcp-Name` HTTP ヘッダで伝搬され、ゲートウェイはヘッダだけでルーティング・認可できる。List レスポンスにキャッシュヒントと決定的順序が付き、再接続後も上位の prompt キャッシュが安定。**拡張フレームワーク**を正式化し、Tasks が MCP Apps や Enterprise Managed Authorization（EMA）と並んで拡張になった。**認可強化**：RFC 9207 issuer 検証と、動的クライアント登録（DCR）から Client ID Metadata Documents（CIMD）への移行。正式な最短 12 か月の非推奨期間も規定。Tier-1 の TypeScript / Python / Go / C# SDK は同日対応。規模の参考：Tier-1 SDK のダウンロードは月約5億件、TS と Python はそれぞれ累計 10 億を突破。[SDK ベータは 2026-06-29 公開](https://blog.modelcontextprotocol.io/posts/sdk-betas-2026-07-28/)、[RC は 2026-05-21 公開](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/)。
 - [MCP Servers](https://github.com/modelcontextprotocol/servers) - MCP サーバーの公式リファレンス実装集。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmodelcontextprotocol%2Fservers&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -554,8 +555,12 @@
 - [CrewAI 1.14](https://github.com/crewAIInc/crewAI) - 🆕 **2026 年 6 月**。メモリ・ナレッジ・RAG のプラグイン可能バックエンド、宣言型 Flows + CLI/TUI サポート、会話型フロー用 Chat API、ネイティブ Snowflake Cortex LLM、LangChain 依存を除去し軽量化。最新安定版: 1.14.6（2026-05-28）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FcrewAIInc%2FcrewAI&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Oracle AI Agent Studio (Fusion)](https://www.oracle.com/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/) - 🆕 **2026-07-14**。Oracle Fusion Cloud アプリケーション内蔵の AI ネイティブビルダー。Fusion のビジネスオブジェクト・ワークフロー・セキュリティコンテキストを引き継ぐ専門エージェントチームによる「Fusion Agentic Applications」を構築。ノーコード/ローコード/プロコード全対応；Fusion 顧客は追加費用なしで利用可能。
 
-- [ServiceNow Build Agent](https://www.servicenow.com/products/ai-agents/) - 🆕 **GA 2026 年 7 月**。ServiceNow の AI エージェント——Cursor・Devin Desktop・Claude Code・GitHub Copilot 上で動作するクロス IDE プラットフォーム；ServiceNow の完全なコンテキスト・セキュリティ・ワークフロー統合を提供。オープンソースコンポーネントなし。
 
+- [Microsoft Agent Framework v1.13.0](https://github.com/microsoft/agent-framework/releases) - 🆕 ⚡ **2026-07-30**。MAF（AutoGen + Semantic Kernel 統合）—— バウンデッドメモリの MCP ソーススキル発見、再利用可能な Foundry セッションストレージ、全プロセスの機能利用テレメトリ。同リリースで **Agent Harness + Hosted Agents GA**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmicrosoft%2Fagent-framework&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [OpenAI Agents SDK v0.19.0](https://github.com/openai/openai-agents-python/releases/tag/v0.19.0) - 🆕 ⚡ **2026-07-27**。プログラマティックツールコーリング（モデルがツール編成用の JS を生成）；`@tool` 省略記法を持つ新 `agents.decorators` モジュール；MCP/Realtime/セッションセキュリティログの強化；VercelCloudBucketMountStrategy。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenai%2Fopenai-agents-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [CrewAI v1.15.10](https://github.com/crewAIInc/crewAI/releases/tag/1.15.10) - 🆕 ⚡ **2026-07-31**。スキル使用状況の可観測性イベント；`bedrock-agentcore` 依存関係セキュリティパッチ；ドキュメントとセキュリティ報告基準の改善。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FcrewAIInc%2FcrewAI&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Google ADK 2.6.0 / 2.6.1](https://github.com/google/adk-python/releases) - 🆕 ⚡ **2026-07-29 / 07-31**。2.6.0：agent-card 取得のための A2A リクエスト単位認証ヘッダー + プロキシアイデンティティ認証マネージャー（3-legged OAuth）；2.6.1：CLI テレメトリのターミナルグルーピング、TTL プルーニング、長時間稼働 web サーバーのテレメトリ修正。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle%2Fadk-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [ServiceNow Build Agent](https://www.servicenow.com/products/ai-agents/) - 🆕 **GA 2026 年 7 月**。ServiceNow の AI エージェント——Cursor・Devin Desktop・Claude Code・GitHub Copilot 上で動作するクロス IDE プラットフォーム；ServiceNow の完全なコンテキスト・セキュリティ・ワークフロー統合を提供。オープンソースコンポーネントなし。
 - [Embabel Agent](https://github.com/embabel/embabel-agent) - 🆕 ⚡ **2026-07-20 GA**。JVM エコシステム初の本番対応 AI エージェントフレームワーク —— Spring Framework の創設者 Rod Johnson が主導。型付きドメインオブジェクトでエージェント動作を定義；Spring AI 統合；グラフベースのマルチエージェント編成；ネイティブ MCP クライアント；任意モデル（OpenAI / Anthropic / Ollama）対応。**Apache-2.0**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fembabel%2Fembabel-agent&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 ---
 
@@ -581,6 +586,7 @@
 
 *エージェントに永続メモリと文脈管理を与えるシステム。*
 
+- [Mem0 SDK — 2026年7月アップデート](https://mem0.ai) - 🆕 ⚡ **2026-07-31**。メモリ有効期限管理；n8n + Zapier ワークフロー連携を発表；TypeScript SDK が幅広いベクトルストア / LLM / embedding プロバイダーに対応。⚠️ 未検証（mem0.ai ✅；リリース詳細は検索要約より）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmem0ai%2Fmem0&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Letta (MemGPT)](https://github.com/letta-ai/letta) - 長期メモリとカスタムツールを持つ LLM サービスを作成。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fletta-ai%2Fletta&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [MemoryLake](https://memorylake.ai) - 🆕 **2026 年 7 月**。「エージェントのメモリーパスポート」——異なるエージェント・ツール間で共有されるプラットフォーム中立のメモリレイヤー。ユーザー/エージェント/セッション単位のスコープ付き記憶を統一 API で提供。
 - [Supermemory](https://github.com/supermemoryai/supermemory) - 🆕 多様なデータソース（Web・ドキュメント・チャット）から構築するコンテキストグラフ。API ファーストで MCP と主要フレームワークに統合。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fsupermemoryai%2Fsupermemory&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -641,6 +647,7 @@
 
 *エージェントエコシステムの商取引レイヤー —— エージェントが有料サービスを発見・決済し、開発者が API を収益化する場所。*
 
+- [A2A Protocol v1.0 + AP2 Agent Payments](https://github.com/google/A2A) - 🆕 ⚡ **2026年Q2 / 継続中**。A2A v1.0（Linux Foundation）が署名付き Agent Card（暗号学的アイデンティティ）、マルチプロトコル対応、エンタープライズマルチテナンシー、後方互換レイヤーを追加。AP2（Agent Payment Protocol）が60以上の決済機関の支持を得て参加；22,000以上の GitHub star；AWS/Microsoft/Google が統合済み。⚠️ 未検証（複数ソースで確認；具体的なリリース発表 URL は未取得）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle%2FA2A&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [minia2a](https://minia2a.uk) - 🆕 AI エージェント M2M マイクロペイメントマーケット —— **173+ の x402 対応 API** を Base L2 の USDC マイクロペイメントで利用。**34 登録エージェント・311K+ リクエスト処理済み**。ウォレットベース認証。86 エンドポイント無料トライアルあり。x402（Linux Foundation）ネイティブ。
 - [MCPize](https://mcpize.com) - 🆕 MCP サーバー収益化プラットフォーム —— 開発者へ **85% 収益分配**。
 - [AgentForge](https://github.com/doggychip/agentforge) - ⚠️ **未検証**（3 stars）。AI エージェント・ツールのサブスクリプションマーケット。評価してから利用すること。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fdoggychip%2Fagentforge&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -707,6 +714,10 @@
 - [LLM 推論モデルのジェイルブレイク研究（成功率 97%）](https://securityboulevard.com) - 🆕 ⚠️ **2026 年研究報告**。大型推論モデルが他の AI システムを約 97% の成功率でジェイルブレイクできることが判明。暗ウェブには商業的フレームワークも登場。エージェント間の信任境界に暗号学的強制が必要。
 - [AI レッドチームマイルストーン（Claude + GPT-5.6 評価）](https://securityboulevard.com) - 🆕 ⚠️ **2026 年 7 月**。プレリリース GPT 級モデルが 1 週末で **17,000+ の自動アクション**を実行；Claude モデルもサイバーセキュリティチャレンジで外部 3 組織を侵害。「ソフトウェアサプライチェーンのチェルノブイリ」と称された。
 ---
+
+- [CrowdStrike 2026年脅威ハンティングレポート](https://www.crowdstrike.com/en-us/resources/reports/threat-hunting-report/) - 🆕 ⚡ **2026-08-03**。AIエージェントが引き金となる検知は人手起点のリードの **2.5倍**；中国の APT は脆弱性開示後24時間以内に PoC を悪用；STARDUST CHOLLIMA は1日で300以上の AI フレームワーク依存関係を汚染；単一の LLMJacking キャンペーンが2分間で20万件の API リクエストを送信。
+- [Straiker AI ランタイムセキュリティ](https://www.straiker.ai/) - 🆕 **2026-08**（BH2026 出展）。AIネイティブなエージェントセキュリティプラットフォーム —— 資産発見（Discover AI）、敵対的レッドチーム（Ascend AI）、ランタイムブロッキング（Defend AI）。プロンプトインジェクション、メモリポイズニング、なりすましをブロック。累計調達額8500万ドル（シリーズA 6400万ドル、2026-06）。
+- [EU AI Act 第50条の施行開始](https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence) - 🆕 ⚡ **2026-08-02**。⚠️ 透明性義務が施行：AI対話エージェントは自身がAIであることを明示する必要があり、生成コンテンツには機械可読なマーカーが必要。レガシーシステムの猶予期間は2026-12-02まで。最大罰則は1500万ユーロまたは世界売上高の3%。
 
 ## 🔍 RAG とナレッジ
 
@@ -785,6 +796,7 @@
 ### 自律ソフトウェアエンジニア
 
 - [Cursor 3.4 Cloud Agent Environments](https://cursor.com/changelog) - 🆕 **2026-05-13**。クラウドエージェント / 自動化向けの新しい開発環境。マルチリポ、build secrets 付き Dockerfile 設定、キャッシュレイヤー 70% 高速化、環境ごとのバージョン履歴とロールバック、監査ログ、スコープを限定した egress / secrets。
+- [Devin Stacked PRs](https://devin.ai/blog/introducing-pr-stacks) - 🆕 ⚡ **2026-07-30**。Devin + GitHub：大規模タスクを独立した小さな PR に自動分割、下流の PR は自動リベース、Devin Review で焦点を絞ったコンテキスト。10,000人以上の開発者の Faros AI データを含む。
 - [Devin Security Swarm](https://cognition.com/blog) - 🆕 **2026-07-01**。Cognition の並列エージェント型セキュリティ製品：コードベース全体の脆弱性を発見し、実行時に悪用可能性を検証し、修正 PR を作成；実世界の脆弱性 50 件中 36 件を発見、発見あたりコストは次点ツールより約 30% 低い。
 - [Devin 2.2](https://cognition.com/blog/introducing-devin-2-2) - 🆕 **2026-02-24**。Computer Use によるエンドツーエンドテスト（Linux デスクトップ + 画面録画）、PR 前のセルフレビュー / 自動修正、起動 3 倍高速化。Cognition のフラッグシップ自律ソフトウェアエンジニア（Devin 2.x 系；Devin 2.0 以降 Core プランは月 20 ドルから）。
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) - 自律エージェントとして AI ソフトウェア開発者を使うオープンソースプラットフォーム。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAll-Hands-AI%2FOpenHands&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -888,6 +900,7 @@
 > - **SWE-bench Pro は信頼できない。** OpenAI は 2026-07-08 に公開 731 タスクを監査し、AI レビューで約 27%、人間のエンジニアで約 34% を欠陥と判定した（過度に厳格なテスト、仕様不足のプロンプト、低カバレッジのテスト）。OpenAI はコーディングの主要指標として使う推奨を撤回している。8 か月で首位が 23% → 80% に跳ねたのは、モデルの進歩だけでなくベンチマークのノイズを反映している。
 > - **飽和により微小差は無意味。** GPQA Diamond と SWE-bench Verified は複数のフロンティアモデルが 90 台半ばに到達済み。0.5 ポイントの差はプロンプトのスキャフォールディングやリトライ方針のノイズ範囲内で、**能力の順位付けにはならない**。**自分の**リポジトリやコーパスで小さな eval を組む方が、どの公開リーダーボードより結果を予測できる。
 
+- [τ²-bench (tau2-bench) v1.0.1](https://github.com/sierra-research/tau2-bench) - 🆕 ⚡ **2026-07（v1.0.1）**。Sierra Research の**デュアルコントロール**（エージェントとシミュレートされたユーザーが同一システムを同時操作）実世界シナリオ向けAIエージェントベンチマーク。2026年7月：banking_knowledge タスクのエラーを修正；旧結果は直接比較不可。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fsierra-research%2Ftau2-bench&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [BenchLM](https://benchlm.ai/) - 🆕 複数のベンチマークファミリーを集約したリーダーボード。2026-07 首位: Claude Fable 5 91、Claude Mythos 5 89、Gemini 3.1 Pro 88（ランク対象 79 / 追跡 281 モデル、296 ベンチマーク）。
 - [SWE-bench Verified](https://www.swebench.com/) - 実世界の GitHub Issue 解決ベンチマーク。2026-04 首位: Claude Mythos 93.9%、Claude Opus 4.7 87.6%。
 - [GPQA Diamond](https://github.com/idavidrein/gpqa) - 💤 データセットリポは 2024-09 以降更新なし。専門家レベルの科学推論。2026-04 首位: Gemini 3.1 Pro 94.3%（世界記録）、Claude Opus 4.7 94.2%。
@@ -919,6 +932,7 @@
 
 *OS レベルでデスクトップソフトウェアを見て・操作し・自動化するエージェント。ブラウザ専用エージェントは [🌐 ブラウザと Web エージェント](#-ブラウザと-web-エージェント) 参照。*
 
+- [Perplexity Personal Computer for Windows](https://www.perplexity.ai/hub/blog/perplexity-personal-computer-for-windows) - 🆕 ⚡ **2026-07-28**。Windows 10/11に拡大 —— ローカルファイル + Microsoft 365 スイート + クロスデバイスワークフロー；19のAIモデルをオーケストレーション。Pro/Max/Enterprise加入者向け。⚠️ 未検証（URL 403；複数ソースで確認）。
 - [Claude Computer Use](https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool) - Anthropic の Computer Use 機能 —— Claude が画面を見、マウス / キーボードで任意のソフトウェアを自動化。
 - [ChatGPT Agent](https://openai.com/index/introducing-chatgpt-agent/) - Operator（2025 年に廃止）の後継 — ブラウジング、予約、フォーム入力、ウェブタスク自動化のための ChatGPT のエージェントモード。
 - [Google Project Mariner](https://deepmind.google/models/project-mariner/) - 📦 **終了**（2026 年 5 月）。ブラウザエージェント研究プロジェクト。機能は Gemini と Chrome に統合された。
@@ -963,6 +977,8 @@
 
 *音声対応 ・ マルチモーダル AI エージェントプラットフォーム。*
 
+- [ByteDance Seedance 2.5](https://www.bytedance.com/en/) - 🆕 ⚡ **2026-07-31 / 2026-08-03**。単発30秒の音声+映像合成に対応する初の大規模AI動画生成モデル；最大30枚の画像+10本の動画+10個の音声クリップをマルチモーダル参照入力として使用可能；ローカル動画編集。まず即梦（Dreamina）でローンチし、2026-08-03にグローバル展開。⚠️ 未検証（Cloudflareでブロック；pandaily/prnewswireで確認）。
+- [xAI Grok Voice Think Fast 2.0](https://x.ai/) - 🆕 ⚡ **2026-07-29**（APIデフォルトアップグレード 2026-08-05）。次世代音声対音声：初回バイト音声レイテンシ **1.25秒 → 0.70秒**；24言語での書き起こし精度が1.4倍に；推論トークン使用量−60%；$0.08/分。⚠️ 未検証（x.aiがCloudflareでブロック；複数ソースで確認）。
 - [AgentLine](https://agentline.cloud/) - 🆕 ⚠️ **Unverified.** AI エージェント向けテレフォニー基盤 —— 電話番号の発行、発信／着信、リアルタイム文字起こしを JSON で webhook に流す。エージェント音声パイプライン用途に絞った Twilio の軽量代替を標榜。提出者は有料ユーザー 30+ と主張するが、第三者の採用事実は未確認。
 - [ElevenLabs](https://elevenlabs.io/) - 業界トップの AI 音声合成、クローン、会話 AI。⚡ **[5 億ドルのシリーズ D、評価額 110 億ドル](https://elevenlabs.io/blog/series-d)**（2026-07）。同時に ARR **5 億ドル**突破を発表し、新規投資家に BlackRock と NVIDIA が参加 —— 2026 年下半期に入る時点で最も資金力のある音声 AI 専業ベンダー。
 - [Vapi](https://github.com/VapiAI/server-sdk-python) - 音声 AI エージェントを構築・テスト・展開するプラットフォーム。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FVapiAI%2Fserver-sdk-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -1033,6 +1049,7 @@
 
 ## 🏢 エンタープライズエージェントプラットフォーム
 
+- [GPTBots.ai LoopAgent](https://www.gprbots.ai/) - 🆕 ⚡ **2026-08-03**。エンタープライズAIエージェント向け本番グレード実行エンジン：サンドボックス化されたコード実行、遅延ロードSkills、バージョン管理されたSystem Identity Prompt Diff、シームレスな人間へのハンドオフコンテキスト要約。⚠️ 未検証（GlobeNewswire発表；一次URL未検証）。
 - [Salesforce Agentforce 360](https://www.salesforce.com/agentforce/what-is-new/) - エンタープライズ CRM 用自律 AI エージェント —— 営業・サービス・マーケティング。**Spring 2026 リリース**で、Agentforce Builder（対話型エージェントオーサリング）、Agent Script（決定論的な動作制御）、Agentforce Voice（Amazon Connect / Five9 / Genesys / NiCE / Vonage + SIP）、新 Data 360 上の Intelligent Context が追加。124 か国の顧客で約 85% の問い合わせを自律解決。
 - [Microsoft Copilot Studio](https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio) - エンタープライズの Copilot とエージェント構築・カスタマイズ。
 - [Gemini Enterprise Agent Platform](https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform) - 🆕 **2026-04-22**（Google Cloud Next '26）。Vertex AI がエンタープライズエージェントの構築・拡大・ガバナンス・最適化ハブへ進化。Gemini 3.1 Pro/Flash、Lyria 3 に加え、サードパーティモデル（Claude Opus / Sonnet / Haiku）もサポート。
@@ -1070,7 +1087,7 @@
 ## 📊 エージェント評価とオブザーバビリティ
 
 - [AgentBench](https://github.com/THUDM/AgentBench) - LLM をエージェントとして評価する多次元ベンチマーク。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FTHUDM%2FAgentBench&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [PerspectiveGap](https://arxiv.org/abs/2606.08878) - 🆕 **2026（arXiv 2606.08878）**。**マルチエージェント編成プロンプト作成**の最初のベンチマーク —— 10 種類の通信トポロジー（チェーン・スター・ツリー・メッシュなど）にわたる 110 シナリオ。主要知見：33 モデル平均の合格率は 17.2%；GPT-5.5 が 62.0% でトップ。⚠️ GitHub リポジトリなし、論文のみ。
+- [PerspectiveGap](https://github.com/WhymustIhaveaname/PerspectiveGap) - 🆕 **2026（arXiv 2606.08878）**。**マルチエージェント編成プロンプト作成**の最初のベンチマーク —— 10 種類の通信トポロジー（チェーン・スター・ツリー・メッシュなど）にわたる 110 シナリオ。主要知見：33 モデル平均の合格率は 17.2%；GPT-5.5 が 62.0% でトップ。MIT ライセンスのベンチマークデータ+評価スクリプト；OpenCompass と Inspect Evals（2026年6月、ロールフラグメント割当+自由形式プロンプト作成タスク）にマージ済み。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FWhymustIhaveaname%2FPerspectiveGap&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) - 🆕 ブラウザ / Computer-Use エージェント向けのライブ Web ベンチマーク —— **15 カテゴリ・144 の実プラットフォームにまたがる 153 の日常オンラインタスク**（購買、予約、求人応募など）を、オフラインのサンドボックスではなく*本番*サイト上で実行する。インターセプト層が最終的な送信リクエストを捕捉してブロックするため現実世界に副作用は生じず、その後 2 段階の採点（HTTP インターセプト → LLM judge）で、エージェントが正しい内容を送信したかを検証する。主要な結果：フロンティアモデルでもごく一部しか完了できず、Claude Sonnet 4.6 は 33.3%。[論文](https://arxiv.org/abs/2604.08523) · [リーダーボード](https://claw-bench.com) ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FTIGER-AI-Lab%2FClawBench&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [LangSmith](https://www.langchain.com/langsmith) - LangChain 公式のデバッグ / 評価 / モニタリングプラットフォーム。
 - [Helicone](https://github.com/Helicone/helicone) - オープンソース LLM オブザーバビリティ。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FHelicone%2Fhelicone&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -1206,6 +1223,7 @@
 
 - [Kimi K3](https://kimi.moonshot.cn/) - 🆕 🇨🇳 **2026-07-16**。Moonshot AI のフラッグシップ MoE モデル——**2.8T パラメータ**、**1M トークンコンテキスト**、Arena フロントエンドリーダーボード 1 位（Fable 5 と同率）、Artificial Analysis 総合 3 位。オープンウェイト 2026-07-27 公開。API：`kimi-k3`。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmoonshot-ai%2Fkimi-k3&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Qwen 3.8-Max](https://qwenlm.github.io/) - 🆕 🇨🇳 **プレビュー 2026-07-19（世界 AI カンファレンス）**。アリババの次世代 MoE モデルプレビュー——**2.4T パラメータ**、コーディング・数学・マルチモーダルで高い性能。完全リリース詳細は未発表。
+- [テスラ中国 OTA 2026.14.13 — Doubao統合](https://www.cnevpost.com/2026/07/31/tesla-integrates-bytedance-doubao-ai/) - 🆕 ⚡ **2026-07-31**。テスラが中国のModel 3/Y/S/XにOTAをプッシュし、元の音声アシスタントをByteDanceのDoubao大規模モデルに置き換え —— 中国のLLMを車載深度統合した初の主要西側EVブランド。⚠️ 未検証（cnevpost URL未直接取得；複数ソースで確認）。
 - [DeepSeek V4](https://www.deepseek.com/) - 🆕 🇨🇳 **2026 年 7 月**。DeepSeek の最新フラッグシップ——**1M トークンコンテキスト**、エージェントタスク対応強化、ピーク / オフピーク段階的価格設定。コスト効率優位のポジションを継続。
 
 ---
