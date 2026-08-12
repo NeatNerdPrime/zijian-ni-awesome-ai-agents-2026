@@ -1125,6 +1125,7 @@
 - [OpenTelemetry GenAI Semantic Conventions](https://github.com/open-telemetry/semantic-conventions-genai) - GenAI クライアント・エージェント・ツール呼び出し・MCP 向けの標準化されたスパン / メトリクス / イベント — 任意の OTel バックエンド（Arize、Langfuse、Helicone、Jaeger など）でベンダー中立なトレーシングを実現。コア semconv リポジトリから専用の GenAI リポジトリへ移動。
 - [Tracecat](https://github.com/TracecatHQ/tracecat) - 🆕 SOC ワークフロー向けにエージェントの完全なトレースをキャプチャするオープンソースのセキュリティ自動化プラットフォーム — AI エージェントを検知・エンリッチ・対応パイプラインと統合。AGPL-3.0（エンタープライズ版の例外規定あり）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FTracecatHQ%2Ftracecat&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Langfuse v4](https://github.com/langfuse/langfuse/releases/tag/v4.0.0) - 🆕 ⚡ **v4.0.0、2026-07-29**。セルフホスト可能な LLM オブザーバビリティスタックのメジャーリリース：入力 / 出力 / メタデータ全体の全文検索、新しいフィルタ検索バー、モニターとアラート、そして最大 **165 倍高速**とする Observations API v2 / Metrics API v2 の再構築。
+- [AcruxCore](https://github.com/AcruxCore/AcruxCore) - ⚠️ **未検証**（新規リポジトリ、単一メンテナー、ㆵサードパーティの採用実績なし）。セルフホストまたは SaaS 形式の LLM-ops プラットフォーム — Prompt バージョン管理、AI ゲートウェイ、トレーシング、ツールカタログ、評価実行を包括。Apache-2.0。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAcruxCore%2FAcruxCore&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 
 ---
 

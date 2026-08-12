@@ -1123,6 +1123,7 @@
 - [OpenTelemetry GenAI Semantic Conventions](https://github.com/open-telemetry/semantic-conventions-genai) - 面向 GenAI 客户端、Agent、工具调用与 MCP 的标准化 span / 指标 / 事件 —— 在任意 OTel 后端（Arize、Langfuse、Helicone、Jaeger 等）实现厂商中立的追踪。已从核心 semconv 仓库移入专门的 GenAI 仓库。
 - [Tracecat](https://github.com/TracecatHQ/tracecat) - 🆕 开源安全自动化平台，为 SOC 工作流捕获完整 Agent trace —— 把 AI Agent 接入检测、富化与响应流水线。AGPL-3.0（含企业版例外条款）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FTracecatHQ%2Ftracecat&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Langfuse v4](https://github.com/langfuse/langfuse/releases/tag/v4.0.0) - 🆕 ⚡ **v4.0.0，2026-07-29**。这个可自托管的 LLM 可观测性栈的大版本更新：支持对输入 / 输出 / 元数据做全文检索，新增筛选搜索栏、监控与告警，并重写了 Observations API v2 / Metrics API v2，官方称最高快 **165 倍**。
+- [AcruxCore](https://github.com/AcruxCore/AcruxCore) - ⚠️ **未验证**（新仓库，单一维护者，暂无第三方采用）。可自托管或 SaaS 的 LLM-ops 平台，包含 Prompt 版本管理、AI 网关、链路追踪、工具目录与评估运行。Apache-2.0。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAcruxCore%2FAcruxCore&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 
 ---
 
