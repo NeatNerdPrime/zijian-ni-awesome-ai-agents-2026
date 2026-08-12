@@ -276,6 +276,7 @@
 
 ### Alibaba (Qwen) 🇨🇳
 
+- [Qwen3.8-Max](https://alibabacloud.com/blog/qwen3-8-max) - 🆕 ⚡ **2026-08-03**。阿里巴巴新旗舰—— 2.4T 参数 MoE（95B 激活，1M token 上下文，支持文本 / 图像 / 视频输入。专为现实任务、研究和自主编程设计；阿里巴巴内部测试中，该模型曾自主花 16 天构建并优化一个编程工具。API 通过 QwenCloud / 阿里云模型平台提供（$2/M 输入、1B $6/M 输出）。配套企业平台 **QwenWork** 同日开放公测。
 - [Qwen 3.7-Max](https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory) - 🆕 **2026-05-20 — 阿里云杭州峰会**。为 AI Agent 量身打造的新一代顶级：代理型编程、复杂推理、「长静间距」多步任务能力；同期亊相新的 T-Head **珄武 M890** AI 算力芯片与全栈 AI 基础设施升级。面向全球开发者 / 企业即将上线。
 - [Qwen 3.7-Max-Preview / Plus-Preview](https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena) - 🆕 **2026-05-18**。杭州峰会前的预览梯队；LM Arena 上文本 + 视觉双赛道均为**中文世界最高分**中国模型。
 - [Qwen3.6-27B](https://qwen.ai/blog?id=qwen3.6-27b) - 🆕 **2026-04-22**。27B 密集多模态。开源。Agent 编程 + 思维上下文保持。
@@ -373,6 +374,7 @@
 - [Nova Forge](https://aws.amazon.com/nova/) - **2025-12-02**。用自有数据构建自定义 Nova 变体的 "open training" 服务。
 
 ### NVIDIA (Nemotron)
+- [Nemotron 3.5 Lightning](https://ollama.com/library/nemotron-3.5-lightning) - 🆕 ⚡ **2026-08-11**。开放权重 30B MoE，仅 3B 激活参数——专为常驻 Agent 的执行层设计。支持 1M token 上下文，商业授权，在 20T+ token 上预训练（数据截止日 2025-09）。可通过 Ollama（`ollama run nemotron-3.5-lightning`）、Hugging Face 及 NVIDIA 自平台使用。专为规划、工具选择和中间工作等大量低延迟 Agent 工作负载。
 - [Nemotron 3.5 ASR](https://developer.nvidia.com/nemotron) - 🆕 **2026-06-06**。NVIDIA 6 亿参数的 cache-aware 流式语音识别模型 —— 覆盖 40 个语言区域的实时转录。
 - [Nemotron 3 Ultra (550B)](https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/) - 🆕 **2026-06-04**。开源权重 550B 总 / 55B 激活的混合 Mamba-Transformer MoE，面向长时运行 Agent。美国开源模型中的前沿推理水平，为 Blackwell 优化。
 - [Nemotron-Labs-TwoTower](https://huggingface.co/nvidia/Nemotron-Labs-TwoTower-30B-A3B-Base-BF16) - 🆕 🧪 **2026-07-01**。NVIDIA Research 的开源权重扩散语言模型，改造自冻结的 Nemotron-3-Nano-30B-A3B 底座 —— 一座塔保持上下文，另一座塔并行输出 token，无需重训即可获得约 2.4× 吞吐。
@@ -457,6 +459,7 @@
 - [HappyHorse 1.1](https://technode.com/2026/06/23/alibaba-unveils-happyhorse-1-1-video-generation-model-launches-global-ai-filmmaking-competition/) - 🇨🇳 🆕 **2026-06-23**。阿里视频模型（2026-04-10 以 "HappyHorse-1.0" 之名揭晓，此前匿名登顶多个基准，后升至全球第 2）。1.1 升级运动动态、主体一致性、提示遵循与音频生成。可通过 HappyHorse 官网、阿里云百炼与 Qwen Cloud 使用。
 - [Sora](https://openai.com/sora/) - 📦 **已停运**（应用 2026-04-26；API 2026-09-24）。OpenAI 文生视频应用关停；Sora 2 Pro 在 Runway 中延续。
 - [Gemini Omni Flash（视频）](https://deepmind.google/technologies/gemini/) - 🆕 **2026 年 7 月（预览）**。Google 高速视频生成模型，设计目标为实时或近实时视频生成。公开预览阶段，暂无确认 GA 定价。
+- [Wan 3.0](https://www.alibabacloud.com/en/blog/wan-3-0-next-gen-video-generation-model-public-beta-launched) - 🆕 ⚡ 🇨🇳 **2026-08-06（公开测试）**。阿里通义实验室下一代视频生成模型——单次生成最长 30 秒视频。独特支持 PDF / Word / PPT 等文档以及网页作为输入，同时支持文本、图像、音频。提示智能推荐视频时长。可通过阿里云模型平台 / Qwen Cloud 体验；API 和开源权重尚未确认。
 - [LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5) - 🆕 ⚡ **2026 年 8 月 12 日**。Lightricks 开源权重视频音频世界模型，支持原生多镜头生成（单次过题就能保持角色、场景、声音和风格一致性）、扩散质量渲染、全新视频解码器（更锐利的人\u脸和纹理，更少作影）、定制 Gemma 4 12B 文本编码器及提示增强器。支持文本转视频、图像转视频、视频转视频、音频转视频等多种模式。可本地自托管，无按次计费。
 - [Decart Lucy 2.5](https://decart.ai/) - 🆕 **2026 年 7 月**。支撑 Decart「Live AI」路线的实时视频 / 世界转换模型 —— 可持续生成无限时长视频并带物理感知特效，官方称效率比常驻算力方案高约 100 倍。面向直播、交互式世界模型以及机器人 / 自动驾驶仿真。
 
@@ -967,6 +970,7 @@
 
 *真实浏览器中工作的 Agent —— 导航、点击、抓取、跨页流程。*
 
+- [Cloudflare Kitesurf](https://blog.cloudflare.com/kitesurf/) - 🆕 ⚡ **2026 年 8 月（公开测试）**。Cloudflare 专为 AI Agent 打造的无服务器浏览器，运行于 Workers 上，每次请求独立隔离、无状态、上下文和 Token 消耗比 Chromium 小得多。支持 Puppeteer 和 Playwright。公开测试期内通过 Cloudflare Browser Run 免费使用。限制：不支持视频播放、WebGL 和持久登录。
 - [Browser Use](https://github.com/browser-use/browser-use) - 2026 年开源浏览器 Agent 事实标准。105K star。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fbrowser-use%2Fbrowser-use&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Stagehand](https://github.com/browserbase/stagehand) - Browserbase 出品的"浏览器 Agent SDK"：类型化 `act / extract / observe`，跑在 Playwright 上。MIT。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fbrowserbase%2Fstagehand&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Steel Browser](https://github.com/steel-dev/steel-browser) - 🆕 AI Agent 专用开源浏览器 API：自带 session 持久化 + 代理轮换。Apache 2.0。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fsteel-dev%2Fsteel-browser&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -999,7 +1003,8 @@
 - [Bland AI](https://www.bland.ai/) - 企业级 AI 电话平台。
 - [Hermes](https://buildwithhermes.com/) - 🆕 ⚠️ **未经验证（Founders Beta）**。面向代理商的白标语音 Agent 平台：Agent 管理、原生 CRM、呼入/呼出活动编排、按客户用量计费，$149/月起。暂无第三方采用数据。
 - [LiveKit Agents](https://github.com/livekit/agents) - 实时多模态 Agent（语音 + 视频 + 数据）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Flivekit%2Fagents&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Pipecat](https://github.com/pipecat-ai/pipecat) - 开源语音多模态对话框架。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fpipecat-ai%2Fpipecat&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [字节跳动 SeedRealtime](https://bytedance.com/en/news/2026/seedrealtime) - 🆕 ⚡ 🇨🇳 **2026 年 8 月**。字节跳动的原生音视觉全双工大模型——统一音频 + 视频 + 文本架构，可同时“看、听、说”。取代传统级联语音 Agent 管道，人工评估显示对话的“节奏感”问题减少约50%。已部署给豆包 App 的 3 亿 + 用户，暂无公开 API 或模型权重。
+- [Pipecat](https://github.com/pipecat-ai/pipecat) - 🆕 ⚡ **v1.7.0 — 2026-08-01**。开源语音多模态对话框架，v1.7.0 是第一个稳定 1.x 版本（0.x API 已移除，Python 3.11+ 必需，通用 `LLMContext` 支持建话中切换模型，ElevenLabs STT 的 `filter_background_audio`）。BSD-2-Clause。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fpipecat-ai%2Fpipecat&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Vocode](https://github.com/vocodedev/vocode-core) - 💤 **Stale**（最后版本 2024-06）。构建语音 LLM Agent 的开源库。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fvocodedev%2Fvocode-core&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Bolna](https://github.com/bolna-ai/bolna) - 端到端开源语音 AI。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fbolna-ai%2Fbolna&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Cartesia](https://www.cartesia.ai/) - 🆕 实时低延迟语音 AI。

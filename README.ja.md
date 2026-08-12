@@ -276,6 +276,7 @@
 
 ### Alibaba (Qwen) 🇨🇳
 
+- [Qwen3.8-Max](https://alibabacloud.com/blog/qwen3-8-max) - 🆕 ⚡ **2026-08-03**。Alibaba の新フラッグシップ—— 2.4T パラメータ MoE，95B アクティブ，1M トークンコンテキスト，テキスト / 画像 / 動画入力対応。内部テストで 16 日間自律的にコーディングツールを構築・改善した事例も。API は QwenCloud / Alibaba Cloud Model Studio（$2/M 入力・$6/M 出力）。企業プラットフォーム **QwenWork** も同日公開ベータ開始。
 - [Qwen 3.7-Max](https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory) - 🆕 **2026-05-20 — アリババクラウド杭州サミット**。AI エージェントの基盤として設計された新フラッグシップ。エージェント型コーディング、複雑推論、**長い見通しのマルチステップテイスク**に強い。同期に T-Head の **Zhenwu M890** AI アクセラレーターとフルスタック AI 基盤アップグレードも公開。世界中の開発者 / 企業へ順次提供。
 - [Qwen 3.7-Max-Preview / Plus-Preview](https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena) - 🆕 **2026-05-18**。杭州サミットの前哨プレビュー。LM Arena においてテキストとビジョンの両方で**中国モデルとして最高スコア**を取得。
 - [Qwen3.6-27B](https://qwen.ai/blog?id=qwen3.6-27b) - 🆕 **2026-04-22**。27B 密マルチモーダル。オープン化。エージェントコーディング + 思考文脈保持。
@@ -373,6 +374,7 @@
 - [Nova Forge](https://aws.amazon.com/nova/) - **2025-12-02**。カスタム Nova モデル訓練の「オープントレーニング」サービス。
 
 ### NVIDIA (Nemotron)
+- [Nemotron 3.5 Lightning](https://ollama.com/library/nemotron-3.5-lightning) - 🆕 ⚡ **2026-08-11**。オープンウェイト 30B MoE，アクティブパラメータはたった 3B ——常駐型エージェントの実行層向け。1M トークンコンテキスト，商用利用可。Ollama（`ollama run nemotron-3.5-lightning`）・ Hugging Face ・ NVIDIA プラットフォームで利用可能。計画・ツール選択・中間処理等の大量・低レイテンシーなエージェントワークロード向け。
 - [Nemotron 3.5 ASR](https://developer.nvidia.com/nemotron) - 🆕 **2026-06-06**。NVIDIA の 600M パラメータ・キャッシュアウェアなストリーミング音声認識モデル — 40 の言語ロケールでリアルタイム文字起こし。
 - [Nemotron 3 Ultra (550B)](https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/) - 🆕 **2026-06-04**。長時間稼働エージェント向けの、550B 総 / 55B アクティブのハイブリッド Mamba-Transformer MoE オープンウェイトモデル。米国オープンモデルの中でフロンティア級の推論、Blackwell に最適化。
 - [Nemotron-Labs-TwoTower](https://huggingface.co/nvidia/Nemotron-Labs-TwoTower-30B-A3B-Base-BF16) - 🆕 🧪 **2026-07-01**。NVIDIA Research のオープンウェイト拡散言語モデル。凍結した Nemotron-3-Nano-30B-A3B バックボーンから適応 — 片方のタワーがコンテキストを保持し、もう片方がトークンを並列に生成することで、再訓練なしに約 2.4× のスループットを実現。
@@ -457,6 +459,7 @@
 - [HappyHorse 1.1](https://technode.com/2026/06/23/alibaba-unveils-happyhorse-1-1-video-generation-model-launches-global-ai-filmmaking-competition/) - 🇨🇳 🆕 **2026-06-23**。アリババの動画モデル（2026-04-10 に「HappyHorse-1.0」として正体を公開 — 匿名でベンチマーク首位を獲得した後、世界 2 位に浮上）。1.1 ではモーションダイナミクス、被写体の一貫性、プロンプト追従、音声生成を強化。HappyHorse サイト、Alibaba Cloud Bailian、Qwen Cloud で利用可能。
 - [Sora](https://openai.com/sora/) - 📦 **提供終了**（アプリ 2026-04-26；API 2026-09-24）。OpenAI のテキスト→動画アプリは終了；Sora 2 Pro は Runway 内で存続。
 - [Gemini Omni Flash（動画）](https://deepmind.google/technologies/gemini/) - 🆕 **2026 年 7 月（プレビュー）**。Google の高速動画生成モデル——リアルタイムまたは近リアルタイムの動画生成を目指して設計。パブリックプレビュー中、GA 価格は未確定。
+- [Wan 3.0](https://www.alibabacloud.com/en/blog/wan-3-0-next-gen-video-generation-model-public-beta-launched) - 🆕 ⚡ 🇨🇳 **2026-08-06（パブリックベータ）**。Alibaba Tongyi Lab の次世代動画生成モデル——ネイティブに最長 30 秒の動画を一度に生成。PDF / Word / PPT 等のドキュメントや Web ページを入力として受け付ける独自機能を持つ。Alibaba Cloud Model Studio / Qwen Cloud でテスト可能；オープンソース化の予定は未確認。
 - [LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5) - 🆕 ⚡ **2026 年 8 月 12 日**。Lightricks のオープンウェイト動画音声ワールドモデル。ネイティブマルチショット生成（キャラクターアイデンティティ、環境、声、スタイルを貢結）、拡散フィデリティレンダリング、新型動画デコーダー、カスタム Gemma 4 12B テキストエンコーダー，プロンプト拡張機能搭載。テキスト返動画、画像返動画、動画返動画、音声返動画等各モード対応。セルフホスト可能。
 - [Decart Lucy 2.5](https://decart.ai/) - 🆕 **2026 年 7 月**。Decart の「Live AI」路線を支えるリアルタイム動画 / 世界変換モデル —— 物理を意識したエフェクト付きで無限長の動画を連続生成でき、常時計算方式に比べ約 100 倍効率的だと謳う。ライブ配信、インタラクティブな世界モデル、ロボティクス / 自動運転シミュレーション向け。
 
@@ -967,6 +970,7 @@
 
 *実ブラウザを介して Web と対話するエージェント—— ナビゲーション、クリック、スクレイピング、マルチページワークフローをこなすフレームワークとインフラ。*
 
+- [Cloudflare Kitesurf](https://blog.cloudflare.com/kitesurf/) - 🆕 ⚡ **2026 年 8 月（パブリックベータ）**。Cloudflare が AI エージェント専用に設計したサーバーレスブラウザ。Workers 上で動作し、セッションごとに独立・ステートレスで、ピクセル完璧なレンダリングよりもトークン効率と低リソース消費を優先。Puppeteer と Playwright をサポート。スクリーンショットや HTML 抽出ワークフローで Chromium より大幅に CPU / メモリ効率が高い。ベータ期間中は Cloudflare Browser Run 経由で無料。制限：動画再生・WebGL・永続認証は非対応。
 - [Browser Use](https://github.com/browser-use/browser-use) - 2026 年にオープンソースブラウザエージェントの事実上の標準。105K star。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fbrowser-use%2Fbrowser-use&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Stagehand](https://github.com/browserbase/stagehand) - Browserbase 製の「ブラウザエージェント用 SDK」—— 型付きの `act` / `extract` / `observe` プリミティブを Playwright の上に提供。MIT。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fbrowserbase%2Fstagehand&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Steel Browser](https://github.com/steel-dev/steel-browser) - 🆕 AI エージェント用オープンソースブラウザ API —— セッション永続化とプロキシローテーションを備えたサンドボックス Chromium。Apache-2.0。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fsteel-dev%2Fsteel-browser&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -1001,7 +1005,8 @@
 - [Bland AI](https://www.bland.ai/) - 企業向け AI 電話プラットフォーム。
 - [Hermes](https://buildwithhermes.com/) - 🆕 ⚠️ **未検証（創業者ベータ）。** 代理店向けホワイトレーベル音声エージェントプラットフォーム：エージェント、ネイティブ CRM、アウト/インバウンドキャンペーン編成、クライアント別従量課金を一体化。$149/月〜。独立した採用実績は未確認。
 - [LiveKit Agents](https://github.com/livekit/agents) - 音声・ビデオ・データを含むリアルタイムマルチモーダル AI エージェント。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Flivekit%2Fagents&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Pipecat](https://github.com/pipecat-ai/pipecat) - 音声・マルチモーダル会話 AI のオープンソースフレームワーク。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fpipecat-ai%2Fpipecat&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [ByteDance SeedRealtime](https://bytedance.com/en/news/2026/seedrealtime) - 🆕 ⚡ 🇨🇳 **2026 年 8 月**。ByteDance のネイティブ音声視覚フルデュプレックス LLM——統合された音声 + 映像 + テキストアーキテクチャでリアルタイムに「見て、聞いて、話す」。従来のカスケード型パイプラインを置き換え、人間評価で会話タイミング問題を約 50% 削減。3 億人以上の豆包（Doubao）アプリユーザーに展開済み。公開 API・モデルウェイトなし。
+- [Pipecat](https://github.com/pipecat-ai/pipecat) - 🆕 ⚡ **v1.7.0 — 2026-08-01**。音声・マルチモーダル会話 AI のオープンソースフレームワーク。v1.7.0 は最初の安定 1.x リリース（0.x API 削除、Python 3.11+ 必須、通話中モデル切り替え用ユニバーサル 、ElevenLabs STT の ）。BSD-2-Clause。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fpipecat-ai%2Fpipecat&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Vocode](https://github.com/vocodedev/vocode-core) - 💤 **Stale**（最終リリース 2024-06）。音声ベース LLM エージェントライブラリ。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fvocodedev%2Fvocode-core&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Bolna](https://github.com/bolna-ai/bolna) - エンドツーエンドのオープンソース音声 AI。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fbolna-ai%2Fbolna&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Cartesia](https://www.cartesia.ai/) - 🆕 超低遅延のリアルタイム会話型音声 AI。
