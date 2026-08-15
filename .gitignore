@@ -4,3 +4,4 @@
 # READMEs. They are intentionally not published: they contain long verbatim
 # quotes from third-party pages and go stale within days.
 .research/
+__pycache__/
