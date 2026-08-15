@@ -1361,7 +1361,7 @@
 - OpenAI 数据来自 `developers.openai.com/api/docs/pricing.md`；上下文按文档为 1,050,000 token。**超过 272K token 的 prompt 按输入 2 倍 / 输出 1.5 倍计费**（Terra 长上下文：$4.00/$18.00；Luna：$0.40/$1.80）。
 - Google 数据来自 `ai.google.dev/gemini-api/docs/pricing`；Gemini 3.7 Flash 引导价持续到 2026 年 12 月 31 日。
 - DeepSeek 于 **2026-08-16 16:00 UTC 起改为高峰/低谷分层计价**（高峰 01:00–04:00 与 06:00–10:00 UTC；低谷便宜 50%）；命中缓存输入依旧便宜得多（V4-Pro 高峰 $0.044，V4-Flash 高峰 $0.014）。
-- GPT-4o / GPT-4o-mini 已从本表移除 —— GPT-4o 于 2026 年 2 月退出 ChatGPT，且 GPT-5.6 各档的单位能力价格更低。二者仍在 API 上服务存量集成。
+- GPT-4o / GPT-4o-mini 已从本表移除 —— GPT-4o 于 2026 年 2 月退出 ChatGPT，且 GPT-5.6 各档的单位能力价格更低。二者仅在 API 上为 legacy 存量集成保留，新项目不推荐使用。
 
 ---
 
