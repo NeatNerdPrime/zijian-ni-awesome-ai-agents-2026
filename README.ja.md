@@ -6,8 +6,8 @@
 [![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FZijian-Ni%2Fawesome-ai-agents-2026&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)](https://github.com/Zijian-Ni/awesome-ai-agents-2026/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-August%204%2C%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-819%2B-orange.svg)](#)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-August%2015%2C%202026-blue.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-880%2B-orange.svg)](#)
 [![Audited](https://img.shields.io/badge/Spam_Audited-2026--07--30-success.svg)](#️-ステータス凡例)
 [![English](https://img.shields.io/badge/Lang-English-informational.svg)](README.md)
 [![中文](https://img.shields.io/badge/Lang-中文-red.svg)](README.zh-CN.md)
@@ -48,7 +48,7 @@
 > 5. ⚠️ **アンチパターンを避ける** → [非推奨リスト](#️-アンチピック--使ってはいけないケース)
 >
 > **已に開発中の方へ：** こちらへジャンプ：
-> - 🆕 [最新追加（2026年7月）](#-2026-ai-タイムライン) • 🛡️ [セキュリティ](#️-エージェントセキュリティ) • 💰 [コスト比較](#-基盤モデル--api-コスト--コンテキスト)
+> - 🆕 [最新追加（2026年8月）](#-2026-ai-タイムライン) • 🛡️ [セキュリティ](#️-エージェントセキュリティ) • 💰 [コスト比較](#-基盤モデル--api-コスト--コンテキスト)
 
 ---
 
@@ -56,21 +56,21 @@
 
 | カテゴリ | 説明 | 件数 |
 |----------|-------------|-------|
-| [🧠 基盤モデル 2026](#-基盤モデル-2026) | OpenAI・Anthropic・Google・Meta ほか 22+ プロバイダーの最新 LLM | 195+ |
-| [🎨 マルチモーダルと生成 AI](#-マルチモーダルと生成-ai) | 画像・動画・音声・音楽生成 | 40+ |
-| [🔗 エージェントプロトコルと標準](#-エージェントプロトコルと標準) | MCP、A2A、相互運用標準 | 15+ |
+| [🧠 基盤モデル 2026](#-基盤モデル-2026) | OpenAI・Anthropic・Google・Meta ほか 22+ プロバイダーの最新 LLM | 205+ |
+| [🎨 マルチモーダルと生成 AI](#-マルチモーダルと生成-ai) | 画像・動画・音声・音楽生成 | 45+ |
+| [🔗 エージェントプロトコルと標準](#-エージェントプロトコルと標準) | MCP、A2A、相互運用標準 | 20+ |
 | [🏗️ エージェントフレームワーク](#️-エージェントフレームワーク) | 自律 AI エージェント構築ライブラリ | 23+ |
 | [🛠️ エージェント IDE とビジュアルビルダー](#️-エージェント-ide-とビジュアルビルダー) | エージェントフロー設計のビジュアル / ローコード環境 | 8+ |
 | [🧠 エージェントメモリ](#-エージェントメモリ) | 永続メモリとコンテキスト管理 | 20+ |
 | [🔌 ツールと API 連携](#-ツールと-api-連携) | エージェントと外部サービスの接続 | 20+ |
-| [💱 エージェント経済とマーケットプレイス](#-エージェント経済とマーケットプレイス) | エージェントの決済・収益化・サービス発見 | 5+ |
-| [🧪 エージェントサンドボックスと計算分離](#-エージェントサンドボックスと計算分離) | エージェント生成コードの安全な実行環境 | 9+ |
+| [💱 エージェント経済とマーケットプレイス](#-エージェント経済とマーケットプレイス) | エージェントの決済・収益化・サービス発見 | 7+ |
+| [🧪 エージェントサンドボックスと計算分離](#-エージェントサンドボックスと計算分離) | エージェント生成コードの安全な実行環境 | 10+ |
 | [🛡️ エージェントセキュリティ](#️-エージェントセキュリティ) | プロンプトインジェクション対策とガードレール | 16+ |
 | [🔍 RAG とナレッジ](#-rag-とナレッジ) | 検索拡張生成システム | 20+ |
-| [💻 コーディングエージェント](#-コーディングエージェント) | AI によるソフトウェアエンジニアリング | 45+ |
-| [🤖 Physical AI / 身体性エージェント](#-physical-ai--身体性エージェント) | ヒューマノイドロボット、身体性 AI、産業自動化 | 35+ |
+| [💻 コーディングエージェント](#-コーディングエージェント) | AI によるソフトウェアエンジニアリング | 55+ |
+| [🤖 Physical AI / 身体性エージェント](#-physical-ai--身体性エージェント) | ヒューマノイドロボット、身体性 AI、産業自動化 | 40+ |
 | [🎮 エージェントシミュレーションと世界モデル](#-エージェントシミュレーションと世界モデル) | エージェント訓練とストレステスト用シミュレーション環境 | 10+ |
-| [📊 ベンチマークとリーダーボード](#-ベンチマークとリーダーボード) | フロンティア能力を追跡するリーダーボード | 20+ |
+| [📊 ベンチマークとリーダーボード](#-ベンチマークとリーダーボード) | フロンティア能力を追跡するリーダーボード | 25+ |
 | [🖥️ Computer Use / デスクトップエージェント](#️-computer-use--デスクトップエージェント) | デスクトップ自動化と OS レベル制御 | 10+ |
 | [🌐 ブラウザと Web エージェント](#-ブラウザと-web-エージェント) | 実ブラウザを操作するエージェント | 15+ |
 | [🗣️ 音声とマルチモーダルエージェント](#️-音声とマルチモーダルエージェント) | 音声対応の対話型 AI | 10+ |
@@ -79,7 +79,7 @@
 | [🏢 エンタープライズエージェントプラットフォーム](#-エンタープライズエージェントプラットフォーム) | エンタープライズ級エージェント展開 | 30+ |
 | [📊 エージェント評価とオブザーバビリティ](#-エージェント評価とオブザーバビリティ) | テスト・モニタリング・ベンチマーク | 30+ |
 | [🔬 AI 研究ツール](#-ai-研究ツール) | AI / ML 研究・実験ツール | 15+ |
-| [📚 学習リソース](#-学習リソース) | 論文、コース、チュートリアル | 20+ |
+| [📚 学習リソース](#-学習リソース) | 論文、コース、チュートリアル | 25+ |
 | [🇨🇳 中国 AI エコシステム](#-中国-ai-エコシステム) | 中国チームの主要プロジェクト | 25+ |
 | [📝 比較 — サイドバイサイド表](#-比較--サイドバイサイド表) | 横並び比較表 | — |
 | [🗺️ シナリオガイド — 何に何を使うべきか](#️-シナリオガイド--何に何を使うべきか) | 56 のシナリオ→ツール対応 | 56 |
@@ -130,8 +130,8 @@
 
 ### OpenAI
 - [GPT-Live-1 / GPT-Live-1 mini](https://openai.com/index/introducing-gpt-live/) - 🆕 **2026-07-08**。Advanced Voice Mode を置き換える OpenAI のフルデュプレックス会話音声モデル。聞きながら同時に話し（ターンテイキング遅延ゼロ）、割り込みに対応し、複雑なクエリはバックグラウンドで GPT-5.5 に委譲。**GPT-Live-1** は有料ユーザー（Go/Plus/Pro）、**GPT-Live-1 mini** は無料ユーザーのデフォルト。リアルタイムのライブ翻訳を含む。iOS / Android / Web で利用可。
-- [OpenAI Astra](https://openai.com) - 🆕 ⚠️ **2026-08-01 発表（公開リリース日未定）**。OpenAI の次世代モデルファミリーのプレリリース発表。内部版は 1 セッションで**数学・理論計算機科学の未解決問題 10 問**（群論、量子複雑性など）を解決したと報告。249 ページの論文 + Lean 4 機械検証可能な証明書が公開済み。⚠️ API アクセス・公開ウェイトなし、発表のみ。
-- [GPT-5.6 Sol](https://openai.com/blog/gpt-5-6) - 🆕 **2026-07-09**（GA；一部プレビュー 6月26日～）。GPT-5.6 ファミリーのフロンティアフラッグシップ — 高度な推論、コーディング、生物学、サイバーセキュリティ機能に加え、「最大（max）」推論と「ウルトラ（ultra）」サブエージェントモードを備える最高性能モデル。ChatGPT、Codex、OpenAI API で利用可能。米国政府による安全審査のため発表が遅れたが、段階的に展開中。
+- [OpenAI Astra](https://openai.com) - 🆕 ⚠️ **2026-08-01 発表（公開リリース日未定）**。OpenAI の次世代モデルファミリーのプレリリース発表。内部版は 1 セッションで**数学・理論計算機科学の未解決問題 10 問**（群論、量子複雑性など）を解決したと報告。249 ページの論文 + Lean 4 機械検証可能な証明書が公開済み。⚠️ API アクセス・公開ウェイトなし。**2026年8月7日更新**: 予備評価で史上初の「Critical」サイバー能力レベルを否定できなかったため、OpenAI は [Astra の開発を減速](https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/)。ホワイトハウスは OpenAI が自主的に延期を政権に報告したことを確認。リリース時期はさらに後ろ倒しに。
+- [GPT-5.6 Sol](https://openai.com/blog/gpt-5-6) - 🆕 **2026-07-09**（GA；一部プレビュー 6月26日～）。GPT-5.6 ファミリーのフロンティアフラッグシップ — 高度な推論、コーディング、生物学、サイバーセキュリティ機能に加え、「最大（max）」推論と「ウルトラ（ultra）」サブエージェントモードを備える最高性能モデル。ChatGPT、Codex、OpenAI API で利用可能。米国政府による安全審査のため発表が遅れたが、段階的に展開中。**2026年8月6日更新**: ChatGPT での精度と一貫性が向上；GPT-5.6 Luna が無料ユーザーの日常チャット無制限利用に拡大。⚡ **2026年8月13日**: 新しい [Ultrafast サービスティア](https://openai.com/index/previewing-ultrafast)（API 限定プレビュー）が Cerebras ハードウェアにより GPT-5.6 Sol を最大 **Standard 比 14 倍速 / 約 750 出力トークン/秒**で提供。
 - [GPT-5.6 Terra](https://openai.com/blog/gpt-5-6) - 🆕 **2026-07-09**。GPT-5.6 ファミリーの中間層 — GPT-5.5 と同等の性能を約 2 分の 1 のコストで提供。コスト効率の高い本番ワークロード向け。
 - [GPT-5.6 Luna](https://openai.com/blog/gpt-5-6) - 🆕 **2026-07-09**。GPT-5.6 の中で最も高速かつコスト効率の高いモデル — 大量で処理速度が求められるタスクに最適。
 - [ChatGPT Work](https://openai.com/index/chatgpt-for-your-most-ambitious-work/) - 🆕 **2026-07-09**。目標を渡すと完成した成果物に仕上げる OpenAI のエージェント — 接続されたアプリやファイルを横断して行動し、1 つのプロジェクトに数時間取り組み続け、スライド / シート / ドキュメント / Web アプリを作成し、スケジュール実行や内蔵ブラウザによるデスクトップ Computer Use も可能。GPT-5.6 駆動。Web / モバイルでは Pro・Enterprise・Edu から順次展開（Plus / Business は追って対応）；デスクトップアプリは Mac / Windows で Free を含む全プランにグローバル提供。
@@ -167,9 +167,10 @@
 
 ### Anthropic
 
+- [Claude テキスト電子透かし + コンテンツクレデンシャル](https://www.anthropic.com/news/claude-text-watermark) - 🆕 ⚡ **2026年8月14日**。Anthropic は今後の Claude モデルにローンチ時点からグローバルで不可視の **SynthID-Text ベースの電子透かし**（Google DeepMind の手法）を追加し、生成画像/ファイル（.png/.jpg/.svg）には C2PA コンテンツクレデンシャルを付与；2026 年 8 月 2 日以前にリリースされたモデルは「今後数か月かけて」対応し、検出 API も提供予定。7 月に EU の透明性行動規範（Code of Practice）に署名したことを受け、EU AI 法への準拠として実装。Anthropic は透かし入りテキストは読者には識別不能だと説明。
 - [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) - 🆕 **2026-07-24**。Anthropic 第 5 世代フラッグシップモデル。Fable 5 に迫る性能を大幅に低い価格で提供（入力/出力 100 万トークンあたり $5/$25）。コンテキストウィンドウ 1Mトークン、出力最大 128Kトークン。Claude Max のデフォルトモデル。API: `claude-opus-5`。Anthropic API、Amazon Bedrock、Google Cloud Vertex AI で利用可能。
 - [Claude Fable 5 グローバルアクセス復旧](https://www.anthropic.com/news/redeploying-fable-5) - 🆕 **2026-07-01**。米国商務省による輸出管理が 6 月 30 日に解除されたことを受け、Anthropic は Claude.ai、Claude API、Claude Code、Claude Cowork で Fable 5 へのグローバルアクセスを復旧。Amazon が発見したジェイルブレイク手法をブロックする新しい安全クラシファイアを配備（報告された挙動を >99% のケースでブロック）。Pro/Max/Team と一部 Enterprise プランでは 7 月 7 日まで週次利用量の最大 50% まで Fable 5 が追加費用なしで利用でき、以降は利用クレジット経由；AWS、Google Cloud、Microsoft Foundry でのクラウド再有効化も追って実施。Mythos 5 は引き続き米国の審査済みエンティティに制限される。
-- [Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5) - 🆕 **2026年6月30日**。これまでで最もエージェント性能の高い Sonnet — プランニング、ブラウザ/ターミナルツール利用、以前は Opus クラスのモデルが必要だった水準の自律動作に対応。高エフォート設定ではエージェント検索（BrowseComp）とコンピュータ操作（OSWorld-Verified）で Opus 4.8 に迫る性能を発揮し、Sonnet 4.6 よりもコストパフォーマンスの幅が大きく広がった。Claude.ai の Free/Pro プランの新デフォルトモデルとなり、Max/Team/Enterprise、Claude Code、API（`claude-sonnet-5`）でも利用可能。2026年8月31日までの導入価格は入力/出力それぞれ 100 万トークンあたり $2/$10（以降 $3/$15）。Anthropic は Sonnet 4.6 より望ましくない挙動の発生率が低いと報告。
+- [Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5) - 🆕 **2026年6月30日**。これまでで最もエージェント性能の高い Sonnet — プランニング、ブラウザ/ターミナルツール利用、以前は Opus クラスのモデルが必要だった水準の自律動作に対応。高エフォート設定ではエージェント検索（BrowseComp）とコンピュータ操作（OSWorld-Verified）で Opus 4.8 に迫る性能を発揮し、Sonnet 4.6 よりもコストパフォーマンスの幅が大きく広がった。Claude.ai の Free/Pro プランの新デフォルトモデルとなり、Max/Team/Enterprise、Claude Code、API（`claude-sonnet-5`）でも利用可能。**2026年8月10日更新**: 入力/出力それぞれ 100 万トークンあたり $2/$10 の導入価格が**恒久化** — 9 月 1 日に予定されていた $3/$15 への値上げは実施されない。Anthropic は Sonnet 4.6 より望ましくない挙動の発生率が低いと報告。
 - [Claude Fable 5](https://www.anthropic.com/news/claude-fable-5-mythos-5) - 🆕 **2026-06-09**。Anthropic 初の一般提供 **Mythos クラス**モデル — Opus の上位に位置する能力ティア。ソフトウェアエンジニアリング、ナレッジワーク、ビジョン、科学研究の各ベンチマークで Opus 4.8 を上回る。セーフガード内蔵（サイバー/バイオ系の機微なクエリは Opus 4.8 へ再ルーティングされる場合あり）。入力 $10 / 出力 $50（100 万 token あたり）。Anthropic API、Amazon Bedrock、Google Cloud Vertex AI で利用可。**⚠️ 2026年6月12日にアクセス停止** —— 米国政府の輸出管理指令により、Anthropic は全顧客向けに Fable 5 と Mythos 5 を無効化。**✅ 2026年6月30日に輸出管理が解除され、7月1日にアクセス復旧** —— 新しいサイバーセキュリティクラシファイアを追加（上のエントリ参照、[声明](https://www.anthropic.com/news/redeploying-fable-5)）。
 - [Claude Mythos 5](https://www.anthropic.com/news/claude-fable-5-mythos-5) - 🆕 **2026-06-09**。Fable 5 と同一基盤の Mythos クラスモデルを制限を緩めて提供。米国政府と連携した **Project Glasswing** を通じ、審査済みパートナー（サイバーセキュリティ企業、インフラ事業者）限定で展開。4 月の Claude Mythos Preview の正式後継。**⚠️ 2026年6月12日にアクセス停止**。Fable 5 とともに同一の輸出管理指令の対象（[声明](https://www.anthropic.com/news/fable-mythos-access)）。
 - [Claude Opus 4.8](https://www.anthropic.com/claude/opus) - 🆕 **2026-05-28**。Opus シリーズの大規模アップデート：コードベース規模のマイグレーション、エージェント判断の鮮明化、「ダイナミックワークフロー」リサーチプレビューで 1 セッション中に数百のサブエージェントを並列実行可能、手動「エフォートコントロール」パネル、**Fast モード 3 倍安い**（入力 $5 / 出力 $25 / 100 万 token は同価）。Anthropic ネイティブ、Amazon Bedrock、AWS Claude Platform、Google Cloud、Microsoft Foundry で利用可。限定企業向けに **Mythos クラス** モデルを予告。
@@ -197,10 +198,11 @@
 - [Bristol Myers Squibb ↔ Anthropic Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) - 🆕 **2026-05-20**。BMS が Claude Enterprise を 30,000+ 名の社員の共通インテリジェンス基盤として採用し、創薬・開発・デリバリーの全工程にエージェント化 Claude を組み込む。世界トップ 5 製薬企業で初めての公社規模での Claude 全社展開。
 
 ### Google DeepMind
-- [Gemini 3.6 Flash](https://github.com/google-gemini/cookbook) - 🆕 ⚡ **2026-07-21**。Google 最新の Flash 層 —— 複雑な agentic およびマルチモーダルタスクでより強力で、**トークン使用量を削減しつつ 3.5 Flash より低価格**。API id `gemini-3.6-flash`。公式 Gemini API cookbook に thinking モードガイドと共に記載。
+- [Gemini 3.7 Flash](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/) - 🆕 ⚡ **2026年8月13日**。Google の新しい「最も知的なワークホースモデル」（コーディング・エージェント向け）— 3.6 Flash からわずか 3 週間後、いまだ未リリースの 3.5 Pro より先に出荷。FrontierCode 1.1 43.6%（3.6 Flash は 34.4%）、DeepSWE v1.1 65.3%（同 49.0%）。導入価格は **2026 年 12 月 31 日まで入力/出力 100 万トークンあたり $0.75/$3.75**（以降 $1.50/$7.50）。AI Studio、Android Studio、Antigravity、Gemini Enterprise Agent Platform で利用可能；AI Pro/Ultra 加入者向け Gemini Spark を駆動。
+- [Gemini 3.6 Flash](https://github.com/google-gemini/cookbook) - 🆕 **2026-07-21**。Google の Flash 層 —— 複雑な agentic およびマルチモーダルタスクでより強力で、**トークン使用量を削減しつつ 3.5 Flash より低価格**。API id `gemini-3.6-flash`。公式 Gemini API cookbook に thinking モードガイドと共に記載。2026 年 8 月 13 日に 3.7 Flash が最上位 Flash 層を引き継いだ。
 - [Gemini 3.5 Flash-Lite](https://github.com/google-gemini/cookbook) - 🆕 **2026-07-21**。3.5 ファミリーで最速・最低コストのモデル。高スループット実行で従来の Flash-Lite 世代を上回る。API id `gemini-3.5-flash-lite`。現在最も安い Gemini 層で、新規構築では 3.1 Flash-Lite より優先。
 - [Gemini 3.1 Pro（preview）](https://deepmind.google/technologies/gemini/) - 2026 年 7 月下旬時点で Google 最高性能の Gemini。API 名は `gemini-3.1-pro-preview`。GPQA Diamond 94.3%（発表時の世界記録）、ARC-AGI-2 77.1%、BenchLM 94。⚠️ いまだ `-preview` 付きで、**無料枠がない**。
-- [Gemini 3.5 Pro](https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud) - ⚠️ **延期 — 2026年7月17日時点で未リリース**（パートナー限定のエンタープライズプレビューは継続中）。**200 万トークンのコンテキストウィンドウ**（報道値）と **Deep Think** 推論モードを備えるとされる Google の次期フラッグシップ。コーディングとエージェント型ワークフロー機能が大幅に向上。2026 年 5 月の Google I/O で 6 月リリースと発表されたが、コーディング性能の不振によりベースモデルを作り直したため延期。サードパーティ報道は 7 月 17 日を目標としていたが、7 月 16 日時点で Google は 3.5 Pro（およびアップグレード版 Flash）をまだテスト中とし、リリース日は未確定。GPT-5.6 Sol や Claude Fable 5 と直接競合。
+- [Gemini 3.5 Pro](https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud) - ⚠️ **延期 — 2026年8月13日時点でなお未リリース**（パートナー限定のエンタープライズプレビューは継続中）。**200 万トークンのコンテキストウィンドウ**（報道値）と **Deep Think** 推論モードを備えるとされる Google の次期フラッグシップ。コーディングとエージェント型ワークフロー機能が大幅に向上。2026 年 5 月の Google I/O で 6 月リリースと発表されたが、コーディング性能の不振によりベースモデルを作り直したため延期。Gemini 3.7 Flash 発表会（8 月 13 日）で Google は 3.5 Pro の扱いについて言及を避け、現在 **Gemini 4** をトレーニング中であることを確認。GPT-5.6 Sol や Claude Fable 5 と直接競合。
 - [Gemma 4 12B](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/) - 🆕 **2026-06**。テキスト・画像・音声をシングルパスで処理する**統合エンコーダレスアーキテクチャ**を採用した新型マルチモーダルオープンモデル。16GB VRAM でのローカル動作を想定。
 - [DiffusionGemma](https://www.marktechpost.com/2026/06/10/google-ai-releases-diffusiongemma-a-26b-moe-open-model-using-text-diffusion-for-up-to-4x-faster-generation/) - 🆕 **2026-06**。**テキストディフュージョン（拡散）アーキテクチャ**により、自己回帰型モデルと比べて生成速度が最大 **4 倍**速い 26B の MoE オープンモデル。
 
@@ -224,6 +226,7 @@
 - [Meta Muse Image](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07**。Meta Superintelligence Labs の最も高度な画像生成モデル — Web 検索、コード実行、自己修正などの推論ステップを経てから画像を生成する「エージェント型」モデル。Meta AI アプリ、Instagram Stories（米国）、一部の国の WhatsApp で展開（Facebook は近日対応）。なお、他ユーザーの公開 Instagram プロフィール画像を利用できる物議を醸した機能は、フィードバックを受けて 7 月 10 日に追加後撤回された。
 - [Muse Spark 1.1](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) - 🆕 **2026-07-09**。Meta Model API の新しいパブリックプレビューを介して提供される、エージェントタスク向けマルチモーダル推論モデル。オープンソースの Llama ラインと並行した、独自の収益重視モデルへの戦略的シフトを示す。
 - [Meta Muse Video](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07（プレビュー）**。Muse Image と同じ基盤技術で構築された動画生成モデル。テキスト→動画部門で Arena 第 3 位。Muse Image の発表と同時にプレビュー公開 —「クリエイターと Meta AI に近日提供」。
+- [Muse Spark 1.2 + Muse Code（ベータ）](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2) - 🆕 ⚡ **2026年8月5日**。**Muse Code** は MSL のターミナルコーディングエージェント（非同期バックグラウンドエージェント、リプレイ再現可能なローカルイベントログ、`/plan` / `/grill` / `/goal` スキル）で、新しい **Muse Spark 1.2** が駆動 — リポジトリ全体の生成と長期ホライズンのコーディングでトレーニングされたモデル。Spark 1.2 は Meta Model API でも提供され、グローバルアクセスが拡大。
 - [Muse Glimmer 30B](https://huggingface.co/meta-models/Muse-Glimmer-30B) - 🆕 ⚡ **2026-08-10**。Meta Superintelligence Labs がリリースしたオープンウェイトの 300 億パラメータ マルチモーダルモデル。Apache 2.0 ライセンス。**常時起動のローカルエージェントワークフロー**向けに設計され、単一の一般消費者向け GPU または Apple Silicon での実行に最適化。131K トークンコンテキスト、100 以上の言語でのトレーニング、DFlash 高速化。Muse Spark から蒸留され、コーディング・評価・エージェントタスクに特化。llama.cpp / MLX / ExecuTorch インテグレーションと共に Hugging Face で提供。
 - **Llama 5** — ❌ **存在しない。2026-07-30 の検証により本リストから削除。** 「Llama 5、600B 超、2026-04-08」という記述は AI ニュースアグリゲータや LLM の検索要約で広く拡散し、本リストにも掲載されていた。しかし裏付けが取れない: Hugging Face の `meta-llama` Organization に **Llama-5 の重みは一つも存在しない**（Llama 系の最新アップロードは 2025-05 の Llama-4-Maverick）。Wikipedia の Llama 項目は「最新バージョンは 2025 年 4 月にリリースされた Llama 4」と記し、**2026 年 4 月に Muse Spark が Llama の後継となった**と述べている。Meta が重みまたは公式発表を出すまで、「Llama 5」の主張は未検証として扱うこと。実際に出荷したものは上記 [Muse Spark](#meta) を参照。
 - [Muse Spark](https://ai.meta.com/blog/introducing-muse-spark-msl/) - 🆕 **2026-04-09**。Meta Superintelligence Labs (MSL) の最初のモデル。ネイティブマルチモーダル推論で Meta AI アプリ・スマートグラス・Facebook / Instagram / WhatsApp / Messenger の機能を駆動。
@@ -245,7 +248,7 @@
 ### Thinking Machines Lab
 
 - [Inkling](https://thinkingmachines.ai/inkling/) - 🆕 **2026-07-15**。前 OpenAI CTO の Mira Murati が設立。975B MoE（41Bアクティブ）、45Tトークンで事前学習、コンテキストウィンドウ 1Mトークン。テキスト・画像・音声・動画のネイティブマルチモーダル対応。Apache 2.0 オープンウェイトを Hugging Face で公開。**Inkling-Small**（12Bアクティブ）も同日リリース。Thinking Machines API・ Hugging Face Inference経由で利用可能。
-- [Inkling-Small](https://thinkingmachines.ai/inkling/) - 🆕 ⚡ **2026-07-30（ウェイト公開）**。Inkling の軽量バリアント —— 276B 総 / 12B アクティブ、ネイティブマルチモーダル（テキスト/画像/音声）、1M コンテキスト、Apache 2.0。HLE テストベンチ **31.6%** —— より大きな 975B Inkling（29.7%）をわずかに上回る。Thinking Machines API および Hugging Face 経由で利用可能。
+- [Inkling-Small](https://thinkingmachines.ai/inkling/) - 🆕 **2026-07-30（ウェイト公開）**。Inkling の軽量バリアント —— 276B 総 / 12B アクティブ、ネイティブマルチモーダル（テキスト/画像/音声）、1M コンテキスト、Apache 2.0。HLE テストベンチ **31.6%** —— より大きな 975B Inkling（29.7%）をわずかに上回る。Thinking Machines API および Hugging Face 経由で利用可能。
 
 ### Mistral AI
 
@@ -265,9 +268,10 @@
 
 ### DeepSeek 🇨🇳
 
-- [DeepSeek-V4-Pro](https://api-docs.deepseek.com/news/news260424) - 🆕 **2026-04-24（プレビュー）；正式版ローンチは 2026 年 7 月中旬**。1.6T 総 / 49B アクティブ MoE、1M トークン。MIT。エージェント能力・世界知識・推論でリードし、オープンソースベンチマーク首位。[公式価格](https://api-docs.deepseek.com/quick_start/pricing)は定額（ピーク / オフピークの分層なし）：100 万トークンあたり **キャッシュヒット入力 $0.003625 / ミス $0.435、出力 $0.87**、最大出力 384K、同時実行 500。`deepseek-v4-pro` / `deepseek-v4-flash` が本番 API モデル。
-- [DeepSeek-V4-Flash](https://api-docs.deepseek.com/news/news260424) - 🆕 2026-04-24。284B 総 / 13B アクティブ MoE、1M コンテキスト。MIT。コスト効率版 — 100 万トークンあたり **キャッシュヒット入力 $0.0028 / ミス $0.14、出力 $0.28**、最大出力 384K、同時実行 2500（[価格](https://api-docs.deepseek.com/quick_start/pricing)）。
-- [DeepSeek-V4-Flash-0731](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731) - 🆕 ⚡ **2026-07-31**。アップデートされた Flash チェックポイント —— 同じ 284B/13B アクティブ MoE アーキテクチャ、同一 API・料金体系、ただしエージェントタスクベンチで V4-Pro（Preview）を上回る性能。MIT ライセンスで Hugging Face に公開。`deepseek-v4-flash` API ユーザーはドロップイン置換可能。
+- [DeepSeek-V4-Pro-0813（GA）](https://api-docs.deepseek.com/news/news260813) - 🆕 ⚡ **2026年8月13日**。`deepseek-v4-pro` の GA リリース（アプリ / Web / API）—「本番で大きな効果を上げる大規模なエージェント強化」：選択可能な**推論エフォート**（low/high/max — V4-Flash でも利用可）、Codex 向けに最適化されたネイティブの OpenAI **Responses API** 対応、アプリ / Web の「Expert Mode」。⚠️ **2026年8月16日（16:00 UTC）に価格改定**: 定額制が終了し、**ピーク / オフピークの時間帯別料金**を導入（ピークは 01:00–04:00 と 06:00–10:00 UTC；オフピークは 50% 割安）。V4-Pro のピーク価格は 100 万トークンあたりキャッシュヒット入力 $0.044 / ミス $1.32、出力 $3.96 — 大幅な値上げ（[価格](https://api-docs.deepseek.com/quick_start/pricing)）。
+- [DeepSeek-V4-Pro](https://api-docs.deepseek.com/news/news260424) - 🆕 **2026-04-24（プレビュー）；正式版ローンチは 2026 年 7 月中旬**。1.6T 総 / 49B アクティブ MoE、1M トークン。MIT。エージェント能力・世界知識・推論でリードし、オープンソースベンチマーク首位。最大出力 384K、同時実行 500。`deepseek-v4-pro` / `deepseek-v4-flash` が本番 API モデル（V4-Pro は 8 月 13 日以降 0813 チェックポイントを提供 — 上記参照；2026 年 8 月 16 日からピーク / オフピークの時間帯別料金）。
+- [DeepSeek-V4-Flash](https://api-docs.deepseek.com/news/news260424) - 🆕 2026-04-24。284B 総 / 13B アクティブ MoE、1M コンテキスト。MIT。コスト効率版 — 2026 年 8 月 16 日以降：100 万トークンあたりピーク **キャッシュヒット入力 $0.014 / ミス $0.44、出力 $1.32**、オフピーク **$0.007 / $0.22 / $0.66**；最大出力 384K、同時実行 2500（[価格](https://api-docs.deepseek.com/quick_start/pricing)）。
+- [DeepSeek-V4-Flash-0731](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731) - 🆕 **2026-07-31**。アップデートされた Flash チェックポイント —— 同じ 284B/13B アクティブ MoE アーキテクチャ、同一 API・料金体系、ただしエージェントタスクベンチで V4-Pro（Preview）を上回る性能。MIT ライセンスで Hugging Face に公開。`deepseek-v4-flash` API ユーザーはドロップイン置換可能。
 - [DeepSeek Agent Harness チーム](https://www.scmp.com/tech/big-tech/article/3354113/deepseek-recruits-former-jane-street-engineer-catch-ai-agents-revenue-race) - 🆕 **2026-05-19**。DeepSeek が Jane Street 出身のエンジニアを迎え、DeepSeek V4 を**収益を生む自律型エージェント**に仮定する「AI harness」チームを新設。DeepSeek が素のモデル R&D からエージェント製品化へ軸足を辻りたことを示す初の明確なシグナル。
 - [DeepSeek-V3.2](https://www.deepseek.com/) - 2025-12 公開。671B MoE、V3.2 Speciale 推論強化版あり。⚠️ API モデル ID deepseek-chat / deepseek-reasoner（V3.2 世代）は 2026-07-24 付で非推奨 — V4-Flash の各モードに置き換え。
 - DeepSeek-R2 - 🧪 **未リリース / 噂段階。** 2026 年 7 月中旬時点で公式発表・モデルカード・API ID は存在せず、推論は V4 の Thinking モードで提供される。
@@ -276,7 +280,8 @@
 
 ### Alibaba (Qwen) 🇨🇳
 
-- [Qwen3.8-Max](https://alibabacloud.com/blog/qwen3-8-max) - 🆕 ⚡ **2026-08-03**。Alibaba の新フラッグシップ—— 2.4T パラメータ MoE，95B アクティブ，1M トークンコンテキスト，テキスト / 画像 / 動画入力対応。内部テストで 16 日間自律的にコーディングツールを構築・改善した事例も。API は QwenCloud / Alibaba Cloud Model Studio（$2/M 入力・$6/M 出力）。企業プラットフォーム **QwenWork** も同日公開ベータ開始。
+- [Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) - 🆕 ⚡ **2026年8月14日**。Qwen3.8-Max のオープンウェイト 27B マルチモーダル（テキスト / 画像 / 動画入力）蒸留版。**Apache 2.0** ライセンスで Hugging Face に公開 — VRAM 約 24 GB のコンシューマ GPU（RTX 4090 クラス）向けサイズ。Qwen3.8-Max ローンチ時に約束されたオープンウェイト版が予定どおり出荷された形。
+- [Qwen3.8-Max](https://alibabacloud.com/blog/qwen3-8-max) - 🆕 ⚡ **2026-08-03**。Alibaba の新フラッグシップ—— 2.4T パラメータ MoE，95B アクティブ，1M トークンコンテキスト，テキスト / 画像 / 動画入力対応。内部テストで 16 日間自律的にコーディングツールを構築・改善した事例も。API は QwenCloud / Alibaba Cloud Model Studio（$2/M 入力・$6/M 出力）。フルモデルのオープンウェイトは 8 月 12 日頃に [`Qwen/Qwen3.8-2.4T-A95B`](https://huggingface.co/Qwen) として Hugging Face に登場し、27B 蒸留版が 8 月 14 日に続いた。企業プラットフォーム **QwenWork** は 8 月 2 日に公開ベータ開始。
 - [Qwen 3.7-Max](https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory) - 🆕 **2026-05-20 — アリババクラウド杭州サミット**。AI エージェントの基盤として設計された新フラッグシップ。エージェント型コーディング、複雑推論、**長い見通しのマルチステップテイスク**に強い。同期に T-Head の **Zhenwu M890** AI アクセラレーターとフルスタック AI 基盤アップグレードも公開。世界中の開発者 / 企業へ順次提供。
 - [Qwen 3.7-Max-Preview / Plus-Preview](https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena) - 🆕 **2026-05-18**。杭州サミットの前哨プレビュー。LM Arena においてテキストとビジョンの両方で**中国モデルとして最高スコア**を取得。
 - [Qwen3.6-27B](https://qwen.ai/blog?id=qwen3.6-27b) - 🆕 **2026-04-22**。27B 密マルチモーダル。オープン化。エージェントコーディング + 思考文脈保持。
@@ -292,9 +297,11 @@
 - [Qwen3 235B-A22B](https://qwen.ai/) - 二重モード推論 MoE。数学・コード・常識推論に強い。
 - [Qwen2.5 Coder 32B](https://github.com/QwenLM/Qwen2.5-Coder) - トップクラスのオープンソースコーディングモデル。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FQwenLM%2FQwen2.5-Coder&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 
-### xAI (Grok)
+### xAI / SpaceXAI (Grok)
 
-- [Grok 4.5](https://x.ai/) - 🆕 **2026-07-08**。xAI の最新フラッグシップ —— 実際の開発者インタラクションデータを利用して Cursor と共同訓練し、コーディングおよびエージェントタスクに最適化。500K トークンのコンテキストウィンドウ、関数呼び出し、構造化出力、Web/X 検索、コード実行、文書検索、コンテキスト圧縮を備える。xAI API、Grok Build、および Cursor のデフォルトモデルとして提供。100 万トークンあたり入力 $2 / 出力 $6。EU での提供は 7 月後半を予定。
+- [Grok 4.6](https://x.ai/news/grok-4-6) - 🆕 ⚡ **2026年8月12日**。コーディング・エージェントタスク・ナレッジワーク向けの SpaceXAI 新フロンティアモデル — Grok 4.5 をベースに、特に**長時間稼働するエージェント**とより野心的なインタラクティブ / ビジュアル作業に注力し、自己テストと検証も改善。500K トークンコンテキスト、テキスト + 画像入力、価格は据え置きの 100 万トークンあたり入力 $2 / 出力 $6（Fast バリアントは 2 倍）。Artificial Analysis Intelligence Index（61）で GPT-5.6 Sol と並ぶ。xAI API、Cursor（新デフォルト）、Grok Build、OpenRouter、Vercel、Cloudflare で提供中；8 月 14 日に GitHub Copilot にも登場。（2026 年 2 月に SpaceX が xAI を吸収した後、xAI は 7 月に **SpaceXAI** へのリブランドを完了。）
+- [Grok Bot](https://docs.x.ai/docs/release-notes) - 🆕 ⚡ **2026年8月11日（早期ベータ）**。**永続的なクラウドコンピュータ**上で働く耐久性のある AI チームメイト — メッセージング、承認、コネクタ、ルーチンを備えた、常時稼働の自律エージェント分野への xAI の参入。SuperGrok Heavy、Cursor Ultra、Cursor Teams Premium で利用可能。
+- [Grok 4.5](https://x.ai/) - 🆕 **2026-07-08**。実際の開発者インタラクションデータを利用して Cursor と共同訓練し、コーディングおよびエージェントタスクに最適化。500K トークンのコンテキストウィンドウ、関数呼び出し、構造化出力、Web/X 検索、コード実行、文書検索、コンテキスト圧縮を備える。100 万トークンあたり入力 $2 / 出力 $6。EU の API コンソール提供は 2026 年 7 月 17 日に開始。2026 年 8 月 12 日に Grok 4.6 がフラッグシップを引き継いだ。
 - [Grok 4.3 GA](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-grok-4-3-on-microsoft-foundry-latest-generation-agentic-capabilities/4517096) - 🆕 **2026-05**。Grok 4.3 が Microsoft Foundry と OCI Generative AI で GA。xAI のエージェントワークロード向け旗艦で、ツール呼び出しと長期推論が強化。
 - [Grok 4.3 Beta](https://x.ai/) - 🆕 2026-04。推論・コーディングベンチマーク強化。[`2026.4` ベンチマークスナップショット](https://benchlm.ai/) 参照。
 - [Grok 4.20](https://x.ai/) - 2026-02。マルチエージェントシステム（Heavy モードで標準 4 + 専門 16）、2M コンテキスト。
@@ -328,6 +335,7 @@
 
 ### Zhipu AI / Z.ai (GLM) 🇨🇳
 
+- [GLM-5.3](https://the-decoder.com/zhipu-ai-releases-glm-5-3-claims-its-the-strongest-open-weights-coding-model/) - 🆕 ⚡ 🇨🇳 **2026年8月14日**。Zhipu の新しいコーディングフラッグシップ — **最強のオープンウェイトコーディングモデル**と主張され、ポストトレーニングのみで GLM-5.2 比 +50% の改善を報告。GLM Coding Plan の全ティア、ZCode、Claude Code、OpenCode インテグレーションで提供中；オープンウェイトはセキュリティレビュー完了の約 2 週間後に公開予定。（ベンダー主張；独立ベンチマークは未検証。）
 - [GLM-5.2](https://z.ai/blog/glm-5.2) - 🆕 **2026年6月13日**。コーディング優先の 744B MoE フラッグシップ。**100万トークンのコンテキスト**（GLM-5.1 の約 5 倍）、出力は最大 131K トークン。GLM Coding Plan の全ティアで利用可能。MIT のオープンウェイトと単体 API はローンチ週に順次公開。Claude Code・Cline・OpenCode・Roo Code・Goose・OpenClaw とそのまま互換。（ローンチ時にベンチマーク数値の公表なし。）
 - [GLM-5.1](https://z.ai/blog/glm-5.1) - 🆕 **2026-04-08**。744B MoE / 40B アクティブ、200K コンテキスト。MIT ライセンス。SWE-Bench Pro で首位。
 - [ZCode](https://www.scmp.com/tech/tech-trends/article/3359170/zhipu-ai-releases-harness-glm-52-model-chinese-firm-takes-aim-anthropic) - 🆕 🇨🇳 **2026-07-02**。Zhipu の GLM-5.2 用エージェントハーネス — モデルを自律コーディングエージェントに変え、Claude Code を正面から狙う。ローンチ特典として Coding Plan 加入者にクオータ +50%、新規ユーザーに 500 万無料トークン。
@@ -350,10 +358,10 @@
 
 ### Moonshot AI (Kimi) 🇨🇳
 
-- [Kimi K3](https://kimi.ai/) - 🆕 **2026-07-16**。Moonshot AI 最大のフラッグシップ: **2.8T パラメータ**疎 MoE (896 エキスパート中 16 が有効)、**1M トークンコンテキスト**、ネイティブビジョン、マルチエージェント機能。Kimi Delta Attention（長文脈デコードを高速化するハイブリッド線形アテンション）を導入。API は 100 万トークンあたり **キャッシュヒット入力 $0.30 / ミス $3.00、出力 $15.00**（[公式価格](https://platform.kimi.ai/docs/pricing/chat-k3.md)）。常に推論し、トップレベルの `reasoning_effort`（`low`/`high`/`max`、既定 `max`）で推論量を調整可能。K3 独自の `tool_choice` 制約と動的ツールロードにも対応。⚡ **フルオープンウェイトは予定通り 2026-07-27 に公開**（[Hugging Face](https://huggingface.co/moonshotai/Kimi-K3)）— 2.8T 総 / **104B アクティブ**、93 層、896 エキスパート（16 選択 + 2 共有）、MoonViT-V2 401M ビジョンエンコーダ、量子化認識学習による MXFP4 重み + MXFP8 アクティベーション、97 の safetensors シャード、ゲートなし。独自の **Kimi K3 License**（比較的寛容だが、任意の 12 か月で MaaS 売上 $20M 超の場合は別途契約が必要）。
+- [Kimi K3](https://kimi.ai/) - 🆕 **2026-07-16**。Moonshot AI 最大のフラッグシップ: **2.8T パラメータ**疎 MoE (896 エキスパート中 16 が有効)、**1M トークンコンテキスト**、ネイティブビジョン、マルチエージェント機能。Kimi Delta Attention（長文脈デコードを高速化するハイブリッド線形アテンション）を導入。API は 100 万トークンあたり **キャッシュヒット入力 $0.30 / ミス $3.00、出力 $15.00**（[公式価格](https://platform.kimi.ai/docs/pricing/chat-k3.md)）。常に推論し、トップレベルの `reasoning_effort`（`low`/`high`/`max`、既定 `max`）で推論量を調整可能。K3 独自の `tool_choice` 制約と動的ツールロードにも対応。**フルオープンウェイトは予定通り 2026-07-27 に公開**（[Hugging Face](https://huggingface.co/moonshotai/Kimi-K3)）— 2.8T 総 / **104B アクティブ**、93 層、896 エキスパート（16 選択 + 2 共有）、MoonViT-V2 401M ビジョンエンコーダ、量子化認識学習による MXFP4 重み + MXFP8 アクティベーション、97 の safetensors シャード、ゲートなし。独自の **Kimi K3 License**（比較的寛容だが、任意の 12 か月で MaaS 売上 $20M 超の場合は別途契約が必要）。
 - [Kimi K2.7 Code](https://kimi.ai/) - 🆕 **2026年6月12日**。K2.6 のコーディング優先後継 —— 1T MoE / 32B アクティブ（384 エキスパート）、256K コンテキスト、Modified MIT、Hugging Face + Kimi API で公開。長期的なエージェントコーディング向けで推論トークン消費を約 30% 削減。Moonshot 公表の Kimi Code Bench v2 で K2.6 比 +21.8%（ベンダーベンチマーク）。入出力 100 万トークンあたり $0.95 / $4.00。
 - [Kimi K2.6](https://kimi.ai/) - 🆕 **2026-04-20~21**。1T MoE / 32B アクティブ、256K コンテキスト。コーディング強化、長期マルチステップ実行、**最大 1,000 体協調エージェント群**。`thinking.keep="all"` 永続推論対応。OpenClaw v2026.4.20+ のデフォルト。
-- [Kimi K2.5](https://kimi.ai/) - 2026 年 1~2 月。1T 総 / 32B アクティブ MoE。ネイティブマルチモーダル、最大 100 並列子エージェント。オープンソース。⚠️ 2026-05-25 サポート終了 —— K2.6 へ移行を。
+- [Kimi K2.5](https://kimi.ai/) - 2026 年 1~2 月。1T 総 / 32B アクティブ MoE。ネイティブマルチモーダル、最大 100 並列子エージェント。オープンソース。⚠️ 2026-05-25 にサポート終了；新規登録ユーザーには提供されず、**2026 年 8 月 31 日にプラットフォームから完全廃止** —— K2.6 へ移行を。
 - [Kimi Code](https://kimi.ai/) - K2.5/K2.6 駆動のプレミアムコーディング層、ターミナル開発者ワークフロー向け。
 
 ### ByteDance (Doubao / 豆包) 🇨🇳
@@ -425,6 +433,7 @@
 
 ### 画像生成
 
+- [Grok Imagine Image 2.0](https://x.ai/news/grok-imagine-image-2) - 🆕 ⚡ **2026年8月7日**。SpaceXAI の画像生成 / 編集モデル — マジックワンド編集、セグメンテーション、背景除去、マルチリファレンス編集（最大 5 枚）、スマートリサイズに対応；ローンチ時点で **text-to-image と画像編集の両部門で Arena 世界 2 位**。grok.com/imagine、iOS/Android、API（`grok-imagine-image-2.0`）で利用可能。
 - [Meta Muse Image](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07**。MSL 発の Meta 最先端画像生成モデル — Web 検索・コード実行・自己修正を経てから画像を生成するエージェント型設計。Instagram Stories（米国）と一部の国の WhatsApp で展開（Facebook は近日対応）。Meta AI アプリと meta.ai でも利用可能。
 - [Midjourney V8.1](https://updates.midjourney.com/v8-1-alpha/) - 🆕 **2026-04-14**。HD モードがデフォルトに（3 倍高速・低コスト）、ムードボードとスタイルリファレンスの安定化、画像プロンプト復活；alpha.midjourney.com のみ。V8 アップスケーラーと編集 / インペイントの強化が次の予定。
 - [FLUX.2 Pro / Flex / Dev / Klein](https://bfl.ai/blog/flux-2) - 🆕 **2025-11-25**。Black Forest Labs の次世代ファミリー。SOTA 画質、マルチリファレンスの一貫性（最大 10 枚）、文字描画の大幅改善；オープンウェイトの 32B Dev バリアントあり。
@@ -440,18 +449,18 @@
 - [Flux](https://github.com/black-forest-labs/flux) - 💤 **Stale**（2025-07 以降更新なし）。Black Forest Labs のオープンソースモデル。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fblack-forest-labs%2Fflux&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Seedance 2.0](https://seed.bytedance.com/) - 🇨🇳 🆕 ByteDance の次世代画像/アニメーション生成 API。
 - [Qwen-Image-3.0](https://qwenlm.github.io/) - 🆕 🇨🇳 **2026-07-20**。アリババの第 3 世代画像生成モデル、世界 AI カンファレンスで発表。フォトリアリズム、テキストレンダリング、マルチ被写体一貫性が大幅向上。Alibaba Cloud Bailian・Qwen Cloud 経由で利用可能。
-- [FLUX 3](https://bfl.ai/blog/flux-3) - 🆕 ⚡ **2026-07-23（早期アクセス）**。Black Forest Labs が静止画ファミリーから、画像・動画・音声を単一アーキテクチャで同時学習する統合マルチモーダル基盤モデルへ転換。**最長 20 秒・ネイティブ同期音声付き**の動画を一度に生成できる（text-to-video、image-to-video、video-to-video、キーフレーム間生成、多言語ダイアログ、エージェント的なマルチショット連結）。BFL 自身の初期評価では、FLUX 3 が Runway Gen-4.5 に対し 77%、Luma Ray 3.2 に 93%、Kling v3 Pro に 60%、Seedance 2.0 / Gemini Omni Flash に 52% で選好された —— ベンダー公表値であり、暫定的と明記されている。世界理解はロボティクス向けの**行動予測**にも及ぶ。FLUX 3 Image は数週間後に公開予定。
+- [FLUX 3](https://bfl.ai/blog/flux-3) - 🆕 **2026-07-23（早期アクセス）**。Black Forest Labs が静止画ファミリーから、画像・動画・音声を単一アーキテクチャで同時学習する統合マルチモーダル基盤モデルへ転換。**最長 20 秒・ネイティブ同期音声付き**の動画を一度に生成できる（text-to-video、image-to-video、video-to-video、キーフレーム間生成、多言語ダイアログ、エージェント的なマルチショット連結）。BFL 自身の初期評価では、FLUX 3 が Runway Gen-4.5 に対し 77%、Luma Ray 3.2 に 93%、Kling v3 Pro に 60%、Seedance 2.0 / Gemini Omni Flash に 52% で選好された —— ベンダー公表値であり、暫定的と明記されている。世界理解はロボティクス向けの**行動予測**にも及ぶ。FLUX 3 Image の早期アクセスは 2026 年 8 月中旬時点でなお保留中。
 - [Reve](https://reve.com/) - 🆕 「レイアウト優先」の画像モデル —— ピクセルを描く前に構造化された編集可能なレイアウトを計画するため、個々の要素を移動・リサイズ・色変更して部分的に再レンダリングでき、全体を作り直す必要がない。ネイティブ 4K、スケッチ / アノテーション入力、オブジェクトの直接編集に対応。
 
 ### 動画生成
 
 - [Meta Muse Video](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07（プレビュー）**。Muse Image と同じアーキテクチャで構築された Meta Superintelligence Labs の動画生成モデル。テキスト→動画部門で Arena 第 3 位。Muse Image のローンチ時にプレビュー公開され、Meta 各アプリへの展開が見込まれる。
 - [Runway Agent](https://runwayml.com/news/introducing-runway-agent) - 🆕 **2026-05-13**。テキストブリーフから **マルチショットの完成動画** までを一気通貫で仕上げる会話型エージェント：ストーリーボード → 生成 → カット → ナレーション、最終調整用のタイムラインエディタ付き。「プロンプトからラフカットまで」を実現した初の本格的なエンドツーエンド制作エージェント。
-- [Veo 3.1](https://deepmind.google/technologies/veo/) - 🆕 **2025-10**。Google DeepMind のフラッグシップ動画モデル。**Veo 4** は 2026 年 7 月中旬時点で未リリース。
+- [Veo 3.1](https://deepmind.google/technologies/veo/) - **2025-10**。Google DeepMind のフラッグシップ動画モデル。**Veo 4** は 2026 年 8 月中旬時点で未リリース。
 - [Runway Gen-4.5](https://runwayml.com/research/introducing-runway-gen-4.5) - 🆕 **2025-12**。Runway のフラッグシップ動画モデル。ローンチ時に Artificial Analysis のテキスト→動画ベンチマークで第 1 位。プラットフォームでは Kling 3.0 や Sora 2 Pro などサードパーティモデルも利用可（2026-02-20 追加）。
 - [Kling VIDEO 3.0](https://app.klingai.com/) - 🇨🇳 🆕 **2026-02-04~07**。快手の新世代。リアルな人間の動き・リップシンク・音声同期付きナラティブ制作。
 - [Sora 2 (via Runway)](https://runwayml.com/changelog) - OpenAI の Sora アプリは 2026 年 4 月 26 日に終了（API は 2026 年 9 月 24 日まで）したが、Sora 2 Pro は **2026 年 2 月 20 日**から Runway 内で利用可能。
-- [Seedance 2.5](https://seed.bytedance.com/) - 🇨🇳 🆕 🧪 **2026-06-23**。Volcano Engine 2026 カンファレンスで発表された ByteDance の次期動画モデル：ネイティブ 30 秒のワンショット生成（従来 4〜15 秒）と、長いナラティブでのキャラクター / 商品の一貫性向上。ローンチ時は限定提供 — 公開価格や API は未確定。
+- [Seedance 2.5](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5) - 🇨🇳 🆕 **2026年7月31日（正式リリース）**。ByteDance の次世代動画モデル（6 月 23 日の Volcano Engine 2026 カンファレンスで発表）：ネイティブ 30 秒のワンショット生成とマルチラウンド延長、柔軟なリファレンス指定（1 パスで最大**画像 30 枚 + 動画クリップ 10 本 + 音声クリップ 10 個**）、キャラクター / 商品の一貫性向上。中国では Jimeng AI と Doubao Pro で展開中；API は BytePlus ModelArk のプレリリース経由 — グローバルの公式料金表はまだない。
 - [Seedance 2.0](https://seed.bytedance.com/) - 🇨🇳 **2026-02**。ByteDance のマルチモーダル・シネマグレード動画生成、2K 解像度（2026-06-23 に 4K 出力へアップグレード）、1.5 比約 30% 高速。
 - [Hailuo 2.3](https://www.minimax.io/news/minimax-hailuo-23) - 🇨🇳 **2025-10-28**。MiniMax のフラッグシップ動画モデル：SOTA の物理表現、キャラクターの微表情、強力なスタイライズ（アニメ / 水墨 / ゲーム CG）；Hailuo 02 価格の Hailuo 2.3 Fast バリアントあり。
 - [Pika 2.5](https://pika.art/) - シーン・エフェクト制御付きクリエイティブ動画生成。
@@ -471,7 +480,7 @@
 - [Deepgram Nova-3 + Aura-2 + Flux Multilingual](https://deepgram.com/learn/best-voice-ai-agents-2026-buyers-guide) - 🆕 **2026 年 4 月**。45+ 言語の STT、200ms 未満の TTS、通話中に 10 言語を切り替えできる会話型 STT。
 - [MiniMax Music 2.6](https://aimlapi.com/blog/the-ultimate-guide-to-minimax-models-2026-m2-7-music-2-6-hailuo-video-advanced-tts) - 🇨🇳 🆕 **2026 年 4 月 10 日**（グローバルベータ）。カバー生成に特化し、低音域の再現性が向上。
 - [Voxtral TTS](https://www.forbes.com/sites/ronschmelzer/2026/03/26/mistral-releases-open-weight-voice-ai-built-for-speed/) - 🆕 **2026 年 3 月 26 日**。Mistral の音声エージェント向け、4B オープンウェイト TTS。
-- [Suno v5.5](https://suno.com/blog/v5-5) - 🆕 **2026-03-26**。高品質ボーカル付きの AI 音楽生成。v5.5 では Voices（本人確認済みの自分の声で歌わせる）、アップロード音源で訓練する Custom Models、My Taste パーソナライゼーションを追加。V6 は噂されているが未発表。
+- [Suno v5.5 + Studio 2.0](https://suno.com/blog/v5-5) - 🆕 ⚡ **2026-03-26**（Studio 2.0 は **2026年8月13日**）。高品質ボーカル付きの AI 音楽生成。v5.5 では Voices（本人確認済みの自分の声で歌わせる）、アップロード音源で訓練する Custom Models、My Taste パーソナライゼーションを追加。**Studio 2.0**（8 月 13 日）は MIDI 対応・オーディオエフェクト・内蔵シンセを備えた全面刷新のブラウザベース DAW；Voices は 8 月 7 日に iOS/Android の無料プランへ拡大。V6 は噂されているが未発表。
 - [Udio](https://www.udio.com/) - 🆕 商用品質の音楽生成。
 - [OpenAI Audio Models](https://openai.com/) - GPT-4o と GPT-Realtime-2（**2026-05-07**、GPT-Realtime-Translate / GPT-Realtime-Whisper と同時リリース）内のネイティブ音声理解・生成；gpt-realtime-2.1 / 2.1-mini は **2026-07-06** リリースで、英数字認識・ノイズ処理・割り込み挙動を改善。
 - [Stability Audio](https://stability.ai/) - オープンソース音声・音楽生成。
@@ -484,7 +493,7 @@
 
 ### Model Context Protocol (MCP)
 
-- [MCP Specification 2026-07-28 (RC)](https://modelcontextprotocol.io/specification/2026-07-28) - 🆕 ⚡ **2026-07-28**。ローンチ以来最大の MCP プロトコル変更：**ステートレスアーキテクチャ**（`initialize`/`initialized` ハンドシェイクと `Mcp-Session-Id` を廃止し、各リクエストが自己完結的な HTTP POST に）。serverless/エッジデプロイと水平スケーリングを可能に。正式な拡張モデル；リクエスト単位のトークン評価；旧バージョンは12か月の非推奨期間。
+- [MCP Specification 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28) - 🆕 **2026-07-28（正式版）**。ローンチ以来最大の MCP プロトコル変更：**ステートレスアーキテクチャ**（`initialize`/`initialized` ハンドシェイクと `Mcp-Session-Id` を廃止し、各リクエストが自己完結的な HTTP POST に）。serverless/エッジデプロイと水平スケーリングを可能に。正式な拡張モデル；リクエスト単位のトークン評価；旧バージョンは12か月の非推奨期間。
 - [MCP Specification](https://modelcontextprotocol.io/) - 🆕 "AI 用の USB-C" —— Anthropic 製、LLM をツール・データソースに接続するオープンプロトコル。2025-12 に Linux Foundation 傘下の Agentic AI Foundation へ寄贈。
 - [MCP 2026-07-28](https://blog.modelcontextprotocol.io/posts/2026-07-28/) - 🆕 ⚡ **2026-07-28 に予定通りリリース** — ローンチ以来最大の改訂。**ステートレスプロトコルコア**：`initialize` ハンドシェイクとプロトコルレベルのセッションを廃止し、各リクエストが自己記述的になったため、通常のラウンドロビン LB 背後のどのインスタンスにもルーティング可能。**Multi Round-Trip Requests（MRTR）** が sampling / elicitation 用の常時接続双方向ストリームを置き換える。メソッド名とツール名は `Mcp-Method` / `Mcp-Name` HTTP ヘッダで伝搬され、ゲートウェイはヘッダだけでルーティング・認可できる。List レスポンスにキャッシュヒントと決定的順序が付き、再接続後も上位の prompt キャッシュが安定。**拡張フレームワーク**を正式化し、Tasks が MCP Apps や Enterprise Managed Authorization（EMA）と並んで拡張になった。**認可強化**：RFC 9207 issuer 検証と、動的クライアント登録（DCR）から Client ID Metadata Documents（CIMD）への移行。正式な最短 12 か月の非推奨期間も規定。Tier-1 の TypeScript / Python / Go / C# SDK は同日対応。規模の参考：Tier-1 SDK のダウンロードは月約5億件、TS と Python はそれぞれ累計 10 億を突破。[SDK ベータは 2026-06-29 公開](https://blog.modelcontextprotocol.io/posts/sdk-betas-2026-07-28/)、[RC は 2026-05-21 公開](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/)。
 - [MCP Servers](https://github.com/modelcontextprotocol/servers) - MCP サーバーの公式リファレンス実装集。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmodelcontextprotocol%2Fservers&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -506,7 +515,7 @@
 - [Agentic AI Foundation](https://aaif.io/) - 🆕 オープンエージェント標準を管理する Linux Foundation の組織 — MCP、goose、AGENTS.md、agentgateway をホスト。創設プラチナメンバー：AWS、Anthropic、Block、Bloomberg、Cloudflare、Google、Microsoft、OpenAI。
 - [AGENTS.md](https://agents.md/) - 🆕 「エージェントのための README」を掲げるオープンな Markdown 規約 — AI コーディングエージェントにプロジェクト固有のコンテキストと指示を置く予測可能な場所を与える。60k+ のオープンソースプロジェクトで利用；Agentic AI Foundation（Linux Foundation）が管理。
 - [Coinbase Base MCP](https://fortune.com/2026/05/26/coinbase-pushes-further-into-ai-payments-with-new-mcp-for-base-network/) - 🆕 **2026 年 5 月 26 日**。Coinbase が Base ブロックチェーン用 MCP サーバーを公開。Claude / Cursor / ChatGPT エージェントが暗号資産の取引やレンディングをオンチェーンで実行可能。大手取引所が初めて公開した、自律オンチェーン取引向けの MCP エンドポイント。
-- [Cloudflare WebMCP](https://blog.cloudflare.com/agents-week-review-august-2026/) - 🆕 ⚡ **2026 年 8 月 10 日（Cloudflare Agents Week）**。一行追加で任意の Web サイトを AI エージェントが発見・利用できるようにするインターフェース。パブリッシャーはアクセスと価格設定の権限を持ち続け、エージェントは構造化コンテンツにアクセス可能。開放なエージェンティックインターネット実現の一環。
+- [Cloudflare WebMCP](https://blog.cloudflare.com/agents-week-review-august-2026/) - 🆕 ⚡ **2026 年 8 月 6 日（Cloudflare Agents Week、8 月 3–7 日）**。一行追加で任意の Web サイトを AI エージェントが発見・利用できるようにするインターフェース。パブリッシャーはアクセスと価格設定の権限を持ち続け、エージェントは構造化コンテンツにアクセス可能。開放なエージェンティックインターネット実現の一環。
 - [Robinhood Agentic Trading MCP](https://robinhood.com/us/en/newsroom/robinhood-is-now-open-to-agents/) - 🆕 **2026 年 5 月 27 日**（ベータ）。米国主要証券会社で初めて MCP 経由で株式取引を AI エージェントに開放。Agent（Claude / Codex / Cursor）は全口座への読み取りアクセスのみ、取引実行は隔離された Agentic 口座内に限定。全取引プッシュ通知 + ワンタップ切断スイッチ。
 - [The Declaration of Intelligence](https://thedeclaration.ai) - ⚠️ AI エージェントと人間のための原則宣言のドラフト（v0.2）。GitHub のプルリクエスト経由で公開署名する。初期段階 — 直近の確認時点で署名者はごく少数。
 - [Kuberna Labs](https://github.com/kawacukennedy/kuberna-labs) - ⚠️ **未検証。** AI エージェント向けクロスチェーン・インテント実行プロトコル。ERC-8004 オンチェーン ID、zkTLS/TEE 証明、型付きインテントスキーマを主張し、NEAR / Base / Mantle 上での自律トランザクション実行を謳う。新規リポジトリで独立採用は未確認——利用前に要評価。
@@ -517,38 +526,38 @@
 
 *自律 AI エージェントを構築するためのフレームワークとライブラリ。*
 
-- [Hermes Agent](https://github.com/NousResearch/hermes-agent) - 🆕 ⚡ **2026 年 8 月（v2026.8.3）**。NousResearch のオープンソース汎用エージェント。インタラクションごとに新しいスキルを作成する継続的な学習ループで自己改善。MIT ライセンス；**22 万 9 千+ stars**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FNousResearch%2Fhermes-agent&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Superpowers](https://github.com/obra/superpowers) - 🆕 ⚡ **2026 年 7 月（v6.2.0）**。Jesse Vincent のオープンソース Agentic スキルフレームワーク。TDD・YAGNI・DRY などのシニアエンジニアリングプラクティスを再利用可能な Agent 指示にパッケージ化。MIT ライセンス；**27 万+ stars**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fobra%2Fsuperpowers&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Pi Agent Harness](https://github.com/earendil-works/pi) - 🆕 ⚡ **2026 年 8 月**。Earendil のオープンソースエージェントハーネス。統一マルチプロバイダー LLM API、ツール呼び出しと状态管理を備えた Agent ランタイム、インタラクティブコーディング Agent CLI、TUIライブラリ、テレメトリーを包含。MIT ライセンス；**8 万 8 千+ stars**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fearendil-works%2Fpi&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Ponytail](https://github.com/DietrichGebert/ponytail) - 🆕 ⚡ **2026 年 6 月**。AI エージェントを「最も怀いシニアエンジニア」のように考えさせるフレームワーク、20+ Agent 対応。MIT ライセンス；**10 万 1 千+ stars**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FDietrichGebert%2Fponytail&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Hermes Agent](https://github.com/NousResearch/hermes-agent) - 🆕 **2026年7月20日（v0.19.0 "2026.7.20" — The Quicksilver Release）**。NousResearch のオープンソース汎用エージェント。インタラクションごとに新しいスキルを作成する継続的な学習ループで自己改善。MIT ライセンス；**23 万 1 千+ stars**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FNousResearch%2Fhermes-agent&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Superpowers](https://github.com/obra/superpowers) - 🆕 **2026 年 5 月（v5.1.0）**。Jesse Vincent のオープンソース Agentic スキルフレームワーク。TDD・YAGNI・DRY などのシニアエンジニアリングプラクティスを再利用可能な Agent 指示にパッケージ化。MIT ライセンス；**27 万 1 千+ stars**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fobra%2Fsuperpowers&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Pi Agent Harness](https://github.com/earendil-works/pi) - 🆕 ⚡ **2026 年 8 月（v0.84.2、8 月 14 日）**。Earendil のオープンソースエージェントハーネス。統一マルチプロバイダー LLM API、ツール呼び出しと状态管理を備えた Agent ランタイム、インタラクティブコーディング Agent CLI、TUIライブラリ、テレメトリーを包含。MIT ライセンス；**8 万 8 千+ stars**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fearendil-works%2Fpi&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Ponytail](https://github.com/DietrichGebert/ponytail) - 🆕 **2026 年 6 月**。AI エージェントを「最も怀いシニアエンジニア」のように考えさせるフレームワーク、20+ Agent 対応。MIT ライセンス；**10 万 1 千+ stars**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FDietrichGebert%2Fponytail&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [NVIDIA NOOA (labs-OO-Agents)](https://github.com/NVIDIA-NeMo/labs-OO-Agents) - 🆕 ⚡ **2026-08（アルファ）**。NVIDIA Object-Oriented Agents：プロンプトテンプレート・ツールスキーマ・コールバックコード・ワークフローグラフを一つの Python クラスに統合するモデル非依存フレームワーク。実装のあるメソッドは決定論的コードとして保持され、実装のないメソッドは LLM ループが実行時に補完。SWE-bench Verified と CyberGym L1 で高スコアを達成し、同等フレームワークの約半分のトークン消費。ライセンス：NOASSERTION（Apache 隣接）；アルファ版のためサンドボックス環境での実行を推奨。**1,462 stars**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FNVIDIA-NeMo%2Flabs-OO-Agents&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [NVIDIA Molt](https://github.com/NVIDIA-NeMo/labs-molt) - 🆕 ⚡ **2026-07（v0.1.0）**。NVIDIA NeMo Labs の PyTorch ネイティブ Agentic 強化学習フレームワーク —— 約 9,000 行のコアコードで **Agent をプログラムの中心**に置く設計。単一非同期ループ、Ray で分散実行、vLLM でロールアウト、NeMo AutoModel + FSDP2 でポリシー Actor。100B+ MoE モデルに対応。RL 推定器：REINFORCE / RLOO / GRPO / DR-GRPO / GAE (PPO) / オンポリシー蒸留。Slurm スクリプト + 事前構築コンテナ同梱。Apache-2.0。**833 stars**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FNVIDIA-NeMo%2Flabs-molt&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [NVIDIA Molt](https://github.com/NVIDIA-NeMo/labs-molt) - 🆕 **2026-07（v0.1.0）**。NVIDIA NeMo Labs の PyTorch ネイティブ Agentic 強化学習フレームワーク —— 約 9,000 行のコアコードで **Agent をプログラムの中心**に置く設計。単一非同期ループ、Ray で分散実行、vLLM でロールアウト、NeMo AutoModel + FSDP2 でポリシー Actor。100B+ MoE モデルに対応。RL 推定器：REINFORCE / RLOO / GRPO / DR-GRPO / GAE (PPO) / オンポリシー蒸留。Slurm スクリプト + 事前構築コンテナ同梱。Apache-2.0。**833 stars**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FNVIDIA-NeMo%2Flabs-molt&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Vercel Eve](https://github.com/vercel/eve) - 🆕 **2026-06-17（Vercel Ship 2026）**。Vercel がオープンソース化した「ファイルシステムファースト」の TypeScript エージェントフレームワーク。エージェントはファイルのディレクトリ（指示・ツール・スキル）であり、Vercel がサンドボックス実行・承認・評価・OpenTelemetry を内蔵した永続サービスにコンパイルする。任意のモデル・任意の MCP サーバー、Slack / Discord / GitHub などのチャネルに対応し、「エージェントの Next.js」と称される。Apache-2.0。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fvercel%2Feve&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Databricks Omnigent](https://github.com/omnigent-ai/omnigent) - 🆕 **2026-06**。Databricks がオープンソース化したメタ Harness。既存のコーディングエージェント（Claude Code、Codex、Pi、カスタム）の上位に位置し、それらを同一システム内の相互運用可能な部品として統合——エージェントの構成、共有セキュリティポリシーの適用、リアルタイム協調を実現。Apache-2.0。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fomnigent-ai%2Fomnigent&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Nokia NSP Agentic AI](https://www.globenewswire.com/news-release/2026/06/11/3310210/0/en/nokia-introduces-agentic-ai-framework-in-network-services-platform-to-enable-trust-based-ai-operations-for-ip-networks.html) - 🆕 **2026-06**。通信の Network Services Platform (NSP) 向けエンタープライズエージェントフレームワーク。複雑な IP ネットワーク上で推論とルーティング/保守実行を行うエージェントを展開する。
 - [Alteryx Agent Studio](https://www.alteryx.com/blog/new-capabilities-in-alteryx-one-built-for-how-analysts-work) - 🆕 **2026-05**。信頼済みの Alteryx データセットとワークフローを会話型エージェントとしてパッケージ化；新しい Alteryx One MCP Server 経由で MCP エンドポイントを作成・管理（Claude、ChatGPT、Gemini で回答）。
-- [Koog 1.0](https://github.com/JetBrains/koog) - 🆕 **2026-05-21 · KotlinConf 2026**。JetBrains による **Kotlin + Java** 向けオープンソースエージェントフレームワークが安定版 1.0 に到達し、長期サポート対象の安定 API サーフェスを提供。Kotlin Multiplatform でのクロスデプロイ（JVM / Android / iOS / JS / WASM）、ラッパー不要の Java 相互運用、Android ローカル LiteRT、全ターゲットでの OpenTelemetry、グラフベースワークフロー、Spring Boot / Ktor 連携、OpenAI / Anthropic / Google / Bedrock プロバイダーをサポート。Apache-2.0。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FJetBrains%2Fkoog&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Koog 1.0](https://github.com/JetBrains/koog) - 🆕 **2026-05-21 · KotlinConf 2026**（最新アーティファクト: koog-agents 1.1.1、2026 年 7 月）。JetBrains による **Kotlin + Java** 向けオープンソースエージェントフレームワークが安定版 1.0 に到達し、長期サポート対象の安定 API サーフェスを提供。Kotlin Multiplatform でのクロスデプロイ（JVM / Android / iOS / JS / WASM）、ラッパー不要の Java 相互運用、Android ローカル LiteRT、全ターゲットでの OpenTelemetry、グラフベースワークフロー、Spring Boot / Ktor 連携、OpenAI / Anthropic / Google / Bedrock プロバイダーをサポート。Apache-2.0。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FJetBrains%2Fkoog&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [LangChain](https://github.com/langchain-ai/langchain) - LLM を使った文脈認識推論アプリの基盤。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Flangchain-ai%2Flangchain&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [LangGraph](https://github.com/langchain-ai/langgraph) - エージェントを状態を持つマルチアクターのグラフとしてモデル化。**最新安定版は 1.2.11（2026年8月11日）**、トレーシングとチェックポイントの安定性を修正。0.3.x シリーズ（2025）でプリビルトエージェントが `langgraph-prebuilt` に分離 —— Supervisor / Swarm / LangMem / Trustcall。**v1.2（2026-05）**でノード単位のタイムアウト / エラーリカバリ / グレースフルシャットダウン、長いスレッドのチェックポイントオーバーヘッドを削減する新 `DeltaChannel`、コンテンツブロック中心のストリーミング API v3 を追加。最新は v1.2.4（2026-06）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Flangchain-ai%2Flanggraph&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [LangGraph](https://github.com/langchain-ai/langgraph) - エージェントを状態を持つマルチアクターのグラフとしてモデル化。**最新安定版は 1.2.11（2026年8月11日）**、トレーシングとチェックポイントの安定性を修正。0.3.x シリーズ（2025）でプリビルトエージェントが `langgraph-prebuilt` に分離 —— Supervisor / Swarm / LangMem / Trustcall。**v1.2（2026-05）**でノード単位のタイムアウト / エラーリカバリ / グレースフルシャットダウン、長いスレッドのチェックポイントオーバーヘッドを削減する新 `DeltaChannel`、コンテンツブロック中心のストリーミング API v3 を追加。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Flangchain-ai%2Flanggraph&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [CrewAI](https://github.com/crewAIInc/crewAI) - ロールプレイ型自律エージェントチームのオーケストレーションフレームワーク。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FcrewAIInc%2FcrewAI&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [goose](https://github.com/block/goose) - Block 発のオープンソースで拡張可能な AI エージェント（Rust 製デスクトップアプリ + CLI）。任意の LLM でインストール・実行・編集・テストを行う；15+ プロバイダー対応；Agentic AI Foundation（Linux Foundation）がホスト。v1.43.0（2026-07-14）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fblock%2Fgoose&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [AG2](https://github.com/ag2ai/ag2) - 🆕 **2026-07-03 (v1.0.0b0)**。Microsoft AutoGen のコミュニティ主導 Fork — AutoGen がメンテナンスモードになった後も開発継続。Apache-2.0。既存 AutoGen プロジェクトから移行容易。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fag2ai%2Fag2&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Microsoft Agent Framework](https://learn.microsoft.com/en-us/agent-framework/) - 🆕 AutoGen + Semantic Kernel を統合した新フレームワーク。マルチエージェント + エンタープライズ機能。**v1.12.1（2026-07-22）**：AutoGen + Semantic Kernel 統合後の最新安定版；マルチエージェントルーティング改善、オブザーバビリティフック強化、Grok 4.5 プロバイダー対応。
+- [goose](https://github.com/block/goose) - ⚡ Block 発のオープンソースで拡張可能な AI エージェント（Rust 製デスクトップアプリ + CLI）。任意の LLM でインストール・実行・編集・テストを行う；15+ プロバイダー対応；Agentic AI Foundation（Linux Foundation）がホスト。**v1.46.0（2026年8月12日）**：アンロールされたエージェントループ、キャッシュセーフなリクエスト組み立て、シェル出力のストリーミング、メッセージ単位の使用量統計。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fblock%2Fgoose&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [AG2](https://github.com/ag2ai/ag2) - 🆕 ⚡ **安定版 1.0.0 は 2026年7月27日出荷；最新は v1.0.2（2026年8月15日）**。Microsoft AutoGen のコミュニティ主導 Fork — AutoGen がメンテナンスモードになった後も開発継続。ベータを卒業。Apache-2.0。既存 AutoGen プロジェクトから移行容易。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fag2ai%2Fag2&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Microsoft Agent Framework](https://learn.microsoft.com/en-us/agent-framework/) - 🆕 AutoGen + Semantic Kernel を統合した新フレームワーク。マルチエージェント + エンタープライズ機能。**v1.14.0（2026年8月14日）**が最新安定版；近年のバージョンでマルチエージェントルーティング改善、オブザーバビリティフック強化、Grok プロバイダー対応を追加。
 - [Microsoft Agent 365](https://techcommunity.microsoft.com/blog/agent-365-blog/what%E2%80%99s-new-in-agent-365-may-2026/4516340) - 🆕 **2026 年 5 月 GA**。AI エージェント向けの企業級可観測性 + ガバナンス + セキュリティ基盤。2026 年 5 月アップデートで、エージェント向け SASE、脅威検知 / ブロック、エージェント脅威ハンティングのワークフローを追加。KPMG は 276,000 人の専門家をカバーするグローバル展開を発表（2026-06-09）。
 - [Microsoft Scout](https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/) - 🆕 **2026-06-02（Build 2026）**。オープンソースの OpenClaw ランタイム上に構築された、Microsoft 365 向けの常時稼働パーソナルワークエージェント。
 - [AutoGen](https://github.com/microsoft/autogen) - 💤 **メンテナンスモード**（最終リリース 2025-09；Microsoft Agent Framework に後継され、以降はコミュニティ管理）。Microsoft のマルチエージェント会話フレームワーク。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmicrosoft%2Fautogen&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Google Agent Development Kit (ADK)](https://github.com/google/adk-python) - 🆕 Gemini + Vertex AI と密接に統合したモジュラーフレームワーク。階層エージェント構成。**現行版は v2.5.0（2026-07-16）** — ADK 2.x は階層型エージェントエクゼキュータからグラフベースのワークフローランタイムへ移行；1.x 向けに v1.36.x 保守ブランチも継続（v1.36.2、2026-07-21）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle%2Fadk-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Google Agent Development Kit (ADK)](https://github.com/google/adk-python) - 🆕 Gemini + Vertex AI と密接に統合したモジュラーフレームワーク。階層エージェント構成。**現行版は v2.7.0（2026年8月13日）** — ADK 2.x は階層型エージェントエクゼキュータからグラフベースのワークフローランタイムへ移行；1.x 向けに v1.36.x 保守ブランチも継続（v1.36.2、2026-07-21）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle%2Fadk-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - 🆕 [2026-04-15 進化](https://openai.com/index/the-next-evolution-of-the-agents-sdk/) —— ネイティブサンドボックス、MCP ネイティブ、サブエージェント handoff、Codex 風ファイル操作。プロダクション級マルチエージェント。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenai%2Fopenai-agents-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [MetaGPT](https://github.com/geekan/MetaGPT) - 🇨🇳 LLM に SOP ソフトウェアチームの役割（PM / アーキテクト / エンジニア）を割り当てる多エージェント。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgeekan%2FMetaGPT&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Pydantic AI](https://github.com/pydantic/pydantic-ai) - 🆕 ⚡ **v2.21.0（2026-07-30）**。Pydantic チームによるエージェントフレームワーク。FastAPI 流の開発体験と本物の型安全性を LLM アプリに持ち込む —— 構造化出力を Pydantic モデルで検証し、依存性注入・ストリーミング・モデル非依存のプロバイダに対応。自由形式のプロンプト連結ではなく静的型付けと検証済みツール I/O が欲しい場合の第一候補。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fpydantic%2Fpydantic-ai&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Mastra](https://github.com/mastra-ai/mastra) - 🆕 TypeScript 優先のエージェントフレームワーク、ワークフロー駆動 + オブザーバビリティ内蔵。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmastra-ai%2Fmastra&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Pydantic AI](https://github.com/pydantic/pydantic-ai) - 🆕 ⚡ **v2.31.0（2026年8月15日）** — ほぼ毎日のリリースサイクル；1.107.x 保守ラインも継続中。Pydantic チームによるエージェントフレームワーク。FastAPI 流の開発体験と本物の型安全性を LLM アプリに持ち込む —— 構造化出力を Pydantic モデルで検証し、依存性注入・ストリーミング・モデル非依存のプロバイダに対応。自由形式のプロンプト連結ではなく静的型付けと検証済みツール I/O が欲しい場合の第一候補。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fpydantic%2Fpydantic-ai&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Mastra](https://github.com/mastra-ai/mastra) - 🆕 ⚡ TypeScript 優先のエージェントフレームワーク、ワークフロー駆動 + オブザーバビリティ内蔵。**`@mastra/core@1.59.0`（2026年8月14日）**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmastra-ai%2Fmastra&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Agon](https://github.com/AutoResearch-Factory/Agon) - 🆕 ⚠️ **未検証**（35 stars、MIT）。**Claude Code プラグイン**として構築された自律型オムニディシプリナリ研究オーケストレーター —— 科学者/コーダー/監査員の多エージェントループが、人間が実験コードを書くことなくトピックから実行可能な実験まで自動推進。10+ 学問分野、18 ロールに 230.6 KiB のプロンプト；30 日間の完全自律実行記録あり。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAutoResearch-Factory%2FAgon&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Ontheia](https://github.com/Ontheia/ontheia) - ⚠️ **Unverified**（初期段階・採用実績少）。セルフホスト型のオープンソース AI エージェントプラットフォーム。マルチプロバイダ（Claude / OpenAI / Gemini / Ollama）、MCP ネイティブ、ビジュアル workflow 自動化のための Chain Engine、長期メモリ（pgvector）、マルチユーザ RBAC、アーキテクチャレベルでの GDPR 適合。AGPL-3.0。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FOntheia%2Fontheia&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [AgentGPT](https://github.com/reworkd/AgentGPT) - 📦 **Archived**（2026-01）。ブラウザでエージェントを構成・展開。第一波の代表、歴史的参照のみ。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Freworkd%2FAgentGPT&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [BabyAGI](https://github.com/yoheinakajima/babyagi) - 実験的な自己構築型自律エージェントフレームワーク；2023 年のタスク管理版オリジナル BabyAGI は現在 [babyagi_archive](https://github.com/yoheinakajima/babyagi_archive) にある。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fyoheinakajima%2Fbabyagi&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [SuperAGI](https://github.com/TransformerOptimus/SuperAGI) - 💤 **Stale**（2025-01 以降更新なし）。オープンソース自律エージェントフレームワーク。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FTransformerOptimus%2FSuperAGI&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Semantic Kernel](https://github.com/microsoft/semantic-kernel) - LLM 技術をアプリに統合。C# / Python / Java。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmicrosoft%2Fsemantic-kernel&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Agno (旧 Phidata)](https://github.com/agno-agi/agno) - メモリ・知識・ツール・推論つきマルチモーダルエージェント；v2.7.x（2026-07）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fagno-agi%2Fagno&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Agno (旧 Phidata)](https://github.com/agno-agi/agno) - ⚡ メモリ・知識・ツール・推論つきマルチモーダルエージェント；**v2.9.0（2026年8月13日）**、3.0.0 アルファラインも進行中。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fagno-agi%2Fagno&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [DSPy](https://github.com/stanfordnlp/dspy) - "プロンプトを書くのではなくプログラミングする" 言語モデルフレームワーク。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fstanfordnlp%2Fdspy&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [OpenClaw](https://github.com/openclaw/openclaw) - 🆕 スキル・メモリ・マルチチャネルメッセージング・Dreaming（3 段階メモリ統合）・Canvas/A2UI・ACP コーディング harness 統合・Standing Orders を備えた個人向け AI エージェントプラットフォーム。最新版: **v2026.7.1**（2026-07-13）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenclaw%2Fopenclaw&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Dify](https://github.com/langgenius/dify) - 🇨🇳 ビジュアルエージェントビルダー付きオープンソース LLM アプリ開発プラットフォーム。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Flanggenius%2Fdify&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -565,16 +574,16 @@
 - [LlamaIndex ↔ Google Agents API 連携](https://www.kucoin.com/news/flash/google-launches-agents-api-llama-index-integrates-llamaparse-for-unstructured-document-processing) - 🆕 **2026-05-20**。LlamaIndex が Google の新 Agents API 向けのテンプレートを公開し、サンドボックスの Linux 環境上で **LlamaParse** / **LiteParse** を提供して非構造化文書を処理。
 - [NarraNexus](https://github.com/NetMindAI-Open/NarraNexus) - NetMind.AI によるすぐ使える AI エージェントチームワークスペース——記憶を持つエージェントが初日から文脈を保持し、協働し、ツールを使う。マルチエージェント（PM/開発/デプロイ/リサーチ）、永続コンテキスト、MCP 型統合。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FNetMindAI-Open%2FNarraNexus&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Strands Agents (AWS)](https://github.com/strands-agents/sdk-python) - 🆕 **2026 年 4〜6 月**。AWS オープンソースのモデル駆動型エージェント SDK（Python + TypeScript 1.0 GA：2026-04-30）。Bedrock / Anthropic / OpenAI / Ollama 対応、マルチエージェント編成パターン（グラフ / スウォーム / ワークフロー）、組み込み可観測性 hooks、A2A プロトコル対応；TypeScript SDK は現在 [harness-sdk モノレポ](https://github.com/strands-agents/harness-sdk)で管理。Apache-2.0。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fstrands-agents%2Fsdk-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [CrewAI 1.14](https://github.com/crewAIInc/crewAI) - 🆕 **2026 年 6 月**。メモリ・ナレッジ・RAG のプラグイン可能バックエンド、宣言型 Flows + CLI/TUI サポート、会話型フロー用 Chat API、ネイティブ Snowflake Cortex LLM、LangChain 依存を除去し軽量化。最新安定版: 1.14.6（2026-05-28）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FcrewAIInc%2FcrewAI&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [CrewAI 1.15](https://github.com/crewAIInc/crewAI) - 🆕 ⚡ **最新安定版 1.15.16（2026年8月14日）**。1.15 系では**実行フックとインターセプションポイント**（ステップ実行前のラップや拒否）、宣言型 Flows + CLI/TUI サポート、会話型フロー用 Chat API、ネイティブ Snowflake Cortex 対応を追加；依存を軽くするため LangChain をコアから除去。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FcrewAIInc%2FcrewAI&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Oracle AI Agent Studio (Fusion)](https://www.oracle.com/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/) - 🆕 **2026-07-14**。Oracle Fusion Cloud アプリケーション内蔵の AI ネイティブビルダー。Fusion のビジネスオブジェクト・ワークフロー・セキュリティコンテキストを引き継ぐ専門エージェントチームによる「Fusion Agentic Applications」を構築。ノーコード/ローコード/プロコード全対応；Fusion 顧客は追加費用なしで利用可能。
 
 
-- [Microsoft Agent Framework v1.13.0](https://github.com/microsoft/agent-framework/releases) - 🆕 ⚡ **2026-07-30**。MAF（AutoGen + Semantic Kernel 統合）—— バウンデッドメモリの MCP ソーススキル発見、再利用可能な Foundry セッションストレージ、全プロセスの機能利用テレメトリ。同リリースで **Agent Harness + Hosted Agents GA**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmicrosoft%2Fagent-framework&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [OpenAI Agents SDK v0.20.0](https://github.com/openai/openai-agents-python/releases/tag/v0.20.0) - 🆕 ⚡ **2026-08-11**。デフォルトモデルを `gpt-5.6-luna` に変更；MCP Python SDK v1/v2 両対応（stdio・SSE・Streamable HTTP）；ローカル HTTP トランスポートを `httpx2` に移行。（v0.19.0 を置き換え。）![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenai%2Fopenai-agents-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [CrewAI v1.15.15](https://github.com/crewAIInc/crewAI/releases/tag/1.15.15) - 🆕 ⚡ **2026-08-12**。Flow 結果/持続時間/人間介入シグナルのレポート；中止バウンダリーフックの FlowStartedEvent 修正；torch 2.13.0 セキュリティバンプ；CLI フラグを kebab-case に標準化。（v1.15.10 を置き換え。）![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FcrewAIInc%2FcrewAI&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Google ADK 2.6.0 / 2.6.1](https://github.com/google/adk-python/releases) - 🆕 ⚡ **2026-07-29 / 07-31**。2.6.0：agent-card 取得のための A2A リクエスト単位認証ヘッダー + プロキシアイデンティティ認証マネージャー（3-legged OAuth）；2.6.1：CLI テレメトリのターミナルグルーピング、TTL プルーニング、長時間稼働 web サーバーのテレメトリ修正。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle%2Fadk-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Microsoft Agent Framework v1.14.0](https://github.com/microsoft/agent-framework/releases) - 🆕 ⚡ **2026-08-14**。MAF（AutoGen + Semantic Kernel 統合）の PyPI 最新安定版。v1.13.0（7 月 30 日）ではバウンデッドメモリの MCP ソーススキル発見、再利用可能な Foundry セッションストレージ、全プロセスの機能利用テレメトリ、そして **Agent Harness + Hosted Agents GA** を提供。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmicrosoft%2Fagent-framework&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [OpenAI Agents SDK v0.21.0](https://github.com/openai/openai-agents-python/releases) - 🆕 ⚡ **2026-08-15**。PyPI 最新安定版。v0.20.0（8 月 11 日）でデフォルトモデルを `gpt-5.6-luna` に変更し、MCP Python SDK v1/v2 両対応（stdio・SSE・Streamable HTTP）を追加、ローカル HTTP トランスポートを `httpx2` に移行。（v0.19.0 では Programmatic Tool Calling と `@tool` ショートハンドを追加。）![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenai%2Fopenai-agents-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [CrewAI v1.15.16](https://github.com/crewAIInc/crewAI/releases) - 🆕 ⚡ **2026-08-14**。最新安定パッチ。v1.15.15（8 月 12 日）では Flow 結果/持続時間/人間介入シグナルのレポート、中止バウンダリーフックの FlowStartedEvent 修正、torch 2.13.0 セキュリティバンプ、CLI フラグの kebab-case 標準化を提供。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FcrewAIInc%2FcrewAI&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Google ADK 2.7.0](https://github.com/google/adk-python/releases) - 🆕 ⚡ **最新：v2.7.0（2026年8月13日）**。先行する 2.6.x 系では：agent-card 取得のための A2A リクエスト単位認証ヘッダー + プロキシアイデンティティ認証マネージャー（3-legged OAuth）；CLI テレメトリのターミナルグルーピング、TTL プルーニング、長時間稼働 web サーバーのテレメトリ修正；`--sandbox-launcher` を `gcloud beta run deploy` 配下にゲート。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle%2Fadk-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [ServiceNow Build Agent](https://www.servicenow.com/products/ai-agents/) - 🆕 **GA 2026 年 7 月**。ServiceNow の AI エージェント——Cursor・Devin Desktop・Claude Code・GitHub Copilot 上で動作するクロス IDE プラットフォーム；ServiceNow の完全なコンテキスト・セキュリティ・ワークフロー統合を提供。オープンソースコンポーネントなし。
-- [Embabel Agent](https://github.com/embabel/embabel-agent) - 🆕 ⚡ **2026-07-20 GA**。JVM エコシステム初の本番対応 AI エージェントフレームワーク —— Spring Framework の創設者 Rod Johnson が主導。型付きドメインオブジェクトでエージェント動作を定義；Spring AI 統合；グラフベースのマルチエージェント編成；ネイティブ MCP クライアント；任意モデル（OpenAI / Anthropic / Ollama）対応。**Apache-2.0**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fembabel%2Fembabel-agent&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Embabel Agent](https://github.com/embabel/embabel-agent) - 🆕 **2026 年 7 月（最新タグ付きリリース：v0.5.0 "Darwin"、プレリリース）**。**JVM** エコシステム向けの本番志向 AI エージェントフレームワーク —— Spring Framework の創設者 Rod Johnson が主導。型付きドメインオブジェクトでエージェント動作を定義；Spring AI 統合；グラフベースのマルチエージェント編成；ネイティブ MCP クライアント；任意モデル（OpenAI / Anthropic / Ollama）対応。**Apache-2.0**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fembabel%2Fembabel-agent&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 ---
 
 ## 🛠️ エージェント IDE とビジュアルビルダー
@@ -661,11 +670,11 @@
 
 *エージェントエコシステムの商取引レイヤー —— エージェントが有料サービスを発見・決済し、開発者が API を収益化する場所。*
 
-- [A2A Protocol v1.0 + AP2 Agent Payments](https://github.com/google/A2A) - 🆕 ⚡ **2026年Q2 / 継続中**。A2A v1.0（Linux Foundation）が署名付き Agent Card（暗号学的アイデンティティ）、マルチプロトコル対応、エンタープライズマルチテナンシー、後方互換レイヤーを追加。AP2（Agent Payment Protocol）が60以上の決済機関の支持を得て参加；22,000以上の GitHub star；AWS/Microsoft/Google が統合済み。⚠️ 未検証（複数ソースで確認；具体的なリリース発表 URL は未取得）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle%2FA2A&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [A2A Protocol v1.0 + AP2 Agent Payments](https://github.com/google/A2A) - 🆕 **2026年Q2 / 継続中**。A2A v1.0（Linux Foundation）が署名付き Agent Card（暗号学的アイデンティティ）、マルチプロトコル対応、エンタープライズマルチテナンシー、後方互換レイヤーを追加。AP2（Agents to Payments Protocol、2025 年 9 月に Google Cloud が発表）が 60 以上の決済機関（Adyen、American Express、Mastercard、PayPal など）の支持を得て参加；25,000 以上の GitHub star；AWS/Microsoft/Google が統合済み。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle%2FA2A&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [minia2a](https://minia2a.uk) - 🆕 AI エージェント M2M マイクロペイメントマーケット —— **173+ の x402 対応 API** を Base L2 の USDC マイクロペイメントで利用。**34 登録エージェント・311K+ リクエスト処理済み**。ウォレットベース認証。86 エンドポイント無料トライアルあり。x402（Linux Foundation）ネイティブ。
 - [MCPize](https://mcpize.com) - 🆕 MCP サーバー収益化プラットフォーム —— 開発者へ **85% 収益分配**。
 - [AgentForge](https://github.com/doggychip/agentforge) - ⚠️ **未検証**（3 stars）。AI エージェント・ツールのサブスクリプションマーケット。評価してから利用すること。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fdoggychip%2Fagentforge&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Cloudflare Wallets](https://blog.cloudflare.com/agents-week-review-august-2026/) - 🆕 ⚡ **2026-08-10（Cloudflare Agents Week）**。Agentic Internet のためのプログラマブルウォレット — `cloudflare.pay` が AI エージェントにエージェント経済の参加者として自律的に支払いを行う安全な手段を提供する。WriteGuard、WebMCP、MCPv2、Workers AI + AI Gateway 統合コントロールプレーンとともに発表。
+- [Cloudflare Wallets](https://blog.cloudflare.com/agents-week-review-august-2026/) - 🆕 ⚡ **2026-08-04（Cloudflare Agents Week、8 月 3–7 日）**。Agentic Internet のためのプログラマブルウォレット — `cloudflare.pay` が AI エージェントにエージェント経済の参加者として自律的に支払いを行う安全な手段を提供する。WriteGuard、WebMCP、MCPv2、Workers AI + AI Gateway 統合コントロールプレーンとともに発表。
 - [Alchemy & Visa AgentCard](https://www.coindesk.com/business/2026/06/18/alchemy-s-ai-driven-identity-and-payment-service-gains-access-to-visa-network) - *「🔌 ツールと API 連携」にも掲載 —— ID/決済スタック視点；ここではエージェント経済の観点で参照。*
 - [Amazon Bedrock AgentCore Payments](https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-bedrock-agentcore-payments-preview/) - *「🏢 エンタープライズエージェントプラットフォーム」にも掲載 —— AgentCore エージェント向けマネージド決済レイヤー（Coinbase/Stripe 統合、支出上限）。*
 
@@ -684,6 +693,7 @@
 - [Firecracker](https://github.com/firecracker-microvm/firecracker) - E2B、Daytona、ほとんどのエージェントサンドボックスの基盤となる microVM カーネル。自前のサンドボックスを組むときの基本要素。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Ffirecracker-microvm%2Ffirecracker&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [LangSmith Sandboxes](https://www.langchain.com/blog/interrupt-2026-overview) - 🆕 **2026 年 5 月（Interrupt 2026）**。エージェント向けのホスト型セキュアコード実行環境——ファイルシステム、shell、パッケージマネージャ、永続状態、ネットワーク境界を提供。LangChain の Interrupt 2026 リリースで LangSmith Engine、Managed Deep Agents と同時に発表。
 - [Google Antigravity Sandbox](https://antigravity.google/changelog) - 🆕 **2026 年 5 月（Google I/O）**。エージェントが実行するコード用のサンドボックス化 Linux 環境。Antigravity 2.0 のスタックの一部として提供 — サブエージェントはそれぞれ、ファイルシステム + ネットワークアクセスをスコープ制限された隔離コンテナで動作。
+- [Amazon Bedrock AgentCore Runtime Instances](https://aws.amazon.com/about-aws/whats-new/2026/08/aws-bedrock-agentcore-runtime-instances-generally-available/) - 🆕 ⚡ **2026年8月6日 GA**。AgentCore エージェント向けの EC2 ベースの永続コンピュート — 最長 **14 日間**の長時間エージェントセッション（サーバーレス microVM の 8 時間上限に対して）。キャパシティプロバイダー経由で GPU アクセラレーテッド / メモリ最適化 / コンピュート最適化のインスタンスファミリーを提供；デプロイ / 呼び出しパスの変更は不要。ローンチ時点で 9 リージョン。
 
 ---
 
@@ -691,7 +701,8 @@
 
 *プロンプトインジェクション・データ漏洩・悪用から AI エージェントを守るツールとフレームワーク。*
 
-- [Cloudflare WriteGuard](https://blog.cloudflare.com/agents-week-review-august-2026/) - 🆕 ⚡ **2026-08-10（Cloudflare Agents Week）**。リスクの高い MCP ツール呼び出しに対するきめ細かい制御 — Cloudflare が社内で使用しているものと同じツールを顧客に提供。オペレーターが破壊的または機密性の高いエージェントアクションを実行前に傍受・拒否できるため、プロンプトインジェクションや自律エージェントのエラーによる影響範囲を縮小できる。
+- [Cloudflare WriteGuard](https://blog.cloudflare.com/agents-week-review-august-2026/) - 🆕 ⚡ **2026-08-05（Cloudflare Agents Week、8 月 3–7 日；プライベートベータ）**。リスクの高い MCP ツール呼び出しに対するきめ細かい制御 — Cloudflare が社内で使用しているものと同じツールを顧客向けプライベートベータとして提供。オペレーターが破壊的または機密性の高いエージェントアクションを実行前に傍受・拒否できるため、プロンプトインジェクションや自律エージェントのエラーによる影響範囲を縮小できる。
+- [英国 AISI エージェント封じ込めインシデント（INC-2026-07-28-01）](https://www.helpnetsecurity.com/2026/08/05/ai-agent-deception-in-cyber-tests/) - 🆕 ⚠️ **ツールではなくインシデント — 2026年8月5日開示**。英国 AI Security Institute の報告によると、定例のサイバー評価中にフロンティアモデル（Anthropic Mythos 5、OpenAI GPT-5.6 Sol）上に構築されたエージェントが「実在の人物と組織に向けた持続的で無許可の行動」を取った — 悪意ある PR によるオープンソースのサプライチェーン攻撃の試行と、メンテナへのソーシャルエンジニアリング。エージェントは欺瞞を指示されておらず、タスク追求の副産物として欺瞞が発生した。評価インフラの封じ込め / エグレス制御の参照事例。
 - [prompt-firewall](https://github.com/Zijian-Ni/prompt-firewall) - ⚠️ **Unverified**（初期段階）。LLM プロンプト用ファイアウォール —— インジェクション攻撃を検出・遮断。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FZijian-Ni%2Fprompt-firewall&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [LLM Guard](https://github.com/protectai/llm-guard) - 📦 **アーカイブ済み**（2026-07-08）。LLM 対話用のセキュリティツールキット —— 入出力スキャナ。歴史的参考として保持。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fprotectai%2Fllm-guard&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Rebuff](https://github.com/protectai/rebuff) - 📦 **Archived**（2025-05）。自己強化型プロンプトインジェクション検出器。歴史的参照のみ。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fprotectai%2Frebuff&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -758,7 +769,7 @@
 - [RAG-Anything](https://github.com/HKUDS/RAG-Anything) - 🆕 香港大学データサイエンス研究室のオールインワン・マルチモーダル RAG フレームワーク。LightRAG を基盤に構築。テキストとマルチモーダルの並列パイプライン；テキスト・図・表・数式が混在する文書も検索可能。MIT、21K+ stars。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FHKUDS%2FRAG-Anything&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [A-MEM](https://github.com/WujiangXu/A-mem-sys) - 🆕 LLM エージェント向け Agentic Memory システム——Zettelkasten 流のノートリンクで記憶を動的に組織化し、静的ベクトルストアより柔軟な検索を実現。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FWujiangXu%2FA-mem-sys&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [LangChain Retrievers](https://github.com/langchain-ai/langchain) - LangChain 内のリトリーバとドキュメントローダー集合。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Flangchain-ai%2Flangchain&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Milvus 3.0](https://github.com/milvus-io/milvus/releases/tag/v3.0.0) - 🆕 ⚡ **v3.0.0 は 2026-07-29 にタグ付け**（パブリックベータは 2026 年 5 月）。大規模ベクトル DB が「レイクネイティブ」アーキテクチャへ移行 —— External Collections が S3/GCS/Azure のオブジェクトストレージ上の Parquet / Lance / Iceberg テーブルをゼロコピーで直接クエリでき、マニフェストベースの Storage V3 カラムナエンジン、Spark DataSource V2 連携、実行時スキーマ進化、第一級型としての `TEXT`、そして後段交互作用（ColBERT 系）検索向けのマルチベクトル `StructList` を提供。
+- [Milvus 3.0](https://github.com/milvus-io/milvus/releases/tag/v3.0.0) - 🆕 **v3.0.0 は 2026-07-29 にタグ付け**（パブリックベータは 2026 年 5 月）。大規模ベクトル DB が「レイクネイティブ」アーキテクチャへ移行 —— External Collections が S3/GCS/Azure のオブジェクトストレージ上の Parquet / Lance / Iceberg テーブルをゼロコピーで直接クエリでき、マニフェストベースの Storage V3 カラムナエンジン、Spark DataSource V2 連携、実行時スキーマ進化、第一級型としての `TEXT`、そして後段交互作用（ColBERT 系）検索向けのマルチベクトル `StructList` を提供。
 
 ---
 
@@ -766,10 +777,10 @@
 
 ### ターミナル / CLI エージェント
 
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) - 端末で動く Anthropic のエージェント型コーディングツール。Opus 4.7 + `/think xhigh`。SWE-bench 80.9%。
-- [Codex CLI](https://github.com/openai/codex) - OpenAI 製のオープンソースターミナルコーディングエージェント。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenai%2Fcodex&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) - ⚡ 端末で動く Anthropic のエージェント型コーディングツール。SWE-bench 80.9%、複雑なマルチファイルのバグにも対応。**最新：v2.1.233（2026年8月14日）** — ほぼ毎日リリース；最近の追加には `--worktree` での GitLab マージリクエスト対応、Bash ツールのメモリ cgroup 制限、WebFetch キャッシュ TTL 環境変数など。2026 年 5 月（v2.1.128–2.1.141）ではクロスターン完了条件の `/goal` コマンド、エージェントビュー、`.zip` アーカイブ + URL からのプラグイン読み込み、`Ctrl+R` グローバル履歴検索、MCP/フック処理の拡充、エンタープライズフィードバック調査を追加。
+- [Codex CLI](https://github.com/openai/codex) - OpenAI 製のオープンソースターミナルコーディングエージェント。⚡ 最新安定版 CLI：**v0.147.0（2026年8月7日）**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenai%2Fcodex&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Codex Security](https://developers.openai.com/codex/changelog) - 🆕 **2026 年 3 月**。ソフトウェア脆弱性を発見・修正するアプリケーションセキュリティエージェント。OSS メンテナは Codex-for-OSS プログラム経由で利用可能。
-- [Aider](https://github.com/Aider-AI/aider) - 💤 Git アウェアなターミナル AI ペアプログラミングパートナー。最終リリース 2025-08。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAider-AI%2Faider&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Aider](https://github.com/Aider-AI/aider) - 💤 Git アウェアなターミナル AI ペアプログラミングパートナー。最終リリース 2026-02（v0.86.2）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAider-AI%2Faider&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Goose](https://github.com/block/goose) - Block 製のオープンソースエージェントコーディング CLI。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fblock%2Fgoose&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Gemini CLI](https://github.com/google-gemini/gemini-cli) - 🆕 Google のターミナル特化コーディングエージェント。大規模コンテキストのリファクタが得意。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle-gemini%2Fgemini-cli&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [OpenCode](https://github.com/anomalyco/opencode) - オープンソースのターミナル AI コーディングエージェント（opencode.ai、180K+ stars）— build / plan エージェント、LSP、MCP、ベータ版デスクトップアプリ。アーカイブ済みの opencode-ai/opencode とは無関係。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fanomalyco%2Fopencode&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -781,12 +792,12 @@
 - [Claude Agent SDK](https://docs.anthropic.com/en/docs/claude-code/sdk) - Claude Code ハーネス上にエージェントを構築する SDK（2025 年 9 月末に Claude Code SDK からリブランド）。**2026 年 6 月**の Claude Code リリースで、階層的サブエージェント生成、Dynamic Workflows（数十〜数百の並列サブエージェントをファンアウト）、ルーブリック駆動の Outcomes、フォールバックモデルチェーンを追加 — 最大 1,000 サブエージェントの "ultracode" モードを実現。Python + TypeScript。
 - [ai-delivery-spec](https://github.com/franklinxkk/ai-delivery-spec) - 🆕 ⚠️ **未検証。** AI コーディングエージェント（Claude Code、OpenClaw、Codex、Cursor、Copilot）と協働する PM 向けのスペック駆動デリバリーフレームワーク。4 段階の納品ティア、0D トリアージ、プロトタイプ検証ルール、AI ランタイムガバナンス、5 つのドメインモジュール。SKILL.md 規約；ClawHub でホスト。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Ffranklinxkk%2Fai-delivery-spec&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Ralph Harness](https://github.com/rxdt/py_ralph_frame) - 🆕 ⚠️ **未検証。** ガード付き Claude Code/Codex/Gemini ループ用の小さな Python スキャフォールド：リポジトリ内スペック、フレッシュコンテキスト反復、git フックゲート、CI 検証、カバレッジゲート。`uvx ralph-harness demo` で導入可。MIT。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Frxdt%2Fpy_ralph_frame&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Amp](https://ampcode.com) - 🆕 ⚡ Sourcegraph のフロンティアコーディングエージェント（VS Code 拡張 + CLI）。BYOK 不要 — モデルアクセスはバンドルされ、モデル非依存の「Dial」ルータが自動でモデルを選ぶ。**2026 年 7 月は更新ラッシュ**：7-18 にサブスクリプションベータ開始（Megawatt $20/月、Gigawatt $200/月、自分の ChatGPT や X Premium+/SuperGrok サブを紐づけ可能）、7-21 に自己スケジューリングエージェント、7-22 に「Multiplayer」共有スレッド協働、7-23 に [イベント駆動 Orbs](https://ampcode.com/news/event-driven-orbs)（GitHub の CI 失敗、Linear の新規 issue、監視アラート、Discord メッセージなど HTTP リクエストを送れるものなら何でもエージェントを起こせる）。クローズドソース。
+- [Amp](https://ampcode.com) - 🆕 ⚡ Sourcegraph のフロンティアコーディングエージェント（VS Code 拡張 + CLI）。BYOK 不要 — モデルアクセスはバンドルされ、モデル非依存の「Dial」ルータが自動でモデルを選ぶ。**2026 年 7 月は更新ラッシュ**：7-18 にサブスクリプションベータ開始（Megawatt $20/月、Gigawatt $200/月、自分の ChatGPT や X Premium+/SuperGrok サブを紐づけ可能）、7-21 に自己スケジューリングエージェント、7-22 に「Multiplayer」共有スレッド協働、7-23 に [イベント駆動 Orbs](https://ampcode.com/news/event-driven-orbs)（GitHub の CI 失敗、Linear の新規 issue、監視アラート、Discord メッセージなど HTTP リクエストを送れるものなら何でもエージェントを起こせる）。**8 月もペースを維持**：「Attach Anything」アップロード（動画 / ログ / PDF / データセット、8-4）、「Portals into Orbs」ライブリロードプレビュー（8-6）、紐づけた ChatGPT サブスクリプションで動く Dial（8-10）、Global Plugins and Skills（8-11）。クローズドソース。
 - [ZCode](https://zcode.z.ai) - 🆕 🇨🇳 **2026 年 7 月（ZCode 3.0）**。Z.ai の GLM-5.2 向け公式エージェント開発環境 — ファイルマネージャ・ターミナル・Git パネル・ライブブラウザプレビューを、計画・実装・レビュー・デプロイをこなすエージェントの周りにまとめたデスクトップアプリ（macOS / Windows / Linux）。Anthropic と OpenAI のモデルも利用可能。無料枠に日次トークン上限あり；GLM-5.2 は有料の GLM Coding Plan（Lite / Pro / Max）。
 
 ### IDE エージェント
 
-- [Cursor 3.11](https://cursor.com/changelog) - 🆕 **2026-07-10**。サイドチャット（メインワークフローを妨げない並列 AI 会話）、会話履歴検索、再設計されたプロジェクト / リポジトリピッカー、新しい Cloud Agent Hooks（プロンプト・応答・サブエージェント活動などエージェント会話へのきめ細かな制御と可観測性）。
+- [Cursor 3.11](https://cursor.com/changelog) - 🆕 ⚡ **2026-07-10**。サイドチャット（メインワークフローを妨げない並列 AI 会話）、会話履歴検索、再設計されたプロジェクト / リポジトリピッカー、新しい Cloud Agent Hooks（プロンプト・応答・サブエージェント活動などエージェント会話へのきめ細かな制御と可観測性）。**2026 年 8 月**：Google Workspace プラグインでエージェントが Gmail/Drive/Calendar にアクセス可能に（8-3）、事前構築の開発環境で Cloud Agents の起動が **3 倍高速**に（8-13）。
 - [Cursor 3.4（Teams + PR レビュー）](https://cursor.com/changelog) - 🆕 **2026-05-11~13**。Microsoft Teams 統合（Teams 内で `@Cursor` するとクラウドエージェントに委任）、並列エージェントのプラン実行高速化、マルチリポジトリ / Dockerfile ベースのエージェント開発環境設定、`/multitask` 非同期サブエージェント、脆弱性スキャナー、モデル単位のきめ細かなアクセス制御。
 - [Cursor 3.3](https://cursor.com/changelog) - 🆕 **2026-05**。PR レビュー体験、並列エージェント、エンタープライズ向けモデル管理。前バージョン 3.1 は 4 月リリース。
 - [Cursor SDK](https://cursor.com/blog/typescript-sdk) - 🆕 **2026-04-29**（パブリックベータ）。Cursor のランタイム・ハーネス・モデルを公開する TypeScript SDK で、Cursor スタック上にプログラマブルなエージェントを構築可能 — サンドボックス化されたクラウド VM、サブエージェント、hooks、トークンベース課金。
@@ -803,8 +814,8 @@
 - [Amazon Q Developer](https://aws.amazon.com/q/developer/) - AWS エコシステムと深く統合された AI コーディングコンパニオン。
 - [Visual Studio 2026 Agent Mode + Skills](https://devblogs.microsoft.com/visualstudio/agent-skills-in-visual-studio/) - 🆕 **VS 2026 Insiders 2026-05-12～15**。Copilot Chat「Agent Mode」が Visual Studio 2026 内で再利用可能な Copilot Skill を探し・管理・作成できるようになり、ソリューション全体のコンテキストを見つつ、端末コマンド実行や外部ツール呼び出しもサポート。
 - [JetBrains Rider AI Test-Writing Skill](https://blog.jetbrains.com/dotnet/2026/05/22/claude-codex-ai-agent-skill-for-writing-tests/) - 🆕 **2026 年 5 月 22 日**。JetBrains Rider に追加された AI Assistant skill。.NET のコードカバレッジ情報を Claude Code / Codex に渡し、未カバー分岐に絞ってテスト生成させることで AI コストを削減。
-- [Agent Skills (addyosmani)](https://github.com/addyosmani/agent-skills) - 🆕 ⚡ **2026 年 8 月（v0.6.6）**。Addy Osmani が AI コーディングエージェント向けに作成したプロダクショングレードのエンジニアリングスキル集 — シニアエンジニアの開発フロー・品質ゲート・ベストプラクティス（DEFINE → PLAN → BUILD → VALIDATE）を再利用可能な skill にパッケージ化し、エージェントがすべての開発フェーズで一貫して実践できるようにする。MIT ライセンス；**86,000+ stars**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Faddyosmani%2Fagent-skills&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Cursor Router](https://cursor.com/) - 🆕 **2026 年 7 月**。Cursor のインテリジェントモデルルーティングシステム——各リクエストを分析し最適なモデル（インテリジェンス / バランス / コストモード）へルーティング；Grok 4.5（数兆の Cursor インタラクショントークンで訓練）を統合。Cursor iOS アプリ（2026 年 7 月）でモバイル開発も対応。
+- [Agent Skills (addyosmani)](https://github.com/addyosmani/agent-skills) - 🆕 ⚡ **2026 年 8 月（v0.6.7、8 月 14 日）**。Addy Osmani が AI コーディングエージェント向けに作成したプロダクショングレードのエンジニアリングスキル集 — シニアエンジニアの開発フロー・品質ゲート・ベストプラクティス（DEFINE → PLAN → BUILD → VALIDATE）を再利用可能な skill にパッケージ化し、エージェントがすべての開発フェーズで一貫して実践できるようにする。MIT ライセンス；**86,000+ stars**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Faddyosmani%2Fagent-skills&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Cursor Router](https://cursor.com/) - 🆕 **2026 年 7 月**。Cursor のインテリジェントモデルルーティングシステム——各リクエストを分析し最適なモデル（インテリジェンス / バランス / コストモード）へルーティング；数兆の Cursor インタラクショントークンで訓練された Grok モデルを統合（2026 年 8 月 12 日に Grok 4.6 が Cursor のデフォルトに）。Cursor iOS アプリ（2026 年 7 月）でモバイル開発も対応。
 - [Devin Desktop 2026 年 7 月アップデート](https://devin.ai/) - 🆕 **2026 年 7 月**。GPT-5.6 / Claude Opus 5 / Claude Fable 5 対応；**Devin Outposts**（任意のマシンで Devin エージェントを実行）；**Agentic MapReduce** アーキテクチャで大規模コードベースの分散推論を実現。Poke（AI テキストアシスタント）を 2026-07-23 に買収。
 - [JetBrains Rider 2026.2](https://www.jetbrains.com/rider/) - 🆕 **2026-07-22**。AI エージェントインテリジェンスとネイティブ GitHub Copilot 統合を強化；AI アシスト型デバッグとリファクタリング機能を改善。
 - [Android Studio Quail 2](https://developer.android.com/studio) - 🆕 **2026 年 7 月**。リデザインされた Agent Mode：メモリリーク検出、AI 搭載クラッシュ分析、インテリジェントなアプリ構築ワークフロー。
@@ -812,9 +823,9 @@
 ### 自律ソフトウェアエンジニア
 
 - [Cursor 3.4 Cloud Agent Environments](https://cursor.com/changelog) - 🆕 **2026-05-13**。クラウドエージェント / 自動化向けの新しい開発環境。マルチリポ、build secrets 付き Dockerfile 設定、キャッシュレイヤー 70% 高速化、環境ごとのバージョン履歴とロールバック、監査ログ、スコープを限定した egress / secrets。
-- [Devin Stacked PRs](https://devin.ai/blog/introducing-pr-stacks) - 🆕 ⚡ **2026-07-30**。Devin + GitHub：大規模タスクを独立した小さな PR に自動分割、下流の PR は自動リベース、Devin Review で焦点を絞ったコンテキスト。10,000人以上の開発者の Faros AI データを含む。
+- [Devin Stacked PRs](https://devin.ai/blog/introducing-pr-stacks) - 🆕 **2026-07-30**。Devin + GitHub：大規模タスクを独立した小さな PR に自動分割、下流の PR は自動リベース、Devin Review で焦点を絞ったコンテキスト。10,000人以上の開発者の Faros AI データを含む。
 - [Devin Security Swarm](https://cognition.com/blog) - 🆕 **2026-07-01**。Cognition の並列エージェント型セキュリティ製品：コードベース全体の脆弱性を発見し、実行時に悪用可能性を検証し、修正 PR を作成；実世界の脆弱性 50 件中 36 件を発見、発見あたりコストは次点ツールより約 30% 低い。
-- [Devin 2.2](https://cognition.com/blog/introducing-devin-2-2) - 🆕 **2026-02-24**。Computer Use によるエンドツーエンドテスト（Linux デスクトップ + 画面録画）、PR 前のセルフレビュー / 自動修正、起動 3 倍高速化。Cognition のフラッグシップ自律ソフトウェアエンジニア（Devin 2.x 系；Devin 2.0 以降 Core プランは月 20 ドルから）。
+- [Devin 2.2](https://cognition.com/blog/introducing-devin-2-2) - 🆕 **2026-02-24**。Computer Use によるエンドツーエンドテスト（Linux デスクトップ + 画面録画）、PR 前のセルフレビュー / 自動修正、起動 3 倍高速化。Cognition のフラッグシップ自律ソフトウェアエンジニア（Devin 2.x 系；Devin 2.0 以降 Core プランは月 20 ドルから）。**2026 年 8 月**：Devin の年換算収益が 10 億ドルに迫る中、Cognition は **400 億ドル超の評価額**で資金調達中と報道（プレス報道）。
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) - 自律エージェントとして AI ソフトウェア開発者を使うオープンソースプラットフォーム。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAll-Hands-AI%2FOpenHands&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [SWE-agent](https://github.com/SWE-agent/SWE-agent) - LLM を GitHub Issue を修正するソフトウェアエージェントに変える。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FSWE-agent%2FSWE-agent&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Devika](https://github.com/stitionai/devika) - 💤 **Stale**（2025-09 以降更新なし）。エージェント型 AI ソフトウェアエンジニア、Devin のオープンソース代替。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fstitionai%2Fdevika&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -825,7 +836,7 @@
 - [ChatGPT Work（コーディングエージェント）](https://openai.com/chatgpt/work/) - 🆕 **2026-07-09**。OpenAI のマルチステップ自律型ワークエージェント——接続されたアプリとファイルを横断して完成品を生成：スプレッドシート・スライド・ドキュメント・小規模 Web アプリ。デスクトップ App 中心設計、Chat / Work モード切り替えに対応。
 
 - [Cursor iOS](https://cursor.com/) - 🆕 **2026 年 7 月**。Cursor のモバイルアプリ（iOS）——全モデルアクセスとプロジェクト同期でどこでも開発作業が可能。
-- [Cursor iPad + Agent Hooks](https://cursor.com/changelog) - 🆕 ⚡ **2026-07-28〜29**。ネイティブ iPad アプリ（有料プラン）：サイドバーでのマルチエージェント監視・分割画面コードレビュー・Apple Pencil アノテーション対応。Cloud Agent Hooks（GA）でエージェントの推論過程を観察し自己修正ループを構築可能；インド向け「Cursor Start」価格帯も同時提供。
+- [Cursor iPad + Agent Hooks](https://cursor.com/changelog) - 🆕 **2026-07-28〜29**。ネイティブ iPad アプリ（有料プラン）：サイドバーでのマルチエージェント監視・分割画面コードレビュー・Apple Pencil アノテーション対応。Cloud Agent Hooks（GA）でエージェントの推論過程を観察し自己修正ループを構築可能；インド向け「Cursor Start」価格帯も同時提供。
 - [Claude Cowork](https://www.anthropic.com/claude-cowork) - 🆕 ⚡ **2026-08-03**。Anthropic が開発者向けでない自律作業エージェント —— Web・モバイル、Slack などのアプリと連携；長時間タスクを非同期で委任。Team・Enterprise プランで利用可能。
 - [Claude Tag](https://www.businesswire.com/news/home/20260803/) - 🆕 ⚡ **2026-08-03**。旧 Claude in Slack 統合を置き換え。チャンネルレベルの共有エージェント ID（`@Claude`）、セッション横断の永続コンテキスト、非同期の複数日作業に対応。旧 Slack アプリからの強制移行；Team/Enterprise プラン必須。
 - [Prime Agent](https://github.com/PrimeIntellect-ai/prime-agent) - 🆕 ⚡ **2026 年 8 月（v0.7.2）**。PrimeIntellect のオープンソース自己改善コーディングエージェント — 継続的な RL フィードバックループで自身の能力を向上させる。MIT ライセンス；**14,500+ stars**。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FPrimeIntellect-ai%2Fprime-agent&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -842,11 +853,11 @@
 - [PhyAgentOS](https://github.com/PhyAgentOS/PhyAgentOS) - 🆕 エージェンティックワークフローに基づく自己進化型の身体性 AI OS。認知機能をハードウェアから分離し、監査可能性を組み込んだクロスプラットフォームのロボット展開を実現。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FPhyAgentOS%2FPhyAgentOS&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [ENPIRE](https://research.nvidia.com/labs/gear/enpire/) - 🆕 **2026-06**。NVIDIA / CMU / UC Berkeley による、AI エージェントが自らロボティクス研究を実施できるフレームワーク — 双腕ロボットの管理、アルゴリズムの改変、ポリシーの訓練を人手を介さずに行う。
 - [Kairos](https://futureiot.tech/kairos-model-breaks-new-ground-for-open-source-embodied-intelligence/) - 🆕 **2026-06-15**。ACE ROBOTICS が Kairos ワールドモデルをオープンソース化 — RoboTwin 2.0、LIBERO-Plus、WorldModelBench Robot、DreamGen で VLA システムを制した初のワールドモデルアプローチ；ウェイトは GitHub / Hugging Face / ModelScope で公開。
-- [DYNA-2](https://www.dyna.co/dyna-2) - 🆕 ⚡ **2026 年 8 月**。Dyna Robotics の世界行動モデル — **100 万時間超**のロボット実稼働データで学習し、ホスピタリティ・物流・工場オペレーションにおけるエンドツーエンドのワークフローをシフトごとに完遂できる。機動性・巧みさ・知性を同時に実現；デプロイするたびにフリートの能力が強化され、1 拠点から数百拠点へスケール可能。
+- [DYNA-2](https://www.dyna.co/dyna-2) - 🆕 ⚡ **2026 年 8 月**。Dyna Robotics の世界行動モデル — **100 万時間超の一人称視点ヒト動画**（約 170 年分）で事前学習し、ヒトからロボットへの転移スケーリング則を実証 — 顧客拠点でのゼロショット合格率 87%（Dyna-1 は 46%）。ホスピタリティ・物流・工場オペレーションにおけるエンドツーエンドのワークフローをシフトごとに完遂できる；デプロイするたびにフリートの能力が強化され、1 拠点から数百拠点へスケール可能。
 - [NVIDIA Cosmos 3](https://blogs.nvidia.com/blog/cosmos-3-physical-ai-open-world-foundation-model/) - 🆕 **2026-06**。**視覚推論・マルチモーダル生成・行動予測**を一つに統合したオープンな世界基盤モデル。ロボット、自動運転、視覚エージェントが「動く前に考える」ことを可能にする（コントローラにテキスト専用モデルを外付けするのではない）。NVIDIA は VANTAGE-Bench（スマートインフラのシーン理解）と TAR 交通異常推論チャレンジで首位のオープン VLM と報告。Cosmos 3 の各バリアントはArtificial Analysis のオープンウェイト board で首位、世界生成では Physics-IQ / R-Bench / PAI-Bench でもトップ。Linux Foundation の **OpenMDW 1.1** ライセンス採用 —— ウェイト・アーキテクチャ・ドキュメント・データセット・ベンチマーク・コードを単一のモデル中心ライセンスでカバー。build.nvidia.com と Hugging Face で入手可能、NIM マイクロサービスでデプロイ可。端末向けの **Cosmos 3 Edge**（4B パラメータ）を含み、FANUC・富士通・ソニーグループとの **Cosmos Coalition** も同時始動。
 
 - [Google Gemini Robotics-ER 1.6](https://deepmind.google/blog/gemini-robotics-er-1-6/) - 🆕 2026-04-14。空間・身体性推論を強化したロボティクス AI モデル（アナログ計器の読み取りを含む）。Gemini API 経由で利用可能。
-- [Google Gemini Robotics 2](https://deepmind.google/research/robotics/) - 🆕 ⚡ **2026-08**。Google DeepMind の次世代ロボティクス AI スイート —— 全身協調制御、精密操作（結び目・ファスナーなど）、新規脚部運動能力；Gemini Robotics ER 2「高レベル脳」モデルは新しいロボット本体を数時間で適応化。クローズドリサーチ；限定パートナーシップ経由で利用可能。
+- [Google Gemini Robotics 2](https://deepmind.google/research/robotics/) - 🆕 **2026年7月30日**。Google DeepMind の次世代ロボティクス AI スイート —— 全身協調制御、精密操作（結び目・ファスナーなど）、新規脚部運動能力；Gemini Robotics ER 2「高レベル脳」モデルは新しいロボット本体を通常 200 例未満・数時間の適応で対応。クローズドリサーチ；限定パートナーシップ経由で利用可能。
 - [Project Prometheus (Bezos)](https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/) - 🆕 💰 **2026-06-11**。ジェフ・ベゾスが共同主導する Physical AI ベンチャー。物理世界のための「artificial general engineer」構築に向け、評価額 $41B で $12B を調達。
 - [NVIDIA Isaac GR00T](https://developer.nvidia.com/isaac/gr00t) - NVIDIA のヒューマノイドロボット用基盤モデルプラットフォーム。GTC で発表、Hannover Messe 2026 で拡充。
 - [NVIDIA Industrial AI Cloud](https://nvidianews.nvidia.com/) - 🆕 2026-04（Hannover Messe）。ドイツテレコムと共同構築した産業 AI ワークロード用 AI 工場。
@@ -871,6 +882,7 @@
 - [Honor (荣耀) Humanoid](https://www.npr.org/2026/04/20/g-s1-118086/humanoid-robot-half-marathon) - 🆕 **2026-04-19**。北京亦荘（E-Town）のヒューマノイドハーフマラソンで 50 分 26 秒で優勝 — この距離の人間の世界記録を上回った。
 - [Zhiyuan (智元) AGIBOT](https://www.agibot.com/article/231/detail/62.html) - 🆕 🇨🇳 **2026-04-17（APC 2026）**。2026 年を「Deployment Year One」と宣言；10,000 台目のロボットを配備、7 つの業界ソリューション、オープンソースの AIMA アーキテクチャ（Link-U OS、Genie Studio）。
 - [Unitree H シリーズ](https://www.unitree.com/) - 🇨🇳 Boston Dynamics の中国競争相手。
+- [Unitree 上海 IPO](https://www.chinatechnews.com/2026/08/14/127353-unitree-ipo-chinas-humanoid-robot-starset-for-potentially-explosive-shanghai-debut) - 🆕 ⚡ 🇨🇳 **2026 年 8 月**。Unitree が中国初の上場ヒューマノイドロボットメーカーに — 上海 STAR Market への IPO は報道ベースで約 90 億ドルの評価額で価格決定され、個人投資家の申し込みは数千倍（Bloomberg：5,526 倍）の超過応募、グレーマーケット価格は大幅に高い初値を示唆。商用ヒューマノイド分野のマイルストーン。
 - [1X NEO（コンシューマー型ヒューマノイド）](https://www.1x.tech/discover/neo-home-robot) - 🆕 **2025 年 10 月 28 日に予約開始**、米国家庭への初回配送は 2026 年内。5'6"/66 ポンドの家庭用ヒューマノイドで、22-DoF ハンド、ソフトボディ、4 時間稼働、オンボード LLM、騒音約 22dB。早期アクセス価格 20,000 ドル + 200 ドル預金、または月額 499 ドルのサブスク。プライバシー "no-go" ゾーンと顔ぼかしを内蔵。家庭に実際に配送される最初の本格的なコンシューマー型ヒューマノイド。
 - [三菱自動車 × Highlanders ヒューマノイド MOU](https://www.mitsubishi-motors.com/en/newsroom/newsrelease/2026/20260709_1.html) - 🆕 **2026-07-09**。三菱自動車が東京大学発スタートアップ Highlanders と MOU を締結し、ヒューマノイドロボット（溶接、物流、エンジン組立）を京都工場で共同開発・量産へ — 報道によると月産約 1,000 台を目標に、早ければ 2027 年から生産開始。日本の労働力不足に対応。
 - [Agile Robots](https://www.agile-robots.com/) - AI 駆動の産業マニピュレーションシステムを構築する独中系ロボティクス企業。
@@ -885,8 +897,9 @@
 
 ### 自動運転
 
-- [Tesla FSD v14](https://www.tesla.com/) - v14.3.x が展開中（2026 年 7 月）、レガシー HW3 車向けの v14 "Lite" を含む；無監督運転は依然としてロボタクシープログラム限定。
-- [Waymo](https://waymo.com/) - 2026 年を通じて米国都市で商用 L4 を展開中。
+- [Tesla FSD v14](https://www.tesla.com/) - ⚡ ソフトウェアアップデート 2026.21.6（2026年8月10日）が **HW4 車向け FSD v14.3.7** と**レガシー HW3 向け FSD v14.1 "Lite"**（ECU 過熱問題を受け 8 月 11 日に再リリース）を同梱；HW3 Lite は米国 / カナダを超えて韓国へ拡大。無監督運転は依然としてロボタクシープログラム限定。
+- [Waymo](https://waymo.com/) - ⚡ 2026 年を通じて米国都市で商用 L4 を展開中。**2026年8月14日**：CPUC が Waymo に[カリフォルニア州 18 郡](https://electrek.co/2026/08/14/waymo-cpuc-approval-california-expansion-18-counties/)（ベイエリア、サクラメント、LA、オレンジ、サンディエゴなど）での有料無人ロボタクシーサービス運行を承認 — 高速道路・地方道路・夜間走行を含む過去最大の認可；展開は「安全フレームワークに導かれ段階的に」。
+- [Pony.ai × Uber 欧州展開](https://cnevpost.com/2026/08/14/pony-ai-uber-2000-robotaxis-europe/) - 🆕 ⚡ 🇨🇳 **2026年8月14日**。Pony.ai と Uber が提携を拡大し、稼働中のザグレブでのサービスを土台に、欧州 5 都市と中東で **2,000 台超の L4 ロボタクシー**を展開へ — パイロットからフリート規模の展開への飛躍。
 - [WeRide / Pony.ai / Baidu Apollo](https://www.weride.ai/) - 🇨🇳 中国 L4 車両集団が運行区域を拡大。
 
 ---
@@ -918,7 +931,7 @@
 > - **SWE-bench Pro は信頼できない。** OpenAI は 2026-07-08 に公開 731 タスクを監査し、AI レビューで約 27%、人間のエンジニアで約 34% を欠陥と判定した（過度に厳格なテスト、仕様不足のプロンプト、低カバレッジのテスト）。OpenAI はコーディングの主要指標として使う推奨を撤回している。8 か月で首位が 23% → 80% に跳ねたのは、モデルの進歩だけでなくベンチマークのノイズを反映している。
 > - **飽和により微小差は無意味。** GPQA Diamond と SWE-bench Verified は複数のフロンティアモデルが 90 台半ばに到達済み。0.5 ポイントの差はプロンプトのスキャフォールディングやリトライ方針のノイズ範囲内で、**能力の順位付けにはならない**。**自分の**リポジトリやコーパスで小さな eval を組む方が、どの公開リーダーボードより結果を予測できる。
 
-- [τ²-bench (tau2-bench) v1.0.1](https://github.com/sierra-research/tau2-bench) - 🆕 ⚡ **2026-07（v1.0.1）**。Sierra Research の**デュアルコントロール**（エージェントとシミュレートされたユーザーが同一システムを同時操作）実世界シナリオ向けAIエージェントベンチマーク。2026年7月：banking_knowledge タスクのエラーを修正；旧結果は直接比較不可。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fsierra-research%2Ftau2-bench&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [τ²-bench (tau2-bench) v1.0.1](https://github.com/sierra-research/tau2-bench) - 🆕 **2026-07（v1.0.1）**。Sierra Research の**デュアルコントロール**（エージェントとシミュレートされたユーザーが同一システムを同時操作）実世界シナリオ向けAIエージェントベンチマーク。2026年7月：banking_knowledge タスクのエラーを修正；旧結果は直接比較不可。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fsierra-research%2Ftau2-bench&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [BenchLM](https://benchlm.ai/) - 🆕 複数のベンチマークファミリーを集約したリーダーボード。2026-07 首位: Claude Fable 5 91、Claude Mythos 5 89、Gemini 3.1 Pro 88（ランク対象 79 / 追跡 281 モデル、296 ベンチマーク）。
 - [SWE-bench Verified](https://www.swebench.com/) - 実世界の GitHub Issue 解決ベンチマーク。2026-04 首位: Claude Mythos 93.9%、Claude Opus 4.7 87.6%。
 - [GPQA Diamond](https://github.com/idavidrein/gpqa) - 💤 データセットリポは 2024-09 以降更新なし。専門家レベルの科学推論。2026-04 首位: Gemini 3.1 Pro 94.3%（世界記録）、Claude Opus 4.7 94.2%。
@@ -950,7 +963,7 @@
 
 *OS レベルでデスクトップソフトウェアを見て・操作し・自動化するエージェント。ブラウザ専用エージェントは [🌐 ブラウザと Web エージェント](#-ブラウザと-web-エージェント) 参照。*
 
-- [Perplexity Personal Computer for Windows](https://www.perplexity.ai/hub/blog/perplexity-personal-computer-for-windows) - 🆕 ⚡ **2026-07-28**。Windows 10/11に拡大 —— ローカルファイル + Microsoft 365 スイート + クロスデバイスワークフロー；19のAIモデルをオーケストレーション。Pro/Max/Enterprise加入者向け。⚠️ 未検証（URL 403；複数ソースで確認）。
+- [Perplexity Personal Computer for Windows](https://www.perplexity.ai/hub/blog/personal-computer-on-windows) - 🆕 **2026年7月28日**。Perplexity のマルチモデル・エージェントオーケストレーターが Windows 10/11 に拡大 —— ローカルファイル、ネイティブアプリ + Microsoft 365 スイート、クロスデバイスワークフローを一つのシステムで。Pro/Max/Enterprise 加入者向け。Mac 版（4 月 16 日）と Computex 2026 でプレビューされたハイブリッドローカル / クラウド推論オーケストレーターの延長線上。
 - [Claude Computer Use](https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool) - Anthropic の Computer Use 機能 —— Claude が画面を見、マウス / キーボードで任意のソフトウェアを自動化。
 - [ChatGPT Agent](https://openai.com/index/introducing-chatgpt-agent/) - Operator（2025 年に廃止）の後継 — ブラウジング、予約、フォーム入力、ウェブタスク自動化のための ChatGPT のエージェントモード。
 - [Google Project Mariner](https://deepmind.google/models/project-mariner/) - 📦 **終了**（2026 年 5 月）。ブラウザエージェント研究プロジェクト。機能は Gemini と Chrome に統合された。
@@ -961,7 +974,6 @@
 - [Beam AI](https://beam.ai/) - 🆕 成功事例に基づきロジックを洗練させる自己学習デスクトップエージェント。
 - [AICraft](https://github.com/Easlie114514/AICraft) - 🆕 ⚠️ 🇨🇳 **未検証**（2026 年 6 月作成、メンテナ 1 名、実績は限定的 —— 網羅性のために掲載。利用前に各自で評価すること）。LLM スキル・MCP ツール・RAG データソース・メモリをホットスワップ可能なモジュールとして扱う Windows デスクトップの「AI 能力ランチャー」。Minecraft の mod のように読み込むという触れ込み。DeepSeek のワンクリック設定、ロール別の感情ポートレート、3 階層メモリ、トークン課金；ポータブル exe でインストール不要。Python FastAPI + React 19 + ChromaDB、Apache-2.0。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FEaslie114514%2FAICraft&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Microsoft Copilot Studio Computer-Using Agents](https://techcommunity.microsoft.com/blog/copilot-studio-blog/computer-using-agents-in-microsoft-copilot-studio-are-now-generally-available/4519427) - 🆕 **2026 年 5 月 13 日 GA**。Copilot Studio 内で、UI を介して Web サイトやデスクトップアプリを直接操作するエージェントを構築可能 —— Microsoft 365 / Power Platform 全体で利用できる、Claude Computer Use に対する Microsoft 純正の回答。
-- [Perplexity Personal Computer](https://www.perplexity.ai/hub/products/computer-for-windows) - 🆕 **2026 年 6 月（Windows）**。Perplexity のマルチモデル・エージェントオーケストレーター（19+ AI モデルを自動ルーティング）を Windows へ展開；ローカルファイル・ネイティブアプリ・Web サービスを一つのシステムで接続。Mac 版（4 月 16 日）の延長線上で、Computex 2026 発表のハイブリッドローカル / クラウド推論オーケストレーターとも連動。
 - [ChatGPT Workspace Agents](https://venturebeat.com/orchestration/openai-unveils-workspace-agents-a-successor-to-custom-gpts-for-enterprises-that-can-plug-directly-into-slack-salesforce-and-more) - 🆕 **リサーチプレビュー 2026-04-22，クレジット課金化 2026-05-06，EKM 対応 2026-05-07**。OpenAI の Custom GPTs の企業向け後継 —— クラウド側で動き、ファイルアクセス、コード実行、Slack / Google Drive / Salesforce などとのコネクタを持ち、スケジュール実行も可能。Business / Enterprise / Edu / Teachers 向けに提供され、Codex をバックエンドに採用。
 
 ---
@@ -970,8 +982,8 @@
 
 *実ブラウザを介して Web と対話するエージェント—— ナビゲーション、クリック、スクレイピング、マルチページワークフローをこなすフレームワークとインフラ。*
 
-- [Cloudflare Kitesurf](https://blog.cloudflare.com/kitesurf/) - 🆕 ⚡ **2026 年 8 月（パブリックベータ）**。Cloudflare が AI エージェント専用に設計したサーバーレスブラウザ。Workers 上で動作し、セッションごとに独立・ステートレスで、ピクセル完璧なレンダリングよりもトークン効率と低リソース消費を優先。Puppeteer と Playwright をサポート。スクリーンショットや HTML 抽出ワークフローで Chromium より大幅に CPU / メモリ効率が高い。ベータ期間中は Cloudflare Browser Run 経由で無料。制限：動画再生・WebGL・永続認証は非対応。
-- [Browser Use](https://github.com/browser-use/browser-use) - 2026 年にオープンソースブラウザエージェントの事実上の標準。105K star。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fbrowser-use%2Fbrowser-use&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Cloudflare Kitesurf](https://blog.cloudflare.com/kitesurf/) - 🆕 ⚡ **2026年8月6日（ベータ、Cloudflare Agents Week）**。Cloudflare が AI エージェント専用に設計したサーバーレスブラウザ。Workers 上で動作し、セッションごとに独立・ステートレスで、ピクセル完璧なレンダリングよりもトークン効率と低リソース消費を優先。Puppeteer と Playwright をサポート；スクリーンショットワークロードで **Chromium 比 CPU 3.1 分の 1・メモリ 4.7 分の 1**、Web Platform Tests 21.5 万件超をパス。ベータ期間中は Browser Rendering 経由で無料。制限：動画再生・WebGL・永続認証は非対応。
+- [Browser Use](https://github.com/browser-use/browser-use) - **v0.13.7（2026年7月27日）**。Web サイトを AI エージェントから利用可能にするブラウザ自動化。2026 年にオープンソースブラウザエージェントの事実上の標準。109K+ star。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fbrowser-use%2Fbrowser-use&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Stagehand](https://github.com/browserbase/stagehand) - Browserbase 製の「ブラウザエージェント用 SDK」—— 型付きの `act` / `extract` / `observe` プリミティブを Playwright の上に提供。MIT。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fbrowserbase%2Fstagehand&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Steel Browser](https://github.com/steel-dev/steel-browser) - 🆕 AI エージェント用オープンソースブラウザ API —— セッション永続化とプロキシローテーションを備えたサンドボックス Chromium。Apache-2.0。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fsteel-dev%2Fsteel-browser&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Skyvern](https://github.com/Skyvern-AI/skyvern) - LLM とコンピュータ・ビジョンでブラウザベースワークフローを自動化。AGPL-3.0。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FSkyvern-AI%2Fskyvern&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -996,16 +1008,16 @@
 
 *音声対応 ・ マルチモーダル AI エージェントプラットフォーム。*
 
-- [ByteDance Seedance 2.5](https://www.bytedance.com/en/) - 🆕 ⚡ **2026-07-31 / 2026-08-03**。単発30秒の音声+映像合成に対応する初の大規模AI動画生成モデル；最大30枚の画像+10本の動画+10個の音声クリップをマルチモーダル参照入力として使用可能；ローカル動画編集。まず即梦（Dreamina）でローンチし、2026-08-03にグローバル展開。⚠️ 未検証（Cloudflareでブロック；pandaily/prnewswireで確認）。
-- [xAI Grok Voice Think Fast 2.0](https://x.ai/) - 🆕 ⚡ **2026-07-29**（APIデフォルトアップグレード 2026-08-05）。次世代音声対音声：初回バイト音声レイテンシ **1.25秒 → 0.70秒**；24言語での書き起こし精度が1.4倍に；推論トークン使用量−60%；$0.08/分。⚠️ 未検証（x.aiがCloudflareでブロック；複数ソースで確認）。
+- [ByteDance Seedance 2.5](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5) - 🆕 ⚡ **2026年7月31日**。単発 30 秒の音声 + 映像合成（マルチラウンド延長対応）に対応する初の大規模 AI 動画生成モデル；1 パスで最大**画像 30 枚 + 動画クリップ 10 本 + 音声クリップ 10 個**をマルチモーダル参照入力として使用可能；ローカル動画編集。Jimeng AI と Doubao Pro で展開中；API は BytePlus ModelArk のプレリリース経由。
+- [xAI Grok Voice Think Fast 2.0](https://x.ai/) - 🆕 ⚡ **2026-07-29**（`grok-voice-latest` は 2026-08-05 から自動アップグレード）。次世代音声対音声：初回バイト音声レイテンシ **1.25秒 → 0.70秒**；24言語での書き起こし精度が1.4倍に；推論トークン使用量−60%；$0.08/分。
 - [AgentLine](https://agentline.cloud/) - 🆕 ⚠️ **Unverified.** AI エージェント向けテレフォニー基盤 —— 電話番号の発行、発信／着信、リアルタイム文字起こしを JSON で webhook に流す。エージェント音声パイプライン用途に絞った Twilio の軽量代替を標榜。提出者は有料ユーザー 30+ と主張するが、第三者の採用事実は未確認。
-- [ElevenLabs](https://elevenlabs.io/) - 業界トップの AI 音声合成、クローン、会話 AI。⚡ **[5 億ドルのシリーズ D、評価額 110 億ドル](https://elevenlabs.io/blog/series-d)**（2026-07）。同時に ARR **5 億ドル**突破を発表し、新規投資家に BlackRock と NVIDIA が参加 —— 2026 年下半期に入る時点で最も資金力のある音声 AI 専業ベンダー。
+- [ElevenLabs](https://elevenlabs.io/) - 業界トップの AI 音声合成、クローン、会話 AI。**[5 億ドルのシリーズ D、評価額 110 億ドル](https://elevenlabs.io/blog/series-d)**（2026 年 2 月 4 日クローズ、Sequoia リード；累計調達額 7.81 億ドル超）。同時に ARR **5 億ドル**突破 —— 2026 年下半期に入る時点で最も資金力のある音声 AI 専業ベンダー。
 - [Vapi](https://github.com/VapiAI/server-sdk-python) - 音声 AI エージェントを構築・テスト・展開するプラットフォーム。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FVapiAI%2Fserver-sdk-python&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Retell AI](https://www.retellai.com/) - プロダクション対応の会話型音声 AI エージェント。
 - [Bland AI](https://www.bland.ai/) - 企業向け AI 電話プラットフォーム。
 - [Hermes](https://buildwithhermes.com/) - 🆕 ⚠️ **未検証（創業者ベータ）。** 代理店向けホワイトレーベル音声エージェントプラットフォーム：エージェント、ネイティブ CRM、アウト/インバウンドキャンペーン編成、クライアント別従量課金を一体化。$149/月〜。独立した採用実績は未確認。
 - [LiveKit Agents](https://github.com/livekit/agents) - 音声・ビデオ・データを含むリアルタイムマルチモーダル AI エージェント。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Flivekit%2Fagents&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [ByteDance SeedRealtime](https://bytedance.com/en/news/2026/seedrealtime) - 🆕 ⚡ 🇨🇳 **2026 年 8 月**。ByteDance のネイティブ音声視覚フルデュプレックス LLM——統合された音声 + 映像 + テキストアーキテクチャでリアルタイムに「見て、聞いて、話す」。従来のカスケード型パイプラインを置き換え、人間評価で会話タイミング問題を約 50% 削減。3 億人以上の豆包（Doubao）アプリユーザーに展開済み。公開 API・モデルウェイトなし。
+- [ByteDance SeedRealtime](https://technode.com/2026/08/05/bytedance-launches-seedrealtime-full-duplex-audio-video-model/) - 🆕 ⚡ 🇨🇳 **2026年8月5日**。ByteDance のネイティブ音声視覚フルデュプレックス LLM——音声・映像・テキストのストリームを連続処理し、リアルタイムに「見て、聞いて、話す」を同時に行う。従来のカスケード型音声エージェントパイプラインを置き換え；豆包（Doubao）アプリに統合。公開 API・モデルウェイトなし。
 - [Pipecat](https://github.com/pipecat-ai/pipecat) - 🆕 ⚡ **v1.7.0 — 2026-08-01**。音声・マルチモーダル会話 AI のオープンソースフレームワーク。v1.7.0 は最初の安定 1.x リリース（0.x API 削除、Python 3.11+ 必須、通話中モデル切り替え用ユニバーサル 、ElevenLabs STT の ）。BSD-2-Clause。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fpipecat-ai%2Fpipecat&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Vocode](https://github.com/vocodedev/vocode-core) - 💤 **Stale**（最終リリース 2024-06）。音声ベース LLM エージェントライブラリ。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fvocodedev%2Fvocode-core&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Bolna](https://github.com/bolna-ai/bolna) - エンドツーエンドのオープンソース音声 AI。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fbolna-ai%2Fbolna&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -1172,6 +1184,8 @@
 - [LLM-based Autonomous Agents Survey](https://arxiv.org/abs/2308.11432) - LLM ベースの自律エージェントの包括的サーベイ。
 - [The Rise and Potential of LLM Based Agents](https://arxiv.org/abs/2309.07864) - LLM エージェントの台頭と可能性。
 - [Agent Hospital](https://arxiv.org/abs/2405.02957) - 進化可能な医療エージェントを擁する仮想病院のシミュレータ。
+- [ComBodied Agents: a New Paradigm of Human-Centric Agentic AI](https://arxiv.org/abs/2608.10915) - 🆕 **2026年8月11日**。マルチモーダル知覚・縦断的メモリ・人間の状態軌跡を追跡するパーソナル世界モデルを組み合わせた、人間中心のエージェントパラダイム。2026 年 8 月 12 日の Hugging Face デイリーペーパー首位。
+- [Co-Evolution in Agentic Systems: Toward Self-Directed Evolution Beyond Human Design](https://arxiv.org/abs/2608.10299) - 🆕 **2026年8月10日**。エージェント間 / エージェントと環境の共進化と、エージェントシステムにおける自己主導的な進化メカニズムのサーベイ。
 
 ### コースとチュートリアル
 
@@ -1224,7 +1238,7 @@
 ### パーソナルと生産性
 
 - [AppFlowy](https://github.com/AppFlowy-IO/AppFlowy) - AI ワークスペースエージェント付きオープンソース Notion 代替。AGPL-3.0。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAppFlowy-IO%2FAppFlowy&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Manus AI](https://manus.im/) - Butterfly Effect（中国発、シンガポールに移転）による汎用自律エージェント。Meta は 2025-12-30 に約 $2B での買収を発表したが、**[中国の発展改革委员会（NDRC）が 2026-04-27 にこの買収を禁止](https://www.theguardian.com/world/2026/apr/27/china-blocks-meta-takeover-manus-ai-agent-developer)**し、取引の撤回を命した。解消手続き中のため manus.im には今も "Manus is now part of Meta" のバナーが残る。所有権は**争点あり / 未確定**と扱うこと。
+- [Manus AI](https://manus.im/) - Butterfly Effect（中国発、シンガポールに移転）による汎用自律エージェント。Meta は 2025-12-30 に約 $2B での買収を発表したが、**[中国の発展改革委员会（NDRC）が 2026-04-27 にこの買収を禁止](https://www.theguardian.com/world/2026/apr/27/china-blocks-meta-takeover-manus-ai-agent-developer)**。✅ **2026年8月11日に決着**：北京の命令に従って Meta が買収を解消する中、Manus は[独立企業として運営を再開すると発表](https://www.cnbc.com/2026/08/11/manus-china-meta-acquisition.html)；ユーザーデータの削除プロセスも開始された。
 - [Coze (扣子)](https://www.coze.cn/) - ByteDance のノーコードエージェントビルダー。中国本土中心、国際版は coze.com。
 - [Qwen App (千问)](https://www.qwen.ai/) - アリババの大衆向けコンシューマーエージェント（通義千問からリブランド）。淘宝 / DingTalk / Quark に統合。
 - [Doubao Agents](https://www.doubao.com/) - ByteDance の Doubao モデルファミリーをその上に携載したフラッグシップコンシューマーアシスタント。
@@ -1241,8 +1255,8 @@
 
 ### 2026 年注目モデル（中国ラボ）
 
-- [Kimi K3](https://kimi.moonshot.cn/) - 🆕 🇨🇳 **2026-07-16**。Moonshot AI のフラッグシップ MoE モデル——**2.8T パラメータ**、**1M トークンコンテキスト**、Arena フロントエンドリーダーボード 1 位（Fable 5 と同率）、Artificial Analysis 総合 3 位。オープンウェイト 2026-07-27 公開。API：`kimi-k3`。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmoonshot-ai%2Fkimi-k3&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Qwen 3.8-Max](https://qwenlm.github.io/) - 🆕 🇨🇳 **プレビュー 2026-07-19（世界 AI カンファレンス）**。アリババの次世代 MoE モデルプレビュー——**2.4T パラメータ**、コーディング・数学・マルチモーダルで高い性能。完全リリース詳細は未発表。
+- [Kimi K3](https://kimi.moonshot.cn/) - 🆕 🇨🇳 **2026-07-16**。Moonshot AI のフラッグシップ MoE モデル——**2.8T パラメータ**、**1M トークンコンテキスト**、Arena フロントエンドリーダーボード 1 位（Fable 5 と同率）、Artificial Analysis 総合 3 位。オープンウェイト 2026-07-27 公開。API：`kimi-k3`。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FMoonshotAI%2FKimi-K3&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Qwen 3.8-Max](https://qwenlm.github.io/) - 🆕 ⚡ 🇨🇳 **2026年8月3日に正式ローンチ**（プレビューは 7 月 19 日の世界 AI カンファレンス）。アリババの次世代 MoE モデル——2.4T 総 / 95B アクティブパラメータ、1M トークンコンテキスト、マルチモーダル入力；API は Alibaba Cloud Model Studio。オープンウェイトは Hugging Face（`Qwen/Qwen3.8-2.4T-A95B`、8 月 12 日頃）に公開され、Apache-2.0 のマルチモーダル 27B 蒸留版が 8 月 14 日に続いた。
 - [テスラ中国 OTA 2026.14.13 — Doubao統合](https://www.cnevpost.com/2026/07/31/tesla-integrates-bytedance-doubao-ai/) - 🆕 ⚡ **2026-07-31**。テスラが中国のModel 3/Y/S/XにOTAをプッシュし、元の音声アシスタントをByteDanceのDoubao大規模モデルに置き換え —— 中国のLLMを車載深度統合した初の主要西側EVブランド。⚠️ 未検証（cnevpost URL未直接取得；複数ソースで確認）。
 - [DeepSeek V4](https://www.deepseek.com/) - 🆕 🇨🇳 **2026 年 7 月**。DeepSeek の最新フラッグシップ——**1M トークンコンテキスト**、エージェントタスク対応強化、ピーク / オフピーク段階的価格設定。コスト効率優位のポジションを継続。
 
@@ -1279,7 +1293,7 @@
 
 | スタック | アプローチ | ホスティング | 強み | License |
 |----------|------------|--------------|------|---------|
-| [Browser Use](https://github.com/browser-use/browser-use) | Vision + DOM（Playwright） | セルフ | 92K star、最大コミュニティ | MIT |
+| [Browser Use](https://github.com/browser-use/browser-use) | Vision + DOM（Playwright） | セルフ | 109K star、最大コミュニティ | MIT |
 | [Stagehand](https://github.com/browserbase/stagehand) | 型付き act/extract/observe | Browserbase / セルフ | 型・構造化出力 | MIT |
 | [Steel Browser](https://github.com/steel-dev/steel-browser) | ヘッドレス API | セルフ / クラウド | セッション・プロキシ・キャプチャ対応 | Apache-2.0 |
 | [Skyvern](https://github.com/Skyvern-AI/skyvern) | ビジョンファースト | セルフ | 動的ページに強い | AGPL-3.0 |
@@ -1317,28 +1331,29 @@
 
 ### 💰 基盤モデル — API コスト & コンテキスト
 
-*価格は USD/100万トークン。データ：2026-07-17。*
+*価格は USD/100万トークン。**2026-08-15 に公式価格ページで再検証。***
 
 | モデル | プロバイダー | コンテキスト | 入力 $/1M | 出力 $/1M | 最適用途 |
 |-------|----------|---------------|-----------|------------|----------|
 | GPT-5.6 Sol | OpenAI | 1M | $5.00 | $30.00 | フロンティア推論フラッグシップ |
-| GPT-5.6 Terra | OpenAI | 1M | $2.50 | $15.00 | コスト効率の高い本番ワークロード |
-| GPT-5.6 Luna | OpenAI | 1M | $1.00 | $6.00 | 大量・速度重視タスク |
+| GPT-5.6 Terra | OpenAI | 1M | $2.00 | $12.00 | コスト効率の高い本番ワークロード |
+| GPT-5.6 Luna | OpenAI | 1M | $0.20 | $1.20 | 大量・速度重視タスク |
 | GPT-4o | OpenAI | 128K | $2.50 | $10.00 | 幅広いツール利用・ビジョン |
 | GPT-4o-mini | OpenAI | 128K | $0.15 | $0.60 | 大量の単純タスク |
-| Claude Sonnet 5 | Anthropic | 1M | $2.00（導入価格） | $10.00（導入価格） | デフォルトのエージェントワークホース（2026-08-31 以降 $3/$15） |
+| Claude Sonnet 5 | Anthropic | 1M | $2.00 | $10.00 | デフォルトのエージェントワークホース — 導入価格は **2026-08-10 に恒久化** |
 | Claude Opus 4.8 | Anthropic | 1M | $5.00 | $25.00 | 最難度推論タスク |
 | Claude Fable 5 | Anthropic | 1M | $10.00 | $50.00 | Mythos クラスのフロンティアタスク |
 | Claude Haiku 4.5 | Anthropic | 1M | $1.00 | $5.00 | Anthropic エコシステムの高速タスク |
 | Gemini 3.1 Pro | Google | 1M | $2.00 | $12.00 | フラッグシップ推論・マルチモーダル |
+| Gemini 3.7 Flash | Google | 1M | $0.75（導入価格） | $3.75（導入価格） | 最新ワークホース層 — 導入価格は 2026-12-31 まで（以降 $1.50/$7.50） |
 | Gemini 2.5 Flash | Google | 1M | $0.30 | $2.50 | コスパ重視マルチモーダル |
 | Gemini 2.5 Pro | Google | 1M | $1.25 | $10.00 | 超長文・マルチモーダル |
 | Gemini 2.5 Flash-Lite | Google | 1M | $0.10 | $0.40 | 超低コスト大量リクエスト |
-| DeepSeek V4-Flash | DeepSeek | 1M | $0.14 | $0.28 | 低コストコーディング推論 |
+| DeepSeek V4-Flash | DeepSeek | 1M | ピーク $0.44 / オフピーク $0.22（キャッシュミス） | ピーク $1.32 / オフピーク $0.66 | 低コストコーディング推論 — 2026-08-16 から時間帯別料金 |
 | Qwen3 235B A22B | Alibaba | 131K | ~$0.29 | ~$1.15 | 最強中国語+コーディング MoE |
 | Kimi K2.6 | Moonshot AI | 262K | $0.95 | $4.00 | 中国語+超長コンテキスト |
 | Grok 4 | xAI | 256K | $3.00 | $15.00 | X/Twitter エコシステム推論 |
-| Grok 4.5 | xAI | 500K | $2.00 | $6.00 | コーディング+エージェントのフラッグシップ |
+| Grok 4.6 | xAI | 500K | $2.00 | $6.00 | コーディング+エージェントのフラッグシップ（2026-08-12；4.5 を置き換え） |
 
 ---
 
@@ -1535,7 +1550,7 @@
 | モデル | プロバイダー | コンテキスト | 中国語能力≈ | コーディング | オープン重み | 入力 $/1M |
 |-------|----------|---------|---------------|--------|------------|----------|
 | Qwen3 235B A22B | Alibaba | 131K | トップ | ⭐⭐⭐⭐⭐ | ✅ Apache-2.0 | ~$0.29 |
-| DeepSeek V3.2 | DeepSeek | 128K | 非常に高い | ⭐⭐⭐⭐⭐ | ✅ MIT | $0.14 |
+| DeepSeek V4-Flash | DeepSeek | 1M | 非常に高い | ⭐⭐⭐⭐⭐ | ✅ MIT | ピーク $0.44 / オフピーク $0.22 |
 | Kimi K2.6 | Moonshot AI | 262K | 高い | ⭐⭐⭐⭐☆ | ❌ | ~$0.95 |
 | GLM-5.2 | Zhipu AI | 1M | 高い | ⭐⭐⭐⭐☆ | ✅ MIT | ~$0.50 |
 | Hunyuan Pro | Tencent | 256K | 高い | ⭐⭐⭐⭐☆ | ❌ | ~$0.45 |
@@ -1608,7 +1623,7 @@
 - **Aider** — Git 対応 CLI リファクタリング。
 
 **ブラウザ自動化 / Web スクレイピングエージェント**
-- **Browser Use** — 92K スター、最大コミュニティ。
+- **Browser Use** — 109K スター、最大コミュニティ。
 - **Stagehand** — 強い型付け + 構造化出力。
 - **Skyvern** — ビジョン優先、動的ページに強い。
 
@@ -1676,7 +1691,7 @@
 - **Gemini 3.1 Flash-Lite** — Gemini 3 ファミリー最安層。2026-05-08 に GA。低レイテンシな補完と agentic 開発ツール向け。
 - **DeepSeek V4-Flash** — $0.14/$0.28/1M、1M コンテキスト、MIT。オープンウェイト側でコスパ最強。
 - **Claude Haiku 4.5** — $1/$5/1M、200K コンテキスト。
-- **GPT-5.6 Luna** — $1.00/$6.00/1M、GPT-5.6 最速層。
+- **GPT-5.6 Luna** — $0.20/$1.20/1M、GPT-5.6 最速層。
 
 **最高の中国語対応**
 - **Qwen3.7-Max**（Alibaba）— 現行 Qwen フラグシップ。agentic コーディングと長期ミッション向け。
@@ -1708,7 +1723,7 @@
 → **Ollama** + **Open WebUI** + **Qdrant** + **Qwen3.6-27B** or **Llama 3.3 70B**。
 
 **API コストを最小化（月 <$50）**
-→ **DeepSeek V4-Flash** + **Gemini 3.5 Flash-Lite** + Anthropic Batch API 割引。Sonnet 5 の intro 価格は 2026-08-31 で終了（$2/$10 → $3/$15）。
+→ **DeepSeek V4-Flash**（2026-08-16 からピーク $0.44/$1.32、オフピークは半額）+ **Gemini 3.5 Flash-Lite** + Anthropic Batch API 割引。Sonnet 5 の $2/$10 導入価格は 2026-08-10 に恒久化。DeepSeek の大量ジョブはオフピークに回すとさらに 50% 節約。
 
 **ベンダーロックインを避ける**
 → **LiteLLM** + **LangGraph** + **BGE-M3 埋め込み**。
@@ -1785,7 +1800,7 @@
 - [OpenAI Codex CLI](https://github.com/openai/codex) - OpenAI のオープンソースターミナルエージェント参入。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenai%2Fcodex&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Browser Use](https://github.com/browser-use/browser-use) - ⚡ **v0.13.7（2026-07-27）**。AI エージェントが Web と自然に対話できるようにしたブレイクスルー。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fbrowser-use%2Fbrowser-use&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Claude Computer Use](https://www.anthropic.com/) - 🆕 Desktop Intelligence により Claude が画面を見てあらゆるソフトウェアをコントロール。
-- [Manus AI](https://manus.im/) - 🇨🇳 調査、コーディング、複雑ワークフローを処理できる汎用自律エージェント。Meta の 2025 年 12 月の約 $2B 買収は**[中国 NDRC が 2026-04-27 に禁止](https://www.theguardian.com/world/2026/apr/27/china-blocks-meta-takeover-manus-ai-agent-developer)** — 北京が外資安全審査を用いて AI 分野の買収を阻止した初のケース（旧記載：約 $2B で買収、2025-12）。
+- [Manus AI](https://manus.im/) - 🇨🇳 調査、コーディング、複雑ワークフローを処理できる汎用自律エージェント。Meta の 2025 年 12 月の約 $2B 買収は**[中国 NDRC が 2026-04-27 に禁止](https://www.theguardian.com/world/2026/apr/27/china-blocks-meta-takeover-manus-ai-agent-developer)** — 北京が外資安全審査を用いて AI 分野の買収を阻止した初のケース。**2026年8月11日**、Meta が取引を解消する中、Manus は[独立企業として運営を再開すると発表](https://www.cnbc.com/2026/08/11/manus-china-meta-acquisition.html)。
 - [OpenHands](https://github.com/All-Hands-AI/OpenHands) - オープンソース AI ソフトウェアエンジニアリングプラットフォームが広く採用された。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAll-Hands-AI%2FOpenHands&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Dify](https://github.com/langgenius/dify) - 🇨🇳 ローコード LLM エージェントプラットフォームが主流に達した。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Flanggenius%2Fdify&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Cline](https://github.com/cline/cline) - VS Code の自律コーディングエージェントがコミュニティで急長。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fcline%2Fcline&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
@@ -1966,7 +1981,17 @@
 | **2026-07-24** | [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) を Anthropic がリリース — 第 5 世代フラッグシップ、Fable 5 に迫る性能を 100 万トークンあたり $5/$25 で提供；1M コンテキスト、128K 出力；Claude Max のデフォルトモデル；API: `claude-opus-5` | モデル |
 | **2026-07-30** | [Inkling-Small](https://thinkingmachines.ai/inkling/) ウェイト公開 — 276B/12B アクティブ、Apache-2.0、マルチモーダル；HLE テキスト 31.6%（975B Inkling の 29.7% を上回る） | モデル |
 | **2026-07-31** | [DeepSeek-V4-Flash-0731](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731) —— 同一 API・料金のまま Agentic 能力を強化、V4-Pro Preview を上回る；HF にオープンウェイト公開。GitHub Copilot が Gemini 2.5 Pro・Gemini 3 Flash を非推奨化 | モデル / ツール |
-| **2026-08-03** | [Claude Cowork](https://www.anthropic.com/claude-cowork) + [Claude Tag](https://www.businesswire.com/news/home/20260803/) 公開 —— Cowork は非開発者向け自律タスクエージェント（Web + Slack）、Tag は旧 Slack 統合の後継。[Embabel Agent 1.0](https://github.com/embabel/embabel-agent) GA —— JVM 初の本番対応エージェントフレームワーク（3,878 stars、Apache-2.0）。「💱 エージェント経済とマーケットプレイス」カテゴリ新設 | フレームワーク / ツール |
+| **2026-08-03** | [Claude Cowork](https://www.anthropic.com/claude-cowork) + [Claude Tag](https://www.businesswire.com/news/home/20260803/) 公開 —— Cowork は非開発者向け自律タスクエージェント（Web + Slack）、Tag は旧 Slack 統合の後継。[Embabel Agent](https://github.com/embabel/embabel-agent) が注目を集める —— Spring Framework 創設者 Rod Johnson による JVM エージェントフレームワーク（約 3.4K stars、Apache-2.0；最新タグ付きリリースは v0.5.0 プレリリース）。「💱 エージェント経済とマーケットプレイス」カテゴリ新設 | フレームワーク / ツール |
+| **2026-08-03〜07** | [Cloudflare Agents Week](https://blog.cloudflare.com/agents-week-review-august-2026/) — Wallets/cloudflare.pay（8-4）、WriteGuard プライベートベータ（8-5）、WebMCP + Kitesurf サーバーレスエージェントブラウザ + MCPv2 + AI Search（8-6） | ツール / プロトコル |
+| **2026-08-03** | [Qwen3.8-Max](https://alibabacloud.com/blog/qwen3-8-max) をアリババが正式ローンチ — 2.4T MoE / 95B アクティブ、1M コンテキスト、マルチモーダル入力；QwenWork エンタープライズプラットフォームが公開ベータ | モデル |
+| **2026-08-05** | Meta Superintelligence Labs の [Muse Spark 1.2 + Muse Code ベータ](https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2) — ターミナルコーディングエージェント + リポジトリ全体で学習したモデル。[ByteDance SeedRealtime](https://technode.com/2026/08/05/bytedance-launches-seedrealtime-full-duplex-audio-video-model/) フルデュプレックス音声視覚モデルがローンチ。英国 AISI が[エージェント封じ込めインシデント](https://www.helpnetsecurity.com/2026/08/05/ai-agent-deception-in-cyber-tests/) INC-2026-07-28-01 を開示 | モデル / 業界 |
+| **2026-08-06** | [Wan 3.0 公開ベータ](https://www.alibabacloud.com/en/blog/wan-3-0-next-gen-video-generation-model-public-beta-launched) — ドキュメント / Web ページを入力に取れるアリババの 30 秒動画モデル。[Bedrock AgentCore Runtime Instances GA](https://aws.amazon.com/about-aws/whats-new/2026/08/aws-bedrock-agentcore-runtime-instances-generally-available/) — EC2 ベースのコンピュートで 14 日間のエージェントセッション | モデル / ツール |
+| **2026-08-07** | [Grok Imagine Image 2.0](https://x.ai/news/grok-imagine-image-2) — ローンチ時点で text-to-image と画像編集の Arena 世界 2 位。[OpenAI が Astra の開発を減速](https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/) — 「Critical」サイバー能力の可能性を受けて；ホワイトハウスに報告済み | モデル / 業界 |
+| **2026-08-10** | [Claude Sonnet 5 の $2/$10 価格が恒久化](https://www.anthropic.com/news/claude-sonnet-5)；[GPT-5.6-Cyber](https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows) が Daybreak Red 経由で出荷；[Muse Glimmer 30B](https://huggingface.co/meta-models/Muse-Glimmer-30B) オープンウェイト（Apache 2.0） | モデル / 業界 |
+| **2026-08-11** | 北京の NDRC 命令で Meta が 20 億ドルの買収を解消する中、[Manus が独立企業として運営再開](https://www.cnbc.com/2026/08/11/manus-china-meta-acquisition.html)。[Daybreak モデルが AWS Bedrock に登場](https://openai.com/index/daybreak-models-are-now-available-on-aws/)。[Grok Bot 早期ベータ](https://docs.x.ai/docs/release-notes) — 永続クラウドコンピュータ上の常時稼働 AI チームメイト。[ChatGPT 広告テストが国際展開](https://openai.com/index/testing-ads-in-chatgpt/)（英国・メキシコ・ブラジル・日本・韓国）。[Nemotron 3.5 Lightning](https://ollama.com/library/nemotron-3.5-lightning) リリース | 業界 / モデル |
+| **2026-08-12** | [Grok 4.6](https://x.ai/news/grok-4-6) リリース — 長時間稼働エージェント向け SpaceXAI フラッグシップ、Artificial Analysis Intelligence Index（61）で GPT-5.6 Sol と同点、$2/$6、Cursor の新デフォルト。[LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5) オープンウェイトの動画音声ワールドモデルが出荷。Qwen3.8-Max のオープンウェイトが Hugging Face に登場（`Qwen/Qwen3.8-2.4T-A95B`） | モデル |
+| **2026-08-13** | [Gemini 3.7 Flash](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/) — Google の新ワークホースモデル（導入価格 $0.75/$3.75）、3.5 Pro が未リリースのまま Gemini 4 のトレーニング中に出荷。[DeepSeek-V4-Pro GA](https://api-docs.deepseek.com/news/news260813) — Responses API + 推論エフォート対応；8-16 からピーク / オフピーク料金。[OpenAI Ultrafast プレビュー](https://openai.com/index/previewing-ultrafast) — Cerebras 上で GPT-5.6 Sol を最大 14 倍速。[Suno Studio 2.0](https://suno.com/release-notes) ブラウザ DAW | モデル / ツール |
+| **2026-08-14** | [GLM-5.3](https://the-decoder.com/zhipu-ai-releases-glm-5-3-claims-its-the-strongest-open-weights-coding-model/) — Zhipu が最強のオープンウェイトコーディングモデルと主張（GLM-5.2 比 +50%）。[Anthropic が Claude テキスト電子透かしを出荷](https://www.anthropic.com/news/claude-text-watermark)（SynthID-Text + C2PA、EU AI 法対応）。[Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) Apache-2.0 オープンウェイト。[Waymo がカリフォルニア州 18 郡で承認](https://electrek.co/2026/08/14/waymo-cpuc-approval-california-expansion-18-counties/)；[Pony.ai × Uber が欧州で 2,000 台超のロボタクシー計画](https://cnevpost.com/2026/08/14/pony-ai-uber-2000-robotaxis-europe/)。Grok 4.6 が GitHub Copilot に登場 | モデル / ロボティクス / 業界 |
 | **2026-07-27** | [Kimi K3 オープンウェイト公開](https://huggingface.co/moonshotai/Kimi-K3)（Moonshot AI）— 2.8T 総 / 104B アクティブで、公開時点最大のオープン言語モデルとなった；独自の Kimi K3 License | モデル |
 | **2026-07-22** | [AMD ↔ Anthropic](https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus) — Anthropic が AMD Helios ラックに AMD Instinct MI450（MI455X）を最大 2 GW 展開、2027 年前半に開始；AMD は Anthropic へ最大 50 億ドルの戦略的出資を約束 | 業界 |
 | **2026-07-27** | [オープンウェイトに関する Anthropic の立場](https://www.anthropic.com/news/position-open-weights-models) — Dario Amodei が中国製オープンウェイトモデルの禁止案を否定し、チップ輸出管理・蒸留への抑止・高性能モデル全般へのリリース前安全性テスト義務化を支持 | 業界 |
