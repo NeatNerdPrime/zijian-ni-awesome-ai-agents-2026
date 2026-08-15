@@ -3,6 +3,94 @@
 All notable changes to **Awesome AI Agents 2026** are recorded here.
 Format: `YYYY-MM-DD  +Added  -Removed  ~Changed`.
 
+### 2026-08-15 — full-list maintenance pass: Aug 8–15 wave, pricing overhaul, stale-claim sweep (en/zh/ja)
+
+Full category-by-category refresh, three days after the previous run. Every
+addition and correction below was verified against a fetched primary source
+(vendor blog, official docs/pricing page, PyPI/npm/HF API, or two independent
+reputable outlets where the primary blocks fetching). Entry counts now
+**853 / 853 / 853** across en/zh/ja; `sync_audit.py` and `check_markdown.py`
+clean.
+
+**+Added (15 entries + 11 timeline rows + 2 papers):**
+- **Grok 4.6** (Aug 12) — SpaceXAI's new flagship for long-running agents;
+  matches GPT-5.6 Sol on the AA Intelligence Index; new Cursor default; in
+  GitHub Copilot Aug 14. Plus **Grok Bot** (Aug 11 early beta) and
+  **Grok Imagine Image 2.0** (Aug 7, Arena #2 for T2I and editing).
+- **Gemini 3.7 Flash** (Aug 13) — Google's new workhorse model, $0.75/$3.75
+  intro pricing through Dec 31, 2026; shipped while 3.5 Pro stays unreleased
+  and Google confirms it is training Gemini 4.
+- **GLM-5.3** (Aug 14) — Zhipu's claimed strongest open-weights coding model,
+  +50% over GLM-5.2 from post-training alone; weights ~2 weeks post security
+  review (vendor claims flagged as such).
+- **Qwen3.8-27B** (Aug 14) — Apache-2.0 multimodal open weights on HF, shipped
+  on schedule; Qwen3.8-Max full weights (`Qwen/Qwen3.8-2.4T-A95B`) noted.
+- **DeepSeek-V4-Pro-0813 GA** (Aug 13) — Responses API support, reasoning
+  effort levels, Expert Mode.
+- **Claude text watermarking + content credentials** (Aug 14) — SynthID-Text +
+  C2PA for EU AI Act compliance.
+- **Muse Spark 1.2 + Muse Code beta** (Aug 5); **Amazon Bedrock AgentCore
+  Runtime Instances GA** (Aug 6, 14-day sessions); **UK AISI containment
+  incident INC-2026-07-28-01** (disclosed Aug 5); **Unitree Shanghai IPO**;
+  **Waymo 18-county CPUC approval** (Aug 14); **Pony.ai × Uber Europe** (Aug 14,
+  2,000+ robotaxis); papers **ComBodied Agents** and **Co-Evolution in Agentic
+  Systems**; timeline extended Aug 3 → Aug 14.
+
+**~Changed (pricing):**
+- **Claude Sonnet 5 $2/$10 made permanent** (Aug 10) — the Sep 1 $3/$15
+  step-up was cancelled; fixed in entry, cost table, and scenario guide.
+- **DeepSeek tiered pricing from Aug 16 16:00 UTC** — flat pricing ends;
+  peak/off-peak (off-peak 50% lower) with a significant effective increase;
+  "prices are flat" source note rewritten.
+- **GPT-5.6 Terra $2/$12 and Luna $0.20/$1.20** per current OpenAI pricing
+  page (table previously said $2.50/$15 and $1/$6).
+- Gemini 3.6 Flash / 3.5 Flash-Lite prices filled in from the official page.
+
+**~Changed (stale claims & corrections):**
+- OpenAI **Astra development slowed** (Aug 7) over possible "Critical" cyber
+  capability; White House informed.
+- **Gemini 3.5 Pro** still unreleased as of Aug 13; Google declines to discuss
+  its fate and is training Gemini 4.
+- **Manus ownership resolved** (Aug 11): resumes independent operation as Meta
+  unwinds the $2B acquisition; "contested/unresolved" wording replaced in all
+  three places.
+- **Hermes Agent v2026.8.3 and Superpowers v6.2.0 did not exist** — corrected
+  to the real latest releases (v0.19.0 "2026.7.20" and v5.1.0) from the
+  repos' releases pages. **Embabel "1.0 GA" likewise unsupported** — latest tag
+  is v0.5.0 pre-release; entry and timeline row rewritten.
+- **DYNA-2** was mis-described as trained on robot experience — corrected to
+  1M+ hours of egocentric *human* video with a human-to-robot transfer law.
+- Cloudflare Agents Week items re-dated to their real per-day announcements
+  (Wallets Aug 4, WriteGuard Aug 5 private beta, WebMCP + Kitesurf Aug 6).
+- xAI section renamed **xAI / SpaceXAI (Grok)** after the completed rebrand;
+  Grok 4.5 EU claim replaced with the actual July 17 API-console availability.
+- Kimi K2.5 sunset language updated (ended May 25; full sunset Aug 31).
+- ⚠️ Unverified hedges **removed** after primary verification: Perplexity PC
+  for Windows (real URL found; duplicate entry merged −1), Seedance 2.5
+  (seed.bytedance.com primary; Jimeng AI/Doubao Pro, not "Dreamina"),
+  Grok Voice Think Fast 2.0, SeedRealtime (404 URL replaced; unconfirmed
+  "300M users / ~50% pacing" figures dropped).
+- Version pins refreshed across the stack: Claude Code 2.1.233, Codex CLI
+  0.147.0, goose 1.46.0, AG2 1.0.2 (out of beta), Google ADK 2.7.0,
+  Pydantic AI 2.31.0, Mastra 1.59.0, Agno 2.9.0, CrewAI 1.15.16, MAF 1.14.0,
+  OpenAI Agents SDK 0.21.0, Agent Skills 0.6.7, Koog artifact 1.1.1,
+  Pi v0.84.2, Aider "last release Feb 2026" (was wrongly "Aug 2025").
+- Star counts: Browser Use 92K→109K (3 places), A2A 25K+, Hermes/Superpowers
+  refreshed; Kimi K3 star badge repointed to the real `MoonshotAI/Kimi-K3`.
+- ⚡ tags aged out per the 14-day rule (Gemini 3.6 Flash, Inkling-Small,
+  Kimi K3 weights, FLUX 3, V4-Flash-0731, Milvus 3.0, Devin Stacked PRs,
+  Cursor iPad, τ²-bench, ElevenLabs Series D — re-dated to its real Feb 4
+  close) and added where earned (Claude Code, goose, Cursor, Amp, Waymo,
+  Tesla FSD 2026.21.6…).
+- Header/footer refreshed: Last Updated Aug 15, Resources 850+, latest
+  additions "August 2026".
+
+**Deliberately not added:** Qwen3.8-Max weights availability stated only via
+the HF org listing (per-model API is gated); Cognition's $40B raise marked
+"reported" (secondary digests only); Seedance 2.5 API prices (conflicting
+secondary sources, no ByteDance rate card); an alleged "Meta pause on Muse
+Video rollout" (no primary); CNBC's Unitree valuation cited from headline only.
+
 ### 2026-07-30 (d) — late-July ecosystem pass: primary-source upgrades for Cosmos 3, ElevenLabs, Browser Use
 
 Worked through the remaining per-category research leads, verifying each against
