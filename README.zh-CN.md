@@ -40,6 +40,8 @@
 
 ## 🚀 从这里开始
 
+- [Clickyy](https://github.com/jayamitkatariya/clickyyy) - 晃动光标即可召唤一个能看到你屏幕并代你点击、输入、拖拽、操作的 AI Agent（macOS）。开源，MIT。
+
 > **初次接触 AI Agent？** 按这个路径走：
 > 1. 📖 **梳清概念** — Agent 和普通聊天机器人到底有什么区别
 > 2. 🗺️ **找到你的场景** → [场景指南](#️-场景指南--我应该用什么)
@@ -1170,6 +1172,7 @@
 - [Strands Evals（AWS）](https://github.com/strands-agents/evals) - 🆕 AWS 开源的 Agent 工作流评估框架——Case/Experiment/Evaluator 结构，支持 LLM-as-judge；Strands Agents SDK 的配套工具。Apache-2.0。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fstrands-agents%2Fevals&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [DSPy](https://github.com/stanfordnlp/dspy) - 编程代替 prompt 工程。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fstanfordnlp%2Fdspy&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Elicit](https://elicit.com/) - 🆕 面向文献综述与系统性综述的 AI 研究助手，覆盖超大规模学术论文库。**2026-07-15**：上线公开的 [API 与 MCP server](https://elicit.com/blog/elicit-api)，让 Agent 和工作流可以直接调用它的检索与综述能力。**2026-07-17**：发布论文检索评测，称在 BioASQ 上优于另外五个检索系统（厂商自测）。
+- [IdeaHunter](https://ideahunter.today) - 面向独立创业者的 AI 研究工具——基于公开信号、用户痛点、市场证据、MVP 范围和变现路径，挖掘有真实需求支撑的 App / micro-SaaS 创意。Freemium。
 
 ---
 
@@ -1241,6 +1244,7 @@
 - [Coze (扣子)](https://www.coze.cn/) - 字节无代码 Agent 构建。国内面向消费者；国际版为 coze.com。
 - [Qwen App（千问）](https://www.qwen.ai/) - 阿里大众消费者 Agent（由通义千问更名），集成在淘宝 / 钉钉 / 夸克。
 - [Doubao Agents](https://www.doubao.com/) - 字节豆包模型上的主力消费者助手。
+- [Resume Roaster](https://resume.roastlabai.com/) - AI 简历诊断工具，带 ATS 关键词缺口分析。上传简历和职位描述，获取具体的 AI 反馈，申请前先知道该改哪里。面向想在竞争激烈的求职市场里占优势的求职者。
 
 ### 开发者工具
 

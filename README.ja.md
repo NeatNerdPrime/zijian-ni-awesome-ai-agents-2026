@@ -40,6 +40,8 @@
 
 ## 🚀 はじめに
 
+- [Clickyy](https://github.com/jayamitkatariya/clickyyy) - カーソルを揺らすだけで、画面を見て代わりにクリック・入力・ドラッグ・操作してくれる AI エージェントを呼び出せる（macOS）。オープンソース、MIT。
+
 > **AI エージェントを初めて使う方へ：** このパスで学びましょう。
 > 1. 📖 **概念を理解する** — エージェントとチャットボットの差異
 > 2. 🗺️ **シナリオを探す** → [シナリオガイド](#️-シナリオガイド--何に何を使うべきか)
@@ -1172,6 +1174,7 @@
 - [Strands Evals（AWS）](https://github.com/strands-agents/evals) - 🆕 エージェントワークフロー評価のための AWS 製オープンソースフレームワーク——Case / Experiment / Evaluator 構造、LLM-as-judge 対応；Strands Agents SDK のコンパニオンツール。Apache-2.0。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fstrands-agents%2Fevals&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [DSPy](https://github.com/stanfordnlp/dspy) - プロンプトではなくプログラミングして言語モデルを使うフレームワーク。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fstanfordnlp%2Fdspy&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Elicit](https://elicit.com/) - 🆕 文献レビューとシステマティックレビュー向けの AI 研究アシスタント。非常に大規模な学術論文コーパスを対象とする。**2026-07-15**：公開の [API と MCP サーバ](https://elicit.com/blog/elicit-api) を提供し、エージェントやワークフローから検索・レビュー機能を直接呼べるようにした。**2026-07-17**：論文検索の評価を公開し、BioASQ で他の 5 つの検索システムを上回ったと報告（ベンダー自身による評価）。
+- [IdeaHunter](https://ideahunter.today) - ソロ創業者向け AI リサーチツール——公開シグナル、ユーザーの課題、市場エビデンス、MVP スコープ、収益化パスから需要の裏付けがあるアプリ / マイクロ SaaS アイデアを発掘。Freemium。
 
 ---
 
@@ -1243,6 +1246,7 @@
 - [Coze (扣子)](https://www.coze.cn/) - ByteDance のノーコードエージェントビルダー。中国本土中心、国際版は coze.com。
 - [Qwen App (千问)](https://www.qwen.ai/) - アリババの大衆向けコンシューマーエージェント（通義千問からリブランド）。淘宝 / DingTalk / Quark に統合。
 - [Doubao Agents](https://www.doubao.com/) - ByteDance の Doubao モデルファミリーをその上に携載したフラッグシップコンシューマーアシスタント。
+- [Resume Roaster](https://resume.roastlabai.com/) - ATS キーワードギャップ分析付きの AI 履歴書診断ツール。履歴書と求人情報をアップロードすると、応募前に何を改善すべきか具体的な AI フィードバックが得られる。競争の激しい求人市場で優位に立ちたい求職者向け。
 
 ### 開発者ツール
 
