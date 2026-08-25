@@ -3,6 +3,95 @@
 All notable changes to **Awesome AI Agents 2026** are recorded here.
 Format: `YYYY-MM-DD  +Added  -Removed  ~Changed`.
 
+### 2026-08-25 — full-list maintenance pass: Aug 15–25 wave, PR review, stale-pin sweep (en/zh/ja)
+
+Full category-by-category refresh, ten days after the previous run. Three parallel
+research passes (tools/frameworks, foundation/multimodal models, physical AI +
+Chinese ecosystem) plus one PR review, each verified against a fetched primary
+source (`fetch-verify.sh`, `gh api`, Hugging Face API, or Eastmoney F10 listing
+metadata for the Unitree IPO). Entry counts now **879 / 879 / 879** across
+en/zh/ja; `sync_audit.py`, `check_markdown.py`, and `refresh_counts.py` all clean
+(nav-table and badge counts recomputed from the files themselves: Foundation
+Models 205+→215+, Multimodal 45+→50+, Agent Memory 20+→25+, Agent Economy
+7+→8+, Browser & Web Agents 15+→20+, total Resources badge 880+→910+).
+
+**Reviewed PRs:**
+- PR #85 (`evandempsey:add-kolega-code`) — spam-guard flagged 24+ identical
+  submissions across awesome lists in 14 days, but the underlying project is
+  real (Apache-2.0 claimed, PyPI ~10.5k downloads/month). Verified independently,
+  found the license claim was **wrong** (actual: BSL 1.1, Change Date
+  2030-08-12), incorporated manually across all three languages with the
+  corrected license and an `⚠️ Unverified` tag, then closed the PR with credit
+  (raw merge would have skipped zh/ja and kept the wrong license).
+
+**+Added (11 entries + 1 CHANGELOG-only correction):**
+- **OpenBot** (CopilotKit, Aug 17) — self-hosted AG-UI coworker platform.
+- **Cumora** (Aug 17) — cross-platform team chat with AI teammates, BYOA to
+  local Claude Code/Codex/Grok Build/Cursor.
+- **macOS Harness** (Browser Use, Aug 17) — thinnest official computer-use
+  harness for macOS.
+- **Cursor Origin** (Aug 17) — agent-scale git hosting inside Cursor; folded
+  into the existing Cursor entry alongside the Aug 19 Cloud Agent
+  Subscriptions/`/goal`/VM-isolated-subagents update.
+- **GitHub Copilot in Slack + Microsoft Teams** (Aug 21) — shared cloud-agent
+  sessions via `@GitHub`.
+- **The New MCP Roadmap** (Aug 22) — post-`2026-07-28` priorities from the
+  core maintainers.
+- **DeepSeek-V4-Flash-Vision-Exp** Files API note, **Agno v3.0.0** breaking
+  release, **Dify 1.17.0** (E2B sandboxes, Skill manager), **OpenWiki**
+  (LangChain, 15K+ stars, self-correcting memory Aug 25) — previously missing
+  from the list entirely.
+- **MiniMax H3** (Jul 2026, open-weight omni video+audio) and
+  **MiniMax-H3-Fun-Controlnet-Union** (Aug 24, Alibaba PAI) — H3 supersedes
+  Hailuo 2.3 as MiniMax's video flagship across Foundation, Video Generation,
+  and the Chinese-ecosystem sections.
+- **MiniMax Music 3.0** (Aug 13, open weights, 5-minute songs) — supersedes
+  Music 2.6 as the flagship.
+- **MAI-Code-1.1-Flash** (Aug 11), **MAI-Image-2.6** (Aug 10, Arena #2→#3
+  editing by Aug 18), **MAI-Cyber-1-Flash** (Aug 13) — three Microsoft MAI
+  models that shipped before the previous cutoff but were never added.
+- **Waymo**: Houston waitlist removed (Aug 20), first public look at its
+  in-vehicle compute incl. a purpose-built 5nm sensor-fusion ASIC (Aug 20),
+  and a Munich/Germany market entry announcement (Aug 25) — folded into the
+  existing Waymo entry.
+- **Unitree Shanghai IPO** — replaced the vague "August 2026" placeholder with
+  verified listing facts from the SSE reprint + Eastmoney F10: listed Aug 19
+  (bookbuilding Aug 10) on the STAR Market as 688836, 40.45M shares at
+  RMB 150.80, ~RMB 6.10B raised, FY2025 revenue RMB 1.70B / net profit
+  RMB 278M.
+
+**~Changed (stale-pin sweep, Aug 15→25):**
+- **GPT-5.6 Sol pricing**: API list price cut to **$4/$20** (Aug 21, promo
+  through at least Nov 21, 2026) — fixed in the Foundation entry, cost table,
+  and Model Selection guide; long-context 2×/1.5× surcharge note added.
+- **gpt-image-2**: added the Aug 20 transparent-background preview
+  (`background=transparent`, png/webp only).
+- **Gemini 3.5 Pro "still unreleased"** as-of date rolled from Aug 13 → Aug 25
+  (still unreleased; Google still training Gemini 4).
+- **DeepSeek V4-Flash Scenario Guide pin**: was quoting a **$0.14/$0.28**
+  figure that matched neither the peak nor off-peak official rate — corrected
+  to the real off-peak rate ($0.22/$0.66, half of the $0.44/$1.32 peak) with a
+  scheduling tip.
+- **Qwen3.7-Max → Qwen3.8-Max** in the "best Chinese language support"
+  Scenario Guide pin — 3.8-Max (Aug 3 launch) was already in Foundation but
+  the guide still pointed at the superseded 3.7 line.
+- Version pins refreshed: Claude Code 2.1.233→2.1.245, Codex CLI
+  0.147.0→0.149.1, goose 1.46.0→1.47.0, Google ADK 2.7.0→2.7.1, Pydantic AI
+  2.31.0→2.34.0, Mastra 1.59.0→1.61.0, CrewAI 1.15.16→1.15.17, Microsoft
+  Agent Framework 1.14.0→python-1.15.0/dotnet-1.19.0, OpenAI Agents SDK
+  0.21.0→0.22.0, OpenHands (added v1.15.0 note), OpenClaw (added the
+  v2026.8.1-beta.3 preview note alongside the v2026.7.1-2 stable).
+- Pricing-table "re-verified" date and source-notes date bumped
+  2026-08-15→2026-08-25; footer/badge "Last Updated" and "Resources" bumped
+  to August 25, 2026 / 910+.
+
+**Research artefacts** (not committed; internal use only): three subagent
+research reports covering tools/frameworks, foundation/multimodal models, and
+physical AI + Chinese ecosystem for the Aug 15–25 window, each citing a fetched
+primary source per claim.
+
+---
+
 ### 2026-08-15 — full-list maintenance pass: Aug 8–15 wave, pricing overhaul, stale-claim sweep (en/zh/ja)
 
 Full category-by-category refresh, three days after the previous run. Every
