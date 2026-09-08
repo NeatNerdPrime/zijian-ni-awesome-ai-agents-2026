@@ -3,6 +3,96 @@
 All notable changes to **Awesome AI Agents 2026** are recorded here.
 Format: `YYYY-MM-DD  +Added  -Removed  ~Changed`.
 
+### 2026-09-08 — source-backed catalogue, translation and maintenance refresh (en/zh/ja)
+
+Maintained by **Zijian Ni**. The three catalogues now contain **916 / 916 / 916
+list entries** (879 before this pass), **116 matching headings**, **58 scenarios**,
+**8 illustrative stack recipes**, **17 Anti-Picks**, and **204 timeline rows**.
+Counts describe catalogue appearances, including historical/contextual repeats;
+they are not unique-product counts. The 25-category scope remains curated under
+CONTRIBUTING, with official catalogues for broader model discovery, rather than
+an unverifiable claim to include every checkpoint or quantization on the internet.
+
+**+Added / ~Changed — models and capabilities:**
+
+- Reviewed all **27 provider subsections** and rebuilt seven model comparison
+  tables in three languages. Added/corrected GPT-6 Astra/Astra Pro (limited
+  organizational rollout, **not GA**), Claude Fable 5.1/Mythos 5.1 (different access
+  programs), Gemini 3.8 Flash, Muse Spark 1.3, GLM-5.3/Flash, Qwen3.8 variants,
+  Sakana Namazu/Fugu, Mistral OCR 4.1 and Shieldstral, and Baichuan M4 research.
+- Expanded image/video/audio/embedding coverage, including Ideogram 4.0 and
+  P-Image-Ideogram, Seedream 5 Pro, Muse Voice Transcribe, MAI-Transcribe-2,
+  Lyria 3.5, Stable Audio 3.0, Voyage 4/Code 4/Nano and Qwen embedding/reranking,
+  ASR and TTS families. Official model cards and licences govern access and use.
+- Corrected code-versus-weight licence conflations (including TADA, Ideogram,
+  GLM, Qwen and Gemma); removed fabricated public Gemini 4/Gauss 2.3 entries.
+  Local-model memory columns now show ideal 4-bit **total-weight** storage with
+  overhead caveats, not purported measured VRAM derived from active MoE parameters.
+- Refreshed prices/context/access boundaries; separated GPT-4.5 ChatGPT retirement
+  from the earlier API shutdown, DALL-E 3 API retirement, and Sora app/API schedules.
+
+**+Added / ~Changed — agents, tools and physical AI:**
+
+- Added FastMCP, Deep Agents, OpenSandbox, x402 and official LangChain MCP/payment
+  integration resources. Matched **35 versioned release links** to GitHub release
+  objects; stable releases, prereleases and independently versioned packages remain
+  distinct. Updated coding, framework, memory, voice and browser recommendations.
+- Corrected Flowise/other archived repositories, Daytona's unmaintained public
+  core, OpenHands' current Agent Canvas description, Basic Memory/Agenta/Mastra
+  licensing, and LangSmith/Braintrust self-hosting boundaries. Rebuilt fifteen
+  tool comparison tables and all associated scenario mappings.
+- Updated Robotics ER 2 previews, GR00T N1.7, openpi policy families, LeRobot,
+  OpenVLA's historical status, Alpamayo 2 Super, Newton, Isaac Lab and Genesis.
+  Distinguished released models from research, supervised driving from autonomy,
+  manufacturing from deployment, and future capacity from delivered infrastructure.
+- Rewrote benchmark entries to identify dataset/harness/version boundaries;
+  incorporated Terminal-Bench 4.0 and Science 0.1. Removed unsupported leaderboard
+  supremacy, universal latency/security ratings, privacy/compliance guarantees
+  and unsupported incident claims. Article 50 now links specific Commission
+  guidance and acknowledges role-specific scope and exceptions.
+- Moved Clickyy from Start Here to Computer Use; corrected canonical repository
+  redirects and the AP2 badge; retired stale New/Updated tags and Hot tags without
+  current growth evidence. Added 17 sourced Aug 26–Sep 8 timeline milestones,
+  repaired missing translations and chronology, and removed unsupported launch
+  stories rather than turning them into verified historical records.
+
+**PR review decisions — current rules and prior logs applied:**
+
+| PR | Contributor | Disposition and reason |
+|---|---|---|
+| [#91](https://github.com/Zijian-Ni/awesome-ai-agents-2026/pull/91) | @Avraham-K | Cog Depot manually incorporated in en/zh/ja with Unverified status; distinguish MIT client and broker-fee escrow from marketplace trade guarantees. |
+| [#92](https://github.com/Zijian-Ni/awesome-ai-agents-2026/pull/92) | @mahirhir | Tracefold declined under the five-plus-list parallel-submission rule; real implementation acknowledged, independent adoption not established. |
+| [#93](https://github.com/Zijian-Ni/awesome-ai-agents-2026/pull/93) | github-actions | Older English date-badge patch superseded; Flowise archival finding incorporated across languages. |
+| [#95](https://github.com/Zijian-Ni/awesome-ai-agents-2026/pull/95) | @KongFangXun | sofagent declined under the parallel-submission rule; commit-time diff auditing does not establish general injection prevention. |
+| [#96](https://github.com/Zijian-Ni/awesome-ai-agents-2026/pull/96) | @GitSerge-crypto | AOTrust manually incorporated in en/zh/ja with Unverified status; signed hash/timestamp receipts do not establish content correctness or service guarantees. |
+| [#97](https://github.com/Zijian-Ni/awesome-ai-agents-2026/pull/97) | @InsightFactoryAPP | YYLO's real CLI and careful translation acknowledged; declined under the parallel-submission rule. Other-list merges do not waive it. |
+
+**Maintenance and verification:**
+
+- Fixed counts that included TOC anchors or missed emoji-bearing sections. The
+  former 910+ badge was inconsistent with 879 actual entries; the current 910+
+  badge correctly rounds down 916 actual catalogue appearances.
+- Sync now checks table rows/source order and scenario counts, not just bullets.
+  Fixed missing translated comparison/timeline/Anti-Pick rows and synchronized
+  recipe components even when their cells contain no URLs. Markdown anchors must
+  refer to real headings; fabricated duplicate-anchor suffixes no longer pass.
+- HTTP checks preserve TLS verification, confirm HEAD failures with GET and
+  distinguish 404/410, access blocks and transport errors. Removed blanket vendor
+  exclusions and false success on failed requests. Weekly CI retains the full
+  report and updates one issue for confirmed broken links.
+- Monthly status automation flags confirmed archives across all languages and
+  never advances content-review dates by calendar alone. It excludes GitHub's
+  product routes from repository metadata lookup. Updated durable maintenance
+  instructions and contribution guidance; added ten regression checks.
+- Local sync, Markdown, freshness-registry, count and ten regression checks pass.
+  GitHub's Markdown API renders all three files in section-sized chunks (the
+  whole-file API has a 400 KB limit): 28 tables and 116 headings each.
+  Final HTTP evidence covers **1,207 URLs: 876 successful, 257 badge/analytics
+  exclusions, zero confirmed dead, 68 blocked and six transport/TLS failures**.
+  Blocked/error URLs remain unverified. HTTP success is not factual verification.
+  No vendor benchmark was independently reproduced, paid entitlement tested, or
+  every retained historical/marketing assertion recertified by this pass.
+
 ### 2026-08-25 — full-list maintenance pass: Aug 15–25 wave, PR review, stale-pin sweep (en/zh/ja)
 
 Full category-by-category refresh, ten days after the previous run. Three parallel

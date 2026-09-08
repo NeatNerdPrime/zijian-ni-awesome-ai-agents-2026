@@ -1,20 +1,8 @@
 name: Structure Check
 
-# Guards the two invariants a link checker cannot see:
-#   1. README.md / README.zh-CN.md / README.ja.md stay in structural lockstep
-#      (same headings in the same order, same entries per section, same order).
-#   2. The markdown itself stays well-formed (in-page anchors resolve, table
-#      rows have consistent column counts, no malformed entries or open fences).
-#   3. The advisory sections (Compare tables, Scenario Guide, Stack Recipes,
-#      Anti-Picks) recommend only models that are still current. Historical
-#      sections may name superseded models; "what should I use today" sections
-#      may not.
-#
-# All three scripts exit non-zero on failure, so a PR that silently drops the
-# zh/ja translation of a new entry — historically the most common drift source —
-# fails here instead of shipping. Likewise a refresh that adds a new flagship to
-# the catalogue but forgets to update the recommendations fails instead of
-# quietly telling readers to use last quarter's model.
+# Structural parity, valid Markdown, computed counts and regression checks.
+# The freshness registry catches known stale recommendations; passing it does
+# not certify every model fact or current provider availability.
 
 on:
   pull_request:
