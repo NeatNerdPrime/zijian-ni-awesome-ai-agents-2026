@@ -8,10 +8,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 FILES = ('README.md', 'README.zh-CN.md', 'README.ja.md')
 ENTRY = re.compile(r'^- \[[^]]+\]\(https://github\.com/([A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+)(?:[)/#])')
+# GitHub product/documentation routes can look like owner/repository pairs.
+NON_REPOSITORY_ROUTES = {'features', 'topics', 'collections', 'settings', 'orgs', 'users', 'marketplace', 'sponsors', 'enterprise', 'resources', 'solutions'}
 
 
 def listed_repos(text):
-    return {m.group(1).removesuffix('.git') for line in text.splitlines() if (m := ENTRY.match(line))}
+    return {m.group(1).removesuffix('.git') for line in text.splitlines()
+            if (m := ENTRY.match(line)) and m.group(1).split('/')[0].lower() not in NON_REPOSITORY_ROUTES}
 
 
 def mark_archived(text, archived):

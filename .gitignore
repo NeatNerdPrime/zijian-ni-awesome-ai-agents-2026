@@ -5,3 +5,6 @@
 # quotes from third-party pages and go stale within days.
 .research/
 __pycache__/
+
+# Generated maintenance reports are uploaded as CI artifacts.
+artifacts/

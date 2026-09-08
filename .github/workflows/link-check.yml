@@ -73,6 +73,6 @@ jobs:
           path.write_text('\n'.join(body)+'\n', encoding='utf-8')
           existing = json.loads(subprocess.check_output(['gh', 'issue', 'list', '--state', 'open', '--search', title, '--json', 'number,title'], text=True))
           match = next((issue for issue in existing if issue['title'] == title), None)
-          command = ['gh', 'issue', 'edit', str(match['number'])] if match else ['gh', 'issue', 'create', '--title', title, '--label', 'maintenance,broken-link']
+          command = ['gh', 'issue', 'edit', str(match['number'])] if match else ['gh', 'issue', 'create', '--title', title, '--label', 'maintenance']
           subprocess.run(command + ['--body-file', str(path)], check=True)
           PY

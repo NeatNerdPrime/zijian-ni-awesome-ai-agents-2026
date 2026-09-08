@@ -81,6 +81,10 @@ class CatalogueChecks(unittest.TestCase):
         self.assertEqual(once.count('📦'), 1)
         self.assertEqual(refresh_repository_status.mark_archived(once, {'org/tool'}), (once, []))
 
+    def test_repository_scan_excludes_github_product_routes(self):
+        text = '- [Copilot](https://github.com/features/copilot) - Product.\n- [Tool](https://github.com/org/tool) - Repository.\n'
+        self.assertEqual(refresh_repository_status.listed_repos(text), {'org/tool'})
+
 
 if __name__ == '__main__':
     unittest.main()
