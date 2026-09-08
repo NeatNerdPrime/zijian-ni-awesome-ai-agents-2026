@@ -128,11 +128,11 @@
 
 ## 🧠 基础大模型 2026
 
-*为整个 AI 生态提供动力的大语言模型，按厂商组织。20+ 家厂商共 65+ 个模型。*
+*按厂商整理的现役与历史基础模型精选。模型卡、API 可用性和权重许可证可能不同；带日期的条目保留发布历史。*
 
 ### OpenAI
 - [GPT-Live-1 / GPT-Live-1 mini](https://openai.com/index/introducing-gpt-live/) - 🆕 **2026-07-08**。OpenAI 全双工会话语音模型，取代进阶语音模式。同步收听和说话（零切换延迟），处理打断，复杂查询在后台由 GPT-5.5 处理同时语音不中断。**GPT-Live-1** 为付费用户默认（Go/Plus/Pro）；**GPT-Live-1 mini** 为免费用户默认。支持实时语音翻译。
-- [OpenAI Astra](https://openai.com) - 🆕 ⚠️ **2026-08-01 宣布（公开发布时间未定）**。OpenAI 下一代模型家族预告。内部版本据报已在单次会话中解决 **10 道未解数学和理论计算机科学难题**（群论、量子复杂度等），249 页手稿 + Lean 4 机器可验证证书已公开。⚠️ 暂无 API 访问权限或公开权重。**2026-08-07 更新**：初步评估无法排除首次达到 "Critical" 网络攻击能力等级的可能性，OpenAI 已[放缓 Astra 开发](https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/)；白宫确认 OpenAI 主动向政府通报了此次延迟。发布时间进一步推迟。
+- [GPT-6 Astra / Astra Pro](https://openai.com/index/gpt-6-astra/) - 🆕 **2026年9月3日**。面向复杂推理、编程与计算机操作；[仅向部分组织逐步开放，尚未普遍可用](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)，公开 API 模型卡不代表当前账户已有访问权限。
 - [GPT-5.6 Sol](https://openai.com/blog/gpt-5-6) - 🆕 **2026-07-09**（GA；有限预览从 2026-06-26 开始）。GPT-5.6 家族旗舰层 —— Sol 具备最强旨攟推理、编程、生物、网安能力以及 “max 推理” + “ultra 子 Agent 模式”。因美国政府安全审查要求延迟发布，渐进面向全部用户。⚡ **2026-08-13**：新增 [Ultrafast 服务层](https://openai.com/index/previewing-ultrafast)（API 有限预览），以 Cerebras 硬件驱动，将 GPT-5.6 Sol 提速至 **Standard 的最高 14 倍 / 约 750 输出 token/秒**。⚡ **2026-08-21**：API 标价降至每百万 token **$4 / $20**（输入降 20%、输出降 33%），促销至少到 **2026-11-21**（[changelog](https://developers.openai.com/api/docs/changelog.md)）。
 - [GPT-5.6 Terra](https://openai.com/blog/gpt-5-6) - 🆕 **2026-07-09**。GPT-5.6 中级档 —— 与 GPT-5.5 性能相当但成本约降低 2×，适合成本敏感的生产任务。
 - [GPT-5.6 Luna](https://openai.com/blog/gpt-5-6) - 🆕 **2026-07-09**。GPT-5.6 速度/成本最优层 —— 专为大量、对延迟敏感的任务设计。
@@ -161,9 +161,9 @@
 - [GPT-5.4 Pro](https://openai.com/) - GPT-5.4 的高准确率变体。BenchLM 92。
 - [GPT-5.3](https://openai.com/) - 2026 年初。包括 GPT-5.3 Instant（对话）和 GPT-5.3-Codex（编程）。
 - [GPT-5.2](https://openai.com/) - 2025-12 发布。SOTA 推理 + 长上下文 + 视觉。
-- [GPT-5](https://openai.com/index/introducing-gpt-5/) - 2025-08 发布，ChatGPT 默认模型，替代 GPT-4o。多模态 + gpt-5 / mini / nano 三档变体。
+- [GPT-5](https://openai.com/index/introducing-gpt-5/) - **2025年8月**。较早的 GPT 世代，提供标准、mini、nano API 变体，保留作为发布历史。
 - [GPT-4o](https://openai.com/index/hello-gpt-4o/) - Omni 模型，原生支持文本/视觉/音频。2026-02 从 ChatGPT 下线，API 仍可用。
-- [GPT-4.5](https://openai.com/) - 📦 **2026 年 6 月底已从 ChatGPT 退役**（API 继续可用；已有对话自动迁移至 GPT-5.5）。最初于 2025 年 2 月作为研究预览发布 —— ChatGPT 中最后一个 GPT-4 家族模型。o3 将于 2026 年 8 月 26 日从 ChatGPT 退役。
+- [GPT-4.5](https://developers.openai.com/api/docs/deprecations) - 📦 历史研究预览；`gpt-4.5-preview` API 已于 **2025年7月14日**退役。
 - [o3 / o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) - 思维链推理模型。2025-04 发布。o3 将于 2026-08-26 退役。
 - [Codex CLI](https://github.com/openai/codex) - OpenAI 出品的开源终端编程 Agent。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenai%2Fcodex&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [OpenAI Jalapeño](https://openai.com/index/jalapeno-first-results) - 🆕 ⚡ **2026-08-25**。OpenAI 自研推理芯片首次公开结果：面向现代模型的更高吞吐、更低延迟。官方 RSS：「industry-leading speed and efficiency in AI inference」。
@@ -172,6 +172,8 @@
 
 ### Anthropic
 
+- [Claude Haiku 4.5](https://platform.claude.com/docs/en/models/overview) - 低延迟 Claude 层级，200K 上下文、最高 64K 输出；与 Sonnet 5、Opus 5、Fable 5.1 并列于当前产品目录。
+- [Claude Fable 5.1 / Mythos 5.1](https://www.anthropic.com/claude-fable-and-mythos-5-1) - 🆕 **2026年9月1日**。Fable 5.1 已正式开放（`claude-fable-5-1`）；Mythos 5.1 使用相同模型、不同防护措施，目前仅向获批的美国机构开放。
 - [Claude 文本水印 + 内容凭证](https://www.anthropic.com/news/claude-text-watermark) - 🆕 ⚡ **2026-08-14**。Anthropic 为未来的 Claude 模型在全球范围发布时内置基于 **SynthID-Text 的隐形水印**（Google DeepMind 的方法），并为生成的图像/文件（.png/.jpg/.svg）加入 C2PA 内容凭证；2026 年 8 月 2 日之前发布的模型将「在未来几个月内」跟进，检测 API 也即将推出。此举是为遵守欧盟 AI 法案 —— Anthropic 已于 7 月签署欧盟透明度行为准则。Anthropic 称带水印文本对读者完全无感。
 - [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) - 🆕 **2026-07-24**。Anthropic 第五代旗舰模型，性能近似 Fable 5，定价维持较低（输入 / 输出 $5 / $25 每百万 token）。支持 1M token 上下文窗口和最多 128K 输出 token。现为 Claude Max 默认模型。API: `claude-opus-5`。可通过 Anthropic API、Amazon Bedrock 和 Google Cloud Vertex AI 使用。
 - [Claude Fable 5 全球恢复访问](https://www.anthropic.com/news/redeploying-fable-5) - 🆕 **2026-07-01**。美国商务部于 6 月 30 日解除出口管制后，Anthropic 在 Claude.ai、Claude Platform、Claude Code、Claude Cowork 全面恢复全球访问。已部署针对 Amazon 发现的 jailbreak 的新安全分类器（对该已报告行为的拦截率 >99%）。Pro/Max/Team 与部分 Enterprise 套餐在 7 月 7 日前可将 Fable 5 用于最多 50% 的每周用量，之后通过用量额度使用；AWS、Google Cloud、Microsoft Foundry 云渠道随后恢复。Mythos 5 仍限美国受审实体。
@@ -203,11 +205,12 @@
 - [Bristol Myers Squibb ↔ Anthropic Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) - 🆕 **2026-05-20**。BMS 将 Claude Enterprise 作为 30,000+ 员工的共享智能平台，嵌入药物发现 / 开发 / 交付的全链路。全球前 5 大药企中首个全公司级 Claude 部署。
 
 ### Google DeepMind
+- [Gemini 3.8 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash) - 🆕 **2026年9月**。稳定版 `gemini-3.8-flash` 支持文本、图像、音频、视频和 PDF 输入，1,048,576 输入 token、65,536 输出 token，以及函数调用。
 - [Gemini 3.7 Flash](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/) - 🆕 ⚡ **2026-08-13**。Google 新的「最智能主力模型」，面向编程与 Agent —— 距 3.6 Flash 仅三周即发布，且抢在仍未露面的 3.5 Pro 之前。FrontierCode 1.1 43.6%（3.6 Flash 为 34.4%），DeepSWE v1.1 65.3%（3.6 Flash 为 49.0%）。引导定价**输入/输出每百万 token $0.75/$3.75，至 2026 年 12 月 31 日**（之后 $1.50/$7.50）。已上线 AI Studio、Android Studio、Antigravity 与 Gemini Enterprise Agent Platform；为 AI Pro/Ultra 订阅用户的 Gemini Spark 提供动力。
 - [Gemini 3.6 Flash](https://github.com/google-gemini/cookbook) - 🆕 **2026-07-21**。Google 的 Flash 档 —— 在复杂 agentic 与多模态任务上更强，**同时 token 用量更少、价格低于 3.5 Flash**。API id `gemini-3.6-flash`。已写入官方 Gemini API cookbook（含 thinking 模式指南）。2026-08-13 起顶级 Flash 档地位被 3.7 Flash 取代。
 - [Gemini 3.5 Flash-Lite](https://github.com/google-gemini/cookbook) - 🆕 **2026-07-21**。3.5 家族里最快、最便宜的模型；在高吞吐执行上超越前几代 Flash-Lite。API id `gemini-3.5-flash-lite`。现为最便宜的 Gemini 档，新项目应优先于 3.1 Flash-Lite。
-- [Gemini 3.1 Pro（preview）](https://deepmind.google/technologies/gemini/) - 截至 2026 年 7 月底 Google 能力最强的 Gemini，API 名 `gemini-3.1-pro-preview`。GPQA Diamond 94.3%（发布时世界纪录）、ARC-AGI-2 77.1%、BenchLM 94。⚠️ 仍带 `-preview` 后缀，且**没有免费额度**。
-- [Gemini 3.5 Pro](https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud) - ⚠️ **延期 —— 截至 2026-08-25 仍未发布**（面向合作伙伴的企业限量预览进行中）。Google 即将推出的旗舰模型，据报道具备 **200 万 token 上下文**和 **Deep Think** 推理模式，编程与 Agent 工作流能力显著提升。2026 年 5 月 Google I/O 上宣布原定 6 月发布，后因编程表现不理想、Google 推倒重建基座模型而推迟。在 Gemini 3.7 Flash 发布会（8 月 13 日）上，Google 拒绝谈论 3.5 Pro 的去向，并确认目前正在训练 **Gemini 4**。直接对标 GPT-5.6 Sol 和 Claude Fable 5。
+- [Gemini 3.1 Pro (preview)](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview) - 支持多模态输入与1M上下文的预览推理模型；可用性和限额取决于具体端点。
+- [Gemini 3.5 Pro (announcement)](https://ai.google.dev/gemini-api/docs/models) - ⚠️ **2026-09-08**核验的公共Gemini API目录未列出Gemini 3.5 Pro端点；不能将预告视为已可用，也不能推断其价格或上下文。
 - [Gemma 4 12B](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/) - 🆕 **2026-06**。新型多模态开源模型，采用**统一无编码器架构**，在单次计算中同时处理文本、图像和音频。支持在 16GB VRAM 显存下本地运行。
 - [DiffusionGemma](https://www.marktechpost.com/2026/06/10/google-ai-releases-diffusiongemma-a-26b-moe-open-model-using-text-diffusion-for-up-to-4x-faster-generation/) - 🆕 **2026-06**。采用**文本扩散 (text-diffusion)** 架构的 26B MoE 开源模型，生成速度比自回归模型快最高 **4 倍**。
 
@@ -220,14 +223,15 @@
 - [Gemini Spark（24/7 个人 AI Agent）](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。云端 24/7 常驻的个人 AI Agent，首期接入 Gmail / Chat，后续加入 ~30+ 个第三方工具（Adobe / Dropbox / Uber 等）以 MCP 協议调用。限 Google AI Ultra 付费用户。
 - [Google AI Ultra（$100/月）](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。新的消费者顶端订阅层级，面向开发者 / 创作者 / 重度用户，解锁 Gemini Spark、最高 Gemini 3.5 额度以及即将发布的 Gemini 3.5 Pro。
 - [Gemini 3.1 Flash / Flash Lite](https://deepmind.google/technologies/gemini/) - 高吞吐应用的高性价比选择。
-- [Gemini 4 (Open)](https://deepmind.google/technologies/gemini/) - 🆕 2026-04 发布。开源家族：2B / 4B / 26B / 31B 变体。科学推理与文档理解强，本地部署友好。
+- [Gemma 4 family](https://huggingface.co/google/gemma-4-31B-it) - Apache-2.0 开放权重多模态系列，包含 E2B、E4B、12B、26B A4B、31B；正确名称为 Gemma，并非已发布的开放版 Gemini 4。
 - [Gemini 2.5 Pro / Flash](https://deepmind.google/technologies/gemini/) - 2025-06 GA。Thinking 模型，1M 上下文。
 - [Gemma 4 31B](https://github.com/google-deepmind/gemma) - 🆕 2026-04。GPQA Diamond 84.3%。端侧推理首选开源权重之一。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle-deepmind%2Fgemma&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Gemma 3](https://github.com/google-deepmind/gemma) - 上一代开源家族。
-- [Gemini Robotics ER-1.6](https://deepmind.google/) - 🆕 2026-04-14。机器人 AI 模型，空间与物理推理增强。Agile Robotics 实地部署。
+- [Gemini Robotics ER 2](https://ai.google.dev/gemini-api/docs/robotics-overview) - 🆕 当前具身推理预览，面向空间理解与机器人工具编排，另有流式预览；替代已退役的 ER 1.6 端点。
 
 ### Meta
 
+- [Muse Spark 1.3](https://research.meta.ai/blog/introducing-muse-spark-1-3) - 🆕 **2026年9月2日**。面向 Agent 与编程的更新，已提供于 Muse Code 和 Meta Model API，支持 max 推理；Spark 权重开放仍属路线图。
 - [Muse Image](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07**。Meta Superintelligence Labs 最新图像生成模型 —— “Agent 式”架构，在生成图像前能自动完成网页搜索、代码执行、自我修正等中间步骤。已集成到 Meta AI 应用、Instagram Stories（美国）与限定国家的 WhatsApp（Facebook 即将上线）。注：一项允许使用其他用户公开 Instagram 头像生成图像的争议功能上线后，因用户反馈于 7 月 10 日下线。
 - [Muse Spark 1.1](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) - 🆕 **2026-07-09**。面向 Agent 任务的多模态推理模型，通过新的 Meta Model API 公开预览发布。标志着 Meta 在开源 Llama 路线之外开始构建专有商业模型。
 - [Muse Video](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07（预览）**。Meta Superintelligence Labs 的视频生成模型，与 Muse Image 同底座；Arena 文生视频榜第 3。随 Muse Image 发布一同预览 —— "即将面向创作者与 Meta AI 开放"。
@@ -242,38 +246,42 @@
 
 ### Sakana AI
 
+- [Sakana Namazu](https://console.sakana.ai/models) - 日语专用 LLM，API ID 为 `sakana-namazu-v1.0`；`sakana-namazu` 别名跟随当前版本。
 - [Sakana RL Conductor](https://venturebeat.com/orchestration/how-sakana-trained-a-7b-model-to-orchestrate-gpt-5-claude-sonnet-4-and-gemini-2-5-pro) - 🆕 **论文 2026-04-27 / Fugu beta 2026-04 末至 2026-05 初**。基于 Qwen2.5-7B 的 RL 训练编排模型，用强化学习把子任务分发给 GPT-5、Claude Sonnet 4、Gemini 2.5 Pro 等。LiveCodeBench 83.9%、GPQA-Diamond 87.5% SOTA，每次查询约 1.8K token，远低于其他多 Agent 合奏。
-- [Sakana Fugu](https://sakana.ai/fugu-beta/) - 🆕 **2026-04-24 / 25 公测**。把 RL Conductor 研究产品化的多 Agent 编排商用服务，兼容 OpenAI 接口，分 **Fugu Mini**（低延迟）和 **Fugu Ultra**（最大性能）两档；在 SWE-Pro、GPQA-D、ALE-Bench 表现亮眼。
+- [Sakana Fugu / Fugu Ultra](https://console.sakana.ai/models) - 模型编排 API，提供 `fugu`、`fugu-ultra-v1.1` 与按量计费的 `fugu-cyber-v1.0`，兼容 OpenAI Responses 和 Anthropic Messages。
 
 ### Zyphra
 
-- [ZAYA1-8B](https://www.zyphra.com/post/zaya1-8b) - 🆕 **2026-05-06**。MoE 推理模型（激活参数 <1B），完全在 AMD Instinct MI300X 集群上训练。Apache 2.0 权重已在 Hugging Face，并在 Zyphra Cloud 提供 serverless 端点；强调每激活参数的智能密度。
+- [ZAYA1-8B](https://www.zyphra.com/models/zaya1-8b) - **2026年5月6日**。采用 AMD MI300X 基础设施训练的小型 MoE 推理模型，权重以 Apache-2.0 发布。
 - [ZAYA1-8B-Diffusion-Preview](https://www.zyphra.com/post/zaya1-8b-diffusion-preview) - 🆕 **2026-05-14**。首个从自回归 LLM 转换得来的 MoE 扩散语言模型，也是首个在 AMD GPU 上训练的扩散 LM。每步生成 16 个 token，相比自回归基线最多 **7.7× 推理加速**；采用 Zyphra 的 TiDAR 训练配方 + CCA 注意力。
 
 ### Thinking Machines Lab
 
-- [Inkling](https://thinkingmachines.ai/inkling/) - 🆕 **2026-07-15**。前 OpenAI CTO Mira Murati 创立。975B MoE 参数（41B 激活），基于 45T token 预训练，1M token 上下文窗口。原生多模态（文本 / 图像 / 音频 / 视频）。Apache 2.0 开源权重，已发布至 Hugging Face。同日以预览形式announce了 **Inkling-Small**（权重尚未发布）。可通过 Thinking Machines API 和 Hugging Face Inference 使用。
+- [Inkling](https://thinkingmachines.ai/inkling/) - **2026年7月15日**。Apache-2.0 MoE 模型，总参数 975B、激活 41B，原生支持文本、图像、音频输入；模型支持 1M 上下文，Tinker 服务上限较低。
 - [Inkling-Small](https://thinkingmachines.ai/inkling/) - 🆕 **2026-07-30（权重已发布）**。Inkling 的轻量化变体 —— 276B 总参 / 12B 激活，相同原生多模态架构（文本/图像/音频），1M token 上下文，Apache 2.0。HLE 文本基准 **31.6%**，略超较大的 975B Inkling 版本（该指标 29.7%）。可通过 Thinking Machines API 和 Hugging Face 使用。
 
 ### Mistral AI
 
+- [Voxtral Mini Transcribe Realtime](https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602) - Apache-2.0 开放权重流式语音识别模型，与语音生成用途的 Voxtral TTS 不同。
+- [Shieldstral 1.0](https://docs.mistral.ai/models/shieldstral-1-0) - 🆕 **2026年8月4日**。Apache-2.0 文本/图像内容审核模型，处于公开预览；支持策略问题、提示词与回复对及拒答分类。
+- [Mistral OCR 4.1](https://docs.mistral.ai/models/ocr-4-1) - 文档 OCR 服务，输出段落边界框、结构块标签及置信度分数。
 - [Mistral Large 3](https://mistral.ai/news/mistral-3) - 675B 总 / 41B 激活 MoE，256K 上下文。多模态旗舰开源。2025-12 发布。
-- [Mistral Medium 3.1](https://mistral.ai/) - 企业级前沿密集模型。多模态，128K，支持 80+ 编程语言。2025-08 发布。
+- [Mistral Medium 3.1](https://docs.mistral.ai/models) - 📦 2025年历史版本，现列入弃用/退役目录；当前Medium条目为Mistral Medium 3.5。
 - [Mistral Small 4](https://mistral.ai/news/mistral-small-4) - 🆕 2026-03。119B 总 / 6B 激活。融合推理 + 多模态 + 编程的混合模型。
-- [Magistral 1.2](https://mistral.ai/) - 🆕 2026 推理家族。透明、多语言推理。
-- [Devstral 2](https://mistral.ai/) - 🆕 2026 Agent 编程模型。当前最佳开源编程 Agent 模型。
-- [Codestral](https://mistral.ai/news/codestral) - 22B 编程模型，80+ 语言，32K 上下文。2024-05 发布。
+- [Magistral 1.2](https://docs.mistral.ai/models) - 📦 2025年9月发布的历史Medium/Small推理变体，现处于Mistral弃用/退役目录。
+- [Devstral 2](https://docs.mistral.ai/models/devstral-2-25-12) - 模型卡版本为2025年12月的历史Agent编程模型；部署前须核对生命周期状态。
+- [Codestral 2508](https://docs.mistral.ai/models/codestral-25-08) - Mistral 当前目录中的代码补全模型；参数应以该版本模型卡为准，不能沿用 2024 年初版 22B 的规格。
 - [Pixtral Large](https://mistral.ai/) - 124B 多模态 + 1B 视觉编码器，128K 上下文，支持 30+ 高分辨率图像。
 - [Ministral 3B/8B/14B](https://mistral.ai/) - 端侧紧凑模型。
 - [Mistral Forge](https://mistral.ai/) - 🆕 2026-03 自定义 LLM 训练平台。
 - [Mistral Medium 3.5](https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04) - 🆕 **2026-04-28**。Dense 128B 开放权重模型，256K 上下文，Modified MIT 许可。统一指令跟随、推理与代码能力。
 - [Leanstral 1.5](https://mistral.ai/news/leanstral-1-5/) - 🆕 **2026-07-02**。面向 Lean 4 证明工程的形式化验证模型 —— 119B 总 / 6B 激活参数，Apache 2.0，权重上 Hugging Face 并提供免费 API 端点。miniF2F 得分 100%，解决 PutnamBench 672 题中的 587 题，并在 57 个真实仓库中发现 5 个此前未被报告的 bug。
 - [Robostral Navigate](https://mistral.ai/news/robostral-navigate/) - 🆕 **2026-07-08**。Mistral 首个机器人模型 —— 8B 具身导航模型，仅凭单个 RGB 摄像头即可让轮式、足式与飞行机器人根据自然语言指令穿行办公室、家庭与户外环境（未见过的验证场景成功率 76.6%）。完全自研，基于约 40 万条仿真轨迹训练。
-- [Voxtral TTS](https://www.forbes.com/sites/ronschmelzer/2026/03/26/mistral-releases-open-weight-voice-ai-built-for-speed/) - 🆕 **2026-03-26**。基于 Ministral 3B 的 4B 参数开放权重 TTS；多语种，专为语音 Agent 优化延迟。
+- [Voxtral TTS](https://docs.mistral.ai/models/voxtral-tts-26-03) - 支持声音克隆与多语言的开放权重语音生成模型；权重为 CC-BY-NC-4.0，商业部署须另获授权。
 
 ### DeepSeek 🇨🇳
 
-- [DeepSeek-V4-Pro-0813（GA）](https://api-docs.deepseek.com/news/news260813) - 🆕 ⚡ **2026-08-13**。`deepseek-v4-pro` 在应用/网页/API 全面 GA，带来「Agent 能力重大升级、生产环境收益显著」：可选**推理力度**（low/high/max —— V4-Flash 同样支持）、原生支持针对 Codex 优化的 OpenAI **Responses API**，以及应用/网页端的「专家模式」。⚠️ **定价 2026-08-16（16:00 UTC）起调整**：单一费率结束，改为**高峰/低谷分层计价**（高峰 01:00–04:00 与 06:00–10:00 UTC；低谷便宜 50%）。V4-Pro 高峰价：每 100 万 token 命中缓存输入 $0.044 / 未命中 $1.32，输出 $3.96 —— 涨幅明显（[定价](https://api-docs.deepseek.com/quick_start/pricing)）。
+- [DeepSeek-V4-Pro-0813 (GA)](https://api-docs.deepseek.com/news/news260813) - **2026年8月13日**。`deepseek-v4-pro` 对应的生产检查点，支持推理强度配置和 Responses API；峰谷计价已于8月16日生效。
 - [DeepSeek-V4-Pro](https://api-docs.deepseek.com/news/news260424) - 🆕 **2026-04-24（预览）；2026 年 7 月中旬正式上线**。1.6T 总 / 49B 激活 MoE，1M 上下文。MIT。Agent、世界知识、推理领域开源标杆。最大输出 384K，并发上限 500。`deepseek-v4-pro` / `deepseek-v4-flash` 为生产 API 模型（V4-Pro 自 8 月 13 日起服务 0813 检查点 —— 见上；2026-08-16 起实行高峰/低谷分层计价）。
 - [DeepSeek-V4-Flash](https://api-docs.deepseek.com/news/news260424) - 🆕 2026-04-24。284B 总 / 13B 激活 MoE，1M 上下文。MIT。性价比层 —— 2026-08-16 起：高峰每 100 万 token **命中缓存输入 $0.014 / 未命中 $0.44，输出 $1.32**，低谷 **$0.007 / $0.22 / $0.66**；最大输出 384K，并发上限 2500（[定价](https://api-docs.deepseek.com/quick_start/pricing)）。
 - [DeepSeek-V4-Flash-0731](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731) - 🆕 **2026-07-31**。DeepSeek 发布的更新 Flash 检查点 —— 相同 284B/13B 激活 MoE 架构，相同 API/定价，但在 Agent 任务基准上表现优于 V4-Pro（预览版）。MIT 协议开源至 Hugging Face，直接替换 `deepseek-v4-flash` API 用户即可使用。
@@ -286,8 +294,9 @@
 
 ### Alibaba (Qwen) 🇨🇳
 
+- [Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next) - 🆕 **2026年8月**。实验性多模态 MoE：125B 参数/6B 激活，另含 51B n-gram 表和 4B MTP；原生 262K 上下文，可扩展至 1M，采用 Qwen Community License 1.0。
 - [Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) - 🆕 ⚡ **2026-08-14**。Qwen3.8-Max 的开源权重 27B 多模态（文本/图像/视频输入）蒸馏版，以 **Apache 2.0** 协议发布至 Hugging Face —— 面向约 24 GB 显存的消费级 GPU（RTX 4090 级别）。Qwen3.8-Max 发布时承诺的开源权重配套模型，如期交付。
-- [Qwen3.8-Max](https://alibabacloud.com/blog/qwen3-8-max) - 🆕 ⚡ **2026-08-03**。阿里巴巴新旗舰—— 2.4T 参数 MoE（95B 激活），1M token 上下文，支持文本 / 图像 / 视频输入。专为现实任务、研究和自主编程设计；阿里巴巴内部测试中，该模型曾自主花 16 天构建并优化一个编程工具。API 通过 QwenCloud / 阿里云模型平台提供（$2/M 输入、$6/M 输出）。完整模型的开源权重已于约 8 月 12 日以 [`Qwen/Qwen3.8-2.4T-A95B`](https://huggingface.co/Qwen) 上架 Hugging Face，27B 蒸馏版于 8 月 14 日跟进。配套企业平台 **QwenWork** 于 8 月 2 日开放公测。
+- [Qwen3.8-Max / Qwen3.8-2.4T-A95B](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B) - **2026年8月**。多模态旗舰，已有官方可下载检查点；完整模型权重采用 Qwen 自定义许可，独立的 Qwen3.8-27B 检查点则采用 Apache-2.0。
 - [Qwen 3.7-Max](https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory) - 🆕 **2026-05-20 — 阿里云杭州峰会**。为 AI Agent 量身打造的新一代顶级：代理型编程、复杂推理、「长静间距」多步任务能力；同期亊相新的 T-Head **珄武 M890** AI 算力芯片与全栈 AI 基础设施升级。面向全球开发者 / 企业即将上线。
 - [Qwen 3.7-Max-Preview / Plus-Preview](https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena) - 🆕 **2026-05-18**。杭州峰会前的预览梯队；LM Arena 上文本 + 视觉双赛道均为**中文世界最高分**中国模型。
 - [Qwen3.6-27B](https://qwen.ai/blog?id=qwen3.6-27b) - 🆕 **2026-04-22**。27B 密集多模态。开源。Agent 编程 + 思维上下文保持。
@@ -305,7 +314,7 @@
 
 ### xAI / SpaceXAI (Grok)
 
-- [Grok 4.6](https://x.ai/news/grok-4-6) - 🆕 ⚡ **2026-08-12**。SpaceXAI 面向编程、Agent 任务与知识工作的新前沿模型 —— 基于 Grok 4.5 打造，尤其强化**长时运行 Agent** 与更具野心的交互/视觉类工作，并改进了自测与验证能力。500K token 上下文，文本 + 图像输入，定价维持 $2/$6 每百万输入/输出 token（Fast 变体 2 倍价格）。在 Artificial Analysis 智能指数上与 GPT-5.6 Sol 持平（61）。已上线 xAI API、Cursor（新默认模型）、Grok Build、OpenRouter、Vercel 与 Cloudflare；8 月 14 日登陆 GitHub Copilot。（SpaceX 于 2 月吸收合并 xAI 后，xAI 已于 2026 年 7 月完成更名为 **SpaceXAI**。）
+- [Grok 4.6](https://x.ai/news/grok-4-6) - **2026年8月12日**。通过 API、Cursor、Grok Build 提供的编程与 Agent 模型，每百万 token 输入/输出起价 $2/$6；Fast 价格翻倍。
 - [Grok Bot](https://docs.x.ai/docs/release-notes) - 🆕 ⚡ **2026-08-11（早期 beta）**。可长期存续的 AI 队友，运行在**持久化云端计算机**上，支持消息、审批、连接器与例行任务 —— xAI 进军常驻自主 Agent 领域之作。可通过 SuperGrok Heavy、Cursor Ultra 与 Cursor Teams Premium 使用。
 - [Grok 4.5](https://x.ai/) - 🆕 **2026-07-08**。与 Cursor 共同训练，利用真实开发者交互数据优化编程与 Agent 能力。支持 500K token 上下文、函数调用、结构化输出、web/X 搜索、代码执行、文档搜索与上下文压缩。定价 $2/$6 每百万 token。EU API 控制台于 2026-07-17 上线。2026-08-12 起旗舰地位被 Grok 4.6 取代。
 - [Grok 4.3 GA](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-grok-4-3-on-microsoft-foundry-latest-generation-agentic-capabilities/4517096) - 🆕 **2026-05**。Grok 4.3 在 Microsoft Foundry 与 OCI Generative AI 上 GA；xAI 面向 Agent 工作负载的旗舰，工具调用与长链推理能力升级。
@@ -316,6 +325,7 @@
 
 ### Microsoft (MAI)
 
+- [MAI-Transcribe-2](https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/) - 🆕 **2026年9月3日**。语音识别模型，支持说话人区分、词级时间戳、词汇偏置与60种语言；促销价为每小时音频 $0.10，持续至年底。
 - [Microsoft MAI-Code-1-Flash](https://microsoft.ai/news/introducingmai-code-1-flash/) - 🆕 **Build 2026（2026 年 6 月 2 日）**。微软首个完全脱离 OpenAI 技术、从零自研的编程基础模型。5B 参数，自适应思考长度，已上线 GitHub Copilot。在四大核心编程基准上击败 Claude Haiku 4.5（SWE-Bench Pro 51.2% vs 35.2%，领先 16 分），SWE-Bench Verified 任务最多省 60% token。
 - [Microsoft MAI-Thinking-1](https://microsoft.ai/news/microsoft-build-2026-mai-keynote-transcript/) - 🆕 **Build 2026（2026 年 6 月 2 日）**。微软首个完全脱离 OpenAI 数据、从零自训的推理模型；与 MAI-Code-1-Flash 同发，标志微软的基础模型独立进程。
 - [MAI-Code-1.1-Flash](https://microsoft.ai/news/mai-code-1-1-flash-br-better-faster-at-a-quarter-of-the-cost/) - 🆕 **2026-08-11**。相对 6 月 1.0 的生产 Copilot 主力：代码质量更高、**token 效率 +25%**、**成本约 1/4**；Terminal-Bench 2.1 +22%，.NET 任务 +15%。
@@ -324,27 +334,28 @@
 
 ### Microsoft (Phi)
 
-- [Phi-4-reasoning-vision-15B](https://azure.microsoft.com/en-us/products/phi) - 🆕 2026-03。15B 多模态，选择性思维链推理。端侧友好。
+- [Phi-4-reasoning-vision-15B](https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B) - MIT 许可的15B视觉语言模型，结合图像理解与推理；部署要求以官方检查点说明为准。
 - [Phi-4](https://azure.microsoft.com/en-us/products/phi) - 14B SLM，推理水平媲美更大模型。MIT。
 - [Phi-4-mini](https://azure.microsoft.com/en-us/products/phi) - 3.8B 密集，128K 上下文。推理 / 数学 / 编程 / 函数调用都强。
 - [Phi-4-multimodal](https://azure.microsoft.com/en-us/products/phi) - 5.6B 首个多模态 Phi（语音 + 视觉 + 文本）。
 
 ### Cohere
 
-- [Command A+](https://cohere.com/blog/command-a-plus) - 🆕 **2026-05-20**。218B 总 / 25B 激活 MoE，Apache 2.0 开源权重（Hugging Face）。128K 输入 / 64K 输出。多模态、48 种语言、Agent 工具调用；2× H100 或 1 块 Blackwell GPU 即可运行。
+- [Command A+](https://docs.cohere.com/docs/command-a-plus) - **2026年5月**。`command-a-plus-05-2026` 统一图像输入、推理、工具使用与翻译，支持128K输入上下文和64K输出。
 - [Command A](https://docs.cohere.com/v2/changelog/command-a) - 2025-03-13 发布。111B 开源权重，256K 上下文。Agent / 多语言 / 编程聚焦。
 - [Command R+](https://cohere.com/) - 企业级 RAG 模型，128K 上下文，10 种语言，带引用 grounded generation。
 - [Command R](https://cohere.com/) - 经济型 RAG 模型。
 
 ### Baidu (ERNIE / 文心) 🇨🇳
 
-- [ERNIE 5.1](https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/) - 🆕 **2026-05-08**。总参数约为 ERNIE 5.0 的 1/3、激活参数约 1/2，预训练成本仅约为同级的 6%；LMArena Search 中文模型第一 / 全球第四（1,223）。
+- [ERNIE 5.1](https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/) - **官方发布文：2026年5月9日**。通过异步强化学习与 Agent 后训练增强写作、推理及工具任务的文心模型更新。
 - [ERNIE 5.0](https://ernie.baidu.com/) - 2025-11-13 发布（百度世界大会）。2.4T 参数全模态 MoE（每次激活 <3%）。
 - [ERNIE 4.5](https://yiyan.baidu.com/) - 2025 多模态前作。中文与推理强。
 
 ### Zhipu AI / Z.ai (GLM) 🇨🇳
 
-- [GLM-5.3](https://the-decoder.com/zhipu-ai-releases-glm-5-3-claims-its-the-strongest-open-weights-coding-model/) - 🆕 ⚡ 🇨🇳 **2026-08-14**。智谱新的编程旗舰 —— 号称**最强开源权重编程模型**，据称仅靠后训练即比 GLM-5.2 提升 +50%。已上线全部 GLM Coding Plan 套餐、ZCode、Claude Code 与 OpenCode 集成；开源权重承诺在安全审查完成后约 2 周放出。（厂商自报数据；独立基准待验证。）
+- [GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash) - 🆕 MIT 许可多模态 MoE，总参数320B、激活18B，采用稀疏/线性混合注意力并支持配置推理强度。
+- [GLM-5.3](https://huggingface.co/zai-org/GLM-5.3) - 🆕 官方编程/推理权重现已可下载，采用自定义 GLM-5.3 License，并非 GLM-5.2 的 MIT；支持 vLLM/SGLang 部署。
 - [GLM-5.2](https://z.ai/blog/glm-5.2) - 🆕 **2026-06-13**。编程优先的 744B MoE 旗舰，**100万 token 上下文**（约为 GLM-5.1 的 5 倍），输出最高 131K token。已上线全部 GLM Coding Plan 套餐；MIT 开源权重 + 独立 API 于发布当周陆续放出。开箱兼容 Claude Code、Cline、OpenCode、Roo Code、Goose、OpenClaw。（发布时未公布基准分数。）
 - [GLM-5.1](https://z.ai/blog/glm-5.1) - 🆕 **2026-04-08**。744B MoE / 40B 激活，200K 上下文。MIT。SWE-Bench Pro 第一。
 - [ZCode](https://www.scmp.com/tech/tech-trends/article/3359170/zhipu-ai-releases-harness-glm-52-model-chinese-firm-takes-aim-anthropic) - 🆕 🇨🇳 **2026-07-02**。智谱为 GLM-5.2 打造的 Agent harness —— 把模型变成自主编程 Agent，正面对标 Claude Code；发布促销包括 Coding Plan 订阅用户 +50% 配额、新用户 500 万免费 token。
@@ -355,9 +366,9 @@
 
 ### MiniMax
 
-- [MiniMax M3](https://www.minimax.io/) - 🆕 **2026-06-01**。开源权重（MIT）旗舰，采用 MiniMax Sparse Attention —— 1M token 下计算成本约为 1/20；前沿编程能力，SWE-Bench Pro 59.0%，BrowseComp 83.5%。
+- [MiniMax M3](https://huggingface.co/MiniMaxAI/MiniMax-M3) - 面向编程与 Agent 任务的开放权重多模态模型，采用 MiniMax Sparse Attention，支持1M上下文；权重为 MiniMax Community License。
 - [MiniMax-M2.7 (开源权重)](https://www.minimax.io/) - 🆕 2026-04。230B 级开源权重旗舰。编程与 Agent 任务顶级表现。
-- [MiniMax M2.7（闭源）](https://venturebeat.com/technology/new-minimax-m2-7-proprietary-ai-model-is-self-evolving-and-can-perform-30-50) - 🇨🇳 🆕 **2026-03**。自演化闭源 LLM，针对 Agent 框架搭建、记忆更新、工作流迭代优化；SWE-bench 类任务大幅提升。
+- [MiniMax M2.7 (release history)](https://huggingface.co/MiniMaxAI/MiniMax-M2.7) - MiniMax较早的Agent/编程模型，已有可下载权重及专属许可；云端发布描述不能据此解释为仍仅有闭源服务。
 - [MiniMax M2.5](https://www.codemotion.com/magazine/ai-ml/minimax-m2-5-low-costs-high-performance/) - 🇨🇳 **2026-02**。230B 参数旗舰，主打 "真实世界生产力" 与高性价比。
 - [MiniMax H3](https://huggingface.co/MiniMaxAI/MiniMax-H3) - 🆕 🇨🇳 **2026-07**（HF 创建于 7 月 28 日）。开源权重全模态生成：理解文本/图像/视频/音频，输出最高 2K / 15 秒、带原生立体声音频的视频。33B 稠密 Omni Transformer；`minimax-h3-community-license-agreement`。现为 MiniMax 视频旗舰（接替 Hailuo 2.3）。HF 下载 440 万+。
 - [Hailuo 2.3 / 2.3 Fast](https://www.minimax.io/news/minimax-hailuo-23) - 🇨🇳 **2025-10**。前代视频模型 —— SOTA 物理效果、角色微表情、强风格化；Hailuo 02（2025）仍作为聚焦 I2V 的变体保留。视频旗舰已由 MiniMax H3（2026-07）接替。
@@ -369,7 +380,7 @@
 
 ### Moonshot AI (Kimi) 🇨🇳
 
-- [Kimi K3](https://kimi.ai/) - 🆕 **2026-07-16**。Moonshot AI 最大旗舰：**2.8T 参数**稀疏 MoE（每个 token 激活 896 个专家中的 16 个），**1M token 上下文窗口**，原生视觉与多 Agent 能力。引入 Kimi Delta Attention（混合线性注意力，加速长上下文解码）。API：每百万 token **命中缓存输入 \$0.30 / 未命中 \$3.00，输出 \$15.00**（[官方定价](https://platform.kimi.ai/docs/pricing/chat-k3.md)）；全程推理，支持顶层 `reasoning_effort` 字段（`low`/`high`/`max`，默认 `max`），以及 K3 独有的 `tool_choice` 约束与动态加载工具。**全量权重已于 2026-07-27 如期开源**（[Hugging Face](https://huggingface.co/moonshotai/Kimi-K3)）—— 2.8T 总参数 / **104B 激活**，93 层，896 专家（16 选中 + 2 共享），MoonViT-V2 401M 视觉编码器，量化感知训练的 MXFP4 权重 + MXFP8 激活，97 个 safetensors 分片，无需申请。采用专属 **Kimi K3 License**（宽松，但任意 12 个月内 MaaS 收入超 $20M 需单独签议）。
+- [Kimi K3](https://huggingface.co/moonshotai/Kimi-K3) - 开放权重多模态 MoE，总参数2.8T、激活104B，1M上下文；自定义 Kimi K3 License 对大型模型服务业务另有条款。
 - [Kimi K2.7 Code](https://kimi.ai/) - 🆕 **2026-06-12**。K2.6 的编程优先继任者 —— 1T MoE / 32B 激活（384 专家），256K 上下文，Modified MIT，已上 Hugging Face + Kimi API。面向长程 Agent 编程，推理 token 用量约降 30%；官方 Kimi Code Bench v2 较 K2.6 +21.8%（厂商基准）。每百万输入/输出 0.95 / 4.00 美元。
 - [Kimi K2.6](https://kimi.ai/) - 🆕 **2026-04-20~21**。1T MoE / 32B 激活，256K 上下文。编程增强、长任务执行、**最大 1000 个 Agent 协作集群**。支持 `thinking.keep="all"` 持久推理。OpenClaw v2026.4.20+ 默认模型。
 - [Kimi K2.5](https://kimi.ai/) - 2026-01 至 02。1T 总 / 32B 激活 MoE。原生多模态，最多 100 个并行子 Agent。开源。⚠️ 2026-05-25 已停止支持；不再向新注册用户开放，**平台将于 2026-08-31 全面下线** —— 请迁移到 K2.6。
@@ -377,23 +388,25 @@
 
 ### ByteDance (Doubao / 豆包) 🇨🇳
 
+- [Seed 2.1](https://seed.bytedance.com/en/seed2_1) - 🆕 当前 Seed 模型，面向通用 Agent 任务与端到端编程，提供官方评测和产品访问入口。
 - [Doubao 2.0](https://www.taipeitimes.com/News/biz/archives/2026/02/16/2003852382) - 🇨🇳 🆕 **2026-02**。面向 Agent 时代的升级，专注真实任务执行；驱动字节跳动多款消费级 AI 应用。
 - [Seedance 2.0](https://economictimes.indiatimes.com/us/news/seedance-2-0-goes-live-as-bytedances-ai-videos-ignite-china-market-rally/articleshow/128150649.cms) - 🇨🇳 🆕 **2026-02**。多模态电影级视频生成，2K 分辨率，比 Seedance 1.5 快约 30%。
-- [Doubao-Seed-2.0 Pro](https://seed.bytedance.com/) - 🆕 2026-02 发布。前沿推理与复杂 Agent。和 GPT-5.2 同级，成本约低 90%。
+- [Doubao-Seed-2.0 Pro](https://seed.bytedance.com/en/seed2) - Seed 2.0 Pro 是字节跳动 Seed 2.0 系列的推理与 Agent 工作层级；端点可用性和价格以所在区域的 ModelArk 目录为准。
 - [Doubao-Seed-2.0 Lite](https://seed.bytedance.com/) - 🆕 通用生产负载。性能效率均衡。
 - [Doubao-Seed-2.0 Code](https://seed.bytedance.com/) - 🆕 软件开发：代码生成、调试、评审。
 - [BAGEL](https://github.com/bytedance-seed/BAGEL) - 🆕 字节开源多模态模型，文图视频统一理解 + 生成。
 
 ### Amazon (Nova)
 
-- [Nova 2 Pro](https://aws.amazon.com/nova/) - **2025-12-02（re:Invent）**。Amazon 最强推理模型。文 / 图 / 视频 / 语音输入。Agent 编程与长程规划。
+- [Nova 2 Omni](https://docs.aws.amazon.com/nova/) - Amazon Nova 2 官方产品线中的多模态理解与生成模型。
+- [Nova 2 Pro](https://docs.aws.amazon.com/nova/) - Nova 2 系列的推理模型；访问方式、区域可用性和支持模态请以 Amazon Nova 2 官方指南为准。
 - [Nova 2 Lite](https://aws.amazon.com/nova/) - **2025-12-02**。快速、高性价比推理，1M token 上下文 + 可调 "thinking effort"。
 - [Nova 2 Sonic](https://aws.amazon.com/nova/) - **2025-12-02**。实时语音对语音模型。多语言。
 - [Nova Act](https://aws.amazon.com/nova/) - **2025-12-02**。浏览器 Web 任务 Agent 服务，由 Nova 2 Lite 驱动重新上线。
 - [Nova Forge](https://aws.amazon.com/nova/) - **2025-12-02**。用自有数据构建自定义 Nova 变体的 "open training" 服务。
 
 ### NVIDIA (Nemotron)
-- [Nemotron 3.5 Lightning](https://ollama.com/library/nemotron-3.5-lightning) - 🆕 ⚡ **2026-08-11**。开放权重 30B MoE，仅 3B 激活参数——专为常驻 Agent 的执行层设计。支持 1M token 上下文，商业授权，在 20T+ token 上预训练（数据截止日 2025-09）。可通过 Ollama（`ollama run nemotron-3.5-lightning`）、Hugging Face 及 NVIDIA 自平台使用。专为规划、工具选择和中间工作等大量低延迟 Agent 工作负载。
+- [Nemotron 3.5 Lightning](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16) - 面向高效 Agent 任务的开放权重模型，总参数30B、激活3B，提供官方 BF16 和 NVFP4 检查点；许可须按各工件附带的 NVIDIA 条款确认。
 - [Nemotron 3.5 ASR](https://developer.nvidia.com/nemotron) - 🆕 **2026-06-06**。NVIDIA 6 亿参数的 cache-aware 流式语音识别模型 —— 覆盖 40 个语言区域的实时转录。
 - [Nemotron 3 Ultra (550B)](https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/) - 🆕 **2026-06-04**。开源权重 550B 总 / 55B 激活的混合 Mamba-Transformer MoE，面向长时运行 Agent。美国开源模型中的前沿推理水平，为 Blackwell 优化。
 - [Nemotron-Labs-TwoTower](https://huggingface.co/nvidia/Nemotron-Labs-TwoTower-30B-A3B-Base-BF16) - 🆕 🧪 **2026-07-01**。NVIDIA Research 的开源权重扩散语言模型，改造自冻结的 Nemotron-3-Nano-30B-A3B 底座 —— 一座塔保持上下文，另一座塔并行输出 token，无需重训即可获得约 2.4× 吞吐。
@@ -403,38 +416,40 @@
 
 ### Tencent (Hunyuan) 🇨🇳
 
-- [Hunyuan Hy3](https://hy.tencent.com/research/hy3) - 🆕 🇨🇳 **2026-07-06**。Hy3 正式版（295B 总 / 21B 激活 MoE，256K 上下文），Apache 2.0。相较 4 月预览版强化了强化学习，稳定性与成本效率更好。权重上 Hugging Face 与 ModelScope，OpenRouter 陆续上线。已集成到元宝、CodeBuddy、WorkBuddy、ima、Marvis 及微信客服。
+- [Hunyuan Hy3](https://huggingface.co/tencent/Hy3) - Apache-2.0 开放权重 MoE，面向推理和工具使用，提供官方检查点与部署说明。
 - [Hunyuan Hy3 Preview](https://hy.tencent.com/hy3-preview) - 🇨🇳 **2026-04**。Hy3 正式版之前的预览版："快慢思维融合" 架构，推理效率提升 40%，支持 vLLM 与 SGLang。GitHub / Hugging Face / ModelScope / GitCode 同步开源。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FTencent-Hunyuan%2FHy3-preview&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 
 ### Apple
 
-- [Apple Foundation Models (AFM)](https://machinelearning.apple.com/research/introducing-apple-foundation-models) - 端侧（~3B）+ 服务器版本，Apple Intelligence 内核。隐私优先，离线可用。**WWDC 2026（6 月 8 日）**：第三代 AFM 阵容（端侧 AFM Core、AFM Core Advanced；Private Cloud Compute 上的 AFM Cloud、AFM Cloud Pro）驱动全新 Siri。训练借助定制的 Google Gemini 基座（约 $10 亿/年协议）经蒸馏完成，但不包含任何 Google 代码。iOS 27 新的 "Extensions" 框架允许 ChatGPT、Claude 或 Gemini 作为第三方 AI 与 Siri 并行工作。
+- [Apple Foundation Models 3 / ADM 3 Cloud](https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models) - **2026年6月8日**。共五款模型：端侧 AFM 3 Core/Core Advanced、服务端 AFM 3 Cloud/Cloud Pro，以及在 Private Cloud Compute 运行的图像生成模型 ADM 3 Cloud。
 - [OpenELM](https://machinelearning.apple.com/research/openelm) - 开源高效语言模型（270M~3B），Apple Silicon 端侧。
 
 ### Samsung
 
-- [Samsung Gauss 2.3](https://www.sammobile.com/news/samsung-develops-own-agentic-ai-tools-improves-gauss-ai-models/) - **2025-11**。三星研究院自研 LLM 家族（Gauss 2.3、Gauss 2.3 Think、Gauss O Flash），驱动内部 Agent 工具；支撑 Galaxy S26（2026 年上市）系统级 Agent AI。
+- [Samsung Gauss2](https://news.samsung.com/sg/samsung-electronics-hosts-samsung-developer-conference-korea-2024-unveils-its-improved-gen-ai-model) - 三星官方已记录的专有多模态系列，包含 Compact、Balanced、Supreme，用于内部生产力；本轮未核验到公开的 Gauss 2.3 API 或模型卡。
 
 ### StepFun 🇨🇳
 
-- [Step 3.7 Flash](https://github.com/stepfun-ai/Step-3.7-Flash) - 🆕 🇨🇳 **2026-05-29**。面向编程 Agent 与搜索工作流的开源权重 198B MoE 视觉-语言模型；最高约 400 tokens/s。Step 3.5 Flash 的继任者。
+- [Step 3.7 Flash](https://huggingface.co/stepfun-ai/Step-3.7-Flash) - Apache-2.0 开放权重视觉语言 MoE，面向 Agent 编程与搜索，附有官方部署说明。
 - [Step 3.5 Flash](https://github.com/stepfun-ai/Step-3.5-Flash) - 🇨🇳 **2026-02**。开源权重 196B MoE（11B 激活）推理 + Agent 模型；以小搏大，对标更大体量的旗舰。
 
 ### Baichuan 🇨🇳
 
-- [Baichuan-M3 Plus](https://pandaily.com/baichuan-ai-launches-low-hallucination-medical-model-m3-plus-announces-free-access-program) - 🇨🇳 🆕 **2026-01**。证据锚定的医疗 LLM，幻觉率显著降低；面向国内医疗机构提供免费 API。
+- [Baichuan-M4 (research)](https://arxiv.org/abs/2606.08982) - **2026年6月8日**。持续照护医疗 Agent 系统研究报告，结合推理模型、长期患者记忆、循证检索与多模态临床工具；论文不能证明 API 或权重已公开可用。
+- [Baichuan-M3-235B](https://huggingface.co/baichuan-inc/Baichuan-M3-235B) - 官方 235B 医疗领域模型，权重可下载并采用 Apache-2.0。
+- [Baichuan-M3 Plus](https://github.com/baichuan-inc/baichuan-mcp-servers/blob/main/packages/baixiaoying-mcp-server/README_EN.md) - 医疗领域模型，为符合条件的机构提供申请制访问计划；可用性与用途限制以百川官方条款为准。
 
 ### Inflection AI
 
-- [Inflection 2.5 / Pi](https://inflection.ai/) - 💤 偏共情对话的 AI（Inflection 2.5，2024 年 3 月）。公司在微软吸收其大部分团队（2024 年）后转向企业 AI，不再研发下一代前沿模型。Pi 仍以有限形式可用。
+- [Inflection 2.5 / Pi](https://inflection.ai/labs) - Inflection 的历史模型世代；实验室仍在开展个人智能研究及 Pi 产品工作，不应标注为已放弃的项目。
 
 ### 01.AI 🇨🇳
 
-- [Yi-Lightning](https://www.01.ai/) - 💤 MoE，RTX 4090 上 200+ tokens/s。中英双语强。2024-10 发布 —— 01.AI 最后一个主力模型；公司于 2025 年 3 月停止 LLM 预训练，转向基于 DeepSeek 的企业解决方案。
+- [Yi-Lightning](https://www.01.ai/) - **2024年10月**。历史100B MoE模型；01.AI当前产品包括2026年7月发布的 TrueNorth 等企业平台。
 
 ### 中国科学院 🇨🇳
 
-- [ScienceOne 100 / 磐石100](https://english.cas.cn/newsroom/cas-in-media/202604/t20260429_1158251.shtml) - 🆕 **2026-04-28~29**。中科院科研 AI 系统。"磐石" 基础模型 + 文献罗盘 + 创新评估引擎 + 2000+ 工具 Agent 工厂。覆盖数学 / 物理 / 生物 / 材料 / 天文 / 航天 / 地球科学。50+ 中科院研究所、100+ 科研场景使用。
+- [ScienceOne 100 / 磐石100](https://english.cas.cn/newsroom/cas-in-media/202604/t20260429_1158251.shtml) - **2026年4月**。中科院以 ScienceOne 和学科专用模型构建的科研 AI 系统，配有面向科研工作流的工具。
 
 ---
 
@@ -444,31 +459,35 @@
 
 ### 图像生成
 
+- [Nano Banana 2 Lite](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite-image) - Google 高效图像生成/编辑变体，Gemini API ID 为 `gemini-3.1-flash-lite-image`。
 - [Grok Imagine Image 2.0](https://x.ai/news/grok-imagine-image-2) - 🆕 ⚡ **2026-08-07**。SpaceXAI 的图像生成/编辑模型 —— 魔棒编辑、分割、背景移除、多参考图编辑（最多 5 张）与智能调整尺寸；发布时在 **Arena 文生图与图像编辑双榜均列全球第 2**。可在 grok.com/imagine、iOS/Android 及 API（`grok-imagine-image-2.0`）使用。
 - [Meta Muse Image](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07**。Meta MSL 最先进的图像生成模型 —— Agent 式设计，在出图前执行网页搜索、代码执行与自我修正。已在 Instagram Stories（美国）与限定国家的 WhatsApp 上线（Facebook 即将上线）；也可在 Meta AI 应用与 meta.ai 使用。
-- [Midjourney V8.1](https://updates.midjourney.com/v8-1-alpha/) - 🆕 **2026-04-14**。HD 模式成为默认（快 3 倍 / 更便宜），moodboard 与风格参考稳定可用，恢复图像提示；仅在 alpha.midjourney.com 提供。V8 upscaler 与编辑/inpaint 升级为下一步计划。
+- [Midjourney V8.1 / V8.2 Edit (alpha)](https://updates.midjourney.com/alpha-changelog-9-2-26/) - **2026年9月3日更新**。V8.2 Edit 已在 alpha 站点提供，支持指令编辑及最多四张参考图；主生成模型仍为 V8.1。
 - [FLUX.2 Pro / Flex / Dev / Klein](https://bfl.ai/blog/flux-2) - 🆕 **2025-11-25**。Black Forest Labs 的下一代家族；SOTA 画质、多参考一致性（最多 10 张图），文本渲染显著提升；开源权重 32B Dev 变体。
 - [Recraft V4 / V4.1](https://www.recraft.ai/blog/introducing-recraft-v4-design-taste-meets-image-generation) - 🆕 **2026-02-17**（V4.1 **2026-05-14**）。从零重构；提示准确度大幅改进；支持可编辑 SVG 矢量输出。V4.1 增强写实感、3D/渐变效果，并新增 Vector/Utility 变体。
-- [Stable Diffusion 3.5](https://stability.ai/) - 开源图像生成，连贯性与提示跟随增强。
+- [Stable Diffusion 3.5](https://huggingface.co/stabilityai/stable-diffusion-3.5-large) - 采用 Stability AI Community License 的开放权重图像生成模型，适用时须遵循单独商业条款；并非 Apache-2.0。
+- [Ideogram 4.0](https://ideogram.ai/models/4.0/) - 支持多语言排版与布局控制的图像生成、编辑模型；公开量化权重采用 [Ideogram 非商业模型协议](https://ideogram.ai/licensing/)，商用需另行许可。
+- [P-Image-Ideogram](https://ideogram.ai/tools/p-image-ideogram/) - Pruna 与 Ideogram 合作的图像模型系列，提供不同画质、延迟与成本选项。
 - [Ideogram 3.0](https://ideogram.ai/) - 文字渲染与设计向特别强。
 - [ChatGPT Images 2.0](https://openai.com/index/introducing-chatgpt-images-2-0/) - 🆕 **2026-04-21**。SOTA 图像生成：文字渲染、多语言支持、高级视觉推理与多轮迭代编辑全面增强。
 - [gpt-image-2](https://developers.openai.com/api/docs/models/gpt-image-2) - 🆕 **2026-04-21**。OpenAI 最新图像生成/编辑 API 模型，支持灵活尺寸与高保真输入。⚡ **2026-08-20**：透明背景预览（`background=transparent`，仅 `png`/`webp`）覆盖 `gpt-image-2` 与 `gpt-image-2-2026-04-21`（Images API 与 Responses 图像工具）([changelog](https://developers.openai.com/api/docs/changelog.md))。
 - [MAI-Image-2.6](https://microsoft.ai/news/mai-image-2-6-launches-at-no-2-on-arena-ahead-of-google-meta-and-xai/) - 🆕 **2026-08-10**（编辑榜 **08-18**）。微软自研图像模型 —— 发布时 Arena 文生图第 2，8 月 18 日图像编辑第 3。详见 Foundation → Microsoft (MAI)。
-- [DALL·E 3](https://openai.com/dall-e-3) - 集成在 ChatGPT 中迭代生成。
+- [DALL·E 3](https://developers.openai.com/api/docs/deprecations) - 📦 历史文生图模型；`dall-e-3` API 已于 **2026年5月12日**退役，官方推荐迁移到 GPT Image 系列。
 - [Gemini 3 Pro Image (Nano Banana Pro)](https://deepmind.google/models/gemini-image/pro/) - Gemini 内原生图像生成。
 - [Nano Banana 2 (Gemini 3.1 Flash Image)](https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/) - 🆕 **2026-02-26**。以 Flash 速度提供 Nano Banana Pro 级画质与世界知识；最多 5 个角色一致性，512px–4K 输出，支持图内文字渲染/翻译。
 - [Kling Image 3.0 / 3.0 Omni](https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-launches-30-model-ushering-era-where-everyone-can-be/) - 🇨🇳 🆕 **2026-02-05**。快手原生 2K/4K 图像生成，与 Video 3.0 一同随 Kling 3.0 套件发布。
 - [Flux](https://github.com/black-forest-labs/flux) - 💤 **Stale**（2025-07 起无更新）。Black Forest Labs 开源模型。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fblack-forest-labs%2Fflux&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Seedance 2.0](https://seed.bytedance.com/) - 🇨🇳 🆕 字节下一代图像 / 动画生成 API。
+- [Seedream 5.0 Pro](https://seed.bytedance.com/en/blog/beyond-generation-it-understands-design-introducing-seedream-5-0-pro) - **2026年7月8日**。字节跳动图像创作模型，面向布局、文字渲染与多模态设计；图像系列名为 Seedream，视频系列为 Seedance。
 - [Qwen-Image-3.0](https://qwenlm.github.io/) - 🆕 🇨🇳 **2026-07-20**。阿里巴巴第三代图像生成模型，于世界人工智能大会上发布。真实感、文字渲染、多主主一致性均显著提升。可通过阿里云百炼与 Qwen Cloud 使用。
 - [FLUX 3](https://bfl.ai/blog/flux-3) - 🆕 **2026-07-23（Early Access）**。Black Forest Labs 从纯图像家族转向统一的多模态基础模型 —— 在同一个架构里联合学习图像、视频和音频。可一次生成**长达 20 秒、自带同步音频**的视频（文生视频、图生视频、视频转视频、关键帧转视频、多语言对白、Agent 式多镜头串联）。BFL 自家早期评测中，FLUX 3 相对 Runway Gen-4.5 的胜率 77%、Luma Ray 3.2 为 93%、Kling v3 Pro 为 60%、Seedance 2.0 / Gemini Omni Flash 为 52% —— 厂商数据且官方明确标注为初步结果。其世界理解还延伸到面向机器人的**动作预测**。截至 2026 年 8 月中旬，FLUX 3 Image 的 early access 仍未开放。
 - [Reve](https://reve.com/) - 🆕 「布局优先」的图像模型 —— 先规划出结构化、可编辑的版面再渲染像素，因此单个元素可以移动、缩放、改色并局部重渲染，而不必整张重来。原生 4K，支持草图 / 标注输入与直接对象编辑。
 
 ### 视频生成
 
+- [Runway Aleph 2.0](https://docs.dev.runwayml.com/guides/models/) - Runway 视频编辑模型，ID 为 `aleph2`，支持视频/文本/图像输入及专业输出格式。
 - [Meta Muse Video](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07（预览）**。Meta Superintelligence Labs 的视频生成模型，与 Muse Image 同架构；Arena 文生视频榜第 3。随 Muse Image 发布一同预览，预计在 Meta 各应用中更广泛铺开。
 - [Runway Agent](https://runwayml.com/news/introducing-runway-agent) - 🆕 **2026-05-13**。对话式 Agent，接过写好的脚本为你递交一段**多镜头完成品视频**：分镜脚本→生成→剪接→配音全流程贯通，并带时间线编辑器做最终调整。首个可用的「提示词到粗剪」产业级 Agent。
-- [Veo 3.1](https://deepmind.google/technologies/veo/) - **2025-10**。Google DeepMind 旗舰视频模型。**Veo 4** 截至 2026 年 8 月中旬仍未发布。
+- [Veo 3.1](https://ai.google.dev/gemini-api/docs/veo) - 支持带音频视频生成、帧控制和延长；Gemini API 预览支持4/6/8秒片段，1080p/4K限8秒。
 - [Runway Gen-4.5](https://runwayml.com/research/introducing-runway-gen-4.5) - 🆕 **2025-12**。Runway 旗舰视频模型，发布时位居 Artificial Analysis 文生视频榜第 1。平台还接入第三方模型，含 Kling 3.0 与 Sora 2 Pro（2026-02-20 加入）。
 - [Kling VIDEO 3.0](https://app.klingai.com/) - 🇨🇳 🆕 **2026-02-04~07**。快手新一代；真人动作、嘴型同步、带音画同步的叙事化制作。
 - [Sora 2 (via Runway)](https://runwayml.com/changelog) - OpenAI 的 Sora 应用于 2026-04-26 关停（API 保留至 2026-09-24），但 Sora 2 Pro 已自 **2026-02-20** 起集成进 Runway。
@@ -480,27 +499,32 @@
 - [Pika 2.5](https://pika.art/) - 创意短视频，场景与特效控制。
 - [LTX Studio](https://ltx.studio/) - 🆕 AI 电影化视频创作平台。
 - [HappyHorse 1.1](https://technode.com/2026/06/23/alibaba-unveils-happyhorse-1-1-video-generation-model-launches-global-ai-filmmaking-competition/) - 🇨🇳 🆕 **2026-06-23**。阿里视频模型（2026-04-10 以 "HappyHorse-1.0" 之名揭晓，此前匿名登顶多个基准，后升至全球第 2）。1.1 升级运动动态、主体一致性、提示遵循与音频生成。可通过 HappyHorse 官网、阿里云百炼与 Qwen Cloud 使用。
-- [Sora](https://openai.com/sora/) - 📦 **已停运**（应用 2026-04-26；API 2026-09-24）。OpenAI 文生视频应用关停；Sora 2 Pro 在 Runway 中延续。
-- [Gemini Omni Flash（视频）](https://deepmind.google/technologies/gemini/) - 🆕 **2026 年 7 月（预览）**。Google 高速视频生成模型，设计目标为实时或近实时视频生成。公开预览阶段，暂无确认 GA 定价。
+- [Sora 2 API (deprecated)](https://developers.openai.com/api/docs/deprecations) - 📦 已弃用 API，计划于 **2026年9月24日**关闭；保留用于迁移跟踪，不建议新项目接入。
+- [Gemini Omni Flash 1.1](https://ai.google.dev/gemini-api/docs/omni) - Google 当前推荐的视频生成选项，`gemini-omni-1.1-flash` 支持多轮编辑；上传视频的编辑与延长存在地区限制。
 - [Wan 3.0](https://www.alibabacloud.com/en/blog/wan-3-0-next-gen-video-generation-model-public-beta-launched) - 🆕 ⚡ 🇨🇳 **2026-08-06（公开测试）**。阿里通义实验室下一代视频生成模型——单次生成最长 30 秒视频。独特支持 PDF / Word / PPT 等文档以及网页作为输入，同时支持文本、图像、音频。提示智能推荐视频时长。可通过阿里云模型平台 / Qwen Cloud 体验；API 和开源权重尚未确认。
 - [LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5) - 🆕 ⚡ **2026 年 8 月 12 日**。Lightricks 开源权重视频音频世界模型，支持原生多镜头生成（单次过题就能保持角色、场景、声音和风格一致性）、扩散质量渲染、全新视频解码器（更锐利的人\u脸和纹理，更少作影）、定制 Gemma 4 12B 文本编码器及提示增强器。支持文本转视频、图像转视频、视频转视频、音频转视频等多种模式。可本地自托管，无按次计费。
 - [Decart Lucy 2.5](https://decart.ai/) - 🆕 **2026 年 7 月**。支撑 Decart「Live AI」路线的实时视频 / 世界转换模型 —— 可持续生成无限时长视频并带物理感知特效，官方称效率比常驻算力方案高约 100 倍。面向直播、交互式世界模型以及机器人 / 自动驾驶仿真。
 
 ### 音频与音乐
 
+- [MAI-Transcribe-2](https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/) - 🆕 **2026年9月3日**。微软语音转文本模型，支持说话人标签、词级时间戳及可配置的逐字/清理转写。
+- [Muse Voice Transcribe](https://research.meta.ai/blog/introducing-muse-voice-transcribe) - 🆕 **2026年9月1日**。Meta 实时音频感知模型，提供流式语音识别、说话人区分与语音终点检测。
+- [Lyria 3.5](https://ai.google.dev/gemini-api/docs/models/lyria-3.5) - Google 当前完整歌曲生成模型，官方 ID 为 `lyria-3.5`；交互式音乐另由 Lyria RealTime 提供。
+- [Qwen3-TTS](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice) - Apache-2.0 多语言 TTS 系列，提供独立的 Base、CustomVoice、VoiceDesign 检查点及流式生成。
+- [Qwen3-ASR](https://huggingface.co/Qwen/Qwen3-ASR-1.7B) - Apache-2.0 语音识别系列，提供0.6B/1.7B变体、流式与离线推理，覆盖30种语言及22种中文方言。
 - [ElevenLabs Eleven v3 + ElevenAgents](https://elevenlabs.io/agents) - 🆕 2026 年定位为 "互联网的音频层"——支持 70+ 语言、带情绪 Audio Tag 的 TTS，加上首个通过 AIUC-1 认证的 ElevenAgents 语音 Agent 平台，含多模态消息、会话主题发现、工具调用前的语音控制。**2026 年 7 月更新**：Music Finetunes API（可编程管理自定义模型）、每个 Agent 独立的情绪分析、Agent 嵌套转移、RAG 知识库查询、自动翻译转录、更快的生成速度与长音频的音色一致性。
 - [ElevenLabs](https://elevenlabs.io/) - AI 语音合成 + 克隆 + 对话 AI 头部。**2026 年 7 月更新**：Music Finetunes API、每 Agent 情绪分析、Agent 嵌套转移、RAG 查询、自动翻译转录、更快生成。
 - [Cartesia Sonic 3 / 3.5](https://cartesia.ai/blog/introducing-line-for-voice-agents) - 🆕 **2026**。基于状态空间模型的 TTS，首音延迟约 40-90ms（Sonic 3.5 于 2026 年 5 月 GA）；驱动 **Line** 语音 Agent 平台（自 2026 年 5 月起 Line Agent 默认运行在 Sonic 3.5 TTS + Ink-2 STT 上）。
 - [Deepgram Nova-3 + Aura-2 + Flux Multilingual](https://deepgram.com/learn/best-voice-ai-agents-2026-buyers-guide) - 🆕 **2026 年 4 月**。45+ 语言的 STT，TTS 延迟低于 200ms，会话式 STT 支持通话中 10 种语言的实时切换。
 - [MiniMax Music 3.0](https://huggingface.co/MiniMaxAI/MiniMax-Music3) - 🆕 🇨🇳 **2026-08-13**。开源权重完整歌曲生成（最长 5 分钟，32 kHz 立体声）。现为 MiniMax 音乐旗舰 —— 详见 Foundation → MiniMax。
 - [MiniMax Music 2.6](https://aimlapi.com/blog/the-ultimate-guide-to-minimax-models-2026-m2-7-music-2-6-hailuo-video-advanced-tts) - 🇨🇳 **2026 年 4 月 10 日**（全球 beta）。翻唱向前代；已由 Music 3.0 接替。
-- [Voxtral TTS](https://www.forbes.com/sites/ronschmelzer/2026/03/26/mistral-releases-open-weight-voice-ai-built-for-speed/) - 🆕 **2026 年 3 月 26 日**。Mistral 开放权重的 4B TTS，专为语音 Agent 的低延迟而生。
+- [Voxtral TTS](https://docs.mistral.ai/models/voxtral-tts-26-03) - Mistral 多语言语音生成模型；开放权重为 CC-BY-NC-4.0，与 Apache-2.0 的 Voxtral 转写权重须区分。
 - [Suno v5.5 + Studio 2.0](https://suno.com/blog/v5-5) - 🆕 ⚡ **2026 年 3 月 26 日**（Studio 2.0 为 **2026 年 8 月 13 日**）。高保真人声的 AI 音乐生成；v5.5 新增 Voices（用你本人经验证的声音演唱）、基于上传内容训练的 Custom Models 以及 My Taste 个性化。**Studio 2.0**（8 月 13 日）是彻底重构的浏览器端 DAW，支持 MIDI、音频特效与内置合成器；Voices 于 8 月 7 日扩展到 iOS/Android 免费套餐。V6 有传闻但未官宣。
 - [Udio](https://www.udio.com/) - 🆕 商用级音乐生成。
 - [OpenAI Audio Models](https://openai.com/) - GPT-4o 与 GPT-Realtime-2（**2026-05-07**，随 GPT-Realtime-Translate、GPT-Realtime-Whisper 一同发布）内的原生音频理解 + 生成；gpt-realtime-2.1 与 2.1-mini 于 **2026-07-06** 发布，字母数字识别、噪声处理与打断行为均改进。
-- [Stability Audio](https://stability.ai/) - 开源音频音乐生成。
+- [Stable Audio 3.0](https://stability.ai/stable-audio) - 音频生成系列，包含 Large、Medium、Small、Small SFX；Medium 与 Small 提供开放权重，部署权利以对应 Stability 许可证为准。
 - [Bark](https://github.com/suno-ai/bark) - 💤 **Stale**（2024-08 起无更新）。开源文本到音频。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fsuno-ai%2Fbark&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Hume TADA](https://github.com/HumeAI/tada) - 🆕 **2026 年 3 月**。Hume AI 首个开源 TTS —— Text Audio Dual Alignment (TADA)：文本与音频在同一条 1:1 同步 token 流中生成；零内容幻觉，RTF 约 0.09，TADA-1B/3B-ML 模型（9+ 种语言），能在手机上跑。MIT 代码，Llama 3.2 许可权重。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FHumeAI%2Ftada&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Hume TADA](https://github.com/HumeAI/tada) - 采用文本/声学 1:1 对齐的语音语言模型，提供 TADA-1B 与多语言 TADA-3B-ML；代码为 MIT，权重采用 Llama 3.2 社区许可证。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FHumeAI%2Ftada&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 
 ## 🔗 Agent 协议与标准
 
@@ -1290,10 +1314,11 @@
 
 ### 2026 年新平台模型
 
-- [Kimi K3](https://kimi.moonshot.cn/) - 🆕 🇨🇳 **2026-07-16**。Moonshot AI 旗舰 MoE 模型——**2.8 万亿参数**，**100 万 token 上下文窗口**，Arena 前端榜第 1（与 Fable 5 并列），Artificial Analysis 综合榜第 3。开源权重 2026-07-27 发布。API：`kimi-k3`。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FMoonshotAI%2FKimi-K3&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Qwen 3.8-Max](https://qwenlm.github.io/) - 🆕 ⚡ 🇨🇳 **2026-08-03 全量上线**（2026-07-19 于世界人工智能大会预览）。阿里巴巴下一代 MoE 模型——**2.4 万亿总参 / 95B 激活**，1M token 上下文，多模态输入；API 上线阿里云模型平台。开源权重已登陆 Hugging Face（`Qwen/Qwen3.8-2.4T-A95B`，约 8 月 12 日），Apache-2.0 多模态 27B 蒸馏版于 8 月 14 日跟进。
-- [特斯拉中国 OTA 2026.14.13 —— 集成豆包](https://www.cnevpost.com/2026/07/31/tesla-integrates-bytedance-doubao-ai/) - 🆕 ⚡ **2026-07-31**。特斯拉向中国 Model 3/Y/S/X 推送 OTA，用字节跳动豆包大模型替换原语音助手 —— 首个深度集成中国大模型的西方主流电动车品牌。⚠️ 未核实（cnevpost URL 未直接抓取；多方来源确认）。
-- [DeepSeek V4](https://www.deepseek.com/) - 🆕 🇨🇳 **2026 年 7 月**。DeepSeek 最新旗舰——**100 万 token 上下文窗口**，增强的 Agent 任务支持，峰唃/非峰唃分级定价。继续 DeepSeek 的性价比优势定位。
+- [Kimi K3](https://huggingface.co/moonshotai/Kimi-K3) - 开放权重多模态MoE；采用自定义Kimi K3 License。
+- [Qwen3.8 family](https://huggingface.co/Qwen/Qwen3.8-27B) - 27B采用Apache-2.0；完整Max与Flash-Next检查点另有Qwen许可条款。
+- [GLM-5.3 / GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3) - 均已提供可下载权重；GLM-5.3为自定义许可，Flash为MIT。
+- [DeepSeek V4](https://api-docs.deepseek.com/quick_start/pricing/) - 当前API检查点为Pro-0813和Flash-0731；Flash Vision为实验版。
+- [Seed 2.1](https://seed.bytedance.com/en/seed2_1) - 字节跳动通用Agent与编程模型；访问方式以官方模型页面为准。
 
 ---
 
@@ -1377,55 +1402,56 @@
 
 ### 💰 基础大模型 — API 价格与上下文窗口
 
-*价格单位：USD/百万 token。**已于 2026-08-25 对照官方定价页复核** —— 数据来源说明见表下方。*
+*2026-09-08核验官方标准 API 价格；单位为美元/百万 token，不含工具、税费及缓存写入。上下文不等于最大输入额度。*
 
-| 模型 | 厂商 | 上下文窗口 | 最大输出 | 输入 $/1M | 输出 $/1M | 适用场景 |
-|-------|----------|---------------|-----------|-----------|------------|----------|
-| Claude Fable 5 | Anthropic | 1M | 128K | $10.00 | $50.00 | Mythos 级前沿任务 |
-| Claude Opus 5 | Anthropic | 1M | 128K | $5.00 | $25.00 | Anthropic 当前旗舰 |
-| Claude Sonnet 5 | Anthropic | 1M | 128K | $2.00 | $10.00 | 默认 Agent 主力 —— 引导价已于 **2026-08-10 永久生效** |
-| Claude Opus 4.8 | Anthropic | 1M | 128K | $5.00 | $25.00 | 📦 旧档；请迁移到 Opus 5 |
-| Claude Haiku 4.5 | Anthropic | **200K** | 64K | $1.00 | $5.00 | Anthropic 生态快速任务 |
-| GPT-5.6 Sol | OpenAI | 1.05M | 128K | $4.00 | $20.00 | 前沿旗舰；促销至 2026-11-21 |
-| GPT-5.6 Terra | OpenAI | 1.05M | 128K | $2.00 | $12.00 | 成本敏感的生产负载 |
-| GPT-5.6 Luna | OpenAI | 1.05M | 128K | $0.20 | $1.20 | 大量、延迟敏感任务 |
-| GPT-5.5 | OpenAI | 1.05M | 128K | $5.00 | $30.00 | 上一代前沿档，仍在 GA |
-| GPT-Realtime-2.1 | OpenAI | 128K | 32K | 文本 $4.00 / 音频 $32.00 | 文本 $24.00 / 音频 $64.00 | 带工具调用的实时语音 |
-| Gemini 3.1 Pro | Google | 1M | — | $2.00 | $12.00 | 旗舰推理、多模态（`-preview`，无免费额度） |
-| Gemini 3.7 Flash | Google | 1M | — | $0.75（引导价） | $3.75（引导价） | 最新主力档 —— 引导价至 2026-12-31（之后 $1.50/$7.50） |
-| Gemini 3.6 Flash | Google | 1M | — | $0.75 | $3.75 | 价格**低于** 3.5 Flash（$1.50/$9.00） |
-| Gemini 3.5 Flash-Lite | Google | 1M | — | $0.30 | $2.50 | 最便宜的 Gemini 档 |
-| Gemini 2.5 Pro | Google | 1M | — | $1.25 | $10.00 | 长上下文、多模态（**1M，不是 2M**） |
-| Gemini 2.5 Flash | Google | 1M | — | $0.30 | $2.50 | 性价比高的多模态 |
-| DeepSeek V4-Pro | DeepSeek | 1M | 384K | 高峰 $1.32 / 低谷 $0.66（未命中缓存） | 高峰 $3.96 / 低谷 $1.98 | 前沿开源权重，MIT —— 2026-08-16 起分层计价 |
-| DeepSeek V4-Flash | DeepSeek | 1M | 384K | 高峰 $0.44 / 低谷 $0.22（未命中缓存） | 高峰 $1.32 / 低谷 $0.66 | 低成本编程推理 |
-| Qwen3 235B A22B | 阿里巴巴 | 131K | — | ~$0.29 | ~$1.15 | 最强中文+编程 MoE |
-| Kimi K2.6 | Moonshot AI | 262K | — | $0.95 | $4.00 | 中文+超长上下文 |
-| Grok 4.6 | xAI | 500K | — | $2.00 | $6.00 | 编程 + Agent 旗舰（2026-08-12；取代 4.5） |
-| Grok 4 | xAI | 256K | — | $3.00 | $15.00 | X 集成、推理 |
+| 模型 | 供应商 | 上下文 | 最大输出 | 输入 $/1M | 输出 $/1M | 说明 |
+| --- | --- | --- | --- | --- | --- | --- |
+| [GPT-6 Astra](https://developers.openai.com/api/docs/models/gpt-6-astra) | OpenAI | 1.05M | 128K | $10.00 | $50.00 | 仅部分组织开放；尚未 GA |
+| [GPT-5.6 Sol](https://developers.openai.com/api/docs/pricing) | OpenAI | 1.05M | 128K | $4.00 | $20.00 | 通用 Agent 任务 |
+| [GPT-5.6 Terra](https://developers.openai.com/api/docs/pricing) | OpenAI | 1.05M | 128K | $2.00 | $12.00 | 均衡生产层级 |
+| [GPT-5.6 Luna](https://developers.openai.com/api/docs/pricing) | OpenAI | 1.05M | 128K | $0.20 | $1.20 | 吞吐与成本 |
+| [Claude Fable 5.1](https://platform.claude.com/docs/en/about-claude/pricing) | Anthropic | 1M | 128K | $10.00 | $50.00 | 缓存读取 $0.25/M |
+| [Claude Opus 5](https://platform.claude.com/docs/en/about-claude/pricing) | Anthropic | 1M | 128K | $5.00 | $25.00 | Opus 层级 |
+| [Claude Sonnet 5](https://platform.claude.com/docs/en/about-claude/pricing) | Anthropic | 1M | 128K | $2.00 | $10.00 | 标准价；9月不涨价 |
+| [Claude Haiku 4.5](https://platform.claude.com/docs/en/models/overview) | Anthropic | 200K | 64K | $1.00 | $5.00 | 延迟敏感任务 |
+| [Gemini 3.8 Flash](https://ai.google.dev/gemini-api/docs/pricing) | Google | 1,048,576 | 65,536 | $0.75 | $3.75 | 优惠价至2026-12-31 |
+| [Gemini 3.1 Pro Preview](https://ai.google.dev/gemini-api/docs/pricing) | Google | 1M | 65,536 | $2.00 | $12.00 | 提示词≤200K的基础价格 |
+| [DeepSeek V4-Pro](https://api-docs.deepseek.com/quick_start/pricing/) | DeepSeek | 1M | 384K | $1.32 / $0.66 | $3.96 / $1.98 | 高峰/低谷；未命中缓存 |
+| [DeepSeek V4-Flash](https://api-docs.deepseek.com/quick_start/pricing/) | DeepSeek | 1M | 384K | $0.44 / $0.22 | $1.32 / $0.66 | 高峰/低谷；未命中缓存 |
+| [Grok 4.6](https://x.ai/news/grok-4-6) | SpaceXAI | 500K | — | $2.00 | $6.00 | Fast 层级价格2倍 |
 
-**数据来源说明（2026-08-15 复核）：**
-- Anthropic 数据来自 `platform.claude.com/docs/en/about-claude/pricing` 与 `.../models/overview`。Sonnet 5 的 $2/$10 引导价「现已成为标准价格 —— 原定 2026 年 9 月 1 日涨至 $3/$15 的调价不再执行」。**Haiku 4.5 是 200K 上下文模型，而非 1M** —— 本表早期版本曾写为 1M。
-- OpenAI 数据来自 `developers.openai.com/api/docs/pricing.md`；上下文按文档为 1,050,000 token。**超过 272K token 的 prompt 按输入 2 倍 / 输出 1.5 倍计费**（Terra 长上下文：$4.00/$18.00；Luna：$0.40/$1.80）。
-- Google 数据来自 `ai.google.dev/gemini-api/docs/pricing`；Gemini 3.7 Flash 引导价持续到 2026 年 12 月 31 日。
-- DeepSeek 于 **2026-08-16 16:00 UTC 起改为高峰/低谷分层计价**（高峰 01:00–04:00 与 06:00–10:00 UTC；低谷便宜 50%）；命中缓存输入依旧便宜得多（V4-Pro 高峰 $0.044，V4-Flash 高峰 $0.014）。
-- GPT-4o / GPT-4o-mini 已从本表移除 —— GPT-4o 于 2026 年 2 月退出 ChatGPT，且 GPT-5.6 各档的单位能力价格更低。二者仅在 API 上为 legacy 存量集成保留，新项目不推荐使用。
+表中 OpenAI 模型的提示词超过272K时，输入/缓存按2倍、输出按1.5倍计费；Astra输入上限922K。Gemini Pro超过200K采用不同长上下文价格。Gemini 3.8 Flash于2027-01-01调整为$1.50/$7.50。DeepSeek高峰时段为UTC 01:00–04:00及06:00–10:00。缓存、批处理、区域与服务层级附加规则请查看链接中的官方定价。
 
 ---
 
 ### 💻 基础大模型 — 本地部署
 
-*Q4_K_M 量化下的估算显存。速度因硬件而异。*
+*2026-09-08核验许可和权重可用性。存储量仅为计算示例：公开总参数×0.5字节，单位十进制GB；不是实测Q4文件大小，也不是最低显存要求。*
 
-| 模型 | 参数量 | 最小显存（Q4） | 速度（tok/s） | 推荐量化 | 中文能力 | 适用场景 |
-|-------|--------|--------------|----------------|-------------------|-----------------|----------|
-| Qwen3.6-27B | 27B dense | ~17 GB | ~23（M5 Max） | Q4_K_M / FP8 | ⭐⭐⭐⭐⭐ | 编程、中文、Agent |
-| Qwen3 235B A22B | 235B MoE | ~40 GB（激活） | ~15–20 | Q2_K / Q4_K_M | ⭐⭐⭐⭐⭐ | 本地最强质量 |
-| Llama 3.3 70B | 70B dense | ~42 GB | ~12–18 | Q4_K_M | ⭐⭐☆☆☆ | 最强英文开源 |
-| DeepSeek V3-671B | 671B MoE | ~40 GB（激活） | ~10–15 | Q2_K | ⭐⭐⭐⭐☆ | 开源编程冠军 |
-| Gemma 4 27B | 27B dense | ~17 GB | ~20–25 | Q4_K_M | ⭐⭐⭐☆☆ | 多语言推理 Apache-2.0 |
-| Phi-4 14B | 14B dense | ~9 GB | ~35–45 | Q4_K_M | ⭐⭐☆☆☆ | 8–16GB 显存编程首选 |
-| Mistral Small 4 24B | 24B dense | ~14 GB | ~25–30 | Q4_K_M | ⭐⭐⭐☆☆ | 多语言、函数调用 |
+| 模型 | 参数规模 | 理想4位权重存储量 | 官方权重 | 许可 |
+| --- | --- | --- | --- | --- |
+| Gemma 4 E4B | ~8B stored | ~4 GB | [google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it) | Apache-2.0 |
+| Gemma 4 12B | 12B | ~6 GB | [google/gemma-4-12B-it](https://huggingface.co/google/gemma-4-12B-it) | Apache-2.0 |
+| Phi-4 | 14B | ~7 GB | [microsoft/phi-4](https://huggingface.co/microsoft/phi-4) | MIT |
+| Gemma 4 26B A4B | 26B / 4B active | ~13 GB | [google/gemma-4-26B-A4B-it](https://huggingface.co/google/gemma-4-26B-A4B-it) | Apache-2.0 |
+| Qwen3.8-27B | 27B | ~13.5 GB | [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) | Apache-2.0 |
+| Muse Glimmer 30B | 30B | ~15 GB | [meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B) | Apache-2.0 |
+| Gemma 4 31B | 31B | ~15.5 GB | [google/gemma-4-31B-it](https://huggingface.co/google/gemma-4-31B-it) | Apache-2.0 |
+| Qwen3.6-35B-A3B | 35B / 3B active | ~17.5 GB | [Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B) | Apache-2.0 |
+| Llama 3.3 70B | 70B | ~35 GB | [meta-llama/Llama-3.3-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct) | Llama Community |
+| Mistral Small 4 | 119B / 6B active | ~59.5 GB | [mistralai/Mistral-Small-4-119B-2603](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603) | Apache-2.0 |
+| Qwen3.8-Flash-Next | 125B + 51B tables + 4B MTP | ~90 GB | [Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next) | Qwen Community 1.0 |
+| Qwen3 235B A22B | 235B / 22B active | ~117.5 GB | [Qwen/Qwen3-235B-A22B](https://huggingface.co/Qwen/Qwen3-235B-A22B) | Apache-2.0 |
+| Inkling-Small | 276B / 12B active | ~138 GB | [thinkingmachines/Inkling-Small](https://huggingface.co/thinkingmachines/Inkling-Small) | Apache-2.0 |
+| DeepSeek V4-Flash | 284B / 13B active | ~142 GB | [deepseek-ai/DeepSeek-V4-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash) | MIT |
+| GLM-5.3-Flash | 320B / 18B active | ~160 GB | [zai-org/GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash) | MIT |
+| MiniMax-M3 | MoE | — | [MiniMaxAI/MiniMax-M3](https://huggingface.co/MiniMaxAI/MiniMax-M3) | MiniMax Community |
+| GLM-5.3 | MoE | — | [zai-org/GLM-5.3](https://huggingface.co/zai-org/GLM-5.3) | GLM-5.3 License |
+| Inkling | 975B / 41B active | ~487.5 GB | [thinkingmachines/Inkling](https://huggingface.co/thinkingmachines/Inkling) | Apache-2.0 |
+| DeepSeek V4-Pro | 1.6T / 49B active | ~800 GB | [deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) | MIT |
+| Kimi K3 | 2.8T / 104B active | ~1,400 GB | [moonshotai/Kimi-K3](https://huggingface.co/moonshotai/Kimi-K3) | Kimi K3 License |
+
+还需为量化尺度、未量化张量、运行时缓冲及KV缓存预留空间。MoE激活参数代表计算量，不等于全部权重占用。CPU卸载会改变显存驻留与吞吐，须按确切检查点、后端、量化、上下文与并发实测。权重自定义许可与推理代码许可应分别核查。
 
 ---
 
@@ -1445,43 +1471,58 @@
 
 ### 🎙️ 语音与音频模型
 
-| 模型/服务 | STT | TTS | 实时 | 本地 | 延迟 | 语言 | 许可证 |
-|----------------|-----|-----|---------|-------|---------|-----------|--------|
-| ElevenLabs v3 | ❌ | ⭐⭐⭐⭐⭐ | ✅ | ❌ | ~200ms | 70+ | 闭源 |
-| Whisper v3（本地） | ⭐⭐⭐⭐★ | ❌ | ❌ | ✅ | ~1s | 99 | MIT |
-| Deepgram Nova-3 | ⭐⭐⭐⭐⭐ | ✅ | ✅ | ❌ | <100ms | 45+ | 闭源 |
-| Gemini Live API | ✅ | ✅ | ⭐ 原生 | ❌ | <300ms | 30+ | 闭源 |
-| OpenAI Realtime | ✅ | ✅ | ⭐ 原生 | ❌ | ~300ms | 57 | 闭源 |
-| MiniMax TTS | ❌ | ⭐⭐⭐⭐☆ | ✅ | ❌ | ~200ms | 20+ | 闭源 |
-| Kokoro | ❌ | ⭐⭐⭐⭐☆ | ❌ | ✅ | ~100ms | 8 | Apache-2.0 |
-| Voxtral | ⭐⭐⭐⭐☆ | ❌ | ❌ | ✅ | 批量 | 20+ | Apache-2.0 |
+*2026-09-08核验。语音识别、TTS和语音对话是不同产品；延迟取决于终点检测、传输及负载，不提供未经同条件测试的毫秒排名。*
+
+| 模型 / API | 任务 | 部署 | 许可 / 访问 | 接入说明 |
+| --- | --- | --- | --- | --- |
+| [Eleven v3](https://elevenlabs.io/docs/overview/models) | 语音生成 | 云服务 | 供应商条款 | 表现力TTS；流式延迟须单独测试 |
+| [Whisper large-v3](https://github.com/openai/whisper) | 语音识别 | 开放权重 | MIT | 离线转写；流式需额外封装 |
+| [Deepgram Nova-3](https://developers.deepgram.com/docs/models-languages-overview) | 语音识别 | 云服务 | 供应商条款 | 语音识别；Aura是独立TTS系列 |
+| [Gemini 3.1 Flash Live](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-live-preview) | 语音到语音 | 云服务 | 供应商条款 | Live API预览 |
+| [GPT-Realtime-2.1](https://developers.openai.com/api/docs/models/gpt-realtime-2.1) | 语音到语音 | 云服务 | 供应商条款 | Realtime API；文本与音频分别计费 |
+| [Qwen3-ASR](https://huggingface.co/Qwen/Qwen3-ASR-1.7B) | 语音识别 | 开放权重 | Apache-2.0 | 流式及离线 |
+| [Qwen3-TTS](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice) | 语音生成 | 开放权重 | Apache-2.0 | 按用途选择Base、CustomVoice或VoiceDesign |
+| [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) | 语音生成 | 开放权重 | Apache-2.0 | 紧凑本地TTS |
+| [Voxtral Realtime](https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602) | 语音识别 | 开放权重 | Apache-2.0 | 流式转写 |
+| [Voxtral TTS](https://docs.mistral.ai/models/voxtral-tts-26-03) | 语音生成 | 开放权重 | CC-BY-NC-4.0 | 商业使用须另获授权 |
+| [Muse Voice Transcribe](https://research.meta.ai/blog/introducing-muse-voice-transcribe) | 语音识别 | 云服务 | 供应商条款 | 流式识别及说话人区分 |
+| [MAI-Transcribe-2](https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/) | 语音识别 | 云服务 | 供应商条款 | 说话人标签及词级时间戳 |
 
 ---
 
 ### 🎨 图片生成模型
 
-| 模型 | 最大分辨率 | API/本地 | 真实感 | 适用场景 | 大致价格 |
-|-------|---------------|-------------|-------------|----------|------------------|
-| DALL-E 3 | 1024×1024 | API | 高 | 指令遵循 | $0.04/张（标准） |
-| gpt-image-2 | 2048×2048 | API | 非常高 | API 工作流、4K | $0.04–$0.17/张 |
-| Flux 2 Pro | 2K+ | API | ⭐高 | 写实、快速 | ~$0.05/张 |
-| Midjourney V8.1 | 2K+ | 仅网页 | 艺术风格最强 | 艺术创作 | $10–$120/月 |
-| Stable Diffusion 3.5 | 2K | 本地+API | 良好 | 开源、自托管 | 开源权重（Stability AI Community License） |
-| Ideogram 3 | 2K | API+网页 | 良好 | 图内文字最强 | 免费增值 |
+*2026-09-08快照。应按同一任务、尺寸和质量比较；不同token计费与订阅方案之间不能直接套用固定单张价格。*
+
+| 模型 | 访问 | 主要用途 | 重要区别 |
+| --- | --- | --- | --- |
+| [gpt-image-2](https://developers.openai.com/api/docs/models/gpt-image-2) | 云服务 | 生成与编辑 | 按token、尺寸与质量计价 |
+| [FLUX.2](https://docs.bfl.ai/quick_start/generating_images) | API / 部分开放权重 | 图像及参考图编辑 | Pro/Flex/Dev/Klein条款不同 |
+| [Midjourney V8.1 / V8.2 Edit](https://updates.midjourney.com/alpha-changelog-9-2-26/) | 网页 | 生成与编辑 | V8.2 Edit处于alpha |
+| [Stable Diffusion 3.5](https://huggingface.co/stabilityai/stable-diffusion-3.5-large) | 开放权重 | 自托管图像生成 | Stability AI Community License |
+| [Seedream 5.0 Pro](https://seed.bytedance.com/en/blog/beyond-generation-it-understands-design-introducing-seedream-5-0-pro) | 云服务 | 布局与图文设计 | 字节跳动图像系列 |
+| [Nano Banana Pro](https://ai.google.dev/gemini-api/docs/models/gemini-3-pro-image) | 云服务 | 图像生成/编辑 | gemini-3-pro-image |
+| [Nano Banana 2](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-image) | 云服务 | 图像生成/编辑 | gemini-3.1-flash-image |
+| [Nano Banana 2 Lite](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite-image) | 云服务 | 高效图像生成 | gemini-3.1-flash-lite-image |
+| [Ideogram 4.0](https://ideogram.ai/models/4.0/) | 云服务 / 开放量化权重 | 排版与布局编辑 | 权重非商用；商用另行许可 |
 
 ---
 
 ### 🎥 视频生成模型
 
-| 模型 | 最大时长 | 分辨率 | API/本地 | 适用场景 | 状态 |
-|-------|-----------|-----------|-------------|----------|------------------|
-| Veo 3.1 | 2分钟 | 4K | API（Vertex） | 最高保真度 | GA（Google） |
-| Kling VIDEO 3.0 | 3分钟 | 1080p | API+网页 | 电影风格领先 | GA（快手） |
-| Runway Gen-4 | 10s/片段 | 1080p | API+网页 | 精确运动控制 | GA |
-| Pika 2.0 | 10s | 1080p | 网页 | 创意/社交媒体 | GA |
-| Seedance 2.0 | 60s | 2K | API | 快速、高性价比 | GA（字节） |
-| Hailuo 02 | 60s | 1080p | 网页+API | 平滑动作 | GA（MiniMax） |
-| ~~Sora~~ | ❌ | ❌ | ❌ | — | **2026.4 已废弃** |
+*2026-09-08快照。原生片段时长、连续延长、编辑器时间线和放大分辨率属于不同限制，不能组合成不存在的最高规格。*
+
+| 模型 | 工作流 | 部署 | 已核验限制 / 状态 |
+| --- | --- | --- | --- |
+| [Gemini Omni Flash 1.1](https://ai.google.dev/gemini-api/docs/omni) | 生成与多轮编辑 | 云服务 | 预览；上传视频编辑受地区限制 |
+| [Veo 3.1 / Fast / Lite](https://ai.google.dev/gemini-api/docs/veo) | 带音频视频、帧控制 | 云服务 | 预览；单次生成4/6/8秒，延长另有上限 |
+| [Runway Gen-4.5](https://docs.dev.runwayml.com/guides/models/) | 文本/图像到视频 | 云服务 | API模型：gen4.5 |
+| [Runway Aleph 2.0](https://docs.dev.runwayml.com/guides/models/) | 视频编辑 | 云服务 | API模型：aleph2 |
+| [Kling VIDEO 3.0](https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-launches-30-model-ushering-era-where-everyone-can-be/) | 带音频视频生成 | 云服务 | 须核对具体型号/模式；不宣称原生3分钟片段 |
+| [Seedance 2.5](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5) | 参考素材引导视频 | 云服务 | 单次生成30秒；延长需区分 |
+| [MiniMax H3](https://huggingface.co/MiniMaxAI/MiniMax-H3) | 视频与原生立体声音频 | 开放权重 | 最高15秒/2K；自定义许可 |
+| [LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5) | 多镜头视频/音频生成 | 开放权重 | 模型专属商业条款 |
+| [Sora 2 API](https://developers.openai.com/api/docs/deprecations) | 仅限历史接入 | 云服务 | 已弃用；2026-09-24关闭 |
 
 ---
 
@@ -1562,22 +1603,25 @@
 
 ### 📏 嵌入模型
 
-*MTEB = 大规模文本嵌入基准排行最高分（英文，2026-05 近似）。*
+*2026-09-08核验官方规格。“本地”表示可下载权重，不保证商业授权或硬件适配；已移除混用不同MTEB赛道的近似分数。*
 
-| 模型 | 维度 | 上下文 | 本地 | API | 语言 | 许可证 | MTEB ≈ |
-|-------|------|---------|-------|-----|-----------|---------|--------|
-| OpenAI text-embedding-3-large | 3072 | 8K | ❌ | ✅ | 多语言 | 闭源 | ~64 |
-| Cohere embed-v4 | 1024 | 512 | ❌ | ✅ | 多语言 | 闭源 | ~66 |
-| [Gemini gemini-embedding-2](https://ai.google.dev/gemini-api/docs/embeddings) | 3072 | 8K | ❌ | ✅ | 多语言 | 闭源 | — |
-| BGE-M3 | 1024 | 8K | ✅ | ❌ | 多语言 | MIT | ~65 |
-| Jina-embeddings-v3 | 1024 | 8K | ✅ | ✅ | 多语言 | CC-BY-NC | ~65 |
-| Nomic-embed-text-v2 | 768 | 8K | ✅ | ✅ | 多语言 | Apache-2.0 | ~62 |
-| Voyage-3 | 1024 | 32K | ❌ | ✅ | 多语言 | 闭源 | ~67 |
-| [Qwen3-Embedding-8B](https://huggingface.co/Qwen/Qwen3-Embedding-8B) | 4096 | 32K | ✅ | ✅ | 100+ | Apache-2.0 | ~70（多语言第 1） |
-| [Qwen3-Embedding-4B](https://huggingface.co/Qwen/Qwen3-Embedding-4B) | 2560 | 32K | ✅ | ✅ | 100+ | Apache-2.0 | — |
-| [Qwen3-Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) | 1024 | 32K | ✅ | ✅ | 100+ | Apache-2.0 | — |
+| 模型 | 维度 | 输入上限 | 输入 | 部署 | 许可 |
+| --- | --- | --- | --- | --- | --- |
+| [text-embedding-3-large / small](https://developers.openai.com/api/docs/guides/embeddings) | 3072 / 1536 | 8192 | 文本 | 云服务 | 供应商条款 |
+| [Cohere Embed v4](https://docs.cohere.com/docs/cohere-embed) | 256–1536 | 128K | 多模态 | 云服务 | 供应商条款 |
+| [Gemini Embedding 2](https://ai.google.dev/gemini-api/docs/embeddings) | 128–3072 | 8192 | 多模态 | 云服务 | 供应商条款 |
+| [BGE-M3](https://huggingface.co/BAAI/bge-m3) | 1024 | 8192 | 文本 | 开放权重 | MIT |
+| [Jina Embeddings v4](https://huggingface.co/jinaai/jina-embeddings-v4) | 128–2048 | 32768 | 多模态 | 开放权重 | Qwen Research License |
+| [Nomic Embed Text v2 MoE](https://huggingface.co/nomic-ai/nomic-embed-text-v2-moe) | 256–768 | 512 | 文本 | 开放权重 | Apache-2.0 |
+| [Voyage 4 / large / lite](https://docs.voyageai.com/docs/embeddings) | 256 / 512 / 1024 / 2048 | 32000 | 文本 | 云服务 | 供应商条款 |
+| [Voyage Code 4](https://docs.voyageai.com/docs/embeddings) | 256 / 512 / 1024 / 2048 | 32000 | 代码/文本 | 云服务 | 供应商条款 |
+| [Voyage 4 Nano](https://huggingface.co/voyageai/voyage-4-nano) | 256 / 512 / 1024 / 2048 | 32000 | 文本 | 开放权重 | Apache-2.0 |
+| [Qwen3-Embedding-8B](https://huggingface.co/Qwen/Qwen3-Embedding-8B) | 32–4096 | 32K | 文本 | 开放权重 | Apache-2.0 |
+| [Qwen3-Embedding-4B](https://huggingface.co/Qwen/Qwen3-Embedding-4B) | 32–2560 | 32K | 文本 | 开放权重 | Apache-2.0 |
+| [Qwen3-Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) | 32–1024 | 32K | 文本 | 开放权重 | Apache-2.0 |
+| [Qwen3-VL-Embedding-2B / 8B](https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B) | 64–2048 / 4096 | 32K | 多模态 | 开放权重 | Apache-2.0 |
 
-> 💡 **目前最强的开源嵌入方案已经是 Apache-2.0 且可自部署。** Qwen3-Embedding 系列在多语言 MTEB 登顶且能本地跑 —— 追求质量用 `-8B`，需要廉价批量建索引用 `-0.6B`（下载量已破千万）。如果你自部署 RAG 还在默认用 `text-embedding-3-large`，先和这几个跑个对比。另：截至 2026-07-30 **不存在** OpenAI `text-embedding-4`，不要按它做规划。
+应按自己的检索评测选择维度、模态与分块长度。[Qwen3-VL-Reranker](https://huggingface.co/Qwen/Qwen3-VL-Reranker-8B) 用于召回后重排查询/文档对，不能替代向量索引。切换不兼容的向量空间时须重新编码已存文档。
 
 ---
 
@@ -1625,15 +1669,22 @@
 
 ### 🇨🇳 中文大模型横向对比
 
-| 模型 | 厂商 | 上下文 | 中文能力≈ | 编程 | 开源权重 | 输入 $/1M |
-|-------|----------|---------|---------------|--------|------------|----------|
-| Qwen3 235B A22B | 阿里 | 131K | 顶级 | ⭐⭐⭐⭐⭐ | ✅ Apache-2.0 | ~$0.29 |
-| DeepSeek V4-Flash | DeepSeek | 1M | 非常高 | ⭐⭐⭐⭐⭐ | ✅ MIT | 高峰 $0.44 / 低谷 $0.22 |
-| Kimi K2.6 | Moonshot AI | 262K | 高 | ⭐⭐⭐⭐☆ | ❌ | ~$0.95 |
-| GLM-5.2 | 智谱 AI | 1M | 高 | ⭐⭐⭐⭐☆ | ✅ MIT | ~$0.50 |
-| 混元 Pro | 腾讯 | 256K | 高 | ⭐⭐⭐⭐☆ | ❌ | ~$0.45 |
-| 豆包 Pro 256K | 字节 | 256K | 高 | ⭐⭐⭐☆☆ | ❌ | ~$0.80 |
-| ERNIE 5 | 百度 | 128K | 高 | ⭐⭐⭐☆☆ | ❌ | ~$0.70 |
+*2026-09-08快照。此表比较功能与访问方式，不代表同条件中文基准排名；云端价格与区域条款取决于具体端点。*
+
+| 模型 | 供应商 | 任务 / 模态 | 权重可用性 | 许可 / 访问 |
+| --- | --- | --- | --- | --- |
+| [Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) | Alibaba | 多模态 | ✅ | Apache-2.0 |
+| [Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next) | Alibaba | 多模态 | ✅ | Qwen Community 1.0 |
+| [DeepSeek V4-Flash / Pro](https://api-docs.deepseek.com/quick_start/pricing/) | DeepSeek | 文本推理/编程 | ✅ | MIT |
+| [Kimi K3](https://huggingface.co/moonshotai/Kimi-K3) | Moonshot AI | 多模态 | ✅ | Kimi K3 License |
+| [GLM-5.3](https://huggingface.co/zai-org/GLM-5.3) | Z.ai | 文本推理/编程 | ✅ | GLM-5.3 License |
+| [GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash) | Z.ai | 多模态 | ✅ | MIT |
+| [MiniMax M3](https://huggingface.co/MiniMaxAI/MiniMax-M3) | MiniMax | 多模态 | ✅ | MiniMax Community |
+| [Hunyuan Hy3](https://huggingface.co/tencent/Hy3) | Tencent | 推理/工具使用 | ✅ | Apache-2.0 |
+| [Step 3.7 Flash](https://huggingface.co/stepfun-ai/Step-3.7-Flash) | StepFun | 多模态 | ✅ | Apache-2.0 |
+| [Seed 2.1](https://seed.bytedance.com/en/seed2_1) | ByteDance | 通用Agent/编程 | 云服务 | 供应商条款 |
+| [ERNIE 5.1](https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/) | Baidu | 推理/生成 | 云服务 | 供应商条款 |
+| [Baichuan-M3-235B](https://huggingface.co/baichuan-inc/Baichuan-M3-235B) | Baichuan | 医疗领域文本 | ✅ | Apache-2.0 |
 
 ---
 
@@ -1766,49 +1817,47 @@
 
 ### 🧠 模型选择类
 
-**需要最强模型做复杂推理**
-- **Claude Opus 5** — Anthropic 当前旗舰，接近 Fable 5 的质量而价格低很多，$5/$25/1M，1M 上下文 / 128K 输出。
-- **Claude Fable 5** — Opus 之上的 Mythos 档，只在真的很难的任务上才划得来，$10/$50/1M。
-- **GPT-5.6 Sol** — OpenAI 前沿档，带 “max” 推理与 “ultra” 子 Agent 模式，**$4/$20**/1M（促销至 2026-11-21）。
-- **Gemini 3.1 Pro** — Google 已上线的旗舰，GPQA-Diamond 纪录保持者，1M 上下文，$2/$12/1M。（宣称 2M 窗口的 Gemini 3.5 Pro 至今未发布，不要按它做规划。）
+**我需要处理复杂多步推理的模型**
+→ 在自己的任务上比较 **GPT-6 Astra** 与 **Claude Fable 5.1**；**Claude Opus 5**、**GPT-5.6 Sol**、**Gemini 3.8 Flash**提供不同的成本与能力取舍。部署前核对访问权限及 API 表。
 
-**需要最快最便宜的模型（简单高频任务）**
-- **Gemini 3.1 Flash-Lite** — Gemini 3 家族最便宜档，2026-05-08 已 GA，为低延迟补全和 agentic 开发工具而做。
-- **DeepSeek V4-Flash** — 低谷 $0.22/$0.66（高峰 $0.44/$1.32 的一半）/1M，1M 上下文，MIT，开源侧性价比最优；批量任务排到低谷时段（UTC 01:00–04:00、06:00–10:00）更省。
-- **Claude Haiku 4.5** — $1/$5/1M，1M 上下文，Anthropic 生态集成好。
-- **GPT-5.6 Luna** — $0.20/$1.20/1M，GPT-5.6 最快档，OpenAI 工具生态广。
+**我需要低成本高吞吐推理**
+→ 按实际输出长度、缓存命中率和重试量评测 **GPT-5.6 Luna**、**Gemini 3.8 Flash**、**DeepSeek V4-Flash**。DeepSeek 的 **高峰**时段为UTC 01:00–04:00及06:00–10:00。
 
-**需要最强中文能力**
-- **Qwen3.8-Max**（阿里）— 当前 Qwen 旗舰（2026-08-03 全量上线，2.4T MoE / 95B 激活），专为 agentic 编程和长周期任务而做。→ 云 API
-- **Kimi K3**（月之暗面）— 2.8T 总 / 104B 激活开放权重（2026-07-27），发布时全球最大的可下载模型。→ 自部署或 API
-- **DeepSeek V4-Pro** — 1.6T/49B MoE，1M 上下文，MIT。→ 自部署或 API
-- **GLM-5.2**（智谱 AI）— 1M 上下文，MIT 开源权重，中文优先。→ API 或本地
+**我需要中文 Agent**
+→ 可评测 **Qwen3.8**、**Kimi K3**、**DeepSeek V4**、**GLM-5.3 / GLM-5.3-Flash**、**Seed 2.1**，重点检查领域术语与工具schema。中文对比表已区分云服务、开放权重和自定义许可。
 
-**需要本地/离线模型（16GB 显存）**
-- **Qwen3.6-35B-A3B** — MoE 只有 3B 激活参数，因此能跑在 35B dense 永远跑不了的卡上。Apache-2.0，显存性价比最优选。
-- **Gemma 4 12B**（Google）— 统一无编码器多模态（文本+图像+音频单次处理），Q4 约 7GB。
-- **Phi-4**（微软，MIT）— Q4 约 9GB，编程表现超出体量。
-- **Qwen3.6-27B** — Q4 约 16GB，单消费级卡能塞进去的最强选择。
+**我的 GPU 显存约为16 GB**
+→ 可从后端支持的 **Phi-4** 或 **Gemma 4 12B** 量化版本开始，再实测占用。35B MoE不能仅因激活3B就视为能放下，完整权重与KV缓存仍需存储。
 
-**需要本地/离线模型（40GB+）**
-- **Qwen3 235B A22B** — MoE 旗舰，22B 激活，本档位本地质量最佳。Apache-2.0。
-- **Llama 3.3 70B Q4_K_M** — ~42GB，英文与编程强，Llama Community License。
-- **DeepSeek V4-Flash** — 284B MoE / 13B 激活，MIT，1M 上下文，单台 8 卡机 Q4 约 75GB。
-- **Inkling**（Thinking Machines）— 975B MoE / 41B 激活，Apache-2.0，原生多模态；需多卡。
+**我有更大的本地工作站或 GPU 集群**
+→ 量化后的 **Qwen3.8-27B**、**Gemma 4 31B**、**Muse Glimmer 30B**可作为工作站候选。**DeepSeek V4**、**GLM-5.3-Flash**、**Inkling**等大型MoE需要更多总内存或卸载，应参考存储表而非激活参数。
 
-**需要最强编程能力**
-→ 日常 agentic 编程用 **Claude Sonnet 5**（迄今最 agentic 的 Sonnet，Claude Code 默认）；真难的任务上 **Claude Opus 5** 或 **Fable 5**。OpenAI 技术栈走 Codex + **GPT-5.6 Sol**。开源权重编程用 **DeepSeek V4-Pro**。IDE 内：**Cursor**（2026-08-12 起默认 Grok 4.6，可切 Claude）或 **Cline**。
+**我需要编程模型**
+→ 可以 **Claude Sonnet 5** 或 **GPT-5.6 Sol**作基线，再用难题评测 **GPT-6 Astra**、**Claude Fable 5.1**、**Muse Spark 1.3**。自托管可比较 **GLM-5.3**、**GLM-5.3-Flash**、**DeepSeek V4**及较小的 **Qwen3.8-27B**，分别核对许可。
 
-**需要超长上下文 (500K+)**
-- **Claude Opus 5 / Sonnet 5** — 1M 上下文，窗口内质量最佳。
-- **Gemini 3.1 Pro** — 1M 上下文，这个长度上最便宜的强选项。
-- **DeepSeek V4-Pro / V4-Flash** — 1M 上下文，MIT，可自部署。
-- **Grok 4.5** — 500K 上下文，自带上下文压缩。
-- **Kimi K2.6** — 262K，中文强。
+**我需要多模态理解**
+→ **Gemini 3.8 Flash**接受文本、图像、音频、视频与PDF，但输出文本。**Qwen3.8-27B**和 **Gemma 4**提供本地选择；**Inkling**接受文本、图像与音频。须核对具体型号的输入与输出模态。
 
-**需要开源权重模型（MIT/Apache）**
-- **Qwen3 235B A22B** (Apache-2.0)、**DeepSeek V4-Flash / V4-Pro** (MIT)、**Inkling** (Apache-2.0，975B MoE / 41B 激活、多模态)、**Mistral Small 4** (Apache-2.0，119B MoE / 6B 激活)、**Llama 3.3 70B**（Llama Community License）。
-- ⚠️ 注意：**Kimi K3 不是 OSI 开源**（自定义 Kimi K3 License，带营收阈值的 MaaS 除外条款），**Gemma 系也不是**（Gemma Terms of Use）。
+**我需要至少500K token上下文**
+→ 可比较 **GPT-6 Astra**、**Claude Fable 5.1 / Sonnet 5**、**Gemini 3.8 Flash**、**DeepSeek V4**、**Kimi K3**。上下文不只包含用户输入，还需计入输出、推理、模态token、服务上限及长上下文加价。
+
+**我需要实时语音**
+→ 原生语音交互可评测 **GPT-Realtime-2.1**或 **Gemini 3.1 Flash Live**。搭建流水线时，须分别选择STT（**Qwen3-ASR**、**Voxtral Realtime**、**Muse Voice Transcribe**）与TTS（**Qwen3-TTS**、**Kokoro**、**Eleven v3**）。
+
+**我需要图像生成或编辑**
+→ 用实际参考图与布局比较 **gpt-image-2**、**Nano Banana 2 / Pro**、**Seedream 5.0 Pro**、**FLUX.2**。**Midjourney V8.2 Edit**仍为alpha；**Stable Diffusion 3.5**的本地权重采用其社区许可。
+
+**我需要视频生成或编辑**
+→ 对话式编辑可从 **Gemini Omni Flash 1.1**开始，帧控制/延长可评测 **Veo 3.1**，制作编辑可评测 **Runway Gen-4.5 / Aleph 2.0**。还可比较 **Seedance 2.5**、**MiniMax H3**、**LTX-2.5**，并区分原生片段与延长后的时间线。
+
+**我需要MIT或Apache-2.0模型权重**
+→ 可考虑 **Qwen3.8-27B**、**Gemma 4**、**Mistral Small 4**、**DeepSeek V4**、**GLM-5.3-Flash**和 **Inkling**。不能将其许可套用到条款不同的 **Qwen3.8-Flash-Next**、**GLM-5.3**、**Kimi K3**、**MiniMax M3**或 **Llama**。
+
+**我需要向量嵌入与重排**
+→ 在自己的语料上评测 **Qwen3-Embedding**、**Qwen3-VL-Embedding**、**Cohere Embed v4**、**Gemini Embedding 2**或 **Voyage 4**，用专门重排模型处理召回候选；比较召回率、延迟与总索引成本，不混用榜单分数。
+
+**我需要文档解析或内容审核**
+→ 结构化文档提取可用 **Mistral OCR 4.1**，策略分类可用 **Shieldstral 1.0**等专用接口；将置信度或策略标签作为工作流输入，并验证有代表性的失败案例。
 
 ---
 
@@ -1865,17 +1914,23 @@
 
 ### 🌍 生态选择类
 
-**OpenAI 生态** → OpenAI Agents SDK + GPT-5.6 Terra + E2B + LangSmith。
+**我想在OpenAI生态构建**
+→ **OpenAI Agents SDK**搭配 **GPT-5.6 Terra**处理均衡任务、**GPT-5.6 Luna**处理高吞吐任务，或 **GPT-6 Astra**处理复杂任务；按应用需要配置沙箱与评测。
 
-**Anthropic 生态** → Claude Code + Claude Sonnet/Opus + MCP + Langfuse。
+**我想在Anthropic Claude生态构建**
+→ **Claude Code**搭配 **Claude Sonnet 5 / Opus 5 / Fable 5.1**，用 **MCP**连接工具、**Langfuse**观测运行；模型与执行框架应一起评测。
 
-**Google 生态** → Google ADK v2.5+ + Gemini 3.1 Pro / 3.5 Flash + Vertex AI。
+**我想在Google Gemini生态构建**
+→ **Google ADK**搭配 **Gemini 3.8 Flash**或 **Gemini 3.1 Pro Preview**，结合Google Cloud部署与评测服务；须核对所选端点的区域和预览状态。
 
-**国内市场** → Qwen3 235B（DashScope）+ RAGFlow + Milvus + Langfuse。
+**我想面向中国市场构建**
+→ 通过所需区域的端点比较 **Qwen3.8**、**Seed 2.1**、**ERNIE 5.1**、**Kimi K3**。仅选择某一供应商不能证明数据驻留或监管合规。
 
-**TypeScript 优先** → Mastra + Vercel AI SDK + Gemini 3.5 Flash + Qdrant。
+**我想要TypeScript优先的技术栈**
+→ 可组合 **Mastra**或 **LangChain.js / LangGraph.js**、**Vercel AI SDK**、**Qdrant JS client**、**Langfuse JS SDK**；须核对各组件当前许可和功能。
 
-**全开源栈** → Ollama + Llama 3.3 70B + LangGraph + Qdrant + Langfuse。
+**我想要采用宽松许可模型权重的自托管栈**
+→ 用兼容的本地运行时加载 **Qwen3.8-27B**或 **Gemma 4**，再配置 **LangGraph**、**Qdrant**和观测服务。所需组件均须实际自托管，并单独核对可选云功能。
 
 ---
 
@@ -1884,13 +1939,13 @@
 | # | 配方名 | 技术栈 | 适合对象 |
 |---|------------|-------|----------|
 | 1 | **轻量编程 Agent** | Claude Code + E2B + Langfuse | 独立开发/创业，性价比最高 |
-| 2 | **开源 SWE Agent** | OpenHands + Ollama + Qwen3.6-27B + Qdrant | 全本地，隐私优先 |
+| 2 | **开源 SWE Agent** | OpenHands + Ollama + Qwen3.8-27B + Qdrant | 全本地，隐私优先 |
 | 3 | **企业级 RAG** | LlamaIndex + Qdrant + Qwen3-Embedding-8B + Langfuse + Claude Sonnet 5 | 内部文档生产问答 |
 | 4 | **语音助手流水线** | LiveKit + Whisper + Claude Sonnet 5 + ElevenLabs v3 | 定制品牌语音 AI |
 | 5 | **浏览器自动化** | Browser Use + Stagehand + Claude Sonnet 5 + Langfuse | 可靠网页抓取 |
-| 6 | **本地隐私栈** | Ollama + Qwen3.6-27B + Open WebUI + Qdrant + n8n | 零云端、离线部署 |
-| 7 | **TypeScript Agent** | Mastra + Vercel AI SDK + Gemini 3.5 Flash + Qdrant | TS 优先生产 SaaS |
-| 8 | **国内市场栈** | Qwen3 235B API + RAGFlow + Milvus + Langfuse | 国内部署，ICP 合规 |
+| 6 | **本地隐私栈** | Ollama + Qwen3.8-27B + Open WebUI + Qdrant + n8n | 零云端、离线部署 |
+| 7 | **TypeScript Agent** | Mastra + Vercel AI SDK + Gemini 3.8 Flash + Qdrant | TS 优先生产 SaaS |
+| 8 | **国内市场栈** | Qwen3.8 API + RAGFlow + Milvus + Langfuse | 国内部署，ICP 合规 |
 
 ---
 

@@ -128,11 +128,11 @@
 
 ## 🧠 基盤モデル 2026
 
-*AI エコシステムを動かす最新の大規模言語モデル群、ベンダー別。20+ ベンダーから 65+ モデル。*
+*現行モデルと過去の基盤モデルを提供元別に厳選。モデルカード、API の利用可否、重みのライセンスは区別し、日付付きの項目でリリース履歴を保持する。*
 
 ### OpenAI
 - [GPT-Live-1 / GPT-Live-1 mini](https://openai.com/index/introducing-gpt-live/) - 🆕 **2026-07-08**。Advanced Voice Mode を置き換える OpenAI のフルデュプレックス会話音声モデル。聞きながら同時に話し（ターンテイキング遅延ゼロ）、割り込みに対応し、複雑なクエリはバックグラウンドで GPT-5.5 に委譲。**GPT-Live-1** は有料ユーザー（Go/Plus/Pro）、**GPT-Live-1 mini** は無料ユーザーのデフォルト。リアルタイムのライブ翻訳を含む。iOS / Android / Web で利用可。
-- [OpenAI Astra](https://openai.com) - 🆕 ⚠️ **2026-08-01 発表（公開リリース日未定）**。OpenAI の次世代モデルファミリーのプレリリース発表。内部版は 1 セッションで**数学・理論計算機科学の未解決問題 10 問**（群論、量子複雑性など）を解決したと報告。249 ページの論文 + Lean 4 機械検証可能な証明書が公開済み。⚠️ API アクセス・公開ウェイトなし。**2026年8月7日更新**: 予備評価で史上初の「Critical」サイバー能力レベルを否定できなかったため、OpenAI は [Astra の開発を減速](https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/)。ホワイトハウスは OpenAI が自主的に延期を政権に報告したことを確認。リリース時期はさらに後ろ倒しに。
+- [GPT-6 Astra / Astra Pro](https://openai.com/index/gpt-6-astra/) - 🆕 **2026年9月3日**。高度な推論、コーディング、コンピューター操作向け；[一部組織への限定展開で、まだ一般提供ではない](https://help.openai.com/en/articles/6825453-chatgpt-release-notes)。API モデルカードの公開とアカウントの利用権限は別途確認が必要。
 - [GPT-5.6 Sol](https://openai.com/blog/gpt-5-6) - 🆕 **2026-07-09**（GA；一部プレビュー 6月26日～）。GPT-5.6 ファミリーのフロンティアフラッグシップ — 高度な推論、コーディング、生物学、サイバーセキュリティ機能に加え、「最大（max）」推論と「ウルトラ（ultra）」サブエージェントモードを備える最高性能モデル。ChatGPT、Codex、OpenAI API で利用可能。米国政府による安全審査のため発表が遅れたが、段階的に展開中。**2026年8月6日更新**: ChatGPT での精度と一貫性が向上；GPT-5.6 Luna が無料ユーザーの日常チャット無制限利用に拡大。⚡ **2026年8月13日**: 新しい [Ultrafast サービスティア](https://openai.com/index/previewing-ultrafast)（API 限定プレビュー）が Cerebras ハードウェアにより GPT-5.6 Sol を最大 **Standard 比 14 倍速 / 約 750 出力トークン/秒**で提供。⚡ **2026年8月21日**: API 表示価格が 100 万トークンあたり **$4 / $20** に値下げ（入力 20%・出力 33% 安）；キャンペーンは少なくとも **2026年11月21日**まで（[changelog](https://developers.openai.com/api/docs/changelog.md)）。
 - [GPT-5.6 Terra](https://openai.com/blog/gpt-5-6) - 🆕 **2026-07-09**。GPT-5.6 ファミリーの中間層 — GPT-5.5 と同等の性能を約 2 分の 1 のコストで提供。コスト効率の高い本番ワークロード向け。
 - [GPT-5.6 Luna](https://openai.com/blog/gpt-5-6) - 🆕 **2026-07-09**。GPT-5.6 の中で最も高速かつコスト効率の高いモデル — 大量で処理速度が求められるタスクに最適。
@@ -161,9 +161,9 @@
 - [GPT-5.4 Pro](https://openai.com/) - GPT-5.4 の高精度バリアント。BenchLM 92。
 - [GPT-5.3](https://openai.com/) - 2026 年初頭。GPT-5.3 Instant（会話）と GPT-5.3-Codex（コーディング）を含む。
 - [GPT-5.2](https://openai.com/) - 2025-12 公開。最先端の推論・長文脈・視覚。
-- [GPT-5](https://openai.com/index/introducing-gpt-5/) - 2025-08 公開。ChatGPT のデフォルトモデル、GPT-4o の後継。マルチモーダル、gpt-5 / mini / nano の 3 段階。
+- [GPT-5](https://openai.com/index/introducing-gpt-5/) - **2025年8月**。標準・mini・nano の API バリアントを持つ旧世代 GPT；リリース履歴として掲載。
 - [GPT-4o](https://openai.com/index/hello-gpt-4o/) - テキスト・視覚・音声をネイティブにサポートする Omni モデル。2026-02 に ChatGPT から退役、API では引き続き利用可能。
-- [GPT-4.5](https://openai.com/) - 📦 **2026年6月末に ChatGPT から退役済み**（API 利用は継続；会話は GPT-5.5 に自動移行）。2025年2月に研究プレビューとしてリリースされた、ChatGPT 最後の GPT-4 系モデル。o3 は 2026年8月26日に ChatGPT から退役予定。
+- [GPT-4.5](https://developers.openai.com/api/docs/deprecations) - 📦 過去の研究プレビュー；`gpt-4.5-preview` API は **2025年7月14日**に終了。
 - [o3 / o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) - 思考連鎖推論モデル。2025-04 公開。o3 は 2026-08-26 退役。
 - [Codex CLI](https://github.com/openai/codex) - OpenAI が公開したオープンソースのターミナルコーディングエージェント。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenai%2Fcodex&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [OpenAI Jalapeño](https://openai.com/index/jalapeno-first-results) - 🆕 ⚡ **2026年8月25日**。OpenAI 自社推論チップの初公開結果。現行モデル向けに高スループット・低レイテンシ。公式 RSS：「industry-leading speed and efficiency in AI inference」。
@@ -172,6 +172,8 @@
 
 ### Anthropic
 
+- [Claude Haiku 4.5](https://platform.claude.com/docs/en/models/overview) - 低遅延の Claude モデルで、200K コンテキストと最大64K出力に対応；Sonnet 5・Opus 5・Fable 5.1 とともに現行カタログへ掲載。
+- [Claude Fable 5.1 / Mythos 5.1](https://www.anthropic.com/claude-fable-and-mythos-5-1) - 🆕 **2026年9月1日**。Fable 5.1 は一般提供（`claude-fable-5-1`）；Mythos 5.1 は同一モデルに異なる保護措置を適用し、現在は承認済み米国組織に限定。
 - [Claude テキスト電子透かし + コンテンツクレデンシャル](https://www.anthropic.com/news/claude-text-watermark) - 🆕 ⚡ **2026年8月14日**。Anthropic は今後の Claude モデルにローンチ時点からグローバルで不可視の **SynthID-Text ベースの電子透かし**（Google DeepMind の手法）を追加し、生成画像/ファイル（.png/.jpg/.svg）には C2PA コンテンツクレデンシャルを付与；2026 年 8 月 2 日以前にリリースされたモデルは「今後数か月かけて」対応し、検出 API も提供予定。7 月に EU の透明性行動規範（Code of Practice）に署名したことを受け、EU AI 法への準拠として実装。Anthropic は透かし入りテキストは読者には識別不能だと説明。
 - [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) - 🆕 **2026-07-24**。Anthropic 第 5 世代フラッグシップモデル。Fable 5 に迫る性能を大幅に低い価格で提供（入力/出力 100 万トークンあたり $5/$25）。コンテキストウィンドウ 1Mトークン、出力最大 128Kトークン。Claude Max のデフォルトモデル。API: `claude-opus-5`。Anthropic API、Amazon Bedrock、Google Cloud Vertex AI で利用可能。
 - [Claude Fable 5 グローバルアクセス復旧](https://www.anthropic.com/news/redeploying-fable-5) - 🆕 **2026-07-01**。米国商務省による輸出管理が 6 月 30 日に解除されたことを受け、Anthropic は Claude.ai、Claude API、Claude Code、Claude Cowork で Fable 5 へのグローバルアクセスを復旧。Amazon が発見したジェイルブレイク手法をブロックする新しい安全クラシファイアを配備（報告された挙動を >99% のケースでブロック）。Pro/Max/Team と一部 Enterprise プランでは 7 月 7 日まで週次利用量の最大 50% まで Fable 5 が追加費用なしで利用でき、以降は利用クレジット経由；AWS、Google Cloud、Microsoft Foundry でのクラウド再有効化も追って実施。Mythos 5 は引き続き米国の審査済みエンティティに制限される。
@@ -203,11 +205,12 @@
 - [Bristol Myers Squibb ↔ Anthropic Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) - 🆕 **2026-05-20**。BMS が Claude Enterprise を 30,000+ 名の社員の共通インテリジェンス基盤として採用し、創薬・開発・デリバリーの全工程にエージェント化 Claude を組み込む。世界トップ 5 製薬企業で初めての公社規模での Claude 全社展開。
 
 ### Google DeepMind
+- [Gemini 3.8 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash) - 🆕 **2026年9月**。安定版 `gemini-3.8-flash` はテキスト・画像・音声・動画・PDF入力、1,048,576入力 token、65,536出力 token、関数呼び出しに対応。
 - [Gemini 3.7 Flash](https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/) - 🆕 ⚡ **2026年8月13日**。Google の新しい「最も知的なワークホースモデル」（コーディング・エージェント向け）— 3.6 Flash からわずか 3 週間後、いまだ未リリースの 3.5 Pro より先に出荷。FrontierCode 1.1 43.6%（3.6 Flash は 34.4%）、DeepSWE v1.1 65.3%（同 49.0%）。導入価格は **2026 年 12 月 31 日まで入力/出力 100 万トークンあたり $0.75/$3.75**（以降 $1.50/$7.50）。AI Studio、Android Studio、Antigravity、Gemini Enterprise Agent Platform で利用可能；AI Pro/Ultra 加入者向け Gemini Spark を駆動。
 - [Gemini 3.6 Flash](https://github.com/google-gemini/cookbook) - 🆕 **2026-07-21**。Google の Flash 層 —— 複雑な agentic およびマルチモーダルタスクでより強力で、**トークン使用量を削減しつつ 3.5 Flash より低価格**。API id `gemini-3.6-flash`。公式 Gemini API cookbook に thinking モードガイドと共に記載。2026 年 8 月 13 日に 3.7 Flash が最上位 Flash 層を引き継いだ。
 - [Gemini 3.5 Flash-Lite](https://github.com/google-gemini/cookbook) - 🆕 **2026-07-21**。3.5 ファミリーで最速・最低コストのモデル。高スループット実行で従来の Flash-Lite 世代を上回る。API id `gemini-3.5-flash-lite`。現在最も安い Gemini 層で、新規構築では 3.1 Flash-Lite より優先。
-- [Gemini 3.1 Pro（preview）](https://deepmind.google/technologies/gemini/) - 2026 年 7 月下旬時点で Google 最高性能の Gemini。API 名は `gemini-3.1-pro-preview`。GPQA Diamond 94.3%（発表時の世界記録）、ARC-AGI-2 77.1%、BenchLM 94。⚠️ いまだ `-preview` 付きで、**無料枠がない**。
-- [Gemini 3.5 Pro](https://cloud.google.com/blog/products/ai-machine-learning/innovations-from-google-io-26-on-google-cloud) - ⚠️ **延期 — 2026年8月25日時点でなお未リリース**（パートナー限定のエンタープライズプレビューは継続中）。**200 万トークンのコンテキストウィンドウ**（報道値）と **Deep Think** 推論モードを備えるとされる Google の次期フラッグシップ。コーディングとエージェント型ワークフロー機能が大幅に向上。2026 年 5 月の Google I/O で 6 月リリースと発表されたが、コーディング性能の不振によりベースモデルを作り直したため延期。Gemini 3.7 Flash 発表会（8 月 13 日）で Google は 3.5 Pro の扱いについて言及を避け、現在 **Gemini 4** をトレーニング中であることを確認。GPT-5.6 Sol や Claude Fable 5 と直接競合。
+- [Gemini 3.1 Pro (preview)](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview) - マルチモーダル入力と1M文脈に対応する推論プレビュー；提供状況と上限はエンドポイントごとに確認。
+- [Gemini 3.5 Pro (announcement)](https://ai.google.dev/gemini-api/docs/models) - ⚠️ **2026-09-08**確認の公開Gemini APIカタログにGemini 3.5 Proは掲載されていない；発表から提供済み・料金・文脈長を推測しない。
 - [Gemma 4 12B](https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/) - 🆕 **2026-06**。テキスト・画像・音声をシングルパスで処理する**統合エンコーダレスアーキテクチャ**を採用した新型マルチモーダルオープンモデル。16GB VRAM でのローカル動作を想定。
 - [DiffusionGemma](https://www.marktechpost.com/2026/06/10/google-ai-releases-diffusiongemma-a-26b-moe-open-model-using-text-diffusion-for-up-to-4x-faster-generation/) - 🆕 **2026-06**。**テキストディフュージョン（拡散）アーキテクチャ**により、自己回帰型モデルと比べて生成速度が最大 **4 倍**速い 26B の MoE オープンモデル。
 
@@ -220,14 +223,15 @@
 - [Gemini Spark（24/7 パーソナル AI エージェント）](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。クラウド上で 24/7 動作し、まず Gmail / Chat とネイティブ連携した上で、MCP を介して ~30+ のサードパーティツール（Adobe / Dropbox / Uber など）に拡張。Google AI Ultra 加入者限定。
 - [Google AI Ultra（$100/月）](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。開発者・クリエイター・ヘビーユーザー向けの新たなコンシューマーサブスクリプション最上位ティア。Gemini Spark、最高 Gemini 3.5 クオータ、さらに今後公開予定の Gemini 3.5 Pro をアンロック。
 - [Gemini 3.1 Flash / Flash Lite](https://deepmind.google/technologies/gemini/) - 高スループット用途向けの高速・低コストモデル。
-- [Gemini 4 (Open)](https://deepmind.google/technologies/gemini/) - 🆕 2026-04 公開。オープンモデル: 2B / 4B / 26B / 31B。科学推論と文書理解、ローカル展開向け。
+- [Gemma 4 family](https://huggingface.co/google/gemma-4-31B-it) - Apache-2.0 の公開重みマルチモーダル系列：E2B・E4B・12B・26B A4B・31B；名称は Gemma であり、公開版 Gemini 4 ではない。
 - [Gemini 2.5 Pro / Flash](https://deepmind.google/technologies/gemini/) - 2025-06 GA。Thinking モデル + 1M コンテキスト。
 - [Gemma 4 31B](https://github.com/google-deepmind/gemma) - 🆕 2026-04。GPQA Diamond 84.3%。デバイス推論用の強力なオープンウェイト代替。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle-deepmind%2Fgemma&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Gemma 3](https://github.com/google-deepmind/gemma) - 前世代のオープンモデルファミリー。
-- [Gemini Robotics ER-1.6](https://deepmind.google/) - 🆕 2026-04-14。空間・物理推論を強化したロボティクス AI。Agile Robotics と提携し実機展開。
+- [Gemini Robotics ER 2](https://ai.google.dev/gemini-api/docs/robotics-overview) - 🆕 空間理解とロボットのツール連携向け現行プレビューで、別途ストリーミング版も提供；終了した ER 1.6 エンドポイントの後継。
 
 ### Meta
 
+- [Muse Spark 1.3](https://research.meta.ai/blog/introducing-muse-spark-1-3) - 🆕 **2026年9月2日**。Agent とコーディングを強化し、max 推論を含め Muse Code と Meta Model API で提供；Spark の重み公開は今後の予定。
 - [Meta Muse Image](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07**。Meta Superintelligence Labs の最も高度な画像生成モデル — Web 検索、コード実行、自己修正などの推論ステップを経てから画像を生成する「エージェント型」モデル。Meta AI アプリ、Instagram Stories（米国）、一部の国の WhatsApp で展開（Facebook は近日対応）。なお、他ユーザーの公開 Instagram プロフィール画像を利用できる物議を醸した機能は、フィードバックを受けて 7 月 10 日に追加後撤回された。
 - [Muse Spark 1.1](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) - 🆕 **2026-07-09**。Meta Model API の新しいパブリックプレビューを介して提供される、エージェントタスク向けマルチモーダル推論モデル。オープンソースの Llama ラインと並行した、独自の収益重視モデルへの戦略的シフトを示す。
 - [Meta Muse Video](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07（プレビュー）**。Muse Image と同じ基盤技術で構築された動画生成モデル。テキスト→動画部門で Arena 第 3 位。Muse Image の発表と同時にプレビュー公開 —「クリエイターと Meta AI に近日提供」。
@@ -242,38 +246,42 @@
 
 ### Sakana AI
 
+- [Sakana Namazu](https://console.sakana.ai/models) - 日本語特化 LLM の API ID は `sakana-namazu-v1.0`；`sakana-namazu` は現行版を指すエイリアス。
 - [Sakana RL Conductor](https://venturebeat.com/orchestration/how-sakana-trained-a-7b-model-to-orchestrate-gpt-5-claude-sonnet-4-and-gemini-2-5-pro) - 🆕 **論文 2026-04-27 / Fugu ベータ 2026-04 末～2026-05 初**。Qwen2.5-7B をベースに強化学習で訓練された 7B のオーケストレーター，GPT-5 / Claude Sonnet 4 / Gemini 2.5 Pro などにサブタスクを振り分ける。LiveCodeBench 83.9% / GPQA-Diamond 87.5% で SOTA，1 クエリ平均 ~1.8K トークンと他マルチエージェントアンサンブルより大幅に安い。
-- [Sakana Fugu](https://sakana.ai/fugu-beta/) - 🆕 **ベータ 2026-04-24 / 25**。RL Conductor 研究をプロダクト化したマルチエージェントオーケストレーションサービス。OpenAI 互換 API で提供され、**Fugu Mini**（低遅延）と **Fugu Ultra**（高性能）の 2 構成。SWE-Pro、GPQA-D、ALE-Bench で出色の結果。
+- [Sakana Fugu / Fugu Ultra](https://console.sakana.ai/models) - `fugu`・`fugu-ultra-v1.1`・従量課金の `fugu-cyber-v1.0` を提供するモデル編成 API；OpenAI Responses と Anthropic Messages に互換。
 
 ### Zyphra
 
-- [ZAYA1-8B](https://www.zyphra.com/post/zaya1-8b) - 🆕 **2026-05-06**。アクティブパラメータ <1B の MoE 推論モデル。すべて AMD Instinct MI300X クラスター上で訓練され、Apache 2.0 で Hugging Face にウェイトを公開。Zyphra Cloud でサーバーレス推論も提供。
+- [ZAYA1-8B](https://www.zyphra.com/models/zaya1-8b) - **2026年5月6日**。AMD MI300X 基盤で学習した小型 MoE 推論モデルで、重みは Apache-2.0。
 - [ZAYA1-8B-Diffusion-Preview](https://www.zyphra.com/post/zaya1-8b-diffusion-preview) - 🆕 **2026-05-14**。自己回帰 LLM から変換された初の MoE 拡散言語モデルで、AMD GPU で訓練された初の拡散 LM でもある。1 ステップで 16 トークンを生成し、自己回帰ベースラインに対し **最大 7.7× の推論高速化**。Zyphra の TiDAR レシピ + CCA Attention を採用。
 
 ### Thinking Machines Lab
 
-- [Inkling](https://thinkingmachines.ai/inkling/) - 🆕 **2026-07-15**。前 OpenAI CTO の Mira Murati が設立。975B MoE（41Bアクティブ）、45Tトークンで事前学習、コンテキストウィンドウ 1Mトークン。テキスト・画像・音声・動画のネイティブマルチモーダル対応。Apache 2.0 オープンウェイトを Hugging Face で公開。**Inkling-Small**（12Bアクティブ）も同日リリース。Thinking Machines API・ Hugging Face Inference経由で利用可能。
+- [Inkling](https://thinkingmachines.ai/inkling/) - **2026年7月15日**。Apache-2.0 の MoE モデルで総975B・稼働41B、テキスト・画像・音声を入力可能；モデルは1M文脈に対応し、Tinker の上限はより小さい。
 - [Inkling-Small](https://thinkingmachines.ai/inkling/) - 🆕 **2026-07-30（ウェイト公開）**。Inkling の軽量バリアント —— 276B 総 / 12B アクティブ、ネイティブマルチモーダル（テキスト/画像/音声）、1M コンテキスト、Apache 2.0。HLE テストベンチ **31.6%** —— より大きな 975B Inkling（29.7%）をわずかに上回る。Thinking Machines API および Hugging Face 経由で利用可能。
 
 ### Mistral AI
 
+- [Voxtral Mini Transcribe Realtime](https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602) - Apache-2.0 の公開重みストリーミング音声認識モデルで、音声生成の Voxtral TTS とは別モデル。
+- [Shieldstral 1.0](https://docs.mistral.ai/models/shieldstral-1-0) - 🆕 **2026年8月4日**。Apache-2.0 のテキスト・画像モデレーションモデルを公開プレビュー；ポリシー質問、入出力ペア、拒否応答を分類。
+- [Mistral OCR 4.1](https://docs.mistral.ai/models/ocr-4-1) - 段落の境界ボックス、構造ブロックのラベル、信頼度スコアを返す文書 OCR サービス。
 - [Mistral Large 3](https://mistral.ai/news/mistral-3) - 675B 総 / 41B アクティブ MoE、256K コンテキスト。マルチモーダルオープンウェイトのフラッグシップ。2025-12 公開。
-- [Mistral Medium 3.1](https://mistral.ai/) - 企業向けフロンティア級密モデル。マルチモーダル、128K、80+ プログラミング言語。2025-08 公開。
+- [Mistral Medium 3.1](https://docs.mistral.ai/models) - 📦 2025年の旧版で、非推奨・終了モデル一覧に掲載；現行MediumはMistral Medium 3.5。
 - [Mistral Small 4](https://mistral.ai/news/mistral-small-4) - 🆕 2026-03 公開。119B 総 / 6B アクティブ。推論・マルチモーダル・コーディングを統合したハイブリッド。
-- [Magistral 1.2](https://mistral.ai/) - 🆕 2026 年の推論ファミリー。透過的で多言語の推論。
-- [Devstral 2](https://mistral.ai/) - 🆕 2026 年のエージェントコーディングモデル。コーディングエージェントに最適なオープンソース。
-- [Codestral](https://mistral.ai/news/codestral) - 22B コード生成モデル、80+ プログラミング言語、32K コンテキスト。2024-05 公開。
+- [Magistral 1.2](https://docs.mistral.ai/models) - 📦 2025年9月のMedium・Small推論バリアントで、現在はMistralの非推奨・終了一覧に掲載。
+- [Devstral 2](https://docs.mistral.ai/models/devstral-2-25-12) - 2025年12月のモデルカードを持つ旧Agentコーディングモデル；導入前にライフサイクル状態を確認。
+- [Codestral 2508](https://docs.mistral.ai/models/codestral-25-08) - 現行 Mistral カタログのコード補完モデル；2024年の初代22B仕様を流用せず、このバージョンのモデルカードを参照。
 - [Pixtral Large](https://mistral.ai/) - 124B マルチモーダル + 1B ビジョンエンコーダ、128K、30+ 高解像度画像処理。
 - [Ministral 3B/8B/14B](https://mistral.ai/) - エッジ向けのコンパクトモデル。
 - [Mistral Forge](https://mistral.ai/) - 🆕 2026-03 のカスタム LLM 訓練プラットフォーム。
 - [Mistral Medium 3.5](https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04) - 🆕 **2026-04-28**。Dense 128B のオープンウェイトモデル、256K コンテキスト、Modified MIT ライセンス。指示追従・推論・コーディングを統合。
 - [Leanstral 1.5](https://mistral.ai/news/leanstral-1-5/) - 🆕 **2026-07-02**。Lean 4 での証明エンジニアリング向け形式検証モデル — 119B 総 / 6B アクティブ、Apache 2.0、ウェイトは Hugging Face で公開、無料 API エンドポイントも提供。miniF2F で 100%、PutnamBench 672 問中 587 問を解き、57 の実世界リポジトリで未報告のバグ 5 件を発見。
 - [Robostral Navigate](https://mistral.ai/news/robostral-navigate/) - 🆕 **2026-07-08**。Mistral 初のロボティクスモデル — 単一の RGB カメラのみで、自然言語の指示から車輪型・脚型・飛行型ロボットをオフィス・家庭・屋外でナビゲートする 8B の身体性ナビゲーションモデル（未見の検証環境で成功率 76.6%）。約 40 万件のシミュレーション軌跡で完全内製訓練。
-- [Voxtral TTS](https://www.forbes.com/sites/ronschmelzer/2026/03/26/mistral-releases-open-weight-voice-ai-built-for-speed/) - 🆕 **2026-03-26**。Ministral 3B を土台にした 4B パラメータのオープンウェイト TTS。多言語対応で、音声エージェントのレイテンシ最適化。
+- [Voxtral TTS](https://docs.mistral.ai/models/voxtral-tts-26-03) - 音声クローンと多言語に対応する公開重み TTS；重みは CC-BY-NC-4.0 のため商用導入には別途許諾が必要。
 
 ### DeepSeek 🇨🇳
 
-- [DeepSeek-V4-Pro-0813（GA）](https://api-docs.deepseek.com/news/news260813) - 🆕 ⚡ **2026年8月13日**。`deepseek-v4-pro` の GA リリース（アプリ / Web / API）—「本番で大きな効果を上げる大規模なエージェント強化」：選択可能な**推論エフォート**（low/high/max — V4-Flash でも利用可）、Codex 向けに最適化されたネイティブの OpenAI **Responses API** 対応、アプリ / Web の「Expert Mode」。⚠️ **2026年8月16日（16:00 UTC）に価格改定**: 定額制が終了し、**ピーク / オフピークの時間帯別料金**を導入（ピークは 01:00–04:00 と 06:00–10:00 UTC；オフピークは 50% 割安）。V4-Pro のピーク価格は 100 万トークンあたりキャッシュヒット入力 $0.044 / ミス $1.32、出力 $3.96 — 大幅な値上げ（[価格](https://api-docs.deepseek.com/quick_start/pricing)）。
+- [DeepSeek-V4-Pro-0813 (GA)](https://api-docs.deepseek.com/news/news260813) - **2026年8月13日**。`deepseek-v4-pro` の本番チェックポイントで、推論強度の設定と Responses API に対応；ピーク・オフピーク料金は8月16日から適用済み。
 - [DeepSeek-V4-Pro](https://api-docs.deepseek.com/news/news260424) - 🆕 **2026-04-24（プレビュー）；正式版ローンチは 2026 年 7 月中旬**。1.6T 総 / 49B アクティブ MoE、1M トークン。MIT。エージェント能力・世界知識・推論でリードし、オープンソースベンチマーク首位。最大出力 384K、同時実行 500。`deepseek-v4-pro` / `deepseek-v4-flash` が本番 API モデル（V4-Pro は 8 月 13 日以降 0813 チェックポイントを提供 — 上記参照；2026 年 8 月 16 日からピーク / オフピークの時間帯別料金）。
 - [DeepSeek-V4-Flash](https://api-docs.deepseek.com/news/news260424) - 🆕 2026-04-24。284B 総 / 13B アクティブ MoE、1M コンテキスト。MIT。コスト効率版 — 2026 年 8 月 16 日以降：100 万トークンあたりピーク **キャッシュヒット入力 $0.014 / ミス $0.44、出力 $1.32**、オフピーク **$0.007 / $0.22 / $0.66**；最大出力 384K、同時実行 2500（[価格](https://api-docs.deepseek.com/quick_start/pricing)）。
 - [DeepSeek-V4-Flash-0731](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731) - 🆕 **2026-07-31**。アップデートされた Flash チェックポイント —— 同じ 284B/13B アクティブ MoE アーキテクチャ、同一 API・料金体系、ただしエージェントタスクベンチで V4-Pro（Preview）を上回る性能。MIT ライセンスで Hugging Face に公開。`deepseek-v4-flash` API ユーザーはドロップイン置換可能。
@@ -286,8 +294,9 @@
 
 ### Alibaba (Qwen) 🇨🇳
 
+- [Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next) - 🆕 **2026年8月**。実験的マルチモーダル MoE：125B/稼働6B に51Bの n-gram 表と4Bの MTP を追加；標準262K文脈、1Mへ拡張可能、Qwen Community License 1.0。
 - [Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) - 🆕 ⚡ **2026年8月14日**。Qwen3.8-Max のオープンウェイト 27B マルチモーダル（テキスト / 画像 / 動画入力）蒸留版。**Apache 2.0** ライセンスで Hugging Face に公開 — VRAM 約 24 GB のコンシューマ GPU（RTX 4090 クラス）向けサイズ。Qwen3.8-Max ローンチ時に約束されたオープンウェイト版が予定どおり出荷された形。
-- [Qwen3.8-Max](https://alibabacloud.com/blog/qwen3-8-max) - 🆕 ⚡ **2026-08-03**。Alibaba の新フラッグシップ—— 2.4T パラメータ MoE，95B アクティブ，1M トークンコンテキスト，テキスト / 画像 / 動画入力対応。内部テストで 16 日間自律的にコーディングツールを構築・改善した事例も。API は QwenCloud / Alibaba Cloud Model Studio（$2/M 入力・$6/M 出力）。フルモデルのオープンウェイトは 8 月 12 日頃に [`Qwen/Qwen3.8-2.4T-A95B`](https://huggingface.co/Qwen) として Hugging Face に登場し、27B 蒸留版が 8 月 14 日に続いた。企業プラットフォーム **QwenWork** は 8 月 2 日に公開ベータ開始。
+- [Qwen3.8-Max / Qwen3.8-2.4T-A95B](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B) - **2026年8月**。公式チェックポイントをダウンロード可能なマルチモーダル旗艦；フルモデルは Qwen 独自ライセンス、別の Qwen3.8-27B は Apache-2.0。
 - [Qwen 3.7-Max](https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory) - 🆕 **2026-05-20 — アリババクラウド杭州サミット**。AI エージェントの基盤として設計された新フラッグシップ。エージェント型コーディング、複雑推論、**長い見通しのマルチステップテイスク**に強い。同期に T-Head の **Zhenwu M890** AI アクセラレーターとフルスタック AI 基盤アップグレードも公開。世界中の開発者 / 企業へ順次提供。
 - [Qwen 3.7-Max-Preview / Plus-Preview](https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena) - 🆕 **2026-05-18**。杭州サミットの前哨プレビュー。LM Arena においてテキストとビジョンの両方で**中国モデルとして最高スコア**を取得。
 - [Qwen3.6-27B](https://qwen.ai/blog?id=qwen3.6-27b) - 🆕 **2026-04-22**。27B 密マルチモーダル。オープン化。エージェントコーディング + 思考文脈保持。
@@ -305,7 +314,7 @@
 
 ### xAI / SpaceXAI (Grok)
 
-- [Grok 4.6](https://x.ai/news/grok-4-6) - 🆕 ⚡ **2026年8月12日**。コーディング・エージェントタスク・ナレッジワーク向けの SpaceXAI 新フロンティアモデル — Grok 4.5 をベースに、特に**長時間稼働するエージェント**とより野心的なインタラクティブ / ビジュアル作業に注力し、自己テストと検証も改善。500K トークンコンテキスト、テキスト + 画像入力、価格は据え置きの 100 万トークンあたり入力 $2 / 出力 $6（Fast バリアントは 2 倍）。Artificial Analysis Intelligence Index（61）で GPT-5.6 Sol と並ぶ。xAI API、Cursor（新デフォルト）、Grok Build、OpenRouter、Vercel、Cloudflare で提供中；8 月 14 日に GitHub Copilot にも登場。（2026 年 2 月に SpaceX が xAI を吸収した後、xAI は 7 月に **SpaceXAI** へのリブランドを完了。）
+- [Grok 4.6](https://x.ai/news/grok-4-6) - **2026年8月12日**。API・Cursor・Grok Build で利用できるコード・Agent モデル；100万 token 当たり入力$2・出力$6から、Fast は2倍。
 - [Grok Bot](https://docs.x.ai/docs/release-notes) - 🆕 ⚡ **2026年8月11日（早期ベータ）**。**永続的なクラウドコンピュータ**上で働く耐久性のある AI チームメイト — メッセージング、承認、コネクタ、ルーチンを備えた、常時稼働の自律エージェント分野への xAI の参入。SuperGrok Heavy、Cursor Ultra、Cursor Teams Premium で利用可能。
 - [Grok 4.5](https://x.ai/) - 🆕 **2026-07-08**。実際の開発者インタラクションデータを利用して Cursor と共同訓練し、コーディングおよびエージェントタスクに最適化。500K トークンのコンテキストウィンドウ、関数呼び出し、構造化出力、Web/X 検索、コード実行、文書検索、コンテキスト圧縮を備える。100 万トークンあたり入力 $2 / 出力 $6。EU の API コンソール提供は 2026 年 7 月 17 日に開始。2026 年 8 月 12 日に Grok 4.6 がフラッグシップを引き継いだ。
 - [Grok 4.3 GA](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-grok-4-3-on-microsoft-foundry-latest-generation-agentic-capabilities/4517096) - 🆕 **2026-05**。Grok 4.3 が Microsoft Foundry と OCI Generative AI で GA。xAI のエージェントワークロード向け旗艦で、ツール呼び出しと長期推論が強化。
@@ -316,6 +325,7 @@
 
 ### Microsoft (MAI)
 
+- [MAI-Transcribe-2](https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/) - 🆕 **2026年9月3日**。話者分離、単語タイムスタンプ、語彙バイアス、60言語に対応する音声認識；年末まで音声1時間$0.10の導入料金。
 - [Microsoft MAI-Code-1-Flash](https://microsoft.ai/news/introducingmai-code-1-flash/) - 🆕 **Build 2026（2026 年 6 月 2 日）**。OpenAI のテクノロジーを使わず一から構築された Microsoft 初の自社基盤モデル。5B パラメータのコーディングモデルで適応的思考時間を備え、GitHub Copilot に展開中。Claude Haiku 4.5 を 4 つの主要コーディングベンチで上回り（SWE-Bench Pro で 51.2% vs 35.2%、16 ポイントリード）、SWE-Bench Verified では最大 60% 少ないトークンで難しいタスクを解く。
 - [Microsoft MAI-Thinking-1](https://microsoft.ai/news/microsoft-build-2026-mai-keynote-transcript/) - 🆕 **Build 2026（2026 年 6 月 2 日）**。OpenAI のデータを一切使わず学習した Microsoft 初の自社推論モデル。MAI-Code-1-Flash と同時発表。Microsoft の基盤モデル独立化を象徴。
 - [MAI-Code-1.1-Flash](https://microsoft.ai/news/mai-code-1-1-flash-br-better-faster-at-a-quarter-of-the-cost/) - 🆕 **2026年8月11日**。6 月の 1.0 に対する本番 Copilot ワークホース。コード品質向上、**トークン効率 +25%**、**コスト約 1/4**；Terminal-Bench 2.1 +22%、.NET +15%。
@@ -324,27 +334,28 @@
 
 ### Microsoft (Phi)
 
-- [Phi-4-reasoning-vision-15B](https://azure.microsoft.com/en-us/products/phi) - 🆕 2026-03。15B マルチモーダル + 選択的思考連鎖推論。エッジ展開可能。
+- [Phi-4-reasoning-vision-15B](https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B) - 画像理解と推論を統合した MIT ライセンスの15B視覚言語モデル；導入要件は公式チェックポイントを参照。
 - [Phi-4](https://azure.microsoft.com/en-us/products/phi) - 14B SLM、ずっと大きいモデルに匹敵する推論力。MIT。
 - [Phi-4-mini](https://azure.microsoft.com/en-us/products/phi) - 3.8B 密モデル。128K コンテキスト。推論・数学・コーディング・関数呼び出しで秀逸。
 - [Phi-4-multimodal](https://azure.microsoft.com/en-us/products/phi) - 5.6B 初の Phi マルチモーダル（音声 + 視覚 + テキスト）。
 
 ### Cohere
 
-- [Command A+](https://cohere.com/blog/command-a-plus) - 🆕 **2026-05-20**。218B 総 / 25B アクティブ MoE、Apache 2.0 のオープンウェイト（Hugging Face）。入力 128K / 出力 64K。マルチモーダル、48 言語、エージェント型ツール使用；H100 2 枚または Blackwell GPU 1 枚で動作。
+- [Command A+](https://docs.cohere.com/docs/command-a-plus) - **2026年5月**。`command-a-plus-05-2026` は画像入力・推論・ツール使用・翻訳を統合し、128K入力文脈と64K出力に対応。
 - [Command A](https://docs.cohere.com/v2/changelog/command-a) - 2025-03-13 公開。111B オープンウェイト、256K コンテキスト。エージェント・多言語・コーディング志向。
 - [Command R+](https://cohere.com/) - エンタープライズ RAG モデル、128K コンテキスト、10 言語、引用付き grounded generation。
 - [Command R](https://cohere.com/) - 経済的な RAG モデル。
 
 ### Baidu (ERNIE / 文心) 🇨🇳
 
-- [ERNIE 5.1](https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/) - 🆕 **2026-05-08**。総パラメータは ERNIE 5.0 の約 1/3、アクティブは約 1/2 で、同等の事前学習コストの約 6% を実現；LMArena Search で中国モデル首位 / 世界 4 位（1,223）。
+- [ERNIE 5.1](https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/) - **公式記事：2026年5月9日**。非同期強化学習と Agent 後学習で文章作成・推論・ツール利用を強化した ERNIE 更新。
 - [ERNIE 5.0](https://ernie.baidu.com/) - 2025-11-13 公開（Baidu World）。2.4T パラメータのオムニモーダル MoE（1 クエリで <3% 活性化）。
 - [ERNIE 4.5](https://yiyan.baidu.com/) - 2025 年公開のマルチモーダル前任者。中国語・推論に強い。
 
 ### Zhipu AI / Z.ai (GLM) 🇨🇳
 
-- [GLM-5.3](https://the-decoder.com/zhipu-ai-releases-glm-5-3-claims-its-the-strongest-open-weights-coding-model/) - 🆕 ⚡ 🇨🇳 **2026年8月14日**。Zhipu の新しいコーディングフラッグシップ — **最強のオープンウェイトコーディングモデル**と主張され、ポストトレーニングのみで GLM-5.2 比 +50% の改善を報告。GLM Coding Plan の全ティア、ZCode、Claude Code、OpenCode インテグレーションで提供中；オープンウェイトはセキュリティレビュー完了の約 2 週間後に公開予定。（ベンダー主張；独立ベンチマークは未検証。）
+- [GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash) - 🆕 MIT のマルチモーダル MoE、総320B・稼働18B；疎・線形ハイブリッド注意機構と推論強度設定に対応。
+- [GLM-5.3](https://huggingface.co/zai-org/GLM-5.3) - 🆕 コード・推論用の公式重みは公開済み；GLM-5.2 の MIT ではなく独自の GLM-5.3 License を採用し、vLLM/SGLang で導入可能。
 - [GLM-5.2](https://z.ai/blog/glm-5.2) - 🆕 **2026年6月13日**。コーディング優先の 744B MoE フラッグシップ。**100万トークンのコンテキスト**（GLM-5.1 の約 5 倍）、出力は最大 131K トークン。GLM Coding Plan の全ティアで利用可能。MIT のオープンウェイトと単体 API はローンチ週に順次公開。Claude Code・Cline・OpenCode・Roo Code・Goose・OpenClaw とそのまま互換。（ローンチ時にベンチマーク数値の公表なし。）
 - [GLM-5.1](https://z.ai/blog/glm-5.1) - 🆕 **2026-04-08**。744B MoE / 40B アクティブ、200K コンテキスト。MIT ライセンス。SWE-Bench Pro で首位。
 - [ZCode](https://www.scmp.com/tech/tech-trends/article/3359170/zhipu-ai-releases-harness-glm-52-model-chinese-firm-takes-aim-anthropic) - 🆕 🇨🇳 **2026-07-02**。Zhipu の GLM-5.2 用エージェントハーネス — モデルを自律コーディングエージェントに変え、Claude Code を正面から狙う。ローンチ特典として Coding Plan 加入者にクオータ +50%、新規ユーザーに 500 万無料トークン。
@@ -355,9 +366,9 @@
 
 ### MiniMax
 
-- [MiniMax M3](https://www.minimax.io/) - 🆕 **2026-06-01**。MiniMax Sparse Attention を備えたオープンウェイト（MIT）フラッグシップ — 1M トークン時の計算コストが約 1/20；フロンティア級のコーディング能力、SWE-Bench Pro 59.0%、BrowseComp 83.5%。
+- [MiniMax M3](https://huggingface.co/MiniMaxAI/MiniMax-M3) - MiniMax Sparse Attention と1M文脈を備えたコード・Agent 向け公開重みマルチモーダルモデル；MiniMax Community License を適用。
 - [MiniMax-M2.7 (オープンウェイト)](https://www.minimax.io/) - 🆕 2026-04。230B 級のオープンウェイトフラッグシップ。コーディング・エージェントタスクでトップクラス。
-- [MiniMax M2.7（クローズド）](https://venturebeat.com/technology/new-minimax-m2-7-proprietary-ai-model-is-self-evolving-and-can-perform-30-50) - 🇨🇳 🆕 **2026-03**。自己進化型のクローズド LLM。エージェントハーネスの構築、メモリ更新、ワークフローの反復改善に最適化され、SWE-bench 系タスクで大幅な性能向上。
+- [MiniMax M2.7 (release history)](https://huggingface.co/MiniMaxAI/MiniMax-M2.7) - 過去のMiniMax Agent・コードモデルで重みと固有ライセンスを公開；ホスト型としての発表を重み未公開の意味に解釈しない。
 - [MiniMax M2.5](https://www.codemotion.com/magazine/ai-ml/minimax-m2-5-low-costs-high-performance/) - 🇨🇳 **2026-02**。230B パラメータの旗艦モデル。"実世界の生産性" を狙ったコスト効率重視。
 - [MiniMax H3](https://huggingface.co/MiniMaxAI/MiniMax-H3) - 🆕 🇨🇳 **2026-07**（HF 作成 7月28日）。オープンウェイトのオムニモーダル生成：テキスト/画像/動画/音声を理解し、最大 2K / 15 秒の**ネイティブステレオ音声付き動画**を出す。33B dense Omni Transformer；`minimax-h3-community-license-agreement`。現行 MiniMax 動画フラッグシップ（Hailuo 2.3 を置き換え）。HF ダウンロード 440 万+。
 - [Hailuo 2.3 / 2.3 Fast](https://www.minimax.io/news/minimax-hailuo-23) - 🇨🇳 **2025-10**。前世代動画モデル — SOTA の物理表現、キャラクターの微表情、強力なスタイライズ；Hailuo 02（2025）は I2V 特化バリアントとして継続。フラッグシップは MiniMax H3（2026-07）へ交代。
@@ -369,7 +380,7 @@
 
 ### Moonshot AI (Kimi) 🇨🇳
 
-- [Kimi K3](https://kimi.ai/) - 🆕 **2026-07-16**。Moonshot AI 最大のフラッグシップ: **2.8T パラメータ**疎 MoE (896 エキスパート中 16 が有効)、**1M トークンコンテキスト**、ネイティブビジョン、マルチエージェント機能。Kimi Delta Attention（長文脈デコードを高速化するハイブリッド線形アテンション）を導入。API は 100 万トークンあたり **キャッシュヒット入力 $0.30 / ミス $3.00、出力 $15.00**（[公式価格](https://platform.kimi.ai/docs/pricing/chat-k3.md)）。常に推論し、トップレベルの `reasoning_effort`（`low`/`high`/`max`、既定 `max`）で推論量を調整可能。K3 独自の `tool_choice` 制約と動的ツールロードにも対応。**フルオープンウェイトは予定通り 2026-07-27 に公開**（[Hugging Face](https://huggingface.co/moonshotai/Kimi-K3)）— 2.8T 総 / **104B アクティブ**、93 層、896 エキスパート（16 選択 + 2 共有）、MoonViT-V2 401M ビジョンエンコーダ、量子化認識学習による MXFP4 重み + MXFP8 アクティベーション、97 の safetensors シャード、ゲートなし。独自の **Kimi K3 License**（比較的寛容だが、任意の 12 か月で MaaS 売上 $20M 超の場合は別途契約が必要）。
+- [Kimi K3](https://huggingface.co/moonshotai/Kimi-K3) - 総2.8T・稼働104B、1M文脈の公開重みマルチモーダル MoE；独自の Kimi K3 License は大規模モデルサービス事業に追加条件を設定。
 - [Kimi K2.7 Code](https://kimi.ai/) - 🆕 **2026年6月12日**。K2.6 のコーディング優先後継 —— 1T MoE / 32B アクティブ（384 エキスパート）、256K コンテキスト、Modified MIT、Hugging Face + Kimi API で公開。長期的なエージェントコーディング向けで推論トークン消費を約 30% 削減。Moonshot 公表の Kimi Code Bench v2 で K2.6 比 +21.8%（ベンダーベンチマーク）。入出力 100 万トークンあたり $0.95 / $4.00。
 - [Kimi K2.6](https://kimi.ai/) - 🆕 **2026-04-20~21**。1T MoE / 32B アクティブ、256K コンテキスト。コーディング強化、長期マルチステップ実行、**最大 1,000 体協調エージェント群**。`thinking.keep="all"` 永続推論対応。OpenClaw v2026.4.20+ のデフォルト。
 - [Kimi K2.5](https://kimi.ai/) - 2026 年 1~2 月。1T 総 / 32B アクティブ MoE。ネイティブマルチモーダル、最大 100 並列子エージェント。オープンソース。⚠️ 2026-05-25 にサポート終了；新規登録ユーザーには提供されず、**2026 年 8 月 31 日にプラットフォームから完全廃止** —— K2.6 へ移行を。
@@ -377,23 +388,25 @@
 
 ### ByteDance (Doubao / 豆包) 🇨🇳
 
+- [Seed 2.1](https://seed.bytedance.com/en/seed2_1) - 🆕 汎用 Agent タスクと一貫したコーディング向け現行 Seed モデル；公式評価と製品アクセス先を掲載。
 - [Doubao 2.0](https://www.taipeitimes.com/News/biz/archives/2026/02/16/2003852382) - 🆕 **2026-02**。実タスク実行に振り切ったエージェント時代向けアップグレード。ByteDance のコンシューマー AI アプリを支える。
 - [Seedance 2.0](https://economictimes.indiatimes.com/us/news/seedance-2-0-goes-live-as-bytedances-ai-videos-ignite-china-market-rally/articleshow/128150649.cms) - 🆕 **2026-02**。マルチモーダル・シネマグレード動画生成、2K 解像度、Seedance 1.5 より約 30% 高速。
-- [Doubao-Seed-2.0 Pro](https://seed.bytedance.com/) - 🆕 2026-02 公開。フロンティア推論と複雑エージェント。GPT-5.2 と互角でコストは約 90% 低減。
+- [Doubao-Seed-2.0 Pro](https://seed.bytedance.com/en/seed2) - Seed 2.0 Pro は ByteDance Seed 2.0 系列の推論・Agent 作業向けモデル；エンドポイントと料金は利用地域の ModelArk カタログを参照。
 - [Doubao-Seed-2.0 Lite](https://seed.bytedance.com/) - 🆕 一般生産負荷向け。
 - [Doubao-Seed-2.0 Code](https://seed.bytedance.com/) - 🆕 ソフトウェア開発: コード生成・デバッグ・レビュー。
 - [BAGEL](https://github.com/bytedance-seed/BAGEL) - 🆕 オープンソースのマルチモーダル基盤モデル、テキスト・画像・動画の理解と生成を統合。
 
 ### Amazon (Nova)
 
-- [Nova 2 Pro](https://aws.amazon.com/nova/) - **2025-12-02（re:Invent）**。Amazon の最強推論モデル。テキスト・画像・動画・音声入力。エージェントコーディングと長期計画。
+- [Nova 2 Omni](https://docs.aws.amazon.com/nova/) - Amazon Nova 2 の公式ラインナップに掲載されたマルチモーダル理解・生成モデル。
+- [Nova 2 Pro](https://docs.aws.amazon.com/nova/) - Nova 2 系列の推論モデル；アクセス方法、提供地域、対応モダリティは Amazon Nova 2 公式ガイドを参照。
 - [Nova 2 Lite](https://aws.amazon.com/nova/) - **2025-12-02**。1M コンテキスト + "thinking effort" 調整。
 - [Nova 2 Sonic](https://aws.amazon.com/nova/) - **2025-12-02**。リアルタイム音声対音声モデル。多言語。
 - [Nova Act](https://aws.amazon.com/nova/) - **2025-12-02**。ブラウザ Web タスクエージェントサービス。Nova 2 Lite 駆動で再ローンチ。
 - [Nova Forge](https://aws.amazon.com/nova/) - **2025-12-02**。カスタム Nova モデル訓練の「オープントレーニング」サービス。
 
 ### NVIDIA (Nemotron)
-- [Nemotron 3.5 Lightning](https://ollama.com/library/nemotron-3.5-lightning) - 🆕 ⚡ **2026-08-11**。オープンウェイト 30B MoE，アクティブパラメータはたった 3B ——常駐型エージェントの実行層向け。1M トークンコンテキスト，商用利用可。Ollama（`ollama run nemotron-3.5-lightning`）・ Hugging Face ・ NVIDIA プラットフォームで利用可能。計画・ツール選択・中間処理等の大量・低レイテンシーなエージェントワークロード向け。
+- [Nemotron 3.5 Lightning](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16) - 効率的な Agent 作業向け公開重みモデル、総30B・稼働3B；公式 BF16/NVFP4 チェックポイントがあり、各成果物の NVIDIA ライセンスを確認。
 - [Nemotron 3.5 ASR](https://developer.nvidia.com/nemotron) - 🆕 **2026-06-06**。NVIDIA の 600M パラメータ・キャッシュアウェアなストリーミング音声認識モデル — 40 の言語ロケールでリアルタイム文字起こし。
 - [Nemotron 3 Ultra (550B)](https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/) - 🆕 **2026-06-04**。長時間稼働エージェント向けの、550B 総 / 55B アクティブのハイブリッド Mamba-Transformer MoE オープンウェイトモデル。米国オープンモデルの中でフロンティア級の推論、Blackwell に最適化。
 - [Nemotron-Labs-TwoTower](https://huggingface.co/nvidia/Nemotron-Labs-TwoTower-30B-A3B-Base-BF16) - 🆕 🧪 **2026-07-01**。NVIDIA Research のオープンウェイト拡散言語モデル。凍結した Nemotron-3-Nano-30B-A3B バックボーンから適応 — 片方のタワーがコンテキストを保持し、もう片方がトークンを並列に生成することで、再訓練なしに約 2.4× のスループットを実現。
@@ -403,38 +416,40 @@
 
 ### Tencent (Hunyuan) 🇨🇳
 
-- [Hunyuan Hy3](https://hy.tencent.com/research/hy3) - 🆕 🇨🇳 **2026-07-06**。Hy3 の正式リリース（295B 総 / 21B アクティブ MoE、256K コンテキスト）、Apache 2.0。4 月のプレビューから強化学習を強化し、安定性とコスト効率を改善。オープンウェイトは Hugging Face と ModelScope で公開、OpenRouter にも順次展開。元宝、CodeBuddy、WorkBuddy、ima、Marvis、Weixin カスタマーサービスに統合。
+- [Hunyuan Hy3](https://huggingface.co/tencent/Hy3) - 推論とツール利用向け Apache-2.0 の公開重み MoE；公式チェックポイントと導入手順を提供。
 - [Hunyuan Hy3 Preview](https://hy.tencent.com/hy3-preview) - 🇨🇳 **2026-04**。正式版 Hy3 に先立つプレビュー："fast-slow thinking fusion" アーキテクチャ、推論効率 40% 改善、vLLM と SGLang 対応。GitHub / Hugging Face / ModelScope / GitCode でオープンソース化。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FTencent-Hunyuan%2FHy3-preview&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 
 ### Apple
 
-- [Apple Foundation Models (AFM)](https://machinelearning.apple.com/research/introducing-apple-foundation-models) - Apple Intelligence の中核となるオンデバイス（~3B）+ サーバーモデル。プライバシー優先、オフライン対応。**WWDC 2026（6 月 8 日）**: 第 3 世代 AFM ラインナップ（オンデバイスの AFM Core / AFM Core Advanced、Private Cloud Compute 上の AFM Cloud / AFM Cloud Pro）が刷新された Siri を駆動。カスタム Google Gemini 基盤（年間約 $1B の契約）を用いた蒸留の支援を受けて訓練されているが、Google のコードは搭載しない。iOS 27 の新しい「Extensions」フレームワークにより、ChatGPT / Claude / Gemini が Siri と並ぶサードパーティ AI として動作可能。
+- [Apple Foundation Models 3 / ADM 3 Cloud](https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models) - **2026年6月8日**。端末向け AFM 3 Core/Core Advanced、サーバー向け AFM 3 Cloud/Cloud Pro、Private Cloud Compute 上の画像生成用 ADM 3 Cloud の5モデル。
 - [OpenELM](https://machinelearning.apple.com/research/openelm) - Apple Silicon オンデバイス向けオープンソース効率言語モデル（270M~3B）。
 
 ### Samsung
 
-- [Samsung Gauss 2.3](https://www.sammobile.com/news/samsung-develops-own-agentic-ai-tools-improves-gauss-ai-models/) - **2025-11**。Samsung Research の自社 LLM ファミリー（Gauss 2.3、Gauss 2.3 Think、Gauss O Flash）。社内のエージェントツール群を駆動し、Galaxy S26（2026 年発売）のシステム全体のエージェント AI を支える。
+- [Samsung Gauss2](https://news.samsung.com/sg/samsung-electronics-hosts-samsung-developer-conference-korea-2024-unveils-its-improved-gen-ai-model) - Samsung が公式に説明する独自マルチモーダル系列で、内部業務向け Compact・Balanced・Supreme を提供；公開 Gauss 2.3 API/モデルカードは今回未確認。
 
 ### StepFun 🇨🇳
 
-- [Step 3.7 Flash](https://github.com/stepfun-ai/Step-3.7-Flash) - 🆕 **2026-05-29**。コーディングエージェントと検索ワークフロー向けの、オープンウェイト 198B MoE ビジョン言語モデル；最大 ~400 tokens/s。Step 3.5 Flash の後継。
+- [Step 3.7 Flash](https://huggingface.co/stepfun-ai/Step-3.7-Flash) - Agent コーディングと検索向け Apache-2.0 の公開重み視覚言語 MoE；公式導入手順を提供。
 - [Step 3.5 Flash](https://github.com/stepfun-ai/Step-3.5-Flash) - **2026-02**。オープンウェイト 196B MoE（11B アクティブ）の推論 + エージェントモデル。より大きな旗艦と互角に渡り合う。
 
 ### Baichuan 🇨🇳
 
-- [Baichuan-M3 Plus](https://pandaily.com/baichuan-ai-launches-low-hallucination-medical-model-m3-plus-announces-free-access-program) - 🆕 **2026-01**。証拠に基づく低幻覚率の医療 LLM。中国国内の医療機関向けに無料 API を提供。
+- [Baichuan-M4 (research)](https://arxiv.org/abs/2606.08982) - **2026年6月8日**。推論モデル、長期患者メモリ、根拠検索、マルチモーダル臨床ツールを組み合わせた継続ケア向け医療 Agent システムの研究報告；論文は API や重みの一般公開を保証しない。
+- [Baichuan-M3-235B](https://huggingface.co/baichuan-inc/Baichuan-M3-235B) - 公式235B医療分野モデルで、Apache-2.0 の重みをダウンロード可能。
+- [Baichuan-M3 Plus](https://github.com/baichuan-inc/baichuan-mcp-servers/blob/main/packages/baixiaoying-mcp-server/README_EN.md) - 対象機関向け申請制アクセスを提供する医療分野モデル；利用可能範囲と用途制限は Baichuan の規定に従う。
 
 ### Inflection AI
 
-- [Inflection 2.5 / Pi](https://inflection.ai/) - 💤 共感的会話 AI（Inflection 2.5、2024 年 3 月）。Microsoft がチームの大半を吸収した後（2024 年）エンタープライズ AI に転換し、次世代フロンティアモデルの開発は行っていない。Pi は限定的な形で提供が続く。
+- [Inflection 2.5 / Pi](https://inflection.ai/labs) - Inflection の過去世代；研究所はパーソナル AI 研究と Pi 製品の開発を継続しており、放棄済みプロジェクト扱いは適切でない。
 
 ### 01.AI 🇨🇳
 
-- [Yi-Lightning](https://www.01.ai/) - 💤 MoE、RTX 4090 で 200+ tokens/s。中英多言語に強い。2024-10 公開 — 01.AI 最後の主要モデルで、同社は 2025 年 3 月に LLM の事前学習を停止し、DeepSeek ベースのエンタープライズソリューションに転換。
+- [Yi-Lightning](https://www.01.ai/) - **2024年10月**。過去の100B MoE モデル；現在の01.AI製品には2026年7月公開の TrueNorth など企業向けプラットフォームが含まれる。
 
 ### 中国科学院 🇨🇳
 
-- [ScienceOne 100 / 磐石100](https://english.cas.cn/newsroom/cas-in-media/202604/t20260429_1158251.shtml) - 🆕 **2026-04-28~29**。中国科学院の科学研究 AI 系統。コアの "ScienceOne" 基盤モデル + 文献コンパス + 革新評価エンジン + 2,000+ ツールエージェントファクトリー。数学・物理・生物・材料・天文・宇宙・地球科学を網羅。50+ CAS 研究所、100+ 研究シナリオで使用。
+- [ScienceOne 100 / 磐石100](https://english.cas.cn/newsroom/cas-in-media/202604/t20260429_1158251.shtml) - **2026年4月**。ScienceOne と分野特化モデルを中心に構成された中国科学院の科学 AI システムで、研究ワークフロー用ツールを備える。
 
 ---
 
@@ -444,31 +459,35 @@
 
 ### 画像生成
 
+- [Nano Banana 2 Lite](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite-image) - Google の効率重視の画像生成・編集モデルで、Gemini API の ID は `gemini-3.1-flash-lite-image`。
 - [Grok Imagine Image 2.0](https://x.ai/news/grok-imagine-image-2) - 🆕 ⚡ **2026年8月7日**。SpaceXAI の画像生成 / 編集モデル — マジックワンド編集、セグメンテーション、背景除去、マルチリファレンス編集（最大 5 枚）、スマートリサイズに対応；ローンチ時点で **text-to-image と画像編集の両部門で Arena 世界 2 位**。grok.com/imagine、iOS/Android、API（`grok-imagine-image-2.0`）で利用可能。
 - [Meta Muse Image](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07**。MSL 発の Meta 最先端画像生成モデル — Web 検索・コード実行・自己修正を経てから画像を生成するエージェント型設計。Instagram Stories（米国）と一部の国の WhatsApp で展開（Facebook は近日対応）。Meta AI アプリと meta.ai でも利用可能。
-- [Midjourney V8.1](https://updates.midjourney.com/v8-1-alpha/) - 🆕 **2026-04-14**。HD モードがデフォルトに（3 倍高速・低コスト）、ムードボードとスタイルリファレンスの安定化、画像プロンプト復活；alpha.midjourney.com のみ。V8 アップスケーラーと編集 / インペイントの強化が次の予定。
+- [Midjourney V8.1 / V8.2 Edit (alpha)](https://updates.midjourney.com/alpha-changelog-9-2-26/) - **2026年9月3日更新**。alpha サイトに V8.2 Edit を追加し、指示による編集と最大4枚の参照画像に対応；主生成モデルは引き続き V8.1。
 - [FLUX.2 Pro / Flex / Dev / Klein](https://bfl.ai/blog/flux-2) - 🆕 **2025-11-25**。Black Forest Labs の次世代ファミリー。SOTA 画質、マルチリファレンスの一貫性（最大 10 枚）、文字描画の大幅改善；オープンウェイトの 32B Dev バリアントあり。
 - [Recraft V4 / V4.1](https://www.recraft.ai/blog/introducing-recraft-v4-design-taste-meets-image-generation) - 🆕 **2026-02-17**（V4.1 は **2026-05-14**）。フルリビルド。プロンプト追従性が大幅改善、編集可能な SVG ベクター出力に対応。V4.1 はフォトリアリズム、3D / グラデーション、Vector / Utility バリアントを追加。
-- [Stable Diffusion 3.5](https://stability.ai/) - 一貫性・プロンプト追従が改善されたオープンソース画像生成。
+- [Stable Diffusion 3.5](https://huggingface.co/stabilityai/stable-diffusion-3.5-large) - Stability AI Community License の公開重み画像モデル；該当時は別途商用条件が必要で、Apache-2.0 ではない。
+- [Ideogram 4.0](https://ideogram.ai/models/4.0/) - 多言語の文字描画とレイアウト制御に対応する画像生成・編集モデル；公開量子化重みは [Ideogram 非商用モデル契約](https://ideogram.ai/licensing/)で、商用ライセンスは別途必要。
+- [P-Image-Ideogram](https://ideogram.ai/tools/p-image-ideogram/) - Pruna と Ideogram の画像モデル系列で、画質・遅延・費用に応じた複数の選択肢を提供。
 - [Ideogram 3.0](https://ideogram.ai/) - 画像内のテキスト描画とデザイン志向の生成に強い。
 - [ChatGPT Images 2.0](https://openai.com/index/introducing-chatgpt-images-2-0/) - 🆕 **2026-04-21**。最先端の画像生成 — 文字描画・多言語対応・高度な視覚推論・反復編集のためのマルチターン編集が向上。
 - [gpt-image-2](https://developers.openai.com/api/docs/models/gpt-image-2) - 🆕 **2026-04-21**。OpenAI 最新の画像生成 / 編集 API モデル。柔軟な画像サイズと高忠実度入力に対応。⚡ **2026年8月20日**：透明背景プレビュー（`background=transparent`、`png`/`webp` のみ）が `gpt-image-2` と `gpt-image-2-2026-04-21` で Images API / Responses 画像ツールに入った（[changelog](https://developers.openai.com/api/docs/changelog.md)）。
 - [MAI-Image-2.6](https://microsoft.ai/news/mai-image-2-6-launches-at-no-2-on-arena-ahead-of-google-meta-and-xai/) - 🆕 **2026年8月10日**（編集ランク **8月18日**）。Microsoft 自社画像モデル — 発表時 Arena T2I 2 位、8月18日時点で画像編集 3 位。Foundation → Microsoft (MAI) を参照。
-- [DALL·E 3](https://openai.com/dall-e-3) - ChatGPT に統合された OpenAI のテキスト → 画像モデル。
+- [DALL·E 3](https://developers.openai.com/api/docs/deprecations) - 📦 過去の画像生成モデル；`dall-e-3` API は **2026年5月12日**に終了し、公式移行先は GPT Image 系列。
 - [Gemini 3 Pro Image (Nano Banana Pro)](https://deepmind.google/models/gemini-image/pro/) - Gemini 内のネイティブ画像生成。
 - [Nano Banana 2 (Gemini 3.1 Flash Image)](https://blog.google/innovation-and-ai/technology/ai/nano-banana-2/) - 🆕 **2026-02-26**。Nano Banana Pro 級の品質と世界知識を Flash の速度で提供；最大 5 キャラクターの一貫性、512px～4K 出力、画像内の文字描画 / 翻訳に対応。
 - [Kling Image 3.0 / 3.0 Omni](https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-launches-30-model-ushering-era-where-everyone-can-be/) - 🇨🇳 🆕 **2026-02-05**。快手のネイティブ 2K/4K 画像生成。Kling 3.0 スイートの一部として Video 3.0 と同時ローンチ。
 - [Flux](https://github.com/black-forest-labs/flux) - 💤 **Stale**（2025-07 以降更新なし）。Black Forest Labs のオープンソースモデル。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fblack-forest-labs%2Fflux&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Seedance 2.0](https://seed.bytedance.com/) - 🇨🇳 🆕 ByteDance の次世代画像/アニメーション生成 API。
+- [Seedream 5.0 Pro](https://seed.bytedance.com/en/blog/beyond-generation-it-understands-design-introducing-seedream-5-0-pro) - **2026年7月8日**。レイアウト・文字描画・マルチモーダルデザイン向け ByteDance 画像生成モデル；画像系列は Seedream、動画系列は Seedance。
 - [Qwen-Image-3.0](https://qwenlm.github.io/) - 🆕 🇨🇳 **2026-07-20**。アリババの第 3 世代画像生成モデル、世界 AI カンファレンスで発表。フォトリアリズム、テキストレンダリング、マルチ被写体一貫性が大幅向上。Alibaba Cloud Bailian・Qwen Cloud 経由で利用可能。
 - [FLUX 3](https://bfl.ai/blog/flux-3) - 🆕 **2026-07-23（早期アクセス）**。Black Forest Labs が静止画ファミリーから、画像・動画・音声を単一アーキテクチャで同時学習する統合マルチモーダル基盤モデルへ転換。**最長 20 秒・ネイティブ同期音声付き**の動画を一度に生成できる（text-to-video、image-to-video、video-to-video、キーフレーム間生成、多言語ダイアログ、エージェント的なマルチショット連結）。BFL 自身の初期評価では、FLUX 3 が Runway Gen-4.5 に対し 77%、Luma Ray 3.2 に 93%、Kling v3 Pro に 60%、Seedance 2.0 / Gemini Omni Flash に 52% で選好された —— ベンダー公表値であり、暫定的と明記されている。世界理解はロボティクス向けの**行動予測**にも及ぶ。FLUX 3 Image の早期アクセスは 2026 年 8 月中旬時点でなお保留中。
 - [Reve](https://reve.com/) - 🆕 「レイアウト優先」の画像モデル —— ピクセルを描く前に構造化された編集可能なレイアウトを計画するため、個々の要素を移動・リサイズ・色変更して部分的に再レンダリングでき、全体を作り直す必要がない。ネイティブ 4K、スケッチ / アノテーション入力、オブジェクトの直接編集に対応。
 
 ### 動画生成
 
+- [Runway Aleph 2.0](https://docs.dev.runwayml.com/guides/models/) - Runway の動画編集モデル `aleph2`；動画・テキスト・画像入力とプロ向け出力形式に対応。
 - [Meta Muse Video](https://ai.meta.com/blog/introducing-muse-image-muse-video-msl/) - 🆕 **2026-07-07（プレビュー）**。Muse Image と同じアーキテクチャで構築された Meta Superintelligence Labs の動画生成モデル。テキスト→動画部門で Arena 第 3 位。Muse Image のローンチ時にプレビュー公開され、Meta 各アプリへの展開が見込まれる。
 - [Runway Agent](https://runwayml.com/news/introducing-runway-agent) - 🆕 **2026-05-13**。テキストブリーフから **マルチショットの完成動画** までを一気通貫で仕上げる会話型エージェント：ストーリーボード → 生成 → カット → ナレーション、最終調整用のタイムラインエディタ付き。「プロンプトからラフカットまで」を実現した初の本格的なエンドツーエンド制作エージェント。
-- [Veo 3.1](https://deepmind.google/technologies/veo/) - **2025-10**。Google DeepMind のフラッグシップ動画モデル。**Veo 4** は 2026 年 8 月中旬時点で未リリース。
+- [Veo 3.1](https://ai.google.dev/gemini-api/docs/veo) - 音声付き動画生成、フレーム制御、延長に対応；Gemini API プレビューは4/6/8秒、1080p・4Kは8秒のみ。
 - [Runway Gen-4.5](https://runwayml.com/research/introducing-runway-gen-4.5) - 🆕 **2025-12**。Runway のフラッグシップ動画モデル。ローンチ時に Artificial Analysis のテキスト→動画ベンチマークで第 1 位。プラットフォームでは Kling 3.0 や Sora 2 Pro などサードパーティモデルも利用可（2026-02-20 追加）。
 - [Kling VIDEO 3.0](https://app.klingai.com/) - 🇨🇳 🆕 **2026-02-04~07**。快手の新世代。リアルな人間の動き・リップシンク・音声同期付きナラティブ制作。
 - [Sora 2 (via Runway)](https://runwayml.com/changelog) - OpenAI の Sora アプリは 2026 年 4 月 26 日に終了（API は 2026 年 9 月 24 日まで）したが、Sora 2 Pro は **2026 年 2 月 20 日**から Runway 内で利用可能。
@@ -480,27 +499,32 @@
 - [Pika 2.5](https://pika.art/) - シーン・エフェクト制御付きクリエイティブ動画生成。
 - [LTX Studio](https://ltx.studio/) - 🆕 AI 駆動シネマティック動画作成プラットフォーム。
 - [HappyHorse 1.1](https://technode.com/2026/06/23/alibaba-unveils-happyhorse-1-1-video-generation-model-launches-global-ai-filmmaking-competition/) - 🇨🇳 🆕 **2026-06-23**。アリババの動画モデル（2026-04-10 に「HappyHorse-1.0」として正体を公開 — 匿名でベンチマーク首位を獲得した後、世界 2 位に浮上）。1.1 ではモーションダイナミクス、被写体の一貫性、プロンプト追従、音声生成を強化。HappyHorse サイト、Alibaba Cloud Bailian、Qwen Cloud で利用可能。
-- [Sora](https://openai.com/sora/) - 📦 **提供終了**（アプリ 2026-04-26；API 2026-09-24）。OpenAI のテキスト→動画アプリは終了；Sora 2 Pro は Runway 内で存続。
-- [Gemini Omni Flash（動画）](https://deepmind.google/technologies/gemini/) - 🆕 **2026 年 7 月（プレビュー）**。Google の高速動画生成モデル——リアルタイムまたは近リアルタイムの動画生成を目指して設計。パブリックプレビュー中、GA 価格は未確定。
+- [Sora 2 API (deprecated)](https://developers.openai.com/api/docs/deprecations) - 📦 **2026年9月24日**終了予定の非推奨 API；移行確認のため掲載し、新規導入には推奨しない。
+- [Gemini Omni Flash 1.1](https://ai.google.dev/gemini-api/docs/omni) - Google が現在推奨する動画生成モデルで、`gemini-omni-1.1-flash` による複数ターン編集に対応；アップロード動画の編集・延長には地域制限。
 - [Wan 3.0](https://www.alibabacloud.com/en/blog/wan-3-0-next-gen-video-generation-model-public-beta-launched) - 🆕 ⚡ 🇨🇳 **2026-08-06（パブリックベータ）**。Alibaba Tongyi Lab の次世代動画生成モデル——ネイティブに最長 30 秒の動画を一度に生成。PDF / Word / PPT 等のドキュメントや Web ページを入力として受け付ける独自機能を持つ。Alibaba Cloud Model Studio / Qwen Cloud でテスト可能；オープンソース化の予定は未確認。
 - [LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5) - 🆕 ⚡ **2026 年 8 月 12 日**。Lightricks のオープンウェイト動画音声ワールドモデル。ネイティブマルチショット生成（キャラクターアイデンティティ、環境、声、スタイルを貢結）、拡散フィデリティレンダリング、新型動画デコーダー、カスタム Gemma 4 12B テキストエンコーダー，プロンプト拡張機能搭載。テキスト返動画、画像返動画、動画返動画、音声返動画等各モード対応。セルフホスト可能。
 - [Decart Lucy 2.5](https://decart.ai/) - 🆕 **2026 年 7 月**。Decart の「Live AI」路線を支えるリアルタイム動画 / 世界変換モデル —— 物理を意識したエフェクト付きで無限長の動画を連続生成でき、常時計算方式に比べ約 100 倍効率的だと謳う。ライブ配信、インタラクティブな世界モデル、ロボティクス / 自動運転シミュレーション向け。
 
 ### 音声・音楽
 
+- [MAI-Transcribe-2](https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/) - 🆕 **2026年9月3日**。話者ラベル、単語タイムスタンプ、逐語・整形転記を設定できる Microsoft 音声認識モデル。
+- [Muse Voice Transcribe](https://research.meta.ai/blog/introducing-muse-voice-transcribe) - 🆕 **2026年9月1日**。Meta のリアルタイム音声知覚モデル；ストリーミング認識、話者分離、発話終端検出に対応。
+- [Lyria 3.5](https://ai.google.dev/gemini-api/docs/models/lyria-3.5) - Google の現行フル楽曲生成モデル `lyria-3.5`；インタラクティブ音楽は別モデルの Lyria RealTime が担当。
+- [Qwen3-TTS](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice) - Apache-2.0 の多言語 TTS 系列；Base・CustomVoice・VoiceDesign が別チェックポイントとして用意され、ストリーミング生成に対応。
+- [Qwen3-ASR](https://huggingface.co/Qwen/Qwen3-ASR-1.7B) - Apache-2.0 の音声認識系列；0.6B/1.7B、ストリーミング・オフライン推論、30言語と22の中国語方言に対応。
 - [ElevenLabs Eleven v3 + ElevenAgents](https://elevenlabs.io/agents) - 🆕 2026 年に "インターネットのオーディオレイヤー" を標榜——70+ 言語対応で感情 Audio Tag を備えた TTS と、AIUC-1 認証を取得した ElevenAgents 音声エージェントプラットフォーム（マルチモーダルメッセージ、会話トピック発見、ツール呼び出し前の音声制御）を提供。**2026 年 7 月アップデート**：Music Finetunes API（カスタムモデルのプログラム管理）、エージェント別センチメント分析、ネストされたエージェント転送、RAG ナレッジベースクエリ、自動翻訳トランスクリプト、長尺音声の音色一致性を改善しつつ生成速度を向上。
 - [ElevenLabs](https://elevenlabs.io/) - AI 音声合成・クローン・対話 AI のリーダー。**2026 年 7 月アップデート**：Music Finetunes API、エージェント別センチメント分析、ネストされたエージェント転送、RAG クエリ、自動翻訳、生成速度向上。
 - [Cartesia Sonic 3 / 3.5](https://cartesia.ai/blog/introducing-line-for-voice-agents) - 🆕 **2026**。状態空間モデル系の TTS。first audio 到達まで約 40〜90ms（Sonic 3.5 は 2026 年 5 月 GA）。音声エージェント基盤 **Line** を支える（Line のエージェントは 2026 年 5 月以降、デフォルトで Sonic 3.5 TTS + Ink-2 STT 上で動作）。
 - [Deepgram Nova-3 + Aura-2 + Flux Multilingual](https://deepgram.com/learn/best-voice-ai-agents-2026-buyers-guide) - 🆕 **2026 年 4 月**。45+ 言語の STT、200ms 未満の TTS、通話中に 10 言語を切り替えできる会話型 STT。
 - [MiniMax Music 3.0](https://huggingface.co/MiniMaxAI/MiniMax-Music3) - 🆕 🇨🇳 **2026年8月13日**。オープンウェイトの完成曲生成（最大 5 分、32 kHz ステレオ）。現行 MiniMax 音楽フラッグシップ — Foundation → MiniMax を参照。
 - [MiniMax Music 2.6](https://aimlapi.com/blog/the-ultimate-guide-to-minimax-models-2026-m2-7-music-2-6-hailuo-video-advanced-tts) - 🇨🇳 **2026 年 4 月 10 日**（グローバルベータ）。カバー生成の前世代。Music 3.0 に交代。
-- [Voxtral TTS](https://www.forbes.com/sites/ronschmelzer/2026/03/26/mistral-releases-open-weight-voice-ai-built-for-speed/) - 🆕 **2026 年 3 月 26 日**。Mistral の音声エージェント向け、4B オープンウェイト TTS。
+- [Voxtral TTS](https://docs.mistral.ai/models/voxtral-tts-26-03) - Mistral の多言語音声生成モデル；公開重みは CC-BY-NC-4.0 で、Apache-2.0 の Voxtral 音声認識モデルとは区別。
 - [Suno v5.5 + Studio 2.0](https://suno.com/blog/v5-5) - 🆕 ⚡ **2026-03-26**（Studio 2.0 は **2026年8月13日**）。高品質ボーカル付きの AI 音楽生成。v5.5 では Voices（本人確認済みの自分の声で歌わせる）、アップロード音源で訓練する Custom Models、My Taste パーソナライゼーションを追加。**Studio 2.0**（8 月 13 日）は MIDI 対応・オーディオエフェクト・内蔵シンセを備えた全面刷新のブラウザベース DAW；Voices は 8 月 7 日に iOS/Android の無料プランへ拡大。V6 は噂されているが未発表。
 - [Udio](https://www.udio.com/) - 🆕 商用品質の音楽生成。
 - [OpenAI Audio Models](https://openai.com/) - GPT-4o と GPT-Realtime-2（**2026-05-07**、GPT-Realtime-Translate / GPT-Realtime-Whisper と同時リリース）内のネイティブ音声理解・生成；gpt-realtime-2.1 / 2.1-mini は **2026-07-06** リリースで、英数字認識・ノイズ処理・割り込み挙動を改善。
-- [Stability Audio](https://stability.ai/) - オープンソース音声・音楽生成。
+- [Stable Audio 3.0](https://stability.ai/stable-audio) - Large・Medium・Small・Small SFX の音声生成系列；Medium と Small は公開重みがあり、利用権限は該当する Stability ライセンスに従う。
 - [Bark](https://github.com/suno-ai/bark) - 💤 **Stale**（2024-08 以降更新なし）。オープンソースのテキスト→音声モデル。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fsuno-ai%2Fbark&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Hume TADA](https://github.com/HumeAI/tada) - 🆕 **2026 年 3 月**。Hume AI 初のオープンソース TTS — Text Audio Dual Alignment (TADA)：テキストと音声を 1:1 に同期した単一トークンストリームで生成。コンテンツの幻覚ゼロ、RTF 約 0.09、TADA-1B/3B-ML モデル（9+ 言語）、スマートフォンで動作。コードは MIT、ウェイトは Llama 3.2 ライセンス。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FHumeAI%2Ftada&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Hume TADA](https://github.com/HumeAI/tada) - テキストと音響を1:1で整列する音声言語モデルで、TADA-1B と多言語 TADA-3B-ML を提供；コードは MIT、重みは Llama 3.2 Community License。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FHumeAI%2Ftada&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 
 ## 🔗 エージェントプロトコルと標準
 
@@ -1293,10 +1317,11 @@
 
 ### 2026 年注目モデル（中国ラボ）
 
-- [Kimi K3](https://kimi.moonshot.cn/) - 🆕 🇨🇳 **2026-07-16**。Moonshot AI のフラッグシップ MoE モデル——**2.8T パラメータ**、**1M トークンコンテキスト**、Arena フロントエンドリーダーボード 1 位（Fable 5 と同率）、Artificial Analysis 総合 3 位。オープンウェイト 2026-07-27 公開。API：`kimi-k3`。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FMoonshotAI%2FKimi-K3&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Qwen 3.8-Max](https://qwenlm.github.io/) - 🆕 ⚡ 🇨🇳 **2026年8月3日に正式ローンチ**（プレビューは 7 月 19 日の世界 AI カンファレンス）。アリババの次世代 MoE モデル——2.4T 総 / 95B アクティブパラメータ、1M トークンコンテキスト、マルチモーダル入力；API は Alibaba Cloud Model Studio。オープンウェイトは Hugging Face（`Qwen/Qwen3.8-2.4T-A95B`、8 月 12 日頃）に公開され、Apache-2.0 のマルチモーダル 27B 蒸留版が 8 月 14 日に続いた。
-- [テスラ中国 OTA 2026.14.13 — Doubao統合](https://www.cnevpost.com/2026/07/31/tesla-integrates-bytedance-doubao-ai/) - 🆕 ⚡ **2026-07-31**。テスラが中国のModel 3/Y/S/XにOTAをプッシュし、元の音声アシスタントをByteDanceのDoubao大規模モデルに置き換え —— 中国のLLMを車載深度統合した初の主要西側EVブランド。⚠️ 未検証（cnevpost URL未直接取得；複数ソースで確認）。
-- [DeepSeek V4](https://www.deepseek.com/) - 🆕 🇨🇳 **2026 年 7 月**。DeepSeek の最新フラッグシップ——**1M トークンコンテキスト**、エージェントタスク対応強化、ピーク / オフピーク段階的価格設定。コスト効率優位のポジションを継続。
+- [Kimi K3](https://huggingface.co/moonshotai/Kimi-K3) - 公開重みマルチモーダルMoE；独自のKimi K3 License。
+- [Qwen3.8 family](https://huggingface.co/Qwen/Qwen3.8-27B) - 27BはApache-2.0；MaxフルモデルとFlash-Nextは別のQwen規約。
+- [GLM-5.3 / GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3) - 両方とも重みを公開；GLM-5.3は独自ライセンス、FlashはMIT。
+- [DeepSeek V4](https://api-docs.deepseek.com/quick_start/pricing/) - 現行APIはPro-0813とFlash-0731；Flash Visionは実験版。
+- [Seed 2.1](https://seed.bytedance.com/en/seed2_1) - ByteDanceの汎用Agent・コードモデル；利用方法は公式モデルページを参照。
 
 ---
 
@@ -1380,45 +1405,56 @@
 
 ### 💰 基盤モデル — API コスト & コンテキスト
 
-*価格は USD/100万トークン。**2026-08-25 に公式価格ページで再検証。***
+*2026-09-08に公式標準 API 料金を確認。100万 token 当たり USD、ツール・税・キャッシュ書込は別。文脈長と最大入力上限は異なる。*
 
-| モデル | プロバイダー | コンテキスト | 入力 $/1M | 出力 $/1M | 最適用途 |
-|-------|----------|---------------|-----------|------------|----------|
-| GPT-5.6 Sol | OpenAI | 1M | $4.00 | $20.00 | フロンティア旗艦；キャンペーンは 2026-11-21 まで |
-| GPT-5.6 Terra | OpenAI | 1M | $2.00 | $12.00 | コスト効率の高い本番ワークロード |
-| GPT-5.6 Luna | OpenAI | 1M | $0.20 | $1.20 | 大量・速度重視タスク |
-| GPT-4o | OpenAI | 128K | $2.50 | $10.00 | 幅広いツール利用・ビジョン |
-| GPT-4o-mini | OpenAI | 128K | $0.15 | $0.60 | 大量の単純タスク |
-| Claude Sonnet 5 | Anthropic | 1M | $2.00 | $10.00 | デフォルトのエージェントワークホース — 導入価格は **2026-08-10 に恒久化** |
-| Claude Opus 4.8 | Anthropic | 1M | $5.00 | $25.00 | 最難度推論タスク |
-| Claude Fable 5 | Anthropic | 1M | $10.00 | $50.00 | Mythos クラスのフロンティアタスク |
-| Claude Haiku 4.5 | Anthropic | 1M | $1.00 | $5.00 | Anthropic エコシステムの高速タスク |
-| Gemini 3.1 Pro | Google | 1M | $2.00 | $12.00 | フラッグシップ推論・マルチモーダル |
-| Gemini 3.7 Flash | Google | 1M | $0.75（導入価格） | $3.75（導入価格） | 最新ワークホース層 — 導入価格は 2026-12-31 まで（以降 $1.50/$7.50） |
-| Gemini 2.5 Flash | Google | 1M | $0.30 | $2.50 | コスパ重視マルチモーダル |
-| Gemini 2.5 Pro | Google | 1M | $1.25 | $10.00 | 超長文・マルチモーダル |
-| Gemini 2.5 Flash-Lite | Google | 1M | $0.10 | $0.40 | 超低コスト大量リクエスト |
-| DeepSeek V4-Flash | DeepSeek | 1M | ピーク $0.44 / オフピーク $0.22（キャッシュミス） | ピーク $1.32 / オフピーク $0.66 | 低コストコーディング推論 — 2026-08-16 から時間帯別料金 |
-| Qwen3 235B A22B | Alibaba | 131K | ~$0.29 | ~$1.15 | 最強中国語+コーディング MoE |
-| Kimi K2.6 | Moonshot AI | 262K | $0.95 | $4.00 | 中国語+超長コンテキスト |
-| Grok 4 | xAI | 256K | $3.00 | $15.00 | X/Twitter エコシステム推論 |
-| Grok 4.6 | xAI | 500K | $2.00 | $6.00 | コーディング+エージェントのフラッグシップ（2026-08-12；4.5 を置き換え） |
+| モデル | 提供元 | コンテキスト | 最大出力 | 入力 $/1M | 出力 $/1M | 注記 |
+| --- | --- | --- | --- | --- | --- | --- |
+| [GPT-6 Astra](https://developers.openai.com/api/docs/models/gpt-6-astra) | OpenAI | 1.05M | 128K | $10.00 | $50.00 | 一部組織への限定展開；GA 前 |
+| [GPT-5.6 Sol](https://developers.openai.com/api/docs/pricing) | OpenAI | 1.05M | 128K | $4.00 | $20.00 | 汎用 Agent 作業 |
+| [GPT-5.6 Terra](https://developers.openai.com/api/docs/pricing) | OpenAI | 1.05M | 128K | $2.00 | $12.00 | バランス重視の本番用途 |
+| [GPT-5.6 Luna](https://developers.openai.com/api/docs/pricing) | OpenAI | 1.05M | 128K | $0.20 | $1.20 | スループット・コスト重視 |
+| [Claude Fable 5.1](https://platform.claude.com/docs/en/about-claude/pricing) | Anthropic | 1M | 128K | $10.00 | $50.00 | キャッシュ読み取り $0.25/M |
+| [Claude Opus 5](https://platform.claude.com/docs/en/about-claude/pricing) | Anthropic | 1M | 128K | $5.00 | $25.00 | Opus モデル |
+| [Claude Sonnet 5](https://platform.claude.com/docs/en/about-claude/pricing) | Anthropic | 1M | 128K | $2.00 | $10.00 | 標準料金；9月値上げなし |
+| [Claude Haiku 4.5](https://platform.claude.com/docs/en/models/overview) | Anthropic | 200K | 64K | $1.00 | $5.00 | 低遅延用途 |
+| [Gemini 3.8 Flash](https://ai.google.dev/gemini-api/docs/pricing) | Google | 1,048,576 | 65,536 | $0.75 | $3.75 | 導入料金は2026-12-31まで |
+| [Gemini 3.1 Pro Preview](https://ai.google.dev/gemini-api/docs/pricing) | Google | 1M | 65,536 | $2.00 | $12.00 | 入力≤200Kの基本料金 |
+| [DeepSeek V4-Pro](https://api-docs.deepseek.com/quick_start/pricing/) | DeepSeek | 1M | 384K | $1.32 / $0.66 | $3.96 / $1.98 | ピーク/オフピーク；キャッシュ未命中 |
+| [DeepSeek V4-Flash](https://api-docs.deepseek.com/quick_start/pricing/) | DeepSeek | 1M | 384K | $0.44 / $0.22 | $1.32 / $0.66 | ピーク/オフピーク；キャッシュ未命中 |
+| [Grok 4.6](https://x.ai/news/grok-4-6) | SpaceXAI | 500K | — | $2.00 | $6.00 | Fast は2倍の料金 |
+
+表中の OpenAI モデルは272K超の入力で入力・キャッシュ2倍、出力1.5倍；Astraの入力上限は922K。Gemini Proは200K超で別料金。Gemini 3.8 Flashは2027-01-01から$1.50/$7.50。DeepSeekピークはUTC 01:00–04:00と06:00–10:00。キャッシュ・バッチ・地域・サービス階層の加算は公式料金を再確認。
 
 ---
 
 ### 💻 基盤モデル — ローカルデプロイ
 
-*Q4_K_M 量子化での推定 VRAM。速度はハードウェアにより変動。*
+*ライセンスと重み公開を2026-09-08に確認。容量は公称総パラメーター数×0.5 byte、十進GBの計算例であり、実測Q4サイズや最低GPU要件ではない。*
 
-| モデル | パラメータ | 最小 VRAM（Q4） | 速度（tok/s） | 推奨量子化 | 中国語対応 | 最適用途 |
-|-------|--------|--------------|----------------|-------------------|-----------------|----------|
-| Qwen3.6-27B | 27B dense | ~17 GB | ~23（M5 Max） | Q4_K_M / FP8 | ⭐⭐⭐⭐⭐ | コーディング・中国語・エージェント |
-| Qwen3 235B A22B | 235B MoE | ~40 GB（アクティブ） | ~15–20 | Q2_K / Q4_K_M | ⭐⭐⭐⭐⭐ | ローカル最高品質 |
-| Llama 3.3 70B | 70B dense | ~42 GB | ~12–18 | Q4_K_M | ⭐⭐☆☆☆ | 最強英語オープンウェイト |
-| DeepSeek V3-671B | 671B MoE | ~40 GB（アクティブ） | ~10–15 | Q2_K | ⭐⭐⭐⭐☆ | オープンウェイトコーディング |
-| Gemma 4 27B | 27B dense | ~17 GB | ~20–25 | Q4_K_M | ⭐⭐⭐☆☆ | 多言語推論 Apache-2.0 |
-| Phi-4 14B | 14B dense | ~9 GB | ~35–45 | Q4_K_M | ⭐⭐☆☆☆ | 8–16GB VRAM コーディング |
-| Mistral Small 4 24B | 24B dense | ~14 GB | ~25–30 | Q4_K_M | ⭐⭐⭐☆☆ | 多言語・関数呼び出し |
+| モデル | パラメーター規模 | 理想4-bit重み容量 | 公式重み | ライセンス |
+| --- | --- | --- | --- | --- |
+| Gemma 4 E4B | ~8B stored | ~4 GB | [google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it) | Apache-2.0 |
+| Gemma 4 12B | 12B | ~6 GB | [google/gemma-4-12B-it](https://huggingface.co/google/gemma-4-12B-it) | Apache-2.0 |
+| Phi-4 | 14B | ~7 GB | [microsoft/phi-4](https://huggingface.co/microsoft/phi-4) | MIT |
+| Gemma 4 26B A4B | 26B / 4B active | ~13 GB | [google/gemma-4-26B-A4B-it](https://huggingface.co/google/gemma-4-26B-A4B-it) | Apache-2.0 |
+| Qwen3.8-27B | 27B | ~13.5 GB | [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) | Apache-2.0 |
+| Muse Glimmer 30B | 30B | ~15 GB | [meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B) | Apache-2.0 |
+| Gemma 4 31B | 31B | ~15.5 GB | [google/gemma-4-31B-it](https://huggingface.co/google/gemma-4-31B-it) | Apache-2.0 |
+| Qwen3.6-35B-A3B | 35B / 3B active | ~17.5 GB | [Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B) | Apache-2.0 |
+| Llama 3.3 70B | 70B | ~35 GB | [meta-llama/Llama-3.3-70B-Instruct](https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct) | Llama Community |
+| Mistral Small 4 | 119B / 6B active | ~59.5 GB | [mistralai/Mistral-Small-4-119B-2603](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603) | Apache-2.0 |
+| Qwen3.8-Flash-Next | 125B + 51B tables + 4B MTP | ~90 GB | [Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next) | Qwen Community 1.0 |
+| Qwen3 235B A22B | 235B / 22B active | ~117.5 GB | [Qwen/Qwen3-235B-A22B](https://huggingface.co/Qwen/Qwen3-235B-A22B) | Apache-2.0 |
+| Inkling-Small | 276B / 12B active | ~138 GB | [thinkingmachines/Inkling-Small](https://huggingface.co/thinkingmachines/Inkling-Small) | Apache-2.0 |
+| DeepSeek V4-Flash | 284B / 13B active | ~142 GB | [deepseek-ai/DeepSeek-V4-Flash](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash) | MIT |
+| GLM-5.3-Flash | 320B / 18B active | ~160 GB | [zai-org/GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash) | MIT |
+| MiniMax-M3 | MoE | — | [MiniMaxAI/MiniMax-M3](https://huggingface.co/MiniMaxAI/MiniMax-M3) | MiniMax Community |
+| GLM-5.3 | MoE | — | [zai-org/GLM-5.3](https://huggingface.co/zai-org/GLM-5.3) | GLM-5.3 License |
+| Inkling | 975B / 41B active | ~487.5 GB | [thinkingmachines/Inkling](https://huggingface.co/thinkingmachines/Inkling) | Apache-2.0 |
+| DeepSeek V4-Pro | 1.6T / 49B active | ~800 GB | [deepseek-ai/DeepSeek-V4-Pro](https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro) | MIT |
+| Kimi K3 | 2.8T / 104B active | ~1,400 GB | [moonshotai/Kimi-K3](https://huggingface.co/moonshotai/Kimi-K3) | Kimi K3 License |
+
+量子化スケール、非量子化テンソル、実行バッファ、KVキャッシュ分を追加確保。MoEの稼働パラメーター数は計算量であり全重み容量ではない。CPUオフロードでGPU常駐量と速度が変わるため、実際の重み・バックエンド・量子化・文脈・同時実行数で測定。重みと推論コードのライセンスは別々に確認。
 
 ---
 
@@ -1438,40 +1474,58 @@
 
 ### 🎙️ 音声・オーディオモデル
 
-| モデル/サービス | STT | TTS | リアルタイム | ローカル | レイテンシ | 言語 | ライセンス |
-|----------------|-----|-----|---------|-------|---------|-----------|--------|
-| ElevenLabs v3 | ❌ | ⭐⭐⭐⭐⭐ | ✅ | ❌ | ~200ms | 70+ | プロプライエタリ |
-| Whisper v3（ローカル） | ⭐⭐⭐⭐★ | ❌ | ❌ | ✅ | ~1s | 99 | MIT |
-| Deepgram Nova-3 | ⭐⭐⭐⭐⭐ | ✅ | ✅ | ❌ | <100ms | 45+ | プロプライエタリ |
-| Gemini Live API | ✅ | ✅ | ⭐ ネイティブ | ❌ | <300ms | 30+ | プロプライエタリ |
-| OpenAI Realtime API | ✅ | ✅ | ⭐ ネイティブ | ❌ | ~300ms | 57 | プロプライエタリ |
-| Kokoro | ❌ | ⭐⭐⭐⭐☆ | ❌ | ✅ | ~100ms | 8 | Apache-2.0 |
-| Voxtral | ⭐⭐⭐⭐☆ | ❌ | ❌ | ✅ | バッチ | 20+ | Apache-2.0 |
+*2026-09-08確認。認識・TTS・音声対話は異なる製品。遅延は発話終端検出・通信・負荷に依存し、共通条件なしのミリ秒順位は示さない。*
+
+| モデル / API | 用途 | 導入 | ライセンス / アクセス | 実装上の注記 |
+| --- | --- | --- | --- | --- |
+| [Eleven v3](https://elevenlabs.io/docs/overview/models) | 音声生成 | ホスト型 | 提供元の規約 | 表現力重視TTS；ストリーミング遅延は別途測定 |
+| [Whisper large-v3](https://github.com/openai/whisper) | 音声認識 | 公開重み | MIT | オフライン転記；ストリーミングは別実装 |
+| [Deepgram Nova-3](https://developers.deepgram.com/docs/models-languages-overview) | 音声認識 | ホスト型 | 提供元の規約 | 音声認識；Auraは別TTS系列 |
+| [Gemini 3.1 Flash Live](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-live-preview) | 音声対話 | ホスト型 | 提供元の規約 | Live APIプレビュー |
+| [GPT-Realtime-2.1](https://developers.openai.com/api/docs/models/gpt-realtime-2.1) | 音声対話 | ホスト型 | 提供元の規約 | Realtime API；テキストと音声は別料金 |
+| [Qwen3-ASR](https://huggingface.co/Qwen/Qwen3-ASR-1.7B) | 音声認識 | 公開重み | Apache-2.0 | ストリーミング・オフライン |
+| [Qwen3-TTS](https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice) | 音声生成 | 公開重み | Apache-2.0 | Base・CustomVoice・VoiceDesignを用途で選択 |
+| [Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) | 音声生成 | 公開重み | Apache-2.0 | 小型ローカルTTS |
+| [Voxtral Realtime](https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602) | 音声認識 | 公開重み | Apache-2.0 | ストリーミング転記 |
+| [Voxtral TTS](https://docs.mistral.ai/models/voxtral-tts-26-03) | 音声生成 | 公開重み | CC-BY-NC-4.0 | 商用利用は別途許諾 |
+| [Muse Voice Transcribe](https://research.meta.ai/blog/introducing-muse-voice-transcribe) | 音声認識 | ホスト型 | 提供元の規約 | ストリーミング認識・話者分離 |
+| [MAI-Transcribe-2](https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/) | 音声認識 | ホスト型 | 提供元の規約 | 話者ラベル・単語タイムスタンプ |
 
 ---
 
 ### 🎨 画像生成モデル
 
-| モデル | 最大解像度 | API/ローカル | フォトリアリズム | 最適用途 | 価格目安 |
-|-------|---------------|-------------|-------------|----------|------------------|
-| DALL-E 3 | 1024×1024 | API | 高 | 命令追従 | $0.04/枚（標準） |
-| gpt-image-2 | 2048×2048 | API | 非常に高い | API ワークフロー・4K | $0.04–$0.17/枚 |
-| Flux 2 Pro | 2K+ | API | ⭐高い | フォトリアル・高速 | ~$0.05/枚 |
-| Midjourney V8.1 | 2K+ | Web のみ | 芸術的品質最高 | アート制作 | $10–$120/月 |
-| Stable Diffusion 3.5 | 2K | ローカル+API | 良好 | OSS・セルフホスト | オープンウェイト（Stability AI Community License） |
-| Ideogram 3 | 2K | API+Web | 良好 | 画像内テキスト最強 | フリーミアム |
+*2026-09-08時点。同じタスク・サイズ・品質で比較し、token課金とサブスクリプション間で固定の1枚料金を流用しない。*
+
+| モデル | アクセス | 主用途 | 区別すべき点 |
+| --- | --- | --- | --- |
+| [gpt-image-2](https://developers.openai.com/api/docs/models/gpt-image-2) | ホスト型 | 生成・編集 | token・サイズ・品質により料金が変動 |
+| [FLUX.2](https://docs.bfl.ai/quick_start/generating_images) | API / 一部公開重み | 画像生成・参照編集 | Pro/Flex/Dev/Kleinで条件が異なる |
+| [Midjourney V8.1 / V8.2 Edit](https://updates.midjourney.com/alpha-changelog-9-2-26/) | Web | 生成・編集 | V8.2 Editはalpha |
+| [Stable Diffusion 3.5](https://huggingface.co/stabilityai/stable-diffusion-3.5-large) | 公開重み | セルフホスト画像生成 | Stability AI Community License |
+| [Seedream 5.0 Pro](https://seed.bytedance.com/en/blog/beyond-generation-it-understands-design-introducing-seedream-5-0-pro) | ホスト型 | レイアウト・図文デザイン | ByteDanceの画像系列 |
+| [Nano Banana Pro](https://ai.google.dev/gemini-api/docs/models/gemini-3-pro-image) | ホスト型 | 画像生成・編集 | gemini-3-pro-image |
+| [Nano Banana 2](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-image) | ホスト型 | 画像生成・編集 | gemini-3.1-flash-image |
+| [Nano Banana 2 Lite](https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite-image) | ホスト型 | 効率重視の画像生成 | gemini-3.1-flash-lite-image |
+| [Ideogram 4.0](https://ideogram.ai/models/4.0/) | クラウド / 公開量子化重み | 文字描画・レイアウト編集 | 非商用重み；商用ライセンス別途 |
 
 ---
 
 ### 🎥 動画生成モデル
 
-| モデル | 最大長 | 解像度 | API/ローカル | 最適用途 | ステータス |
-|-------|-----------|-----------|-------------|----------|------------------|
-| Veo 3.1 | 2分 | 4K | API（Vertex） | 最高忠実度 | GA（Google） |
-| Kling VIDEO 3.0 | 3分 | 1080p | API+Web | 映画スタイル先頭 | GA（Kuaishou） |
-| Runway Gen-4 | 10s/クリップ | 1080p | API+Web | 精密モーション制御 | GA |
-| Seedance 2.0 | 60s | 2K | API | 高速・コスパ良好 | GA（ByteDance） |
-| ~~Sora~~ | ❌ | ❌ | ❌ | — | **2026年4月廃止** |
+*2026-09-08時点。標準クリップ長、連続延長、編集タイムライン、アップスケール解像度は別の制限であり、架空の最大仕様に合算しない。*
+
+| モデル | ワークフロー | 導入 | 確認済み制限 / 状況 |
+| --- | --- | --- | --- |
+| [Gemini Omni Flash 1.1](https://ai.google.dev/gemini-api/docs/omni) | 生成・複数ターン編集 | ホスト型 | プレビュー；アップロード動画編集は地域制限 |
+| [Veo 3.1 / Fast / Lite](https://ai.google.dev/gemini-api/docs/veo) | 音声付き動画・フレーム制御 | ホスト型 | プレビュー；1回4/6/8秒、延長は別制限 |
+| [Runway Gen-4.5](https://docs.dev.runwayml.com/guides/models/) | テキスト・画像から動画 | ホスト型 | APIモデル：gen4.5 |
+| [Runway Aleph 2.0](https://docs.dev.runwayml.com/guides/models/) | 動画編集 | ホスト型 | APIモデル：aleph2 |
+| [Kling VIDEO 3.0](https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-launches-30-model-ushering-era-where-everyone-can-be/) | 音声付き動画生成 | ホスト型 | モデル・モードを確認；標準3分生成とはしない |
+| [Seedance 2.5](https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5) | 参照素材を使う動画 | ホスト型 | 1回30秒生成；延長は別機能 |
+| [MiniMax H3](https://huggingface.co/MiniMaxAI/MiniMax-H3) | 動画・ネイティブステレオ音声 | 公開重み | 最大15秒/2K；独自ライセンス |
+| [LTX-2.5](https://huggingface.co/Lightricks/LTX-2.5) | 複数ショット動画・音声生成 | 公開重み | モデル固有の商用条件 |
+| [Sora 2 API](https://developers.openai.com/api/docs/deprecations) | 既存連携のみ | ホスト型 | 非推奨；2026-09-24終了 |
 
 ---
 
@@ -1552,20 +1606,25 @@
 
 ### 📏 埋め込みモデル
 
-| モデル | 次元 | コンテキスト | ローカル | API | 言語 | ライセンス | MTEB ≈ |
-|-------|------|---------|-------|-----|-----------|---------|--------|
-| OpenAI text-embedding-3-large | 3072 | 8K | ❌ | ✅ | 多言語 | プロプライエタリ | ~64 |
-| Cohere embed-v4 | 1024 | 512 | ❌ | ✅ | 多言語 | プロプライエタリ | ~66 |
-| Gemini gemini-embedding-2 | 3072 | 8K | ❌ | ✅ | 多言語 | プロプライエタリ | — |
-| BGE-M3 | 1024 | 8K | ✅ | ❌ | 多言語 | MIT | ~65 |
-| Jina-embeddings-v3 | 1024 | 8K | ✅ | ✅ | 多言語 | CC-BY-NC | ~65 |
-| Nomic-embed-text-v2 | 768 | 8K | ✅ | ✅ | 多言語 | Apache-2.0 | ~62 |
-| Voyage-3 | 1024 | 32K | ❌ | ✅ | 多言語 | プロプライエタリ | ~67 |
-| [Qwen3-Embedding-8B](https://huggingface.co/Qwen/Qwen3-Embedding-8B) | 4096 | 32K | ✅ | ✅ | 100+ | Apache-2.0 | ~70（多言語 1 位） |
-| [Qwen3-Embedding-4B](https://huggingface.co/Qwen/Qwen3-Embedding-4B) | 2560 | 32K | ✅ | ✅ | 100+ | Apache-2.0 | — |
-| [Qwen3-Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) | 1024 | 32K | ✅ | ✅ | 100+ | Apache-2.0 | — |
+*公式仕様を2026-09-08確認。「ローカル」は重みが取得可能という意味で、商用許可やハードウェア適合を保証しない。異なるMTEB設定を混在させた概算スコアは削除。*
 
-> 💡 **現時点で最強のオープン埋め込みは Apache-2.0 かつセルフホスト可能。** Qwen3-Embedding シリーズは多言語 MTEB で首位を取りながらローカル実行できる —— 品質重視なら `-8B`、大量インデックス作成のコスト重視なら `-0.6B`（ダウンロード 1000 万超）。セルフホストの RAG でまだ `text-embedding-3-large` を既定にしているなら、まずこれらとベンチマークを取ること。なお 2026-07-30 時点で OpenAI `text-embedding-4` は**存在しない**ため、前提にしないこと。
+| モデル | 次元 | 入力上限 | 入力 | 導入 | ライセンス |
+| --- | --- | --- | --- | --- | --- |
+| [text-embedding-3-large / small](https://developers.openai.com/api/docs/guides/embeddings) | 3072 / 1536 | 8192 | テキスト | ホスト型 | 提供元の規約 |
+| [Cohere Embed v4](https://docs.cohere.com/docs/cohere-embed) | 256–1536 | 128K | マルチモーダル | ホスト型 | 提供元の規約 |
+| [Gemini Embedding 2](https://ai.google.dev/gemini-api/docs/embeddings) | 128–3072 | 8192 | マルチモーダル | ホスト型 | 提供元の規約 |
+| [BGE-M3](https://huggingface.co/BAAI/bge-m3) | 1024 | 8192 | テキスト | 公開重み | MIT |
+| [Jina Embeddings v4](https://huggingface.co/jinaai/jina-embeddings-v4) | 128–2048 | 32768 | マルチモーダル | 公開重み | Qwen Research License |
+| [Nomic Embed Text v2 MoE](https://huggingface.co/nomic-ai/nomic-embed-text-v2-moe) | 256–768 | 512 | テキスト | 公開重み | Apache-2.0 |
+| [Voyage 4 / large / lite](https://docs.voyageai.com/docs/embeddings) | 256 / 512 / 1024 / 2048 | 32000 | テキスト | ホスト型 | 提供元の規約 |
+| [Voyage Code 4](https://docs.voyageai.com/docs/embeddings) | 256 / 512 / 1024 / 2048 | 32000 | コード・テキスト | ホスト型 | 提供元の規約 |
+| [Voyage 4 Nano](https://huggingface.co/voyageai/voyage-4-nano) | 256 / 512 / 1024 / 2048 | 32000 | テキスト | 公開重み | Apache-2.0 |
+| [Qwen3-Embedding-8B](https://huggingface.co/Qwen/Qwen3-Embedding-8B) | 32–4096 | 32K | テキスト | 公開重み | Apache-2.0 |
+| [Qwen3-Embedding-4B](https://huggingface.co/Qwen/Qwen3-Embedding-4B) | 32–2560 | 32K | テキスト | 公開重み | Apache-2.0 |
+| [Qwen3-Embedding-0.6B](https://huggingface.co/Qwen/Qwen3-Embedding-0.6B) | 32–1024 | 32K | テキスト | 公開重み | Apache-2.0 |
+| [Qwen3-VL-Embedding-2B / 8B](https://huggingface.co/Qwen/Qwen3-VL-Embedding-8B) | 64–2048 / 4096 | 32K | マルチモーダル | 公開重み | Apache-2.0 |
+
+検索評価に基づいて次元・モダリティ・チャンク長を選ぶ。[Qwen3-VL-Reranker](https://huggingface.co/Qwen/Qwen3-VL-Reranker-8B) は検索後のクエリ・文書ペアを再順位付けし、埋め込み索引の代わりにはならない。互換性のないベクトル空間へ変更する場合は文書を再埋め込みする。
 
 ---
 
@@ -1613,15 +1672,22 @@
 
 ### 🇨🇳 中国語 AI モデル — ヘッドトゥヘッド
 
-| モデル | プロバイダー | コンテキスト | 中国語能力≈ | コーディング | オープン重み | 入力 $/1M |
-|-------|----------|---------|---------------|--------|------------|----------|
-| Qwen3 235B A22B | Alibaba | 131K | トップ | ⭐⭐⭐⭐⭐ | ✅ Apache-2.0 | ~$0.29 |
-| DeepSeek V4-Flash | DeepSeek | 1M | 非常に高い | ⭐⭐⭐⭐⭐ | ✅ MIT | ピーク $0.44 / オフピーク $0.22 |
-| Kimi K2.6 | Moonshot AI | 262K | 高い | ⭐⭐⭐⭐☆ | ❌ | ~$0.95 |
-| GLM-5.2 | Zhipu AI | 1M | 高い | ⭐⭐⭐⭐☆ | ✅ MIT | ~$0.50 |
-| Hunyuan Pro | Tencent | 256K | 高い | ⭐⭐⭐⭐☆ | ❌ | ~$0.45 |
-| Doubao Pro | ByteDance | 256K | 高い | ⭐⭐⭐☆☆ | ❌ | ~$0.80 |
-| ERNIE 5 | Baidu | 128K | 高い | ⭐⭐⭐☆☆ | ❌ | ~$0.70 |
+*2026-09-08時点。機能とアクセスの比較であり、共通の中国語ベンチマーク順位ではない。料金と地域条件はエンドポイント別に確認。*
+
+| モデル | 提供元 | 用途 / モダリティ | 重み公開 | ライセンス / アクセス |
+| --- | --- | --- | --- | --- |
+| [Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) | Alibaba | マルチモーダル | ✅ | Apache-2.0 |
+| [Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next) | Alibaba | マルチモーダル | ✅ | Qwen Community 1.0 |
+| [DeepSeek V4-Flash / Pro](https://api-docs.deepseek.com/quick_start/pricing/) | DeepSeek | テキスト推論・コーディング | ✅ | MIT |
+| [Kimi K3](https://huggingface.co/moonshotai/Kimi-K3) | Moonshot AI | マルチモーダル | ✅ | Kimi K3 License |
+| [GLM-5.3](https://huggingface.co/zai-org/GLM-5.3) | Z.ai | テキスト推論・コーディング | ✅ | GLM-5.3 License |
+| [GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash) | Z.ai | マルチモーダル | ✅ | MIT |
+| [MiniMax M3](https://huggingface.co/MiniMaxAI/MiniMax-M3) | MiniMax | マルチモーダル | ✅ | MiniMax Community |
+| [Hunyuan Hy3](https://huggingface.co/tencent/Hy3) | Tencent | 推論・ツール利用 | ✅ | Apache-2.0 |
+| [Step 3.7 Flash](https://huggingface.co/stepfun-ai/Step-3.7-Flash) | StepFun | マルチモーダル | ✅ | Apache-2.0 |
+| [Seed 2.1](https://seed.bytedance.com/en/seed2_1) | ByteDance | 汎用Agent・コーディング | ホスト型 | 提供元の規約 |
+| [ERNIE 5.1](https://ernie.baidu.com/blog/posts/ernie-5.1-0508-release/) | Baidu | 推論・生成 | ホスト型 | 提供元の規約 |
+| [Baichuan-M3-235B](https://huggingface.co/baichuan-inc/Baichuan-M3-235B) | Baichuan | 医療分野テキスト | ✅ | Apache-2.0 |
 
 ---
 
@@ -1754,39 +1820,47 @@
 
 ### 🧠 モデル選択
 
-**最も難しい推論タスクに最高のモデルが必要**
-- **Claude Opus 5** — Anthropic の現行フラグシップ。Fable 5 に迫る品質を大幅に低い価格で、$5/$25/1M、1M コンテキスト / 128K 出力。
-- **Claude Fable 5** — Opus の上の Mythos クラス。本当に難しいタスクだけに。$10/$50/1M。
-- **GPT-5.6 Sol** — OpenAI のフロンティア層。「max」推論と「ultra」サブエージェントモード。**$4/$20**/1M（キャンペーンは 2026-11-21 まで）。
-- **Gemini 3.1 Pro** — Google の出荷済みフラグシップ。GPQA-Diamond 記録保持、1M コンテキスト、$2/$12/1M。（2M を謜う Gemini 3.5 Pro は未リリースなので前提にしないこと。）
+**複雑な多段階推論を処理したい**
+→ 実際のタスクで **GPT-6 Astra** と **Claude Fable 5.1** を比較する。**Claude Opus 5**・**GPT-5.6 Sol**・**Gemini 3.8 Flash** は料金と能力の異なる選択肢。導入前に利用権限とAPI表を確認。
 
-**最速・最安モデル（シンプルな大量タスク）**
-- **Gemini 3.1 Flash-Lite** — Gemini 3 ファミリー最安層。2026-05-08 に GA。低レイテンシな補完と agentic 開発ツール向け。
-- **DeepSeek V4-Flash** — オフピーク $0.22/$0.66（ピーク $0.44/$1.32 の半額）/1M、1M コンテキスト、MIT。オープンウェイト側でコスパ最強；まとめ処理はオフピーク（UTC 01:00–04:00・06:00–10:00）に。
-- **Claude Haiku 4.5** — $1/$5/1M、200K コンテキスト。
-- **GPT-5.6 Luna** — $0.20/$1.20/1M、GPT-5.6 最速層。
+**低コストで大量処理したい**
+→ 実際の出力長、キャッシュ命中率、再試行を含め **GPT-5.6 Luna**・**Gemini 3.8 Flash**・**DeepSeek V4-Flash** を評価。DeepSeek の **ピーク**時間はUTC 01:00–04:00と06:00–10:00。
 
-**最高の中国語対応**
-- **Qwen3.8-Max**（Alibaba）— 現行 Qwen フラグシップ（2026年8月3日フル展開、2.4T MoE / 95B アクティブ）。agentic コーディングと長期ミッション向け。
-- **Kimi K3**（Moonshot）— 2.8T 総 / 104B アクティブの公開重み（2026-07-27）。リリース時点で世界最大のダウンロード可能モデル。
-- **DeepSeek V4-Pro** — 1.6T/49B MoE、1M コンテキスト、MIT。
-- **Kimi K2.6** — 262K コンテキスト。
+**中国語対応の Agent を作りたい**
+→ **Qwen3.8**・**Kimi K3**・**DeepSeek V4**・**GLM-5.3 / GLM-5.3-Flash**・**Seed 2.1** を候補に、専門用語とツールschemaを検証。中国語モデル表でホスト型・公開重み・独自ライセンスを区別。
 
-**16GB VRAM でのローカルモデル**
-- **Qwen3.6-35B-A3B** — MoE でアクティブは 3B のみ。同規模の dense では入らない環境でも動く。Apache-2.0。
-- **Gemma 4 12B**（Google）— エンコーダフリーの統一マルチモーダル。Q4 約 7GB。
-- **Phi-4**（Microsoft、MIT）— Q4 約 9GB、コーディングでサイズ以上の成績。
-- **Qwen3.6-27B** — Q4 約 16GB、シングル消費者向け GPU に入る最強の選択肢。
+**GPUメモリが約16 GBの場合**
+→ 対応する **Phi-4** または **Gemma 4 12B** の量子化版から始め、実メモリ量を測定。35B MoEは稼働3Bだけで収まるとはいえず、全重みとKVキャッシュの保存が必要。
 
-**40GB+ VRAM でのローカルモデル**
-- **Qwen3 235B A22B** — MoE フラグシップ、22B アクティブ。Apache-2.0。
-- **Llama 3.3 70B Q4_K_M** — ~42GB、Llama Community License。
-- **DeepSeek V4-Flash** — 284B MoE / 13B アクティブ、MIT、1M コンテキスト、Q4 約 75GB。
-- **Inkling**（Thinking Machines）— 975B MoE / 41B アクティブ、Apache-2.0、マルチ GPU 必須。
+**大容量ワークステーションやGPUクラスタがある場合**
+→ 量子化した **Qwen3.8-27B**・**Gemma 4 31B**・**Muse Glimmer 30B** がワークステーション候補。**DeepSeek V4**・**GLM-5.3-Flash**・**Inkling** など大型MoEは大容量の合計メモリやオフロードが必要で、稼働数ではなく容量表を使う。
 
-**オープンウェイトモデル（MIT/Apache）**
-- **Qwen3 235B A22B** (Apache-2.0)、**DeepSeek V4-Flash / V4-Pro** (MIT)、**Inkling** (Apache-2.0)、**Mistral Small 4** (Apache-2.0、119B MoE / 6B アクティブ)、**Llama 3.3 70B**（Llama Community License）。
-- ⚠️ 注意: **Kimi K3 は OSI オープンソースでない**（独自の Kimi K3 License、収益閾値付き MaaS 除外規定）。**Gemma 系も同様**（Gemma Terms of Use）。
+**コーディング用モデルを選びたい**
+→ **Claude Sonnet 5** または **GPT-5.6 Sol** を基準に、難しいタスクでは **GPT-6 Astra**・**Claude Fable 5.1**・**Muse Spark 1.3** を評価。セルフホストでは各ライセンスを確認し **GLM-5.3**・**GLM-5.3-Flash**・**DeepSeek V4**・小型の **Qwen3.8-27B** を比較。
+
+**マルチモーダル理解が必要**
+→ **Gemini 3.8 Flash** はテキスト・画像・音声・動画・PDFを入力し、出力はテキスト。**Qwen3.8-27B** と **Gemma 4** はローカル候補、**Inkling** はテキスト・画像・音声入力。正確なモデルの入出力モダリティを確認する。
+
+**500K token以上の文脈が必要**
+→ **GPT-6 Astra**・**Claude Fable 5.1 / Sonnet 5**・**Gemini 3.8 Flash**・**DeepSeek V4**・**Kimi K3** を比較。文脈にはユーザー入力以外も含まれるため、出力・思考・モダリティtoken、サービス上限、長文追加料金を考慮。
+
+**リアルタイム音声が必要**
+→ 直接の音声対話には **GPT-Realtime-2.1** または **Gemini 3.1 Flash Live** を評価。パイプラインではSTT（**Qwen3-ASR**・**Voxtral Realtime**・**Muse Voice Transcribe**）とTTS（**Qwen3-TTS**・**Kokoro**・**Eleven v3**）を別々に選ぶ。
+
+**画像生成・編集が必要**
+→ 実際の参照画像とレイアウトで **gpt-image-2**・**Nano Banana 2 / Pro**・**Seedream 5.0 Pro**・**FLUX.2** を比較。**Midjourney V8.2 Edit** はalpha、**Stable Diffusion 3.5** は独自コミュニティライセンスでローカル重みを提供。
+
+**動画生成・編集が必要**
+→ 対話型編集には **Gemini Omni Flash 1.1**、フレーム制御・延長には **Veo 3.1**、制作編集には **Runway Gen-4.5 / Aleph 2.0** が候補。**Seedance 2.5**・**MiniMax H3**・**LTX-2.5** も含め、標準クリップと延長後の長さを区別して評価。
+
+**MITまたはApache-2.0のモデル重みが必要**
+→ **Qwen3.8-27B**・**Gemma 4**・**Mistral Small 4**・**DeepSeek V4**・**GLM-5.3-Flash**・**Inkling** が候補。異なる規約の **Qwen3.8-Flash-Next**・**GLM-5.3**・**Kimi K3**・**MiniMax M3**・**Llama** に同じライセンスを適用しない。
+
+**埋め込みと再ランキングが必要**
+→ 独自コーパスで **Qwen3-Embedding**・**Qwen3-VL-Embedding**・**Cohere Embed v4**・**Gemini Embedding 2**・**Voyage 4** を評価し、検索候補に専用rerankerを適用。混在した順位ではなく再現率・遅延・総索引費用を比較。
+
+**文書解析やコンテンツ判定が必要**
+→ 構造化文書抽出には **Mistral OCR 4.1**、ポリシー分類には **Shieldstral 1.0** など専用インターフェースを利用。信頼度・分類ラベルをワークフローの入力として扱い、代表的な失敗例も検証。
 
 ---
 
@@ -1843,17 +1917,23 @@
 
 ### 🌍 エコシステム選択
 
-**OpenAI エコシステム** → OpenAI Agents SDK + GPT-5.6 Terra + E2B + LangSmith。
+**OpenAIエコシステムで構築したい**
+→ **OpenAI Agents SDK**に、バランス重視の **GPT-5.6 Terra**、大量処理の **GPT-5.6 Luna**、高度な作業の **GPT-6 Astra** を組み合わせ、用途に応じてサンドボックスと評価を追加。
 
-**Anthropic エコシステム** → Claude Code + Claude Sonnet/Opus + MCP + Langfuse。
+**Anthropic Claudeエコシステムで構築したい**
+→ **Claude Code**に **Claude Sonnet 5 / Opus 5 / Fable 5.1**、ツール接続に **MCP**、可観測性に **Langfuse**；モデルと実行基盤を一緒に評価する。
 
-**Google エコシステム** → Google ADK v2.5+ + Gemini 3.1 Pro / 3.6 Flash + Vertex AI。
+**Google Geminiエコシステムで構築したい**
+→ **Google ADK**と **Gemini 3.8 Flash** または **Gemini 3.1 Pro Preview** にGoogle Cloudの導入・評価サービスを組み合わせ、エンドポイントの地域とプレビュー状態を確認。
 
-**中国市場向け** → Qwen3 235B（DashScope）+ RAGFlow + Milvus + Langfuse。
+**中国市場向けに構築したい**
+→ 必要な地域のエンドポイントで **Qwen3.8**・**Seed 2.1**・**ERNIE 5.1**・**Kimi K3** を比較する。提供元の選択だけでデータ所在や規制適合は確定しない。
 
-**TypeScript ファースト** → Mastra + Vercel AI SDK + Gemini 3.6 Flash + Qdrant。
+**TypeScript中心のスタックが必要**
+→ **Mastra**または **LangChain.js / LangGraph.js**、**Vercel AI SDK**、**Qdrant JS client**、**Langfuse JS SDK** が連携候補；各コンポーネントの現行ライセンスと機能を確認。
 
-**フル OSS スタック** → Ollama + Llama 3.3 70B + LangGraph + Qdrant + Langfuse。
+**許容的ライセンスの重みでセルフホストしたい**
+→ 対応ローカル実行環境で **Qwen3.8-27B** または **Gemma 4** を使い、**LangGraph**・**Qdrant**・監視サービスを追加。必要な全コンポーネントをセルフホストし、任意のホスト型機能は別途確認。
 
 ---
 
@@ -1862,13 +1942,13 @@
 | # | レシピ名 | スタック | 最適対象 |
 |---|------------|-------|----------|
 | 1 | **軽量コーディング Agent** | Claude Code + E2B + Langfuse | 個人開発/スタートアップ |
-| 2 | **OSS SWE エージェント** | OpenHands + Ollama + Qwen3.6-27B + Qdrant | 完全ローカル・プライバシー重視 |
+| 2 | **OSS SWE エージェント** | OpenHands + Ollama + Qwen3.8-27B + Qdrant | 完全ローカル・プライバシー重視 |
 | 3 | **エンタープライズ RAG** | LlamaIndex + Qdrant + Cohere embed-v4 + Langfuse | 社内文書 Q&A |
 | 4 | **音声アシスタント** | LiveKit + Whisper + Claude Sonnet 5 + ElevenLabs v3 | カスタム音声 AI |
 | 5 | **ブラウザ自動化** | Browser Use + Stagehand + Claude Sonnet 5 | 信頼性の高い Web スクレイピング |
-| 6 | **ローカルプライバシースタック** | Ollama + Qwen3.6-27B + Open WebUI + Qdrant + n8n | ゼロクラウド・オフライン |
+| 6 | **ローカルプライバシースタック** | Ollama + Qwen3.8-27B + Open WebUI + Qdrant + n8n | ゼロクラウド・オフライン |
 | 7 | **TypeScript エージェント** | Mastra + Vercel AI SDK + Gemini 3.6 Flash + Qdrant | TS ファースト本番 SaaS |
-| 8 | **中国市場スタック** | Qwen3 235B API + RAGFlow + Milvus + Langfuse | 国内デプロイ・ICP 対応 |
+| 8 | **中国市場スタック** | Qwen3.8 API + RAGFlow + Milvus + Langfuse | 国内デプロイ・ICP 対応 |
 
 ---
 
