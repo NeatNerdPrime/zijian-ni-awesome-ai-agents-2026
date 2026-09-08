@@ -1800,17 +1800,27 @@
 
 ## ⚠️ アンチピック — 使ってはいけないケース
 
-| ❌ 使わない | ❌ このために | ✅ 代わりに | 理由 |
-|------------|-----------|---------------|-----|
-| LangChain v0.x | 新しい本番エージェント | **LangGraph** | 旧 chain は廃止済み |
-| AutoGPT（レガシー） | 本番ワークロード | **OpenHands / LangGraph** | アーキテクチャが古く信頼性が低い |
-| GPT-3.5-Turbo | 複雑な推論 | **Gemini 3.6 Flash / Claude Haiku 4.5** | 廃止済み、同価格帯により良い選択肢がある |
-| Pinecone Starter | セルフホスト/コスト重視 | **Qdrant / pgvector** | 2025 年に無料プラン廃止 |
-| LLM で実時間株取引 | 金融執行 | 確定的ルールエンジン | LLM は数値を幻覚する；実取引では壊滅的 |
-| ChatGPT Plus | 本番 API ワークフロー | **OpenAI API** 直接 | SLA なし・レート制御なし |
-| Midjourney | プログラマティック画像生成 | **gpt-image-2 / Flux 2 Pro API** | 公開 API なし |
-| Sora | 動画生成 | **Kling VIDEO 3.0 / Veo 3.1** | 2026年4月廃止 |
-| リランカーなしのベクター検索 | 高精度 RAG | ベクター DB + **BGE リランカー** | 純ベクター検索の再現率は ~70% のみ |
+*実際のワークロードで検討する設計上の取捨選択です。普遍的なベンチマーク結果を示すものではありません。*
+
+| ❌ 使わないもの | ❌ 用途 | ✅ 代わりに使う | 理由 |
+|----------------|---------|----------------|------|
+| LangChain v0.x の例 | 新規の本番エージェント | 現行 LangChain / **LangGraph** のドキュメント | 古い API と依存関係には移行と回帰確認が必要 |
+| AutoGPT の旧デモ | 無人の本番処理 | 権限境界と復旧手順を持つ保守中のランタイム | デモは実業務の信頼性を証明しない |
+| 慣習で選ぶ GPT-3.5-Turbo | 新しい推論処理 | 自前の評価で検証した現行サポートモデル | 世代だけでなく実測品質、遅延、総費用を比較する |
+| Pinecone Starter | データベースのセルフホスト要件 | **Qdrant** または **pgvector** | Starter は現在も無料のホスト型プランであり、セルフホスト製品ではない（[料金](https://www.pinecone.io/pricing/)） |
+| 未検証の LLM 出力 | 金融取引の直接実行 | **決定的な検証と実行上限** | 生成された数値と操作には独立した確認が必要 |
+| ChatGPT の契約だけ | API 認証や API 課金 | **OpenAI API** のプロジェクトと課金設定 | ChatGPT と API は別の製品窓口 |
+| 容量計画のない無料共有推論 | 継続的な本番負荷 | 予約容量または実測したセルフホスト環境 | クォータ、同時実行、コールドスタートは提供元と負荷に依存する |
+| 専門家の確認がない自律エージェント | 医療・法律の判断 | モデルと**資格のある担当者による確認** | 流暢な出力は正確性や適切性の証明ではない |
+| 未審査のリモート MCP エンドポイント | 機密文書 | 審査済みのローカル処理または契約で承認された処理経路 | 実際のデータフロー、保持期間、権限を確認する。MCP という名称は保証にならない |
+| 常にマルチエージェント構成 | 単純な単発タスク | **モデルやツールの直接呼び出し** | 追加の計画や引き継ぎが費用と遅延を増やす場合がある |
+| 非公式 Midjourney ラッパー | サポート対象 API への依存 | ベンダーが文書化した画像 API | 公式の Web・Discord コマンド資料は第三者 API のサポートを示さない（[資料](https://docs.midjourney.com/)） |
+| 未評価の汎用視覚プロンプト | 高精度の文書 OCR | 文書 OCR パイプラインと代表的な評価セット | 誤り率と費用は言語、レイアウト、スキャン品質に依存する |
+| 廃止済みの動画エンドポイント | 新しい動画アプリ | 現在利用できるベンダーの動画 API | 導入前にエンドポイント、地域、サービスの提供期間を確認する |
+| 検索評価のないベクトル検索 | 高精度 RAG | 自前のコーパスでハイブリッド検索と再ランクを評価 | 改善幅はデータセットに依存し、普遍的な再現率はない |
+| 料金だけで選ぶ高速モデル | 複雑で影響の大きい推論 | タスク別評価と人の確認で高性能モデルを比較 | 製品のティア名は信頼性を保証しない |
+| 未公開のモデル名 | 本番依存関係の計画 | **自分が重みや API にアクセスできる**モデル | 公式モデルカードと実際の利用権限を確認する |
+| 一つのランキングの点数 | コーディングエージェント選定 | 複数のベンチマークと**自前のリポジトリ評価** | ハーネス、課題分布、テスト品質は異なる |
 
 ---
 
@@ -1910,12 +1920,19 @@
 | **2026-05-07** | Google が **Flow（Veo ベース AI 映像制作） に Agent Mode を準備** — 動画制作パイプラインの自動化 | ツール |
 | **2026-05-08** | OpenAI が **GPT-Realtime-2 / Realtime-Translate / Realtime-Whisper** をリリース — 音声エージェント、リアルタイム翻訳、リアルタイム文字起こし | モデル |
 | **2026-05-09** | OpenAI が ChatGPT Enterprise で **Workspace Agents** を展開 — 接続されたアプリ間で繰り返し可能なワークフローを自動化 | ツール |
+| **2026-05-13** | [Cursor 3.4 クラウドエージェント環境](https://cursor.com/changelog) — マルチリポ、build secrets 付き Dockerfile 設定、キャッシュレイヤー 70% 高速化、環境ごとのバージョン履歴、監査ログ、egress / secrets の限定 | ツール |
+| **2026-06-22** | [Daybreak](https://openai.com/index/daybreak-securing-the-world/) — OpenAI が Daybreak を更新し、防御目的の脆弱性検証、修正のテスト、パートナーとの処理手順を説明。 | 履歴 |
+| **2026-05-12** | [Gemini in Chrome for Android](https://blog.google/products-and-platforms/products/chrome/bringing-chrome-ai-to-android/) — Google が Android 版 Chrome の Gemini と auto browse を発表。米国で 6 月末から段階的に提供。 | 履歴 |
+| **2026-05-12** | [Vapi Series B](https://www.globenewswire.com/news-release/2026/05/12/3292882/0/en/vapi-raises-50m-series-b-as-it-reaches-1-billion-calls-powering-the-next-generation-of-enterprise-voice-ai.html) — Vapi がシリーズ B で 5,000 万ドルの調達と、プラットフォームでの累計 10 億通話を発表。 | 履歴 |
+| **2026-05-14** | [Claude Code v2.1.141](https://github.com/anthropics/claude-code/releases/tag/v2.1.141) — リリースノートでフック、プラグイン、セッション管理、信頼性の更新を記録。 | 履歴 |
+| **2026-05-14** | [Codex mobile preview](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) — iOS・Android の ChatGPT から接続済み macOS Codex ホストを遠隔操作するプレビューを開始。 | 履歴 |
+| **2026-05-14** | [OpenClaw v2026.5.12](https://github.com/openclaw/openclaw/releases/tag/v2026.5.12) — 公開リリースにエージェント実行、メッセージング、プラットフォームの修正を収録。詳細は当該版のノートを参照。 | 履歴 |
 | **2026-05-11** | [OpenAI Deployment Company](https://openai.com/index/openai-launches-the-deployment-company/) が発足 — $4B+ の企業サービス部門、TPG / Bain Capital / Brookfield + Bain & Company / Capgemini / McKinsey が出資、Tomoro コンサルタントを取り込む | 業界 |
 | **2026-05-11～13** | [SAP Sapphire 2026 Orlando](https://news.sap.com/2026/05/sap-sapphire-sap-unveils-autonomous-enterprise/) — SAP Business AI Platform、**Joule Studio 2.0**、Autonomous Suite（50+ 領域の Joule Assistant + 200+ のエージェント）を発表。Joule Studio 2.0 は 2026-06 以降 GA | 業界 |
 | **2026-05-12** | [Claude for Legal](https://www.anthropic.com/news/claude-for-legal) — Claude Cowork 上に 20+ の MCP コネクタ（iManage / NetDocuments / DocuSign / LexisNexis / Westlaw / Harvey / Everlaw / Relativity など）と 12 の実務領域プラグイン | ツール |
 | **2026-05-12～15** | [Visual Studio 2026 Insiders](https://devblogs.microsoft.com/visualstudio/agent-skills-in-visual-studio/) — Copilot Chat「Agent Mode」に Agent Skills 作成サポートが追加 | ツール |
 | **2026-05-13** | [Claude for Small Business](https://www.anthropic.com/news/claude-for-small-business) — 15 個の事前構築エージェントワークフロー + QuickBooks / PayPal / HubSpot / Canva / DocuSign / Google Workspace / Microsoft 365 コネクタ、米国 10 都市ツアー | ツール |
-| **2026-05-13** | [Cursor 3.4 クラウドエージェント環境](https://cursor.com/changelog) — マルチリポ、build secrets 付き Dockerfile 設定、キャッシュレイヤー 70% 高速化、環境ごとのバージョン履歴、監査ログ、egress / secrets の限定 | ツール |
+| **2026-07-10** | [Cursor 3.11](https://cursor.com/changelog) — サイドチャット、会話履歴検索、きめ細かなエージェント可観測性のための Cloud Agent Hooks | ツール |
 | **2026-05-13～16** | [Figure Helix 02 ライブストリーム](https://www.businessinsider.com/figure-ai-turned-a-humanoid-sorting-packages-must-see-tv-2026-5) — F.03 + Helix 02 がパッケージ仕分けラインでストレステスト、初日 8h ~22K、24h ~30K、~72h ~88K 個で機械故障 | ロボティクス |
 | **2026-05-14** | [Anthropic ↔ Gates Foundation $200M パートナーシップ](https://www.anthropic.com/news/gates-foundation-partnership) — 4 年間で助成金 + Claude クレジット + エンジニアリングをグローバルヘルス / ライフサイエンス / 教育 / 農業に投入 | 業界 |
 | **2026-05-14** | [Anthropic ↔ PwC 提携拡大](https://www.pwc.com/us/en/about-us/newsroom/press-releases/anthropic-pwc-expand-alliance-agentic-enterprise.html) — Claude Code + Cowork のグローバル展開、30,000 名の PwC 専門家を認定、共同 Agentic Enterprise Center of Excellence | 業界 |
@@ -1924,7 +1941,10 @@
 | **2026-05-16** | [教皇レオ 14 世がバチカン AI 委員会を設置](https://www.americamagazine.org/vatican-dispatch/2026/05/16/pope-leo-establishes-new-vatican-commission-on-artificial-intelligence/) — 部署を跨ぐ AI 委員会。初の AI 主題とする回勅が高い見込み | 業界 |
 | **2026-05-16** | [OpenAI ↔ Malta パートナーシップ](https://openai.com/index/malta-chatgpt-plus-partnership/) — 14 歳以上のすべてのマルタ居住者に 2 時間 AI リテラシー講座修了で 1 年間の ChatGPT Plus（"OpenAI for Countries"）| 業界 |
 | **2026-05-16** | [DeepSeek 国家ファンド主導 $4B ラウンド](https://www.techtimes.com/articles/316717/20260516/chinas-state-ai-fund-backs-deepseek-4-billion-round-efficiency-challenge-nvidia-dependent.htm) — 国家 AI 産業ファンド + 大ファンド III + Tencent 主導、~$50B 評価額の初めての外部ラウンド | 業界 |
-| **2026-05-13** | [Runway Agent](https://chatlyai.app/news/runway-agent-launch-may-2026) リリース — 台本を渡すと Gen-4 / Aleph でマルチショットの完成動画をエンドツーエンドで仕上げる | ツール |
+| **2026-05** | [LangGraph v1.2](https://docs.langchain.com/oss/python/releases/changelog) — LangGraph の公開履歴でランタイムとチェックポイントの改善を記録。 | 履歴 |
+| **2026-05** | [Grok 4.3 on Microsoft Foundry](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-grok-4-3-on-microsoft-foundry-latest-generation-agentic-capabilities/4517096) — Microsoft が Foundry での Grok 4.3 提供を発表。 | 履歴 |
+| **2026-05-01** | [Microsoft Agent 365](https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/) — エージェントの可観測性・ガバナンス・セキュリティ管理基盤が一般提供開始。一部連携はプレビュー。 | 履歴 |
+| **2026-05-19** | [Claude Managed Agents update](https://claude.com/blog/new-in-claude-managed-agents) — Anthropic が研究プレビューの dreaming、outcomes、マルチエージェント連携、webhook を文書化。 | 履歴 |
 | **2026-05-18** | [OpenAI ↔ Dell Codex 提携](https://openai.com/news/company-announcements/) — ハイブリッド / オンプレミス企業環境へ Codex を拡張 | 業界 |
 | **2026-05-18** | [アリババ Qwen 3.7-Max-Preview / Plus-Preview](https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena) — LM Arena で中国モデル最高スコア（テキスト + ビジョン）| モデル |
 | **2026-05-18** | [Boston Dynamics Atlas 100ポンド超の荷重操作](https://www.techtimes.com/articles/316854/20260519/boston-dynamics-reveals-how-atlas-learned-lift-100-pound-loads-hyundai-plans-30000-per-year.htm) + Hyundai が 2028 年以降 Hyundai/Kia 工場に **25K+ 台の Atlas** を配備予定 | ロボティクス |
@@ -1936,10 +1956,10 @@
 | **2026-05-19** | **Google I/O 2026** — [Gemini Spark](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) 24/7 パーソナル AI エージェント + ~30+ の MCP サードパーティーツール連携、新たな **Google AI Ultra ($100/月)** サブスクリプション限定 | ツール |
 | **2026-05-19** | [OpenAI Guaranteed Capacity （Compute Annual Pass）](https://openai.com/news/company-announcements/) リリース — 1 / 2 / 3 年期の企業コンピュート予約 | 業界 |
 | **2026-05-19** | [OpenAI ↔ Google SynthID + C2PA コンテンツ出所検証](https://openai.com/index/advancing-content-provenance/) — フロンティア lab 同士初のクロスプラットフォーム AI 画像ウォーターマーク相互運用と公開検証ツールプレビュー | 業界 |
-| **2026-06-27** | GPT-4.5 が ChatGPT から退役（API は継続）—— OpenAI はコンシューマー製品を GPT-5.5 / GPT-5.6 ファミリーに集中 | モデル |
 | **2026-06** | [OutSystems Agentic Systems Platform](https://www.outsystems.com/) ローンチ — ローコードプラットフォームが「AI ネイティブ」なマルチエージェントオーケストレーション基盤へとピボット | 業界 |
 | **2026-05-19** | [Anthropic：Widening the conversation on frontier AI](https://www.anthropic.com/news/widening-conversation-ai) — 「智恵の伝統」を取り込んだフロンティア AI 安全対話の枠組み | 業界 |
 | **2026-05-19** | [DeepSeek が Jane Street 出身のエンジニアを迎え AI harness チームを新設](https://www.scmp.com/tech/big-tech/article/3354113/deepseek-recruits-former-jane-street-engineer-catch-ai-agents-revenue-race) — モデル R&D からエージェント製品化への軸足 | 業界 |
+| **2026-05-13** | [Runway Agent](https://chatlyai.app/news/runway-agent-launch-may-2026) リリース — 台本を渡すと Gen-4 / Aleph でマルチショットの完成動画をエンドツーエンドで仕上げる | ツール |
 | **2026-05-20** | **アリババクラウド杭州サミット** — [Qwen 3.7-Max](https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory) GA、エージェント型コーディングと長期タスク向け；同期で T-Head **Zhenwu M890** AI チップとフルスタック AI 基盤アップグレード | モデル |
 | **2026-05-20** | [BMS ↔ Anthropic Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) — 30K+ 名の社員が Claude Enterprise を共通インテリジェンス基盤として採用、世界トップ 5 製薬企業で初めての社全体規模 | 業界 |
 | **2026-05-20** | [LlamaIndex ↔ Google Agents API](https://www.kucoin.com/news/flash/google-launches-agents-api-llama-index-integrates-llamaparse-for-unstructured-document-processing) — Google Agents API サンドボックス内に LlamaParse / LiteParse を法出し、Sandboxed-Lit + ParseBench も同リリース | フレームワーク |
@@ -1981,6 +2001,12 @@
 | **2026-06-12** | [米国の輸出管理指令により Anthropic が全顧客向けに Fable 5 + Mythos 5 を停止](https://www.anthropic.com/news/fable-mythos-access) — 一般提供されたフロンティアモデルが政府により強制停止された初の事例 | 業界 |
 | **2026-06-12** | [Kimi K2.7 Code](https://kimi.ai/) を Moonshot AI がリリース — 1T MoE のコーディング優先モデル（256K、Modified MIT）、推論トークン消費を約 30% 削減 | モデル |
 | **2026-06-13** | [GLM-5.2](https://z.ai/blog/glm-5.2) を Zhipu AI がリリース — コーディング優先の 744B MoE、100万トークンコンテキスト、全 GLM Coding Plan ティアで提供 | モデル |
+| **2026-06-14** | [OpenAI Partner Network](https://openai.com/index/introducing-openai-partner-network/) — OpenAI が 1.5 億ドルのパートナープログラムを発表。Select・Advanced・Elite の区分を設け、年末までに 30 万人の研修を目標とする。 | 履歴 |
+| **2026-06** | [ByteDance Seed 2.1 Pro / Turbo](https://seed.bytedance.com) — ByteDance が Seed 2.1 系列を公開。モデル別の提供形態は公式カタログを参照。 | 履歴 |
+| **2026-06-25–26** | [GPT-5.6 preview](https://openai.com/blog/gpt-5-6) — Sol・Terra・Luna 系列が限定プレビューに入り、7 月の提供拡大に先行。 | 履歴 |
+| **2026-06** | [Fable 5 / Mythos 5 access statement](https://www.anthropic.com/news/fable-mythos-access) — Anthropic がアクセス制限とその後の更新を記録。この過去の声明は現在の提供モデル一覧ではない。 | 履歴 |
+| **2026-06-26** | [GPT-4.5 ChatGPT retirement](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) — GPT-4.5 が ChatGPT から退役。2025 年 7 月 14 日の gpt-4.5-preview API 終了とは別の事項（[API 履歴](https://developers.openai.com/api/docs/deprecations)）。 | 履歴 |
+| **2026-06-29** | [Accenture + ServiceNow](https://newsroom.accenture.com/news/2026/servicenow-and-accenture-launch-ai-powered-services-to-accelerate-the-shift-from-legacy-risk-platforms-to-agentic-ai) — 両社がマネージドセキュリティサービスと旧リスク基盤からの AI 支援移行を発表。 | 履歴 |
 | **2026-06-30** | [Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5) リリース — これまでで最もエージェント性能の高い Sonnet。低コストで Opus 4.8 に近い性能を発揮し、Claude.ai の Free/Pro の新デフォルトモデルに | モデル |
 | **2026-07-01** | [Claude Fable 5 グローバルアクセス復旧](https://www.anthropic.com/news/redeploying-fable-5) — 米国商務省が 6 月 30 日に輸出管理を解除；Anthropic が新しい安全クラシファイア付きで Claude.ai・API・Claude Code・Claude Cowork の Fable 5 への世界的アクセスを復旧。Mythos 5 は引き続き米国の審査済みエンティティに制限 | モデル |
 | **2026-07-01** | [Devin Security Swarm](https://www.prnewswire.com/news-releases/cognition-launches-devin-security-swarm-to-tackle-the-vulnerability-backlog-302814800.html) を Cognition がローンチ — 並列エージェントによる脆弱性発見、実行時の悪用可能性検証、修正 PR 作成 | ツール |
@@ -1996,16 +2022,22 @@
 | **2026-07-08** | [Robostral Navigate](https://mistral.ai/news/robostral-navigate/) — Mistral 初のロボティクスモデル（単一 RGB カメラからの 8B 身体性ナビゲーション）；同日 OpenAI の監査で SWE-bench Pro のタスク約 30% に不備があると判明 | モデル |
 | **2026-07-09** | [GPT-5.6 Sol / Terra / Luna](https://openai.com/index/gpt-5-6/) GA — トラステッドパートナープレビューを経て GPT-5.6 ファミリーが ChatGPT・Codex・API で一般提供；[ChatGPT Work](https://openai.com/index/chatgpt-for-your-most-ambitious-work/) も同時ローンチし、Codex が ChatGPT デスクトップアプリに統合 | モデル |
 | **2026-07-09** | [Muse Spark 1.1](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) を Meta がリリース — 新しいパブリック Meta Model API プレビュー経由のマルチモーダル・エージェントモデル；オープンソースの Llama ラインと並行するプロプライエタリ路線 | モデル |
-| **2026-07-10** | [Cursor 3.11](https://cursor.com/changelog) — サイドチャット、会話履歴検索、きめ細かなエージェント可観測性のための Cloud Agent Hooks | ツール |
+| **2026-07-10** | [Cursor 3.11](https://cursor.com/changelog) — Side Chats、会話履歴検索、Cloud Agent Hooks の更新。 | Tools |
 | **2026-07-14** | [Oracle が AI ネイティブな Agentic Applications Builder を追加](https://www.oracle.com/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/) — Fusion 向け AI Agent Studio を拡張し、Fusion エージェントアプリをプロコード開発者にも開放；Fusion 顧客は追加費用なし | フレームワーク |
-| **2026-07-16** | [Kimi K3](https://kimi.ai/) を Moonshot AI がローンチ — 2.8T パラメータの疎 MoE（896 エキスパート中 16 が有効）、1M トークンコンテキスト、100 万トークンあたり $3/$15；フルオープンウェイトは 7 月下旬公開予定 | モデル |
 | **2026-07-15** | [Inkling](https://thinkingmachines.ai/inkling/) を Thinking Machines Lab（Mira Murati、前 OpenAI CTO）がローンチ — 975B MoE / 41B アクティブ、45T トークン事前学習、1M コンテキスト、Apache 2.0 オープンウェイトを Hugging Face で公開；ネイティブマルチモーダル（テキスト/画像/音声/動画）；Inkling-Small（12B アクティブ）も同時リリース | モデル |
+| **2026-07-16** | [Kimi K3](https://kimi.ai/) を Moonshot AI がローンチ — 2.8T パラメータの疎 MoE（896 エキスパート中 16 が有効）、1M トークンコンテキスト、100 万トークンあたり $3/$15；フルオープンウェイトは 7 月下旬公開予定 | モデル |
 | **2026-07-17** | EU Android AI 開放命令 — 欧州委員会がサードパーティ AI アシスタントへのより深い Android アクセスを Google に命令（カメラ・マイク・アプリ制御 API）；Android 18 での実装期限は 2027 年 8 月 | 業界 |
 | **2026-07-19** | [Qwen 3.8-Max](https://qwenlm.github.io/) をアリババが世界 AI カンファレンスでプレビュー — 2.4T パラメータ MoE プレビュー；コーディング・数学・マルチモーダル能力が強力 | モデル |
 | **2026-07-20** | [Qwen-Image-3.0](https://qwenlm.github.io/) をアリババがリリース — 世界 AI カンファレンスで発表された第 3 世代画像生成モデル；フォトリアリズム・テキストレンダリング・マルチ被写体一貫性が向上 | モデル |
 | **2026-07-22** | Grok 4.5 が grok.com / X の全ユーザーへロールアウト；[Microsoft Agent Framework v1.12.1](https://learn.microsoft.com/en-us/agent-framework/) リリース；[OpenAI Presence](https://openai.com/) エンタープライズエージェントプラットフォーム開始 | ツール |
 | **2026-07-23** | [GPT Voice](https://openai.com/) を OpenAI がローンチ — ChatGPT Work 向けの音声インターフェース、GPT-Live 技術で動作 | ツール |
 | **2026-07-24** | [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) を Anthropic がリリース — 第 5 世代フラッグシップ、Fable 5 に迫る性能を 100 万トークンあたり $5/$25 で提供；1M コンテキスト、128K 出力；Claude Max のデフォルトモデル；API: `claude-opus-5` | モデル |
+| **2026-07-27** | [Kimi K3 オープンウェイト公開](https://huggingface.co/moonshotai/Kimi-K3)（Moonshot AI）— 2.8T 総 / 104B アクティブで、公開時点最大のオープン言語モデルとなった；独自の Kimi K3 License | モデル |
+| **2026-07-22** | [AMD ↔ Anthropic](https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus) — Anthropic が AMD Helios ラックに AMD Instinct MI450（MI455X）を最大 2 GW 展開、2027 年前半に開始；AMD は Anthropic へ最大 50 億ドルの戦略的出資を約束 | 業界 |
+| **2026-07-23** | [FLUX 3](https://bfl.ai/blog/flux-3) が早期アクセス開始 — Black Forest Labs 初の統合マルチモーダルモデル（画像 + 動画 + 音声 + 行動予測を単一アーキテクチャで）、20 秒動画にネイティブ同期音声 | モデル |
+| **2026-07-27** | [オープンウェイトに関する Anthropic の立場](https://www.anthropic.com/news/position-open-weights-models) — Dario Amodei が中国製オープンウェイトモデルの禁止案を否定し、チップ輸出管理・蒸留への抑止・高性能モデル全般へのリリース前安全性テスト義務化を支持 | 業界 |
+| **2026-07-28** | [MCP 2026-07-28 仕様が正式リリース](https://blog.modelcontextprotocol.io/posts/2026-07-28/) — ステートレスなプロトコルコア（ハンドシェイクとセッションを廃止）、Multi Round-Trip Requests、ヘッダベースのルーティング、キャッシュ可能な list 結果、RFC 9207 + CIMD による認可強化、正式な拡張フレームワーク、12 か月の非推奨ポリシー；TypeScript/Python/Go/C# SDK は同日対応 | プロトコル |
+| **2026-07-29** | [Langfuse v4](https://github.com/langfuse/langfuse/releases/tag/v4.0.0) と [Milvus 3.0](https://github.com/milvus-io/milvus/releases/tag/v3.0.0) が同日リリース — 前者は全文検索とモニター、API は最大 165 倍高速と主張；後者はレイクネイティブな External Collections で Parquet/Lance/Iceberg を直接クエリ。同日 [RufRoot / CVE-2026-59726](https://hackread.com/rufroot-vulnerability-attackers-hijack-ruflo-login/) も公表：Ruflo の MCP ブリッジが認証なしで 233 ツールに到達可能、エージェントメモリも汚染可能 | ツール / 業界 |
 | **2026-07-30** | [Inkling-Small](https://thinkingmachines.ai/inkling/) ウェイト公開 — 276B/12B アクティブ、Apache-2.0、マルチモーダル；HLE テキスト 31.6%（975B Inkling の 29.7% を上回る） | モデル |
 | **2026-07-31** | [DeepSeek-V4-Flash-0731](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731) —— 同一 API・料金のまま Agentic 能力を強化、V4-Pro Preview を上回る；HF にオープンウェイト公開。GitHub Copilot が Gemini 2.5 Pro・Gemini 3 Flash を非推奨化 | モデル / ツール |
 | **2026-08-03** | [Claude Cowork](https://www.anthropic.com/claude-cowork) + [Claude Tag](https://www.businesswire.com/news/home/20260803/) 公開 —— Cowork は非開発者向け自律タスクエージェント（Web + Slack）、Tag は旧 Slack 統合の後継。[Embabel Agent](https://github.com/embabel/embabel-agent) が注目を集める —— Spring Framework 創設者 Rod Johnson による JVM エージェントフレームワーク（約 3.4K stars、Apache-2.0；最新タグ付きリリースは v0.5.0 プレリリース）。「💱 エージェント経済とマーケットプレイス」カテゴリ新設 | フレームワーク / ツール |
@@ -2021,17 +2053,12 @@
 | **2026-08-14** | [GLM-5.3](https://the-decoder.com/zhipu-ai-releases-glm-5-3-claims-its-the-strongest-open-weights-coding-model/) — Zhipu が最強のオープンウェイトコーディングモデルと主張（GLM-5.2 比 +50%）。[Anthropic が Claude テキスト電子透かしを出荷](https://www.anthropic.com/news/claude-text-watermark)（SynthID-Text + C2PA、EU AI 法対応）。[Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) Apache-2.0 オープンウェイト。[Waymo がカリフォルニア州 18 郡で承認](https://electrek.co/2026/08/14/waymo-cpuc-approval-california-expansion-18-counties/)；[Pony.ai × Uber が欧州で 2,000 台超のロボタクシー計画](https://cnevpost.com/2026/08/14/pony-ai-uber-2000-robotaxis-europe/)。Grok 4.6 が GitHub Copilot に登場 | モデル / ロボティクス / 業界 |
 | **2026-08-16** | [DeepSeek-V4-Pro GA](https://api-docs.deepseek.com/news/news260813) が発表していたピーク/オフピーク API 料金が 16:00 UTC に発効 | モデル |
 | **2026-08-18** | [ChatGPT for Teens](https://openai.com/index/chatgpt-for-teens) がローンチ；[ChatGPT 広告が欧州 31 市場に拡大](https://openai.com/index/chatgpt-ads-expands-across-europe) | 業界 |
-| **2026-08-19** | [Cursor Cloud Agent Subscriptions + /goal + VM 分離サブエージェント](https://cursor.com/changelog)；[OpenAI が ZDR を再確認](https://openai.com/index/offering-zero-data-retention-for-frontier-models)；[OpenAI Agents SDK v0.22.0](https://github.com/openai/openai-agents-python/releases/tag/v0.22.0) | ツール |
+| **2026-08-19** | [Cursor cloud agents](https://cursor.com/changelog) — Cursor がクラウドエージェント契約とサブエージェントを文書化。[OpenAI Agents SDK v0.22.0](https://github.com/openai/openai-agents-python/releases/tag/v0.22.0)は別のリリースノートに記録。 | 履歴 |
 | **2026-08-21** | [DeepSeek-V4-Flash-Vision-Exp](https://api-docs.deepseek.com/news/news260821) マルチモーダル API + Files API；DeepSeek Harness **dsh-v0.1.1-rc.2**；[goose v1.47.0](https://github.com/block/goose/releases/tag/v1.47.0)；[OpenHands v1.15.0](https://github.com/All-Hands-AI/OpenHands/releases/tag/v1.15.0)；[MAF python-1.15.0](https://github.com/microsoft/agent-framework/releases) | モデル / ツール |
 | **2026-08-22** | [新しい MCP ロードマップ](https://blog.modelcontextprotocol.io/posts/mcp-roadmap/) — `2026-07-28` 以降の優先事項（エージェントメッセージ、HTTP ネイティブ輸送、エージェント身元）；MAF **dotnet-1.19.0** | プロトコル / フレームワーク |
 | **2026-08-24** | [Agno v3.0.0](https://github.com/agno-agi/agno/releases/tag/v3.0.0) 破壊的リリース（ツール/メディアオフロード、CodeMode）；[Embabel Agent v1.5.1](https://github.com/embabel/embabel-agent/releases/tag/v1.5.1)；[Pydantic AI v2.34.0](https://github.com/pydantic/pydantic-ai/releases/tag/v2.34.0)；Codex CLI **v0.149.1** | フレームワーク / ツール |
 | **2026-08-25** | [OpenAI Jalapeño](https://openai.com/index/jalapeno-first-results) 自社推論チップの初結果；Claude Code **v2.1.245** on npm | モデル / ツール |
-| **2026-07-27** | [Kimi K3 オープンウェイト公開](https://huggingface.co/moonshotai/Kimi-K3)（Moonshot AI）— 2.8T 総 / 104B アクティブで、公開時点最大のオープン言語モデルとなった；独自の Kimi K3 License | モデル |
-| **2026-07-22** | [AMD ↔ Anthropic](https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus) — Anthropic が AMD Helios ラックに AMD Instinct MI450（MI455X）を最大 2 GW 展開、2027 年前半に開始；AMD は Anthropic へ最大 50 億ドルの戦略的出資を約束 | 業界 |
-| **2026-07-27** | [オープンウェイトに関する Anthropic の立場](https://www.anthropic.com/news/position-open-weights-models) — Dario Amodei が中国製オープンウェイトモデルの禁止案を否定し、チップ輸出管理・蒸留への抑止・高性能モデル全般へのリリース前安全性テスト義務化を支持 | 業界 |
-| **2026-07-23** | [FLUX 3](https://bfl.ai/blog/flux-3) が早期アクセス開始 — Black Forest Labs 初の統合マルチモーダルモデル（画像 + 動画 + 音声 + 行動予測を単一アーキテクチャで）、20 秒動画にネイティブ同期音声 | モデル |
-| **2026-07-28** | [MCP 2026-07-28 仕様が正式リリース](https://blog.modelcontextprotocol.io/posts/2026-07-28/) — ステートレスなプロトコルコア（ハンドシェイクとセッションを廃止）、Multi Round-Trip Requests、ヘッダベースのルーティング、キャッシュ可能な list 結果、RFC 9207 + CIMD による認可強化、正式な拡張フレームワーク、12 か月の非推奨ポリシー；TypeScript/Python/Go/C# SDK は同日対応 | プロトコル |
-| **2026-07-29** | [Langfuse v4](https://github.com/langfuse/langfuse/releases/tag/v4.0.0) と [Milvus 3.0](https://github.com/milvus-io/milvus/releases/tag/v3.0.0) が同日リリース — 前者は全文検索とモニター、API は最大 165 倍高速と主張；後者はレイクネイティブな External Collections で Parquet/Lance/Iceberg を直接クエリ。同日 [RufRoot / CVE-2026-59726](https://hackread.com/rufroot-vulnerability-attackers-hijack-ruflo-login/) も公表：Ruflo の MCP ブリッジが認証なしで 233 ツールに到達可能、エージェントメモリも汚染可能 | ツール / 業界 |
+| **2026-06-07** | [PerspectiveGap](https://arxiv.org/abs/2606.08878) — マルチエージェントのオーケストレーションプロンプト評価を arXiv に初投稿。v2 は 7 月 12 日。 | Benchmarks |
 
 ---
 

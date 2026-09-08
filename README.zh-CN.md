@@ -1844,19 +1844,27 @@
 
 ## ⚠️ 反推荐 — 不应该用在哪里
 
-| ❌ 不要用 | ❌ 用于 | ✅ 改用 | 原因 |
-|------------|-----------|---------------|-----|
-| LangChain v0.x | 新的生产 Agent | **LangGraph** | 旧版 chain 已废弃 |
-| AutoGPT（旧） | 生产工作负载 | **OpenHands / LangGraph** | 体系过时，可靠性差 |
-| GPT-3.5-Turbo | 复杂推理 | **Gemini 3.5 Flash / Claude Haiku 4.5** | 已超龄，同价有更好选择 |
-| Pinecone Starter | 自托管/成本敏感 | **Qdrant / pgvector** | 2025 年已取消免费档、开源更便宜 |
-| LLM 直接做实时股票交易 | 金融执行 | 确定性规则引擎 | LLM 会幻觉数字，对实盘交易破坏性极大 |
-| ChatGPT Plus | 生产 API 工作流 | **OpenAI API** 直接调用 | 无 SLA、无配额控制 |
-| Hugging Face 免费推理 | 生产负载 | **Modal / 自托管 Ollama** | 免费层极限，冷启动 >30s |
-| Agent 无人工审核 | 医疗/法律决策 | 任意模型 + 必须人工审核 | 无模型可靠性足够高 |
-| Midjourney | 程序化/API 图片生成 | **gpt-image-2 / Flux 2 Pro API** | Midjourney 无公开 API |
-| Sora | 视频生成 | **Kling VIDEO 3.0 / Veo 3.1** | Sora 2026.4 已停运 |
-| 不带 reranker 的向量检索 | 高精度 RAG | 向量 DB + **BGE reranker** | 纯向量召回率只有 ~70% |
+*根据实际工作负载评估这些工程取舍；这里不宣称普遍适用的基准结论。*
+
+| ❌ 不要使用 | ❌ 用于 | ✅ 改用 | 原因 |
+|------------|---------|--------|------|
+| LangChain v0.x 示例 | 新生产 Agent | 当前 LangChain / **LangGraph** 文档 | 旧 API 和依赖锁定需要迁移与回归检查 |
+| AutoGPT 旧演示 | 无人值守的生产任务 | 具备权限边界和恢复机制的受维护运行时 | 演示不能证明真实业务的可靠性 |
+| 习惯性使用 GPT-3.5-Turbo | 新推理任务 | 在自有评测上验证的当前受支持模型 | 比较实测质量、延迟和总成本，而不只看模型年代 |
+| Pinecone Starter | 必须自托管数据库 | **Qdrant** 或 **pgvector** | Starter 仍是免费的托管套餐，不是自托管产品（[价格](https://www.pinecone.io/pricing/)） |
+| 未验证的 LLM 输出 | 直接执行金融交易 | **确定性校验与执行限额** | 生成的数字和动作都需要独立检查 |
+| 仅有 ChatGPT 订阅 | API 鉴权或计费 | **OpenAI API** 项目与计费 | ChatGPT 与 API 是不同的产品入口 |
+| 未规划容量的免费共享推理 | 持续生产负载 | 预留容量或经过测量的自托管部署 | 配额、并发和冷启动取决于供应商及工作负载 |
+| 无专业审核的自主 Agent | 医疗或法律决策 | 模型加**合格人员审核** | 表达流畅不能证明内容正确或适用 |
+| 未评审的远程 MCP 端点 | 敏感文档 | 经评审的本地或经合同批准的处理路径 | 检查实际数据流、保留期和权限；MCP 标签不保证这些条件 |
+| 默认使用多 Agent 编排 | 简单的一次性任务 | **直接调用模型或工具** | 额外规划和交接可能增加成本与延迟 |
+| 非官方 Midjourney 封装 | 依赖受支持的生成 API | 厂商有文档的图像 API | 官方网页和 Discord 命令文档不能证明第三方 API 获得支持（[文档](https://docs.midjourney.com/)） |
+| 未经测量的通用视觉提示 | 高精度文档 OCR | 文档 OCR 流水线加代表性评测集 | 错误率和成本取决于语言、版面和扫描质量 |
+| 已退役的视频端点 | 新视频应用 | 当前可用的厂商视频 API | 集成前确认端点、区域和服务生命周期 |
+| 没有检索评估的向量搜索 | 高精度 RAG | 在自有语料上评估混合搜索和重排 | 重排收益依赖数据集，没有通用召回率百分比 |
+| 仅按价格选择快速模型 | 复杂且高风险的推理 | 通过任务评测及人工复核比较更强模型 | 厂商的档位名称不保证可靠性 |
+| 尚未发布的模型名称 | 生产依赖规划 | **你能获取权重或调用 API** 的模型 | 核实官方模型卡和实际访问权限 |
+| 单一排行榜分数 | 选择编程 Agent | 多个基准加**自有仓库评测** | 测试框架、任务分布和测试质量各不相同 |
 
 ---
 
@@ -1956,12 +1964,19 @@
 | **2026-05-07** | Google 为 **Flow（Veo 视频）准备 Agent Mode** —— 视频制作流程自动化 | 工具 |
 | **2026-05-08** | OpenAI 发布 **GPT-Realtime-2 / Realtime-Translate / Realtime-Whisper** —— 语音 Agent、实时翻译、实时转录 | 模型 |
 | **2026-05-09** | OpenAI 在 ChatGPT Enterprise 推出 **Workspace Agents** —— 跨连接应用的可重复工作流自动化 | 工具 |
+| **2026-05-13** | [Cursor 3.4 云 Agent 环境](https://cursor.com/changelog) — 多仓库，带 build secrets 的 Dockerfile 配置，快 70% 镜像缓存，环境版本历史，审计日志，限定出网 / secrets | 工具 |
+| **2026-06-22** | [Daybreak](https://openai.com/index/daybreak-securing-the-world/) — OpenAI 更新 Daybreak，说明面向防御的漏洞验证、修复测试和合作伙伴工作流。 | 历史 |
+| **2026-05-12** | [Gemini in Chrome for Android](https://blog.google/products-and-platforms/products/chrome/bringing-chrome-ai-to-android/) — Google 宣布 Android Chrome 的 Gemini 与 auto browse，计划从 6 月下旬在美国分批开放。 | 历史 |
+| **2026-05-12** | [Vapi Series B](https://www.globenewswire.com/news-release/2026/05/12/3292882/0/en/vapi-raises-50m-series-b-as-it-reaches-1-billion-calls-powering-the-next-generation-of-enterprise-voice-ai.html) — Vapi 宣布 5000 万美元 B 轮融资，并报告平台累计处理 10 亿次通话。 | 历史 |
+| **2026-05-14** | [Claude Code v2.1.141](https://github.com/anthropics/claude-code/releases/tag/v2.1.141) — 发布说明记录 hook、插件、会话管理及可靠性更新。 | 历史 |
+| **2026-05-14** | [Codex mobile preview](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) — 通过 iOS/Android ChatGPT 远程连接 macOS Codex 主机的功能进入预览。 | 历史 |
+| **2026-05-14** | [OpenClaw v2026.5.12](https://github.com/openclaw/openclaw/releases/tag/v2026.5.12) — 正式版本包含 Agent 运行时、消息通道和平台修复；完整范围以该版本说明为准。 | 历史 |
 | **2026-05-11** | [OpenAI Deployment Company](https://openai.com/index/openai-launches-the-deployment-company/) 成立 —— $4B+ 企业服务子公司，TPG / Bain Capital / Brookfield + Bain & Company / Capgemini / McKinsey 共投；合并 Tomoro 咨询 | 产业 |
 | **2026-05-11 – 13** | [SAP Sapphire 2026 Orlando](https://news.sap.com/2026/05/sap-sapphire-sap-unveils-autonomous-enterprise/) — SAP Business AI Platform、**Joule Studio 2.0**、Autonomous Suite（50+ 领域 Assistant + 200+ Agent）；Joule Studio 2.0 从 2026-06 起 GA | 产业 |
 | **2026-05-12** | [Claude for Legal](https://www.anthropic.com/news/claude-for-legal) — Claude Cowork 上 20+ 个 MCP 连接器（iManage、NetDocuments、DocuSign、LexisNexis、Westlaw、Harvey、Everlaw、Relativity 等）+ 12 个执业领域 plugin | 工具 |
 | **2026-05-12 – 15** | [Visual Studio 2026 Insiders](https://devblogs.microsoft.com/visualstudio/agent-skills-in-visual-studio/) — Copilot Chat "Agent Mode" 在 IDE 里引入引导式 Agent Skills 创作 | 工具 |
 | **2026-05-13** | [Claude for Small Business](https://www.anthropic.com/news/claude-for-small-business) — 15 个预置 Agent 工作流 + QuickBooks / PayPal / HubSpot / Canva / DocuSign / Google Workspace / Microsoft 365 连接器；美国 10 城巡讲 | 工具 |
-| **2026-05-13** | [Cursor 3.4 云 Agent 环境](https://cursor.com/changelog) — 多仓库，带 build secrets 的 Dockerfile 配置，快 70% 镜像缓存，环境版本历史，审计日志，限定出网 / secrets | 工具 |
+| **2026-07-10** | [Cursor 3.11](https://cursor.com/changelog) — 侧边聊天、对话历史搜索、Cloud Agent Hooks 精细化 Agent 可观测性 | 工具 |
 | **2026-05-13 – 16** | [Figure Helix 02 直播](https://www.businessinsider.com/figure-ai-turned-a-humanoid-sorting-packages-must-see-tv-2026-5) — F.03 + Helix 02 在包裹分拧线压力测试，8 小时 ~22K，24 小时 ~30K，~72 小时 ~88K 包裹 | 机器人 |
 | **2026-05-14** | [Anthropic ↔ Gates Foundation $200M 合作](https://www.anthropic.com/news/gates-foundation-partnership) — 4 年资助 + Claude 额度 + Anthropic 工程，面向全球健康 / 生命科学 / 教育 / 农业 | 产业 |
 | **2026-05-14** | [Anthropic ↔ PwC 联盟扩张](https://www.pwc.com/us/en/about-us/newsroom/press-releases/anthropic-pwc-expand-alliance-agentic-enterprise.html) — 全球 Claude Code + Cowork 铺开，认证 30,000 名 PwC 员工，共建 Agentic Enterprise 卓越中心 | 产业 |
@@ -1970,7 +1985,10 @@
 | **2026-05-16** | [教宗利奥 14 世设立梵蒂冈 AI 委员会](https://www.americamagazine.org/vatican-dispatch/2026/05/16/pope-leo-establishes-new-vatican-commission-on-artificial-intelligence/) — 跨部门机构，首份 AI 通谕即将发布 | 产业 |
 | **2026-05-16** | [OpenAI ↔ Malta 合作](https://openai.com/index/malta-chatgpt-plus-partnership/) — 所有 14 岁以上马耳他居民在完成 2 小时 AI 素养课后获得一年免费 ChatGPT Plus（"OpenAI for Countries"）| 产业 |
 | **2026-05-16** | [DeepSeek 国家背景 $4B 轮次](https://www.techtimes.com/articles/316717/20260516/chinas-state-ai-fund-backs-deepseek-4-billion-round-efficiency-challenge-nvidia-dependent.htm) — 国家 AI 产业基金 + 大基金三期 + 腾讯 主导，~$50B 估值首次外部轮 | 产业 |
-| **2026-05-13** | [Runway Agent](https://chatlyai.app/news/runway-agent-launch-may-2026) 发布 — 以脚本为输入、在 Gen-4 / Aleph 上端到端交付多镜头完成品视频 | 工具 |
+| **2026-05** | [LangGraph v1.2](https://docs.langchain.com/oss/python/releases/changelog) — LangGraph 在发布历史中记录运行时和检查点改进。 | 历史 |
+| **2026-05** | [Grok 4.3 on Microsoft Foundry](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-grok-4-3-on-microsoft-foundry-latest-generation-agentic-capabilities/4517096) — Microsoft 发布 Grok 4.3 在 Foundry 上的提供公告。 | 历史 |
+| **2026-05-01** | [Microsoft Agent 365](https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/) — Agent 可观测性、治理和安全控制平台正式可用，部分集成仍处于预览阶段。 | 历史 |
+| **2026-05-19** | [Claude Managed Agents update](https://claude.com/blog/new-in-claude-managed-agents) — Anthropic 文档介绍研究预览阶段的 dreaming，以及 outcomes、多 Agent 编排和 webhook。 | 历史 |
 | **2026-05-18** | [OpenAI ↔ Dell Codex 合作](https://openai.com/news/company-announcements/) — Codex 首次进入混合云 / 本地部署，面向需要数据主权的强监管行业 | 产业 |
 | **2026-05-18** | [阿里 Qwen 3.7-Max-Preview / Plus-Preview](https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena) — LM Arena 上中文世界最高分中国模型（文本 + 视觉双赛道）| 模型 |
 | **2026-05-18** | [Boston Dynamics Atlas 100 磅操作](https://www.techtimes.com/articles/316854/20260519/boston-dynamics-reveals-how-atlas-learned-lift-100-pound-loads-hyundai-plans-30000-per-year.htm) — 现代集团承诺从 2028 起在乔治亚部署 **25K+ 台 Atlas** | 机器人 |
@@ -1985,6 +2003,7 @@
 | **2026-06** | [OutSystems Agentic Systems Platform](https://www.outsystems.com/) 发布 — 低代码平台转型为“AI 原生”多 Agent 编排底座 | 产业 |
 | **2026-05-19** | [Anthropic：Widening the conversation on frontier AI](https://www.anthropic.com/news/widening-conversation-ai) — 与智慧传统展开顶级 AI 安全对话的框架 | 产业 |
 | **2026-05-19** | [DeepSeek 招募 Jane Street 前工程师组建 AI harness 团队](https://www.scmp.com/tech/big-tech/article/3354113/deepseek-recruits-former-jane-street-engineer-catch-ai-agents-revenue-race) — DeepSeek 从模型 R&D 向 Agent 产品化转向 | 产业 |
+| **2026-05-13** | [Runway Agent](https://chatlyai.app/news/runway-agent-launch-may-2026) 发布 — 以脚本为输入、在 Gen-4 / Aleph 上端到端交付多镜头完成品视频 | 工具 |
 | **2026-05-20** | **阿里云杭州峰会** — [Qwen 3.7-Max](https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory) GA，代理型编程与长静间距任务；同期上线 T-Head **珄武 M890** AI 芯片与全栈 AI 基础设施升级 | 模型 |
 | **2026-05-20** | [BMS ↔ Anthropic Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) — 30K+ 员工统一标准 Claude Enterprise，首个顶 5 药企全公司级部署 | 产业 |
 | **2026-05-20** | [LlamaIndex ↔ Google Agents API](https://www.kucoin.com/news/flash/google-launches-agents-api-llama-index-integrates-llamaparse-for-unstructured-document-processing) — LlamaParse / LiteParse 进入 Google Agents API 沙箱；Sandboxed-Lit + ParseBench 同期上线 | 框架 |
@@ -2026,6 +2045,12 @@
 | **2026-06-12** | [美国出口管制指令迫使 Anthropic 对所有客户停用 Fable 5 + Mythos 5](https://www.anthropic.com/news/fable-mythos-access) — 首例政府强制下架已公开部署的前沿模型 | 产业 |
 | **2026-06-12** | [Kimi K2.7 Code](https://kimi.ai/) 由 Moonshot AI 发布 — 1T MoE 编程优先模型（256K，Modified MIT），推理 token 用量约降 30% | 模型 |
 | **2026-06-13** | [GLM-5.2](https://z.ai/blog/glm-5.2) 由智谱 AI 发布 — 编程优先的 744B MoE，100万 token 上下文，全部 GLM Coding Plan 套餐上线 | 模型 |
+| **2026-06-14** | [OpenAI Partner Network](https://openai.com/index/introducing-openai-partner-network/) — OpenAI 宣布投入 1.5 亿美元的合作伙伴计划，设 Select、Advanced、Elite 三档，目标年底前培训 30 万名顾问。 | 历史 |
+| **2026-06** | [ByteDance Seed 2.1 Pro / Turbo](https://seed.bytedance.com) — 字节跳动列出 Seed 2.1 系列，具体型号访问方式以官方目录为准。 | 历史 |
+| **2026-06-25–26** | [GPT-5.6 preview](https://openai.com/blog/gpt-5-6) — Sol、Terra、Luna 系列进入有限预览，之后于 7 月扩大开放。 | 历史 |
+| **2026-06** | [Fable 5 / Mythos 5 access statement](https://www.anthropic.com/news/fable-mythos-access) — Anthropic 记录访问限制及后续更新；该历史声明不代表当前模型可用性清单。 | 历史 |
+| **2026-06-26** | [GPT-4.5 ChatGPT retirement](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) — GPT-4.5 从 ChatGPT 退役；这与 2025 年 7 月 14 日关闭的 gpt-4.5-preview API 是不同事项（[API 记录](https://developers.openai.com/api/docs/deprecations)）。 | 历史 |
+| **2026-06-29** | [Accenture + ServiceNow](https://newsroom.accenture.com/news/2026/servicenow-and-accenture-launch-ai-powered-services-to-accelerate-the-shift-from-legacy-risk-platforms-to-agentic-ai) — 双方宣布托管安全服务及从旧风险平台迁移的 AI 辅助方案。 | 历史 |
 | **2026-06-30** | [Claude Sonnet 5](https://www.anthropic.com/news/claude-sonnet-5) 发布 — 迄今最具 Agent 能力的 Sonnet，低成本下性能逼近 Opus 4.8，成为 Claude.ai 免费版/Pro 新默认模型 | 模型 |
 | **2026-07-01** | [Claude Fable 5 全球恢复访问](https://www.anthropic.com/news/redeploying-fable-5) — 美国商务部于 6 月 30 日解除出口管制；Anthropic 在 Claude.ai、API、Claude Code 与 Claude Cowork 全面恢复 Fable 5 全球访问，并部署新的安全分类器。Mythos 5 仍限美国受审实体 | 模型 |
 | **2026-07-01** | [Devin Security Swarm](https://www.prnewswire.com/news-releases/cognition-launches-devin-security-swarm-to-tackle-the-vulnerability-backlog-302814800.html) 由 Cognition 发布 — 并行 Agent 漏洞发现、运行时可利用性验证与修复 PR | 工具 |
@@ -2041,10 +2066,10 @@
 | **2026-07-08** | [Robostral Navigate](https://mistral.ai/news/robostral-navigate/) — Mistral 首个机器人模型（仅凭单个 RGB 摄像头的 8B 具身导航）；OpenAI 同日审计 SWE-bench Pro，发现约 30% 任务存在缺陷 | 模型 |
 | **2026-07-09** | [GPT-5.6 Sol / Terra / Luna](https://openai.com/index/gpt-5-6/) GA — GPT-5.6 全家族在受信伙伴预览后于 ChatGPT、Codex 与 API 全面开放；[ChatGPT Work](https://openai.com/index/chatgpt-for-your-most-ambitious-work/) 同步发布，Codex 整合进 ChatGPT 桌面 App | 模型 |
 | **2026-07-09** | [Muse Spark 1.1](https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/) 由 Meta 发布 — 通过全新公开预览的 Meta Model API 提供的多模态 Agent 模型；开源 Llama 路线之外的专有模型布局 | 模型 |
-| **2026-07-10** | [Cursor 3.11](https://cursor.com/changelog) — 侧边聊天、对话历史搜索、Cloud Agent Hooks 精细化 Agent 可观测性 | 工具 |
+| **2026-07-10** | [Cursor 3.11](https://cursor.com/changelog) — Side Chats、会话历史搜索及 Cloud Agent Hooks 更新。 | Tools |
 | **2026-07-14** | [Oracle 为 Fusion AI Agent Studio 加入 AI 原生 Agentic Applications Builder](https://www.oracle.com/news/announcement/oracle-introduces-ai-native-builder-experience-2026-07-14/) — 向专业代码开发者开放 Fusion Agentic 应用；Fusion 客户免费使用 | 框架 |
-| **2026-07-16** | [Kimi K3](https://kimi.ai/) 由 Moonshot AI 发布 — 2.8T 参数稀疏 MoE（896 专家，每 token 激活 16 个），1M token 上下文，每百万 token $3/$15；承诺 7 月下旬开源全量权重 | 模型 |
 | **2026-07-15** | [Inkling](https://thinkingmachines.ai/inkling/) 由 Thinking Machines Lab（Mira Murati，前 OpenAI CTO）发布 — 975B MoE / 41B 激活，45T token 预训练，1M 上下文，Apache 2.0 开源权重发布至 Hugging Face；原生多模态（文本/图像/音频/视频）；Inkling-Small（12B 激活）同日发布 | 模型 |
+| **2026-07-16** | [Kimi K3](https://kimi.ai/) 由 Moonshot AI 发布 — 2.8T 参数稀疏 MoE（896 专家，每 token 激活 16 个），1M token 上下文，每百万 token $3/$15；承诺 7 月下旬开源全量权重 | 模型 |
 | **2026-07-17** | 欧盟 Android AI 开放裁定 — 欧盟委命令谷歌向第三方 AI 助手开放更深层 Android 权限（摄像头、麦克风、应用控制 API）；需在 2027 年 8 月前在 Android 18 中实现 | 产业 |
 | **2026-07-19** | [Qwen 3.8-Max](https://qwenlm.github.io/) 由阿里巴巴在世界人工智能大会预览 — 2.4T 参数 MoE 预览；编程、数学与多模态能力强劲 | 模型 |
 | **2026-07-20** | [Qwen-Image-3.0](https://qwenlm.github.io/) 由阿里巴巴发布 — 第三代图像生成模型，在世界人工智能大会上发布；真实感、文字渲染、多主主一致性均有改进 | 模型 |
@@ -2053,6 +2078,10 @@
 | **2026-07-24** | [Claude Opus 5](https://www.anthropic.com/news/claude-opus-5) 由 Anthropic 发布 — 第五代旗舰，性能近似 Fable 5，输入/输出定价 $5/$25 每百万 token；1M 上下文，128K 输出；Claude Max 默认模型；API: `claude-opus-5` | 模型 |
 | **2026-07-27** | [Kimi K3 开源权重已发布](https://huggingface.co/moonshotai/Kimi-K3)（Moonshot AI）— 2.8T 总 / 104B 激活，成为发布时最大的开源语言模型；专属 Kimi K3 License | 模型 |
 | **2026-07-22** | [AMD ↔ Anthropic](https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus) — Anthropic 将在 AMD Helios 机柜中部署最多 2 GW 的 AMD Instinct MI450（MI455X），2027 上半年起上线；AMD 承诺对 Anthropic 最多 50 亿美元战略股权投资 | 行业 |
+| **2026-07-23** | [FLUX 3](https://bfl.ai/blog/flux-3) 进入早期访问 — Black Forest Labs 首个统一多模态模型（图像 + 视频 + 音频 + 动作预测同架构），20 秒视频自带同步音频 | 模型 |
+| **2026-07-27** | [Anthropic 对开放权重模型的立场](https://www.anthropic.com/news/position-open-weights-models) — Dario Amodei 反对拟议中的「禁止中国开放权重模型」，主张改用芯片出口管制、遏制蒸馏，以及对所有足够强大的模型强制发布前安全测试 | 行业 |
+| **2026-07-28** | [MCP 2026-07-28 规范正式发布](https://blog.modelcontextprotocol.io/posts/2026-07-28/) — 无状态协议核心（无握手、无会话）、多往返请求、基于请求头的路由、可缓存 list 结果、RFC 9207 + CIMD 授权强化、正式扩展框架、12 个月弃用政策；TypeScript/Python/Go/C# SDK 当天同步 | 协议 |
+| **2026-07-29** | [Langfuse v4](https://github.com/langfuse/langfuse/releases/tag/v4.0.0) 与 [Milvus 3.0](https://github.com/milvus-io/milvus/releases/tag/v3.0.0) 同日发布 — 前者带全文检索 + 监控告警、API 号称快 165 倍；后者转向湖原生 External Collections，可直查 Parquet/Lance/Iceberg。同日公开 [RufRoot / CVE-2026-59726](https://hackread.com/rufroot-vulnerability-attackers-hijack-ruflo-login/)：Ruflo 的 MCP bridge 无认证暴露、可达 233 个工具，且 Agent 记忆可被投毒 | 工具 / 行业 |
 | **2026-07-30** | [Inkling-Small](https://thinkingmachines.ai/inkling/) 权重发布（Thinking Machines Lab）— 276B/12B 激活，Apache-2.0，多模态；HLE 文本 31.6%（略优于更大的 975B Inkling） | 模型 |
 | **2026-07-31** | [DeepSeek-V4-Flash-0731](https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731) 发布 — 相同 API/定价，增强 agentic 能力，超越 V4-Pro 预览版；开源至 HuggingFace。GitHub Copilot 废弃 Gemini 2.5 Pro 和 Gemini 3 Flash | 模型 / 工具 |
 | **2026-08-03** | [Claude Cowork](https://www.anthropic.com/claude-cowork) 和 [Claude Tag](https://www.businesswire.com/news/home/20260803/) 上线 — Cowork 面向非开发者的自主任务 Agent（Web + Slack），Tag 取代旧版 Claude in Slack 集成。[Embabel Agent](https://github.com/embabel/embabel-agent) 热度上升 —— Spring Framework 创始人 Rod Johnson 的 JVM Agent 框架（约 3.4K stars，Apache-2.0；最新标记版本 v0.5.0 pre-release）。新增「💱 Agent 经济与市场」分类 | 框架 / 工具 |
@@ -2068,15 +2097,12 @@
 | **2026-08-14** | [GLM-5.3](https://the-decoder.com/zhipu-ai-releases-glm-5-3-claims-its-the-strongest-open-weights-coding-model/) — 智谱号称最强开源权重编程模型（比 GLM-5.2 提升 50%）。[Anthropic 上线 Claude 文本水印](https://www.anthropic.com/news/claude-text-watermark)（SynthID-Text + C2PA），为遵守欧盟 AI 法案。[Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) Apache-2.0 开源权重。[Waymo 获批加州 18 县](https://electrek.co/2026/08/14/waymo-cpuc-approval-california-expansion-18-counties/)；[Pony.ai × Uber 计划在欧洲部署 2,000+ robotaxi](https://cnevpost.com/2026/08/14/pony-ai-uber-2000-robotaxis-europe/)。Grok 4.6 登陆 GitHub Copilot | 模型 / 机器人 / 行业 |
 | **2026-08-16** | [DeepSeek-V4-Pro GA](https://api-docs.deepseek.com/news/news260813) 宣布的高峰/低谷 API 计价于 16:00 UTC 生效 | 模型 |
 | **2026-08-18** | [ChatGPT for Teens](https://openai.com/index/chatgpt-for-teens) 上线；[ChatGPT 广告扩展至 31 个欧洲市场](https://openai.com/index/chatgpt-ads-expands-across-europe) | 行业 |
-| **2026-08-19** | [Cursor Cloud Agent Subscriptions + /goal + 独立 VM 子 Agent](https://cursor.com/changelog)；[OpenAI 重申 ZDR](https://openai.com/index/offering-zero-data-retention-for-frontier-models)；[OpenAI Agents SDK v0.22.0](https://github.com/openai/openai-agents-python/releases/tag/v0.22.0) | 工具 |
+| **2026-08-19** | [Cursor cloud agents](https://cursor.com/changelog) — Cursor 文档记录云端 Agent 订阅及子 Agent；[OpenAI Agents SDK v0.22.0](https://github.com/openai/openai-agents-python/releases/tag/v0.22.0)另有版本说明。 | 历史 |
 | **2026-08-21** | [DeepSeek-V4-Flash-Vision-Exp](https://api-docs.deepseek.com/news/news260821) 多模态 API + Files API；DeepSeek Harness **dsh-v0.1.1-rc.2**；[goose v1.47.0](https://github.com/block/goose/releases/tag/v1.47.0)；[OpenHands v1.15.0](https://github.com/All-Hands-AI/OpenHands/releases/tag/v1.15.0)；[MAF python-1.15.0](https://github.com/microsoft/agent-framework/releases) | 模型 / 工具 |
 | **2026-08-22** | [新版 MCP 路线图](https://blog.modelcontextprotocol.io/posts/mcp-roadmap/) — `2026-07-28` 之后的优先级（Agent 消息、HTTP 原生传输、Agent 身份）；MAF **dotnet-1.19.0** | 协议 / 框架 |
 | **2026-08-24** | [Agno v3.0.0](https://github.com/agno-agi/agno/releases/tag/v3.0.0) 破坏性发布（工具/媒体卸载、CodeMode）；[Embabel Agent v1.5.1](https://github.com/embabel/embabel-agent/releases/tag/v1.5.1)；[Pydantic AI v2.34.0](https://github.com/pydantic/pydantic-ai/releases/tag/v2.34.0)；Codex CLI **v0.149.1** | 框架 / 工具 |
 | **2026-08-25** | [OpenAI Jalapeño](https://openai.com/index/jalapeno-first-results) 自研推理芯片首次结果；Claude Code **v2.1.245** | 模型 / 工具 |
-| **2026-07-27** | [Anthropic 对开放权重模型的立场](https://www.anthropic.com/news/position-open-weights-models) — Dario Amodei 反对拟议中的「禁止中国开放权重模型」，主张改用芯片出口管制、遏制蒸馏，以及对所有足够强大的模型强制发布前安全测试 | 行业 |
-| **2026-07-23** | [FLUX 3](https://bfl.ai/blog/flux-3) 进入早期访问 — Black Forest Labs 首个统一多模态模型（图像 + 视频 + 音频 + 动作预测同架构），20 秒视频自带同步音频 | 模型 |
-| **2026-07-28** | [MCP 2026-07-28 规范正式发布](https://blog.modelcontextprotocol.io/posts/2026-07-28/) — 无状态协议核心（无握手、无会话）、多往返请求、基于请求头的路由、可缓存 list 结果、RFC 9207 + CIMD 授权强化、正式扩展框架、12 个月弃用政策；TypeScript/Python/Go/C# SDK 当天同步 | 协议 |
-| **2026-07-29** | [Langfuse v4](https://github.com/langfuse/langfuse/releases/tag/v4.0.0) 与 [Milvus 3.0](https://github.com/milvus-io/milvus/releases/tag/v3.0.0) 同日发布 — 前者带全文检索 + 监控告警、API 号称快 165 倍；后者转向湖原生 External Collections，可直查 Parquet/Lance/Iceberg。同日公开 [RufRoot / CVE-2026-59726](https://hackread.com/rufroot-vulnerability-attackers-hijack-ruflo-login/)：Ruflo 的 MCP bridge 无认证暴露、可达 233 个工具，且 Agent 记忆可被投毒 | 工具 / 行业 |
+| **2026-06-07** | [PerspectiveGap](https://arxiv.org/abs/2606.08878) — 多 Agent 编排提示词基准首次提交 arXiv；v2 于 7 月 12 日更新。 | Benchmarks |
 
 ---
 
