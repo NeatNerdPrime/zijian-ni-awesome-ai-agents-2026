@@ -691,6 +691,7 @@
 
 - [A2A Protocol v1.0 + AP2 Agent Payments](https://github.com/google/A2A) - 🆕 **2026 年 Q2 / 持续更新**。A2A v1.0（Linux Foundation）新增签名 Agent Card（加密身份）、多协议支持、企业级多租户、向后兼容层。AP2（Agents to Payments Protocol，Google Cloud 于 2025 年 9 月宣布）加入，获 60+ 支付机构支持（Adyen、American Express、Mastercard、PayPal 等）；25,000+ GitHub star；AWS/Microsoft/Google 已集成。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle%2FA2A&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [minia2a](https://minia2a.uk) - 🆕 AI Agent M2M 微支付市场 —— **173+ 个支持 x402 小额支付的 API**（燃气预言机、网页抓取、Token 安全检测、验证码等 80+ 类型），基于 Base L2 的 USDC 微支付。**34 个已注册 Agent，311K+ 次请求**。钉包式身份验证（无需 API 密钥）；Agent 用钉包地址认证并设置可编程的消费上限。86 个端点免费试用。基于 x402（Linux Foundation，40+ 成员组织）原生构建。
+- [Cog Depot](https://cogdepot.com) - ⚠️ **未验证**（早期自荐项目，未核实独立采用）。Agent 市场通过 REST 及 MIT [MCP 客户端](https://github.com/cogdepot/mcp-server)提供发现、协商和交易对手引荐；经纪服务费托管不等于底层交易款项托管。
 - [MCPize](https://mcpize.com) - 🆕 MCP 服务器变现平台 —— 上传 MCP 服务器、设定价格，平台负责计费和发现。**85% 收入分成给开发者**。
 - [AgentForge](https://github.com/doggychip/agentforge) - ⚠️ **未验证**（早期，3 star）。AI Agent、工具和内容的订阅市场，300+ Agent，统一 API，支持 MCP，90% 创作者收益分成。列出供观察，使用前请自行评估。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fdoggychip%2Fagentforge&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Cloudflare Wallets](https://blog.cloudflare.com/agents-week-review-august-2026/) - 🆕 ⚡ **2026-08-04（Cloudflare Agents Week，8 月 3–7 日）**。面向 Agentic Internet 的可编程钉包 —— `cloudflare.pay` 为 AI Agent 提供安全的自主支付能力，使其成为 Agent 经济的参与者。与 WriteGuard、WebMCP、MCPv2、Workers AI + AI Gateway 统一控制台同期发布。
@@ -866,60 +867,63 @@
 
 ## 🤖 Physical AI / 具身智能
 
-*能感知、推理、在物理世界中行动的 AI —— 人形机器人、工厂自动化、Physical AI 基础设施。继语言 Agent 之后的下一波。**2026 年 H1 人形机器人初创企业全球共融资 86 亿美元，创历史新高。***
+*用于感知和作用于物理世界的模型、工具与部署案例。区分已发布软件、研究演示、试点及未来生产计划。*
 
 ### 基础模型与研究
-- [Microsoft physical-ai-toolchain](https://github.com/microsoft/physical-ai-toolchain) - 🆕 **2026 年 6 月**。生产就绪的开源工具链，整合微软 Azure 云服务与 NVIDIA 物理 AI 栈——覆盖自主移动机器人与机械臂的数据整理、训练与部署的 Agentic 工作流。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmicrosoft%2Fphysical-ai-toolchain&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [PhyAgentOS](https://github.com/PhyAgentOS/PhyAgentOS) - 🆕 基于 Agentic 工作流的自进化具身 AI 操作系统。将认知功能与硬件解耦，实现跨平台机器人部署并内建可审计性。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FPhyAgentOS%2FPhyAgentOS&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Microsoft physical-ai-toolchain](https://github.com/microsoft/physical-ai-toolchain) - 开源机器人工作流框架，串联数据采集、训练、验证和机器人部署；默认笔记本层级在本地运行，Azure、Kubernetes 和机群服务按更高层级引入。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmicrosoft%2Fphysical-ai-toolchain&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [PhyAgentOS](https://github.com/PhyAgentOS/PhyAgentOS-core) - 🆕 ⚡ **v1.0.0 发布于 2026-09-05**。MIT 具身 Agent 框架，提供受控机器人工具调用、操作前后观测与任务结果验证；发布包包含 Python 包及 Node 桥接。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FPhyAgentOS%2FPhyAgentOS-core&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [ENPIRE](https://research.nvidia.com/labs/gear/enpire/) - 🆕 **2026-06**。NVIDIA/CMU/UC Berkeley 联合框架，让 AI Agent 自主开展机器人研究 —— 管理双臂机器人、修改算法、训练策略，全程无需人工干预。
-- [Kairos](https://futureiot.tech/kairos-model-breaks-new-ground-for-open-source-embodied-intelligence/) - 🆕 **2026-06-15**。ACE ROBOTICS 开源其 Kairos 世界模型 —— 首个在 RoboTwin 2.0、LIBERO-Plus、WorldModelBench Robot 与 DreamGen 上超越 VLA 系统的世界模型路线；权重上 GitHub / Hugging Face / ModelScope。
-- [DYNA-2](https://www.dyna.co/dyna-2) - 🆕 ⚡ **2026 年 8 月**。Dyna Robotics 的世界-动作模型，以超过 **100 万小时第一人称人类视频**（约 170 年）预训练，并验证了人类到机器人迁移的 scaling law —— 客户现场零样本通过率 87%，Dyna-1 为 46%。让机器人在餐饮、物流、工厂场景下一班接一班自主完成端到端工作流；每次部署均增强车队能力并支持从单一环境扩展至百个环境。
-- [NVIDIA Cosmos 3](https://blogs.nvidia.com/blog/cosmos-3-physical-ai-open-world-foundation-model/) - 🆕 **2026-06**。开放世界基座模型，把**视觉推理、多模态生成、动作预测**统一到一个模型里，让机器人、自动驾驶和视觉 Agent「先想再动」——而不是在控制器上外挂一个纯文本模型。NVIDIA 称其为 VANTAGE-Bench（智慧基建场景理解）和 TAR 交通异常推理挑战上排名第一的开源 VLM，Cosmos 3 各变体在 Artificial Analysis 开源权重榜领先，并在 Physics-IQ / R-Bench / PAI-Bench 等世界生成基准上登顶。采用 Linux Foundation 的 **OpenMDW 1.1** 许可——单一的模型中心许可，覆盖权重、架构、文档、数据集、基准与代码。可在 build.nvidia.com、Hugging Face 获取，也可用 NIM 微服务部署。含 **Cosmos 3 Edge**（4B 参数）端侧版本；同期启动与 FANUC、富士通、索尼集团合作的 **Cosmos Coalition**。
+- [Kairos 3.1](https://huggingface.co/ACERobotics/kairos-4B-robot-LIBERO-plus) - 🆕 **2026-07-02**。ACE Robotics 发布 4B 世界动作模型权重与推理代码；RoboTwin 2.0、LIBERO-Plus 版本同时预测未来视觉状态和机器人动作，模型卡标注 Apache-2.0。
+- [DYNA-2](https://www.dyna.co/dyna-2) - 🆕 **2026 年 8 月**。Dyna Robotics 的世界动作模型使用第一人称人类视频训练机器人操作能力；客户现场成绩为厂商评测，不是统一的独立排行榜结果。
+- [NVIDIA Cosmos 3](https://blogs.nvidia.com/blog/cosmos-3-physical-ai-open-world-foundation-model/) - 🆕 **2026-05-31**。融合视觉推理、多模态生成和动作预测的世界基础模型，用于机器人、驾驶和合成数据工作流；NVIDIA 以 OpenMDW 1.1 提供模型材料，性能数据为厂商报告。
 
-- [Google Gemini Robotics-ER 1.6](https://deepmind.google/blog/gemini-robotics-er-1-6/) - 🆕 2026-04-14。机器人 AI，空间/具身推理增强（含模拟仪表读数），可通过 Gemini API 使用。
-- [Google Gemini Robotics 2](https://deepmind.google/research/robotics/) - 🆕 **2026-07-30**。Google DeepMind 下一代机器人 AI 套件 —— 全身协调控制、精细操作（绳结、拉链等），新型腿部运动能力；包含 Gemini Robotics ER 2「高层大脑」模型，新机器人本体通常只需不到 200 个示例、数小时适配即可上手。闭源研究项目，通过特定合作伙伴关系提供访问。
+- [Google Gemini Robotics-ER 1.6 (legacy)](https://ai.google.dev/gemini-api/docs/robotics-overview) - 💤 已由 ER 2 接替：Google 文档指定 `gemini-robotics-er-1.6-preview` 于 2026 年 8 月底下线，应迁移至 ER 2 标准或流式预览端点。
+- [Google Gemini Robotics 2 / ER 2 / On-Device 2](https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/) - 🆕 **2026-07-30**。包含全身控制 VLA、具身推理 VLM 及端侧控制模型；ER 2 提供 [Gemini API 标准与流式预览](https://ai.google.dev/gemini-api/docs/robotics-overview)，机器人控制模型通过合作伙伴/测试者计划提供。
 - [Project Prometheus (Bezos)](https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world/) - 🆕 💰 **2026-06-11**。贝佐斯联合主导的 Physical AI 项目，以 $41B 估值融资 $12B，目标打造面向物理世界的「通用人工工程师」。
-- [NVIDIA Isaac GR00T](https://developer.nvidia.com/isaac/gr00t) - 人形机器人基础模型平台。GTC 发布、Hannover Messe 2026 扩展。
-- [NVIDIA Industrial AI Cloud](https://nvidianews.nvidia.com/) - 🆕 2026-04（Hannover Messe）。德国电信合建 AI factory。
+- [NVIDIA Isaac GR00T N1.7](https://github.com/NVIDIA/Isaac-GR00T) - 开放的人形机器人 VLA，提供权重、微调和推理代码；N1.7 使用 Cosmos-Reason2/Qwen3-VL 骨干及相对末端执行器动作，采用 Apache-2.0 许可证。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FNVIDIA%2FIsaac-GR00T&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Physical Intelligence openpi (π0 / π0-FAST / π0.5)](https://github.com/Physical-Intelligence/openpi) - Physical Intelligence 官方机器人策略及训练/推理代码，含流匹配 π0、自回归 π0-FAST 和 π0.5；已发布检查点可适配新机器人数据，模型需分别核对条款。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FPhysical-Intelligence%2Fopenpi&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Physical Intelligence π0.7](https://www.pi.website/blog/pi07) - 🆕 🧪 **2026-04-16 研究报告**。通过语言、执行元数据及视觉子目标控制的 VLA；作者展示跨任务、跨机器人泛化，该报告不等于 openpi 已公开此模型权重。
+- [LeRobot](https://github.com/huggingface/lerobot) - Hugging Face 机器人库，提供数据集、预训练策略、模仿/强化学习及硬件集成；代码为 Apache-2.0，模型许可证以各自模型卡为准。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fhuggingface%2Flerobot&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [OpenVLA](https://github.com/openvla/openvla) - 💤 开放视觉语言动作模型的历史基线，含机器人操作权重及微调/推理代码；仓库最后推送于 2025 年 3 月。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fopenvla%2Fopenvla&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Figure Index / Helix training data](https://www.figure.ai/news/introducing-index) - 🆕 ⚡ **2026-08-25**。Figure 为 Helix 建立的专用人类视频采集计划；[9 月 3 日 Nscale 协议](https://www.figure.ai/news/figure-and-nscale-sign-strategic-partnership)以 2027 年下半年开始部署 Vera Rubin 算力为目标，尚非已交付容量。
+- [Deutsche Telekom / NVIDIA Industrial AI Cloud](https://www.telekom.com/en/newsroom/latest-updates/media-information/2026/2/germany-s-first-ai-factory-for-industry) - **2026-02-04 投入运营**。与 NVIDIA、Polarise 共建的慕尼黑 AI 基础设施，面向工业训练、仿真和机器人工作负载，属于计算基础设施。
 
 ### 人形机器人
 
-- [Tesla Optimus Gen3 (V3)](https://www.teslarati.com/tesla-optimus-awe-2026-shanghai/) - 🆕 **AWE 2026 上海首秀**。首款量产 Optimus；Fremont 产线 2026 年 1 月启动，初期目标 5-10 万台/年，初始售价约 3 万美元，2026 年底开放小批量外部销售。37 关节，1.2 m/s 步速，22 自由度手部。
-- [Figure 03 (Helix AI)](https://blog.robozaps.com/b/figure-03-review) - 🆕 **2025 年末发布，2026 年量产爬坡**。Figure 首款专为家用设计的型号：柔性纺织外壳、无线充电、触觉传感。2026 年 5 月演示：两台 F.03 仅靠视觉协作，2 分钟内自主完成清扫房间和铺床。
+- [Tesla Optimus](https://www.tesla.com/AI) - Tesla 人形机器人项目，以感知、规划、平衡和操作能力执行重复性物理任务；量产目标与演示需同已独立确认的客户部署区分。
+- [Figure 03](https://www.figure.ai/news/introducing-figure-03) - **2025-10-09** 发布的人形机器人，围绕 Helix 设计，配备触觉传感、柔性外覆及无线充电，面向家庭与商业场景。
 - [Figure 04](https://autonews.gasgoo.com/articles/news/figure-founder-f04-robot-initiates-component-delivery-process-2054560059634376705) - 🆕 **2026-05-13**。Brett Adcock 宕告 Figure 04 设计定型，零部件已开始交付，使用 Helix VLA 型号。
-- [Helix 02 包裹分拧 72h 运行](https://oodaloop.com/briefs/technology/figure-ais-humanoid-robots-sort-88000-packages-in-72-hours-during-nonstop-livestream/) - 🆕 **2026-05-13 – 16**。Figure F.03 机器人队靠 Helix 02 完全自主在包裹分拧线上运行：首天 ~22K 包裹，头 24 小时 ↑到 ~30K，压力测试下约 72 小时 ~88K 包裹后出现机械故障。首份公开的家用型人形机器人连续作业证据。
-- [Figure F.03 vs 人类 8 小时分拧挑战](https://incrypted.com/en/figure-ai-held-a-human-vs-robot-marathon/) - 🆕 **2026-05-18**。Figure 首场公开的人机对决：在同一条分拧线上，人类员工以 12,924 件（2.79 秒 / 件）势均微赢 F.03 机器人的 12,732 件（2.83 秒 / 件）。这是到目前为止公开资料中人与机器在实际产业任务上最贴近的一次。
-- [Boston Dynamics Atlas 100 磅操作 + 现代集团 25K 刷屏计划](https://www.techtimes.com/articles/316854/20260519/boston-dynamics-reveals-how-atlas-learned-lift-100-pound-loads-hyundai-plans-30000-per-year.htm) - 🆕 **2026-05-18 / 19**。Boston Dynamics 发布视频与技术博文，展示 Atlas 通过强化学习 + 大规模仿真能举起并携带 **超 100 磅**负荷（冰箱 / 洗衣机），全身控制能适应重量转移，不依赖逐件识别。现代汽车集团承诺从 2028 年起在 Hyundai/Kia 工厂部署 **25,000+ 台 Atlas**。
-- [现代集团完成对 Boston Dynamics 的全资收购](https://www.techtimes.com/articles/320483/20260714/boston-dynamics-now-fully-hyundais-atlas-exits-world-cup-eyes-factory-floor.htm) - 🆕 💰 **2026 年 6 月末**。现代汽车集团以 $325M 收购软银剩余 9.65% 股份，按约 $3.4B 估值实现 100% 持股。第 5 代新 Atlas 于 FIFA 世界杯（2026-07-05）公开亮相；计划 2027 年面向外部客户商用，2028 年部署于佐治亚 Metaplant。
-- [Boston Dynamics Atlas Gen 5](https://www.bostondynamics.com/atlas) - 🆕 **2026 年**。第五代 Atlas，复杂度「几乎降低了一个数量级」，生产成本更低，易于广泛部署。首批部署：现代汽车 Metaplant 应用中心与 Google DeepMind。
-- [Figure 03 × BMW](https://www.figure.ai/) - 🆕 **2026 年 6–7 月**。Figure AI 的 Figure 03 人形机器人部署于宝马化工厂 BMW Spartanburg 生产线，执行物流任务——Figure 硬件在汽车制造业的首个大规模商业化部署。
-- [Unitree G1 进驻 JAL 羽田机场](https://www.techtimes.com/articles/316862/20260519/jal-deploys-unitree-g1-robots-haneda-us-congress-moves-blacklist-supplier-national-security.htm) - 🆕 **2026-05**。日本航空在羽田启动地面运作试点（行李装卸 / 集装箱运输 / 机舱清洁），官方定义为 **全球首家在运营航空业务中录用双足机器人**的航司。同一周美国国会推动将 Unitree 列入实体清单，embodied AI 供应链加速地缘政治化。
-- [Figure 02 + Helix 02](https://en.wikipedia.org/wiki/Figure_AI) - 🆕 **2026 年 1 月**。Helix 02 扩展了全身自主能力（装卸洗碗机、叠衣服）；BotQ 工厂额定年产能 1.2 万台。
-- [Unitree G1 + H2](https://community.robotshop.com/blog/show/unitree-robotics-at-ces-2026-a-clear-signal-of-whats-coming-next) - 🆕 **CES 2026**。G1 跳舞 / 拳击 / 滑冰演示，2 月放出自主功夫展示；以及 31+ 自由度的 H2 人形。
-- [Unitree R1 Air](https://humanoid.guide/unitrees-4900-r1-air-pushes-humanoids-toward-mass-market/) - 🆕 消费级人形机器人，售价 **4,900 美元**——能跑、翻滚、倒立行走。
-- [Unitree Gen 2 (lifelike skin)](https://www.youtube.com/watch?v=Gmp82MuTFsM) - 🆕 拟真人造皮肤，内嵌压力 / 温度 / 触觉传感器。
-- [Unitree GD01](https://www.extremetech.com/computing/unitree-will-sell-you-a-personal-mecha-robot-for-650000) - 🆕 **2026 年 5 月**。接近 10 英尺的载人机甲；驾驶员操控，可在双足与四足模式切换。售价人民币 390 万元起（约 65 万美元）。预示具身 Agent 栈开始向操作员驾驶形态分叉。
-- [Honor (荣耀) Humanoid](https://www.npr.org/2026/04/20/g-s1-118086/humanoid-robot-half-marathon) - 🆕 **2026-04-19**。以 50:26 赢得北京亦庄人形机器人半程马拉松 —— 打破该距离的人类世界纪录。
-- [Zhiyuan (智元) AGIBOT](https://www.agibot.com/article/231/detail/62.html) - 🆕 🇨🇳 **2026-04-17（APC 2026）**。宣布 2026 为 "商用量产元年"（Deployment Year One）；第 10,000 台机器人下线交付，七大行业解决方案，开源 AIMA 架构（灵渠 OS Link-U、Genie Studio）。
+- [Figure package-sorting livestream](https://incrypted.com/en/figure-ai-held-a-human-vs-robot-marathon/) - **2026-05-18 报道**。二手报道转载 Figure 分拣直播及厂商长时间自主运行主张；这是出现过错误的厂商演示，不能作为独立可靠性基准。
+- [Atlas production / Hyundai factory plan](https://bostondynamics.com/blog/boston-dynamics-unveils-new-atlas-robot-to-revolutionize-industry/) - **2026-01-05 公告**。Boston Dynamics 计划 2026 年向现代及 Google DeepMind 交付首批 Atlas 机群，2027 年扩展客户；现代工厂年产 3 万台机器人属于未来产能目标。
+- [Boston Dynamics Atlas](https://bostondynamics.com/products/atlas/) - 用于物料搬运的工业人形机器人，可自主更换电池并通过 Orbit 集成机队；官方规格区分 50 kg 瞬时负载与 30 kg 持续负载。
+- [Figure 03 × BMW](https://www.figure.ai/news/f-03-at-bmw) - 🆕 **2026-06-30**。Figure 宣布 F.03 进入 BMW，承接此前 F.02 项目；这是部署进展，并非双方首次合作。
+- [JAL / GMO airport humanoid trial](https://press.jal.co.jp/ja/release/202604/009501.html) - **2026-04-27 公告**。羽田机场地勤试点计划持续 2026 年 5 月至 2028 年，先分析流程和评估安全，再逐步测试机器人；行李搬运和客舱清洁属于候选应用。
+- [Figure Helix 02](https://www.figure.ai/news/helix-02) - 🆕 **2026-01-27**。Figure 的 VLA 系统把像素到动作控制扩展至全身，协同行走、平衡和操作；演示包含连续厨房工作流。
+- [Unitree G1 / H2](https://www.unitree.com/about/) - 用于宇树运动与操作演示的人形平台；官方历史记录 H2 于 2025 年 10 月发布，并在 2026 年展示 G1/H2。
+- [Unitree R1 / R1 Air](https://www.unitree.com/mobile/R1/) - 🇨🇳 轻量人形机器人系列；官方 R1 Air 起价 $4,900，不含税费及运输。规格表仅为 R1 EDU 标注二次开发支持，科研采购应核对版本。
+- [Unitree GD01](https://www.unitree.com/about/) - **2026-05-12 发布**。可在双足与四足构型间切换的载人驾驶机器人，应与自主执行任务的人形 Agent 区分。
+- [HONOR Robotics D1 / A1](https://www.honor.com/ie/events/honor-robot/) - 在 2026 北京亦庄机器人半马展示的人形研究平台，具备自主感知、导航和动态运动功能；竞赛演示不能代表通用工作场景能力。
+- [Zhiyuan (智元) AGIBOT](https://www.agibot.com/article/231/detail/62.html) - 🇨🇳 **APC 2026**。智元介绍七类工业解决方案及具身智能技术栈，并报告 2026 年 3 月第 1 万台机器人下线；这是制造里程碑，不能等同于独立测得的客户使用规模。
 - [Unitree H 系列](https://www.unitree.com/) - 🇨🇳 国产 Boston Dynamics 对手，2026 持续迭代。
-- [宇树（Unitree）上海 IPO](https://finance.eastmoney.com/a/202608193846301835.html) - 🆕 ⚡ 🇨🇳 **2026-08-19 上市**（8 月 10 日网上发行）。宇树科技登陆上交所科创板（688836），成为中国首家上市的人形/足式机器人厂商 —— 发行 4045 万股，发行价 150.80 元，募资约 61.0 亿元；2025 年营收 16.99 亿元、净利润 2.78 亿元。散户申购超额认购数千倍（彭博：5,526 倍），灰市价格预示首日大幅高开。商业化人形机器人领域的里程碑。
-- [1X NEO（消费级人形机器人）](https://www.1x.tech/discover/neo-home-robot) - 🆕 **2025 年 10 月 28 日开放预订**，首批美国家庭交付于 2026 年。5'6"/66 磅家庭人形，22 自由度灵巧手、柔体外壳、4 小时续航、机载 LLM、噪音约 22dB。早鸟价 20,000 美元 + 200 美元定金，或 499 美元/月订阅。隐私 "no-go" 区域与人脸模糊内置。首款真正交付家庭的消费级人形。
-- [三菱汽车 × Highlanders 人形机器人 MOU](https://www.mitsubishi-motors.com/en/newsroom/newsrelease/2026/20260709_1.html) - 🆕 **2026-07-09**。三菱汽车与东京大学初创公司 Highlanders 签署 MOU，将在其京都工厂共同研发并量产人形机器人（焊接、物流、发动机装配）—— 据报道目标约 1,000 台/月，最早 2027 年投产，以应对日本劳动力短缺。
+- [Unitree Shanghai IPO](https://finance.eastmoney.com/a/202608193846301835.html) - 🇨🇳 **2026-08-19**。东方财富转载上交所上市公告：宇树科技（688836）发行约 4,044.64 万股，发行价 150.80 元；此为公司动态，不属于机器人能力评测。
+- [1X NEO](https://www.1x.tech/discover/neo-home-robot) - **2025-10-28** 开放预订的家用人形机器人，计划于 2026 年在美国交付，陌生家务可由专家引导；[2026-07-09 手部更新](https://www.1x.tech/discover/neos-hands)引入 25 自由度手。预订和演示不代表已广泛自主部署于家庭。
+- [Mitsubishi Motors × Highlanders humanoid MOU](https://www.mitsubishi-motors.com/en/newsroom/newsrelease/2026/20260709_1.html) - **2026-07-09**。谅解备忘录拟探索人形机器人研发、三菱制造现场试用及京都工厂生产；2027 年初投产仍处于可行性研究阶段。
 - [Agile Robots](https://www.agile-robots.com/) - 德中合资机器人公司，构建 AI 驱动的工业操作系统。
 - [Shenzhen Humanoid Pilot Line](https://www.chinadailyhk.com/hk/article/631892) - 🇨🇳 🆕 **2026-04-12** 首条人形机器人中试线（深圳乐聚 + 东方精工）。2 小时一台，年 500~1000 台。佛山 1 万台 / 年大规模工厂同步规划中。
 
 ### 消费级机器人 / 可穿戴
 
-- [Doubao AI Glasses (字节)](https://technode.com/2026/03/18/bytedance-reportedly-delays-doubao-ai-glasses-launch-plan/) - ⚠️ 🇨🇳 一代产品据报道在发布前被砍（"过于平庸"）；在 AI 眼镜市场年增约 130% 的背景下，字节正加速推进双模型的二代产品（2026 年 7 月）。
+- [Doubao AI Glasses (ByteDance)](https://technode.com/2026/03/18/bytedance-reportedly-delays-doubao-ai-glasses-launch-plan/) - ⚠️ 🇨🇳 **2026-03-18 报道**：第一代生产计划延迟，上市可能性较低；该来源未确认正式公开发售。
 - [Nothing AI Glasses/Earbuds](https://techcrunch.com/2026/04/01/nothings-ai-devices-plan-reportedly-contains-smart-glasses-and-earbuds/) - 🧪 2026 年 3 月报道：Nothing 计划推出 AI 智能眼镜 + 耳机，目标 2027 年发布。
-- [Samsung Galaxy S26 (Gauss 2.3)](https://www.samsung.com/) - 端侧 Agent。
-- [Meta Ray-Ban Display / Ray-Ban Meta](https://www.meta.com/ai-glasses/) - Meta 在售的 AI 眼镜产品线（含配 Neural Band 的 Display 型号）；Ray-Ban Meta Gen 3 传闻 2026 年底发布。
+- [Samsung Galaxy AI](https://www.samsung.com/us/galaxy-ai/) - Samsung 设备上的通信、搜索及内容辅助 AI 功能；可用性与处理位置随功能、设备及地区而异。
+- [Meta Ray-Ban Display / Ray-Ban Meta](https://www.meta.com/ai-glasses/) - Meta AI 眼镜产品系列，包括显示型及相机/音频型；支持功能和供应情况应按官方地区目录核对。
 
 ### 自动驾驶
 
-- [Tesla FSD v14](https://www.tesla.com/) - ⚡ 软件更新 2026.21.6（2026-08-10）为 HW4 车型捆绑推送 **FSD v14.3.7**，同时面向老款 HW3 车型提供 **FSD v14.1 "Lite"**（因 ECU 过热问题于 8 月 11 日重新发布）；HW3 Lite 正从美国/加拿大扩展到韩国。无监督运行仍限于 robotaxi 项目。
-- [Waymo](https://waymo.com/) - ⚡ 美国多城市 L4 商业化推进。**2026-08-14**：CPUC 批准 Waymo 在[加州 18 个县](https://electrek.co/2026/08/14/waymo-cpuc-approval-california-expansion-18-counties/)（湾区、萨克拉门托、洛杉矶、橙县、圣地亚哥等）运营付费无人驾驶 robotaxi 服务 —— 迄今最大的授权范围，涵盖高速公路、乡村道路与夜间驾驶；铺开将「循序渐进、以我们的安全框架为准」。**08-20**：[休斯顿取消候补名单，向所有人开放](https://waymo.com/blog/shorts/houston-open-to-all/)（此前已服务超 10 万候补用户）；同日公开[车载算力栈](https://waymo.com/blog/2026/08/look-under-our-trunk/)，含自研 **5nm 传感器融合 ASIC**（前端 ML 超 1000 TOPS）。**08-25**：宣布进军[慕尼黑/德国](https://waymo.com/blog/2026/08/waymo-in-munich/) —— 先人工测绘，目标 2027 年底前后开通商业 robotaxi。
-- [Pony.ai × Uber 欧洲](https://cnevpost.com/2026/08/14/pony-ai-uber-2000-robotaxis-europe/) - 🆕 ⚡ 🇨🇳 **2026-08-14**。小马智行与 Uber 扩大合作，将在欧洲五座城市及中东部署 **2,000+ 辆 L4 robotaxi**，在已运营的萨格勒布服务基础上推进 —— 从试点跃升到车队级部署。
+- [Tesla FSD (Supervised)](https://www.tesla.com/support/fsd) - 需要驾驶员主动监督的辅助驾驶软件；官方支持页面明确说明它不会使车辆成为自动驾驶汽车，功能随硬件、软件及地区变化。
+- [Waymo](https://waymo.com/) - ⚡ **2026-09-01**：[Denver、San Diego、Tampa 迎来首批公众乘客](https://waymo.com/blog/2026/09/ride-in-denver-san-diego-tampa/)，提供无人驾驶载客的城市增至 14 个，仍从意向名单逐步开放；Houston 于 8 月 20 日面向所有人开放。未来市场公告需与实际服务区分。
+- [NVIDIA Alpamayo 2 Super](https://huggingface.co/nvidia/Alpamayo2-Super) - 🆕 **2026-08-04 公开权重**。用于自动驾驶研究的推理 VLA，生成轨迹及因果推理，配套 AlpaSim、AlpaGym；模型发布并不等于已部署自动驾驶系统获得认证。
+- [Pony.ai × Uber Europe](https://cnevpost.com/2026/08/14/pony-ai-uber-2000-robotaxis-europe/) - 🇨🇳 **2026-08-14 报道**。合作扩展计划在欧洲五城部署超过 2,000 辆 Robotaxi，并计划进入中东；分阶段部署计划不代表全部车队已运营。
 - [WeRide / Pony.ai / Baidu Apollo](https://www.weride.ai/) - 🇨🇳 中国 L4 车队扩区。
 
 ---
@@ -928,55 +932,55 @@
 
 *Agent 在仿真世界中训练、观察、应力测试的研究环境。世界模型 / 具身研究渗透到语言 Agent 设计中后越来越重要。*
 
-- [Generative Agents](https://github.com/joonspk-research/generative_agents) - 💤 斯坦福经典 *Smallville*（Park et al., 2023）。25 个 LLM 角色 + 记忆 + 反思 + 计划。后续多 Agent 论文几乎都借鉴此实现。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fjoonspk-research%2Fgenerative_agents&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Voyager](https://github.com/MineDojo/Voyager) - 💤 Minecraft 终生学习 Agent —— GPT-4 + skill library + curriculum（Wang et al., 2023）。开放式 Agent 评测的经典。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FMineDojo%2FVoyager&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Generative Agents](https://github.com/joonspk-research/generative_agents) - 💤 Smallville 历史研究实现（Park 等，2023），以记忆、反思和规划驱动 25 个模拟角色。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fjoonspk-research%2Fgenerative_agents&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Voyager](https://github.com/MineDojo/Voyager) - 💤 Minecraft 历史 Agent（Wang 等，2023），结合 GPT-4、自动课程与持续增长的可执行技能库进行开放探索。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FMineDojo%2FVoyager&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [SWE-Gym](https://github.com/SWE-Gym/SWE-Gym) - 用真实 GitHub issue 训练 SWE Agent 的开放环境，SWE-bench 配套。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FSWE-Gym%2FSWE-Gym&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [WebArena](https://webarena.dev/) - 真实可复现的 Web 环境（Reddit / 购物 / GitLab 克隆），OSWorld 与多数浏览器 Agent 论文使用。**[WebArena-Verified](https://github.com/ServiceNow/webarena-verified)**（ServiceNow，2025-12）：全部 812 个任务、参考答案与评测器经人工复核；用确定性的类型感知校验取代 LLM-as-judge；另提供 258 题 "Hard" 子集以降低评测成本。
+- [WebArena / WebArena-Verified](https://webarena.dev/) - 用于浏览器 Agent 评测的自托管网页环境；[WebArena-Verified](https://github.com/ServiceNow/webarena-verified)提供经复核任务、参考答案与确定性评估器，提高复现性。
 - [WorkArena](https://github.com/ServiceNow/WorkArena) - ServiceNow 出品的企业工作场景 Web Agent 基准。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FServiceNow%2FWorkArena&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Genie 3](https://deepmind.google/models/genie/) - Google DeepMind 可玩 3D 世界模型，从 prompt 生成。闭源研究。
+- [Genie 3 / Project Genie](https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/) - 🧪 Google 通过 Project Genie 原型提供交互式世界模型体验，最初于 2026-01-29 向美国 Google AI Ultra 订阅者开放；这是托管实验服务，并非开放模型权重。
 - [NVIDIA Cosmos](https://github.com/nvidia-cosmos/cosmos-predict2) - 📦 **已归档**。具身 AI / 机器人的世界模型基础，生成物理合理的视频未来。predict1 已弃用，由 Cosmos-Predict2 接替（Predict 2.5 于 CES 2026 发布）；另见上方 Cosmos 3（2026-06）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fnvidia-cosmos%2Fcosmos-predict2&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Snowflake Agent World Model (AWM)](https://github.com/Snowflake-Labs/agent-world-model) - 🆕 **2026 年 2 月 10 日开源，5 月 1 日被 ICML 2026 接收**。合成环境生成流水线，一次性产出 1,000 个可执行的、SQL 数据库驱动的工具调用环境（35K+ 工具，10K 任务），通过统一 MCP 接口暴露——支持大规模多回合 Agent RL。基础设施已合入 `meta-pytorch/OpenEnv`。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FSnowflake-Labs%2Fagent-world-model&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Qwen-AgentWorld](https://github.com/QwenLM/Qwen-AgentWorld) - 🆕 **2026 年 6 月**。原生语言世界模型，通过预测环境（网页、操作系统、终端）的下一状态而非 Agent 的下一动作来模拟 Agentic 环境。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FQwenLM%2FQwen-AgentWorld&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Qwen-AgentWorld](https://github.com/QwenLM/Qwen-AgentWorld) - 🆕 **2026-06-24**。Qwen-AgentWorld-35B-A3B 是预测环境状态转移的开放语言世界模型，配套发布覆盖七类 Agent 场景的 AgentWorldBench。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FQwenLM%2FQwen-AgentWorld&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [SimWorld](https://github.com/SimWorld-AI/SimWorld) - 🆕 基于 Unreal Engine 5 的开放式真实感模拟器，用于在复杂物理与社交环境中测试自主 AI Agent。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FSimWorld-AI%2FSimWorld&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Newton](https://github.com/newton-physics/newton) - 🆕 ⚡ **v1.5.1，2026-08-28**。基于 NVIDIA Warp 的 GPU 加速机器人物理引擎，NVIDIA、Google DeepMind、Disney Research 参与开发；Apache-2.0。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fnewton-physics%2Fnewton&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [NVIDIA Isaac Lab](https://github.com/isaac-sim/IsaacLab) - 基于 Isaac Sim 的官方机器人学习框架，支持强化学习、模仿学习和评测；应按模拟器版本选取兼容的稳定版或明确标识的 beta。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fisaac-sim%2FIsaacLab&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Genesis](https://github.com/Genesis-Embodied-AI/genesis-world) - 面向机器人学习与具身 AI 的物理仿真平台，支持多类材料和机器人；仓库已从 `Genesis` 迁移至 `genesis-world`。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FGenesis-Embodied-AI%2Fgenesis-world&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 
 ---
 
 ## 📊 评测与 Leaderboard
 
-*跟踪前沿 AI 能力的标准评测套件与实时榜单。*
+*评测套件及动态排行榜；2026-09-08 核对。*
 
-> ⚠️ **下面这些分数该怎么读。** 前沿榜单的变动速度已经超过任何人工清单的更新频率，而且各镜像站之间互相矛盾。我们在 **2026-07-30** 刷新本节时，同一天从三个可信追踪站拿到了**三个不同的** SWE-bench Verified「当前榜首」，分差约 8 个百分点。与其挑一个假装精确，本节数字一律**标注读取日期**——在你自己的文章里引用前，请点进榜单原页核对。
+> **结合实验设置解读分数。** 模型版本、Agent 框架、数据集修订、工具权限和重试/算力预算都会影响结果。无法确定原始评测设置的旧领先者快照已移除。优先使用可复现的原始评测，并评估自己的实际任务。
 >
-> 两个比任何单一数字都更重要的结构性提醒：
-> - **SWE-bench Pro 已不可靠。** OpenAI 于 2026-07-08 审计其 731 个公开任务，AI 审查标记约 27% 有缺陷、人工工程师标记约 34%（测试过于严格、prompt 描述不足、测试覆盖率低）。OpenAI 已撤回将其作为编程主指标的推荐。榜首在八个月内从 23% 蹿到 80%，反映的是基准噪音，不只是模型进步。
-> - **饱和让微小差距失去意义。** GPQA Diamond 和 SWE-bench Verified 已有多个前沿模型进入 90 分中段。0.5 分的差距在 prompt 脚手架和重试策略的噪音范围内，**不构成能力排序**。在**你自己的**仓库或语料上搭一个小 eval，它对你实际结果的预测力强于任何公开榜单。
+> [OpenAI 7 月 8 日的 SWE-bench Pro 审计](https://openai.com/index/separating-signal-from-noise-coding-evaluations/)发现显著任务质量问题；[Terminal-Bench 4.0](https://www.tbench.ai/news/terminal-bench-4-0)也修改了任务与资源。跨版本比较前必须核对方法。
 
-- [τ²-bench (tau2-bench) v1.0.1](https://github.com/sierra-research/tau2-bench) - 🆕 **2026-07（v1.0.1）**。Sierra Research 面向 AI Agent 的**双控**真实场景基准（Agent + 模拟用户同时操作同一系统）。2026 年 7 月：修正 banking_knowledge 任务错误；旧结果不再直接可比。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fsierra-research%2Ftau2-bench&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [BenchLM](https://benchlm.ai/) - 🆕 多家基准聚合榜单。2026-07 榜首：Claude Fable 5 91，Claude Mythos 5 89，Gemini 3.1 Pro 88（79 个上榜 / 281 个跟踪模型，296 项基准）。
-- [SWE-bench Verified](https://www.swebench.com/) - 真实 GitHub issue 修复基准。2026-04 榜首：Claude Mythos 93.9%，Claude Opus 4.7 87.6%。
-- [GPQA Diamond](https://github.com/idavidrein/gpqa) - 💤 数据集仓 2024-09 起无更新。专家级科学推理。2026-04 榜首：Gemini 3.1 Pro 94.3%（世界纪录）、Claude Opus 4.7 94.2%。
-- [ARC-AGI 2](https://arcprize.org/) - 抽象推理。GPT-5.5 以 85% 领先（2026-07）；Gemini 3.1 Pro 77.1%（2026-03）。
-- [ARC-AGI-3](https://arcprize.org/leaderboard) - 🆕 🧪 第三代 ARC 基准 —— Agent 必须实时适应全新交互环境（Kaggle 竞赛）。早期最高分接近零（Gemini 3.1 Pro 约 0.37%）。
-- [OSWorld](https://os-world.github.io/) - 桌面 GUI 操作。Claude Fable 5 / Mythos 5 以 85% 领先（2026-07）；GPT-5.4 75%（超过人类基线）。
-- [Arena（前 LMArena / Chatbot Arena）](https://arena.ai/) - 众包对话偏好。2026-07：Claude Fable 5 领先（Elo 1525），领先于 Opus 4.8（1512）与 GPT-5.5 Pro（1510）。
-- [MMLU-Pro](https://github.com/TIGER-AI-Lab/MMLU-Pro) - MMLU 加难版。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FTIGER-AI-Lab%2FMMLU-Pro&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [LiveCodeBench](https://livecodebench.github.io/) - 持续更新的竞赛风编程基准。
-- [AIME 2025 / Humanity's Last Exam (HLE)](https://agi.safe.ai/) - 数学 / 博士级综合推理。
-- [Terminal-Bench](https://www.tbench.ai/) - CLI Agent 评测。Codex CLI 77.3%。
-- [Wolfram LLM Benchmarking Project](https://www.wolfram.com/llm-benchmarking-project/) - 英文规格 → Wolfram Language 代码生成。
-- [Terminal-Bench 2.0](https://www.tbench.ai/leaderboard/terminal-bench/2.0) - **2025 末 / 2026 初**。89 个精选终端任务（编译、训练、配置、调试）。榜首：NexAU-AHE + GPT-5.5 84.7%（2026-05-14）。
-- [GDPval](https://openai.com/index/gdpval/) - OpenAI 经济价值 benchmark（2025 年 9 月发布，arXiv:2510.04374），覆盖 44 个职业 / 9 个行业，含 1,320 个专家构建任务。[GDPval-AA 榜单](https://artificialanalysis.ai/evaluations/gdpval-aa)榜首（2026-07）：Claude Opus 4.8（Elo 1890），领先 GPT-5.5（1769）。在 GPT-5.6 发布（2026-07-09）时再次扩展 / 强调。
-- [SWE-bench Pro](https://benchlm.ai/benchmarks/swePro) - 🆕 Verified 的仓库级工程后继。Claude Opus 4.7 64.3% > GPT-5.5 58.6%（Claude 在长程仓库任务领先）。**2026-07**：Claude Mythos 5 以 **80.3%** 登顶；⚠️ **OpenAI 审计（2026-07-08）**发现约 30% 的 Pro 任务存在缺陷（测试过严、题目欠明确）—— OpenAI 已撤回将 SWE-bench Pro 作为编程 Agent 主要评测指标的推荐。
-- [LLM-Stats Live Leaderboard](https://llm-stats.com/llm-updates) - 🆕 实时更新的跨 benchmark 模型对比看板。
-- [τ²-Bench (Tau-Bench)](https://github.com/sierra-research/tau2-bench) - 🆕 Sierra Research 出品的真实业务域（零售 / 航空）工具-Agent-用户交互基准。考察多轮工具使用、数据库操作与策略遵从。2026 年 4 月榜首：38 个评测模型中 Claude Mythos Preview 89.2%。该仓库现同时托管 **τ³-Bench 1.0.0（2026-03-18）**，新增语音以及电信/银行业务域。MIT。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fsierra-research%2Ftau2-bench&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Gartner 2026 魔力象限：企业 AI 编程 Agent](https://cursor.com/blog/cursor-leads-gartner-mq-2026) - 🆕 **2026 年**。Gartner 首个企业级编程 Agent MQ。领导者：**GitHub Copilot**、**OpenAI Codex**、**Cursor**（共评估 12 家厂商；Tabnine 为远见者）。标志着编程 Agent 市场迈入企业级成熟期。
-  **2026-07-31 更新**：Gemini 2.5 Pro 和 Gemini 3 Flash 在全部 Copilot 体验中废弃；新增 Visual Studio .NET/Azure 专属 Agent（Copilot SDK）；企业管理员获得用户级模型策略精准控制（公开预览）。
-- [Terminal-Bench 2.1](https://www.tbench.ai/leaderboard/terminal-bench/2.1) - 🆕 **2026-06**。扩展 CLI 任务覆盖的 Terminal-Bench 更新版；榜单：Claude Code + Fable 5 以 83.8% 领先（2026-06-07），Codex + GPT-5.5 83.1%。头部 CLI Agent 的差距已不足 1%。
-- [Agent Memory Benchmark (AMB)](https://github.com/vectorize-io/agent-memory-benchmark) - 🆕 与 Hindsight 一同由 vectorize.io 发布的开放 Agent 记忆系统基准——针对长期任务表现测试 retain / recall / reflect 操作。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fvectorize-io%2Fagent-memory-benchmark&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
-- [Agents' Last Exam (ALE)](https://snorkel.ai/leaderboard/agents-last-exam/) - 🆕 **2026 年 6 月**。UC Berkeley (RDI) + Snorkel AI 出品，联合 300+ 行业专家、覆盖 55 个专业子领域的长程高经济价值任务 benchmark（公开版 ALE-V1：从 1,500+ 任务语料中抽出 147 个参考任务；arXiv:2606.05405）。发布时通过率约 2.6%；2026 年 7 月榜首：Codex + GPT-5.6 53.6/100（在 GPT-5.6 发布会上被重点展示）。任务每六个月轮换的动态 benchmark。
-- [JetBrains Kotlin Benchmark](https://blog.jetbrains.com/kotlin/2026/07/introducing-the-kotlin-benchmark-evaluate-ai-coding-agents-on-real-world-kotlin-tasks/) - 🆕 **2026 年 7 月**。JetBrains 针对 Kotlin 语言的 AI 编程 Agent 公开 benchmark，覆盖代码生成、重构、测试编写与错误修复等真实开发任务。为开发者提供超越通用 SWE-bench 的语言专项评估。
-- [Stripe Agent Benchmark](https://stripe.com/blog/can-ai-agents-build-real-stripe-integrations) - 🆕 **2026 年 3 月**。端到端评估套件，测试 AI Agent 是否能从零完成完整的 Stripe 集成，包括代码生成、测试执行和生产环境验证。初期评测中 Claude Opus 4.5 在全栈 API 集成任务上平均得分 92%。
-- [GAIA Benchmark](https://huggingface.co/spaces/gaia-benchmark/leaderboard) - 通用 AI 助手基准：466 个真实任务上的多步推理 + 工具使用 + 网页浏览。**2026-07-15 公开快照**：Claude Mythos 5 与 Claude Fable 5 以 **52.3%** 并列领先，GPT-5.4 Pro 50.5% 次之。设计上可抵抗数据污染。
+- [τ²-bench / τ³-bench](https://github.com/sierra-research/tau2-bench) - Sierra 的工具-Agent-用户交互基准现含语音及知识检索任务；**v1.0.1（2026-07-22）**修正 banking_knowledge 评分，该领域成绩需按版本比较。
+- [BenchLM](https://benchlm.ai/) - 跨基准聚合及模型发布追踪；比较系统前应核对分数的原始来源、日期和评测框架。
+- [SWE-bench Verified](https://www.swebench.com/) - 经人工筛选的 500 道 GitHub issue 修复任务；应区分统一 Bash Only/mini-SWE-agent 环境与自定义 Agent 投稿。
+- [GPQA Diamond](https://github.com/idavidrein/gpqa) - 专家编写的研究生级科学问答；应固定数据划分，并随成绩报告提示、工具和采样策略。
+- [ARC-AGI-2](https://arcprize.org/) - 面向陌生任务的抽象视觉推理；官方排行榜区分系统及计算预算，不能把所有结果都当作基础模型分数。
+- [ARC-AGI-3](https://arcprize.org/leaderboard) - 通过交互环境衡量 Agent 学习陌生规则和适应的效率；应查阅官方成本/能力视图，而非沿用发布初期分数。
+- [OSWorld](https://os-world.github.io/) - 在真实桌面环境中评测开放式计算机任务；结果取决于 Agent、模型、动作接口和步数预算。
+- [Arena (formerly LMArena / Chatbot Arena)](https://arena.ai/) - 覆盖多种模态的人类偏好比较；偏好排名不等同于任务完成率或安全评测。
+- [MMLU-Pro](https://github.com/TIGER-AI-Lab/MMLU-Pro) - MMLU 的推理导向扩展，包含更难的多选题与公开评测实现。
+- [LiveCodeBench](https://livecodebench.github.io/) - 持续收集编程竞赛题目；按日期筛选评测有助于分析数据污染风险及题目难度变化。
+- [Humanity’s Last Exam (HLE)](https://agi.safe.ai/) - 专家级跨学科基准，定稿题集含 2,500 题，另有持续维护的 HLE-Rolling；它与 AIME 数学竞赛基准不同。
+- [Terminal-Bench 4.0](https://www.tbench.ai/news/terminal-bench-4-0) - 🆕 ⚡ **2026-08-28**。当前终端基准重新校准资源、修复任务并移除饱和/有问题样本；任务集和环境预算变化，需要重新运行，不能直接比较 2.x/3.0 分数。
+- [Terminal-Bench-Science 0.1](https://www.tbench.ai/news/terminal-bench-science-0-1) - 🆕 ⚡ **2026-08-27**。70 个经专家审阅的科研工作流，覆盖生命、物理、地球、数学及工程科学，以可复现的任务专用测试评测。
+- [Wolfram LLM Benchmarking Project](https://www.wolfram.com/llm-benchmarking-project/) - Wolfram 持续评测从英文需求生成 Wolfram Language 代码的能力。
+- [Terminal-Bench 2.0 (legacy)](https://www.tbench.ai/news/announcement-2-0) - 含 89 道终端任务的历史版本，保留用于理解旧论文；后续版本修正了任务及环境问题。
+- [GDPval](https://openai.com/index/gdpval/) - OpenAI 对 44 种职业、九个行业中经济价值任务的评测；原始任务/评分与第三方基于 GDPval 的排行榜应分别看待。
+- [SWE-bench Pro](https://github.com/scaleapi/SWE-bench_Pro-os) - 仓库级软件工程基准；[OpenAI 2026-07-08 审计](https://openai.com/index/separating-signal-from-noise-coding-evaluations/)指出大量任务质量缺陷，并撤回此前采用建议，应审查任务并结合其他评测。
+- [LLM-Stats Live Leaderboard](https://llm-stats.com/llm-updates) - 模型新闻与基准聚合信息流；应进一步查看链接中的模型卡、发布说明或原始基准。
+- [Gartner Magic Quadrant 2026 — Enterprise AI Coding Agents](https://cursor.com/blog/cursor-leads-gartner-mq-2026) - 厂商发布的 Gartner 分析报告摘要，称 Cursor 被列为领导者；这是市场研究，而非可复现的模型基准。
+- [Terminal-Bench 2.1 (legacy)](https://www.tbench.ai/news/terminal-bench-2-1) - **2026-05-06** 发布，修复 Terminal-Bench 2.0 的任务/环境问题；成绩需注明对应任务版本与评测框架。
+- [Agent Memory Benchmark (AMB)](https://github.com/vectorize-io/agent-memory-benchmark) - 开放的长期 Agent 记忆评测，公开数据、提示、评分和结果；由 Hindsight 团队创建，解读时应注意评测者关联。
+- [Agents’ Last Exam (ALE)](https://snorkel.ai/leaderboard/agents-last-exam/) - 与领域专家共建的长程专业工作流基准；应区分已发布的参考子集、更大的任务集合及未来扩展目标。
+- [JetBrains Kotlin Benchmark](https://blog.jetbrains.com/kotlin/2026/07/introducing-the-kotlin-benchmark-evaluate-ai-coding-agents-on-real-world-kotlin-tasks/) - JetBrains 官方 Kotlin 编程 Agent 评测，覆盖从理解 issue 到实现并通过测试的仓库任务。
+- [Stripe Agent Benchmark](https://stripe.com/blog/can-ai-agents-build-real-stripe-integrations) - Stripe 评测 Agent 在较长软件工程流程中完成完整集成的能力；应检查任务设置，不能从单一分数推断生产就绪。
+- [GAIA Benchmark](https://huggingface.co/spaces/gaia-benchmark/leaderboard) - 结合推理、浏览与工具使用的通用助手基准；[论文](https://arxiv.org/abs/2311.12983)介绍 466 个问题，评测使用保留答案。
 
 ---
 
@@ -1173,6 +1177,7 @@
 - [Tracecat](https://github.com/TracecatHQ/tracecat) - 🆕 开源安全自动化平台，为 SOC 工作流捕获完整 Agent trace —— 把 AI Agent 接入检测、富化与响应流水线。AGPL-3.0（含企业版例外条款）。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FTracecatHQ%2Ftracecat&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Langfuse v4](https://github.com/langfuse/langfuse/releases/tag/v4.0.0) - 🆕 ⚡ **v4.0.0，2026-07-29**。这个可自托管的 LLM 可观测性栈的大版本更新：支持对输入 / 输出 / 元数据做全文检索，新增筛选搜索栏、监控与告警，并重写了 Observations API v2 / Metrics API v2，官方称最高快 **165 倍**。
 - [AcruxCore](https://github.com/AcruxCore/AcruxCore) - ⚠️ **未验证**（新仓库，单一维护者，暂无第三方采用）。可自托管或 SaaS 的 LLM-ops 平台，包含 Prompt 版本管理、AI 网关、链路追踪、工具目录与评估运行。Apache-2.0。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FAcruxCore%2FAcruxCore&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [AOTrust](https://github.com/GitSerge-crypto/aotrust-skills) - ⚠️ **未验证**（单维护者，独立采用及服务保证未核实）。为文件哈希和时间戳提供回执的服务，公开 MIT 规范、离线解析器、MCP 接口和 GitHub Action；签名回执不证明文件内容正确。 ![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2FGitSerge-crypto%2Faotrust-skills&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 
 ---
 
@@ -1226,6 +1231,7 @@
 - [Google Gemini Cookbook](https://github.com/google-gemini/cookbook) - Gemini API 示例：grounding / function calling / 多模态 / live audio。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fgoogle-gemini%2Fcookbook&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [LLM Course (Maxime Labonne)](https://github.com/mlabonne/llm-course) - LLM 从入门到微调的完整课程 + Colab。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fmlabonne%2Fllm-course&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
 - [Anthropic Courses](https://github.com/anthropics/courses) - Anthropic 官方 prompt engineering / 评测 / 工具调用课程。![GitHub stars](https://img.shields.io/badge/dynamic/json?label=Stars&query=%24.stargazers_count&url=https%3A%2F%2Fapi.github.com%2Frepos%2Fanthropics%2Fcourses&color=yellow&logo=github&logoColor=white&style=flat&cacheSeconds=300)
+- [Hugging Face Robotics Course](https://huggingface.co/learn/robotics-course/unit0/1) - 免费课程，结合经典机器人学、学习型策略、LeRobot、真实机器人数据集和实践练习。
 
 ### 精选列表
 
@@ -1580,14 +1586,16 @@
 
 ### 🤖 Physical AI 平台
 
-| 平台 | 类型 | 开源 | SDK | 仿真 | 适合场景 |
-|---------|------|------------|-----|-----------|----------|
-| NVIDIA Isaac GR00T N1.5 | 人形机基础模型 | ⚠️（权重） | ✅ | ✅ Isaac Sim | 通用人形机基础模型 |
-| ROS 2 Jazzy | 机器人操作系统 | ✅ | ✅ | ✅ Gazebo | 标准机器人中间件 |
-| Gemini Robotics | 灵巧操作 | ❌ | ⚠️ | ✅ | 视觉+语言+灵巧操作 |
-| Unitree SDK2 | 四足/人形 | ✅ | ✅ | ⚠️ | Go2, H1, G1 开发 |
-| Boston Dynamics API | 四足 | ❌ | ✅ | ❌ | Spot 工业部署 |
-| Genesis Sim | 仿真平台 | ✅ | ✅ | ⭐ 原生 | 超高速物理仿真 |
+| 平台 | 范围 | 代码 / 权重 | 接口 | 仿真 / 评测 |
+|---|---|---|---|---|
+| [NVIDIA Isaac GR00T N1.7](https://github.com/NVIDIA/Isaac-GR00T) | 人形机器人 VLA | Apache-2.0 | Policy API / 微调 | Isaac / LIBERO |
+| [ROS 2 Lyrical Luth](https://docs.ros.org/en/rolling/Get-Started/Releases/Release-Lyrical-Luth.html) | 机器人中间件，LTS 至 2031 年 5 月 | 开源，按包核对许可证 | C++ / Python | Gazebo |
+| [Gemini Robotics ER 2](https://ai.google.dev/gemini-api/docs/robotics-overview) | 具身推理 | 专有 / 预览 | Gemini API / Live API | 接入自己的机器人工具 |
+| [Unitree SDK2](https://github.com/unitreerobotics/unitree_sdk2) | 机器人控制 | BSD-3-Clause | C++ / DDS | 按机型集成 |
+| [Boston Dynamics Spot SDK](https://dev.bostondynamics.com/) | Spot 应用 | SDK 代码可见，硬件专有 | Python / gRPC | 硬件 / 载荷集成 |
+| [Genesis](https://github.com/Genesis-Embodied-AI/genesis-world) | 机器人物理仿真 | Apache-2.0 | Python | 原生仿真 |
+| [Newton](https://github.com/newton-physics/newton) | 可微机器人物理仿真 | Apache-2.0 | Python / Warp | 原生仿真 |
+| [LeRobot](https://github.com/huggingface/lerobot) | 机器人学习 | 代码 Apache-2.0，权重按模型 | Python | 策略 / 数据集评测 |
 
 ---
 
