@@ -1,152 +1,131 @@
-# awesome-ai-agents-2026 — Maintenance Run Brief (2026-06-16)
+# awesome-ai-agents-2026 — Maintenance Guide
 
-Repo: `/home/xiaoni/projects/awesome-ai-agents-2026` (GitHub: Zijian-Ni/awesome-ai-agents-2026)
-Three READMEs MUST stay in sync: `README.md` (English, source of truth), `README.zh-CN.md` (中文), `README.ja.md` (日本語).
-`gh` is authenticated as Zijian-Ni. Working tree is clean, local == origin/main.
+Maintainer: **[Zijian Ni](https://github.com/Zijian-Ni)**. Last workflow revision: **2026-09-08**.
+Repository: `Zijian-Ni/awesome-ai-agents-2026`; default branch: `main`.
 
-This is the recurring maintenance task the owner runs. Do the full cycle, then verify. Take the time needed; do not stop early.
+This guide describes the full maintenance cycle. Query GitHub for current PRs,
+issues and checks; counts and PR numbers from earlier runs are historical.
+`README.md` is the English source of truth. `README.zh-CN.md` and `README.ja.md`
+must carry the same catalogue entries, comparison rows, scenario prompts and
+source links in the same order, with natural translations.
 
-## Current state (verified)
-- Open issues: 0
-- Open PRs: 2 — both touch ONLY README.md (English) and need en/zh/ja sync if accepted:
-  - **PR #42** (zlc000190:add-seedream): adds "Seedream AI Studio" (https://seedream4.video/) to Image Generation — ByteDance multi-model image gen + image-to-video via Kling 2.1, free tier.
-  - **PR #41** (Armigerous:add-dependency-freshness-mcp): adds "dependency-freshness-mcp" (https://github.com/Armigerous/dependency-freshness-mcp) to Tool & API Integration — MCP server for npm/PyPI dependency freshness.
-- CI: `.github/workflows/link-check.yml` (lychee), `pr-spam-guard.yml`, `refresh-badges.yml`. Local link checker: `scripts/check_links.py`.
+## 1. Establish the baseline
 
-## TASKS
+Read `CONTRIBUTING.md`, recent `CHANGELOG.md` entries and the working-tree diff.
+Record the base commit, authenticated account, pending PR heads and open issues.
+Run `python scripts/sync_audit.py` before edits. Never discard unrelated work.
+Use the owner's existing Git identity when authorized to maintain on their behalf;
+credit third-party contributions explicitly instead of claiming their authorship.
 
-### 1. Review & resolve the 2 open PRs
-For each PR: verify the project is real and the link resolves (fetch the URL / its GitHub repo), check it isn't spam/parallel-blast (the spam-guard bot comments on PRs — read its comment via `gh pr view <n> --comments`), confirm correct category placement, and that the entry style matches the list (badge for GitHub repos, status tags 🆕/⚠️/etc. as appropriate, concise one-line description).
-- If acceptable: incorporate the entry into README.md in the right ranked position AND add the equivalent localized entry to README.zh-CN.md and README.ja.md (translate the description naturally — match the tone/format of neighboring zh/ja entries). Then close the PR with a thank-you comment noting it was merged-by-maintainer with en/zh/ja sync (since the contributor only edited English). Prefer incorporating manually + closing with credit over a raw merge, because raw merge would leave zh/ja out of sync — but if you do merge, you MUST immediately follow with the zh/ja sync commit.
-- dependency-freshness-mcp: it's a brand-new single-maintainer repo — if low stars/very new, still listable but tag it appropriately (e.g. ⚠️ Unverified / 🆕) consistent with how similar new/unverified entries are handled in the list.
-- If a PR is clearly spam or broken: close with a polite explanation instead.
+## 2. Review every pending PR
 
-### 2. Add the latest June 2026 AI updates across ALL categories (en/zh/ja)
-Like prior runs (see CHANGELOG.md and recent commits for the established style), refresh the list with genuinely notable, REAL developments from ~June 2026. Cover the existing categories where there's real news (LLMs/foundation models, coding agents, image/video gen, agent frameworks, MCP/tools, sandboxing, etc.).
-- Every addition MUST be real and verifiable — search the web and confirm before adding. NO hallucinated products, repos, dates, or links. If you can't verify it, don't add it. (Owner rule: absolutely no fabricated entries/links/stats.)
-- Date-stamp time-sensitive entries (e.g. **June X, 2026**) and apply the project's status-tag conventions.
-- For each English addition, add the matching zh-CN and ja entries in the same position. Keep category ranking sensible (strength/recency/popularity) consistent with the existing ordering philosophy.
-- Update CHANGELOG.md with a dated entry summarizing what changed.
+Read the diff, discussion, reviews, checks and Spam Guard report. Fetch the real
+project's code/docs and licence. Cross-check current GitHub metadata and the
+submitter's activity around the submission date; a rolling search months later
+can miss the original campaign.
 
-### 3. Full en/zh/ja sync audit
-After all edits, verify the three files are structurally in sync: same categories in same order, same entries per category (localized text differs, but the set of entries and their order should match), no entry present in one language but missing in another, no broken markdown, no duplicate entries. Fix any drift you find (including pre-existing drift you notice).
+Apply the `CONTRIBUTING.md` quality gate. A real repository or a merge into another
+awesome list does not by itself prove production adoption. The `⚠️ Unverified`
+route is for useful immature projects; it does not automatically exempt a
+five-or-more-list promotional campaign. Do not equate signatures, rollback,
+commit hooks or benchmark numbers with independently audited security.
 
-### 4. Verify
-- Run `python3 scripts/check_links.py` (or a scoped version on just the changed/added links if the full run is too slow — but prefer full). Report dead/broken links and FIX or remove any newly-introduced ones. Pre-existing dead links from third parties: note them, don't necessarily block on them, but fix if trivial (e.g. moved official URL).
-- Sanity-check markdown renders (no broken tables/links/badges in the added lines).
-- Confirm entry counts per category match across en/zh/ja for anything you touched.
+For accepted entries, prefer manual incorporation with en/zh/ja synchronisation
+and contributor credit when a raw merge would retain errors or missing
+translations. After the maintenance commit is pushed, close the source PR with
+a factual explanation and a link to the incorporating commit. Decline unsuitable
+submissions politely with the applicable evidence. Do not approve unreviewed
+code or use admin overrides to bypass required checks.
 
-### 5. Commit & push
-- Make clean, well-described commits (match the existing commit-message style, e.g. `feat: ...`, `fix: ...`, en/zh/ja sync noted).
-- Push to origin/main.
-- Close/merge the handled PRs with appropriate comments.
+## 3. Refresh every category using primary sources
 
-## Constraints
-- NO fabricated content. Verify every new entry via web before adding.
-- Keep en/zh/ja in lockstep — never leave one language out of sync.
-- Match existing formatting, badge style, status tags, and ranking conventions exactly.
-- Don't rewrite unrelated sections or reorder the whole file gratuitously.
+Cover all 25 catalogue categories and the comparison tables, scenario guide,
+stack recipes, anti-picks, notable projects and timeline. Search for material
+omissions and changed facts, including text/reasoning/coding, vision, image,
+video, audio, embeddings/rerankers, open weights and embodied models.
 
-## Final report (exact)
-- The 2 PRs: decision + action taken (merged-with-sync / closed) + the comment posted.
-- New June-2026 entries added (list them with their category + source URL you verified).
-- en/zh/ja sync audit result (drift found + fixed).
-- Link checker result (broken links found / fixed).
-- Commits made + push confirmation (git log --oneline -n top + `git status` clean + origin up to date).
+The catalogue is curated. Provider model catalogues cover additional sizes,
+quantisations and dated snapshots without pretending that every model on the
+internet can be exhaustively enumerated in a hand-maintained list.
 
----
+Fetch primary sources: official documentation, model cards, vendor announcements,
+versioned release notes, papers and GitHub repository metadata. Save source URLs,
+access date and a short supporting excerpt (up to 25 words per external source)
+with the maintenance evidence. A search snippet or a successful HTTP response is
+not factual verification. Do not invent models, dates, prices, adoption or scores.
+If a claim cannot be established, remove the specific claim or clearly qualify it.
 
-# Maintenance tooling (added 2026-07-30) — run these, don't eyeball it
+Distinguish launch announcement, limited preview, general availability, API
+access, weights availability and retirement. A consumer app shutdown need not
+mean its API shut down on the same date. Record model-specific licences; open
+weights do not necessarily mean an OSI-approved open-source licence. Do not
+estimate MoE weight memory from active parameters alone.
 
-Two scripts now enforce what used to be checked by hand. Both exit non-zero on
-failure and run in CI via `.github/workflows/structure-check.yml`.
+Update repeated mentions in recommendations and comparison tables as well as
+the main catalogue. Avoid unsupported star ratings, universal latency/accuracy
+figures, guaranteed data residency and 'battle-tested' assertions. Historical
+release records may remain historical; they must not be presented as current
+recommendations. Update content dates only for an actual content review.
 
-```bash
-python3 scripts/sync_audit.py      # en/zh/ja structural lockstep
-python3 scripts/check_markdown.py  # anchors, tables, entry syntax, code fences
-```
-
-**Run `sync_audit.py` before and after every editing session.** On 2026-07-30 it
-surfaced drift that had accumulated invisibly across previous runs:
-
-- entry counts were **795 / 794 / 792**, not equal;
-- zh and ja were **missing the entire Quick Navigation table**;
-- ja was missing the whole **Ecosystem Choices** subsection;
-- ~30 entries sat under the **wrong heading** — most glaringly, 9–11
-  humanoid-robot entries were filed under *Autonomous Driving* in both zh and
-  ja, and 4 IDE tools were under *Autonomous Software Engineers*.
-
-None of that is visible when you're editing one language at a time, and none of
-it trips a link checker. Every link resolved fine the whole time.
-
-## What `sync_audit.py` actually compares
-
-Headings are translated, so it cannot match on heading text. Instead it matches
-**positionally** (heading count + level + order) and identifies entries by their
-**first markdown link target**, since URLs are not translated. Per section it
-reports missing / extra / misordered entries using multiset comparison, so a URL
-that legitimately appears twice is handled correctly.
-
-Repeated URLs inside one section are only reported when the repeat count is
-**asymmetric across languages**. Eight OpenAI models all pointing at
-`openai.com` is normal and stays quiet; the same URL appearing 3× in one file
-and 2× in another means an entry was lost or cloned, and that is flagged.
-
-In-page anchors (`#-foo`) are excluded from comparison — they're derived from
-translated headings and are expected to differ. `check_markdown.py` validates
-those separately against each file's own headings.
-
-## Ordering conventions
-
-`README.md` is the source of truth for entry order. When zh/ja ordering drifts,
-permute the existing localized lines into EN order rather than retranslating —
-the text is already correct, only its position is wrong.
-
-## Verification standard (non-negotiable)
-
-The owner's rule is no fabricated content, and "a search summary said so" does
-not clear that bar. **Fetch the primary source and quote it.**
-
-If `web_fetch` fails with *"Blocked: resolves to private/internal/special-use IP
-address"*, that is a WSL DNS quirk (public hostnames resolve into `fc00::/7` /
-`198.18.x`), not a dead site. Fall back to:
+## 4. Verify the complete result
 
 ```bash
-bash ~/.openclaw/workspace/tools/fetch-verify.sh <url> [max_chars]
+python scripts/sync_audit.py
+python scripts/check_markdown.py
+python scripts/freshness_audit.py
+python scripts/refresh_counts.py --write
+python scripts/refresh_counts.py
+python -m unittest discover -s scripts -p 'test_*.py'
+python scripts/check_links.py --report artifacts/link-report.json
+git diff --check
 ```
 
-which fetches over curl with a real User-Agent and renders readable text via
-pandoc, printing the HTTP status and final URL. Other reliable paths that bypass
-the same problem: `gh api repos/<owner>/<repo>` for stars / archived / pushed_at,
-`gh api repos/<owner>/<repo>/releases/tags/<tag>` to confirm a release date, and
-`https://huggingface.co/api/models/<org>/<model>` for weight drops
-(`lastModified`, `gated`, shard count).
+- **Sync audit** checks positional headings, ordered catalogue URLs, table row
+  counts, ordered table source URLs and scenario prompt counts. It cannot prove
+  translation meaning or the identity of a table row containing no URL.
+- **Markdown audit** checks anchors, tables, entry syntax and code fences.
+- **Freshness audit** catches a maintained set of known obsolete recommendations;
+  it is a regression guard, not a live model discovery or fact-checking service.
+- **Counts** exclude contents/anchor links and code examples. The resource badge
+  counts catalogue list entries, including historical/contextual appearances;
+  it is not a deduplicated count of unique products. Table rows are not resources.
+- **Link report** distinguishes successful HTTP responses, excluded badge hosts,
+  confirmed 404/410 responses after GET, access blocks and transport failures.
+  TLS verification stays enabled. `--strict` also fails unresolved checks. Remote
+  anchor validity, redirects to the wrong page and factual content need review.
 
-Note that `openai.com/index/*` and `midjourney.com` return 403 to curl. Use
-`openai.com/news/rss.xml` or `developers.openai.com/**.md` instead, and if no
-canonical URL can be resolved for a claim, **leave the claim out** — that is what
-happened to a reported "Lyria 3.5 / Flow Music" launch on 2026-07-30.
+Fix all newly introduced broken URLs. Retry ambiguous failures via an independent
+primary source or browser. Preserve unresolved checks as unresolved in the report;
+never claim they passed. Full reports belong in workflow artifacts or the owner's
+maintenance deliverable, not long quoted page dumps in the READMEs.
 
-## Cross-check contributor-supplied numbers
+## 5. Publish and read back
 
-PR #68 (ClawBench) stated "283 tasks across 163 websites". The arXiv abstract
-says 153 tasks across 144 platforms, and the project's own leaderboard showed a
-130-task / 63-platform slice. Contributors are not necessarily wrong on purpose,
-but always read the paper or docs yourself before publishing a figure.
+Make focused commits following the established `feat:` / `fix:` / `chore:` style.
+Run all checks on the integrated tree, fetch remote state again, resolve any
+concurrent changes, and push to `origin/main` when authorized. Then inspect the
+actual GitHub commit, rendered documentation and CI results. Close/merge handled
+PRs with evidence and read back their final states. Report the final commit,
+entry counts, additions/corrections, PR decisions, tests and remaining limits.
 
-## Recurring corrections worth re-checking each run
+## Automation
 
-Items previously listed as "promised" or "upcoming" that have since shipped, and
-any version string more than a few weeks old:
+- **Structure Check** runs all structural/freshness/count guards and maintenance
+  regression tests for relevant README, script and workflow changes.
+- **Link Check** runs weekly and on relevant main-branch changes. It retains the
+  full report and opens or updates one issue for confirmed broken links. Access
+  blocks and connection errors remain visible in its summary and artifact.
+- **PR Spam Guard** surfaces recent submission activity for maintainer review.
+- **Refresh Repository Status** runs monthly: it flags confirmed archived list
+  entries across all languages and opens a PR. It does **not** advance content
+  verification dates merely because a new month started.
 
-- Did a "promised" open-weights drop actually land? (Kimi K3 had; the list still
-  said "promised".)
-- Did a spec/model listed as a future target actually ship, and does the entry
-  link the **release** post rather than the release *candidate*? (MCP 2026-07-28
-  had shipped but linked the RC.)
-- Are pricing claims still true? (DeepSeek V4 was listed with peak/off-peak 2×
-  pricing; the official page shows flat rates.)
-- Are framework versions current? (Google ADK was listed at "v2.0 beta" while
-  v2.5.0 was out.)
-- Did an announced acquisition actually complete? (Meta × Manus was blocked by
-  China's NDRC in April 2026.)
+## Lessons from prior maintenance
+
+The July 2026 run found missing headings and misplaced translated entries.
+The September run also found comparison rows, scenario prompts and timeline rows
+missing despite equal bullet counts. Keep the stronger guards enabled. GitHub
+`archived=false` alone does not establish active maintenance: read project notices
+for private successors, discontinuations and licence changes. Never promote a
+moving vendor price or release claim to a universal recommendation without a
+current source and access boundary.

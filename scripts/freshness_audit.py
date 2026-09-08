@@ -82,7 +82,7 @@ SUPERSEDED: dict[str, dict] = {
         "since": "2026-05-28",
     },
     "Claude Sonnet 4.6": {
-        "replacement": "Claude Sonnet 5 (Jun 30, 2026 — $2/$10 intro, $3/$15 after Aug 31)",
+        "replacement": "Claude Sonnet 5; consult the current official pricing table",
         "since": "2026-06-30",
     },
     # --- OpenAI ----------------------------------------------------------
@@ -108,17 +108,16 @@ SUPERSEDED: dict[str, dict] = {
         "since": "2026-02-01",
     },
     "Gemini 2.5 Flash": {
-        "replacement": "Gemini 3.5 Flash",
+        "replacement": "Gemini 3.8 Flash; check current access and promotional pricing",
         "since": "2026-05-19",
     },
     "Gemini 2.5 Flash-Lite": {
-        "replacement": "Gemini 3.1 Flash-Lite (GA May 8, 2026)",
+        "replacement": "Gemini 3.5 Flash-Lite; consult the official model catalogue",
         "since": "2026-05-08",
     },
     # --- DeepSeek --------------------------------------------------------
     "DeepSeek V3.2": {
-        "replacement": "DeepSeek V4-Flash ($0.14/$0.28, 1M ctx, MIT) "
-                       "or V4-Pro for frontier",
+        "replacement": "DeepSeek V4-Flash or V4-Pro; consult current peak/off-peak pricing",
         "since": "2026-04-24",
         "allow_regex": r"deprecat|退役|廃止|superseded",
     },
@@ -132,8 +131,8 @@ SUPERSEDED: dict[str, dict] = {
 FACT_TRAPS: list[tuple[str, str]] = [
     (
         r"Gemini 2\.5 Pro[^|\n]{0,80}?2M",
-        "Gemini 2.5 Pro has a 1M-token context window. The 2M figure belongs to "
-        "the (still unreleased) Gemini 3.5 Pro. Do not attribute 2M to 2.5 Pro.",
+        "Gemini 2.5 Pro has a 1M-token context window. Do not attribute a "
+        "different model's context capacity to 2.5 Pro.",
     ),
     (
         r"Claude Opus 4\.7[^|\n]{0,40}?200K",
@@ -306,7 +305,7 @@ def main() -> int:
     if total:
         print(f"RESULT: {total} freshness problem(s) — advisory sections are stale")
         return 1
-    print("RESULT: advisory sections recommend only current models")
+    print("RESULT: no known stale recommendations found in the maintained registry")
     return 0
 
 

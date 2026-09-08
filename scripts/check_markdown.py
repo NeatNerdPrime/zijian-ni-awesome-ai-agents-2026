@@ -58,10 +58,12 @@ def check(path: Path) -> int:
         m = HEADING_RE.match(l)
         if m:
             base = slugify(m.group(2))
-            anchors.add(base)
-            # GitHub de-dupes repeats with -1, -2 ...
-            for n in range(1, 6):
-                anchors.add(f"{base}-{n}")
+            candidate = base
+            suffix = 0
+            while candidate in anchors:
+                suffix += 1
+                candidate = f"{base}-{suffix}"
+            anchors.add(candidate)
     if fence:
         print(f"  [FENCE] unclosed code fence in {path.name}")
         problems += 1

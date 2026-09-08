@@ -8,6 +8,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 import check_links
+import check_markdown
 import refresh_counts
 import refresh_repository_status
 import sync_audit
@@ -41,6 +42,13 @@ class LinkChecks(unittest.TestCase):
 
 
 class CatalogueChecks(unittest.TestCase):
+    def test_nonexistent_duplicate_heading_anchor_is_not_accepted(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory)/'README.md'
+            path.write_text('# Heading\n[Broken](#heading-5)\n', encoding='utf-8')
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(check_markdown.check(path), 1)
+
     def test_counts_exclude_toc_and_fences_and_keep_emoji_anchor(self):
         lines = ['## Contents', '- [Frameworks](#️-frameworks)', '## 🏗️ Frameworks',
                  '- [Real](https://example.com)', '```markdown', '- [Sample](https://example.org)', '```']

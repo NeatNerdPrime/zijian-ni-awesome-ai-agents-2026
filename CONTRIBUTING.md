@@ -54,6 +54,9 @@ Submissions are evaluated against the following gate. PRs that don't meet the ga
 
 Some genuinely interesting but immature projects can still be useful to readers. They get a `⚠️ Unverified` tag and a sentence explaining what's missing (no third-party adoption / single maintainer / new submission). They are *not* an endorsement.
 
+This caveat does not automatically waive the parallel-submission rule below.
+Acceptance into other awesome lists is not evidence of production adoption.
+
 ### ❌ Declined
 
 - **Vapourware** — projects that don't exist, are private, or are stub READMEs.
@@ -91,17 +94,27 @@ If a section doesn't exist for what you want to add, **open an issue first** des
 
 ## 🤖 Automation
 
+All content changes must keep `README.md`, `README.zh-CN.md` and `README.ja.md`
+in sync, including comparison rows, scenario prompts and timeline source links.
+The English version defines the order. If you cannot provide a translation,
+explain that in the PR so a maintainer can complete it before incorporation.
+
 This repository runs the following GitHub Actions:
 
-- **`link-check`** — weekly health check on every external URL using `lychee`. Broken links open issues.
+- **`link-check`** — checks content URLs and saves a full HTTP reachability report. Confirmed 404/410 links open or update an issue; access blocks and transport errors remain explicitly unverified.
 - **`pr-spam-guard`** — on every incoming PR, queries the GitHub Search API for the same author's recent PR activity to surface parallel-blast patterns to maintainers.
-- **`stars-refresh`** — monthly refresh of the badge counts and "Last Updated" date.
+- **`refresh-badges`** — monthly repository-status scan that flags archived entries across all languages and opens a PR; it does not advance the content-review date.
+- **`structure-check`** — validates three-language structure, tables, scenario coverage, known stale recommendations, advertised counts and maintenance regression tests.
 
 You can preview the link-check locally:
 
 ```bash
-docker run --rm -it -v $(pwd):/input lycheeverse/lychee README.md
+python scripts/check_links.py --report artifacts/link-report.json
 ```
+
+Run the complete checks listed in [MAINTENANCE_BRIEF.md](MAINTENANCE_BRIEF.md)
+before submitting. GitHub star badges are dynamic; avoid copying static counts
+into descriptions without a dated source.
 
 ---
 
