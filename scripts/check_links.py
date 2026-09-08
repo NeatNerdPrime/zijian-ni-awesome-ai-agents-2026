@@ -1,217 +1,139 @@
 #!/usr/bin/env python3
-"""
-Full link checker for awesome-ai-agents-2026.
-Checks ALL links in README.md, README.zh-CN.md, README.ja.md.
-Reports dead/redirected/error links only; skips known-good badge hosts.
-"""
+"""Check every README content URL; HTTP reachability is not claim verification.
 
+Only badge/analytics hosts are skipped. 404/410 after GET are broken; access
+blocks, rate limits and transport failures remain unresolved, never 'OK'.
+Use --report to retain machine-readable evidence; --strict also fails unresolved
+checks. TLS verification stays enabled. No third-party dependencies.
+"""
+from __future__ import annotations
+
+import argparse
+import concurrent.futures
+import json
 import re
+import ssl
 import sys
 import time
-import urllib.request
 import urllib.error
-import ssl
-import concurrent.futures
+import urllib.request
+from collections import Counter
+from datetime import datetime, timezone
 from pathlib import Path
-from collections import defaultdict
+from urllib.parse import urldefrag, urlsplit
 
-# ---- Config ----
+ROOT = Path(__file__).resolve().parent.parent
 FILES = ["README.md", "README.zh-CN.md", "README.ja.md"]
-WORKERS = 12
-TIMEOUT = 12
-MAX_RETRIES = 2
-
-# Skip these hosts (badges / shields / analytics that always return variable status)
 SKIP_HOSTS = {
-    "img.shields.io",
-    "shields.io",
-    "hits.seeyoufarm.com",
-    "visitor-badge.glitch.me",
-    "api.star-history.com",
-    "madewithlove.now.sh",
-    "forthebadge.com",
-    "badgen.net",
-    "flat.badgen.net",
+    "img.shields.io", "shields.io", "hits.seeyoufarm.com",
+    "visitor-badge.glitch.me", "api.star-history.com", "madewithlove.now.sh",
+    "forthebadge.com", "badgen.net", "flat.badgen.net",
 }
-
-# These URLs are known problematic (paywalls, anti-scrape, etc.) – treat as OK
-KNOWN_OK_PATTERNS = [
-    r"openai\.com",
-    r"anthropic\.com",
-    r"deepmind\.google",
-    r"twitter\.com",
-    r"x\.com",
-    r"linkedin\.com",
-    r"discord\.gg",
-    r"discord\.com",
-    r"t\.me",
-    r"reddit\.com",
-    r"news\.ycombinator\.com",
-    r"gartner\.com",
-    r"nature\.com",
-    r"arxiv\.org",
-    r"huggingface\.co",
-    r"paperswithcode\.com",
-    r"chatgpt\.com",
-    r"claude\.ai",
-    r"gemini\.google",
-    r"cohere\.com",
-    r"mistral\.ai",
-    r"cohereinc",
-    r"salesforce\.com",
-    r"microsoft\.com",
-    r"apple\.com",
-    r"samsung\.com",
-    r"oracle\.com",
-    r"sap\.com",
-    r"ibm\.com",
-    r"deloitte\.com",
-    r"venturebeat\.com",  # paywalled
-    r"businessinsider\.com",
-    r"bloomberg\.com",
-    r"wsj\.com",
-    r"nytimes\.com",
-    r"techcrunch\.com",  # occasional 429
-    r"theverge\.com",
-    r"wired\.com",
-]
-
-KNOWN_OK_RE = [re.compile(p) for p in KNOWN_OK_PATTERNS]
-
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-        "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-    ),
-    "Accept": "text/html,application/xhtml+xml,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.5",
-}
-
+HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; AwesomeAI-maintenance/1.0)",
+           "Accept": "text/html,application/json,*/*;q=0.8"}
 SSL_CTX = ssl.create_default_context()
-SSL_CTX.check_hostname = False
-SSL_CTX.verify_mode = ssl.CERT_NONE
 
 
 def extract_links(text):
-    """Return list of (url, line_number)."""
-    results = []
-    for i, line in enumerate(text.splitlines(), 1):
-        for m in re.finditer(r'\]\((https?://[^\s\)\"\']+)\)', line):
-            results.append((m.group(1), i))
-    return results
+    for lineno, line in enumerate(text.splitlines(), 1):
+        for match in re.finditer(r'\]\((https?://[^\s)"\']+)\)', line):
+            yield match.group(1), lineno
 
 
 def should_skip(url):
-    from urllib.parse import urlparse
-    host = urlparse(url).netloc.lstrip("www.")
-    if host in SKIP_HOSTS:
-        return True
-    for pat in KNOWN_OK_RE:
-        if pat.search(url):
-            return True
-    return False
+    host = (urlsplit(url).hostname or "").lower().removeprefix("www.")
+    return host in SKIP_HOSTS
 
 
-def check_url(url, retries=MAX_RETRIES):
+def request(url, method, timeout):
+    req = urllib.request.Request(url, headers=HEADERS, method=method)
+    try:
+        with urllib.request.urlopen(req, timeout=timeout, context=SSL_CTX) as response:
+            return response.status, response.geturl()
+    except urllib.error.HTTPError as error:
+        try:
+            return error.code, error.geturl()
+        finally:
+            error.close()
+
+
+def check_url(url, retries=1, timeout=12):
+    result = {"url": url, "status": "SKIP", "code": None, "final_url": url}
     if should_skip(url):
-        return url, "SKIP", 0
+        result["detail"] = "Badge/analytics host; not a content source"
+        return result
     for attempt in range(retries + 1):
         try:
-            req = urllib.request.Request(url, headers=HEADERS, method="HEAD")
-            with urllib.request.urlopen(req, timeout=TIMEOUT, context=SSL_CTX) as resp:
-                code = resp.status
-                if code < 400:
-                    return url, "OK", code
-                # HEAD returned error, try GET
-                req2 = urllib.request.Request(url, headers=HEADERS, method="GET")
-                with urllib.request.urlopen(req2, timeout=TIMEOUT, context=SSL_CTX) as resp2:
-                    return url, "OK" if resp2.status < 400 else "DEAD", resp2.status
-        except urllib.error.HTTPError as e:
-            if e.code == 405:  # Method not allowed for HEAD
-                try:
-                    req2 = urllib.request.Request(url, headers=HEADERS, method="GET")
-                    with urllib.request.urlopen(req2, timeout=TIMEOUT, context=SSL_CTX) as resp2:
-                        return url, "OK" if resp2.status < 400 else "DEAD", resp2.status
-                except Exception:
-                    pass
-            if e.code in (429, 503) and attempt < retries:
-                time.sleep(2 ** attempt)
-                continue
-            return url, "DEAD", e.code
-        except urllib.error.URLError as e:
-            if attempt < retries:
-                time.sleep(1)
-                continue
-            return url, "ERROR", str(e.reason)
-        except Exception as e:
-            if attempt < retries:
-                time.sleep(1)
-                continue
-            return url, "ERROR", str(e)
-    return url, "ERROR", "max retries"
+            code, final_url = request(url, "HEAD", timeout)
+            # Many healthy sites reject HEAD, including with 404. Only a GET
+            # can confirm these as broken. Do not accept a HEAD-only error.
+            if code >= 400:
+                code, final_url = request(url, "GET", timeout)
+            result.update(code=code, final_url=final_url)
+            if 200 <= code < 400:
+                result["status"] = "OK"
+                return result
+            if code in (404, 410):
+                result["status"] = "DEAD"
+                return result
+            result["status"] = "BLOCKED" if code in (401, 403, 418, 429) else "ERROR"
+            result["detail"] = "Access not verified" if result["status"] == "BLOCKED" else "HTTP failure"
+            if code not in (429, 500, 502, 503, 504):
+                return result
+        except Exception as error:
+            result.update(status="ERROR", detail=str(error))
+        if attempt < retries:
+            time.sleep(2 ** attempt)
+    return result
 
 
-def main():
-    base = Path(__file__).parent.parent
-    all_links = {}  # url -> list of (file, line)
-    
-    for fname in FILES:
-        fpath = base / fname
-        text = fpath.read_text(encoding="utf-8")
-        for url, lineno in extract_links(text):
-            all_links.setdefault(url, []).append((fname, lineno))
-    
-    unique_urls = list(all_links.keys())
-    total = len(unique_urls)
-    print(f"🔍 Checking {total} unique URLs across {len(FILES)} files...\n")
-    
-    results = {}
-    done = 0
-    with concurrent.futures.ThreadPoolExecutor(max_workers=WORKERS) as ex:
-        fut_map = {ex.submit(check_url, url): url for url in unique_urls}
-        for fut in concurrent.futures.as_completed(fut_map):
-            url, status, code = fut.result()
-            results[url] = (status, code)
-            done += 1
-            if done % 50 == 0 or done == total:
-                print(f"  [{done}/{total}] checked...", flush=True)
-    
-    # Report
-    dead = []
-    errors = []
-    for url, (status, code) in sorted(results.items()):
-        if status == "DEAD":
-            for fname, lineno in all_links[url]:
-                dead.append((fname, lineno, url, code))
-        elif status == "ERROR":
-            for fname, lineno in all_links[url]:
-                errors.append((fname, lineno, url, code))
-    
-    ok_count = sum(1 for s, _ in results.values() if s == "OK")
-    skip_count = sum(1 for s, _ in results.values() if s == "SKIP")
-    dead_count = len(set(u for f, l, u, c in dead))
-    err_count = len(set(u for f, l, u, c in errors))
-    
-    print(f"\n{'='*60}")
-    print(f"SUMMARY: {ok_count} OK | {skip_count} skipped | {dead_count} dead | {err_count} errors")
-    print(f"{'='*60}\n")
-    
-    if dead:
-        print("❌ DEAD LINKS (HTTP 4xx/5xx):")
-        for fname, lineno, url, code in sorted(dead):
-            print(f"  [{code}] {fname}:{lineno}  {url}")
-        print()
-    
-    if errors:
-        print("⚠️  CONNECTION ERRORS:")
-        for fname, lineno, url, code in sorted(errors):
-            print(f"  [ERR] {fname}:{lineno}  {url}  ({code})")
-        print()
-    
-    if not dead and not errors:
-        print("✅ All checked links are reachable!")
-    
-    return 1 if dead else 0
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--files", nargs="+", default=FILES)
+    parser.add_argument("--report", type=Path)
+    parser.add_argument("--workers", type=int, default=12)
+    parser.add_argument("--timeout", type=float, default=12)
+    parser.add_argument("--retries", type=int, default=1)
+    parser.add_argument("--strict", action="store_true")
+    args = parser.parse_args(argv)
+    if args.workers < 1 or args.timeout <= 0 or args.retries < 0:
+        parser.error("workers/timeout must be positive; retries must be nonnegative")
+    links = {}
+    for name in args.files:
+        path = ROOT / name
+        for url, line in extract_links(path.read_text(encoding="utf-8")):
+            url = urldefrag(url)[0]  # remote anchors require content-level review
+            links.setdefault(url, []).append({"file": name, "line": line})
+    print(f"Checking {len(links)} unique URLs across {len(args.files)} files...", flush=True)
+    results = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as executor:
+        pending = {executor.submit(check_url, u, args.retries, args.timeout): u for u in links}
+        for future in concurrent.futures.as_completed(pending):
+            result = future.result()
+            result["locations"] = links[result["url"]]
+            results.append(result)
+            if len(results) % 50 == 0 or len(results) == len(links):
+                print(f"  [{len(results)}/{len(links)}] checked", flush=True)
+    results.sort(key=lambda r: r["url"])
+    counts = Counter(r["status"] for r in results)
+    summary = {s: counts[s] for s in ("OK", "SKIP", "DEAD", "BLOCKED", "ERROR")}
+    print("SUMMARY: " + " | ".join(f"{n} {s}" for s, n in summary.items()))
+    for result in results:
+        if result["status"] in ("DEAD", "BLOCKED", "ERROR"):
+            first = result["locations"][0]
+            print(f"  {result['status']} [{result['code']}] {first['file']}:{first['line']} {result['url']}")
+    if args.report:
+        args.report.parent.mkdir(parents=True, exist_ok=True)
+        args.report.write_text(json.dumps({
+            "checked_at": datetime.now(timezone.utc).isoformat(),
+            "scope": "HTTP reachability only; redirects and 200 responses do not verify claims or remote anchors",
+            "summary": summary, "results": results,
+        }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if counts["BLOCKED"] or counts["ERROR"]:
+        print("Some URLs remain unverified; inspect the report or verify their primary sources manually.")
+    elif not counts["DEAD"]:
+        print("All checked content URLs returned successful HTTP responses; badge hosts were excluded.")
+    return 1 if counts["DEAD"] or (args.strict and (counts["BLOCKED"] or counts["ERROR"])) else 0
 
 
 if __name__ == "__main__":

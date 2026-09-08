@@ -22,9 +22,7 @@ on:
       - "README.md"
       - "README.zh-CN.md"
       - "README.ja.md"
-      - "scripts/sync_audit.py"
-      - "scripts/check_markdown.py"
-      - "scripts/freshness_audit.py"
+      - "scripts/**"
       - ".github/workflows/structure-check.yml"
   push:
     branches: [main]
@@ -32,6 +30,8 @@ on:
       - "README.md"
       - "README.zh-CN.md"
       - "README.ja.md"
+      - "scripts/**"
+      - ".github/workflows/structure-check.yml"
   workflow_dispatch:
 
 jobs:
@@ -54,3 +54,9 @@ jobs:
 
       - name: Recommendation freshness audit
         run: python3 scripts/freshness_audit.py
+
+      - name: Verify advertised counts
+        run: python3 scripts/refresh_counts.py
+
+      - name: Maintenance regression checks
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'

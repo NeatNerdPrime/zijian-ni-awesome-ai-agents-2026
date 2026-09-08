@@ -48,13 +48,16 @@ def is_anchor(url: str) -> bool:
 
 
 class Section:
-    __slots__ = ("level", "title", "line", "urls")
+    __slots__ = ("level", "title", "line", "urls", "table_rows", "table_urls", "prompts")
 
     def __init__(self, level: int, title: str, line: int):
         self.level = level
         self.title = title
         self.line = line
         self.urls: list[str] = []
+        self.table_rows = 0
+        self.table_urls: list[str] = []
+        self.prompts = 0
 
     def __repr__(self) -> str:
         return f"<{'#' * self.level} {self.title} @L{self.line} n={len(self.urls)}>"
@@ -63,6 +66,7 @@ class Section:
 def parse(path: Path) -> list[Section]:
     sections = [Section(0, "(preamble)", 0)]
     in_fence = False
+    in_scenarios = False
     for lineno, raw in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
         if raw.lstrip().startswith("```"):
             in_fence = not in_fence
@@ -71,8 +75,17 @@ def parse(path: Path) -> list[Section]:
             continue
         h = HEADING_RE.match(raw)
         if h:
+            if len(h.group(1)) == 2:
+                in_scenarios = "🗺" in h.group(2)
             sections.append(Section(len(h.group(1)), h.group(2), lineno))
             continue
+        if raw.startswith("|"):
+            sections[-1].table_rows += 1
+            for target in re.findall(r"\]\((https?://[^)\s]+)\)", raw):
+                if "shields.io/" not in target:
+                    sections[-1].table_urls.append(norm_url(target))
+        if in_scenarios and raw.startswith("**"):
+            sections[-1].prompts += 1
         e = ENTRY_RE.match(raw)
         if e:
             url = e.group("url")
@@ -131,6 +144,15 @@ def main() -> int:
         # 2. positional entry comparison
         for i in range(min(len(base), len(other))):
             a, b = base[i], other[i]
+            if a.table_rows != b.table_rows:
+                problems += 1
+                print(f"  [TABLE ROWS] #{i} {a.title!r}: en={a.table_rows}, {lang}={b.table_rows}")
+            if a.table_urls != b.table_urls:
+                problems += 1
+                print(f"  [TABLE LINKS] #{i} {a.title!r}: source links/order differ in {lang}")
+            if a.prompts != b.prompts:
+                problems += 1
+                print(f"  [SCENARIOS] #{i} {a.title!r}: en={a.prompts}, {lang}={b.prompts}")
             if a.urls == b.urls:
                 continue
             # Multiset comparison: a URL may legitimately appear more than once in

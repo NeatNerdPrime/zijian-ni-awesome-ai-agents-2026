@@ -35,33 +35,35 @@ import re
 import sys
 from pathlib import Path
 
+from check_markdown import slugify as heading_slug
+from sync_audit import ENTRY_RE, is_anchor
+
 ROOT = Path(__file__).resolve().parent.parent
 FILES = ["README.md", "README.zh-CN.md", "README.ja.md"]
 
-ENTRY_RE = re.compile(r"^- \[")
 NAV_ROW_RE = re.compile(r"^\|\s*\[([^\]]+)\]\(#([^)]+)\)\s*\|(.*)\|\s*([^|]*?)\s*\|\s*$")
 
 
 def slugify(heading: str) -> str:
     """GitHub's anchor algorithm, close enough for our heading set."""
-    text = heading.strip()
-    text = re.sub(r"^#+\s*", "", text)
-    text = text.lower()
-    # strip everything that is not word char, space, or hyphen (drops emoji/&/—)
-    text = re.sub(r"[^\w\s\u4e00-\u9fff\u3040-\u30ff-]", "", text, flags=re.UNICODE)
-    text = text.replace(" ", "-")
-    return text
+    return heading_slug(re.sub(r"^#+\s*", "", heading.strip()))
 
 
 def section_counts(lines: list[str]) -> dict[str, int]:
     """anchor -> number of top-level entries in that H2 section."""
     counts: dict[str, int] = {}
     current: str | None = None
+    in_fence = False
     for line in lines:
+        if line.lstrip().startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
         if line.startswith("## "):
             current = slugify(line)
             counts[current] = 0
-        elif current is not None and ENTRY_RE.match(line):
+        elif current is not None and (entry := ENTRY_RE.match(line)) and not is_anchor(entry.group("url")):
             counts[current] += 1
     return counts
 
@@ -73,10 +75,35 @@ def render(n: int) -> str:
     return f"{(n // 5) * 5}+"
 
 
+def advisory_counts(lines: list[str]) -> dict[str, int]:
+    """Count scenario prompts and recipe/anti-pick rows, excluding headers."""
+    counts: dict[str, int] = {}
+    current = None
+    kind = None
+    for line in lines:
+        if line.startswith("## "):
+            current = slugify(line)
+            kind = next((e for e in ("🗺", "📋", "⚠") if e in line), None)
+            if kind:
+                counts[current] = 0
+        elif kind == "🗺" and line.startswith("**"):
+            counts[current] += 1
+        elif kind in ("📋", "⚠") and line.startswith("|") and not re.match(r"^\|\s*[-:]", line):
+            counts[current] += 1
+    for key in counts:
+        if any(slugify(h) == key and any(e in h for e in ("📋", "⚠")) for h in lines if h.startswith("## ")):
+            counts[key] = max(0, counts[key] - 1)
+    return counts
+
+
 def process(path: Path, write: bool) -> list[str]:
     text = path.read_text(encoding="utf-8")
     lines = text.split("\n")
     counts = section_counts(lines)
+    # Scenario questions and recipe/anti-pick tables are navigation aids,
+    # not catalogue resources. Count them separately for their nav cells.
+    nav_counts = dict(counts)
+    nav_counts.update(advisory_counts(lines))
     notes: list[str] = []
 
     # ---- Quick Navigation table -----------------------------------------
@@ -89,15 +116,15 @@ def process(path: Path, write: bool) -> list[str]:
         # only touch rows whose count cell looks like a count
         if not re.fullmatch(r"\d+\+?|—|-", claimed):
             continue
-        actual = counts.get(anchor)
+        actual = nav_counts.get(anchor)
         if actual is None:
             # nav label may be shorter than the heading; try prefix match
-            cands = [a for a in counts if a.startswith(anchor) or anchor.startswith(a)]
+            cands = [a for a in nav_counts if a.startswith(anchor) or anchor.startswith(a)]
             if len(cands) == 1:
-                actual = counts[cands[0]]
+                actual = nav_counts[cands[0]]
         if actual is None or actual == 0:
             continue
-        want = render(actual)
+        want = str(actual) if any(e in label for e in ("🗺", "📋", "⚠")) else render(actual)
         if claimed == want:
             continue
         notes.append(f"  nav '{label.strip()}': claimed {claimed} → actual {actual} (write {want})")

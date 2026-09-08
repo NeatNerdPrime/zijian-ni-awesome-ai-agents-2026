@@ -1,15 +1,10 @@
-name: Refresh Stars & Last-Updated Badge
+name: Refresh Repository Status
 
-# The shields.io badges are live (rendered on every README view), so we don't
-# need to rewrite numbers in the file. We do refresh:
-#   1. The "Last Updated" date badge in the title block
-#   2. Audit any newly-archived projects so we can flag them
-#
-# Runs monthly + on demand. Opens a PR rather than pushing directly.
-
+# Archival metadata can be automated. A date badge must only advance after
+# a maintainer verifies content, never merely because the calendar changed.
 on:
   schedule:
-    - cron: "0 5 1 * *" # 05:00 UTC on the 1st of every month
+    - cron: "0 5 1 * *"
   workflow_dispatch:
 
 permissions:
@@ -21,48 +16,37 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Update Last-Updated badge
-        run: |
-          today=$(date -u "+%B%%20%-d%%2C%%202026")
-          sed -i -E "s|Last%20Updated-[^-]+-blue.svg|Last%20Updated-${today}-blue.svg|" README.md || true
-
-      - name: Detect newly-archived listed repos
-        id: archived
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Flag confirmed archived catalogue entries in all languages
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/refresh_repository_status.py --write --report artifacts/archived.md
+      - name: Recompute counts and validate translations
         run: |
-          set -euo pipefail
-          mkdir -p artifacts
-          # Extract owner/repo pairs (skip badge URLs)
-          grep -oE 'https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+' README.md \
-            | grep -v "shields.io" \
-            | sed -E 's|https://github.com/||; s|/$||; s|[).,]+$||' \
-            | sort -u > artifacts/repos.txt
-
-          : > artifacts/archived.md
-          while read -r repo; do
-            json=$(gh api "repos/$repo" 2>/dev/null || true)
-            [ -z "$json" ] && continue
-            archived=$(jq -r '.archived' <<<"$json")
-            pushed=$(jq -r '.pushed_at' <<<"$json")
-            if [ "$archived" = "true" ]; then
-              if ! grep -qiE "[\`\"]?$repo[\`\"]?.*Archived" README.md; then
-                echo "- \`$repo\` is now archived (last push: $pushed)" >> artifacts/archived.md
-              fi
-            fi
-          done < artifacts/repos.txt
-
-      - name: Open PR if changes
+          python3 scripts/refresh_counts.py --write
+          python3 scripts/sync_audit.py
+          python3 scripts/check_markdown.py
+          python3 scripts/freshness_audit.py
+      - name: Retain status evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: repository-status
+          path: artifacts/
+      - name: Open PR if content changed
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: chore/auto-refresh
-          commit-message: "chore: monthly badge refresh + archive scan"
-          title: "chore: monthly badge refresh + archive scan"
+          commit-message: "chore: refresh repository archival status (en/zh/ja)"
+          title: "chore: refresh repository archival status (en/zh/ja)"
           body-path: artifacts/archived.md
           labels: |
             automation
             maintenance
           add-paths: |
             README.md
+            README.zh-CN.md
+            README.ja.md
